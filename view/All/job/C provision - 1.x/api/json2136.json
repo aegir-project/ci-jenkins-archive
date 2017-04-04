@@ -1,0 +1,472 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "style,comment"
+          },
+          "description" : "The reviews to perform",
+          "name" : "CODE_REVIEWS",
+          "type" : "StringParameterDefinition"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleProjectAction"
+    },
+    {
+      
+    }
+  ],
+  "description" : "Do a code review of provision",
+  "displayName" : "C provision - 1.x",
+  "displayNameOrNull" : null,
+  "name" : "C provision - 1.x",
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/",
+  "buildable" : false,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 86,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/86/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 85,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/85/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 84,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/84/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 83,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/83/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 82,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/82/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 81,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/81/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 80,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/80/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 79,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/79/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 78,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/78/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 77,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/77/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 76,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/76/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 75,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/75/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 74,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/74/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 73,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/73/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 72,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/72/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 71,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/71/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 70,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/70/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 69,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/69/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 68,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/68/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 67,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/67/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 66,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/66/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 65,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/65/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 64,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/64/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 63,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/63/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 62,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/62/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 61,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/61/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 60,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/60/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 59,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/59/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 58,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/58/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 57,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/57/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 56,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/56/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 55,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/55/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 54,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/54/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 53,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/53/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 52,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/52/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 51,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/51/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 50,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/50/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 49,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/49/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 48,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/48/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 47,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/47/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 46,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/46/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 45,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/45/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 44,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/44/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 43,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/43/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 42,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/42/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 41,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/41/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 40,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/40/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 39,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/39/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 38,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/38/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 37,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/37/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 36,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/36/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 35,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/35/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 34,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/34/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 33,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/33/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 32,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/32/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 31,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/31/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 30,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/30/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 29,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/29/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 28,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/28/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 27,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/27/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 26,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/26/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 25,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/25/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 24,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/24/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 23,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/23/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 22,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/22/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 21,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/21/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 20,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/20/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 19,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/19/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 18,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/18/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 17,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/17/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 16,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/16/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 15,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/15/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 15,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/15/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Checkstyle: 542 warnings found.",
+      "iconClassName" : "icon-health-00to19",
+      "iconUrl" : "health-00to19.png",
+      "score" : 11
+    },
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 86,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/86/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 86,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/86/"
+  },
+  "lastFailedBuild" : null,
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 86,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/86/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 86,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/86/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : null,
+  "nextBuildNumber" : 87,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    },
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "CODE_REVIEWS",
+            "value" : "style,comment"
+          },
+          "description" : "The reviews to perform",
+          "name" : "CODE_REVIEWS",
+          "type" : "StringParameterDefinition"
+        }
+      ]
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "_class" : "hudson.matrix.MatrixRun",
+  "actions" : [
+    {
+      
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"Matrix.deb\" build number 12",
+          "upstreamBuild" : 12,
+          "upstreamProject" : "Matrix.deb",
+          "upstreamUrl" : "job/Matrix.deb/"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+            "branch" : [
+              {
+                "SHA1" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+            "branch" : [
+              {
+                "SHA1" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+        "branch" : [
+          {
+            "SHA1" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,5",
+  "duration" : 489,
+  "estimatedDuration" : 958,
+  "executor" : null,
+  "fullDisplayName" : "Matrix.deb » 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,5 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,5",
+  "id" : "2014-01-09_11-26-20",
+  "keepLog" : false,
+  "number" : 12,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1389284780000,
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20dl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/12/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

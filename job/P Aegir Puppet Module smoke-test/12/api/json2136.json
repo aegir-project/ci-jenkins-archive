@@ -1,0 +1,119 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+            "branch" : [
+              {
+                "SHA1" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+            "branch" : [
+              {
+                "SHA1" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+        "branch" : [
+          {
+            "SHA1" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#12",
+  "duration" : 106494,
+  "estimatedDuration" : 5666,
+  "executor" : null,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #12",
+  "id" : "2013-10-16_01-00-59",
+  "keepLog" : false,
+  "number" : 12,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1381899659000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/12/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+        "timestamp" : 1381898824000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Silence recursive chmods and chowns.\n",
+        "date" : "2013-10-16T00:47:04-0400 -0400",
+        "id" : "35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a",
+        "msg" : "Silence recursive chmods and chowns.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

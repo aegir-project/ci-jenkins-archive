@@ -1,0 +1,16 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/Matrix.deb2/workspace - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Last Built Revision: Revision f763f3bc5c40d821c8370f11a5b4e670a0a53a5d (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision f4e97f9257226ce2ff61986388f47a6664f1609c (origin/new)
+Checking out Revision f4e97f9257226ce2ff61986388f47a6664f1609c (origin/new)
+Triggering 2,testing
+2,testing completed with result FAILURE
+Triggering 2,unstable
+2,unstable completed with result FAILURE
+Triggering 2,stable
+2,stable completed with result FAILURE
+Finished: FAILURE

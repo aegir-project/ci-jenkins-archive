@@ -1,0 +1,173 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 26,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+            "branch" : [
+              {
+                "SHA1" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+            "branch" : [
+              {
+                "SHA1" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+        "branch" : [
+          {
+            "SHA1" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#26",
+  "duration" : 19823,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #26",
+  "id" : "2012-03-06_20-01-25",
+  "keepLog" : False,
+  "number" : 26,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331082085000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/26/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/gbp.conf"
+        ],
+        "commitId" : "67a33fd6600107bcf67b9f77a956e4561e418606",
+        "timestamp" : 1331062740000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix branch name\n",
+        "date" : "2012-03-06T14:39:00-0500 -0500",
+        "id" : "67a33fd6600107bcf67b9f77a956e4561e418606",
+        "msg" : "fix branch name",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/gbp.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "19e2156fd72bf7f78c5378db311e5809f12b87c9",
+        "timestamp" : 1331062985000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "announce the native package and 2.x version in changelog\n",
+        "date" : "2012-03-06T14:43:05-0500 -0500",
+        "id" : "19e2156fd72bf7f78c5378db311e5809f12b87c9",
+        "msg" : "announce the native package and 2.x version in changelog",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/control"
+        ],
+        "commitId" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+        "timestamp" : 1331062985000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix my email address\n",
+        "date" : "2012-03-06T14:43:05-0500 -0500",
+        "id" : "8e6cab5a43e3877d50d9514f6d220f0a48ec55ce",
+        "msg" : "fix my email address",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/control"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

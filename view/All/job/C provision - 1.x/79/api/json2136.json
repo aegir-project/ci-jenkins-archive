@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 79,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+            "branch" : [
+              {
+                "SHA1" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+            "branch" : [
+              {
+                "SHA1" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+        "branch" : [
+          {
+            "SHA1" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#79",
+  "duration" : 12676,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #79",
+  "id" : "2012-05-13_07-15-28",
+  "keepLog" : false,
+  "number" : 79,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1336907728000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/79/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "db/mysql/mysql_service.inc"
+        ],
+        "commitId" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+        "timestamp" : 1336892506000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Add more verbosity to the notorious 'failed to fail' error, pointing to an item in the FAQ.\n",
+        "date" : "2012-05-13T03:01:46-0400 +1000",
+        "id" : "fcc7acd1de92311b2db8d0ddfeda98a136821f11",
+        "msg" : "Add more verbosity to the notorious 'failed to fail' error, pointing to an item in the FAQ.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "db/mysql/mysql_service.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson6434339441579156406.sh
++ rm -rf hostmaster
++ git clone --branch 6.x-1.x http://git.drupal.org/project/hostmaster.git
+Cloning into hostmaster...
++ cd hostmaster
++ git tag -a 6.x-1.6 -m Add a new release tag.
+[workspace] $ /bin/sh -xe /tmp/hudson2046162416639358222.sh
++ rm -rf provision
++ git clone --branch 6.x-1.x http://git.drupal.org/project/provision.git
+Cloning into provision...
++ cd provision
++ echo changing makefile to download tarball
+changing makefile to download tarball
++ sed -i.tmp -e/^projects\[hostmaster\]\[download\]\[type\]/s/=.*$/= "git"/ -e/^projects\[hostmaster\]\[download\]\[url\]/s#=.*$#= "http://git.drupal.org/project/hostmaster.git"# -e/^projects\[hostmaster\]\[download\]\[branch\].*/s/\[branch\] *=.*$/[tag] = "6.x-1.6"/ aegir.make
++ git add aegir.make
++ rm aegir.make.tmp
++ echo changing provision.info version
+changing provision.info version
++ sed -i.tmp -es/version *=.*$/version=6.x-1.6/ provision.info
++ git add provision.info
++ rm provision.info.tmp
++ echo changing upgrade.sh.txt version
+changing upgrade.sh.txt version
++ sed -i.tmp -es/AEGIR_VERSION=.*$/AEGIR_VERSION="6.x-1.6"/ upgrade.sh.txt
++ git add upgrade.sh.txt
++ rm upgrade.sh.txt.tmp
++ echo resulting changes to be committed:
+resulting changes to be committed:
++ git diff --cached
++ cat
+diff --git a/aegir.make b/aegir.make
+index c988434..2ae4956 100644
+--- a/aegir.make
++++ b/aegir.make
+@@ -6,4 +6,4 @@ projects[drupal][type] = "core"
+ projects[hostmaster][type] = "profile"
+ projects[hostmaster][download][type] = "git"
+ projects[hostmaster][download][url] = "http://git.drupal.org/project/hostmaster.git"
+-projects[hostmaster][download][branch] = "6.x-1.x"
++projects[hostmaster][download][tag] = "6.x-1.6"
+diff --git a/provision.info b/provision.info
+index 43567aa..8866aa5 100644
+--- a/provision.info
++++ b/provision.info
+@@ -1,4 +1,4 @@
+ name=Provision
+ description="Aegir backend"
+ 
+-version=6.x-1.x
++version=6.x-1.6
+diff --git a/upgrade.sh.txt b/upgrade.sh.txt
+index afa25d2..cdd1419 100644
+--- a/upgrade.sh.txt
++++ b/upgrade.sh.txt
+@@ -15,7 +15,7 @@ msg() {
+ }
+ 
+ # basic variables, change before running
+-AEGIR_VERSION="6.x-1.x"
++AEGIR_VERSION="6.x-1.6"
+ DRUSH_DIR=$HOME/drush
+ DRUSH=$DRUSH_DIR/drush.php
+ if which drush 2> /dev/null > /dev/null && which drush | grep -v 'no drush in' > /dev/null; then
++ git commit -mchange version information for release 
++ commitmsg=[6.x-1.x c2313d0] change version information for release
+ 3 files changed, 3 insertions(+), 3 deletions(-)
++ echo [6.x-1.x c2313d0] change version information for release 3 files changed, 3 insertions(+), 3 deletions(-)
+[6.x-1.x c2313d0] change version information for release 3 files changed, 3 insertions(+), 3 deletions(-)
++ echo [6.x-1.x c2313d0] change version information+  forsed s/^\[[^ ]* \([a-z0-9]*\)\].*$/\1/
+ release 3 files changed, 3 insertions(+), 3 deletions(-)
++ commitid=c2313d0
++ git tag -a 6.x-1.6 -m Add a new release tag.
++ echo reverting tree to HEAD versions
+reverting tree to HEAD versions
++ git revert c2313d0
+Finished one revert.
+[6.x-1.x 9837a24] Revert "change version information for release"
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+Finished: SUCCESS

@@ -1,0 +1,61 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/Matrix.deb/workspace - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Last Built Revision: Revision 277591ffd65645a4fad03fc675661a59bedbf2f4 (origin/new)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision 277591ffd65645a4fad03fc675661a59bedbf2f4 (origin/new)
+Checking out Revision 277591ffd65645a4fad03fc675661a59bedbf2f4 (origin/new)
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,nginx,5
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,nginx,5 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,apache2,6
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,apache2,6 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,apache2,6
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,apache2,6 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,nginx,5
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,nginx,5 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,apache2,5
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,apache2,5 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,nginx,5
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,nginx,5 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,nginx,5
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,nginx,5 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,apache2,5
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,apache2,5 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,5
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,5 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,nginx,5
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,nginx,5 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,apache2,6
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,apache2,6 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,apache2,6
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,apache2,6 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,nginx,6
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,nginx,6 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,nginx,6
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,nginx,6 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,nginx,6
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,testing,nginx,6 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,apache2,6
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,apache2,6 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,apache2,5
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,unstable,apache2,5 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,apache2,5
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,apache2,5 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,nginx,6
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,nginx,6 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,nginx,6
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,unstable,nginx,6 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,nginx,6
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,stable,nginx,6 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,nginx,5
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,nginx,5 completed with result FAILURE
+Triggering 2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,6
+2,wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box,stable,apache2,6 completed with result FAILURE
+Triggering 2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,apache2,5
+2,raring64 cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box,testing,apache2,5 completed with result FAILURE
+Finished: FAILURE

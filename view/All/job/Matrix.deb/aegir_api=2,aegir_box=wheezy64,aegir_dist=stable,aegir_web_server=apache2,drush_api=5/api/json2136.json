@@ -1,0 +1,83 @@
+{
+  "_class" : "hudson.matrix.MatrixConfiguration",
+  "actions" : [
+    
+  ],
+  "description" : null,
+  "displayName" : "2,wheezy64,stable,apache2,5",
+  "displayNameOrNull" : null,
+  "name" : "aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5",
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.matrix.MatrixRun",
+      "number" : 15,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/15/"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixRun",
+      "number" : 14,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/14/"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixRun",
+      "number" : 13,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/13/"
+    }
+  ],
+  "color" : "red",
+  "firstBuild" : {
+    "_class" : "hudson.matrix.MatrixRun",
+    "number" : 13,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/13/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: All recent builds failed.",
+      "iconClassName" : "icon-health-00to19",
+      "iconUrl" : "health-00to19.png",
+      "score" : 0
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.matrix.MatrixRun",
+    "number" : 15,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/15/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.matrix.MatrixRun",
+    "number" : 15,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/15/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.matrix.MatrixRun",
+    "number" : 15,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/15/"
+  },
+  "lastStableBuild" : null,
+  "lastSuccessfulBuild" : null,
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.matrix.MatrixRun",
+    "number" : 15,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/15/"
+  },
+  "nextBuildNumber" : 16,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

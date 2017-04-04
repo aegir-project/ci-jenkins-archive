@@ -1,0 +1,27 @@
+{
+  "_class" : "hudson.model.Label$1",
+  "availableExecutors" : {
+    
+  },
+  "busyExecutors" : {
+    
+  },
+  "connectingExecutors" : {
+    
+  },
+  "definedExecutors" : {
+    
+  },
+  "idleExecutors" : {
+    
+  },
+  "onlineExecutors" : {
+    
+  },
+  "queueLength" : {
+    
+  },
+  "totalExecutors" : {
+    
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+            "branch" : [
+              {
+                "SHA1" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+            "branch" : [
+              {
+                "SHA1" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+        "branch" : [
+          {
+            "SHA1" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#20",
+  "duration" : 13046,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #20",
+  "id" : "2012-04-16_15-30-27",
+  "keepLog" : False,
+  "number" : 20,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334604627000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/20/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/platform/hosting_platform.drush.inc",
+          "modules/hosting/site/hosting_site.backups.inc",
+          "modules/hosting/migrate/hosting_migrate.drush.inc",
+          "modules/hosting/site/hosting_site.install",
+          "modules/hosting/dispatch.hosting.inc",
+          "modules/hosting/hosting.queues.inc",
+          "modules/hosting/site/hosting_site.module",
+          "modules/hosting/task/hosting_task.module",
+          "modules/hosting/task.hosting.inc",
+          "modules/hosting/cron/hosting_cron.module",
+          "modules/hosting/site/hosting_site.drush.inc",
+          "modules/hosting/hosting.inc"
+        ],
+        "commitId" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+        "timestamp" : 1334589957000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.\n",
+        "date" : "2012-04-16T11:25:57-0400 +0100",
+        "id" : "5653820fc39fbecf8977a6a2e38161c91081cda0",
+        "msg" : "Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.queues.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task.hosting.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.install"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/migrate/hosting_migrate.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/cron/hosting_cron.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/platform/hosting_platform.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/dispatch.hosting.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.backups.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

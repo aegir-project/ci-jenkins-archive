@@ -1,0 +1,19 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace - hudson.remoting.LocalChannel@624c66cf
+Using strategy: Default
+Last Built Revision: Revision f3ffddcc9f85b6ff489417330e8b9091133de586 (origin/new)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision 5f313ab29104c2c5bba962fb7b439eb38db17004 (origin/new)
+Checking out Revision 5f313ab29104c2c5bba962fb7b439eb38db17004 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson5560568817178400886.sh
++ vagrant up
+A Vagrant environment is required to run this command. Run `vagrant init`
+to set one up.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

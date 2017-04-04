@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 68,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "64966320255087dd1d52e1763d65030af6a71abb",
+            "branch" : [
+              {
+                "SHA1" : "64966320255087dd1d52e1763d65030af6a71abb",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "64966320255087dd1d52e1763d65030af6a71abb",
+            "branch" : [
+              {
+                "SHA1" : "64966320255087dd1d52e1763d65030af6a71abb",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "64966320255087dd1d52e1763d65030af6a71abb",
+        "branch" : [
+          {
+            "SHA1" : "64966320255087dd1d52e1763d65030af6a71abb",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#68",
+  "duration" : 8284,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #68",
+  "id" : "2012-04-18_08-00-27",
+  "keepLog" : false,
+  "number" : 68,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334750427000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/68/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "64966320255087dd1d52e1763d65030af6a71abb",
+        "timestamp" : 1334735612000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Partial revert \"Revert \"change version information for release 1.7\"\"\n\nThis reverts commit 745f476c8ed5c9d13fff173dea212dbbe111aa1f.\n",
+        "date" : "2012-04-18T03:53:32-0400 +0100",
+        "id" : "64966320255087dd1d52e1763d65030af6a71abb",
+        "msg" : "Partial revert \"Revert \"change version information for release 1.7\"\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_class" : "hudson.plugins.git.util.BuildData",
+  "buildsByBranchName" : {
+    "origin/7.x-3.x" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 627,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+        "branch" : [
+          {
+            "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+        "branch" : [
+          {
+            "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      }
+    }
+  },
+  "lastBuiltRevision" : {
+    "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+    "branch" : [
+      {
+        "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+        "name" : "origin/7.x-3.x"
+      }
+    ]
+  },
+  "remoteUrls" : [
+    "git://git.drupalcode.org/project/provision"
+  ],
+  "scmName" : "provision"
+}

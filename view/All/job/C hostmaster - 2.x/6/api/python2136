@@ -1,0 +1,302 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 6,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "0f0413ddcdd06bb2a401154d1484352489e7e50d",
+            "branch" : [
+              {
+                "SHA1" : "0f0413ddcdd06bb2a401154d1484352489e7e50d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "0f0413ddcdd06bb2a401154d1484352489e7e50d",
+            "branch" : [
+              {
+                "SHA1" : "0f0413ddcdd06bb2a401154d1484352489e7e50d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "0f0413ddcdd06bb2a401154d1484352489e7e50d",
+        "branch" : [
+          {
+            "SHA1" : "0f0413ddcdd06bb2a401154d1484352489e7e50d",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#6",
+  "duration" : 21103,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #6",
+  "id" : "2012-02-08_21-46-18",
+  "keepLog" : False,
+  "number" : 6,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1328755578000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/6/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.service.inc",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.info",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.module",
+          "modules/hosting/web_dumbcluster/hosting.feature.web_dumbcluster.inc",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.install"
+        ],
+        "commitId" : "bfbef9fccf20b3ea35c84e402313f2f1c35051b9",
+        "timestamp" : 1328227806000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "copy the web_cluster module into a dumbcluster\n",
+        "date" : "2012-02-02T19:10:06-0500 -0500",
+        "id" : "bfbef9fccf20b3ea35c84e402313f2f1c35051b9",
+        "msg" : "copy the web_cluster module into a dumbcluster",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.module"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.install"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_dumbcluster/hosting.feature.web_dumbcluster.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.info"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.service.inc",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.info",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.module",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.install",
+          "modules/hosting/web_dumbcluster/hosting.feature.web_dumbcluster.inc"
+        ],
+        "commitId" : "b42197b844e25a037a21922ed260dc59d3dca714",
+        "timestamp" : 1328229667000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rewrite the cluster module as a dumbcluster module\n\nthis mostly consists of adding a slave server list\n",
+        "date" : "2012-02-02T19:41:07-0500 -0500",
+        "id" : "b42197b844e25a037a21922ed260dc59d3dca714",
+        "msg" : "rewrite the cluster module as a dumbcluster module",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_dumbcluster/hosting.feature.web_dumbcluster.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.install"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.info",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.module",
+          "modules/hosting/web_pack/hosting_web_pack.info",
+          "modules/hosting/web_pack/hosting_web_pack.service.inc",
+          "modules/hosting/web_dumbcluster/hosting.feature.web_dumbcluster.inc",
+          "modules/hosting/web_pack/hosting_web_pack.install",
+          "modules/hosting/web_pack/hosting_web_pack.module",
+          "modules/hosting/web_pack/hosting.feature.web_pack.inc",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.service.inc",
+          "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.install"
+        ],
+        "commitId" : "1f0c3fc4f17d7d8818a90fab70bc22f6a5550ade",
+        "timestamp" : 1328230330000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rename dumbcluster to pack\n",
+        "date" : "2012-02-02T19:52:10-0500 -0500",
+        "id" : "1f0c3fc4f17d7d8818a90fab70bc22f6a5550ade",
+        "msg" : "rename dumbcluster to pack",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_pack/hosting.feature.web_pack.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.service.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.info"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.module"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.service.inc"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.module"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.install"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/web_dumbcluster/hosting.feature.web_dumbcluster.inc"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.info"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/web_dumbcluster/hosting_web_dumbcluster.install"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_pack/hosting_web_pack.install"
+        ],
+        "commitId" : "f7e23ce1ad66eb1f3f96377dccaace26a6545793",
+        "timestamp" : 1328736715000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix syntax error\n",
+        "date" : "2012-02-08T16:31:55-0500 -0500",
+        "id" : "f7e23ce1ad66eb1f3f96377dccaace26a6545793",
+        "msg" : "fix syntax error",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.install"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_pack/hosting_web_pack.service.inc"
+        ],
+        "commitId" : "57e4f271a06a6c1aeada34f959190d1200b6b8c0",
+        "timestamp" : 1328736724000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add missing load for slaves\n",
+        "date" : "2012-02-08T16:32:04-0500 -0500",
+        "id" : "57e4f271a06a6c1aeada34f959190d1200b6b8c0",
+        "msg" : "add missing load for slaves",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.service.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

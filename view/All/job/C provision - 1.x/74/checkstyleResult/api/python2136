@@ -1,0 +1,1657 @@
+{
+  "_class" : "hudson.plugins.checkstyle.CheckStyleResult",
+  "modules" : [
+    ""
+  ],
+  "newSuccessfulHighScore" : False,
+  "newWarnings" : [
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    }
+  ],
+  "newZeroWarningsHighScore" : False,
+  "numberOfFixedWarnings" : 1,
+  "numberOfHighPriorityWarnings" : 0,
+  "numberOfLowPriorityWarnings" : 304,
+  "numberOfNewWarnings" : 1,
+  "numberOfNormalPriorityWarnings" : 237,
+  "numberOfWarnings" : 541,
+  "pluginResult" : "SUCCESS",
+  "referenceBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 73,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/73/"
+  },
+  "successfulHighScore" : 0,
+  "successfulSinceBuild" : 0,
+  "successfulSinceDate" : 0,
+  "warnings" : [
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.parser.Warning"
+    }
+  ],
+  "warningsDelta" : 0,
+  "zeroWarningsHighScore" : 0,
+  "zeroWarningsSinceBuild" : 0,
+  "zeroWarningsSinceDate" : 0
+}

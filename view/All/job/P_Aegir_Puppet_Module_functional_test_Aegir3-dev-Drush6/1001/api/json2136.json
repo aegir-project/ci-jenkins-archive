@@ -1,0 +1,92 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 1001,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "branch" : [
+              {
+                "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "branch" : [
+              {
+                "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+        "branch" : [
+          {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#1001",
+  "duration" : 1360318,
+  "estimatedDuration" : 1365584,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6 #1001",
+  "id" : "1001",
+  "keepLog" : false,
+  "number" : 1001,
+  "queueId" : 5671,
+  "result" : "SUCCESS",
+  "timestamp" : 1490097663199,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/1001/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

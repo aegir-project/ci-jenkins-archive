@@ -1,0 +1,85 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson2545131293176869989.sh
++ git clone --branch 6.x-1.x http://git.drupal.org/project/hostmaster.git
+Cloning into hostmaster...
++ cd hostmaster
++ git tag -a 6.x-1.6 -m Add a new release tag.
+[workspace] $ /bin/sh -xe /tmp/hudson7625990199301749650.sh
++ git clone --branch 6.x-1.x http://git.drupal.org/project/provision.git
+Cloning into provision...
++ cd provision
++ echo changing makefile to download tarball
+changing makefile to download tarball
++ sed -i.tmp -e/^projects\[hostmaster\]\[download\]\[type\]/s/=.*$/= "git"/ -e/^projects\[hostmaster\]\[download\]\[url\]/s#=.*$#= "http://git.drupal.org/project/hostmaster.git"# -e/^projects\[hostmaster\]\[download\]\[branch\].*/s/\[branch\] *=.*$/[tag] = "6.x-1.6"/ aegir.make
++ git add aegir.make
++ rm aegir.make.tmp
++ echo changing provision.info version
+changing provision.info version
++ sed -i.tmp -es/version *=.*$/version=/ provision.info
++ git add provision.info
++ rm provision.info.tmp
++ echo changing upgrade.sh.txt version
+changing upgrade.sh.txt version
++ sed -i.tmp -es/AEGIR_VERSION=.*$/AEGIR_VERSION=""/ upgrade.sh.txt
++ git add upgrade.sh.txt
++ rm upgrade.sh.txt.tmp
++ echo resulting changes to be committed:
+resulting changes to be committed:
++ git diff --cached
++ cat
+diff --git a/aegir.make b/aegir.make
+index c988434..2ae4956 100644
+--- a/aegir.make
++++ b/aegir.make
+@@ -6,4 +6,4 @@ projects[drupal][type] = "core"
+ projects[hostmaster][type] = "profile"
+ projects[hostmaster][download][type] = "git"
+ projects[hostmaster][download][url] = "http://git.drupal.org/project/hostmaster.git"
+-projects[hostmaster][download][branch] = "6.x-1.x"
++projects[hostmaster][download][tag] = "6.x-1.6"
+diff --git a/provision.info b/provision.info
+index 43567aa..00a9a3f 100644
+--- a/provision.info
++++ b/provision.info
+@@ -1,4 +1,4 @@
+ name=Provision
+ description="Aegir backend"
+ 
+-version=6.x-1.x
++version=
+diff --git a/upgrade.sh.txt b/upgrade.sh.txt
+index afa25d2..777f60a 100644
+--- a/upgrade.sh.txt
++++ b/upgrade.sh.txt
+@@ -15,7 +15,7 @@ msg() {
+ }
+ 
+ # basic variables, change before running
+-AEGIR_VERSION="6.x-1.x"
++AEGIR_VERSION=""
+ DRUSH_DIR=$HOME/drush
+ DRUSH=$DRUSH_DIR/drush.php
+ if which drush 2> /dev/null > /dev/null && which drush | grep -v 'no drush in' > /dev/null; then
++ git commit -mchange version information for release 
++ commitmsg=[6.x-1.x 8ebf1f9] change version information for release
+ 3 files changed, 3 insertions(+), 3 deletions(-)
++ echo [6.x-1.x 8ebf1f9] change version information for release 3 files changed, 3 insertions(+), 3 deletions(-)
+[6.x-1.x 8ebf1f9] change version information for release 3 files changed, 3 insertions(+), 3 deletions(-)
++ echo [6.x-1.x 8ebf1f9] change version+  informationsed s/^\[[^ ]* \([a-z0-9]*\)\].*$/\1/
+ for release 3 files changed, 3 insertions(+), 3 deletions(-)
++ commitid=8ebf1f9
++ git tag -a 6.x-1.6
+Vim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H".git/TAG_EDITMSG" 4L, 27C[2;1H#
+# Write a tag message
+#
+[94m~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?12l[?25h[24;1H[m[?1l>[?1049lVim: Caught deadly signal TERM
+
+Vim: Finished.
+[24;1Herror: editor died of signal 15
+error: There was a problem with the editor 'editor'.
+Please supply the message using either -m or -F option.
+Build was aborted
+Aborted by steven.jones
+Finished: ABORTED

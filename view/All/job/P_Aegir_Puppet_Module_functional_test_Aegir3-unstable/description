@@ -1,0 +1,3 @@
+Installs the Aegir Debian package from our unstable repo.
+
+DEPRECATED, see http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable/

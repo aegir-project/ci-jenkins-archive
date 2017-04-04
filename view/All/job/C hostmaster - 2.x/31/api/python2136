@@ -1,0 +1,108 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 31,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+            "branch" : [
+              {
+                "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+            "branch" : [
+              {
+                "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+        "branch" : [
+          {
+            "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#31",
+  "duration" : 35540,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #31",
+  "id" : "2012-06-29_03-46-29",
+  "keepLog" : False,
+  "number" : 31,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1340955989000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/31/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

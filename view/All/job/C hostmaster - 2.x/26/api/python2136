@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 26,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+            "branch" : [
+              {
+                "SHA1" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+            "branch" : [
+              {
+                "SHA1" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+        "branch" : [
+          {
+            "SHA1" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#26",
+  "duration" : 15146,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #26",
+  "id" : "2012-04-29_07-00-27",
+  "keepLog" : False,
+  "number" : 26,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335697227000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/26/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.queues.inc"
+        ],
+        "commitId" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+        "timestamp" : 1335682583000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Remove the extra @ that we don't need anymore\n",
+        "date" : "2012-04-29T02:56:23-0400 +0100",
+        "id" : "901642ce92673bd27cfa86d76a6e6a2f54363d47",
+        "msg" : "Remove the extra @ that we don't need anymore",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.queues.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

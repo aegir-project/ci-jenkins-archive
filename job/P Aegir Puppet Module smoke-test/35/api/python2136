@@ -1,0 +1,132 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 35,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+            "branch" : [
+              {
+                "SHA1" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+            "branch" : [
+              {
+                "SHA1" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+        "branch" : [
+          {
+            "SHA1" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#35",
+  "duration" : 205772918,
+  "estimatedDuration" : 5666,
+  "executor" : None,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #35",
+  "id" : "2014-01-08_16-53-50",
+  "keepLog" : False,
+  "number" : 35,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1389218030000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/35/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/setup.sh",
+          "tests/functional_tests/matrix.deb/run-tests.sh",
+          "tests/functional_tests/matrix.deb/nodes.pp"
+        ],
+        "commitId" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+        "timestamp" : 1389217941000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add first stab at matrix test.\n",
+        "date" : "2014-01-08T16:52:21-0500 -0500",
+        "id" : "7d7222846a2de64cdc20a115ac43e1a341788a73",
+        "msg" : "Add first stab at matrix test.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/matrix.deb/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/matrix.deb/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/matrix.deb/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 3,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "13a1eb4188df5205ac2ff9eaa96d708ac0407631",
+            "branch" : [
+              {
+                "SHA1" : "13a1eb4188df5205ac2ff9eaa96d708ac0407631",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "13a1eb4188df5205ac2ff9eaa96d708ac0407631",
+            "branch" : [
+              {
+                "SHA1" : "13a1eb4188df5205ac2ff9eaa96d708ac0407631",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "13a1eb4188df5205ac2ff9eaa96d708ac0407631",
+        "branch" : [
+          {
+            "SHA1" : "13a1eb4188df5205ac2ff9eaa96d708ac0407631",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-drush.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#3",
+  "duration" : 57806,
+  "estimatedDuration" : 52906,
+  "executor" : None,
+  "fullDisplayName" : "P Drush Puppet Module smoke-test #3",
+  "id" : "2013-09-18_15-36-55",
+  "keepLog" : False,
+  "number" : 3,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1379533015000,
+  "url" : "http://ci.aegirproject.org/view/Puppet%20tests/job/P%20Drush%20Puppet%20Module%20smoke-test/3/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

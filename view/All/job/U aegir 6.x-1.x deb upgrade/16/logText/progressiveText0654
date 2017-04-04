@@ -1,0 +1,12 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/U aegir 6.x-1.x deb upgrade/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson7445044930699313153.sh
++ python /var/lib/jenkins/scripts/aegir_deb_upgrade.py
+Traceback (most recent call last):
+  File "/var/lib/jenkins/scripts/aegir_deb_upgrade.py", line 3, in <module>
+    from libcloud.types import Provider
+ImportError: No module named libcloud.types
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Sending e-mails to: mig@mig5.net anarcat@koumbit.org steven.jones@computerminds.co.uk
+Finished: FAILURE

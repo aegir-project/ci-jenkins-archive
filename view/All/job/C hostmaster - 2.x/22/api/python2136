@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 22,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+            "branch" : [
+              {
+                "SHA1" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+            "branch" : [
+              {
+                "SHA1" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+        "branch" : [
+          {
+            "SHA1" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#22",
+  "duration" : 11252,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #22",
+  "id" : "2012-04-26_16-30-27",
+  "keepLog" : False,
+  "number" : 22,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335472227000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/22/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module"
+        ],
+        "commitId" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+        "timestamp" : 1335457324000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1549210 by Steven Jones: Fixed Drush 'failed' errors are not correctly logged.\n",
+        "date" : "2012-04-26T12:22:04-0400 +0100",
+        "id" : "71c4f32f96831c750650f76e4603e9ea96df653b",
+        "msg" : "Issue #1549210 by Steven Jones: Fixed Drush 'failed' errors are not correctly logged.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

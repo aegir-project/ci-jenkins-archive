@@ -1,0 +1,179 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 82,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+            "branch" : [
+              {
+                "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+            "branch" : [
+              {
+                "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+        "branch" : [
+          {
+            "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#82",
+  "duration" : 9350,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #82",
+  "id" : "2012-05-16_12-30-27",
+  "keepLog" : False,
+  "number" : 82,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1337185827000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/82/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt",
+          "aegir.make",
+          "provision.info",
+          "debian/changelog"
+        ],
+        "commitId" : "6cab1605b4a1566f1572ffd2db0b79f1030d39da",
+        "timestamp" : 1337170002000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "change version information for release 1.9\n",
+        "date" : "2012-05-16T08:06:42-0400 +0100",
+        "id" : "6cab1605b4a1566f1572ffd2db0b79f1030d39da",
+        "msg" : "change version information for release 1.9",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+        "timestamp" : 1337170002000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Revert \"change version information for release 1.9\"\n\nThis reverts commit 6cab1605b4a1566f1572ffd2db0b79f1030d39da.\n",
+        "date" : "2012-05-16T08:06:42-0400 +0100",
+        "id" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+        "msg" : "Revert \"change version information for release 1.9\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/C provision - 2.x/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/C provision - 2.x/workspace - hudson.remoting.LocalChannel@669566ee
+Using strategy: Default
+Last Built Revision: Revision 09b24a4e9e0e014597cdb1932760d19029637275 (provision/6.x-2.x)
+Checkout:provision / /var/lib/jenkins/jobs/C provision - 2.x/workspace/provision - hudson.remoting.LocalChannel@669566ee
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+Commencing build of Revision 5bde88fc7debdb1381279fc9adfcc57c70b8b28c (provision/6.x-2.x)
+Checking out Revision 5bde88fc7debdb1381279fc9adfcc57c70b8b28c (provision/6.x-2.x)
+[workspace] $ /bin/sh -xe /tmp/hudson1133296844808983408.sh
++ rm -f review.xml
++ drush standalone-coder-review --files=provision --reviews=style,comment --output-filename=review.xml -y
+The directory /tmp/coder-review/version-1 does not exist.
+Would you like to create it? (y/n): y
+Project drupal (7.12) downloaded to                                  [1;32;40m[1m[success][0m
+/tmp/coder-review/version-1/drupal.
+Project drupal contains:                                             [1;32;40m[1m[success][0m
+ - 3 profiles: testing, standard, minimal
+ - 4 themes: seven, bartik, stark, garland
+ - 47 modules: file, menu, book, help, simpletest, taxonomy, contact,
+dashboard, system, contextual, poll, image, profile, comment, dblog,
+locale, search, php, tracker, options, text, number,
+field_sql_storage, list, field, statistics, rdf, user, update,
+overlay, aggregator, shortcut, translation, syslog, forum, filter,
+block, color, field_ui, node, openid, path, toolbar, blog, trigger,
+drupal_system_listing_compatible_test,
+drupal_system_listing_incompatible_test
+
+You are about to create a sites/default/files directory and create a sites/default/settings.php file and DROP your '/tmp/coder-review/version-1/coder-review.sqlite' database and then CREATE a new one. Do you want to continue? (y/n): y
+Starting Drupal installation. This takes a few seconds ...           [1;32;40m[1m[ok][0m
+Project coder (7.x-1.0) downloaded to                                [1;32;40m[1m[success][0m
+/tmp/coder-review/version-1/drupal/sites/all/modules/coder.
+Project coder contains 3 modules: coder_review, coder_upgrade, coder.
+The following extensions will be enabled: coder_review, coder
+Do you really want to continue? (y/n): y
+coder was enabled successfully.                                      [1;32;40m[1m[ok][0m
+coder_review was enabled successfully.                               [1;32;40m[1m[ok][0m
+Running the coder review                                             [1;32;40m[1m[ok][0m
+Results written to /var/lib/jenkins/jobs/C provision -               [1;32;40m[1m[ok][0m
+2.x/workspace/review.xml
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/jobs/C provision - 2.x/workspace
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/jobs/C provision - 2.x/workspace/review.xml of module  with 511 warnings.
+Finished: SUCCESS

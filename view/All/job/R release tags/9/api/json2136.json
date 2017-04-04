@@ -1,0 +1,306 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "BRANCH_TO_BUILD",
+          "value" : "6.x-1.x"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_TAG",
+          "value" : "6.x-1.6"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "hostmaster/599758_edit_main_site" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 6,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "94ae09b81317e74fca42852d27f39b0b74e8db2b",
+            "branch" : [
+              {
+                "SHA1" : "94ae09b81317e74fca42852d27f39b0b74e8db2b",
+                "name" : "hostmaster/599758_edit_main_site"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "94ae09b81317e74fca42852d27f39b0b74e8db2b",
+            "branch" : [
+              {
+                "SHA1" : "94ae09b81317e74fca42852d27f39b0b74e8db2b",
+                "name" : "hostmaster/599758_edit_main_site"
+              }
+            ]
+          }
+        },
+        "provision/dev_dns" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 9,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00",
+            "branch" : [
+              {
+                "SHA1" : "71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00",
+                "name" : "provision/dev_dns"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00",
+            "branch" : [
+              {
+                "SHA1" : "71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00",
+                "name" : "provision/dev_dns"
+              }
+            ]
+          }
+        },
+        "hostmaster/ssl" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 4,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "70e0672a9143de77a3a37d0c30b76b24315430c2",
+            "branch" : [
+              {
+                "SHA1" : "70e0672a9143de77a3a37d0c30b76b24315430c2",
+                "name" : "hostmaster/ssl"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "70e0672a9143de77a3a37d0c30b76b24315430c2",
+            "branch" : [
+              {
+                "SHA1" : "70e0672a9143de77a3a37d0c30b76b24315430c2",
+                "name" : "hostmaster/ssl"
+              }
+            ]
+          }
+        },
+        "origin1/5.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 1,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+            "branch" : [
+              {
+                "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+                "name" : "origin1/5.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+            "branch" : [
+              {
+                "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+                "name" : "origin1/5.x"
+              }
+            ]
+          }
+        },
+        "origin/ssl" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 2,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          }
+        },
+        "hostmaster/dev-relationships" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 7,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "c392b379846011feabf55423fbfd5d277946752c",
+            "branch" : [
+              {
+                "SHA1" : "c392b379846011feabf55423fbfd5d277946752c",
+                "name" : "hostmaster/dev-relationships"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c392b379846011feabf55423fbfd5d277946752c",
+            "branch" : [
+              {
+                "SHA1" : "c392b379846011feabf55423fbfd5d277946752c",
+                "name" : "hostmaster/dev-relationships"
+              }
+            ]
+          }
+        },
+        "provision/ssl" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 2,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          }
+        },
+        "hostmaster/HEAD" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 5,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "2c4eaa2ddad0fdcc183bfcbb1b6a33b16b6dd4a9",
+            "branch" : [
+              {
+                "SHA1" : "2c4eaa2ddad0fdcc183bfcbb1b6a33b16b6dd4a9",
+                "name" : "hostmaster/HEAD"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2c4eaa2ddad0fdcc183bfcbb1b6a33b16b6dd4a9",
+            "branch" : [
+              {
+                "SHA1" : "2c4eaa2ddad0fdcc183bfcbb1b6a33b16b6dd4a9",
+                "name" : "hostmaster/HEAD"
+              }
+            ]
+          }
+        },
+        "hostmaster/dev-headless_install" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 8,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "8b9c7b2009c6a45743c6ebe051b667cc2a7a9801",
+            "branch" : [
+              {
+                "SHA1" : "8b9c7b2009c6a45743c6ebe051b667cc2a7a9801",
+                "name" : "hostmaster/dev-headless_install"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "8b9c7b2009c6a45743c6ebe051b667cc2a7a9801",
+            "branch" : [
+              {
+                "SHA1" : "8b9c7b2009c6a45743c6ebe051b667cc2a7a9801",
+                "name" : "hostmaster/dev-headless_install"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00",
+        "branch" : [
+          {
+            "SHA1" : "71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00",
+            "name" : "provision/dev_dns"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#9",
+  "duration" : 22037,
+  "estimatedDuration" : 42405,
+  "executor" : null,
+  "fullDisplayName" : "R release tags #9",
+  "id" : "2011-11-14_21-54-50",
+  "keepLog" : false,
+  "number" : 9,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1321325690000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20release%20tags/9/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

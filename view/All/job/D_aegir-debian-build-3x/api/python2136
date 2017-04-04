@@ -1,0 +1,133 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      
+    }
+  ],
+  "description" : "Build a debian package of provision, following the latest changes on the 3.x branch",
+  "displayName" : "D_aegir-debian-build-3x",
+  "displayNameOrNull" : None,
+  "name" : "D_aegir-debian-build-3x",
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/",
+  "buildable" : True,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 628,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/628/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 627,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/627/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 626,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/626/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 625,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/625/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 624,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/624/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 623,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/623/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 622,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/622/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 621,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/621/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 620,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/620/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 619,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/619/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 619,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/619/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 628,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/628/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 628,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/628/"
+  },
+  "lastFailedBuild" : None,
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 628,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/628/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 628,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/628/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : None,
+  "nextBuildNumber" : 629,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    }
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir3-debian-test-unstable",
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package",
+      "url" : "http://ci.aegirproject.org/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/",
+      "color" : "blue"
+    }
+  ],
+  "scm" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

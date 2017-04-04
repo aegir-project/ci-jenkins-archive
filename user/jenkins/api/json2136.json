@@ -1,0 +1,36 @@
+{
+  "_class" : "hudson.model.User",
+  "absoluteUrl" : "http://ci.aegirproject.org/user/jenkins",
+  "description" : null,
+  "fullName" : "jenkins",
+  "id" : "jenkins",
+  "property" : [
+    {
+      "_class" : "jenkins.security.ApiTokenProperty"
+    },
+    {
+      "_class" : "hudson.plugins.jabber.user.JabberUserProperty",
+      "jid" : null
+    },
+    {
+      "_class" : "hudson.model.MyViewsProperty"
+    },
+    {
+      "_class" : "hudson.plugins.openid.OpenIdUserProperty"
+    },
+    {
+      "_class" : "hudson.search.UserSearchProperty",
+      "insensitiveSearch" : false
+    },
+    {
+      "_class" : "hudson.tasks.Mailer$UserProperty",
+      "address" : "jenkins@greenbeedigital.com.au"
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.UserCredentialsProvider$UserCredentialsProperty"
+    },
+    {
+      "_class" : "hudson.model.PaneStatusProperties"
+    }
+  ]
+}

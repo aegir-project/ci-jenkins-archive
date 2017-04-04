@@ -1,0 +1,43 @@
+Started by upstream project "Matrix.deb2" build number 1
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable
+Checkout:unstable / /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision f763f3bc5c40d821c8370f11a5b4e670a0a53a5d (origin/new)
+Checking out Revision f763f3bc5c40d821c8370f11a5b4e670a0a53a5d (origin/new)
+No change to record in branch origin/new
+[unstable] $ /bin/sh -xe /tmp/hudson1625962284616552080.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+Cloning into /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/tests/functional_tests/matrix.deb/modules/drush...
+Cloning into /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/tests/functional_tests/matrix.deb/modules/aegir...
+[unstable] $ /bin/sh -xe /tmp/hudson728634083307439870.sh
++ env aegir_box=raring64 http://cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box aegir_api=2 drush_api=5 aegir_dist=stable aegir_web_server=apache2 ./tests/functional_tests/matrix.deb/run-tests.sh
+There is a syntax error in the following Vagrantfile. The syntax error
+message is reproduced below for convenience:
+
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:15: odd number list for Hash
+        'aegir_api'        = ENV['aegir_api'],
+                            ^
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:15: syntax error, unexpected '=', expecting '}'
+        'aegir_api'        = ENV['aegir_api'],
+                            ^
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:16: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+        'drush_api'        = ENV['drush_api'],
+                            ^
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:17: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+        'aegir_dist'       = ENV['aegir_dist'],
+                            ^
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:18: syntax error, unexpected '=', expecting tCOLON2 or '[' or '.'
+        'aegir_web_server' = ENV['aegir_web_server'],
+                            ^
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:19: syntax error, unexpected '}', expecting '='
+/var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/Vagrantfile:26: syntax error, unexpected $end, expecting kEND
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

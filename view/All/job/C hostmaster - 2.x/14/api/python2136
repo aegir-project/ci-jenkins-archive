@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 14,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+            "branch" : [
+              {
+                "SHA1" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+            "branch" : [
+              {
+                "SHA1" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+        "branch" : [
+          {
+            "SHA1" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#14",
+  "duration" : 10896,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #14",
+  "id" : "2012-03-24_12-01-05",
+  "keepLog" : False,
+  "number" : 14,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332604865000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/14/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module"
+        ],
+        "commitId" : "24a11293bdbdfd640a7f99f024d4929bb40f7e6d",
+        "timestamp" : 1332579336000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1472480 by jlscott: Fixed Restrict the Task Queue to one task per site each cron run.\n",
+        "date" : "2012-03-24T04:55:36-0400 +0000",
+        "id" : "24a11293bdbdfd640a7f99f024d4929bb40f7e6d",
+        "msg" : "Issue #1472480 by jlscott: Fixed Restrict the Task Queue to one task per site each cron run.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/platform/hosting_platform.drush.inc"
+        ],
+        "commitId" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+        "timestamp" : 1332589731000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.\n",
+        "date" : "2012-03-24T07:48:51-0400 +0000",
+        "id" : "eb794c51ad7acfe67513b0067df621c149d7e6bc",
+        "msg" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/platform/hosting_platform.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

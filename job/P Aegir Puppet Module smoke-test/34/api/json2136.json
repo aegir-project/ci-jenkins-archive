@@ -1,0 +1,119 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 34,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+            "branch" : [
+              {
+                "SHA1" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+            "branch" : [
+              {
+                "SHA1" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+        "branch" : [
+          {
+            "SHA1" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#34",
+  "duration" : 1172839,
+  "estimatedDuration" : 5666,
+  "executor" : null,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #34",
+  "id" : "2014-01-07_10-53-50",
+  "keepLog" : false,
+  "number" : 34,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1389110030000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/34/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/mysql.pp"
+        ],
+        "commitId" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+        "timestamp" : 1389109833000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Ensure mysql root password is set prior to securing install.\n",
+        "date" : "2014-01-07T10:50:33-0500 -0500",
+        "id" : "377941bf632292e0d4b7fd957b9e47dd1538d8b5",
+        "msg" : "Ensure mysql root password is set prior to securing install.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/mysql.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

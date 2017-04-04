@@ -1,0 +1,51 @@
+{
+  "_class" : "hudson.matrix.MatrixProject",
+  "actions" : [
+    
+  ],
+  "description" : null,
+  "displayName" : "asdf",
+  "displayNameOrNull" : null,
+  "name" : "asdf",
+  "url" : "http://ci.aegirproject.org/job/asdf/",
+  "buildable" : true,
+  "builds" : [
+    
+  ],
+  "color" : "notbuilt",
+  "firstBuild" : null,
+  "healthReport" : [
+    
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : null,
+  "lastCompletedBuild" : null,
+  "lastFailedBuild" : null,
+  "lastStableBuild" : null,
+  "lastSuccessfulBuild" : null,
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : null,
+  "nextBuildNumber" : 1,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.scm.NullSCM"
+  },
+  "upstreamProjects" : [
+    
+  ],
+  "activeConfigurations" : [
+    {
+      "name" : "default",
+      "url" : "http://ci.aegirproject.org/job/asdf/default/",
+      "color" : "notbuilt"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_class" : "hudson.plugins.git.util.BuildData",
+  "buildsByBranchName" : {
+    "provision/6.x-1.x" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 82,
+      "buildResult" : None,
+      "marked" : {
+        "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+        "branch" : [
+          {
+            "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+        "branch" : [
+          {
+            "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      }
+    }
+  },
+  "lastBuiltRevision" : {
+    "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+    "branch" : [
+      {
+        "SHA1" : "8f79e721fa63c74ea619f0be3d493a3f187c0191",
+        "name" : "provision/6.x-1.x"
+      }
+    ]
+  },
+  "remoteUrls" : [
+    
+  ],
+  "scmName" : ""
+}

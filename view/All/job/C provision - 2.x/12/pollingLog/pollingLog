@@ -1,0 +1,9 @@
+Started on 13/02/2012 7:15:50 AM
+Using strategy: Default
+[poll] Last Build : #11
+[poll] Last Built Revision: Revision 8514e3df93084bcc44e9fdba5d118f9c624888cf (provision/6.x-2.x)
+Fetching changes from the remote Git repositories
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+Polling for changes in
+Done. Took 5.6 sec
+Changes found

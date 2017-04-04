@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 33,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "b4836872ac89bfb7ab51e123c39f18d66ad5f2b4",
+            "branch" : [
+              {
+                "SHA1" : "b4836872ac89bfb7ab51e123c39f18d66ad5f2b4",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b4836872ac89bfb7ab51e123c39f18d66ad5f2b4",
+            "branch" : [
+              {
+                "SHA1" : "b4836872ac89bfb7ab51e123c39f18d66ad5f2b4",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b4836872ac89bfb7ab51e123c39f18d66ad5f2b4",
+        "branch" : [
+          {
+            "SHA1" : "b4836872ac89bfb7ab51e123c39f18d66ad5f2b4",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#33",
+  "duration" : 6427,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #33",
+  "id" : "2012-03-24_17-46-09",
+  "keepLog" : False,
+  "number" : 33,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332625569000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/33/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "73f3c02056902de06ad0e7bc10b22ea188a63cd4",
+        "timestamp" : 1332512868000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use correct X-Engine header in Nginx.\n",
+        "date" : "2012-03-23T10:27:48-0400 +0100",
+        "id" : "73f3c02056902de06ad0e7bc10b22ea188a63cd4",
+        "msg" : "Use correct X-Engine header in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

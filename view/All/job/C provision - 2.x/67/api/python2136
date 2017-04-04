@@ -1,0 +1,230 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 67,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+            "branch" : [
+              {
+                "SHA1" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+            "branch" : [
+              {
+                "SHA1" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+        "branch" : [
+          {
+            "SHA1" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#67",
+  "duration" : 22504,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #67",
+  "id" : "2012-06-06_15-46-18",
+  "keepLog" : False,
+  "number" : 67,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1339011978000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/67/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc"
+        ],
+        "commitId" : "9766032feae0ac75605504f82614770cf1505689",
+        "timestamp" : 1338931984000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add --root option to the hostmaster-install help\n",
+        "date" : "2012-06-05T17:33:04-0400 -0400",
+        "id" : "9766032feae0ac75605504f82614770cf1505689",
+        "msg" : "add --root option to the hostmaster-install help",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "59878e73b9df36ca91def279a1f29322b17d8029",
+        "timestamp" : 1338932352000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "upgrade to drush 5.3\n",
+        "date" : "2012-06-05T17:39:12-0400 -0400",
+        "id" : "59878e73b9df36ca91def279a1f29322b17d8029",
+        "msg" : "upgrade to drush 5.3",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc",
+          "upgrade.sh.txt",
+          "install.hostmaster.inc"
+        ],
+        "commitId" : "27ac81b035f7d4a116456d61155e774aa2c820e0",
+        "timestamp" : 1338932389000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "do not download drush make, it is now in drush core\n",
+        "date" : "2012-06-05T17:39:49-0400 -0400",
+        "id" : "27ac81b035f7d4a116456d61155e774aa2c820e0",
+        "msg" : "do not download drush make, it is now in drush core",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "install.hostmaster.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "830b9bdc213941576028f402144bd0861dc577ad",
+        "timestamp" : 1338948276000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "remove error_log directive\n\nit duplicates the one in the stock debian config\n",
+        "date" : "2012-06-05T22:04:36-0400 -0300",
+        "id" : "830b9bdc213941576028f402144bd0861dc577ad",
+        "msg" : "remove error_log directive",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "HACKING_2x.mdwn"
+        ],
+        "commitId" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+        "timestamp" : 1338951524000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "2.x hacking notes\n",
+        "date" : "2012-06-05T22:58:44-0400 -0300",
+        "id" : "adca3bede4f66a3e902e1b4aa2723616fefc8325",
+        "msg" : "2.x hacking notes",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "HACKING_2x.mdwn"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

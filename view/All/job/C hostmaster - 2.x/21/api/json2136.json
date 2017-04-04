@@ -1,0 +1,156 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 21,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+            "branch" : [
+              {
+                "SHA1" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+            "branch" : [
+              {
+                "SHA1" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+        "branch" : [
+          {
+            "SHA1" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#21",
+  "duration" : 7609,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #21",
+  "id" : "2012-04-26_13-15-26",
+  "keepLog" : false,
+  "number" : 21,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335460526000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/21/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/platform/hosting_platform.module",
+          "modules/hosting/site/hosting_site.module"
+        ],
+        "commitId" : "79bf6016c90b6e7853a5ed58f7b55773d1254982",
+        "timestamp" : 1335445536000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1503824 by mig5: Fixed hosting_site_count() ignores disabled sites.\n",
+        "date" : "2012-04-26T09:05:36-0400 +0100",
+        "id" : "79bf6016c90b6e7853a5ed58f7b55773d1254982",
+        "msg" : "Issue #1503824 by mig5: Fixed hosting_site_count() ignores disabled sites.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/platform/hosting_platform.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/site/hosting_site.module"
+        ],
+        "commitId" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+        "timestamp" : 1335445547000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1503824 by Steven Jones: Fixed hosting_site_count() ignores disabled sites.\n",
+        "date" : "2012-04-26T09:05:47-0400 +0100",
+        "id" : "7f179b10f1627579288b7e5a8bb145ea8d021e16",
+        "msg" : "Issue #1503824 by Steven Jones: Fixed hosting_site_count() ignores disabled sites.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

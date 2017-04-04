@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0"><channel><title>S_aegir-debian-official Multiple SCMs changes</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/changes</link><description>S_aegir-debian-official Multiple SCMs changes</description><item><title>#104 change version information for release 2.3 (Christopher Gervais)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/changes#detail0</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/104/changes#detail0</guid><pubDate>Wed, 25 Mar 2015 16:53:43 -0400</pubDate><author>jenkins@ci.aegirproject.org</author><description>upgrade.sh.txt
+aegir.make
+provision.info
+debian/changelog
+aegir-release.make
+</description></item><item><title>#104 Revert "change version information for release 2.3" (Christopher Gervais)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/changes#detail1</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/104/changes#detail1</guid><pubDate>Wed, 25 Mar 2015 16:53:43 -0400</pubDate><author>jenkins@ci.aegirproject.org</author><description>upgrade.sh.txt
+provision.info
+aegir.make
+aegir-release.make
+</description></item><item><title>#102 add 2.4 and 2.2-backward-compatible apache config, fixes #2155445 (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail0</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail0</guid><pubDate>Wed, 23 Apr 2014 14:10:32 -0400</pubDate><author>jenkins@ci.aegirproject.org</author><description>http/apache/platform.tpl.php
+</description></item><item><title>#102 install apache config file in the proper location for either 2.2 or 2.4, fixes #2153929 (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail1</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail1</guid><pubDate>Wed, 23 Apr 2014 14:10:32 -0400</pubDate><author>jenkins@ci.aegirproject.org</author><description>debian/aegir-provision.postinst
+</description></item><item><title>#102 change version information for release 1.12 (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail2</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail2</guid><pubDate>Wed, 23 Apr 2014 14:10:32 -0400</pubDate><author>jenkins@ci.aegirproject.org</author><description>debian/changelog
+provision.info
+upgrade.sh.txt
+aegir.make
+</description></item><item><title>#102 Revert "change version information for release 1.12" (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail3</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/102/changes#detail3</guid><pubDate>Wed, 23 Apr 2014 14:10:32 -0400</pubDate><author>jenkins@ci.aegirproject.org</author><description>upgrade.sh.txt
+aegir.make
+provision.info
+</description></item><item><title>#101 another aegir2 fix (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail0</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail0</guid><pubDate>Tue, 26 Nov 2013 11:47:05 -0500</pubDate><author>jenkins@ci.aegirproject.org</author><description>jenkins-debian-build
+</description></item><item><title>#101 treat symlinks as existing, fixes #2046249 (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail1</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail1</guid><pubDate>Tue, 26 Nov 2013 11:47:05 -0500</pubDate><author>jenkins@ci.aegirproject.org</author><description>provision.file.inc
+</description></item><item><title>#101 security fix: SA-CORE-2013-003, files/ protection (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail2</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail2</guid><pubDate>Tue, 26 Nov 2013 11:47:05 -0500</pubDate><author>jenkins@ci.aegirproject.org</author><description>http/apache_ssl/vhost_ssl.tpl.php
+http/apache/vhost.tpl.php
+platform/verify.provision.inc
+platform/provision_drupal.drush.inc
+</description></item><item><title>#101 change version information for release 1.11 (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail3</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail3</guid><pubDate>Tue, 26 Nov 2013 11:47:05 -0500</pubDate><author>jenkins@ci.aegirproject.org</author><description>provision.info
+aegir.make
+upgrade.sh.txt
+debian/changelog
+</description></item><item><title>#101 Revert "change version information for release 1.11" (Antoine Beaupré)</title><link>http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail4</link><guid isPermaLink="false">view/Stable%20builds/job/S_aegir-debian-official/101/changes#detail4</guid><pubDate>Tue, 26 Nov 2013 11:47:05 -0500</pubDate><author>jenkins@ci.aegirproject.org</author><description>aegir.make
+provision.info
+upgrade.sh.txt
+</description></item></channel></rss>

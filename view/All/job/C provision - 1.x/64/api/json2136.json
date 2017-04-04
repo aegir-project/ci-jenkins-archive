@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 64,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+            "branch" : [
+              {
+                "SHA1" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+            "branch" : [
+              {
+                "SHA1" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+        "branch" : [
+          {
+            "SHA1" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#64",
+  "duration" : 6202,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #64",
+  "id" : "2012-04-11_21-31-22",
+  "keepLog" : false,
+  "number" : 64,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334194282000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/64/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+        "timestamp" : 1334179657000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 and #1527852 by PlayfulWolf - Nginx microcaching shouldn't cache any upstream errors.\n",
+        "date" : "2012-04-11T17:27:37-0400 +0200",
+        "id" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+        "msg" : "Issue #1528996 and #1527852 by PlayfulWolf - Nginx microcaching shouldn't cache any upstream errors.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

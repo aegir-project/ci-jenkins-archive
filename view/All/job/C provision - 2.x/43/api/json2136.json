@@ -1,0 +1,156 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 43,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "2814c05564c0e07098b15a68b87edf10bc331294",
+            "branch" : [
+              {
+                "SHA1" : "2814c05564c0e07098b15a68b87edf10bc331294",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2814c05564c0e07098b15a68b87edf10bc331294",
+            "branch" : [
+              {
+                "SHA1" : "2814c05564c0e07098b15a68b87edf10bc331294",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "2814c05564c0e07098b15a68b87edf10bc331294",
+        "branch" : [
+          {
+            "SHA1" : "2814c05564c0e07098b15a68b87edf10bc331294",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#43",
+  "duration" : 10063,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #43",
+  "id" : "2012-04-17_17-45-27",
+  "keepLog" : false,
+  "number" : 43,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334699127000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/43/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx.conf"
+        ],
+        "commitId" : "0d2dfffd5afd7cc7282b3ec486cdb57851419846",
+        "timestamp" : 1334682667000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Remove duplicate error_log directive in the Nginx config.\n",
+        "date" : "2012-04-17T13:11:07-0400 +0200",
+        "id" : "0d2dfffd5afd7cc7282b3ec486cdb57851419846",
+        "msg" : "Remove duplicate error_log directive in the Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "cdfdca928cf45a95deb6c7b3f0e4eaeb9ae3f76d",
+        "timestamp" : 1334683998000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.\n",
+        "date" : "2012-04-17T13:33:18-0400 +0200",
+        "id" : "cdfdca928cf45a95deb6c7b3f0e4eaeb9ae3f76d",
+        "msg" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

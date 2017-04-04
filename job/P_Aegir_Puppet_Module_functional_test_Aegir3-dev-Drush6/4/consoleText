@@ -1,0 +1,94 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace - hudson.remoting.LocalChannel@4836a855
+Using strategy: Default
+Last Built Revision: Revision 1e0be28a13d7982734839642ed18937d943a6b70 (origin/1.0.x)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 9b62be3e6a9459df2fe3e133bd3d669a888fb2e9 (origin/1.0.x)
+Checking out Revision 9b62be3e6a9459df2fe3e133bd3d669a888fb2e9 (origin/1.0.x)
+[workspace] $ /bin/sh -xe /tmp/hudson7706394619374533045.sh
++ ./tests/functional_tests/aegir3-dev/setup.sh
+From http://git.drupal.org/project/puppet-drush
+   779f8a0..dae80a9  1.0.x      -> origin/1.0.x
+Updating 779f8a0..dae80a9
+Fast-forward
+ manifests/git/drush.pp |    1 -
+ manifests/make.pp      |    1 +
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+From http://git.drupal.org/project/puppet-aegir
+   1e0be28..9b62be3  1.0.x      -> origin/1.0.x
+Updating 1e0be28..9b62be3
+Fast-forward
+ manifests/dev.pp |   25 +++++++++++++++++++++++--
+ 1 file changed, 23 insertions(+), 2 deletions(-)
+[workspace] $ /bin/sh -xe /tmp/hudson7403865442664424123.sh
++ ./tests/functional_tests/aegir3-dev/run-tests.sh
+A Vagrant 1.0.x state file was found for this environment. Vagrant has
+gone ahead and auto-upgraded this to the latest format. Everything
+should continue working as normal. Beware, however, that older versions
+of Vagrant may no longer be used with this environment.
+
+However, in case anything went wrong, the old dotfile was backed up
+to the location below. If everything is okay, it is safe to remove
+this backup.
+
+Backup: /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace/.vagrant.v1.1402485585
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Setting the name of the VM: workspace_default_1402485587023_46315
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.12
+    default: VirtualBox Version: 4.3
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace/tmp/apt/cache
+    default: /tmp/vagrant-puppet-2/manifests => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace/tests/functional_tests/aegir3-dev
+    default: /tmp/vagrant-puppet-2/modules-0 => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev/workspace/tests/functional_tests/aegir3-dev/modules
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with nodes.pp...
+==> default: stdin: is not a tty
+==> default: warning: Could not retrieve fact fqdn
+==> default: warning: Host is missing hostname and/or domain: aegir3-dev
+==> default: warning: Host is missing hostname and/or domain: aegir3-dev
+==> default: Could not find default node or by name with 'aegir3-dev' on node aegir3-dev
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+puppet apply --modulepath '/tmp/vagrant-puppet-2/modules-0:/etc/puppet/modules' --color=false --manifestdir /tmp/vagrant-puppet-2/manifests --detailed-exitcodes /tmp/vagrant-puppet-2/manifests/nodes.pp
+
+Stdout from the command:
+
+warning: Could not retrieve fact fqdn
+warning: Host is missing hostname and/or domain: aegir3-dev
+warning: Host is missing hostname and/or domain: aegir3-dev
+
+
+Stderr from the command:
+
+stdin: is not a tty
+Could not find default node or by name with 'aegir3-dev' on node aegir3-dev
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

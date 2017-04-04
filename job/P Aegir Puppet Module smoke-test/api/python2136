@@ -1,0 +1,583 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      
+    }
+  ],
+  "description" : "",
+  "displayName" : "P Aegir Puppet Module smoke-test",
+  "displayNameOrNull" : None,
+  "name" : "P Aegir Puppet Module smoke-test",
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/",
+  "buildable" : True,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1162,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1162/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1161,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1161/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1160,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1160/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1159,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1159/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1158,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1158/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1157,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1157/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1156,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1156/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1155,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1155/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1154,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1154/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1153,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1153/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1152,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1152/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1151,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1151/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1150,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1150/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1149,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1149/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1148,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1148/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1147,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1147/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1146,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1146/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1145,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1145/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1144,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1144/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1143,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1143/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1142,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1142/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1141,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1141/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1140,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1140/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1139,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1139/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1138,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1138/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1137,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1137/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1136,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1136/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1135,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1135/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1134,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1134/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1133,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1133/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1132,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1132/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1131,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1131/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1130,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1130/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1129,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1129/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1128,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1128/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1127,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1127/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1126,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1126/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1125,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1125/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1124,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1124/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1123,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1123/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1122,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1122/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1121,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1121/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1120,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1120/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1119,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1119/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1118,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1118/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1117,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1117/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1116,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1116/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1115,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1115/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1114,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1114/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1113,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1113/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1112,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1112/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1111,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1111/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1110,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1110/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1109,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1109/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1108,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1108/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1107,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1107/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1106,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1106/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1105,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1105/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1104,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1104/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1103,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1103/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1102,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1102/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1101,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1101/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1100,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1100/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1099,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1099/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1098,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1098/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1097,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1097/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1096,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1096/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1095,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1095/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1094,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1094/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1093,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1093/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1092,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1092/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1091,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1091/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1090,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1090/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1089,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1089/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1088,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1088/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1087,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1087/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1086,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1086/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1085,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1085/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1084,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1084/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1083,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1083/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1082,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1082/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1081,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1081/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1080,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1080/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1079,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1079/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1078,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1078/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1077,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1077/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1076,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1076/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1075,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1075/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1074,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1074/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1073,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1073/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1072,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1072/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1071,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1071/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1070,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1070/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1069,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1069/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1068,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1068/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1067,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1067/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1066,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1066/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1065,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1065/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1064,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1064/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1063,
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1063/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 2 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-40to59",
+      "iconUrl" : "health-40to59.png",
+      "score" : 60
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1162,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1162/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1162,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1162/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1161,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1161/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1162,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1162/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1162,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1162/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1161,
+    "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/1161/"
+  },
+  "nextBuildNumber" : 1163,
+  "property" : [
+    
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P Drush Puppet Module smoke-test",
+      "url" : "http://ci.aegirproject.org/job/P%20Drush%20Puppet%20Module%20smoke-test/",
+      "color" : "blue"
+    }
+  ]
+}

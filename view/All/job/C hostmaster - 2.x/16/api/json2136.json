@@ -1,0 +1,156 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 16,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+            "branch" : [
+              {
+                "SHA1" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+            "branch" : [
+              {
+                "SHA1" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+        "branch" : [
+          {
+            "SHA1" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#16",
+  "duration" : 4637,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #16",
+  "id" : "2012-03-24_14-01-13",
+  "keepLog" : false,
+  "number" : 16,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332612073000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/16/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/quota/hosting_quota.module"
+        ],
+        "commitId" : "c07487b16bf8b446238ed9b4a930ecc565622d6e",
+        "timestamp" : 1332597471000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1437856 by jlscott: Fixed Display of Client Quota missing pager navigation bar.\n",
+        "date" : "2012-03-24T09:57:51-0400 +0000",
+        "id" : "c07487b16bf8b446238ed9b4a930ecc565622d6e",
+        "msg" : "Issue #1437856 by jlscott: Fixed Display of Client Quota missing pager navigation bar.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/quota/hosting_quota.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/quota/hosting_quota.admin.inc",
+          "modules/hosting/quota/hosting_quota.module"
+        ],
+        "commitId" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+        "timestamp" : 1332597478000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1437856 by Steven Jones: Fixed Display of Client Quota missing pager navigation bar.\n",
+        "date" : "2012-03-24T09:57:58-0400 +0000",
+        "id" : "15d5e0e5ff3757a01604d9d00c4d571bedf98656",
+        "msg" : "Issue #1437856 by Steven Jones: Fixed Display of Client Quota missing pager navigation bar.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/quota/hosting_quota.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/quota/hosting_quota.admin.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

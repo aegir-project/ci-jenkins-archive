@@ -1,0 +1,257 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "6.x-1.x"
+          },
+          "description" : "Select which branch to release a tag from.",
+          "name" : "BRANCH_TO_BUILD",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "6.x-1.x",
+            "6.x-2.x",
+            "7.x-2.x"
+          ]
+        },
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : ""
+          },
+          "description" : "Enter a new tag to use for the release, e.g. 6.x-1.5",
+          "name" : "NEW_TAG",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+            "value" : ""
+          },
+          "description" : "To confirm this action, you must enter the following text, without spaces:\ni am sure i want to do this",
+          "name" : "BUILD_CONFIRMATION",
+          "type" : "ValidatingStringParameterDefinition"
+        }
+      ]
+    }
+  ],
+  "description" : "",
+  "displayName" : "R release tags",
+  "displayNameOrNull" : null,
+  "name" : "R release tags",
+  "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/",
+  "buildable" : false,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 20,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/20/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 19,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/19/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 18,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/18/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 17,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/17/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 16,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/16/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 15,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/15/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 14,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/14/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 13,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/13/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 12,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/12/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 11,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/11/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 10,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/10/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 9,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/9/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 8,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/8/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 7,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/7/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 6,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/6/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 5,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/5/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 4,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/4/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/3/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/2/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/1/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 3 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-20to39",
+      "iconUrl" : "health-20to39.png",
+      "score" : 40
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 20,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/20/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 20,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/20/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 19,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/19/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 20,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/20/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 20,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/20/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 19,
+    "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20release%20tags/19/"
+  },
+  "nextBuildNumber" : 21,
+  "property" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "BRANCH_TO_BUILD",
+            "value" : "6.x-1.x"
+          },
+          "description" : "Select which branch to release a tag from.",
+          "name" : "BRANCH_TO_BUILD",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "6.x-1.x",
+            "6.x-2.x",
+            "7.x-2.x"
+          ]
+        },
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "NEW_TAG",
+            "value" : ""
+          },
+          "description" : "Enter a new tag to use for the release, e.g. 6.x-1.5",
+          "name" : "NEW_TAG",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+            "name" : "BUILD_CONFIRMATION",
+            "value" : ""
+          },
+          "description" : "To confirm this action, you must enter the following text, without spaces:\ni am sure i want to do this",
+          "name" : "BUILD_CONFIRMATION",
+          "type" : "ValidatingStringParameterDefinition"
+        }
+      ]
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.scm.NullSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 64,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+            "branch" : [
+              {
+                "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+            "branch" : [
+              {
+                "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/unstable" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+            "branch" : [
+              {
+                "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+                "name" : "origin/unstable"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+            "branch" : [
+              {
+                "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+                "name" : "origin/unstable"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+        "branch" : [
+          {
+            "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#64",
+  "duration" : 155351,
+  "estimatedDuration" : 156231,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-unstable #64",
+  "id" : "64",
+  "keepLog" : false,
+  "number" : 64,
+  "queueId" : 953,
+  "result" : "FAILURE",
+  "timestamp" : 1445923440287,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/64/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

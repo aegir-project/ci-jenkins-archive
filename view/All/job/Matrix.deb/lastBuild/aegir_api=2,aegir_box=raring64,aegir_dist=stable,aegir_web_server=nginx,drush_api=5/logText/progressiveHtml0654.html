@@ -1,0 +1,1463 @@
+Started by upstream project "Matrix.deb" build number 15
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/stable/aegir_web_server/nginx/drush_api/5
+Checkout:5 / /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/stable/aegir_web_server/nginx/drush_api/5 - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Cloning the remote Git repository
+Cloning repository <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a>
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+[5] $ /bin/sh -xe /tmp/hudson750181861913717328.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+Cloning into /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/stable/aegir_web_server/nginx/drush_api/5/tests/functional_tests/matrix.deb/modules/drush...
+Cloning into /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/stable/aegir_web_server/nginx/drush_api/5/tests/functional_tests/matrix.deb/modules/aegir...
+[5] $ /bin/sh -xe /tmp/hudson2511816247826414344.sh
++ ./tests/functional_tests/matrix.deb/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 50%[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.32
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 =&gt; 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Setting host name...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- apt_cache: /var/cache/apt/archives
+[default] -- manifests: /tmp/vagrant-puppet/manifests
+[default] -- v-pp-m0: /tmp/vagrant-puppet/modules-0
+[default] Running provisioner: Vagrant::Provisioners::Puppet...
+[default] Running Puppet with /tmp/vagrant-puppet/manifests/nodes.pp...
+stdin: is not a tty
+[0;36mnotice: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Drush/Package[drush]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/File[/root/.my.cnf]/ensure: defined content as '{md5}5f11b43898db8ea343720023975906a4'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Mysql/Package[mysql-server]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]/ensure: defined content as '{md5}d402a9edee75caac8e2fa3e34da23e8b'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Triggered 'refresh' from 1 events[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Triggered 'refresh' from 1 events[0m
+[0;36mnotice: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string nginx]/Exec[aegir/webserver string nginx]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql::Preseed/File[preseedmysqlpass.sh]/ensure: defined content as '{md5}cf716d667b4f77e6c887bcede81e63c2'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]/returns: executed successfully[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/File[aegir_apt_keys_dir]/ensure: created[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/File[aegir_apt_key]/ensure: defined content as '{md5}c68f07d8791bb73bd013a7fc758bff8a'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_key_add]: Triggered 'refresh' from 1 events[0m
+[0;36mnotice: /Stage[main]/Aegir::Apt/File[aegir_apt_sources]/ensure: created[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Triggered 'refresh' from 4 events[0m
+[0;36mnotice: /Stage[main]/Aegir/Package[nginx]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir/Package[php5-fpm]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir/Service[nginx]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: /Stage[main]/Aegir/Package[aegir2]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Triggered 'refresh' from 1 events[0m
+
+[0;36mnotice: Finished catalog run in 164.39 seconds[0m
+
+This command should only be run on a clean Aegir install, and data may be lost! Do you want to continue? (y/n): y
+Building platform: drupal6 and adding to hostmaster.                        [ok]
+Beginning to build                                                          [ok]
+/usr/share/drush/commands/provision/provision-tests/makes/drupal6.build.
+drupal-6.31 downloaded.                                                     [ok]
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal6.alias.drushrc.php to 440
+Task verify was added to the queue. Next queue run is 22:51:36+0000,    [status]
+server time is 22:51:10+0000.
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal6.alias.drushrc.php to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal6.alias.drushrc.php to 440
+Drupal sites directory /var/aegir/platforms/drupal6/sites is writable  [success]
+by the provisioning script
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Created directory /var/aegir/platforms/drupal6/sites/all/drush.        [success]
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/all/drush/drushrc.php to 444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Building platform: drupal7 and adding to hostmaster.                        [ok]
+Beginning to build                                                          [ok]
+/usr/share/drush/commands/provision/provision-tests/makes/drupal7.build.
+drupal-7.27 downloaded.                                                     [ok]
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 440
+Task verify was added to the queue. Next queue run is 22:51:36+0000,    [status]
+server time is 22:51:31+0000.
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 440
+Drupal sites directory /var/aegir/platforms/drupal7/sites is writable  [success]
+by the provisioning script
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Created directory /var/aegir/platforms/drupal7/sites/all/drush.        [success]
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/all/drush/drushrc.php to 444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Building platform: openatrium and adding to hostmaster.                     [ok]
+Beginning to build                                                          [ok]
+/usr/share/drush/commands/provision/provision-tests/makes/openatrium.build.
+drupal-6.28 downloaded.                                                     [ok]
+drupal patched with common.inc_6.28.patch.                                  [ok]
+Generated PATCHES.txt file for drupal                                       [ok]
+openatrium-6.x-1.7 downloaded.                                              [ok]
+Found makefile: drupal-org.make                                             [ok]
+ginkgo-6.x-1.1 downloaded.                                                  [ok]
+ &gt;&gt; Project rubik contains 2 themes: cube, rubik.
+rubik-6.x-3.0-beta3 downloaded.                                             [ok]
+tao-6.x-3.3 downloaded.                                                     [ok]
+l10n_update-6.x-1.0-beta3 downloaded.                                       [ok]
+l10n_client-6.x-2.1 downloaded.                                             [ok]
+ &gt;&gt; Project atrium_features contains 13 modules: atrium_blog, atrium_shoutbox, atrium_profile, atrium, atrium_groups, atrium_book, atrium_activity, atrium_calendar, atrium_casetracker, atrium_test, atrium_translate, atrium_members, atrium_reader.
+atrium_features-6.x-1.3 downloaded.                                         [ok]
+simpletest-6.x-2.11 downloaded.                                             [ok]
+schema-6.x-1.7 downloaded.                                                  [ok]
+ &gt;&gt; Project devel contains 3 modules: devel, devel_generate, devel_node_access.
+devel-6.x-1.27 downloaded.                                                  [ok]
+coder-6.x-2.0-rc1 downloaded.                                               [ok]
+xref-6.x-1.1 downloaded.                                                    [ok]
+ &gt;&gt; Project views contains 3 modules: views_export, views_ui, views.
+views-6.x-2.16 downloaded.                                                  [ok]
+views patched with views-static-cache-resets-694094-7.patch.                [ok]
+views patched with views2_simple_translatables.patch.                       [ok]
+views patched with 789674-29-vocabulary_module-6.x-2.x.patch.               [ok]
+views patched with views-1040744-8.patch.                                   [ok]
+Generated PATCHES.txt file for views                                        [ok]
+ &gt;&gt; Project ucreate contains 2 modules: ucreate, ucreate_og.
+ucreate-6.x-1.0-beta4 downloaded.                                           [ok]
+transliteration-6.x-3.1 downloaded.                                         [ok]
+ &gt;&gt; Project token contains 3 modules: token_actions, tokenSTARTER, token.
+token-6.x-1.19 downloaded.                                                  [ok]
+strongarm-6.x-2.2 downloaded.                                               [ok]
+ &gt;&gt; Project spaces contains 7 modules: spaces_user, spaces_ui, spaces_og, spaces_dashboard, spaces_customtext, spaces_taxonomy, spaces.
+spaces-6.x-3.7 downloaded.                                                  [ok]
+reldate-6.x-1.0-beta2 downloaded.                                           [ok]
+purl-6.x-1.0-beta13 downloaded.                                             [ok]
+prepopulate-6.x-2.2 downloaded.                                             [ok]
+parser_ical-6.x-2.0-beta1 downloaded.                                       [ok]
+openidadmin-6.x-1.2 downloaded.                                             [ok]
+ &gt;&gt; Project og contains 5 modules: og_notifications, og_access, og_actions, og_views, og.
+og-6.x-2.4 downloaded.                                                      [ok]
+notifications_team-6.x-2.1-beta9 downloaded.                                [ok]
+ &gt;&gt; Project notifications contains 7 modules: notifications_tags, notifications_views, notifications_lite, notifications_content, notifications_autosubscribe, notifications_ui, notifications.
+notifications-6.x-2.3 downloaded.                                           [ok]
+ &gt;&gt; Project nodeformcols contains 3 modules: nfcbiblio, nodeformcols, nfccaptcha.
+nodeformcols-6.x-1.6 downloaded.                                            [ok]
+ &gt;&gt; Project messaging contains 10 modules: messaging_xmpp, messaging_twitter, messaging_debug, messaging_sms, messaging_simple, messaging_mail, messaging_privatemsg, messaging_mime_mail, messaging_phpmailer, messaging.
+messaging-6.x-2.4 downloaded.                                               [ok]
+markdown-6.x-1.3 downloaded.                                                [ok]
+mailhandler-6.x-1.11 downloaded.                                            [ok]
+ &gt;&gt; Project mailcomment contains 2 modules: mailcomment_extras, mailcomment.
+mailcomment-6.x-1.0 downloaded.                                             [ok]
+litecal-6.x-1.0 downloaded.                                                 [ok]
+libraries-6.x-1.0 downloaded.                                               [ok]
+jquery_update-6.x-2.0-alpha1 downloaded.                                    [ok]
+jquery_ui-6.x-1.5 downloaded.                                               [ok]
+job_scheduler-6.x-1.0-beta3 downloaded.                                     [ok]
+itweak_upload-6.x-2.6 downloaded.                                           [ok]
+imagecache_profiles-6.x-1.3 downloaded.                                     [ok]
+ &gt;&gt; Project imagecache contains 2 modules: imagecache, imagecache_ui.
+imagecache-6.x-2.0-rc1 downloaded.                                          [ok]
+ &gt;&gt; Project imageapi contains 3 modules: imageapi_imagemagick, imageapi, imageapi_gd.
+imageapi-6.x-1.10 downloaded.                                               [ok]
+ &gt;&gt; Project data contains 6 modules: data_node, data_search, data_taxonomy, data_vbo, data_ui, data.
+data-6.x-1.1 downloaded.                                                    [ok]
+ &gt;&gt; Project feeds contains 5 modules: feeds_ui, feeds_import, feeds_news, feeds_fast_news, feeds.
+feeds-6.x-1.0-beta13 downloaded.                                            [ok]
+features-6.x-1.2 downloaded.                                                [ok]
+diff-6.x-2.3 downloaded.                                                    [ok]
+designkit-6.x-1.0-beta1 downloaded.                                         [ok]
+ &gt;&gt; Project date contains 8 modules: date_locale, date_tools, date_repeat, date, date_php4, date_timezone, date_popup, date_api.
+date-6.x-2.9 downloaded.                                                    [ok]
+ &gt;&gt; Project ctools contains 9 modules: ctools_custom_content, ctools_access_ruleset, ctools_plugin_example, views_content, stylizer, page_manager, ctools_ajax_sample, bulk_export, ctools.
+ctools-6.x-1.10 downloaded.                                                 [ok]
+crayon-6.x-1.0-beta3 downloaded.                                            [ok]
+ &gt;&gt; Project context contains 3 modules: context_layouts, context_ui, context.
+context-6.x-3.1 downloaded.                                                 [ok]
+ &gt;&gt; Project content_profile contains 3 modules: content_profile_registration, content_profile_tokens, content_profile.
+content_profile-6.x-1.0 downloaded.                                         [ok]
+comment_upload-6.x-1.0-alpha6 downloaded.                                   [ok]
+codefilter-6.x-1.0 downloaded.                                              [ok]
+ &gt;&gt; Project cck contains 9 modules: optionwidgets, number, fieldgroup, content_permissions, content_copy, userreference, text, nodereference, content.
+cck-6.x-2.9 downloaded.                                                     [ok]
+ &gt;&gt; Project casetracker contains 4 modules: casetracker_actions, casetracker_notifications, casetracker, casetracker_basic.
+casetracker-6.x-1.0-beta9 downloaded.                                       [ok]
+boxes-6.x-1.1 downloaded.                                                   [ok]
+admin-6.x-2.0 downloaded.                                                   [ok]
+jquery_ui downloaded from                                                   [ok]
+<a href='http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip'>http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip</a>.
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_openatrium.alias.drushrc.php to 440
+Task verify was added to the queue. Next queue run is 23:02:36+0000,    [status]
+server time is 23:02:35+0000.
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_openatrium.alias.drushrc.php to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_openatrium.alias.drushrc.php to 440
+Drupal sites directory /var/aegir/platforms/openatrium/sites is        [success]
+writable by the provisioning script
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Created directory /var/aegir/platforms/openatrium/sites/all/drush.     [success]
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/openatrium/sites/all/drush/drushrc.php to 444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Installing: drupal6-default.aegir.example.com on platform: drupal6          [ok]
+with profile: default.
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal6-default.aegir.example.com.alias.drushrc.php
+to 440
+Created drupal6defaultae database                                      [success]
+Created &lt;code&gt;sites/drupal6-default.aegir.example.com&lt;/code&gt;           [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com&lt;/code&gt; to 755
+Created &lt;code&gt;sites/drupal6-default.aegir.example.com/themes&lt;/code&gt;    [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/themes&lt;/code&gt; to 2775
+Created &lt;code&gt;sites/drupal6-default.aegir.example.com/modules&lt;/code&gt;   [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/modules&lt;/code&gt; to 2775
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/libraries&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Created &lt;code&gt;sites/drupal6-default.aegir.example.com/files&lt;/code&gt;     [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/tmp&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/images&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/pictures&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/css&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Created &lt;code&gt;sites/drupal6-default.aegir.example.com/files/js&lt;/code&gt;  [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/js&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/ctools&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/imagecache&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/locations&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Created &lt;code&gt;sites/drupal6-default.aegir.example.com/private&lt;/code&gt;   [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/files&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/files&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/temp&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Generated config virtual host configuration file                       [success]
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Error validating client email ``. Please check your &lt;a                 [warning]
+href="/user"&gt;user account&lt;/a&gt; email. To allow the site installation
+to proceed, the email `this.email@is.invalid` has been used instead.
+Please use the `login` link to change the site admin email to a
+proper valid address.
+Login url:                                                             [success]
+<a href='http://drupal6-default.aegir.example.com/user/reset/1/1398294161/566ec9d46b7586aac48e2f72e4fe020c/login'>http://drupal6-default.aegir.example.com/user/reset/1/1398294161/566ec9d46b7586aac48e2f72e4fe020c/login</a>
+Sent welcome mail to this.email@is.invalid                             [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal6.alias.drushrc.php to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal6.alias.drushrc.php to 440
+Drupal sites directory /var/aegir/platforms/drupal6/sites is writable  [success]
+by the provisioning script
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/all/drush/drushrc.php to 644
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/all/drush/drushrc.php to 444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Task import was added to the queue. Next queue run is 23:03:36+0000,    [status]
+server time is 23:02:44+0000.
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal6-default.aegir.example.com.alias.drushrc.php
+to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal6-default.aegir.example.com.alias.drushrc.php
+to 440
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal6-default.aegir.example.com.alias.drushrc.php
+to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal6-default.aegir.example.com.alias.drushrc.php
+to 440
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to 640
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com&lt;/code&gt; to 755
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/themes&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/modules&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/js&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/files&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal6-default.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to 640
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config virtual host configuration file                       [success]
+Client home directory for admin path /var/aegir/clients/admin exists.  [success]
+Client home directory for admin ownership of /var/aegir/clients/admin  [success]
+has been changed to aegir.
+Client home directory for admin permissions of                         [success]
+/var/aegir/clients/admin have been changed to 750.
+Client home directory for admin path /var/aegir/clients/admin is       [success]
+writable.
+Created symlink                                                        [success]
+/var/aegir/clients/admin/drupal6-default.aegir.example.com to
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal6/sites/drupal6-default.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Installing: drupal7-standard.aegir.example.com on platform: drupal7         [ok]
+with profile: standard.
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-standard.aegir.example.com.alias.drushrc.php
+to 440
+Created drupal7standarda database                                      [success]
+Created &lt;code&gt;sites/drupal7-standard.aegir.example.com&lt;/code&gt;          [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com&lt;/code&gt; to 755
+Created &lt;code&gt;sites/drupal7-standard.aegir.example.com/themes&lt;/code&gt;   [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/themes&lt;/code&gt; to 2775
+Created &lt;code&gt;sites/drupal7-standard.aegir.example.com/modules&lt;/code&gt;  [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/modules&lt;/code&gt; to 2775
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/libraries&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Created &lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt;    [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Created &lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt;  [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Generated config virtual host configuration file                       [success]
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Error validating client email ``. Please check your user account       [warning]
+email. To allow the site installation to proceed, the email
+`this.email@is.invalid` has been used instead. Please use the `login`
+link to change the site admin email to a proper valid address.
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com&lt;/code&gt; to 755
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/themes&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/modules&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Login url:                                                             [success]
+<a href='http://drupal7-standard.aegir.example.com/user/reset/1/1398294168/8UPKv9QGCKyiiYE8SJ59Od01J_WgNkvvH3UZi2AIYZs/login'>http://drupal7-standard.aegir.example.com/user/reset/1/1398294168/8UPKv9QGCKyiiYE8SJ59Od01J_WgNkvvH3UZi2AIYZs/login</a>
+Generated config Drupal sites.php file                                 [success]
+Changed permissions of /var/aegir/platforms/drupal7/sites/sites.php    [success]
+to 644
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 440
+Drupal sites directory /var/aegir/platforms/drupal7/sites is writable  [success]
+by the provisioning script
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/all/drush/drushrc.php to 644
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/all/drush/drushrc.php to 444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Task import was added to the queue. Next queue run is 23:03:36+0000,    [status]
+server time is 23:03:03+0000.
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-standard.aegir.example.com.alias.drushrc.php
+to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-standard.aegir.example.com.alias.drushrc.php
+to 440
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-standard.aegir.example.com.alias.drushrc.php
+to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-standard.aegir.example.com.alias.drushrc.php
+to 440
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to 640
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com&lt;/code&gt; to 755
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/themes&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/modules&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/files&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-standard.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Generated config Drupal sites.php file                                 [success]
+Changed permissions of /var/aegir/platforms/drupal7/sites/sites.php    [success]
+to 644
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to 640
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config virtual host configuration file                       [success]
+Client home directory for admin path /var/aegir/clients/admin exists.  [success]
+Client home directory for admin ownership of /var/aegir/clients/admin  [success]
+has been changed to aegir.
+Client home directory for admin permissions of                         [success]
+/var/aegir/clients/admin have been changed to 750.
+Client home directory for admin path /var/aegir/clients/admin is       [success]
+writable.
+Created symlink                                                        [success]
+/var/aegir/clients/admin/drupal7-standard.aegir.example.com to
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-standard.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Installing: drupal7-minimal.aegir.example.com on platform: drupal7          [ok]
+with profile: minimal.
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-minimal.aegir.example.com.alias.drushrc.php
+to 440
+Created drupal7minimalae database                                      [success]
+Created &lt;code&gt;sites/drupal7-minimal.aegir.example.com&lt;/code&gt;           [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com&lt;/code&gt; to 755
+Created &lt;code&gt;sites/drupal7-minimal.aegir.example.com/themes&lt;/code&gt;    [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/themes&lt;/code&gt; to 2775
+Created &lt;code&gt;sites/drupal7-minimal.aegir.example.com/modules&lt;/code&gt;   [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/modules&lt;/code&gt; to 2775
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/libraries&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Created &lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt;     [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Created &lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt;  [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Created &lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt;   [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt; to 2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt; to
+2770
+Created                                                                [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt;
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Generated config virtual host configuration file                       [success]
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Error validating client email ``. Please check your user account       [warning]
+email. To allow the site installation to proceed, the email
+`this.email@is.invalid` has been used instead. Please use the `login`
+link to change the site admin email to a proper valid address.
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com&lt;/code&gt; to 755
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/themes&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/modules&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Login url:                                                             [success]
+<a href='http://drupal7-minimal.aegir.example.com/user/reset/1/1398294186/EgITMTZVQoIEMz8suB9HTFcGC1BdgpJYtsgKMakifpE/login'>http://drupal7-minimal.aegir.example.com/user/reset/1/1398294186/EgITMTZVQoIEMz8suB9HTFcGC1BdgpJYtsgKMakifpE/login</a>
+Generated config Drupal sites.php file                                 [success]
+Changed permissions of /var/aegir/platforms/drupal7/sites/sites.php    [success]
+to 644
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_drupal7.alias.drushrc.php to 440
+Drupal sites directory /var/aegir/platforms/drupal7/sites is writable  [success]
+by the provisioning script
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/all/drush/drushrc.php to 644
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/all/drush/drushrc.php to 444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Task import was added to the queue. Next queue run is 23:03:36+0000,    [status]
+server time is 23:03:16+0000.
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-minimal.aegir.example.com.alias.drushrc.php
+to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-minimal.aegir.example.com.alias.drushrc.php
+to 440
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-minimal.aegir.example.com.alias.drushrc.php
+to 640
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/drupal7-minimal.aegir.example.com.alias.drushrc.php
+to 440
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to 640
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com&lt;/code&gt; to 755
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/themes&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/modules&lt;/code&gt; to 2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/libraries&lt;/code&gt; to
+2775
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt; to 2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt; to
+2770
+Changed permissions of                                                 [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt; to
+2770
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/tmp&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/images&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/pictures&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/css&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/js&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/ctools&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/imagecache&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/files/locations&lt;/code&gt;
+to www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/files&lt;/code&gt; to
+www-data
+Changed group ownership of                                             [success]
+&lt;code&gt;sites/drupal7-minimal.aegir.example.com/private/temp&lt;/code&gt; to
+www-data
+Generated config Drupal sites.php file                                 [success]
+Changed permissions of /var/aegir/platforms/drupal7/sites/sites.php    [success]
+to 644
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to 640
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to 440
+Change group ownership of                                              [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/settings.php
+to www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config virtual host configuration file                       [success]
+Client home directory for admin path /var/aegir/clients/admin exists.  [success]
+Client home directory for admin ownership of /var/aegir/clients/admin  [success]
+has been changed to aegir.
+Client home directory for admin permissions of                         [success]
+/var/aegir/clients/admin have been changed to 750.
+Client home directory for admin path /var/aegir/clients/admin is       [success]
+writable.
+Created symlink                                                        [success]
+/var/aegir/clients/admin/drupal7-minimal.aegir.example.com to
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 640
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/platforms/drupal7/sites/drupal7-minimal.aegir.example.com/drushrc.php
+to 440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Build was aborted
+Finished: ABORTED

@@ -1,0 +1,12 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson3685141101374664239.sh
++ rm -rf hostmaster
++ git clone --branch 6.x-1.x http://git.drupal.org/project/hostmaster.git
+Cloning into hostmaster...
++ cd hostmaster
++ git tag -a 6.x-1.6 -m Add a new release tag.
++ git push origin 6.x-1.6
+error: Cannot access URL http://git.drupal.org/project/hostmaster.git/, return code 22
+fatal: git-http-push failed
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,143 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 123,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+            "branch" : [
+              {
+                "SHA1" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+            "branch" : [
+              {
+                "SHA1" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+        "branch" : [
+          {
+            "SHA1" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#123",
+  "duration" : 71282,
+  "estimatedDuration" : 62944,
+  "executor" : None,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable-xenial #123",
+  "id" : "123",
+  "keepLog" : False,
+  "number" : 123,
+  "queueId" : 2773,
+  "result" : "FAILURE",
+  "timestamp" : 1472129520137,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable-xenial/123/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/local.settings.php",
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "d40f142137843ce7a08f2045ad28f3e91c1859fb",
+        "timestamp" : 1472052811000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2762701: Additional steps to help the 2x to 3x upgrade process.\n",
+        "date" : "2016-08-24T11:33:31-0400 +0200",
+        "id" : "d40f142137843ce7a08f2045ad28f3e91c1859fb",
+        "msg" : "Issue #2762701: Additional steps to help the 2x to 3x upgrade process.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/local.settings.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+        "timestamp" : 1472053248000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2762701: Do not disable jquery_ui\n",
+        "date" : "2016-08-24T11:40:48-0400 +0200",
+        "id" : "039ee4404a08235e0d1807c77e16cf6de5c22fec",
+        "msg" : "Issue #2762701: Do not disable jquery_ui",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

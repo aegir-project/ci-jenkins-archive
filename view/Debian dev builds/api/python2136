@@ -1,0 +1,47 @@
+{
+  "_class" : "hudson.model.ListView",
+  "description" : None,
+  "jobs" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-auto",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-auto/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-2x",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-2x/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-3x",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-3x/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-3x-old-2015-10",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-3x-old-2015-10/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir3-debian-test-unstable",
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir3-debian-test-unstable-xenial",
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable-xenial/",
+      "color" : "red"
+    }
+  ],
+  "name" : "Debian dev builds",
+  "property" : [
+    
+  ],
+  "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/"
+}

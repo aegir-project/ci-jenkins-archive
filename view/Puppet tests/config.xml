@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hudson.model.ListView>
+  <name>Puppet tests</name>
+  <description>Smoke-tests for Puppet modules.</description>
+  <filterExecutors>false</filterExecutors>
+  <filterQueue>false</filterQueue>
+  <properties class="hudson.model.View$PropertyList"/>
+  <jobNames>
+    <comparator class="hudson.util.CaseInsensitiveComparator"/>
+    <string>P Aegir Puppet Module smoke-test</string>
+    <string>P Drush Puppet Module smoke-test</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir2-backports</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir2-dev</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush7</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8</string>
+    <string>P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev</string>
+  </jobNames>
+  <jobFilters/>
+  <columns>
+    <hudson.views.StatusColumn/>
+    <hudson.views.WeatherColumn/>
+    <hudson.views.JobColumn/>
+    <hudson.views.LastSuccessColumn/>
+    <hudson.views.LastFailureColumn/>
+    <hudson.views.LastDurationColumn/>
+    <hudson.views.BuildButtonColumn/>
+  </columns>
+  <recurse>false</recurse>
+</hudson.model.ListView>

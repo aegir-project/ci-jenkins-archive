@@ -1,0 +1,42 @@
+Started by user Antoine Beaupré
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/U aegir 6.x-1.x deb upgrade/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson4557580511338067071.sh
++ python /var/lib/jenkins/scripts/aegir_deb_upgrade.py
+Traceback (most recent call last):
+  File "/var/lib/jenkins/scripts/aegir_deb_upgrade.py", line 3, in <module>
+    from libcloud.types import Provider
+ImportError: No module named libcloud.types
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Sending e-mails to: mig@mig5.net anarcat@koumbit.org steven.jones@computerminds.co.uk
+ERROR: Unable to send message to Notifo API for username: mig5
+java.net.SocketException: Invalid argument or cannot assign requested address
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:559)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:401)
+	at com.sun.net.ssl.internal.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:123)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:82)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:127)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at hudson.plugins.notifo.Notifo.post(Notifo.java:44)
+	at hudson.plugins.notifo.NotifoNotifier.perform(NotifoNotifier.java:63)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:36)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:717)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:692)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:639)
+	at hudson.model.Run.execute(Run.java:1527)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:236)
+Finished: FAILURE

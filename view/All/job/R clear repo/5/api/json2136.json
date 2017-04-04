@@ -1,0 +1,62 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : "i am sure i want to do this"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DEBIAN_RELEASE",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#5",
+  "duration" : 1,
+  "estimatedDuration" : 2036,
+  "executor" : null,
+  "fullDisplayName" : "R clear repo #5",
+  "id" : "2013-07-17_21-31-10",
+  "keepLog" : false,
+  "number" : 5,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1374111070000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/5/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : null
+  },
+  "culprits" : [
+    
+  ]
+}

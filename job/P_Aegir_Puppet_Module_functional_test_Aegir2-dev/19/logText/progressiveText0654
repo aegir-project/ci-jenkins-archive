@@ -1,0 +1,193 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace - hudson.remoting.LocalChannel@29da6054
+Using strategy: Default
+Last Built Revision: Revision da32c2c2c641ef63d721fc7f382b981042bf7a6c (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson4977667255821788510.sh
++ ./tests/functional_tests/aegir2-dev/setup.sh
+From http://git.drupal.org/project/puppet-drush
+ * [new branch]      1.0.x      -> origin/1.0.x
+   fd308b1..5a6cf84  new        -> origin/new
+ * [new tag]         1.0.0      -> 1.0.0
+Updating fd308b1..5a6cf84
+Fast-forward
+ manifests/git.pp       |    2 +-
+ manifests/git/drush.pp |   25 ++++++++++++++++++++++---
+ 2 files changed, 23 insertions(+), 4 deletions(-)
+From http://git.drupal.org/project/puppet-aegir
+ * [new branch]      1.0.x      -> origin/1.0.x
+   da32c2c..cff6da4  new        -> origin/new
+Updating da32c2c..cff6da4
+Fast-forward
+ .gitignore                                     |    1 +
+ manifests/mysql.pp                             |    5 ++-
+ tests/functional_tests/matrix.deb/Vagrantfile  |   31 ++++++++++++++++++++++
+ tests/functional_tests/matrix.deb/nodes.pp     |   14 ++++++++++
+ tests/functional_tests/matrix.deb/run-tests.sh |   16 +++++++++++
+ tests/functional_tests/matrix.deb/setup.sh     |   33 ++++++++++++++++++++++++
+ 6 files changed, 98 insertions(+), 2 deletions(-)
+ create mode 100644 tests/functional_tests/matrix.deb/Vagrantfile
+ create mode 100644 tests/functional_tests/matrix.deb/nodes.pp
+ create mode 100755 tests/functional_tests/matrix.deb/run-tests.sh
+ create mode 100755 tests/functional_tests/matrix.deb/setup.sh
+[workspace] $ /bin/sh -xe /tmp/hudson7894948713227542712.sh
++ ./tests/functional_tests/aegir2-dev/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.30
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Setting host name...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- apt_cache: /var/cache/apt/archives
+[default] -- manifests: /tmp/vagrant-puppet/manifests
+[default] -- v-pp-m0: /tmp/vagrant-puppet/modules-0
+[default] Running provisioner: Vagrant::Provisioners::Puppet...
+[default] Running Puppet with /tmp/vagrant-puppet/manifests/nodes.pp...
+stdin: is not a tty
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Package[git]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Drush::Git[https://github.com/drush-ops/drush.git]/Exec[drush-clone-repo:https://github.com/drush-ops/drush.git]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Drush::Git[https://github.com/drush-ops/drush.git]/Exec[drush-checkout-ref:https://github.com/drush-ops/drush.git]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/File[symlink drush]/ensure: created[0m
+
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Package[php5-cli]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Exec[Install composer]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Exec[Make Composer globally executable]/returns: executed successfully[0m
+[1;35merr: /Stage[main]/Drush::Git::Drush/Exec[Install Drush dependencies]/returns: change from notrun to 0 failed: composer install returned 1 instead of one of [0] at /tmp/vagrant-puppet/modules-0/drush/manifests/git/drush.pp:47[0m
+
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Exec[first drush run]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Drush::Git::Drush/Exec[first drush run]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Exec[first drush run]: Triggered 'refresh' from 1 events[0m
+[0;36mnotice: /Stage[main]/Aegir::Dev/File[/etc/sudoers.d/aegir]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+[0;33mwarning: /Stage[main]/Aegir::Dev/File[/etc/sudoers.d/aegir]: Skipping because of failed dependencies[0m
+[0;36mnotice: /Stage[main]/Aegir::Dev/Group[aegir]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Group[aegir]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Exec[aegir_dev_update_apt]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Exec[aegir_dev_update_apt]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Package[mysql-server]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Package[mysql-server]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Exec[mysql_secure_installation]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Exec[mysql_secure_installation]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-mysql]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-mysql]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-gd]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-gd]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[php5]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[postfix]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[postfix]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[sudo]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[sudo]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[unzip]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[unzip]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Package[apache2]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Package[apache2]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/User[aegir]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/User[aegir]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/File[/var/aegir]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/File[/var/aegir]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/File[/etc/apache2/conf.d/aegir.conf]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/File[/etc/apache2/conf.d/aegir.conf]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Exec[Enable mod-rewrite]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Exec[Enable mod-rewrite]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev::Dependencies/Package[rsync]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev::Dependencies/Package[rsync]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-clone-repo:Install provision]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-clone-repo:Install provision]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-checkout-ref:Install provision]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-checkout-ref:Install provision]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush/provision]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush/provision]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Drush::Run[cache-clear drush]/Exec[drush-run:cache-clear drush]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Drush::Run[cache-clear drush]/Exec[drush-run:cache-clear drush]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Drush::Run[hostmaster-install]/Exec[drush-run:hostmaster-install]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Drush::Run[hostmaster-install]/Exec[drush-run:hostmaster-install]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Exec[aegir-dev login]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Exec[aegir-dev login]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/File[queue daemon init script]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/File[queue daemon init script]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Dev/Service[hosting-queued]: Dependency Exec[Install Drush dependencies] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir::Dev/Service[hosting-queued]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: Finished catalog run in 35.90 seconds[0m
+
+No passwd entry for user 'aegir'
+'provision-tests-run' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

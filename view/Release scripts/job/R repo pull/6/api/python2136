@@ -1,0 +1,67 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CHANNEL",
+          "value" : "stable"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : "iamsureiwanttodothis"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION2",
+          "value" : "thiswillreleasecodeontootherpeoplescomputers"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#6",
+  "duration" : 1222,
+  "estimatedDuration" : 196,
+  "executor" : None,
+  "fullDisplayName" : "R repo pull #6",
+  "id" : "2012-05-16_21-06-17",
+  "keepLog" : False,
+  "number" : 6,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1337216777000,
+  "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20repo%20pull/6/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

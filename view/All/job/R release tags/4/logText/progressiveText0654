@@ -1,0 +1,80 @@
+Started by user Steven Jones
+Checkout:workspace / /var/lib/jenkins/jobs/R release tags/workspace - hudson.remoting.LocalChannel@5128b9bc
+Using strategy: Default
+Last Built Revision: Revision 70e0672a9143de77a3a37d0c30b76b24315430c2 (hostmaster/ssl)
+Checkout:workspace / /var/lib/jenkins/jobs/R release tags/workspace - hudson.remoting.LocalChannel@5128b9bc
+Cloning the remote Git repository
+Cloning repository hostmaster
+Fetching upstream changes from http://git.drupal.org/project/hostmaster.git
+Fetching upstream changes from http://git.drupal.org/project/provision.git
+Seen branch in repository hostmaster/5.x
+Seen branch in repository hostmaster/599758_edit_main_site
+Seen branch in repository hostmaster/6.x-1.x
+Seen branch in repository hostmaster/6.x-2.x
+Seen branch in repository hostmaster/640952_client_preview
+Seen branch in repository hostmaster/7.x-2.x
+Seen branch in repository hostmaster/HEAD
+Seen branch in repository hostmaster/dev-1256508-delete-context-aliases
+Seen branch in repository hostmaster/dev-darthsteven-performance-fixes
+Seen branch in repository hostmaster/dev-dns
+Seen branch in repository hostmaster/dev-features
+Seen branch in repository hostmaster/dev-headless_install
+Seen branch in repository hostmaster/dev-log_directory
+Seen branch in repository hostmaster/dev-migrate_aliases
+Seen branch in repository hostmaster/dev-multiserver-install
+Seen branch in repository hostmaster/dev-newsiteform
+Seen branch in repository hostmaster/dev-nginx
+Seen branch in repository hostmaster/dev-platform_management
+Seen branch in repository hostmaster/dev-ports
+Seen branch in repository hostmaster/dev-purgebackup
+Seen branch in repository hostmaster/dev-refactor-client-962330
+Seen branch in repository hostmaster/dev-relationships
+Seen branch in repository hostmaster/dev-restore
+Seen branch in repository hostmaster/dev-server_nodetype
+Seen branch in repository hostmaster/dev-services
+Seen branch in repository hostmaster/dev-site_rename
+Seen branch in repository hostmaster/dev-ssl
+Seen branch in repository hostmaster/dev/1299508-version-info
+Seen branch in repository hostmaster/dev_dns
+Seen branch in repository hostmaster/prod-koumbit
+Seen branch in repository hostmaster/ssl
+Seen branch in repository provision/6.x-1.x
+Seen branch in repository provision/6.x-2.x
+Seen branch in repository provision/7.x-2.x
+Seen branch in repository provision/debian
+Seen branch in repository provision/dev-dns
+Seen branch in repository provision/dev-dns_alias_records-1074966
+Seen branch in repository provision/dev-drupal-8
+Seen branch in repository provision/dev-envobject
+Seen branch in repository provision/dev-koumbit
+Seen branch in repository provision/dev-log_directory
+Seen branch in repository provision/dev-migrate_aliases
+Seen branch in repository provision/dev-multiserver-install
+Seen branch in repository provision/dev-newhooks
+Seen branch in repository provision/dev-nginx
+Seen branch in repository provision/dev-noreg-mail-336068
+Seen branch in repository provision/dev-platform_management
+Seen branch in repository provision/dev-ports
+Seen branch in repository provision/dev-purgebackup
+Seen branch in repository provision/dev-restore
+Seen branch in repository provision/dev-services
+Seen branch in repository provision/dev-simplerinstaller
+Seen branch in repository provision/dev-site_rename
+Seen branch in repository provision/dev-ssl
+Seen branch in repository provision/dev-ssl-chained-1062168
+Seen branch in repository provision/dev-wget-d7-cron-1090678
+Seen branch in repository provision/dev/1194676-jenkins-tests
+Seen branch in repository provision/dev/1318374-autoloader
+Seen branch in repository provision/dev_716166_apache_conf
+Seen branch in repository provision/dev_dns
+Seen branch in repository provision/dev_server_verify
+Seen branch in repository provision/prod-koumbit
+Seen branch in repository provision/ssl
+Seen branch in repository provision/upstream
+Commencing build of Revision 70e0672a9143de77a3a37d0c30b76b24315430c2 (hostmaster/ssl)
+Checking out Revision 70e0672a9143de77a3a37d0c30b76b24315430c2 (hostmaster/ssl)
+[workspace] $ /bin/sh -xe /tmp/hudson1997208376686248437.sh
++ git checkout --track hostmaster/6.x-1.x
+fatal: git checkout: branch 6.x-1.x already exists
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,154 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 165,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+            "branch" : [
+              {
+                "SHA1" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+            "branch" : [
+              {
+                "SHA1" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+        "branch" : [
+          {
+            "SHA1" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#165",
+  "duration" : 892042,
+  "estimatedDuration" : 188500,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #165",
+  "id" : "2015-05-09_01-47-26",
+  "keepLog" : false,
+  "number" : 165,
+  "queueId" : -1,
+  "result" : "ABORTED",
+  "timestamp" : 1431150446000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/165/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/run-tests.sh"
+        ],
+        "commitId" : "e80b4b3526b90a8d46a924e11e3dd5e5b3a4cfed",
+        "timestamp" : 1431125250000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Stop the hosting-queued service prior to running tests.\n",
+        "date" : "2015-05-08T18:47:30-0400 +0000",
+        "id" : "e80b4b3526b90a8d46a924e11e3dd5e5b3a4cfed",
+        "msg" : "Stop the hosting-queued service prior to running tests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/run-tests.sh"
+        ],
+        "commitId" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+        "timestamp" : 1431149205000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"Stop the hosting-queued service prior to running tests.\"\n\nThis reverts commit e80b4b3526b90a8d46a924e11e3dd5e5b3a4cfed.\n",
+        "date" : "2015-05-09T01:26:45-0400 +0000",
+        "id" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+        "msg" : "Revert \"Stop the hosting-queued service prior to running tests.\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

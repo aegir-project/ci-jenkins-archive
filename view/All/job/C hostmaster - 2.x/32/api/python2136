@@ -1,0 +1,313 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 32,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+            "branch" : [
+              {
+                "SHA1" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+            "branch" : [
+              {
+                "SHA1" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+        "branch" : [
+          {
+            "SHA1" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#32",
+  "duration" : 27090,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #32",
+  "id" : "2012-06-29_19-01-22",
+  "keepLog" : False,
+  "number" : 32,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1341010882000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/32/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "c2aabc23a698cabde4eec248355a7915669f4fb8",
+        "timestamp" : 1340854249000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "run the daemon niced\n\nthis is to reduce load when heavy backup or migrate tasks are run by\nthe queue daemon. the NICE value is customizable in /etc/default/hosting-queued\n",
+        "date" : "2012-06-27T23:30:49-0400 -0400",
+        "id" : "c2aabc23a698cabde4eec248355a7915669f4fb8",
+        "msg" : "run the daemon niced",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "931baceea1c5caca31a01aee4437a6181a5f13e8",
+        "timestamp" : 1340908188000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "implement reload command, which sends a sighup to the daemon\n",
+        "date" : "2012-06-28T14:29:48-0400 -0400",
+        "id" : "931baceea1c5caca31a01aee4437a6181a5f13e8",
+        "msg" : "implement reload command, which sends a sighup to the daemon",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "f939d92ef3c49e1603651c2ad966267bb76e835b",
+        "timestamp" : 1340908266000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "remove useless comment\n",
+        "date" : "2012-06-28T14:31:06-0400 -0400",
+        "id" : "f939d92ef3c49e1603651c2ad966267bb76e835b",
+        "msg" : "remove useless comment",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "09b952012d29861a56285294b5b3dad94e3295a2",
+        "timestamp" : 1340908375000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Revert \"remove useless comment\"\n\nThis reverts commit f939d92ef3c49e1603651c2ad966267bb76e835b.\n",
+        "date" : "2012-06-28T14:32:55-0400 -0400",
+        "id" : "09b952012d29861a56285294b5b3dad94e3295a2",
+        "msg" : "Revert \"remove useless comment\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "2efcdc52c1a3351cafe81dae958952e08d3f782f",
+        "timestamp" : 1340911406000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "check the pidfile instead of the process name in status\n",
+        "date" : "2012-06-28T15:23:26-0400 -0400",
+        "id" : "2efcdc52c1a3351cafe81dae958952e08d3f782f",
+        "msg" : "check the pidfile instead of the process name in status",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/README.txt",
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "25735cc0323ebcfeb1fc0785ab61eb04054befaf",
+        "timestamp" : 1340995119000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "make init script OS-agnostic, POSIX-sh compatible\n\nwe do not rely on LSB functions because Fedora doesn't support them\n\nwe can do this because the more reliable Debian init script is now\npart of the Debian package itself\n",
+        "date" : "2012-06-29T14:38:39-0400 -0400",
+        "id" : "25735cc0323ebcfeb1fc0785ab61eb04054befaf",
+        "msg" : "make init script OS-agnostic, POSIX-sh compatible",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/README.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "79263cf75aed6464aa44ff50bb9e624352995751",
+        "timestamp" : 1340995491000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix status, remove old logging message\n",
+        "date" : "2012-06-29T14:44:51-0400 -0400",
+        "id" : "79263cf75aed6464aa44ff50bb9e624352995751",
+        "msg" : "fix status, remove old logging message",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "c3e610ad7bad0fbc0a05f344786084a660bb05d7",
+        "timestamp" : 1340995778000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix logging in init script\n\nwe keep the VERBOSE variable, by default we are silent\n",
+        "date" : "2012-06-29T14:49:38-0400 -0400",
+        "id" : "c3e610ad7bad0fbc0a05f344786084a660bb05d7",
+        "msg" : "fix logging in init script",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+        "timestamp" : 1340996343000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix syntax errors, make status silent\n",
+        "date" : "2012-06-29T14:59:03-0400 -0400",
+        "id" : "527bc31d1e9bb8bba14dbdd98275072940d6cdd4",
+        "msg" : "fix syntax errors, make status silent",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

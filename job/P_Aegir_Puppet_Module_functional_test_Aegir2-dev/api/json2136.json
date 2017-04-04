@@ -1,0 +1,576 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    
+  ],
+  "description" : "",
+  "displayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev",
+  "displayNameOrNull" : null,
+  "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev",
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/",
+  "buildable" : false,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 683,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/683/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 682,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/682/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 681,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/681/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 680,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/680/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 679,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/679/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 678,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/678/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 677,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/677/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 676,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/676/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 675,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/675/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 674,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/674/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 673,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/673/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 672,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/672/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 671,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/671/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 670,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/670/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 669,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/669/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 668,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/668/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 667,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/667/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 666,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/666/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 665,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/665/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 664,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/664/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 663,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/663/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 662,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/662/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 661,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/661/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 660,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/660/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 659,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/659/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 658,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/658/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 657,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/657/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 656,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/656/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 655,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/655/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 654,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/654/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 653,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/653/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 652,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/652/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 651,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/651/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 650,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/650/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 649,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/649/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 648,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/648/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 647,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/647/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 646,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/646/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 645,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/645/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 644,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/644/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 643,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/643/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 642,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/642/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 641,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/641/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 640,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/640/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 639,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/639/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 638,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/638/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 637,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/637/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 636,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/636/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 635,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/635/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 634,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/634/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 633,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/633/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 632,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/632/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 631,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/631/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 630,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/630/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 629,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/629/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 628,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/628/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 627,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/627/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 626,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/626/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 625,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/625/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 624,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/624/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 623,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/623/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 622,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/622/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 621,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/621/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 620,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/620/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 619,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/619/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 618,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/618/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 617,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/617/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 616,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/616/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 615,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/615/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 614,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/614/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 613,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/613/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 612,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/612/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 611,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/611/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 610,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/610/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 609,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/609/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 608,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/608/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 607,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/607/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 606,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/606/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 605,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/605/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 604,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/604/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 603,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/603/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 602,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/602/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 601,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/601/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 600,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/600/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 599,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/599/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 598,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/598/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 597,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/597/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 596,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/596/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 595,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/595/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 594,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/594/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 593,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/593/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 592,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/592/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 591,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/591/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 590,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/590/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 589,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/589/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 588,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/588/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 587,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/587/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 586,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/586/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 585,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/585/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 584,
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/584/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 13,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/13/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: All recent builds failed.",
+      "iconClassName" : "icon-health-00to19",
+      "iconUrl" : "health-00to19.png",
+      "score" : 0
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 683,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/683/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 683,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/683/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 683,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/683/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 603,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/603/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 603,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/603/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 683,
+    "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/683/"
+  },
+  "nextBuildNumber" : 684,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

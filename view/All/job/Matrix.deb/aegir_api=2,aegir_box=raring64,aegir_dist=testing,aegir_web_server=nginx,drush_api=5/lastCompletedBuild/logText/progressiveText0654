@@ -1,0 +1,43 @@
+Started by upstream project "Matrix.deb" build number 13
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/testing/aegir_web_server/nginx/drush_api/5
+Checkout:5 / /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/testing/aegir_web_server/nginx/drush_api/5 - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+No change to record in branch origin/new
+[5] $ /bin/sh -xe /tmp/hudson8261937173516532010.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+Cloning into /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/testing/aegir_web_server/nginx/drush_api/5/tests/functional_tests/matrix.deb/modules/drush...
+Cloning into /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/raring64/aegir_dist/testing/aegir_web_server/nginx/drush_api/5/tests/functional_tests/matrix.deb/modules/aegir...
+[5] $ /bin/sh -xe /tmp/hudson9105108890654965255.sh
++ ./tests/functional_tests/matrix.deb/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 10%[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.28
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] Failed to connect to VM!
+Failed to connect to VM via SSH. Please verify the VM successfully booted
+by looking at the VirtualBox GUI.
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

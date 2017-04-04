@@ -1,0 +1,178 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+            "branch" : [
+              {
+                "SHA1" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+            "branch" : [
+              {
+                "SHA1" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+        "branch" : [
+          {
+            "SHA1" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#12",
+  "duration" : 24151,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #12",
+  "id" : "2012-03-06_23-01-24",
+  "keepLog" : False,
+  "number" : 12,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331092884000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/12/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.inc"
+        ],
+        "commitId" : "a3d136da20a6f93c2c619714b9732946af90a42f",
+        "timestamp" : 1331074771000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "1334210 by bart.hanssens: IPv6 support in IP checks\n",
+        "date" : "2012-03-06T17:59:31-0500 -0500",
+        "id" : "a3d136da20a6f93c2c619714b9732946af90a42f",
+        "msg" : "1334210 by bart.hanssens: IPv6 support in IP checks",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/client/hosting.feature.client.inc",
+          "modules/hosting/client/hosting_client.module"
+        ],
+        "commitId" : "687a08be2c48cb8c17e8d0a9843279653e7a0a53",
+        "timestamp" : 1331074771000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "moved feature hook to .inc\n",
+        "date" : "2012-03-06T17:59:31-0500 -0500",
+        "id" : "687a08be2c48cb8c17e8d0a9843279653e7a0a53",
+        "msg" : "moved feature hook to .inc",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/client/hosting_client.module"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/client/hosting.feature.client.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/client/hosting.feature.client.inc"
+        ],
+        "commitId" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+        "timestamp" : 1331074772000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fixed module enabling\n",
+        "date" : "2012-03-06T17:59:32-0500 -0500",
+        "id" : "3c52a5b4874cc70d5595a720a57a8afa03dd7b46",
+        "msg" : "fixed module enabling",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/client/hosting.feature.client.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

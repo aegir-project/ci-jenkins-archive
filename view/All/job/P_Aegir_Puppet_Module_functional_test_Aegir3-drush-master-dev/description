@@ -1,0 +1,3 @@
+Install Aegir 7.x-3.x using the master branch from Drush.
+
+For the definition of this test see: <a href='http://cgit.drupalcode.org/puppet-aegir/tree/tests/functional_tests/aegir3-drush-master-dev'>cgit</a>

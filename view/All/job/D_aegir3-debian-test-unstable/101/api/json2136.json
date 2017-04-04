@@ -1,0 +1,92 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 101,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+            "branch" : [
+              {
+                "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+            "branch" : [
+              {
+                "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+        "branch" : [
+          {
+            "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#101",
+  "duration" : 441611,
+  "estimatedDuration" : 1189565,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable #101",
+  "id" : "101",
+  "keepLog" : false,
+  "number" : 101,
+  "queueId" : 1801,
+  "result" : "SUCCESS",
+  "timestamp" : 1451303100501,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable/101/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

@@ -1,0 +1,37 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+Checking out Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson4405198238143045919.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Already up-to-date.
+Already up-to-date.
+[workspace] $ /bin/sh -xe /tmp/hudson6270622601824950208.sh
++ vagrant up
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.26
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] Failed to connect to VM!
+Failed to connect to VM via SSH. Please verify the VM successfully booted
+by looking at the VirtualBox GUI.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,29 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision f6be1e202de32b9ad89b2f4e67b1898200607e78 (origin/1.0.x)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision e34b86c1eec1a1530ff05a87d6965e23e774482a (origin/1.0.x)
+Checking out Revision e34b86c1eec1a1530ff05a87d6965e23e774482a (origin/1.0.x)
+[workspace] $ /bin/sh -xe /tmp/hudson5965252627465548803.sh
++ ./tests/functional_tests/aegir2-unstable/setup.sh
+Cloning into /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace/tests/functional_tests/aegir2-unstable/modules/drush...
+Cloning into /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace/tests/functional_tests/aegir2-unstable/modules/aegir...
+[workspace] $ /bin/sh -xe /tmp/hudson7546584379966785017.sh
++ ./tests/functional_tests/aegir2-unstable/run-tests.sh
+[default] Importing base box 'raring64'...
+There was an error executing the following command with VBoxManage:
+
+["import", "/var/lib/jenkins/.vagrant.d/boxes/raring64/box.ovf"]
+
+For more information on the failure, enable detailed logging with
+VAGRANT_LOG.
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

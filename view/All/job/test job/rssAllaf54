@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0"><channel><title>test job all builds</title><link>http://ci.aegirproject.org/view/All/job/test%20job/</link><description>test job all builds</description><item><title>test job #1 (stable)</title><link>http://ci.aegirproject.org/view/All/job/test%20job/1/</link><guid isPermaLink="false">tag:hudson.dev.java.net,2013:test job:2013-09-18_14-07-18</guid><pubDate>Wed, 18 Sep 2013 14:07:18 -0400</pubDate><author>jenkins@ci.aegirproject.org</author></item></channel></rss>

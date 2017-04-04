@@ -1,0 +1,108 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 85,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "d154a50ada417fca8c9997286c0eba80712fe256",
+            "branch" : [
+              {
+                "SHA1" : "d154a50ada417fca8c9997286c0eba80712fe256",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d154a50ada417fca8c9997286c0eba80712fe256",
+            "branch" : [
+              {
+                "SHA1" : "d154a50ada417fca8c9997286c0eba80712fe256",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d154a50ada417fca8c9997286c0eba80712fe256",
+        "branch" : [
+          {
+            "SHA1" : "d154a50ada417fca8c9997286c0eba80712fe256",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#85",
+  "duration" : 63663,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #85",
+  "id" : "2012-07-01_17-32-40",
+  "keepLog" : False,
+  "number" : 85,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1341178360000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/85/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

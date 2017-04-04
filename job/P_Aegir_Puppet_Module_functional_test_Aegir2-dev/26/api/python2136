@@ -1,0 +1,334 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 26,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+            "branch" : [
+              {
+                "SHA1" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+            "branch" : [
+              {
+                "SHA1" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+        "branch" : [
+          {
+            "SHA1" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#26",
+  "duration" : 38827,
+  "estimatedDuration" : 390215,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev #26",
+  "id" : "2014-06-11_08-29-08",
+  "keepLog" : False,
+  "number" : 26,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1402489748000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/26/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-unstable/run-tests.sh",
+          "tests/functional_tests/aegir2-unstable/Vagrantfile",
+          "tests/functional_tests/aegir2-unstable/provision-tests.sh",
+          "tests/functional_tests/aegir2-unstable/nodes.pp",
+          "tests/functional_tests/aegir2-unstable/setup.sh"
+        ],
+        "commitId" : "2db5b9554133fdffe049ba4b4896df87e36dda96",
+        "timestamp" : 1398290265000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add test using unstable repo.\n",
+        "date" : "2014-04-23T17:57:45-0400 -0400",
+        "id" : "2db5b9554133fdffe049ba4b4896df87e36dda96",
+        "msg" : "Add test using unstable repo.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-unstable/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-unstable/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-unstable/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-unstable/provision-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-unstable/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-unstable/Vagrantfile"
+        ],
+        "commitId" : "8357e4a36375e96ea64db9fee4fd52da0f412850",
+        "timestamp" : 1398290656000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Remove errant Vagrantfile symlink.\n",
+        "date" : "2014-04-23T18:04:16-0400 -0400",
+        "id" : "8357e4a36375e96ea64db9fee4fd52da0f412850",
+        "msg" : "Remove errant Vagrantfile symlink.",
+        "paths" : [
+          {
+            "editType" : "delete",
+            "file" : "tests/functional_tests/aegir2-unstable/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-unstable/Vagrantfile"
+        ],
+        "commitId" : "f6be1e202de32b9ad89b2f4e67b1898200607e78",
+        "timestamp" : 1398290867000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Fix Vagrantfile.\n",
+        "date" : "2014-04-23T18:07:47-0400 -0400",
+        "id" : "f6be1e202de32b9ad89b2f4e67b1898200607e78",
+        "msg" : "Fix Vagrantfile.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-unstable/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-unstable/nodes.pp"
+        ],
+        "commitId" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+        "timestamp" : 1398290988000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "fix test node.\n",
+        "date" : "2014-04-23T18:09:48-0400 -0400",
+        "id" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+        "msg" : "fix test node.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-unstable/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "153ff6137b9aef5b92c09f36799f5f8116d6369b",
+        "timestamp" : 1401450145000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Set creates option to include site dir\n",
+        "date" : "2014-05-30T07:42:25-0400 +0200",
+        "id" : "153ff6137b9aef5b92c09f36799f5f8116d6369b",
+        "msg" : "Set creates option to include site dir",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "dea11262203a77cc960073a101eddf5aceee3e4b",
+        "timestamp" : 1401450305000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2268843 by helmo: Include hosting_git by default.\n",
+        "date" : "2014-05-30T07:45:05-0400 +0200",
+        "id" : "dea11262203a77cc960073a101eddf5aceee3e4b",
+        "msg" : "Issue #2268843 by helmo: Include hosting_git by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/nodes.pp",
+          "tests/functional_tests/aegir3-dev/setup.sh",
+          "tests/functional_tests/aegir3-dev/Vagrantfile"
+        ],
+        "commitId" : "1e0be28a13d7982734839642ed18937d943a6b70",
+        "timestamp" : 1401450662000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add aegir3-dev functional test\n",
+        "date" : "2014-05-30T07:51:02-0400 +0200",
+        "id" : "1e0be28a13d7982734839642ed18937d943a6b70",
+        "msg" : "Add aegir3-dev functional test",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+        "timestamp" : 1402256631000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Allow building hostmaster platform directly.\n",
+        "date" : "2014-06-08T15:43:51-0400 -0500",
+        "id" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+        "msg" : "Allow building hostmaster platform directly.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

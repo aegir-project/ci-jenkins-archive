@@ -1,0 +1,59 @@
+{
+  "_class" : "hudson.model.ListView",
+  "description" : "Smoke-tests for Puppet modules.",
+  "jobs" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P Aegir Puppet Module smoke-test",
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P Drush Puppet Module smoke-test",
+      "url" : "http://ci.aegirproject.org/job/P%20Drush%20Puppet%20Module%20smoke-test/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2-backports",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-backports/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/",
+      "color" : "red"
+    }
+  ],
+  "name" : "Puppet tests",
+  "property" : [
+    
+  ],
+  "url" : "http://ci.aegirproject.org/"
+}

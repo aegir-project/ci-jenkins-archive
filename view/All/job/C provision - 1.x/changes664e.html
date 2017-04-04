@@ -1,0 +1,2364 @@
+
+
+
+
+  
+  <!DOCTYPE html><html>
+<!-- Mirrored from ci.aegirproject.org/view/All/job/C provision - 1.x/changes?auto_refresh=false by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 11:49:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head data-rooturl="" resURL="/static/b687cbe1" data-resurl="/static/b687cbe1">
+    
+
+    <title>C provision - 1.x Changes [Jenkins]</title><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/css/layout-common.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/css/style.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/css/color.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/css/responsive-grid.css" /><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../../../../static/b687cbe1/favicon.ico" /><link color="black" rel="mask-icon" href="../../../../images/mask-icon.svg" /><script>var isRunAsTest=false; var rootURL=""; var resURL="../../../../static/b687cbe1.html";</script><script src="../../../../static/b687cbe1/scripts/prototype.js" type="text/javascript"></script><script src="../../../../static/b687cbe1/scripts/behavior.js" type="text/javascript"></script><script src='../../../../adjuncts/b687cbe1/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="../../../../static/b687cbe1/scripts/yui/yahoo/yahoo-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/dom/dom-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/event/event-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/animation/animation-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/dragdrop/dragdrop-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/container/container-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/connection/connection-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/datasource/datasource-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/autocomplete/autocomplete-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/menu/menu-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/element/element-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/button/button-min.js"></script><script src="../../../../static/b687cbe1/scripts/yui/storage/storage-min.js"></script><script src="../../../../static/b687cbe1/scripts/hudson-behavior.js" type="text/javascript"></script><script src="../../../../static/b687cbe1/scripts/sortable.js" type="text/javascript"></script><script>crumb.init("Jenkins-Crumb", "126fd8c92f346bd6861bff564237760b");</script><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/scripts/yui/container/assets/container.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/scripts/yui/assets/skins/sam/skin.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/scripts/yui/container/assets/skins/sam/container.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/scripts/yui/button/assets/skins/sam/button.css" /><link rel="stylesheet" type="text/css" href="../../../../static/b687cbe1/scripts/yui/menu/assets/skins/sam/menu.css" /><link title="Jenkins" rel="search" type="application/opensearchdescription+xml" href="../../../../opensearch.xml" /><meta name="ROBOTS" content="INDEX,NOFOLLOW" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link title="Jenkins:C provision - 1.x (all builds)" rel="alternate" type="application/rss+xml" href="rssAll" /><link title="Jenkins:C provision - 1.x (all builds) (RSS 2.0)" rel="alternate" type="application/rss+xml" href="rssAllaf54?flavor=rss20" /><link title="Jenkins:C provision - 1.x (failed builds)" rel="alternate" type="application/rss+xml" href="rssFailed" /><link title="Jenkins:C provision - 1.x (failed builds) (RSS 2.0)" rel="alternate" type="application/rss+xml" href="rssFailedaf54?flavor=rss20" /><link title="Jenkins:C provision - 1.x (changelog)" rel="alternate" type="application/rss+xml" href="rssChangelog" /><link title="Jenkins:C provision - 1.x (changelog) (RSS 2.0)" rel="alternate" type="application/rss+xml" href="rssChangelogaf54?flavor=rss20" /><script src="../../../../static/b687cbe1/scripts/yui/cookie/cookie-min.js"></script><script src="../../../../static/b687cbe1/jsbundles/page-init.js" type="text/javascript"></script></head><body data-model-type="hudson.model.FreeStyleProject" id="jenkins" data-version="2.32.3" class="yui-skin-sam jenkins-2.32.3 two-column"><a href="#skip2content" class="skiplink">Skip to content</a><div id="page-head"><div id="header"><div class="logo"><a id="jenkins-home-link" href="../../../../index.html"><img id="jenkins-head-icon" alt="title" src="../../../../static/b687cbe1/images/headshot.png" /><img id="jenkins-name-icon" height="34" alt="title" width="139" src="../../../../static/b687cbe1/images/title.png" /></a></div><div class="login"> <a href="../../../../loginee3f.html?from=%2Fview%2FAll%2Fjob%2FC%2520provision%2520-%25201.x%2Fchanges"><b>log in</b></a></div><div class="searchbox hidden-xs"><form style="position:relative;" name="search" action="http://ci.aegirproject.org/view/All/job/C provision - 1.x/search/" class="no-json" method="get"><div id="search-box-minWidth"></div><div id="search-box-sizer"></div><div id="searchform"><input id="search-box" placeholder="search" name="q" class="has-default-text" /> <a href="http://wiki.jenkins-ci.org/display/JENKINS/Search+Box"><img style="width: 16px; height: 16px; " class="icon-help icon-sm" src="../../../../static/b687cbe1/images/16x16/help.png" /></a><div id="search-box-completion"></div><script>createSearchBox("search/index.html");</script></div></form></div></div><div id="breadcrumbBar"><tr id="top-nav"><td id="left-top-nav" colspan="2"><link rel='stylesheet' href='../../../../adjuncts/b687cbe1/lib/layout/breadcrumbs.css' type='text/css' /><script src='../../../../adjuncts/b687cbe1/lib/layout/breadcrumbs.js' type='text/javascript'></script><div class="top-sticker noedge"><div class="top-sticker-inner"><div id="right-top-nav"><div id="right-top-nav"><div class="smallfont"><a href="changescec4.html?auto_refresh=true">ENABLE AUTO REFRESH</a></div></div></div><ul id="breadcrumbs"><li class="item"><a class="model-link inside" href="../../../../index.html">Jenkins</a></li><li class="children" href="../../../../index.html"></li><li class="item"><a class=" inside" href="../../index.html">All</a></li><li class="children" href="../../index.html"></li><li class="item"><a class="model-link inside" href="index.html">C provision - 1.x</a></li><li class="children" href="index.html"></li></ul><div id="breadcrumb-menu-target"></div></div></div></td></tr></div></div><div id="page-body" class="clear"><div id="side-panel"><div id="tasks"><div class="task"><a class="task-icon-link" href="../../../../index.html"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-up icon-md" src="../../../../static/b687cbe1/images/24x24/up.png" /></a> <a class="task-link" href="../../../../index.html">Back to Dashboard</a></div><div class="task"><a class="task-icon-link" href="index.html"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-search icon-md" src="../../../../static/b687cbe1/images/24x24/search.png" /></a> <a class="task-link" href="index.html">Status</a></div><div class="task"><a class="task-icon-link" href="changes.html"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-notepad icon-md" src="../../../../static/b687cbe1/images/24x24/notepad.png" /></a> <a class="task-link" href="changes.html"><b>Changes</b></a><div class="subtasks"></div></div><div class="task"><a class="task-icon-link" href="checkstyle/index.html"><img style="width: 24px; height: 24px; margin: 2px;" alt="" src="../../../../static/b687cbe1/plugin/checkstyle/icons/checkstyle-24x24.png" /></a> <a class="task-link" href="checkstyle/index.html">Checkstyle Warnings</a></div><div class="task"><a class="task-icon-link" href="scmPollLog/index.html"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-clipboard icon-md" src="../../../../static/b687cbe1/images/24x24/clipboard.png" /></a> <a class="task-link" href="scmPollLog/index.html">Git Polling Log</a></div></div><div page-entry-newest="-9223372036854775722" id="buildHistoryPage" page-has-up="false" page-entry-oldest="-9223372036854775751" page-has-down="true"><div id="buildHistoryPageNav"><div class="nav pageOne" title="Page 1 (Newest/Latest Builds)"></div><div class="nav pageUp" title="Newer Builds"></div><div class="nav pageDown" title="Older Builds "></div></div><div id="buildHistory" class="container-fluid pane-frame track-mouse expanded"><div class="row"><div class="col-xs-24 pane-header"><a title="collapse" class="collapse" href="../D_aegir3-debian-test-unstable-xenial/index.html?paneId=buildHistory"><img style="width: 16px; height: 16px; " alt="collapse" class="icon-collapse icon-sm" src="../../../../static/b687cbe1/images/16x16/collapse.png" /></a><div style="float:right"><a href="buildTimeTrend.html">trend</a></div><div data="11.html" class="healthReport" onmouseover="this.className='healthReport hover';return true;
+        " onmouseout="this.className='healthReport';return true;"><a class="build-health-link" href="lastBuild/index.html"><img style="width: 16px; height: 16px; " alt="11%" class="icon-health-00to19 icon-sm" src="../../../../static/b687cbe1/images/16x16/health-00to19.png"/></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-00to19 icon-sm" src="../../../../static/b687cbe1/images/16x16/health-00to19.png"/></td><td>Checkstyle: 542 warnings found.</td><td align="right">11</td></tr><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="../../../../static/b687cbe1/images/16x16/health-80plus.png"/></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></div>Build History</div></div><div class="row pane-content"><table class="pane stripped"><tr class="build-search-row"><td><table><tr><td><span title="Clear" class="clear">x</span><input placeholder="find" /></td></tr></table></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775722"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="86/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="86/index.html">#86</a></div><div time="1341316054000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="86/index.html">Jul 3, 2012 7:47 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"> </div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775723"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="85/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="85/index.html">#85</a></div><div time="1341178360000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="85/index.html">Jul 1, 2012 5:32 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"> </div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775724"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="84/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="84/index.html">#84</a></div><div time="1341022604000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="84/index.html">Jun 29, 2012 10:16 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"> </div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775725"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="83/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="83/index.html">#83</a></div><div time="1341017208000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="83/index.html">Jun 29, 2012 8:46 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"> </div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775726"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="82/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="82/index.html">#82</a></div><div time="1337185827000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="82/index.html">May 16, 2012 12:30 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"> </div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775727"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="81/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="81/index.html">#81</a></div><div time="1337110229000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="81/index.html">May 15, 2012 3:30 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775728"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="80/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="80/index.html">#80</a></div><div time="1336964428000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="80/index.html">May 13, 2012 11:00 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775729"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="79/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="79/index.html">#79</a></div><div time="1336907728000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="79/index.html">May 13, 2012 7:15 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775730"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="78/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="78/index.html">#78</a></div><div time="1336905928000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="78/index.html">May 13, 2012 6:45 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775731"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="77/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="77/index.html">#77</a></div><div time="1336821327000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="77/index.html">May 12, 2012 7:15 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775732"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="76/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="76/index.html">#76</a></div><div time="1335677428000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="76/index.html">Apr 29, 2012 1:30 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775733"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="75/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="75/index.html">#75</a></div><div time="1335472238000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="75/index.html">Apr 26, 2012 4:30 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775734"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="74/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="74/index.html">#74</a></div><div time="1335470440000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="74/index.html">Apr 26, 2012 4:00 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775735"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="73/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="73/index.html">#73</a></div><div time="1335467728000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="73/index.html">Apr 26, 2012 3:15 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775736"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="72/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="72/index.html">#72</a></div><div time="1335452426000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="72/index.html">Apr 26, 2012 11:00 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775737"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="71/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="71/index.html">#71</a></div><div time="1335290427000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="71/index.html">Apr 24, 2012 2:00 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775738"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="70/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="70/index.html">#70</a></div><div time="1335284142000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="70/index.html">Apr 24, 2012 12:15 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775739"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="69/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="69/index.html">#69</a></div><div time="1334753127000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="69/index.html">Apr 18, 2012 8:45 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775740"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="68/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="68/index.html">#68</a></div><div time="1334750427000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="68/index.html">Apr 18, 2012 8:00 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775741"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="67/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="67/index.html">#67</a></div><div time="1334699128000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="67/index.html">Apr 17, 2012 5:45 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775742"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="66/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="66/index.html">#66</a></div><div time="1334604640000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="66/index.html">Apr 16, 2012 3:30 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775743"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="65/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="65/index.html">#65</a></div><div time="1334514627000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="65/index.html">Apr 15, 2012 2:30 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775744"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="64/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="64/index.html">#64</a></div><div time="1334194282000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="64/index.html">Apr 11, 2012 9:31 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775745"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="63/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="63/index.html">#63</a></div><div time="1334025066000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="63/index.html">Apr 9, 2012 10:31 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775746"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="62/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="62/index.html">#62</a></div><div time="1333596668000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="62/index.html">Apr 4, 2012 11:31 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775747"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="61/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="61/index.html">#61</a></div><div time="1333053981000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="61/index.html">Mar 29, 2012 4:46 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775748"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="60/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="60/index.html">#60</a></div><div time="1332953170000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="60/index.html">Mar 28, 2012 12:46 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775749"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="59/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="59/index.html">#59</a></div><div time="1332736278000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="59/index.html">Mar 26, 2012 12:31 AM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775750"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="58/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="58/index.html">#58</a></div><div time="1332631866000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="58/index.html">Mar 24, 2012 7:31 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row  single-line" page-entry-id="-9223372036854775751"><td class="build-row-cell"><div class="pane build-name"><div class="build-icon"><a class="build-status-link" href="57/console.html"><img style="width: 16px; height: 16px; " alt="Success &gt; Console Output" class="icon-blue icon-sm" src="../../../../static/b687cbe1/images/16x16/blue.png" tooltip="Success &gt; Console Output" /></a></div><a update-parent-class=".build-row" class="tip model-link inside build-link display-name" href="57/index.html">#57</a></div><div time="1332626465000" class="pane build-details"><a update-parent-class=".build-row" class="tip model-link inside build-link" href="57/index.html">Mar 24, 2012 6:01 PM</a></div><div class="pane build-controls"><div class="middle-align build-badge"></div></div><div class="left-bar"></div></td></tr><tr class="build-row"><td colspan="3" align="right"><script>
+            function replace(a, b) {
+                  var p = a.parentNode;
+                  var next = a.nextSibling;
+                  p.removeChild(a);
+                  p.insertBefore(b,next);
+            }
+
+            function loadAllBuildHistory() {
+              // first display the "loading..." icon
+              var box = $("loadAllBuildHistory");
+              box.innerHTML = '<img alt="" src="../../../../static/b687cbe1/images/spinner.gif" />';
+
+              // then actually fetch the HTML
+              new Ajax.Request("/view/All/job/C%20provision%20-%201.x/buildHistory/all",{
+                method: "get",
+                onComplete: function(rsp,_) {
+                  
+                  var hist = $("buildHistory");
+
+                  var newhist = document.createElement('div');
+                  newhist.innerHTML = rsp.responseText;
+                  newhist.headers = hist.headers
+
+                  replace(hist, newhist);
+                  fireBuildHistoryChanged();
+                }
+            });
+            }
+          </script></td></tr></table></div><div class="row"><div class="col-xs-24 pane-footer"><span class="build-rss-links"><a class="build-rss-all-icon" href="rssAll"><img height="16" alt="Feed" width="16" src="../../../../static/b687cbe1/images/atom.gif" border="0"/></a> <a class="build-rss-all-link" href="rssAll">RSS for all</a> <a class="build-rss-failed-icon" href="rssFailed"><img height="16" alt="Feed" width="16" src="../../../../static/b687cbe1/images/atom.gif" border="0"/></a> <a class="build-rss-failed-link" href="rssFailed">RSS for failures</a></span></div></div></div></div><script defer="true">updateBuildHistory("/view/All/job/C%20provision%20-%201.x/buildHistory/ajax", 87);</script></div><div id="main-panel"><a name="skip2content"></a><h1>
+        Changes
+        </h1><h2><a href="84/changes.html">#84
+            (Jun 29, 2012 10:16:44 PM)</a></h2><ol><li>1108810 - protect the complete private files directory
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="84/changes.html#d154a50ada417fca8c9997286c0eba80712fe256">detail</a></li></ol><h2><a href="82/changes.html">#82
+            (May 16, 2012 12:30:27 PM)</a></h2><ol><li>change version information for release 1.9
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="82/changes.html#6cab1605b4a1566f1572ffd2db0b79f1030d39da">detail</a></li><li>Revert &quot;change version information for release 1.9&quot;
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="82/changes.html#8f79e721fa63c74ea619f0be3d493a3f187c0191">detail</a></li></ol><h2><a href="81/changes.html">#81
+            (May 15, 2012 3:30:29 PM)</a></h2><ol><li>Fix for compatibility with Nginx 1.3.0 or newer.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="81/changes.html#9bcb2712a8902f511a23320a51c7e41fabae081e">detail</a></li></ol><h2><a href="80/changes.html">#80
+            (May 13, 2012 11:00:28 PM)</a></h2><ol><li>Issue #1555398 - ensure the master server in a Pack is given a MySQL GRANT, if it was not also @server_master
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="80/changes.html#e374fa2e500cd82b8b1482450212058d2b4a87b4">detail</a></li></ol><h2><a href="79/changes.html">#79
+            (May 13, 2012 7:15:28 AM)</a></h2><ol><li>Add more verbosity to the notorious &#039;failed to fail&#039; error, pointing to an item in the FAQ.
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="79/changes.html#fcc7acd1de92311b2db8d0ddfeda98a136821f11">detail</a></li></ol><h2><a href="78/changes.html">#78
+            (May 13, 2012 6:45:28 AM)</a></h2><ol><li>Issue #1573004 by cafuego - provision-migrate fails with &#039;Dummy connection failed to fail: mysql: option -e&#039; requires an argument on Debian Wheezy
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="78/changes.html#6fcc6288b05f3252279685bc2d5371dd09a1941f">detail</a></li></ol><h2><a href="77/changes.html">#77
+            (May 12, 2012 7:15:27 AM)</a></h2><ol><li>Issue #1573182 - Verifying a platform should abort if it can&#039;t be bootstrapped
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="77/changes.html#9c2900cab02a2fff0bc806733c2b2c0570d6302c">detail</a></li></ol><h2><a href="76/changes.html">#76
+            (Apr 29, 2012 1:30:28 AM)</a></h2><ol><li>Issue #1552228 by omega8cc - Nginx configuration for limit_conn should be compatible with version &gt;= 1.1.8
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="76/changes.html#0a4d131ed957583313d5849ac67682dc47f9def9">detail</a></li></ol><h2><a href="75/changes.html">#75
+            (Apr 26, 2012 4:30:38 PM)</a></h2><ol><li>Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="75/changes.html#f61e716dd907731d5358f6dcecfc474da03054dc">detail</a></li></ol><h2><a href="74/changes.html">#74
+            (Apr 26, 2012 4:00:40 PM)</a></h2><ol><li>Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="74/changes.html#59ec3f12af9c2eb5d33e0f7a540105c108b35e60">detail</a></li></ol><h2><a href="73/changes.html">#73
+            (Apr 26, 2012 3:15:28 PM)</a></h2><ol><li>Issue #1504120 by Steven Jones: Fixed Script user of remote servers is ignored.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="73/changes.html#6ee1481d91c91f6a8f80b4bde5c4c94a1d049ab1">detail</a></li></ol><h2><a href="72/changes.html">#72
+            (Apr 26, 2012 11:00:26 AM)</a></h2><ol><li>Issue #1205956 by helmo - Document the Provision API
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="72/changes.html#24fdd2912613490bf80fcee6dae33975b4656918">detail</a></li></ol><h2><a href="71/changes.html">#71
+            (Apr 24, 2012 2:00:27 PM)</a></h2><ol><li>Only errors 500 and 503 are supported in fastcgi_cache_use_stale (Nginx).
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="71/changes.html#64d7194c80bdc92de21af128f21198fe3a12de93">detail</a></li></ol><h2><a href="70/changes.html">#70
+            (Apr 24, 2012 12:15:42 PM)</a></h2><ol><li>Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 5s only for 403 error.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="70/changes.html#02f54f6b6fe4d58e19e5f6cf76124c41f76407a2">detail</a></li><li>Use separate cache for spiders/bots (Nginx).
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="70/changes.html#986ffb0e5b8abe1f4711e3e377122169c78e5571">detail</a></li><li>Do not cache http auth requests. Use compact microcaching config (Nginx).
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="70/changes.html#55bb97edfa6569bf6fd23a991a3629b09b25628b">detail</a></li><li>Issue #1544144 by thsutton - Use $server_name instead of $host in all sites/ paths to avoid broken URLs to static files for domain aliases in D7 (Nginx).
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="70/changes.html#2fc157de8a7e760d134926855c747aaa0d1ab0b9">detail</a></li></ol><h2><a href="69/changes.html">#69
+            (Apr 18, 2012 8:45:27 AM)</a></h2><ol><li>Issue #1537872 by Steven Jones: Fixed Release script reverts debian changelog.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="69/changes.html#499ee67ea8dc5694ffa05978979c71d778ff6566">detail</a></li><li>change version information for release 1.8
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="69/changes.html#0a4d405ce8208f11a381483ccb69bc08df8fe693">detail</a></li><li>Revert &quot;change version information for release 1.8&quot;
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="69/changes.html#2a3884432fbe789515ad0b2784cbd3e59686ab16">detail</a></li></ol><h2><a href="68/changes.html">#68
+            (Apr 18, 2012 8:00:27 AM)</a></h2><ol><li>Partial revert &quot;Revert &quot;change version information for release 1.7&quot;&quot;
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="68/changes.html#64966320255087dd1d52e1763d65030af6a71abb">detail</a></li></ol><h2><a href="67/changes.html">#67
+            (Apr 17, 2012 5:45:28 PM)</a></h2><ol><li>Remove duplicate error_log directive in the Nginx config.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="67/changes.html#0e3d10f198b8464e20acc6aad0806b9e5152d474">detail</a></li><li>Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="67/changes.html#a104712466f528111414b00fc631c406a7dc2ae1">detail</a></li></ol><h2><a href="66/changes.html">#66
+            (Apr 16, 2012 3:30:40 PM)</a></h2><ol><li>Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="66/changes.html#a2655279286d12d882811cf67991c757c4d8d3cd">detail</a></li></ol><h2><a href="65/changes.html">#65
+            (Apr 15, 2012 2:30:27 PM)</a></h2><ol><li>Issue #1472460 by dmiric and #1524738 by flexgrip - Nginx configuration denies HTTP request methods: PUT, DELETE and OPTIONS and it breaks services/REST.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="65/changes.html#a0ad4ca2ab1c46a062465cf5a81a4c4be6ce3616">detail</a></li><li>Issue #1534306 by omega8cc - Duplicate directives in the Nginx config cause issues with recommended Dotdeb Nginx build.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="65/changes.html#abaa275343098b85e2118028d39948f7a9556e09">detail</a></li></ol><h2><a href="64/changes.html">#64
+            (Apr 11, 2012 9:31:22 PM)</a></h2><ol><li>Issue #1528996 and #1527852 by PlayfulWolf - Nginx microcaching shouldn&#039;t cache any upstream errors.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="64/changes.html#2f555585299ac2b476522c9b35848ce2f399ee0c">detail</a></li></ol><h2><a href="63/changes.html">#63
+            (Apr 9, 2012 10:31:06 PM)</a></h2><ol><li>Use higher values for limit_conn to avoid issues when there are many files included in the page and to better support advagg module.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="63/changes.html#e2c2ac10b37a838c2c5668799aeb1a889457bb46">detail</a></li><li>Update description for limit_conn in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="63/changes.html#dfd6a12266ac112f7a059f3122260f0903bd5b87">detail</a></li><li>Issue #1524860 by omega8cc - Empty response 444 in Nginx confuses search bots.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="63/changes.html#f40bcbb272ce5ed1bc3ff26eb981bb6b5bf542c8">detail</a></li></ol><h2><a href="62/changes.html">#62
+            (Apr 4, 2012 11:31:08 PM)</a></h2><ol><li>Issue #1515762 by omega8cc - Nginx microcaching should skip all known AJAX requests.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="62/changes.html#e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f">detail</a></li></ol><h2><a href="61/changes.html">#61
+            (Mar 29, 2012 4:46:21 PM)</a></h2><ol><li>Provide MOBILE_DEVICE value detected/set by Nginx as accessible for PHP-FPM/Drupal backend.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="61/changes.html#ed9bb0e2b481ab2188a0bcedd35ca9e8db2941da">detail</a></li></ol><h2><a href="60/changes.html">#60
+            (Mar 28, 2012 12:46:10 PM)</a></h2><ol><li>Issue #1505370 by tribe_of_dan - Conflict between Mime Type and Document Type in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="60/changes.html#56451d1f32a6ec669847a609a44063f13506af4b">detail</a></li></ol><h2><a href="59/changes.html">#59
+            (Mar 26, 2012 12:31:18 AM)</a></h2><ol><li>Issue #1498774 by jm.federico - Set higher value for map_hash_bucket_size in Nginx by default.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="59/changes.html#11d42bf85eafb01193242bc11fdf00eb2ef29df6">detail</a></li></ol><h2><a href="58/changes.html">#58
+            (Mar 24, 2012 7:31:06 PM)</a></h2><ol><li>Issue #1387394 by Steven Jones: Fixed deleting a site doesn&#039;t delete soft links.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="58/changes.html#56d8d86fc83d680b17a1a088a7229063c243072e">detail</a></li><li>Issue #1283854 by GuyPaddock, Steven Jones: Fixed Use of parameters in provision_file()-&gt;symlink() is incorrect.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="58/changes.html#c0cd7d1597e51c3282a8be4804a84f2f76e41bad">detail</a></li></ol><h2><a href="57/changes.html">#57
+            (Mar 24, 2012 6:01:05 PM)</a></h2><ol><li>Use correct X-Engine header in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="57/changes.html#aafe175fb841d20d43110ffd20398c4e91c1dd2e">detail</a></li></ol><h2><a href="56/changes.html">#56
+            (Mar 24, 2012 12:16:23 PM)</a></h2><ol><li>Issue #1387394 by Steven Jones: Fixed deleting a site doesn&#039;t delete soft links.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="56/changes.html#72c97aa86636d7978d88d8ea1e4a12cc1661822c">detail</a></li></ol><h2><a href="55/changes.html">#55
+            (Mar 24, 2012 12:01:18 PM)</a></h2><ol><li>Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="55/changes.html#6530e8c6b4d0d1a7244095b03758973cbdf77044">detail</a></li></ol><h2><a href="54/changes.html">#54
+            (Mar 22, 2012 2:46:10 PM)</a></h2><ol><li>Block aggressive crawler SWEBot in the main Nginx config.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="54/changes.html#ab62f77322eac6dc2de36f367d8ce3b51262aec5">detail</a></li><li>Send all known bots to $args free URLs in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="54/changes.html#2c54534fdf8a606c3681b3b7ea894826b398f197">detail</a></li><li>Issue #1478984 by obrienmd - Add Access-Control-Allow-Origin header with wildcard for static files in Nginx, also to support cdn-delivered @font-face.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="54/changes.html#503e9ca463d3d4213f1730cdd2388ed819b5f351">detail</a></li><li>Block Morfeus crawler in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="54/changes.html#b1497b6742da2b59cbb867e820a8e64f2f2af851">detail</a></li><li>Deny all known crawlers on aggregator URI in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="54/changes.html#24545454212e0e6741c36cbe77dd03e93ec72b57">detail</a></li><li>Drupal 8 compatibility in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="54/changes.html#631bfc7c7235144bad73cb9635c66b2339ae45da">detail</a></li></ol><h2><a href="53/changes.html">#53
+            (Mar 16, 2012 10:01:05 PM)</a></h2><ol><li>Issue #1486298 by Steven Jones: Fixed End of install process is messy.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="53/changes.html#7c553d9e5ad3028be4fdc408453c4d3c769ba3fc">detail</a></li></ol><h2><a href="52/changes.html">#52
+            (Mar 8, 2012 9:45:33 PM)</a></h2><ol><li>Revert &quot;change version information for release 1.7&quot;
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="52/changes.html#745f476c8ed5c9d13fff173dea212dbbe111aa1f">detail</a></li></ol><h2><a href="51/changes.html">#51
+            (Mar 7, 2012 7:30:33 PM)</a></h2><ol><li>Add patch from #1062168 comment 6.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="51/changes.html#89877cd22e16b8263c999a8dbce85e4d6a40fc04">detail</a></li><li>Fix up the previous commit.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="51/changes.html#46cacfbc6f8d78cedcc429330aa96aff756d48d2">detail</a></li><li>change version information for release 1.7
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="51/changes.html#b147994cc20c287691373a74e6f9b2c339c3ffcb">detail</a></li></ol><h2><a href="50/changes.html">#50
+            (Mar 6, 2012 11:46:27 PM)</a></h2><ol><li>hardcode 6.x in release.sh to avoid confusion
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="50/changes.html#2d30800a71b05a2c05e53db400a06ca91a6593f7">detail</a></li><li>change version information for release 1.7
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="50/changes.html#37b2844543f0bbf498719b037addc8457b87fa1a">detail</a></li><li>Revert &quot;change version information for release 1.7&quot;
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="50/changes.html#63a7fbfe97bc00eecbe409254be97e9ae8916707">detail</a></li></ol><h2><a href="49/changes.html">#49
+            (Mar 6, 2012 10:46:24 PM)</a></h2><ol><li>resurrect the debian branch
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8f7df1c8334674979263935c9ebb9874e39c8f20">detail</a></li><li>make mysql-server recommended
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2380d4b7d4dc4d944762afc96c3b3f53c8ef8ac0">detail</a></li><li>add miguel, update years
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c00fe2a9f4c223dd713cae6070585cd9e2c6edc1">detail</a></li><li>don&#039;t install apache.conf, install docs and examples properly, install files properly
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ff6cbe6fd06780323052b4cfba85095fa14df143">detail</a></li><li>files moved
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#b814740ece2b227308fed640f8a595c9b191fd13">detail</a></li><li>rewrite installer
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#7a212a91130c277ba37f433cbbfb7d1cd3aea5b2">detail</a></li><li>update readme file
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d6a55afa1d45d8c09af21e99a0b8921c561d2f9c">detail</a></li><li>update TODO
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#92db25593ea2716939e319114a70e55e9c43a8b5">detail</a></li><li>fix aegir location
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#23e411c6dda6ff0fbf2d6da3728cd7808b2e40a3">detail</a></li><li>update changelog with new release and latest change
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a79eb7940ab70fe4c9c7add113a81e02282852d5">detail</a></li><li>add a few debconf questions
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#1d30c56fa0c7c9c2602c5fd15ca1d2976a1a1f61">detail</a></li><li>fix makefile whitespace and version numbers
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2fb76aec56ff6d87ba01b7ba243171c8afe4bdb7">detail</a></li><li>head towards a release
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8b9a8bc16ac96f02d6b51ef1d063d85087624f87">detail</a></li><li>fix docs and examples
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#39e111cc06d707a353f43352d8fdd807777f8b94">detail</a></li><li>update with the new violations of FHS
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#adfcc78f293c4178d7a52e882f47f93271445507">detail</a></li><li>add missing debhelper depends
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2d7d0c46791b0fc97fa48d41c6c2db1ad5fa05a2">detail</a></li><li>forgot to source debconf
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f79067e950db3386c5987a1cb9fa873f6f6b3d25">detail</a></li><li>fix ucf call sequence
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#12a5207a0f5bdf0c25c7e41074240381b472787e">detail</a></li><li>add debugging
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#1a80425fd12cf9d02f5b127d1e7ff27212d11728">detail</a></li><li>fix templates and config
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#902839bb6e23f739792b12aed11e09f614a959e4">detail</a></li><li>handle existing manual provision install gracefully
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#442bb488cba1f577c2d7ed98f70a041f1c53456a">detail</a></li><li>add minimal rules file
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6e79f170b9bb7e6ed7c372bf6e2ad4249f3344ce">detail</a></li><li>default the site name to the FQDN
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#bc578a2ee761d830e8d5bedcf197f2aea5840e5d">detail</a></li><li>prompt for the db user and password, pass that insecurely to the backend
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ec09f60b30f65428dfe8780c49da26bfc42794c2">detail</a></li><li>don&#039;t bother the user with prompts, since we already do this in debconf
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6b7d7ac7d289ead3af0dd95b75699f89a622f28e">detail</a></li><li>install the right version of the frontend
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8d777a66f923762c52e7325b0fcdbe094493d968">detail</a></li><li>have the makefile path be relative to the install script
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#fd54530b6c90b6b546c24194a9a9e4e15a6ae661">detail</a></li><li>fix typo
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2a6183c9fa5611e1ea7ebddc90d86fb4017bb0b4">detail</a></li><li>fix permissions on sudoers file to please sudo
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#38e5d3efe43bf89fdf2e41d3d908d1564c2c73ab">detail</a></li><li>configure apache properly after installation, fix permissions
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d29d3471b44be0041baae38d1cb160d638eaeb97">detail</a></li><li>update the todo
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#040faa7e741c099e08eaba4c6f46e587b8453da1">detail</a></li><li>try to set the password as seen if we successfully installed
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#62ed4cfd49c520809150dc122fc22f57ed318274">detail</a></li><li>fix case where aegir config already exists
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ffb362475545ba8d64f00e01a3c62fd3a71196ee">detail</a></li><li>try to support upgrades
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#be05d089d1d68bad62dfb5fa5b48fbb7aadec799">detail</a></li><li>mark the mysql pass as seen in any case of success
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ac1ee4f3ba2ccd108f643644df4ad6f67e7ab22e">detail</a></li><li>disable debugging, this works well now
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f8cbcc9caec855f5d51621bce0f32936386fa227">detail</a></li><li>we&#039;re checking for existing installs and are not prompting for
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#59ffd8dbafa15321cf1d3a477255022a52ab22d8">detail</a></li><li>improve changelog
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#902771817db08fab2bb094179884a85940823b95">detail</a></li><li>fix old platform parsing regex
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#603d14edc61e8652e690a068cc25b22a4ab12bcc">detail</a></li><li>explain how to migrate to this package
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#51ca7af0f1e50d9b078a83fbba5c29b164c9a743">detail</a></li><li>don&#039;t ask questions if there&#039;s already an install
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a941fab48649e30cad7100c7d192f028f7d12711">detail</a></li><li>don&#039;t ask questions on upgrade
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d4ea4e3442c1721aabf8febd6cd5d2f75724790c">detail</a></li><li>upgrades work!
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a8f5e59d3f837621024df68e811e140014ae4116">detail</a></li><li>more documentation on the next steps
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#935969d44f35d14bc2e6ce814dbb780cf0098893">detail</a></li><li>add a command to parse --backend output
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8a158fd6bd0d1da65c3ee62a3fcaffbc8410b570">detail</a></li><li>pass the mysql root password security through STDIN
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ca169f43f3cfe32b2f3c66197d07f4c38bbb22c6">detail</a></li><li>always prompt for the password on reinstalls, give feedback to user
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#bc4487ae3e024a0dbd3b155f39cb6027e51f70c3">detail</a></li><li>make the password priority high so it&#039;s asked in most cases
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#b04aa188622f1b977f95e0df23447a6959817e45">detail</a></li><li>forget the value of the db password in config
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2a5016e49d92ceaade9f64ad0567b08b52927ec5">detail</a></li><li>clarify information given to the user on existing installs
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#72c5af7c1c41a551f75a8bd9f04cf87b38f7bbfc">detail</a></li><li>describe required work for safe_shell_exec()
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f89cbbc6d3c37868da6444b8992f40acb23d330d">detail</a></li><li>initialise $pipes array for clarity
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#9a57dc11d7c9ad8c58ca23a6f713a56bf8f70353">detail</a></li><li>don&#039;t chown non-existent dirs
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#98809b85f652a8a1642e2819eda7d9b516feefd3">detail</a></li><li>do not Depend on later sudo
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ab1f8c99d6957361df082db3aef91a553f99cfb7">detail</a></li><li>update changelog for beta2
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#e55e7e43402e2c56a0d604c7e98af5ba660a6f09">detail</a></li><li>specify source format
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#449b53d3c0e331dbd28657bccb509cd63306f52f">detail</a></li><li>fix typo
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d0eed086296cc97f04d39c343bac2a800c4713d0">detail</a></li><li>fix version parsing
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0b372d1b3387b35a1ed80b4ae9a4f040417cea44">detail</a></li><li>add info file
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#28fc1a9473657c069d84b5fbc9e487f05541cb0a">detail</a></li><li>fix version parsing
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#16ab877390bcae0c3031e4e088bf998fe0d7f447">detail</a></li><li>check if the platform is really the same, don&#039;t just take the existence of the directory for sufficient
+
+                —
+
+                <a href="../../../../user/anarcat/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#45dff532d89f213ba89e055b776b7f4a6c65353f">detail</a></li><li>update install.sh.txt to fetch the right version of provision
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="49/changes.html#9574061ed7687f366e9c9649946d9439fee337f3">detail</a></li><li>switch to fetching hostmaster from tag rather than branch
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="49/changes.html#1cc9ddf0c678749cc5ce72ffc1b00beafb96964e">detail</a></li><li>upgrade wording, vcs repos
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#29f5257693d9173034a05e049653fad9ec8fc6f7">detail</a></li><li>update todo
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ae2bee672d8542034889a8ddff43ee8409532a91">detail</a></li><li>update watchfile to point to drupal.org
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#7ec435d17d5d1183dc8348b2e6940004b2d4070b">detail</a></li><li>remove unused config file
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#29c3388fe23383aff8f3aeda7f362dda77b7ecd5">detail</a></li><li>remove unpackaged docs dir
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c3e2aeefc952262290af224f49e9a80a2fada414">detail</a></li><li>announce 1.0~rc2
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#117880f215138761ea0f29a571715e1de0e930eb">detail</a></li><li>remove frontend installer
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3ff007b9ec399fd626d9f955ecae50abf6db2de9">detail</a></li><li>configure git-buildpackage
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#5bbdbf2964c5dce5aa2ac6cfa51cf212b9b147cf">detail</a></li><li>update standards version, no change
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cba171f6ec593a0013c1c3ca8617be81cf637de6">detail</a></li><li>do not leak the credentials in the environment after we have used them
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#039c72400e442495a28631721e854211ae75b7e9">detail</a></li><li>update changelog
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2b99458802bb5d279da75838a3be0ded59f32519">detail</a></li><li>readd frontend installer as a separate package
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#18d936731d1c0c3b578910adcf7cbdadca9163f9">detail</a></li><li>fix version number in .info file
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8225fd163625b1464ac61da5754ada37240e1b0f">detail</a></li><li>call su with an explicit shell as we may not have one
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d376f9906be4e9bfbfaa9a1a152c3bf1a94c8e2d">detail</a></li><li>#730424 - only use apache_setenv if it exists, fixes nginx support
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#dde4a0c7d908d4c243e2f357331cc866a185e2f7">detail</a></li><li>use drush --pipe argument to make output easily parsable
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a6a2b49a6ad15a5eddadaab46cab62017cf25efd">detail</a></li><li>compare canonical paths when checking for upgrades
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d89c9eb868da43bbd9d381070dc7a7472143f3ee">detail</a></li><li>make an &#039;aegir&#039; metapackage, clarify the other packages descriptions
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#502b4418ebc24734e1aa57596853227fbd661de8">detail</a></li><li>announce 1.0~rc3-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#e38cfa45783b9f3629abb595424d16b7ab55d78e">detail</a></li><li>fix descriptions to please lintian
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#fa0ef30f3639aedcff46f2d3a36b81b64abd4d81">detail</a></li><li>update the .info version
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8c726c7138fad03ba22a31129c154c372afbe14d">detail</a></li><li>allow easier debugging from outside this script by respecting DEBUG=yes
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cced39ae3df524455777348ae854cfce48a2e15b">detail</a></li><li>release 1.0~rc3-2 with the DEBUG command
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#4e2b0068b8dfda8978034ffcf2b4cf63d96781b9">detail</a></li><li>don&#039;t fiddle around replacing the content of the sudoers file, we just
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#caa68306a0534ae23fa60ebfc385f7b5f364748f">detail</a></li><li>abort earlier if provision is already installed
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6ad3ff6981e62aef7291db1699e39ba349ec5213">detail</a></li><li>depend explicitely on apache2, apache has been removed from debian
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#7b4923181e64e45903d5feb24daa8ef4928c682a">detail</a></li><li>announce -3
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#1534c988cf3d6610ad0e6a4af95f179b53956a9d">detail</a></li><li>make the sample sudoers useable out of the box
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#29b6d6002cc7730c7a6e3dc4b1c1f05702ab97ae">detail</a></li><li>fix typo
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3f5d46e52b9297e73668fd65b50a1fa844d7d7f4">detail</a></li><li>pass the makefiles on upgrades also
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#56157567c9e2882c4b3df9acd998c0b7984b168b">detail</a></li><li>fix version number *again*
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#b2740724025622cab2fe49daef886ffec8666b6f">detail</a></li><li>announce -4
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cc598189ea04a2f56a317a01bfb6a00f2d02422e">detail</a></li><li>cleanup empty platforms on upgrade
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#5c0e77d685306d3a55bf61dbe53ec8c09ecbca64">detail</a></li><li>announce -5
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#297e197475e8144e705c491cf05ec27b14dcd650">detail</a></li><li>add more debugging
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3394ffd9add5d41102df6b943b3b6899055e316b">detail</a></li><li>more debugging
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#38ad53e90b89e04c6700f6d528c1573480a897f2">detail</a></li><li>announce -6
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3b6a1e0dfabfa3df62a2444e0bb5650da013cadf">detail</a></li><li>prompt for makefile anyways
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#b8d59068630922195ad11af890bd45ffb334d347">detail</a></li><li>-7
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f02486260f212a5c685e17d70d383af0cee6ebfc">detail</a></li><li>fix long lines
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#81333cf8f3cd4204e0ebab9c31d6f374bc5fd0f9">detail</a></li><li>fix site prompt and some priorities
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a65ed135f1cc369fd192cebe3938c70da09bc5ac">detail</a></li><li>make sure we prompt for the makefile if it was never seen
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d3cddacd788677651e02070892bfb0d286601a77">detail</a></li><li>anounce 1.0~rc3-8, hopefully the last
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#de349f2791f9ef1d35ba113c3cae321598d6c40b">detail</a></li><li>fix typo in sudoers sample file path
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2c4a4098ca634f559264780dc7730e4d79990e99">detail</a></li><li>silence warning on new installs
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#4bb6f0b70848ed5b8569426a2dccbbf52b7c448f">detail</a></li><li>announce 1.0~rc3-9
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8c46b71a98f1acbb715f3c5925d7e17c0e0c9164">detail</a></li><li>move apache config unregistration to remove, as per webapps policy
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#24df99894cdcb18358fe399b28443fede42000ae">detail</a></li><li>simplify sudo config file handling in postrm
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d5ef939969a19aec90aaf9f23449d7ab90cc85a0">detail</a></li><li>detail policy compliance issue, add signature security issue
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d16397ae648d6f2cab78240f21486c406bec9e6f">detail</a></li><li>add changelogs for -9
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#7a64dccaf3b63999a37c7865eb51a7a333565931">detail</a></li><li>add config directory since we now use it in postinst
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#fd7a770b32f566867d0c14567f620a92426bbd2b">detail</a></li><li>announce 1.0~rc3-10
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2d7c6faca31ed064912cae523aef7abaad9ee849">detail</a></li><li>change version information for release 6.x-1.0-rc4
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#66c1071036aa0a2475511241bdc31a3a7080d098">detail</a></li><li>make a test release on the 1.x branch
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ddfdd21404494863d34cf92ff9c7c6625695abf4">detail</a></li><li>fix platform cleanup after upgrade
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cbd9868352fc1f2f04d4cc702f2faf8cbf7ff6b0">detail</a></li><li>provision-delete the platform instead of manually
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#31b6dc9c1a415b782beb5f6c3823e1865bc404aa">detail</a></li><li>replace the test release with the rc4 release notes
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#48f4f63aff96cfa9e37c1b560712f2f5f7cb3102">detail</a></li><li>autodetect drush, to be compatible with system-wide drush installs
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cdef86739a9c9eb00b313f1b433428bfdc1d1ae7">detail</a></li><li>fix command to find platform alias
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#17869b13e3759cb92b23a408b26176b7d63cd993">detail</a></li><li>roll out 1.0~rc4-2
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#9b0e913bdd4eb3cd590d77b9f899f77818319ecf">detail</a></li><li>remove hosting-pause call, we&#039;ll put it back once everybody hit 1.0 at least
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#acf1ff658cc9b9d3bd8e9dde833d19a4addea068">detail</a></li><li>call hostmaster-resume again
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c6dba104dc87ffd6336e5af04ef0100c9bd00f03">detail</a></li><li>announce -3
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3a2a7b33a8a6f5d27558a838443f87a84ee99c91">detail</a></li><li>fetch from hostmaster 1.x
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6b8681a3789d3225babe2839ec1adc7b9c80f3fd">detail</a></li><li>really ask the darn makefile question on upgrades from manual
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2a84302ee4acca68d9cd1d9ee67ab7f023b0ede0">detail</a></li><li>fix message and make this work every time
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#83d2c71f4555488e51e711da903665d8fab6d8cf">detail</a></li><li>announce 1.0~rc5-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8e05963bf07d11d70e42ea4a2ed554c8986e5ae1">detail</a></li><li>require at least drush 4.3
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#72e540f1f52b0dcd37696fda50777492d0ccb378">detail</a></li><li>Revert &quot;change version information for release 6.x-1.0-rc5&quot;
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c325db8c577d558ba3ab80f8c4eead4c8d5640ea">detail</a></li><li>Client directory with symlinks should have group read access granted - by grace
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#184855a3af12d922acf2e8cb3f0cccd7fd692244">detail</a></li><li>default release on the branch is 1.x, so that&#039;s what we upgrade to
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#9201a621d682b54b20b9fd066e54b13bac054dd5">detail</a></li><li>change version information for release 6.x-1.0-rc5
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3f88a8494dccb6f6f47f68c1aaf1ae007452710f">detail</a></li><li>Revert &quot;change version information for release 6.x-1.0-rc5&quot;
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#5832391255b413d3463fef34b68a67e271a4cdf3">detail</a></li><li>1119850 fix Drupal 7 support by sending the right server variable in db cloaking
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#568a064389a88262741d751668f020f261645d3a">detail</a></li><li>1083710 by tbosviel - fix php 5.3 warnings in DNS
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d088e55563d1cdd012f6b888347b81285cc971f6">detail</a></li><li>remove the AEGIR_HOME variable that was adding confusion and bugs
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6e28e4c6ee9e8b99c7d894c27c8fc7b9c57c1c4f">detail</a></li><li>we have no HEAD anymore, but 6.x-1.x
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#99042289cad9d7a7ddf08c2eb2cc4c84c77d6ff4">detail</a></li><li>document _provision_file_check_location()
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#e057a3ea33ebc088db86833cd935594d8f361f59">detail</a></li><li>port our recursive_delete() function to drupal 7&#039;s
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#b204138ba15978452ce6e2d16308922d13d94030">detail</a></li><li>1119968 do not follow symlinks in recursive delete
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d025218d9c60b0443e59a5d331aba62c57a8523d">detail</a></li><li>properly carry errors through multiple directory entries in recursive delete
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0cb33963145dc6ad0d672d55adf51c662ccc2b8a">detail</a></li><li>comment formatting
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#22d2ec4bd9f68ce6e84ca6e3290e5528f1b9e009">detail</a></li><li>Issue #1118286: specific config functions for each DNS service.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#baa80261230fb8e4194abf23be3b5e6410dcab95">detail</a></li><li>try to upgrade drush even if it&#039;s the path
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0d01623a115f7a95e360bcde2b3792a332e144e1">detail</a></li><li>change version information for release 6.x-1.0-rc6
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ab478560cc17f797a85d69d8ac6c623ab17b70a8">detail</a></li><li>announce rc6, no change in debian package
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#4a0fbd096830b3867bcb2ff9be31b3f64ee936be">detail</a></li><li>fix the download type in the makefile
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#64d5fb0af66d50fcecdf0c245cddc5ae85d29acc">detail</a></li><li>announce rc6-2
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#749799c7f227edba2d4c47920e0488a5335d4f1b">detail</a></li><li>rc7-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#435939ad8224a2099e66fe850a0ca83ce187263c">detail</a></li><li>fix permissions on config dirs
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a6614938c62694094d7ff8a25d07928e3de28c48">detail</a></li><li>add bugfix #1123276
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c11763690113c20402ad94c8c3457857562b8b9a">detail</a></li><li>depend on git
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#adb72789ef9269e276bbf54bf5deac025f006cb3">detail</a></li><li>document how we can also install the frontend automatically now
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6727780331ff3eed0fcb4f7ac2a78092d0c82f92">detail</a></li><li>got approval from daniel to quote him
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#4ba01ce50b334583849f73f0687b21785f44468f">detail</a></li><li>typo
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c201659c545423c4f5534fecaa81f2ed834d262e">detail</a></li><li>set the varialbes back to how they were. should be a real revert here but i&#039;m in a rush
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#926984567cfd56dfc7f142abacfde54c85d30634">detail</a></li><li>#1123176 by sanduhrs - switch to mktemp instead of tempfile in upgrade script to retain CentOS out-of-the-box compatibility
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#dd6b5d8ace09cd1fd8b608594735aaadad7dffec">detail</a></li><li>Issue #1027358 by Steven Jones
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#113d9c98be6731fb2110897555814305bb55b5da">detail</a></li><li>993944 rollback http configs in site installs failures
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0b913663aca1b10b927115b0d1ec5fc68eb2b304">detail</a></li><li>#1016890 by joestewart - drop setContext function in the cluster service to fix the cluster feature
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0eb867c61232d091acb9832fa412ce701878d732">detail</a></li><li>rename get_certificate_ip() to assign_certificate_ip() before I go insane
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#e6b20caa1f85a9aa2084c9e52ab02ccb51192ab4">detail</a></li><li>1081536 rollback platform apache configs
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8363379f17f7a8bae865989f4c96ea6bc0470119">detail</a></li><li>Revert &quot;1081536 rollback platform apache configs&quot;
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#17249a6766dfa1399727da8edbee71cf284abbb9">detail</a></li><li>try to rephrase things to provoke jenkins
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#5afd3a9d32fdcd335e39b35a6fa266715ec3d20e">detail</a></li><li>more docs in the sudoers file
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#60d8e4088758cb3fe688fe6f7a6bdf2bf999d8b7">detail</a></li><li>deprecate most of this file
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#541494f4faaecb21e0d8d13ff9c36ed126d53668">detail</a></li><li>remove a reference to UPGRADE.txt which doesn&#039;t exist anymore
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#9ec19f5d4dc30838400e2fb1e0fa1bbab03b2364">detail</a></li><li>Issue #1074966: fix warning in command line mode.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#589bcc2351c3063dbb41c6612b91aac782d99e47">detail</a></li><li>White space changes in bind_service.inc.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#dfb24ca521198de8a6cd1fbe729308148b470ecb">detail</a></li><li>Fix for Nginx configuration: if the file does not exist, send 404 error instead of back to parent location.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3d4b23835cc8fa35e76df1c0c3ff1db1de13f96e">detail</a></li><li>Add support for AdvAgg module in the Nginx configuration.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#340c6b668ec67f4131d102fef803cf980e331de0">detail</a></li><li>Add support for robotstxt module in the Nginx configuration.
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0edadc28b7b50cc64f53ec919ba2c801e424a3c8">detail</a></li><li>documentation fix in release.sh
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c8cc438167317fabd7b2a184d55b0e4a4c77d38c">detail</a></li><li>change version information for release 6.x-1.0
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f17d0f4814150ad91767a2576cc19c2e60a7dbf4">detail</a></li><li>announce 1.0-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#71a15e8bae3a0ef36d33bf910ccd6635ef772ecf">detail</a></li><li>upload to stable
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c82e7f8be661f5248b2e9cd7eac5c944bc457cf1">detail</a></li><li>put back in unstable, just doing some tests here
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#69af1b331f6ca6f25cd50c19feb92c9eedab0ac9">detail</a></li><li>activate the required modules SSL and rewrite
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#9e48b0d1b4836d84ca14a9794307f76487a27314">detail</a></li><li>make all maintainer scripts respect DEBUG
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ea5609310f5b35dd05c02fa2513333b182176dce">detail</a></li><li>add missing mod_php dependency (!!)
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2508381b1d5df06126dce28c82975869d8a7e385">detail</a></li><li>announce 1.1-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f2928a2f9b3a406cb4aa12e1c108ef91ff828e69">detail</a></li><li>update dependencies to include unzip, php5 and recommend rsync and gd
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#87e1e904b8b2a7d920470339cf92e92b168caec9">detail</a></li><li>use more standard DPKG_DEBUG flag for debugging
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#914e63f22ff4a6eba4f35d249de531fc5c099fe0">detail</a></li><li>#1149172 - do not destroy old platform on upgrades
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c721cd10705e8a2414ae7b80dd91060cf79092b6">detail</a></li><li>announce 1.1-2
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3b7bc489c6f1e094594c11133d17758559df59a7">detail</a></li><li>allow also the use of DEBUG to enable debugging
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#dc835f1e514cd1e72f5e7aa898562edd07d95d8d">detail</a></li><li>keep supporting DEBUG
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3a6c523c0ebf5005bbb779918d561e98887ad51d">detail</a></li><li>announce 1.1-4
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6d895cb280b4207ba328d67f7586b373a2394196">detail</a></li><li>support subdirectories with spaces in them
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#2c38a7008c1b2346ead58bbaf76cfa6ee666dd39">detail</a></li><li>fix debian build
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#dbcbdcc13762d84f66c70221b2d19eb7cedce903">detail</a></li><li>remove phony targets and add jenkins build code
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#e5d40925ed16e28e1d4c3a09a821f85bf5958f2f">detail</a></li><li>rename jenkins targets
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#b0b0e383b92db804b7fe0efc994f2ebd171dc8dc">detail</a></li><li>fix variable in autobuilder
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#33178cf58db4c276b02c3b3832f2717af3534161">detail</a></li><li>fix makefile shell call (duh)
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#58ae71a4bbc0424d09a214627e83becc39132c8c">detail</a></li><li>try to fix funky makefile escapes
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cdaebdeb4dd8d265b5134403de5501c9fae14329">detail</a></li><li>try to move build within the jenkins workspace
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8c04997a4f0eb27f9600154c47277d2ab09bfeee">detail</a></li><li>rebase to debian
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#7b5a210956895404d1a60a4954d962ed9a408ee2">detail</a></li><li>build the debian packages as a binary, not source
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f79cd9d9655ff950dc0ee0683e48ba531cb1238f">detail</a></li><li>fix auto build
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#79857dff80db8359eef134771bfe0804bcdde356">detail</a></li><li>try to build auto on a temp branch
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f58b0932e6a877e193d331653c7cd8ad891224e4">detail</a></li><li>try to simplify by using dh7 rules
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#08c75f7ba3c9c20d25748f10a8e5a7972d7477a6">detail</a></li><li>update standards version, changelog
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#1a5e85ada7b4281ed0eb857199fd89d85e6cd6b9">detail</a></li><li>release 1.1-5 for real and tag
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f71169f53e31f66b74a0b76fdbe5a5b4fa323f1d">detail</a></li><li>trash the tmpdebian branch at the beginning of the build
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a932237ead957bdf425ab5267515198c0794fc8b">detail</a></li><li>fix auto build version number to reflect upstream changes
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3406a0a9e0e266b4b1ebe72fb42e237a50542b77">detail</a></li><li>simplify autobuild target by factoring in more assumptions
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#514272392a0bae32e6d2b58f3bfe667ffe326b9f">detail</a></li><li>fix version detection, add show-version target for testing
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#05a36f86892af9308509d256ed5541cb339e56ff">detail</a></li><li>do not clear the db_password prompt in config
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cac000b2945397b9b1923b848a7c58524488cad8">detail</a></li><li>announce 1.1-6
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#56e61a2ef8c64c4f0ea90023e9f3e5528af35765">detail</a></li><li>upload official packages directly to testing
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#e44d6376adb78b54c4c5bbe7f2fce21c8fe2df5d">detail</a></li><li>Try not doing funny things to the db_password.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#9396b6b2222f2b9f3a2708d1dc706f2891594bee">detail</a></li><li>Revert &quot;Try not doing funny things to the db_password.&quot;
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#4332dc5a2163971c03fd83c6d1659276aff98899">detail</a></li><li>Try not resetting the db_password.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#b133c8ccacd0c7f43c12313a45996118aca3857e">detail</a></li><li>Add a touch of debugging.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#c3fc10dc639ddd6545115a6cb0b96f85fd708ac9">detail</a></li><li>Remove the nasty debugging statement.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#fc81e0ca12adcf3d1705f8f7eb443f91315fa138">detail</a></li><li>autobuilder fixes from drush:
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c5472b84548a62b4cb2570c86db5a072bb64c75a">detail</a></li><li>update debian/changelog
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c4ef6863399235bcdc586cb440df900efbfcea42">detail</a></li><li>announce 1.2-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#68b60014be0297d365576349b2db090f23fd974b">detail</a></li><li>make sure the email/sitename is prompted
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0779cbef8e34bcb5761391a39c195988477dc144">detail</a></li><li>try to fix mysql pass double-prompt
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#7cb626990e0d45d05d526f5aaca4bbfa41ce3c64">detail</a></li><li>make email medium priority so it&#039;s asked
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c266c9e5813da40021c094efb85cb7b001946fe0">detail</a></li><li>announce 1.3-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#5e605a36939cbaa973fcd8bba90ea5cd5ad73db9">detail</a></li><li>fix download url in copyright file
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#425c00dcf5785385b1c748c80f99e8fc6468f3a8">detail</a></li><li>announce 1.4-1
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#78d4df2a5f81485a470291f4086f93136d2c4216">detail</a></li><li>fix git-buildpackage configuration to follow new versions
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d2848af48e5939918131b976fd430f41033e8c6c">detail</a></li><li>check if aegir is bootstrapping properly after upgrade or install
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cf67491c9e23cfded0cd0f7a2c2407806324652d">detail</a></li><li>Try to install Aegir from the users home directory.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#b8bdaee47745ad0ce30580f155746b370f71ba64">detail</a></li><li>Update the directories we need to make.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#c572708e8e8f0dc9a019608ee8bf24749158b2d1">detail</a></li><li>Try to copy the tests in a better way.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#a56e42dd0d0b0b27c30da4b570453bc5602eb005">detail</a></li><li>Try to fix the copying not working.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#f1476b786bab4a29a5c43f6d8de8bfa4edeb1b15">detail</a></li><li>Remove the bash conditional, and use the test command. Magic.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#a534e430d5a28d358022cb14f418cf82999ec17c">detail</a></li><li>Put the bash conditional on a single line.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#7365d6ee59c6fa6c513ef5c2e86f6fde139e06ef">detail</a></li><li>require the drush_make package
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#9886fc695eeeacbbaa6a689ee472b82f26a89324">detail</a></li><li>it&#039;s drush-make, not drush_make
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#230afde7b8e6d95044cf7ee49e1b1de6943c08f7">detail</a></li><li>match versions in dependencies
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#3db2d8c3ad452a0cbb757d75e26af73b162a065c">detail</a></li><li>move manual provision detection code to preinst to limit the damages in case it happens
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a83f9fc0f522a76ae053279d29b8d54b3b38b9e5">detail</a></li><li>do not chmod0 drush_make, just abort if it&#039;s found
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8df487f44335dc42544a01324269b6870baa838c">detail</a></li><li>fix syntax error that oddly enough doesn&#039;t crash the install (?WTF?)
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#cf59b562d94c7cc80db4ea64594be4312c31d88d">detail</a></li><li>duh - forgot to define VARLIB=/var/aegir
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#8de635e1e5b77f4e9404a6c99b501a564a5c15d6">detail</a></li><li>1.5-1 announce
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="49/changes.html#6f324b9f71d271a878a73c282c6aec9478beccf7">detail</a></li><li>fix distribution
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#27be1cdd95ae27ca25460516db3e798473422e99">detail</a></li><li>1328316 hotfix: do not trash the aegir configs on failed upgrades
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#d1e15449acd2531b3947547c510df3be04dd1f86">detail</a></li><li>announce 1.5-2
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#38609747ac4c6b0c2c8a8bbde1c0de1ee0a56f5d">detail</a></li><li>do not build from the upstream branch, but the tag
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#ad2b7509aa6df9c66590fd7c1fb775da7744bcdf">detail</a></li><li>Updating Debian changelog for release 1.6-1
+
+                —
+
+                <a href="../../../../user/jenkins/index.html">jenkins</a> /
+
+                <a href="49/changes.html#a58bad1a0bed11b7a9a37fa689fc10c15a2a630a">detail</a></li><li>first implementation of the frontend slave debian package
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#404fde3d7b758fe94731e226abf6d6f593c4beed">detail</a></li><li>add missing platforms dir, warn the user of necessary reboot
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#077a4ae5bb66882784870521f5e4a5ee57f2752e">detail</a></li><li>fix examples path
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#756733e985a5f8fa6d6afca22c93f647cb4bf5b8">detail</a></li><li>use VARLIB properly
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#c584b26b109969c762bc3b37adefbaa412305f5c">detail</a></li><li>add postrm
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a65dd36fb4c53a3952d33a1809589de02fc45e42">detail</a></li><li>do not edit config files if no value is provided (default)
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#f3f9d67afac28182d18d2fb714aaf3add8e9114c">detail</a></li><li>inform the user we do not edit if no value
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0252fd9dd6504d81de6a2074ab368157dcae239d">detail</a></li><li>remove debuggin output
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#bf210db196808ed8ed280a1b33506555f0ef2f8c">detail</a></li><li>move umount to prerm to remove warning from dpkg
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#481a3eed25939c508911cb75842edfa9e3a5d7ba">detail</a></li><li>fix missing bits in postrm
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#a63c1deb5b767786c1c0b48dd7db236a36e3c787">detail</a></li><li>fix version number so it&#039;s lower than autobuilds
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#73b413d75898675a8681c154033a9eb77aaa8771">detail</a></li><li>add missing mysql-client dependency to slaves
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#6d20fb6c60be8108b2299430c59f24b1b8682860">detail</a></li><li>make this a native package
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#32fc4472aaa182ce801defd33a0e03db24273ba5">detail</a></li><li>remove watchfile
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#245a249d738829d883b1851511bde2e32ed9461b">detail</a></li><li>mark the debian branch merge
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#717d4ebf1298a9d8ffff476f083670b80670204d">detail</a></li><li>rebase instead of just pull
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#16faf1c1c47fc0af22518194c099466d3633d361">detail</a></li><li>edit the changelog in the release.sh script
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#5b09ed18524376500aa20f554a868c72e087daa7">detail</a></li><li>fix my email address
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#484c720d55f9934e2b4d64576d43f72555990513">detail</a></li><li>we are native, no sense in using quilt anymore
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="49/changes.html#0f2e3519836127e4fda489b500ea72e3ae90e31e">detail</a></li></ol><h2><a href="48/changes.html">#48
+            (Mar 6, 2012 1:31:23 PM)</a></h2><ol><li>Restore ability to automatic fallback to wildcard listen directive in Nginx and fix spacing.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="48/changes.html#0ce5c6ea8cf62b930c2c3e46cf14188abdc115ca">detail</a></li></ol><h2><a href="47/changes.html">#47
+            (Mar 6, 2012 10:16:23 AM)</a></h2><ol><li>Add Nutch to the list of blocked crawlers in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="47/changes.html#2cf618e13a16bf13f43fecc5a754acdb1885fe4d">detail</a></li><li>More compact regex for blocked crawlers in Nginx.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="47/changes.html#2b6a6ca5d74e11ef7753668c831924a37022b7a7">detail</a></li></ol><h2><a href="46/changes.html">#46
+            (Mar 5, 2012 5:16:22 PM)</a></h2><ol><li>Use faster locations matching where possible in the Nginx config.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="46/changes.html#3bc99fd6da7bc9ff3d3f8f38041f9c0b09a5b3cc">detail</a></li></ol><h2><a href="45/changes.html">#45
+            (Mar 5, 2012 1:31:25 PM)</a></h2><ol><li>Attempt to fix the previous commit.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="45/changes.html#8aa52f86b618b818f155c92391198d4384797e86">detail</a></li></ol><h2><a href="44/changes.html">#44
+            (Mar 5, 2012 1:01:25 PM)</a></h2><ol><li>Issue #1439196 by Steven Jones: Fixed Don&#039;t lock the DB during backups.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="44/changes.html#c07fb0365fb8b2257f891c4386158d32b7b3af6e">detail</a></li></ol><h2><a href="43/changes.html">#43
+            (Mar 4, 2012 2:01:42 AM)</a></h2><ol><li>Allow some known php files also in profiles - a fix for Nginx config regression.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="43/changes.html#cd9270e34fb0ffff9c1f97995d2b4bb981327110">detail</a></li><li>Remove debugging in Nginx config.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="43/changes.html#a6c324a5c902bb782cacf52894eb7ece453380ba">detail</a></li><li>Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80 in all vhosts.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="43/changes.html#48c1750f1367de442536bad9cad8faa343d40b8f">detail</a></li></ol><h2><a href="42/changes.html">#42
+            (Mar 4, 2012 1:16:22 AM)</a></h2><ol><li>Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="42/changes.html#02a2f9e3b3709d410bd566129fde627f99da7447">detail</a></li></ol><h2><a href="41/changes.html">#41
+            (Mar 3, 2012 8:01:22 PM)</a></h2><ol><li>Allow up to 18 simultaneous connections from one IP address.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="41/changes.html#c00a2c4055690d129b64d67e79512b7fea08b49a">detail</a></li><li>Disable access_log for redirect vhost to limit noise in the Nginx acces log.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="41/changes.html#c7d59973f80137c893321c5c28afe47752fe0ce3">detail</a></li></ol><h2><a href="40/changes.html">#40
+            (Mar 3, 2012 5:16:23 PM)</a></h2><ol><li>Fix indenting in the Nginx config includes.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#8ac4b61d1504cc37fc45045f31b540e762bed7d2">detail</a></li><li>Better defaults for Nginx FastCGI Caching.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#adab0f2534658626eaf9921c782821f2caba57ad">detail</a></li><li>Fix whitespace in server.tpl.php
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#2140d355a72e7066e5eac7d528e1e8d345dd6417">detail</a></li><li>Hide some identity headers in the Nginx config.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#d4106fc48ff7ba60b287c7bb556c51d0371934a0">detail</a></li><li>Use $proxy_add_x_forwarded_for instead of $remote_addr in the Nginx access log.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#a3080bb47fe70844fbc70b2258720dd19bde3c6e">detail</a></li><li>Use Nginx maps to simplify config includes.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#0b2f11a01fa5b6d3598be4462d93d863619c25d8">detail</a></li><li>Fix whitespace and extra new lines.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#a88acd8765da1d2f21889f60e51f2ad6c988115d">detail</a></li><li>We no longer need the $nginx_has_new_version variable.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#4d9b5ee65204d43a9e996353a7eeeb700626dd16">detail</a></li><li>Fix whitespace.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#b959ad200f0ffb9fa2ea7aea303c423ec23d2d83">detail</a></li><li>Find nginx executable to make the check for compiled in modules reliable.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#009294bca51396c8904235b747f5f560196c54bf">detail</a></li><li>Set worker_processes to 4 in the nginx.conf by default.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#8cfbf37ac55b6a1418943829e9841c90604e04bf">detail</a></li><li>Add support for Nginx Microcaching and Drupal contrib modules: audio, radioactivity, responsive_images, resp_img and ais. Improve Boost support and use Nginx maps to simplify config includes.
+
+                —
+
+                <a href="../../../../user/admin/index.html">omega8cc</a> /
+
+                <a href="40/changes.html#9ea35d8abb8f250645d789f08bb068855826c4f6">detail</a></li></ol><h2><a href="39/changes.html">#39
+            (Feb 26, 2012 11:31:25 PM)</a></h2><ol><li>Issue #1346712 by mrfelton - Nginx config files required as includes in vhosts are not copied when Nginx SSL feature is enabled.
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="39/changes.html#a635d158a3611ab1dfaf64322bb9f50c9f0861aa">detail</a></li><li>1444172: Fix Syntax error in the help description of provision-login_reset
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="39/changes.html#a95a9bdbb88ea2b5df86667e5b335019092814bb">detail</a></li></ol><h2><a href="38/changes.html">#38
+            (Feb 26, 2012 11:16:24 PM)</a></h2><ol><li>Issue #1346794 by mrfelton - Nginx SSL declarations need to be added to redirect vhosts.
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="38/changes.html#4c53f5c5cea9a3abe53aa0bf28231c22b625ddf7">detail</a></li></ol><h2><a href="37/changes.html">#37
+            (Feb 16, 2012 11:16:25 PM)</a></h2><ol><li>Issue #1388906 by omega8cc - It is possible to break Nginx based install with upload progress by enabling nginx_ssl feature.
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="37/changes.html#d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5">detail</a></li></ol><h2><a href="36/changes.html">#36
+            (Feb 13, 2012 10:04:00 PM)</a></h2><ol><li>Fix code style of provision_drupal.drush.inc
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="36/changes.html#0ae2919cf1ba2a60182ae668e6bc305be800417f">detail</a></li></ol><h2><a href="35/changes.html">#35
+            (Feb 13, 2012 9:15:57 PM)</a></h2><ol><li>Issue #1259098 - is_executable() does not accept arguments so -s should be added after the file is tested.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="35/changes.html#97d727a7ff5eb36517eda6082dbcf36554d3dea6">detail</a></li></ol><h2><a href="34/changes.html">#34
+            (Feb 13, 2012 8:46:01 PM)</a></h2><ol><li>Issue #1421356 by omega8cc: Fixed Wrong variables for files paths hardcoded for D7 sites.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="34/changes.html#ce6c2e4079e3eff564427b1218a4a5e1326202da">detail</a></li></ol><h2><a href="33/changes.html">#33
+            (Feb 13, 2012 7:16:01 AM)</a></h2><ol><li>By mrfelton: include extra_config in Nginx SSL vhost. Fixes #1369608
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="33/changes.html#cc2f00f725b74bcd5d56232cf56cb5be6a699173">detail</a></li></ol><h2><a href="32/changes.html">#32
+            (Feb 8, 2012 9:45:58 PM)</a></h2><ol><li>backport the pack module to 1.6
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="32/changes.html#0b75a1164671c31bdd690ac0d403fbab346d3df7">detail</a></li><li>fix typo
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="32/changes.html#b8c4ff8ffad5b0a511f00693aa7e1057bfc820e1">detail</a></li><li>also sync configs to slave server, which means we *can&#039;t* mount /var/aegir as a whole anymore
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="32/changes.html#17b92bcdb1aab7b5ed1bd4ca231f656f66af6835">detail</a></li><li>fix another typo
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="32/changes.html#d4fb492d55bf41053f45077104554d556783a099">detail</a></li><li>properly pass configs around
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="32/changes.html#1c7e9d8ca077ed5ba7d421b987271b6e9130a104">detail</a></li></ol><h2><a href="31/changes.html">#31
+            (Jan 16, 2012 9:01:23 PM)</a></h2><ol><li>Set permission 0440 on drushrc.php so group bit can read it. Solves #1405380
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="31/changes.html#16e357bb0f6e29ade80db57fe09977a5ca3305e7">detail</a></li></ol><h2><a href="30/changes.html">#30
+            (Jan 7, 2012 10:01:23 AM)</a></h2><ol><li>Issue #1396326 by Steven Jones: Fixed Mod rewrite double escapes URLs.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="30/changes.html#6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d">detail</a></li></ol><h2><a href="29/changes.html">#29
+            (Nov 22, 2011 7:46:27 AM)</a></h2><ol><li>change version information for release
+
+                —
+
+                <a href="../../../../user/jenkins/index.html">jenkins</a> /
+
+                <a href="29/changes.html#e921cf313610e4906fe755d7238be36acd32ec87">detail</a></li><li>Revert &quot;change version information for release&quot;
+
+                —
+
+                <a href="../../../../user/jenkins/index.html">jenkins</a> /
+
+                <a href="29/changes.html#8200deeeb9aeeb600639ef7f1ced415025933ff0">detail</a></li></ol><h2><a href="28/changes.html">#28
+            (Nov 21, 2011 6:31:27 PM)</a></h2><ol><li>fix usage for hostmaster-install
+
+                —
+
+                <a href="../../../../user/antoine%20beaupr%c3%a9/index.html">Antoine Beaupré</a> /
+
+                <a href="28/changes.html#c070adb6b50bfbf7d51c21f72909f7baf2914d8f">detail</a></li></ol><h2><a href="27/changes.html">#27
+            (Nov 16, 2011 8:01:28 AM)</a></h2><ol><li>Fix the fetching of a login reset link in Drupal 5.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="27/changes.html#51640ef8db7b35b1aa48140ed61ab04e54c30787">detail</a></li><li>Minor code style fixes for previous commit.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="27/changes.html#5f2948a4276981fdd1354fcd94fa524f908b0c10">detail</a></li></ol><h2><a href="26/changes.html">#26
+            (Nov 14, 2011 9:01:37 PM)</a></h2><ol><li>Revert &quot;#1146238 fix call to user_load when resetting password, to be compatible with Drupal 5&quot;
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="26/changes.html#c1755804c41dfeb924712f4a5818ffdd253fe9fc">detail</a></li></ol><h2><a href="25/changes.html">#25
+            (Nov 13, 2011 12:31:42 AM)</a></h2><ol><li>#1146238 fix call to user_load when resetting password, to be compatible with Drupal 5
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="25/changes.html#61350a92900cabc627ed2a3551f8731ef5b0ac9b">detail</a></li><li>fix the help information for most provision-commands by removing the site name argument and switch to @aliases instead. add examples for most commands too.
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="25/changes.html#6fd3efa8918652ef661607da9124370949166609">detail</a></li></ol><h2><a href="24/changes.html">#24
+            (Nov 12, 2011 10:16:41 PM)</a></h2><ol><li>#1322208 by helmo - fix provision-restore help information and add an example
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="24/changes.html#fc95fef41db81060215cfc0d1df9056e6e314ee7">detail</a></li></ol><h2><a href="23/changes.html">#23
+            (Nov 12, 2011 7:31:41 AM)</a></h2><ol><li>Issue #1336838: Added documentation for --makefile to provision-save, and fixed the style.
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="23/changes.html#beeff60fb9d0b62ea026c8f77c4112338543f6d0">detail</a></li><li>improve wording of --makefile documentation in provision-save
+
+                —
+
+                <a href="../../../../user/mig5/index.html">Miguel Jacq</a> /
+
+                <a href="23/changes.html#c60a205ee58ba2247eb09eb704babb93d49df8e3">detail</a></li></ol><h2><a href="22/changes.html">#22
+            (Nov 11, 2011 9:05:57 AM)</a></h2><ol><li>Fix more coder style warnings.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="22/changes.html#f96986d219ff4d89a6575167f3f28c4d928a05dc">detail</a></li></ol><h2><a href="21/changes.html">#21
+            (Nov 11, 2011 8:31:45 AM)</a></h2><ol><li>Fix the coding style of db.drush.inc.
+
+                —
+
+                <a href="../../../../user/steven.jones/index.html">Steven Jones</a> /
+
+                <a href="21/changes.html#476f84c95c870f84b12d0204504a405b445372fc">detail</a></li></ol></div></div><footer><div class="container-fluid"><div class="row"><div class="col-md-6" id="footer"></div><div class="col-md-18"><span class="page_generated">Page generated: Apr 3, 2017 5:59:34 AM EDT</span><span class="rest_api"><a href="api/index.html">REST API</a></span><span class="jenkins_ver"><a href="http://jenkins-ci.org/">Jenkins ver. 2.32.3</a></span><div id="l10n-dialog" class="dialog"></div><div id="l10n-footer" style="display:none; float:left"><a href="#" onclick="return showTranslationDialog();"><img src="../../../../static/b687cbe1/plugin/translation/flags.png" />
+      Help us localize this page
+    </a></div><script>var footer = document.getElementById('l10n-footer');
+    var f = document.getElementById('footer');
+    f.insertBefore(footer,f.firstChild);
+    footer.style.display="block";
+
+    var translation={}; 
+    translation.bundles = "8p7Ta33GDAc6MUCxfWCVPiwu7gQQBkRF5q/O5Wy9CpOUIRLP0m35pAcJt34Bw6BJqJ6pXRNZiPJ9HSZ97xUe58B5zwBqGBg+N8cnGk4VFWsByaRpNgMdYNJdI5D9lx7RTmIgJFuAkgWJVD1z3PgjsCaIF3T2W4h7840IqwR5XbmLhUCjXGB6AP3eVqDdtnPkyyOtP//NThGxuCqCpKZMWtOOnyv5ZIWxw2L/QBzlMJsfoyWbQApv/AUSHrVU6rcD+yH9sBg3m5mhznT98tQKTco4ml/UBqMy6GPHF9czcKocxIzEs+0T7SjDdKkZ3vMYBwfirHFVl1C7DStBFKaFCW54GWVbUaE3pWb7j9JULrrRC6Pm6TR3ODbeHqAallfuvJg617S6wDkG1+/vDhIQ2fBnv0JXZd7ZFUoHkwP2eAjpwV4Rf49n3vQAe3Bbt5ISUubx7IBxE7jx32/YjCdcmwKrYSWdteTofXccxdplafxrN1PBCSvaTdma/ZgP3X5J99Rjn6tu4xuyTg8INW3vezzakQPJQsm+1uvpaIUxyP9qeJmpDBdhilWMx61kr0acqVof/fM8PJ/sBSgct1jtuLgBNGLlxSBVZRbISvrQtU+fFgHgR01DPmxoeSbfPvipMbLzOIvAMFDZvvJOwNrLPtqMuUw8KMXJ1MsVGiUeASs=";
+    translation.detectedLocale = "";
+
+    function showTranslationDialog() {
+      if(!translation.launchDialog)
+        loadScript("../../../../static/b687cbe1/plugin/translation/dialog.js");
+      else
+        translation.launchDialog();
+      return false; 
+    }</script></div></div></div></footer></body>
+<!-- Mirrored from ci.aegirproject.org/view/All/job/C provision - 1.x/changes?auto_refresh=false by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Apr 2017 11:49:14 GMT -->
+</html>

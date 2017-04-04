@@ -1,0 +1,126 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 392,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+            "branch" : [
+              {
+                "SHA1" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+            "branch" : [
+              {
+                "SHA1" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+        "branch" : [
+          {
+            "SHA1" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#392",
+  "duration" : 76373,
+  "estimatedDuration" : 1324070,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8 #392",
+  "id" : "392",
+  "keepLog" : False,
+  "number" : 392,
+  "queueId" : 3247,
+  "result" : "FAILURE",
+  "timestamp" : 1474745485799,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8/392/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+        "timestamp" : 1474745460000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fix puppet failure\n\nSolution from http://stackoverflow.com/questions/39564108/vagrant-box-ssl-error-suddenly-windows-10-7\n",
+        "date" : "2016-09-24T15:31:00-0400 +0200",
+        "id" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+        "msg" : "Fix puppet failure",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

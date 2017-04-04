@@ -1,0 +1,41 @@
+{
+  "_class" : "hudson.plugins.git.util.BuildData",
+  "buildsByBranchName" : {
+    "origin/new" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 5,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "fd308b1088ec0c74392fcd0f74b93cf21731dcd5",
+        "branch" : [
+          {
+            "SHA1" : "fd308b1088ec0c74392fcd0f74b93cf21731dcd5",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "fd308b1088ec0c74392fcd0f74b93cf21731dcd5",
+        "branch" : [
+          {
+            "SHA1" : "fd308b1088ec0c74392fcd0f74b93cf21731dcd5",
+            "name" : "origin/new"
+          }
+        ]
+      }
+    }
+  },
+  "lastBuiltRevision" : {
+    "SHA1" : "fd308b1088ec0c74392fcd0f74b93cf21731dcd5",
+    "branch" : [
+      {
+        "SHA1" : "fd308b1088ec0c74392fcd0f74b93cf21731dcd5",
+        "name" : "origin/new"
+      }
+    ]
+  },
+  "remoteUrls" : [
+    "http://git.drupal.org/project/puppet-drush.git"
+  ],
+  "scmName" : ""
+}

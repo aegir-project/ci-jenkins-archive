@@ -1,0 +1,132 @@
+{
+  "_class" : "hudson.matrix.MatrixBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 2,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+            "branch" : [
+              {
+                "SHA1" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+            "branch" : [
+              {
+                "SHA1" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+        "branch" : [
+          {
+            "SHA1" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#2",
+  "duration" : 9754,
+  "estimatedDuration" : 1160767,
+  "executor" : None,
+  "fullDisplayName" : "Matrix.deb2 #2",
+  "id" : "2014-01-08_18-16-31",
+  "keepLog" : False,
+  "number" : 2,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1389222991000,
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/2/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/Vagrantfile"
+        ],
+        "commitId" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+        "timestamp" : 1389223079000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Fix hash syntax.\n",
+        "date" : "2014-01-08T18:17:59-0500 -0500",
+        "id" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+        "msg" : "Fix hash syntax.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/matrix.deb/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ],
+  "runs" : [
+    {
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=stable/2/"
+    },
+    {
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=testing/2/"
+    },
+    {
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=unstable/2/"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 18,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+            "branch" : [
+              {
+                "SHA1" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+            "branch" : [
+              {
+                "SHA1" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+        "branch" : [
+          {
+            "SHA1" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#18",
+  "duration" : 14209,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #18",
+  "id" : "2012-04-12_11-00-26",
+  "keepLog" : false,
+  "number" : 18,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334242826000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/18/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module",
+          "modules/hosting/task/hosting_task.install"
+        ],
+        "commitId" : "a2469cc53ede285b65929a5f6672ea5cc33071c3",
+        "timestamp" : 1334227534000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1185690 by Dane Powell: Apply patch for hosting_task_log() entries are not deleted when task is.\n",
+        "date" : "2012-04-12T06:45:34-0400 +0100",
+        "id" : "a2469cc53ede285b65929a5f6672ea5cc33071c3",
+        "msg" : "Issue #1185690 by Dane Powell: Apply patch for hosting_task_log() entries are not deleted when task is.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.install"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module",
+          "modules/hosting/task/hosting_task.install"
+        ],
+        "commitId" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+        "timestamp" : 1334227543000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1185690 by Steven Jones: Fixed hosting_task_log() entries are not deleted when task is.\n",
+        "date" : "2012-04-12T06:45:43-0400 +0100",
+        "id" : "94a0a91cba52259de1cb34b506fd0d8e0d4d7308",
+        "msg" : "Issue #1185690 by Steven Jones: Fixed hosting_task_log() entries are not deleted when task is.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.install"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

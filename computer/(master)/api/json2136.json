@@ -1,0 +1,40 @@
+{
+  "_class" : "hudson.model.Hudson$MasterComputer",
+  "actions" : [
+    {
+      
+    }
+  ],
+  "displayName" : "master",
+  "executors" : [
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "icon" : "computer.png",
+  "iconClassName" : "icon-computer",
+  "idle" : true,
+  "jnlpAgent" : false,
+  "launchSupported" : true,
+  "loadStatistics" : {
+    "_class" : "hudson.model.Label$1"
+  },
+  "manualLaunchAllowed" : true,
+  "monitorData" : {
+    
+  },
+  "numExecutors" : 3,
+  "offline" : false,
+  "offlineCause" : null,
+  "offlineCauseReason" : "",
+  "oneOffExecutors" : [
+    
+  ],
+  "temporarilyOffline" : false
+}

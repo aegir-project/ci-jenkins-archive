@@ -1,0 +1,121 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 157,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+            "branch" : [
+              {
+                "SHA1" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+            "branch" : [
+              {
+                "SHA1" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+        "branch" : [
+          {
+            "SHA1" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#157",
+  "duration" : 560664,
+  "estimatedDuration" : 188500,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #157",
+  "id" : "2015-05-04_08-51-23",
+  "keepLog" : false,
+  "number" : 157,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1430743883000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/157/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+        ],
+        "commitId" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+        "timestamp" : 1430743126000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Let the drush output be a bit wider then 80 chars ... 130 for now.\n",
+        "date" : "2015-05-04T08:38:46-0400 +0200",
+        "id" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+        "msg" : "Let the drush output be a bit wider then 80 chars ... 130 for now.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

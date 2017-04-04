@@ -1,0 +1,30 @@
+Started by upstream project "Matrix.deb2" build number 4
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable
+Checkout:unstable / /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision 47dc6d8e2926b12f8d1049fc278be72e944f165f (origin/new)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision 384e2daac2641e947179bc7bcd06917a13704c98 (origin/1.0.x)
+Checking out Revision 384e2daac2641e947179bc7bcd06917a13704c98 (origin/1.0.x)
+No change to record in branch origin/1.0.x
+[unstable] $ /bin/sh -xe /tmp/hudson8074116177676945787.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+Cloning into /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/tests/functional_tests/matrix.deb/modules/drush...
+Cloning into /var/lib/jenkins/jobs/Matrix.deb2/workspace/aegir_api/2/aegir_dist/unstable/tests/functional_tests/matrix.deb/modules/aegir...
+[unstable] $ /bin/sh -xe /tmp/hudson4108640664074084144.sh
++ env aegir_box=raring64 http://cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box aegir_api=2 drush_api=5 aegir_dist=stable aegir_web_server=apache2 ./tests/functional_tests/matrix.deb/run-tests.sh
+There was a problem with the configuration of Vagrant. The error message(s)
+are printed below:
+
+vm:
+* The box 'raring64 http://cloud-images.ubuntu.com/raring/current/raring-server-cloudimg-vagrant-amd64-disk1.box' could not be found.
+
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

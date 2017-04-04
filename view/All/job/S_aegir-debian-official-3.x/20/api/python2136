@@ -1,0 +1,625 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "7.x-3.6"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+            "branch" : [
+              {
+                "SHA1" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+            "branch" : [
+              {
+                "SHA1" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+        "branch" : [
+          {
+            "SHA1" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir3-cluster-slave_3.6_all.deb",
+      "fileName" : "aegir3-cluster-slave_3.6_all.deb",
+      "relativePath" : "provision/build-area/aegir3-cluster-slave_3.6_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-hostmaster_3.6_all.deb",
+      "fileName" : "aegir3-hostmaster_3.6_all.deb",
+      "relativePath" : "provision/build-area/aegir3-hostmaster_3.6_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-provision_3.6_all.deb",
+      "fileName" : "aegir3-provision_3.6_all.deb",
+      "relativePath" : "provision/build-area/aegir3-provision_3.6_all.deb"
+    },
+    {
+      "displayPath" : "aegir3_3.6_all.deb",
+      "fileName" : "aegir3_3.6_all.deb",
+      "relativePath" : "provision/build-area/aegir3_3.6_all.deb"
+    }
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#20",
+  "duration" : 19109,
+  "estimatedDuration" : 19141,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official-3.x #20",
+  "id" : "20",
+  "keepLog" : False,
+  "number" : 20,
+  "queueId" : 1764,
+  "result" : "SUCCESS",
+  "timestamp" : 1466690693444,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official-3.x/20/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "c4d8621a46f3d82f4562b5dd5460ecc337076b91",
+        "timestamp" : 1463750302000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2729891 by helmo: Fix Debian upgrade error 3.4 to 3.5 (with hosting_git enabled)\n",
+        "date" : "2016-05-20T09:18:22-0400 +0200",
+        "id" : "c4d8621a46f3d82f4562b5dd5460ecc337076b91",
+        "msg" : "Issue #2729891 by helmo: Fix Debian upgrade error 3.4 to 3.5 (with hosting_git enabled)",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "9d0c6e850188a5420f31304c0b93fec3920d351a",
+        "timestamp" : 1463751140000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Update debian/changelog for 3.5.1 mini release\n",
+        "date" : "2016-05-20T09:32:20-0400 +0200",
+        "id" : "9d0c6e850188a5420f31304c0b93fec3920d351a",
+        "msg" : "Update debian/changelog for 3.5.1 mini release",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "ba9295d73884d3b474a7e51aa1d8ca62b61e121f",
+        "timestamp" : 1463769936000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Bump default Drush version in manual upgrade script\n",
+        "date" : "2016-05-20T14:45:36-0400 +0200",
+        "id" : "ba9295d73884d3b474a7e51aa1d8ca62b61e121f",
+        "msg" : "Bump default Drush version in manual upgrade script",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/subdir.tpl.php"
+        ],
+        "commitId" : "f6a1d2cd024d9cae6fa80dc0403be20a986fa9ff",
+        "timestamp" : 1463823434000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Nginx: Fix for /.well-known/acme-challenge in subdir sites\n",
+        "date" : "2016-05-21T05:37:14-0400 +0200",
+        "id" : "f6a1d2cd024d9cae6fa80dc0403be20a986fa9ff",
+        "msg" : "Nginx: Fix for /.well-known/acme-challenge in subdir sites",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Apache/subdir.tpl.php",
+          "http/Provision/Config/Apache/vhost.tpl.php"
+        ],
+        "commitId" : "7bff65d2f2fbb970f172e3a0bbcbcbbf0ec28990",
+        "timestamp" : 1463994901000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #2730977 by mpv: 403 Forbidden for hosting_le acme challenges\n",
+        "date" : "2016-05-23T05:15:01-0400 +0200",
+        "id" : "7bff65d2f2fbb970f172e3a0bbcbcbbf0ec28990",
+        "msg" : "Issue #2730977 by mpv: 403 Forbidden for hosting_le acme challenges",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/subdir.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/delete.backup.provision.inc"
+        ],
+        "commitId" : "8be5c9a144973bfb91ab3c6b502eb98cfc9228ca",
+        "timestamp" : 1464023607000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+          "fullName" : "Jon Pugh"
+        },
+        "comment" : "Issue #2731471 by Jon Pugh: Provision backup-delete command is too strict if it doesn't have \"backups\" passed to it\n",
+        "date" : "2016-05-23T13:13:27-0400 -0400",
+        "id" : "8be5c9a144973bfb91ab3c6b502eb98cfc9228ca",
+        "msg" : "Issue #2731471 by Jon Pugh: Provision backup-delete command is too strict if it doesn't have \"backups\" passed to it",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/delete.backup.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Apache/subdir.tpl.php",
+          "http/Provision/Config/Apache/vhost.tpl.php",
+          "http/Provision/Config/Nginx/subdir.tpl.php",
+          "http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+        ],
+        "commitId" : "9c74c16b007de050d92d4675b7bba05d7bcae2ae",
+        "timestamp" : 1464073063000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #2731605 by gboudrias - Hardcoded hosting_le code limits behavior with regards to the .well-known directory\n",
+        "date" : "2016-05-24T02:57:43-0400 +0200",
+        "id" : "9c74c16b007de050d92d4675b7bba05d7bcae2ae",
+        "msg" : "Issue #2731605 by gboudrias - Hardcoded hosting_le code limits behavior with regards to the .well-known directory",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/subdir.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/vhost.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "e0b03d273ef8a6e85f48c95a9a742cd2b940a320",
+        "timestamp" : 1464090980000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "exmplain new release.sh steps\n",
+        "date" : "2016-05-24T07:56:20-0400 +0200",
+        "id" : "e0b03d273ef8a6e85f48c95a9a742cd2b940a320",
+        "msg" : "exmplain new release.sh steps",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.inc"
+        ],
+        "commitId" : "1260b8b3ef7ad947858490179b571364944c67a0",
+        "timestamp" : 1464110009000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+          "fullName" : "Jon Pugh"
+        },
+        "comment" : "Fixing docblock for d() function.  You can now CTRL-click methods like d()->get_services() to go to the definition.\n",
+        "date" : "2016-05-24T13:13:29-0400 -0400",
+        "id" : "1260b8b3ef7ad947858490179b571364944c67a0",
+        "msg" : "Fixing docblock for d() function.  You can now CTRL-click methods like d()->get_services() to go to the definition.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.context.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/delete.backup.provision.inc"
+        ],
+        "commitId" : "5b722c63c59a35e3f356b2081caeef6c3b24fe37",
+        "timestamp" : 1465072344000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"Issue #2731471 by Jon Pugh: Provision backup-delete command is too strict if it doesn't have \"backups\" passed to it\"\n\nThis reverts commit 8be5c9a144973bfb91ab3c6b502eb98cfc9228ca.\n",
+        "date" : "2016-06-04T16:32:24-0400 -0400",
+        "id" : "5b722c63c59a35e3f356b2081caeef6c3b24fe37",
+        "msg" : "Revert \"Issue #2731471 by Jon Pugh: Provision backup-delete command is too strict if it doesn't have \"backups\" passed to it\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/delete.backup.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.api.php"
+        ],
+        "commitId" : "ca9eff4f7c12de50fc2df1e532ab475f3e7b04f1",
+        "timestamp" : 1466102012000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Fix hook documentation.\n",
+        "date" : "2016-06-16T14:33:32-0400 +0000",
+        "id" : "ca9eff4f7c12de50fc2df1e532ab475f3e7b04f1",
+        "msg" : "Fix hook documentation.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.api.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.api.php"
+        ],
+        "commitId" : "237f8946a19872dc99555f8a5160bbe7f13b665f",
+        "timestamp" : 1466124824000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Fix more hook docs.\n",
+        "date" : "2016-06-16T20:53:44-0400 +0000",
+        "id" : "237f8946a19872dc99555f8a5160bbe7f13b665f",
+        "msg" : "Fix more hook docs.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.api.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "4b58ab2b5aa1d99e0cad4523ac98abe89cbeba09",
+        "timestamp" : 1466676941000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"Issue #2729891 by helmo: Fix Debian upgrade error 3.4 to 3.5 (with hosting_git enabled)\"\n\nThis reverts commit c4d8621a46f3d82f4562b5dd5460ecc337076b91.\n\nThis was giving trouble in the u pgrade from 2.x to 3.x.\nThe workaround for upgrading 3.4 to 3.5+ is to disable the hosting_git module\nbefore upgrading, and enable it afterwards.\n",
+        "date" : "2016-06-23T06:15:41-0400 +0200",
+        "id" : "4b58ab2b5aa1d99e0cad4523ac98abe89cbeba09",
+        "msg" : "Revert \"Issue #2729891 by helmo: Fix Debian upgrade error 3.4 to 3.5 (with hosting_git enabled)\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "51b97cf09c8bff877f42b8c25ffd3bb83db9674e",
+        "timestamp" : 1466685816000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2754309: Add option to ignore drush version during deb install\n",
+        "date" : "2016-06-23T08:43:36-0400 +0200",
+        "id" : "51b97cf09c8bff877f42b8c25ffd3bb83db9674e",
+        "msg" : "Issue #2754309: Add option to ignore drush version during deb install",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "07741bdccbcd05dff66f2a948dbeac0d78b951b2",
+        "timestamp" : 1466685854000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2754309: Re-indent\n",
+        "date" : "2016-06-23T08:44:14-0400 +0200",
+        "id" : "07741bdccbcd05dff66f2a948dbeac0d78b951b2",
+        "msg" : "Issue #2754309: Re-indent",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "38713fa3d02f369206eefd85b550ce4cba52ffed",
+        "timestamp" : 1466689536000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "change version information for release 3.6\n",
+        "date" : "2016-06-23T09:45:36-0400 +0200",
+        "id" : "38713fa3d02f369206eefd85b550ce4cba52ffed",
+        "msg" : "change version information for release 3.6",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt",
+          "aegir-release.make"
+        ],
+        "commitId" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+        "timestamp" : 1466689536000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"change version information for release 3.6\"\n\nThis reverts commit 38713fa3d02f369206eefd85b550ce4cba52ffed.\n",
+        "date" : "2016-06-23T09:45:36-0400 +0200",
+        "id" : "1aaee66414e6c8a9919c02e870616c2ec5dfae06",
+        "msg" : "Revert \"change version information for release 3.6\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+      "fullName" : "Jon Pugh"
+    }
+  ]
+}

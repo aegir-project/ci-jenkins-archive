@@ -1,0 +1,3162 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/D_aegir3-debian-test-unstable/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/1.0.x^{commit} # timeout=10
+Checking out Revision fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394 (origin/1.0.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394
+ > git rev-list a14e9b08d6f8efbf23a48b1b08abaea9eba4ee0d # timeout=10
+ > git tag -a -f -m Jenkins Build #3 jenkins-D_aegir3-debian-test-unstable-3 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson252835155264695524.sh
++ ./tests/functional_tests/aegir3-deb-unstable-no-puppet/setup.sh
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+==> default: Running cleanup tasks for 'shell' provisioner...
+[workspace] $ /bin/sh -xe /tmp/hudson6341509215777230181.sh
++ ./tests/functional_tests/aegir3-deb-unstable-no-puppet/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'debian/jessie64'...
+Progress: 10%Progress: 20%Progress: 40%Progress: 60%Progress: 70%Progress: 80%Progress: 90%==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'debian/jessie64' is up to date...
+==> default: Setting the name of the VM: workspace_default_1444768854245_21958
+==> default: Fixed port collision for 22 => 2222. Now on port 2202.
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2202 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2202
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/D_aegir3-debian-test-unstable/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/D_aegir3-debian-test-unstable/workspace/tmp/apt/cache
+==> default: Running provisioner: shell...
+    default: Running: inline script
+==> default: stdin: is not a tty
+==> default: deb http://debian.aegirproject.org unstable main
+==> default:  
+==> default:  
+==> default: %
+==> default:  
+==> default: T
+==> default: o
+==> default: t
+==> default: a
+==> default: l
+==> default:  
+==> default:  
+==> default:  
+==> default:  
+==> default: %
+==> default:  
+==> default: Received % Xferd  Average Speed   Time    Time     Time  Current
+==> default:                                  Dload  Upload   Total   Spent    Left  Speed
+==> default:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+==> default: 100  3901  100  3901    0     0   468k      0 --:--:-- --:--:-- --:--:--  476k
+==> default: OK
+==> default: Get:1 http://debian.aegirproject.org unstable InRelease [3,142 B]
+==> default: Get:2 http://debian.aegirproject.org unstable/main amd64 Packages [4,450 B]
+==> default: Ign http://debian.aegirproject.org unstable/main Translation-en_US
+==> default: Ign http://debian.aegirproject.org unstable/main Translation-en
+==> default: Ign http://httpredir.debian.org jessie InRelease
+==> default: Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
+==> default: Hit http://httpredir.debian.org jessie Release.gpg
+==> default: Hit http://httpredir.debian.org jessie Release
+==> default: Hit http://httpredir.debian.org jessie/main Sources
+==> default: Get:4 http://security.debian.org jessie/updates/main Sources [89.4 kB]
+==> default: Hit http://httpredir.debian.org jessie/main amd64 Packages
+==> default: Hit http://httpredir.debian.org jessie/main Translation-en
+==> default: Get:5 http://security.debian.org jessie/updates/main amd64 Packages [142 kB]
+==> default: Get:6 http://security.debian.org jessie/updates/main Translation-en [78.5 kB]
+==> default: Fetched 381 kB in 2s (137 kB/s)
+==> default: Reading package lists...
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following extra packages will be installed:
+==> default:   aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+==> default:   apache2-utils git git-core git-man libaio1 libapache2-mod-php5 libapr1
+==> default:   libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libdbd-mysql-perl
+==> default:   libdbi-perl liberror-perl libgd3 libhtml-template-perl liblua5.1-0
+==> default:   libmysqlclient18 libonig2 libqdbm14 libterm-readkey-perl libvpx1 libxpm4
+==> default:   mysql-client-5.5 mysql-common mysql-server-5.5 mysql-server-core-5.5 php5
+==> default:   php5-cli php5-common php5-gd php5-json php5-mysql php5-readline rsync
+==> default:   ssl-cert
+==> default: Suggested packages:
+==> default:   apache2-doc apache2-suexec-pristine apache2-suexec-custom git-daemon-run
+==> default:   git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-arch
+==> default:   git-cvs git-mediawiki git-svn php-pear libclone-perl libmldbm-perl
+==> default:   libnet-daemon-perl libsql-statement-perl libgd-tools libipc-sharedcache-perl
+==> default:   tinyca php5-user-cache openssl-blacklist
+==> default: The following NEW packages will be installed:
+==> default:   aegir3 aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+==> default:   apache2-utils git git-core git-man libaio1 libapache2-mod-php5 libapr1
+==> default:   libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libdbd-mysql-perl
+==> default:   libdbi-perl liberror-perl libgd3 libhtml-template-perl liblua5.1-0
+==> default:   libmysqlclient18 libonig2 libqdbm14 libterm-readkey-perl libvpx1 libxpm4
+==> default:   mysql-client-5.5 mysql-common mysql-server mysql-server-5.5
+==> default:   mysql-server-core-5.5 php5 php5-cli php5-common php5-gd php5-json php5-mysql
+==> default:   php5-readline rsync ssl-cert
+==> default: Extracting templates from packages: 71%
+==> default: Preconfiguring packages ...
+==> default: Extracting templates from packages: 100%
+==> default: + 
+==> default: grep
+==> default:  -q
+==> default:  Drupal bootstrap.*Successful
+==> default: + 
+==> default: su
+==> default:  -s
+==> default:  /bin/sh
+==> default:  aegir
+==> default:  -c
+==> default:  drush @hostmaster status
+==> default: + db_input medium aegir/email
+==> default: + _db_cmd INPUT medium aegir/email
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT medium aegir/email
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input high aegir/site
+==> default: + _db_cmd INPUT high aegir/site
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT high aegir/site
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_get aegir/email
+==> default: + _db_cmd GET aegir/email
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/email
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET= aegir@example.com
+==> default: + return 0
+==> default: + [ -z  aegir@example.com ]
+==> default: + db_get aegir/site
+==> default: + _db_cmd GET aegir/site
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/site
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET= aegir.example.com
+==> default: + return 0
+==> default: + [ -z  aegir.example.com ]
+==> default: + db_input low aegir/makefile
+==> default: + _db_cmd INPUT low aegir/makefile
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/makefile
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input low aegir/working-copy
+==> default: + _db_cmd INPUT low aegir/working-copy
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/working-copy
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input low aegir/db_host
+==> default: + _db_cmd INPUT low aegir/db_host
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/db_host
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input low aegir/db_user
+==> default: + _db_cmd INPUT low aegir/db_user
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/db_user
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_fset aegir/db_password seen false
+==> default: + _db_cmd FSET aegir/db_password seen false
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n FSET aegir/db_password seen false
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=false
+==> default: + return 0
+==> default: + db_input high aegir/db_password
+==> default: + _db_cmd INPUT high aegir/db_password
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT high aegir/db_password
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + 
+==> default: wc_httpd_installed
+==> default:  apache2
+==> default:  nginx
+==> default: + 
+==> default: local
+==> default:  httpds
+==> default: + 
+==> default: [
+==> default:  apache2 nginx
+==> default:  ]
+==> default: + 
+==> default: httpds=apache2 nginx
+==> default: + 
+==> default: test
+==> default:  -x
+==> default:  /usr/sbin/apache2
+==> default: + 
+==> default: test
+==> default:  -x
+==> default:  /usr/sbin/nginx
+==> default: + default_servers=
+==> default: + 
+==> default: sed
+==> default:  -e
+==> default:  s/[[:space:]][[:space:]]*/, /g
+==> default: + 
+==> default: echo
+==> default: + server_list=
+==> default: + db_fget aegir/webserver seen
+==> default: + _db_cmd FGET aegir/webserver seen
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n FGET aegir/webserver seen
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=false
+==> default: + return 0
+==> default: + [ false = false ]
+==> default: + db_set aegir/webserver
+==> default: + _db_cmd SET aegir/webserver
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n SET aegir/webserver
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=value set
+==> default: + return 0
+==> default: + db_input low aegir/webserver
+==> default: + _db_cmd INPUT low aegir/webserver
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/webserver
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_go
+==> default: + _db_cmd GO 
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GO 
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=ok
+==> default: + return 0
+==> default: 0 upgraded, 42 newly installed, 0 to remove and 9 not upgraded.
+==> default: Need to get 0 B/22.6 MB of archives.
+==> default: After this operation, 151 MB of additional disk space will be used.
+==> default: Selecting previously unselected package libapr1:amd64.
+==> default: (Reading database ... 
+==> default: (Reading database ... 5%
+==> default: (Reading database ... 10%
+==> default: (Reading database ... 15%
+==> default: (Reading database ... 20%
+==> default: (Reading database ... 25%
+==> default: (Reading database ... 30%
+==> default: (Reading database ... 35%
+==> default: (Reading database ... 40%
+==> default: (Reading database ... 45%
+==> default: (Reading database ... 50%
+==> default: (Reading database ... 55%
+==> default: (Reading database ... 60%
+==> default: (Reading database ... 65%
+==> default: (Reading database ... 70%
+==> default: (Reading database ... 75%
+==> default: (Reading database ... 80%
+==> default: (Reading database ... 85%
+==> default: (Reading database ... 90%
+==> default: (Reading database ... 95%
+==> default: (Reading database ... 100%
+==> default: (Reading database ... 
+==> default: 35750 files and directories currently installed.)
+==> default: Preparing to unpack .../libapr1_1.5.1-3_amd64.deb ...
+==> default: Unpacking libapr1:amd64 (1.5.1-3) ...
+==> default: Selecting previously unselected package libaprutil1:amd64.
+==> default: Preparing to unpack .../libaprutil1_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+==> default: Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package libaprutil1-ldap:amd64.
+==> default: Preparing to unpack .../libaprutil1-ldap_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1-ldap:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package liblua5.1-0:amd64.
+==> default: Preparing to unpack .../liblua5.1-0_5.1.5-7.1_amd64.deb ...
+==> default: Unpacking liblua5.1-0:amd64 (5.1.5-7.1) ...
+==> default: Selecting previously unselected package apache2-bin.
+==> default: Preparing to unpack .../apache2-bin_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2-bin (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2-utils.
+==> default: Preparing to unpack .../apache2-utils_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2-utils (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2-data.
+==> default: Preparing to unpack .../apache2-data_2.4.10-10+deb8u3_all.deb ...
+==> default: Unpacking apache2-data (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2.
+==> default: Preparing to unpack .../apache2_2.4.10-10+deb8u3_amd64.deb ...
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper symlink_to_dir in preinst of apache2
+==> default: DEBUG: dpkg-maintscript-helper: SYMLINK=/usr/share/doc/apache2 -> apache2.2-common PACKAGE=apache2:amd64 LASTVERSION=2.4.1-1~ ACTION=install PARAM=
+==> default: Unpacking apache2 (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package libaio1:amd64.
+==> default: Preparing to unpack .../libaio1_0.3.110-1_amd64.deb ...
+==> default: Unpacking libaio1:amd64 (0.3.110-1) ...
+==> default: Selecting previously unselected package libvpx1:amd64.
+==> default: Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+==> default: Unpacking libvpx1:amd64 (1.3.0-3) ...
+==> default: Selecting previously unselected package libxpm4:amd64.
+==> default: Preparing to unpack .../libxpm4_1%3a3.5.11-1+b1_amd64.deb ...
+==> default: Unpacking libxpm4:amd64 (1:3.5.11-1+b1) ...
+==> default: Selecting previously unselected package libgd3:amd64.
+==> default: Preparing to unpack .../libgd3_2.1.0-5_amd64.deb ...
+==> default: Unpacking libgd3:amd64 (2.1.0-5) ...
+==> default: Selecting previously unselected package mysql-common.
+==> default: Preparing to unpack .../mysql-common_5.5.44-0+deb8u1_all.deb ...
+==> default: Unpacking mysql-common (5.5.44-0+deb8u1) ...
+==> default: Selecting previously unselected package libmysqlclient18:amd64.
+==> default: Preparing to unpack .../libmysqlclient18_5.5.44-0+deb8u1_amd64.deb ...
+==> default: Unpacking libmysqlclient18:amd64 (5.5.44-0+deb8u1) ...
+==> default: Selecting previously unselected package libonig2:amd64.
+==> default: Preparing to unpack .../libonig2_5.9.5-3.2_amd64.deb ...
+==> default: Unpacking libonig2:amd64 (5.9.5-3.2) ...
+==> default: Selecting previously unselected package libdbi-perl.
+==> default: Preparing to unpack .../libdbi-perl_1.631-3+b1_amd64.deb ...
+==> default: Unpacking libdbi-perl (1.631-3+b1) ...
+==> default: Selecting previously unselected package libdbd-mysql-perl.
+==> default: Preparing to unpack .../libdbd-mysql-perl_4.028-2+b1_amd64.deb ...
+==> default: Unpacking libdbd-mysql-perl (4.028-2+b1) ...
+==> default: Selecting previously unselected package libterm-readkey-perl.
+==> default: Preparing to unpack .../libterm-readkey-perl_2.32-1+b1_amd64.deb ...
+==> default: Unpacking libterm-readkey-perl (2.32-1+b1) ...
+==> default: Selecting previously unselected package mysql-client-5.5.
+==> default: Preparing to unpack .../mysql-client-5.5_5.5.44-0+deb8u1_amd64.deb ...
+==> default: Unpacking mysql-client-5.5 (5.5.44-0+deb8u1) ...
+==> default: Selecting previously unselected package mysql-server-core-5.5.
+==> default: Preparing to unpack .../mysql-server-core-5.5_5.5.44-0+deb8u1_amd64.deb ...
+==> default: Unpacking mysql-server-core-5.5 (5.5.44-0+deb8u1) ...
+==> default: Processing triggers for man-db (2.7.0.2-5) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Setting up mysql-common (5.5.44-0+deb8u1) ...
+==> default: Selecting previously unselected package mysql-server-5.5.
+==> default: (Reading database ... 
+==> default: (Reading database ... 5%
+==> default: (Reading database ... 10%
+==> default: (Reading database ... 15%
+==> default: (Reading database ... 20%
+==> default: (Reading database ... 25%
+==> default: (Reading database ... 30%
+==> default: (Reading database ... 35%
+==> default: (Reading database ... 40%
+==> default: (Reading database ... 45%
+==> default: (Reading database ... 50%
+==> default: (Reading database ... 55%
+==> default: (Reading database ... 60%
+==> default: (Reading database ... 65%
+==> default: (Reading database ... 70%
+==> default: (Reading database ... 75%
+==> default: (Reading database ... 80%
+==> default: (Reading database ... 85%
+==> default: (Reading database ... 90%
+==> default: (Reading database ... 95%
+==> default: (Reading database ... 100%
+==> default: (Reading database ... 
+==> default: 36825 files and directories currently installed.)
+==> default: Preparing to unpack .../mysql-server-5.5_5.5.44-0+deb8u1_amd64.deb ...
+==> default: Unpacking mysql-server-5.5 (5.5.44-0+deb8u1) ...
+==> default: Selecting previously unselected package libqdbm14.
+==> default: Preparing to unpack .../libqdbm14_1.8.78-5+b1_amd64.deb ...
+==> default: Unpacking libqdbm14 (1.8.78-5+b1) ...
+==> default: Selecting previously unselected package php5-common.
+==> default: Preparing to unpack .../php5-common_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-common
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo.ini -> /etc/php5/mods-available/pdo.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-common
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/opcache.ini -> /etc/php5/mods-available/opcache.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: Unpacking php5-common (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package php5-json.
+==> default: Preparing to unpack .../php5-json_1.3.6-1_amd64.deb ...
+==> default: Unpacking php5-json (1.3.6-1) ...
+==> default: Selecting previously unselected package php5-cli.
+==> default: Preparing to unpack .../php5-cli_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+==> default: Unpacking php5-cli (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package php5-mysql.
+==> default: Preparing to unpack .../php5-mysql_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-mysql
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysql.ini -> /etc/php5/mods-available/mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-mysql
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysqli.ini -> /etc/php5/mods-available/mysqli.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-mysql
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo_mysql.ini -> /etc/php5/mods-available/pdo_mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: Unpacking php5-mysql (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package aegir3-provision.
+==> default: Preparing to unpack .../aegir3-provision_3.1+.1829b19_all.deb ...
+==> default: Unpacking aegir3-provision (3.1+.1829b19) ...
+==> default: Selecting previously unselected package php5-gd.
+==> default: Preparing to unpack .../php5-gd_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-gd
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/gd.ini -> /etc/php5/mods-available/gd.ini PACKAGE=php5-gd:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: Unpacking php5-gd (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package libapache2-mod-php5.
+==> default: Preparing to unpack .../libapache2-mod-php5_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+==> default: Unpacking libapache2-mod-php5 (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package liberror-perl.
+==> default: Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+==> default: Unpacking liberror-perl (0.17-1.1) ...
+==> default: Selecting previously unselected package git-man.
+==> default: Preparing to unpack .../git-man_1%3a2.1.4-2.1_all.deb ...
+==> default: Unpacking git-man (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package git.
+==> default: Preparing to unpack .../git_1%3a2.1.4-2.1_amd64.deb ...
+==> default: Unpacking git (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package git-core.
+==> default: Preparing to unpack .../git-core_1%3a2.1.4-2.1_all.deb ...
+==> default: Unpacking git-core (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package aegir3-hostmaster.
+==> default: Preparing to unpack .../aegir3-hostmaster_3.1+.1829b19_all.deb ...
+==> default: Unpacking aegir3-hostmaster (3.1+.1829b19) ...
+==> default: Selecting previously unselected package aegir3.
+==> default: Preparing to unpack .../aegir3_3.1+.1829b19_all.deb ...
+==> default: Unpacking aegir3 (3.1+.1829b19) ...
+==> default: Selecting previously unselected package libhtml-template-perl.
+==> default: Preparing to unpack .../libhtml-template-perl_2.95-1_all.deb ...
+==> default: Unpacking libhtml-template-perl (2.95-1) ...
+==> default: Selecting previously unselected package mysql-server.
+==> default: Preparing to unpack .../mysql-server_5.5.44-0+deb8u1_all.deb ...
+==> default: Unpacking mysql-server (5.5.44-0+deb8u1) ...
+==> default: Selecting previously unselected package php5.
+==> default: Preparing to unpack .../php5_5.6.13+dfsg-0+deb8u1_all.deb ...
+==> default: Unpacking php5 (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package php5-readline.
+==> default: Preparing to unpack .../php5-readline_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-readline
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/readline.ini -> /etc/php5/mods-available/readline.ini PACKAGE=php5-readline:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+==> default: Unpacking php5-readline (5.6.13+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package rsync.
+==> default: Preparing to unpack .../rsync_3.1.1-3_amd64.deb ...
+==> default: Unpacking rsync (3.1.1-3) ...
+==> default: Selecting previously unselected package ssl-cert.
+==> default: Preparing to unpack .../ssl-cert_1.0.35_all.deb ...
+==> default: Unpacking ssl-cert (1.0.35) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Processing triggers for man-db (2.7.0.2-5) ...
+==> default: Setting up libapr1:amd64 (1.5.1-3) ...
+==> default: Setting up libaprutil1:amd64 (1.5.4-1) ...
+==> default: Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+==> default: Setting up libaprutil1-ldap:amd64 (1.5.4-1) ...
+==> default: Setting up liblua5.1-0:amd64 (5.1.5-7.1) ...
+==> default: Setting up apache2-bin (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2-utils (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2-data (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2 (2.4.10-10+deb8u3) ...
+==> default: Enabling module mpm_event.
+==> default: Enabling module authz_core.
+==> default: Enabling module authz_host.
+==> default: Enabling module authn_core.
+==> default: Enabling module auth_basic.
+==> default: Enabling module access_compat.
+==> default: Enabling module authn_file.
+==> default: Enabling module authz_user.
+==> default: Enabling module alias.
+==> default: Enabling module dir.
+==> default: Enabling module autoindex.
+==> default: Enabling module env.
+==> default: Enabling module mime.
+==> default: Enabling module negotiation.
+==> default: Enabling module setenvif.
+==> default: Enabling module filter.
+==> default: Enabling module deflate.
+==> default: Enabling module status.
+==> default: Enabling conf charset.
+==> default: Enabling conf localized-error-pages.
+==> default: Enabling conf other-vhosts-access-log.
+==> default: Enabling conf security.
+==> default: Enabling conf serve-cgi-bin.
+==> default: Enabling site 000-default.
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper symlink_to_dir in postinst of apache2
+==> default: DEBUG: dpkg-maintscript-helper: SYMLINK=/usr/share/doc/apache2 -> apache2.2-common PACKAGE=apache2:amd64 LASTVERSION=2.4.1-1~ ACTION=configure PARAM=
+==> default: Setting up libaio1:amd64 (0.3.110-1) ...
+==> default: Setting up libvpx1:amd64 (1.3.0-3) ...
+==> default: Setting up libxpm4:amd64 (1:3.5.11-1+b1) ...
+==> default: Setting up libgd3:amd64 (2.1.0-5) ...
+==> default: Setting up libmysqlclient18:amd64 (5.5.44-0+deb8u1) ...
+==> default: Setting up libonig2:amd64 (5.9.5-3.2) ...
+==> default: Setting up libdbi-perl (1.631-3+b1) ...
+==> default: Setting up libdbd-mysql-perl (4.028-2+b1) ...
+==> default: Setting up libterm-readkey-perl (2.32-1+b1) ...
+==> default: Setting up mysql-client-5.5 (5.5.44-0+deb8u1) ...
+==> default: Setting up mysql-server-core-5.5 (5.5.44-0+deb8u1) ...
+==> default: Setting up mysql-server-5.5 (5.5.44-0+deb8u1) ...
+==> default: 151013 20:41:41 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+==> default: 151013 20:41:41 [Note] /usr/sbin/mysqld (mysqld 5.5.44-0+deb8u1) starting as process 8174 ...
+==> default: Setting up libqdbm14 (1.8.78-5+b1) ...
+==> default: Setting up php5-common (5.6.13+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/pdo.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-common
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo.ini -> /etc/php5/mods-available/pdo.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module pdo for apache2 SAPI
+==> default: php5_invoke: Enable module pdo for cli SAPI
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/opcache.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-common
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/opcache.ini -> /etc/php5/mods-available/opcache.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module opcache for apache2 SAPI
+==> default: php5_invoke: Enable module opcache for cli SAPI
+==> default: Setting up php5-json (1.3.6-1) ...
+==> default: php5_invoke: Enable module json for apache2 SAPI
+==> default: php5_invoke: Enable module json for cli SAPI
+==> default: Setting up php5-cli (5.6.13+dfsg-0+deb8u1) ...
+==> default: update-alternatives: 
+==> default: using /usr/bin/php5 to provide /usr/bin/php (php) in auto mode
+==> default: 
+==> default: Creating config file /etc/php5/cli/php.ini with new version
+==> default: Setting up php5-mysql (5.6.13+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/mysql.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-mysql
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysql.ini -> /etc/php5/mods-available/mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module mysql for apache2 SAPI
+==> default: php5_invoke: Enable module mysql for cli SAPI
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/mysqli.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-mysql
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysqli.ini -> /etc/php5/mods-available/mysqli.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module mysqli for apache2 SAPI
+==> default: php5_invoke: Enable module mysqli for cli SAPI
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/pdo_mysql.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-mysql
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo_mysql.ini -> /etc/php5/mods-available/pdo_mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module pdo_mysql for apache2 SAPI
+==> default: php5_invoke: Enable module pdo_mysql for cli SAPI
+==> default: Setting up aegir3-provision (3.1+.1829b19) ...
+==> default: + 
+==> default: VARLIB=/var/aegir
+==> default: + 
+==> default: getent
+==> default:  passwd
+==> default:  aegir
+==> default: + echo adding aegir user...
+==> default: adding aegir user...
+==> default: + adduser --quiet --system --no-create-home --group --home /var/aegir --shell /bin/bash --gecos Aegir user,,, aegir
+==> default: + adduser --quiet aegir www-data
+==> default: Adding user aegir to group www-data
+==> default: + [ -d /etc/sudoers.d ]
+==> default: + ucf --debconf-ok /usr/share/doc/aegir3-provision/examples/example.sudoers /etc/sudoers.d/aegir
+==> default: 
+==> default: Creating config file /etc/sudoers.d/aegir with new version
+==> default: + ucfr aegir-provision /etc/sudoers.d/aegir
+==> default: + chmod 440 /etc/sudoers.d/aegir
+==> default: + chown aegir:aegir /var/aegir
+==> default: + 
+==> default: php
+==> default: + 
+==> default: curl
+==> default:  -sS
+==> default:  https://getcomposer.org/installer
+==> default: #!/usr/bin/env php
+==> default: All settings correct for using Composer
+==> default: Downloading...
+==> default: 
+==> default: Composer successfully installed to: //composer.phar
+==> default: 
+==> default: Use it: php composer.phar
+==> default: + mv composer.phar /usr/local/bin/composer
+==> default: + su -c composer global require drush/drush:6.* aegir
+==> default: Changed current directory to /var/aegir/.composer
+==> default: ./composer.json has been created
+==> default: Loading composer repositories with package information
+==> default: Updating dependencies (including require-dev)
+==> default:   - Installing drush/drush (6.6.0)
+==> default:     Downloading: Connecting...
+==> default:     Downloading: 0%           
+==> default:     Downloading: 5%
+==> default: 
+==> default:     Downloading: 10%
+==> default: 
+==> default:     Downloading: 15%
+==> default: 
+==> default:     Downloading: 20%
+==> default: 
+==> default:     Downloading: 25%
+==> default: 
+==> default:     Downloading: 30%
+==> default: 
+==> default:     Downloading: 40%
+==> default: 
+==> default:     Downloading: 45%
+==> default: 
+==> default:     Downloading: 50%
+==> default: 
+==> default:     Downloading: 55%
+==> default: 
+==> default:     Downloading: 60%
+==> default: 
+==> default:     Downloading: 65%
+==> default: 
+==> default:     Downloading: 70%
+==> default: 
+==> default:     Downloading: 80%
+==> default: 
+==> default:     Downloading: 85%
+==> default: 
+==> default:     Downloading: 90%
+==> default: 
+==> default:     Downloading: 95%
+==> default: 
+==> default:     Downloading: 100%
+==> default: 
+==> default:     Downloading: 100%
+==> default: Writing lock file
+==> default: Generating autoload files
+==> default: + echo export PATH="$HOME/.composer/vendor/bin:$PATH"
+==> default: + [ -f /usr/local/bin/drush ]
+==> default: + ln -s /var/aegir/.composer/vendor/bin/drush /usr/local/bin
+==> default: + exit 0
+==> default: Setting up php5-gd (5.6.13+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/gd.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-gd
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/gd.ini -> /etc/php5/mods-available/gd.ini PACKAGE=php5-gd:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module gd for apache2 SAPI
+==> default: php5_invoke: Enable module gd for cli SAPI
+==> default: Setting up libapache2-mod-php5 (5.6.13+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/apache2/php.ini with new version
+==> default: Module mpm_event disabled.
+==> default: Enabling module mpm_prefork.
+==> default: apache2_switch_mpm Switch to prefork
+==> default: apache2_invoke: Enable module php5
+==> default: Setting up liberror-perl (0.17-1.1) ...
+==> default: Setting up git-man (1:2.1.4-2.1) ...
+==> default: Setting up git (1:2.1.4-2.1) ...
+==> default: Setting up git-core (1:2.1.4-2.1) ...
+==> default: Setting up aegir3-hostmaster (3.1+.1829b19) ...
+==> default: + 
+==> default: grep
+==> default:  -q
+==> default:  Drupal bootstrap.*Successful
+==> default: + 
+==> default: su
+==> default:  -s
+==> default:  /bin/sh
+==> default:  aegir
+==> default:  -c
+==> default:  drush @hostmaster status
+==> default: + db_input medium aegir/email
+==> default: + _db_cmd INPUT medium aegir/email
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT medium aegir/email
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input high aegir/site
+==> default: + _db_cmd INPUT high aegir/site
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT high aegir/site
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_get aegir/email
+==> default: + _db_cmd GET aegir/email
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/email
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET= aegir@example.com
+==> default: + return 0
+==> default: + [ -z  aegir@example.com ]
+==> default: + db_get aegir/site
+==> default: + _db_cmd GET aegir/site
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/site
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET= aegir.example.com
+==> default: + return 0
+==> default: + [ -z  aegir.example.com ]
+==> default: + db_input low aegir/makefile
+==> default: + _db_cmd INPUT low aegir/makefile
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/makefile
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input low aegir/working-copy
+==> default: + _db_cmd INPUT low aegir/working-copy
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/working-copy
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input low aegir/db_host
+==> default: + _db_cmd INPUT low aegir/db_host
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/db_host
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_input low aegir/db_user
+==> default: + _db_cmd INPUT low aegir/db_user
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/db_user
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_fset aegir/db_password seen false
+==> default: + _db_cmd FSET aegir/db_password seen false
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n FSET aegir/db_password seen false
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=false
+==> default: + return 0
+==> default: + db_input high aegir/db_password
+==> default: + _db_cmd INPUT high aegir/db_password
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT high aegir/db_password
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + 
+==> default: wc_httpd_installed
+==> default:  apache2
+==> default:  nginx
+==> default: + 
+==> default: local
+==> default:  httpds
+==> default: + 
+==> default: [
+==> default:  apache2 nginx
+==> default:  ]
+==> default: + 
+==> default: httpds=apache2 nginx
+==> default: + 
+==> default: test
+==> default:  -x
+==> default:  /usr/sbin/apache2
+==> default: + 
+==> default: echo
+==> default:  apache2
+==> default: + 
+==> default: test
+==> default:  -x
+==> default:  /usr/sbin/nginx
+==> default: + default_servers=apache2
+==> default: + 
+==> default: sed
+==> default:  -e
+==> default:  s/[[:space:]][[:space:]]*/, /g
+==> default: + 
+==> default: echo
+==> default:  apache2
+==> default: + server_list=apache2
+==> default: + db_fget aegir/webserver seen
+==> default: + _db_cmd FGET aegir/webserver seen
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n FGET aegir/webserver seen
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=false
+==> default: + return 0
+==> default: + [ false = false ]
+==> default: + db_set aegir/webserver apache2
+==> default: + _db_cmd SET aegir/webserver apache2
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n SET aegir/webserver apache2
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=value set
+==> default: + return 0
+==> default: + db_input low aegir/webserver
+==> default: + _db_cmd INPUT low aegir/webserver
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n INPUT low aegir/webserver
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=30 question skipped
+==> default: + return 30
+==> default: + true
+==> default: + db_go
+==> default: + _db_cmd GO 
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GO 
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=ok
+==> default: + return 0
+==> default: + 
+==> default: su
+==> default:  aegir
+==> default:  -s
+==> default:  /bin/sh
+==> default:  -c
+==> default:  echo $HOME
+==> default: + AEGIRHOME=/var/aegir
+==> default: + 
+==> default: sed
+==> default:  -n
+==> default:  /^version/{s/^.*= *//;p}
+==> default:  /usr/share/drush/commands/provision/provision.info
+==> default: + VERSION=7.x-3.x
+==> default: + FLAGS=--yes
+==> default: + [ developer = developer ]
+==> default: + FLAGS=--yes --debug
+==> default: + db_get aegir/makefile
+==> default: + _db_cmd GET aegir/makefile
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/makefile
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=
+==> default: + return 0
+==> default: + [ ! -z  ]
+==> default: + db_get aegir/webserver
+==> default: + _db_cmd GET aegir/webserver
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/webserver
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=apache2
+==> default: + return 0
+==> default: + [ ! -z apache2 ]
+==> default: + [ apache2 = apache2 ]
+==> default: + RET=apache
+==> default: + FLAGS=--yes --debug --http_service_type='apache'
+==> default: + WEBSERVER=apache
+==> default: + db_get aegir/working-copy
+==> default: + _db_cmd GET aegir/working-copy
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/working-copy
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=false
+==> default: + return 0
+==> default: + [ ! -z false ]
+==> default: + FLAGS=--yes --debug --http_service_type='apache' --working-copy
+==> default: + touch /var/aegir/config/apache.conf
+==> default: + chown aegir:aegir /var/aegir /var/aegir/config /var/aegir/config/apache.conf
+==> default: + su -s /bin/sh aegir -c drush cache-clear drush
+==> default: 'drush' cache was cleared.                                             [success]
+==> default: + su -s /bin/sh aegir -c drush @hostmaster status --fields="uri" --field-labels=0 2>/dev/null | tr "\n" " " | sed -e "s/^[[:space:]]*//g" -e "s/[[:space:]]*$//g"
+==> default: + site_uri=
+==> default: + su -s /bin/sh aegir -c drush @hostmaster status --fields="root" --field-labels=0 2>/dev/null | tr "\n" " " | sed -e "s/^[[:space:]]*//g" -e "s/[[:space:]]*$//g"
+==> default: + drupal_root=
+==> default: + [ -d  ]
+==> default: + db_get aegir/site
+==> default: + _db_cmd GET aegir/site
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/site
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET= aegir.example.com
+==> default: + return 0
+==> default: + [ ! -z  aegir.example.com ]
+==> default: + site_uri= aegir.example.com
+==> default: + db_get aegir/db_host
+==> default: + _db_cmd GET aegir/db_host
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/db_host
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=localhost
+==> default: + return 0
+==> default: + AEGIR_DB_HOST=localhost
+==> default: + db_get aegir/db_user
+==> default: + _db_cmd GET aegir/db_user
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/db_user
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=debian-sys-maint
+==> default: + return 0
+==> default: + AEGIR_DB_USER=debian-sys-maint
+==> default: + db_get aegir/db_password
+==> default: + _db_cmd GET aegir/db_password
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/db_password
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=PASSWORD
+==> default: + return 0
+==> default: + AEGIR_DB_PASS=PASSWORD
+==> default: + db_get aegir/email
+==> default: + _db_cmd GET aegir/email
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GET aegir/email
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET= aegir@example.com
+==> default: + return 0
+==> default: + EMAIL= aegir@example.com
+==> default: + db_go
+==> default: + _db_cmd GO 
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n GO 
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=ok
+==> default: + return 0
+==> default: + db_reset aegir/db_password
+==> default: + _db_cmd RESET aegir/db_password
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n RESET aegir/db_password
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=0
+==> default: + return 0
+==> default: + db_fset aegir/db_password seen true
+==> default: + _db_cmd FSET aegir/db_password seen true
+==> default: + _db_internal_IFS= 	
+==> default: 
+==> default: + IFS= 
+==> default: + printf %s\n FSET aegir/db_password seen true
+==> default: + IFS= 	
+==> default: 
+==> default: + IFS=
+==> default:  read -r _db_internal_line
+==> default: + RET=true
+==> default: + return 0
+==> default: + db_stop
+==> default: + echo STOP
+==> default: + [ -d /var/aegir/.drush/provision ]
+==> default: + echo installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+==> default: installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+==> default: + [ developer = developer ]
+==> default: + DEBUG=--debug
+==> default: + su -s /bin/sh aegir -c cd /var/aegir && drush hostmaster-install --yes --debug --http_service_type='apache' --working-copy --backend  aegir.example.com 2>&1 | drush backend-parse --debug
+==> default: Bootstrap to phase 0. [0.02 sec, 1.88 MB]                            [bootstrap]
+==> default: Drush bootstrap phase : _drush_bootstrap_drush() [0.02 sec, 1.99 MB] [bootstrap]
+==> default: Cache HIT cid: 6.6.0-commandfiles-0-5854c1a5928ca9a5ece8efe911f445f5     [debug]
+==> default: [0.02 sec, 2.01 MB]
+==> default: Bootstrap to phase 0. [0.1 sec, 6.22 MB]                             [bootstrap]
+==> default: Bootstrap to phase 0. [0.14 sec, 6.23 MB]                            [bootstrap]
+==> default: 
+==> default: Found command: backend-parse (commandfile=provision) [0.15 sec, 6.23 [bootstrap]
+==> default: MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [0.25 sec, 6.25 MB]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [0.25 sec, 6.27 MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [0.25 sec, 6.28 MB]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [0.25 sec, 6.28 MB]
+==> default: Including /usr/share/drush/commands/provision/parse.backend.inc [0.25[bootstrap]
+==> default: sec, 6.28 MB]
+==> default: Calling hook drush_provision_backend_parse [0.26 sec, 6.31 MB]           [debug]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.76 MB]                            [bootstrap]
+==> default: Drush bootstrap phase : _drush_bootstrap_drush() [1.97 sec, 6.76 MB] [bootstrap]
+==> default: Cache HIT cid: 6.6.0-commandfiles-0-5854c1a5928ca9a5ece8efe911f445f5     [debug]
+==> default: [1.97 sec, 6.76 MB]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.76 MB]                            [bootstrap]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.76 MB]                            [bootstrap]
+==> default: Found command: hostmaster-install (commandfile=provision) [1.97 sec, [bootstrap]
+==> default: 6.76 MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.97 sec, 6.77 MB]
+==> default: Loading apache driver for the http service [1.97 sec, 6.77 MB]          [notice]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.97 sec, 6.77 MB]
+==> default: Loading apache driver for the http service [1.97 sec, 6.77 MB]          [notice]
+==> default: Including /usr/share/drush/commands/provision/install.hostmaster.inc [bootstrap]
+==> default: [1.97 sec, 6.
+==> default: 77 MB]
+==> default: Calling hook drush_provision_hostmaster_install_pre_validate [1.97       [debug]
+==> default: sec, 6.77 MB]
+==> default: Returned from hook drush_provision_hostmaster_install_pre_validate       [debug]
+==> default: [1.97 sec, 6.77 MB]
+==> default: Calling hook drush_provision_hostmaster_install_validate [1.97 sec,      [debug]
+==> default: 6.77 MB]
+==> default: Returned from hook drush_provision_hostmaster_install_validate [1.97     [debug]
+==> default: sec, 6.77 MB]
+==> default: Calling hook drush_provision_hostmaster_install [1.97 sec, 6.77 MB]      [debug]
+==> default: Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+==> default: magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: --root= --uri=  provision-save '@server_localhost'  
+==> default: --remote_host=localhost --context_type=server --db_service_type=mysql
+==> default: --master_db='mysql://debian-sys-maint:PASSWORD@localhost:3306'
+==> default: --db_port=3306 2
+==> default: >&1 [1.97 sec, 6.77 MB]
+==> default: /usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+==> default: magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: --root= --uri=  provision-save '@server_localhost'  
+==> default: --remote_host=localhost --context_type=server --db_service_type=mysql
+==> default: --master_db='mysql://debian-sys-maint:PASSWORD@localhost:3306'
+==> default: --db_port=3306 2>&1 [1.97 sec, 6.78 MB]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.78 MB]                            [bootstrap]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.78 MB]                            [bootstrap]
+==> default: Found command: provision-save (commandfile=provision) [1.97 sec, 6.78[bootstrap]
+==> default: MB]
+==> default: Loading mysql driver for the db service [1.97 sec, 6.78 MB]             [notice]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.97 sec, 6.78 MB]
+==> default: L
+==> default: oading mysql driver for the db service [1.97 sec, 6.78 MB]             [notice]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.97 sec, 6.78 MB]
+==> default: Calling hook drush_provision_save [1.97 sec, 6.78 MB]                    [debug]
+==> default: Loading mysql driver for the db service [1.97 sec, 6.78 MB]             [notice]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.97 sec, 6.78 MB]
+==> default: Template loaded from Provision Config class                             [notice]
+==> default: Provision_Config_Drushrc_Alias:
+==> default: /usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+==> default: [1.97 sec, 6.78 MB]
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_localhost.alias.drushrc.php) [1.97 sec,
+==> default: 6.79 MB]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 440 [1
+==> default: .97
+==> default: sec, 6.79 MB]
+==> default: Returned from hook drush_provision_save [1.97 sec, 6.79 MB]              [debug]
+==> default: Command dispatch complete [1.97 sec, 6.79 MB]                           [notice]
+==> default: Peak memory usage was 8.14 MB [1.97 sec, 6.79 MB]                       [memory]
+==> default: Loaded alias @server_localhost from file                                [notice]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php [1.97 sec, 6.79
+==> default: MB]
+==> default: Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+==> default: magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_localhost provision-verify 2>&1 [1.97 sec, 6.79 MB]
+==> default: /usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+==> default: magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magi
+==> default: c_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_localhost provision-verify 2>&1 [1.97 sec, 6.79 MB]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.79 MB]                            [bootstrap]
+==> default: Bootstrap to phase 0. [1.97 sec, 6.79 MB]                            [bootstrap]
+==> default: Found command: provision-verify (commandfile=provision) [1.97 sec,   [bootstrap]
+==> default: 6.79 MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.97 sec, 6.8 MB]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.97 sec, 6.8 MB]
+==> default: Loading mysql driver for the db service [1.97 sec, 6.8 MB]              [notice]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.97 sec, 6.8 MB]
+==> default: Including                                                            [bootstrap]
+==> default: /usr/share/drush/commands/provision/platform/backupmigrate/verify.p
+==> default: rovision.inc
+==> default: [1.97 sec, 6.8 MB]
+==> default: Including                                                            [bootstrap]
+==> default: /usr/share/drush/commands/provision/platform/verify.provision.inc
+==> default: [1.97 sec, 6.8 MB]
+==> default: Calling hook drush_provision_drupal_provision_verify_validate [1.97      [debug]
+==> default: sec, 6.8 MB]
+==> default: Returned from hook drush_provision_drupal_provision_verify_validate      [debug]
+==> default: [1.97 sec, 6.8 MB]
+==> default: Calling hook drush_provision_drupal_pre_provision_verify [1.97 sec,      [debug]
+==> default: 6.8 MB]
+==> default: Provision configuration root path /var/aegir/config exists. [1.97      [success]
+==> default: sec, 6.8 MB]
+==> default: Provision configuration root ownership of /var/aegir/config has been   [success]
+==> default: changed to aegir. [1.97 sec, 6.8 MB]
+==> default: Provision configuration root permissions of /var/aegir/config have     [success]
+==> default: been changed to 711. [1.97 sec, 6.8 MB]
+==> default: Provision configuration root path /var/aegir/config is writable.       [success]
+==> default: [1.97 sec, 6.81 MB]
+==> default: Provision configuration path /var/aegir/config/server_localhost has    [success]
+==> default: been cre
+==> default: ated. [1.97 sec, 6.81 MB]
+==> default: Provision configuration ownership of                                   [success]
+==> default: /var/aegir/config/server_localhost has been changed to aegir. [1.97
+==> default: sec, 6.81 MB]
+==> default: Provision configuration permissions of                                 [success]
+==> default: /var/aegir/config/server_localhost have been changed to 711. [1.97
+==> default: sec, 6.81 MB]
+==> default: Provision configuration path /var/aegir/config/server_localhost is     [success]
+==> default: writable. [1.97 sec, 6.81 MB]
+==> default: Provision client home path /var/aegir/clients has been created. [1.97  [success]
+==> default: sec, 6.81 MB]
+==> default: Provision client home ownership of /var/aegir/clients has been         [success]
+==> default: changed to aegir. [1.97 sec, 6.81 MB]
+==> default: Provision client home permissions of /var/aegir/clients have been      [success]
+==> default: changed to 711. [1.97 sec, 6.81 MB]
+==> default: Provision client home path /var/aegir/clients is writable. [1.97 sec,  [success]
+==> default: 6.81 MB]
+==> default: Returned from hook drush_provision_drupal_pre_provision_verify [1.97     [debug]
+==> default: sec, 6.81 MB]
+==> default: Calling hook drush_provision_verify [1.97 sec, 6.81 MB]                  [debug]
+==> default: Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+==> default: magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_localhost provision-save 2>&1 [1.97 sec, 6.82 MB]
+==> default: /usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+==> default: magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_localhost provision-save 2>&1 [1.98 sec, 6.82 MB]
+==> default: Bootstrap to phase 0. [1.98 sec, 6.82 MB]                            [bootstrap]
+==> default: Bootstrap to phase 0. [1.98 sec, 6.82 MB]                            [bootstrap]
+==> default: Found command: provision-save (comm
+==> default: andfile=provision) [1.98 sec, 6.82[bootstrap]
+==> default: MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.98 sec, 6.82 MB]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.98 sec, 6.82 MB]
+==> default: Loading mysql driver for the db service [1.98 sec, 6.82 MB]             [notice]
+==> default: Driver type not specified for the http service, provide it with         [notice]
+==> default: --http_service_type [1.98 sec, 6.82 MB]
+==> default: Calling hook drush_provision_save [1.98 sec, 6.82 MB]                    [debug]
+==> default: Template loaded from Provision Config class                             [notice]
+==> default: Provision_Config_Drushrc_Alias:
+==> default: /usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+==> default: [1.98 sec, 6.82 MB]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 640 [1.98
+==> default: sec, 6.82 MB]
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_localhost.alias.drushrc.php) [1.98 sec,
+==> default: 6.83 MB]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 440 [1.98
+==> default: sec, 6.83 MB]
+==> default: Returned from hook drush_provision_save [1.98 sec, 6.83 MB]              [debug]
+==> default: Command dispatch complete [1.98 sec, 6.83 MB]                           [notice]
+==> default: Peak memory usage was 8.15 MB [1.98 sec, 6.83 MB]                       [memory]
+==> default: Returned from hook drush_provision_verify [1.98 sec, 6.83 MB]            [debug]
+==> default: Command dispatch complete [1.98 sec, 6.83 MB]                           [notice]
+==> default: Peak memory usage was 8.58 MB [1.98 sec, 6.83 MB]                       [memory]
+==> default: Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+==> default: magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: --root= --uri=  provision-save '@server_master'  
+==> default: --context_type=server
+==> default: --remote_host=aegir3-deb-unstable-no-puppet.test
+==> default: --aegir_root=/var/aegir --script_user=aegir
+==> default: --http_service_type=apache --http_port=80 --web_group=www-data
+==> default: --master_url=http://aegir.example.com --db_port=3306 2>&1 [1.98 sec,
+==> default: 6.83 MB]
+==> default: /usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+==> default: magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: --root= --uri=  provision-save '@server_master'  
+==> default: --context_type=server
+==> default: --remote_host=aegir3-deb-unstable-no-puppet.test
+==> default: --aegir_root=/var/aegir --script_user=aegir
+==> default: --http_service_type=apache --http_port=80 --web_group=www-data
+==> default: --master_url=http://aegir.example.com --db_port=3306 2>&1 [1.98 sec,
+==> default: 6.83 MB]
+==> default: Bootstrap to phase 0. [1.98 sec, 6.83 MB]                            [bootstrap]
+==> default: Bootstrap to phase 0. [1.98 sec, 6.83 MB]                            [bootstrap]
+==> default: Found command: provision-save (commandfile=provision) [1.98 sec, 6.84[bootstrap]
+==> default: MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.98 sec, 6.84 MB]
+==> default: Loading apache driver for the http service [1.98 sec, 6.84 MB]          [notice]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.98 sec, 6.84 MB]
+==> default: Loading apache driver for the http service [1.98 sec, 6.84 MB]          [notice]
+==> default: Calling hook drush_provision_save [1.98 sec, 6.84 MB]                    [debug]
+==> default: Template loaded from Provision Config class                             [notice]
+==> default: Provision_Config_Drushrc_Alias:
+==> default: /usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+==> default: [1.98 sec, 6.84 MB]
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_master.alias.drushrc.php) [1.98 sec, 6.84
+==> default: MB]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 440 [1.98 sec,
+==> default: 6.84 MB]
+==> default: Returned from hook drush_provision_save [1.98 sec, 6.84 MB]              [debug]
+==> default: Command dispatch complete [1.98 sec, 6.84 MB]                           [notice]
+==> default: Peak memory usage was 8.14 MB [1.98 sec, 6.84 MB]                       [memory]
+==> default: Loaded alias @server_master from file                                   [notice]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php [1.98 sec, 6.85 MB]
+==> default: Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+==> default: magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_master provision-verify 2>&1 [1.98 sec, 6.85 MB]
+==> default: /usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+==> default: magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: 
+==> default: @server_master provision-verify 2>&1 [1.99 sec, 6.85 MB]
+==> default: Bootstrap to phase 0. [1.99 sec, 6.85 MB]                            [bootstrap]
+==> default: 
+==> default: Bootstrap to phase 0. [1.99 sec, 6.85 MB]                            [bootstrap]
+==> default: 
+==> default: Found command: provision-verify (commandfile=provision) [1.99 sec,   [bootstrap]
+==> default: 
+==> default: 6.85 MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [1.99 sec, 6.85 MB]
+==> default: Loading apache driver for the http service [1.99 sec, 6.85 MB]          [notice]
+==> default: 
+==> default: Including                                                            [bootstrap]
+==> default: 
+==> default: /usr/share/drush/commands/provision/platform/backupmigrate/verify.provision.inc
+==> default: [1.99 sec, 6.85 MB]
+==> default: Including                                                            [bootstrap]
+==> default: 
+==> default: /usr/share/drush/commands/provision/platform/verify.provision.inc
+==> default: [1.99 sec, 6.85 MB]
+==> default: Calling hook drush_provision_drupal_provision_verify_validate [1.99      [debug]
+==> default: 
+==> default: sec, 6.85 MB]
+==> default: Returned from hook drush_provision_drupal_provision_verify_validate      [debug]
+==> default: [1.99 sec, 6.85 MB]
+==> default: Calling hook drush_provision_drupal_pre_provision_verify [1.99 sec,      [debug]
+==> default: 
+==> default: 6.86 MB]
+==> default: Provision configuration root path /var/aegir/config exists. [1.99      [success]
+==> default: 
+==> default: sec, 6.86 MB]
+==> default: Provision configuration root ownership of /var/aegir/config has been   [success]
+==> default: changed to aegir. [1.99 sec, 6.86 MB]
+==> default: Provision configuration root permissions of /var/aegir/config have     [success]
+==> default: 
+==> default: been changed to 711. [1.99 sec, 6.86 MB]
+==> default: Provision configuration root path /var/aegir/config is writable.       [success]
+==> default: [1.99 sec, 6.86 MB]
+==> default: Provision configuration path /var/aegir/config/server_master has been  [success]
+==> default: created. [1.99 sec, 6.86 MB]
+==> default: Provision configuration ownership of /var/aegir/config/server_master   [success]
+==> default: has been changed to aegir. [1.99 sec, 6.86 MB]
+==> default: Provision configuration permissions of                                 [success]
+==> default: /var/aegir/config/server_master have been changed to 711. [1.99 sec,
+==> default: 6.86 MB]
+==> default: Provision configuration path /var/aegir/config/server_master is        [success]
+==> default: writable. [1.99 sec, 6.86 MB]
+==> default: Provision client home path /var/aegir/clients exists. [1.99 sec, 6.86  [success]
+==> default: MB]
+==> default: Provision client home ownership of /var/aegir/clients has been         [success]
+==> default: changed to aegir. [1.99 sec, 6.87 MB]
+==> default: Provision client home permissions of /var/aegir/clients have been      [success]
+==> default: 
+==> default: changed to 711. [1.99 sec, 6.87 MB]
+==> default: Provision client home path /var/aegir/clients is writable. [1.99 sec,  [success]
+==> default: 
+==> default: 6.87 MB]
+==> default: Backup path /var/aegir/backups has been created. [1.99 sec, 6.87 MB]   [success]
+==> default: Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+==> default: 
+==> default: [1.99 sec, 6.87 MB]
+==> default: Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+==> default: 
+==> default: [1.99 sec, 6.87 MB]
+==> default: Backup path /var/aegir/backups is writable. [1.99 sec, 6.87 MB]        [success]
+==> default: Provision PHP configuration path /var/aegir/config/includes has been   [success]
+==> default: 
+==> default: created. [1.99 sec, 6.87 MB]
+==> default: Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+==> default: 
+==> default: has been changed to aegir. [1.99 sec, 6.87 MB]
+==> default: Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+==> default: have been changed to 711. [1.99 sec, 6.87 MB]
+==> default: Provision PHP configuration path /var/aegir/config/includes is         [success]
+==> default: 
+==> default: writable. [1.99 sec, 6.87 MB]
+==> default: Template loaded from Provision Config class                             [notice]
+==> default: 
+==> default: Provision_Config_Global_Settings:
+==> default: /usr/share/drush/commands/provision/Provision/Config/Global/global_settings.tpl.php
+==> default: [1.99 sec, 6.87 MB]
+==> default: Generated config in write(): Global settings.php file                  [success]
+==> default: (/var/aegir/config/includes/global.inc) [1.99 sec, 6.88 MB]
+==> default: Returned from hook drush_provision_drupal_pre_provision_verify [1.99     [debug]
+==> default: sec, 6.88 MB]
+==> default: Calling hook drush_provision_verify [1.99 sec, 6.88 MB]                  [debug]
+==> default: Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+==> default: 
+==> default: magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_master provision-save 2>&1 [1.99 sec, 6.88 MB]
+==> default: /usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+==> default: 
+==> default: magic_quotes_sybase=Off
+==> default: /var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+==> default: --php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+==> default: -d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+==> default: @server_master provision-save 2>&1 [2 sec, 6.88 MB]
+==> default: Bootstrap to phase 0. [2 sec, 6.88 MB]                               [bootstrap]
+==> default: Bootstrap to phase 0. [2 sec, 6.88 MB]                               [bootstrap]
+==> default: 
+==> default: Found command: provision-save (commandfile=provision) [2 sec, 6.88   [bootstrap]
+==> default: 
+==> default: MB]
+==> default: Driver type not specified for the db service, provide it with           [notice]
+==> default: --db_service_type [2 sec, 6.88 MB]
+==> default: Loading apache driver for the http service [2 sec, 6.88 MB]             [notice]
+==> default: Calling hook drush_provision_save [2 sec, 6.88 MB]                       [debug]
+==> default: Template loaded from Provision Config class                             [notice]
+==> default: Provision_Config_Drushrc_Alias:
+==> default: /usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+==> default: [2 sec, 6.88 MB]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 640 [2 sec, 6.89
+==> default: MB]
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_master.alias.drushrc.php) [2 sec, 6.89 MB]
+==> default: Changed permissions of                                                 [success]
+==> default: 
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 440 [2 sec, 6.89
+==> default: MB]
+==> default: Returned from hook drush_provision_save [2 sec, 6.89 MB]                 [debug]
+==> default: 
+==> default: Command dispatch complete [2 sec, 6.89 MB]                              [notice]
+==> default: Peak memory usage was 8.15 MB [2 sec, 6.89 MB]                          [memory]
+==> default: 
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache has been created. [2 sec, 6.89
+==> default: MB]
+==> default: Webserver custom pre-configuration ownership of                        [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache has been changed to aegir. [2
+==> default: sec, 6.89 MB]
+==> default: Webserver custom pre-configuration permissions of                      [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache have been changed to 711. [2
+==> default: sec, 6.89 MB]
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache is writable. [2 sec, 6.89 MB]
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache/pre.d has been created. [2
+==> default: sec, 6.89 MB]
+==> default: Webserver custom pre-configuration ownership of                        [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/pre.d has been changed to
+==> default: aegir. [2 sec, 6.89 MB]
+==> default: Webserver custom pre-configuration permissions of                      [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/pre.d have been changed to
+==> default: 700. [2 sec, 6.9 MB]
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/pre.d is writable. [2 sec, 6.9
+==> default: MB]
+==> default: Webserver custom post-configuration path                               [success]
+==> default: /var/aegir/config/server_master/apache/post.d has been created. [2
+==> default: sec, 6.9 MB]
+==> default: Webserver custom post-configuration ownership of                       [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/post.d has been changed to
+==> default: aegir. [2 sec, 6.9 MB]
+==> default: Webserver custom post-configuration permissions of                     [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/post.d have been changed to
+==> default: 700. [2 sec, 6.9 MB]
+==> default: Webserver custom post-configuration path                               [success]
+==> default: /var/aegir/config/server_master/apache/post.d is writable. [2 sec,
+==> default: 6.9 MB]
+==> default: Webserver platform configuration path                                  [success]
+==> default: /var/aegir/config/server_master/apache/platform.d has been created.
+==> default: [2 sec, 6.9 MB]
+==> default: Webserver platform configuration ownership of                          [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/platform.d has been changed to
+==> default: aegir. [2 sec, 6.9 MB]
+==> default: Webserver platform configuration permissions of                        [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/platform.d have been changed
+==> default: to 700. [2 sec, 6.9 MB]
+==> default: Webserver platform configuration path                                  [success]
+==> default: /var/aegir/config/server_master/apache/platform.d is writable. [2
+==> default: sec, 6.9 MB]
+==> default: Webserver virtual host configuration path                              [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/vhost.d has been created. [2
+==> default: sec, 6.9 MB]
+==> default: Webserver virtual host configuration ownership of                      [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d has been changed to
+==> default: aegir. [2 sec, 6.9 MB]
+==> default: Webserver virtual host configuration permissions of                    [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d have been changed to
+==> default: 700. [2 sec, 6.91 MB]
+==> default: Webserver virtual host configuration path                              [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d is writable. [2 sec,
+==> default: 6.91 MB]
+==> default: Webserver subdir configuration path                                    [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d has been created. [2
+==> default: sec, 6.91 MB]
+==> default: Webserver subdir configuration ownership of                            [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/subdir.d has been changed to
+==> default: aegir. [2 sec, 6.91 MB]
+==> default: Webserver subdir configuration permissions of                          [success]
+==> default: 
+==> default: /var/aegir/config/server_master/apache/subdir.d have been changed to
+==> default: 700. [2 sec, 6.91 MB]
+==> default: Webserver subdir configuration path                                    [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d is writable. [2 sec,
+==> default: 6.91 MB]
+==> default: 
+==> default: Template loaded from Provision Config class                             [notice]
+==> default: Provision_Config_Apache_Server:
+==> default: /usr/share/drush/commands/provision/http/Provision/Config/Apache/server.tpl.php
+==> default: [2 sec, 6.91 MB]
+==> default: Generated config in write(): web server configuration file             [success]
+==> default: 
+==> default: (/var/aegir/config/server_master/apache.conf) [2 sec, 6.91 MB]
+==> default: Created symlink for apache.conf on aegir3-deb-unstable-no-puppet.test   [notice]
+==> default: 
+==> default: [2.01 sec, 6.91 MB]
+==> default: apache on aegir3-deb-unstable-no-puppet.test has been restarted [2.01   [notice]
+==> default: sec, 6.91 MB]
+==> default: Returned from hook drush_provision_verify [2.01 sec, 6.91 MB]            [debug]
+==> default: 
+==> default: Calling hook drush_provision_drupal_post_provision_verify [2.01 sec,     [debug]
+==> default: 6.92 MB]
+==> default: Returned from hook drush_provision_drupal_post_provision_verify [2.01    [debug]
+==> default: 
+==> default: sec, 6.92 MB]
+==> default: Command dispatch complete [2.01 sec, 6.92 MB]                           [notice]
+==> default: 
+==> default: Peak memory usage was 8.59 MB [2.01 sec, 6.92 MB]                       [memory]
+==> default: Returned from hook drush_provision_hostmaster_install [2.01 sec, 6.92    [debug]
+==> default: 
+==> default: MB]
+==> default: Command dispatch complete [2.01 sec, 6.92 MB]                           [notice]
+==> default: 
+==> default: Peak memory usage was 8.82 MB [2.01 sec, 6.92 MB]                       [memory]
+==> default: 
+==> default:   ERROR 1045 (28000): Access denied for user 'intntnllyInvalid'@'localhost' (using password: NO)
+==> default: Aegir 7.x-3.x automated install script
+==> default: ==============================================================================
+==> default: Some settings have not been provided and will now be prompted.
+==> default: Don't worry: you will get to review those settings after the final install
+==> default: 
+==> default: This script will operate the following changes in your system:
+==> default: 
+==> default: 1. Create server-level configuration directories
+==> default: 2. Create the Hostmaster frontend platform
+==> default: 3. Install the frontend site
+==> default: 4. Setup the dispatcher (a user cron job)
+==> default: 
+==> default: We are making the following assumptions:
+==> default:  * you have read and are following the install instructions at:
+==> default:     http://community.aegirproject.org/installing
+==> default:  * the FQDN of this machine is valid and resolves
+==> default:  * you are executing this script as your "aegir" user
+==> default: 
+==> default: The following settings will be used:
+==> default:  Aegir frontend URL: aegir.example.com
+==> default:  Master server FQDN: aegir3-deb-unstable-no-puppet.test
+==> default:  Aegir root: /var/aegir
+==> default:  Aegir user: aegir
+==> default:  Web group: www-data
+==> default:  Web server: apache
+==> default:  Web server port: 80
+==> default:  Aegir DB host: localhost
+==> default:  Aegir DB user: debian-sys-maint
+==> default:  Aegir DB password: <previously set>
+==> default:  Aegir DB port: 3306
+==> default:  Aegir version: 7.x-3.x
+==> default:  Aegir platform path: /var/aegir/hostmaster-7.x-3.x
+==> default:  Admin email:  aegir@example.com
+==> default:  Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+==> default: 
+==> default:  Aegir install profile: hostmaster
+==> default: 
+==> default: Do you really want to proceed with the install (y/n): y
+==> default: Returned from hook drush_provision_backend_parse [2.01 sec, 6.72 MB]     [debug]
+==> default: Command dispatch complete [2.01 sec, 6.48 MB]                           [notice]
+==> default: Peak memory usage was 8.18 MB [2.01 sec, 6.48 MB]                       [memory]
+==> default: + echo Enabling hosting-queued daemon
+==> default: Enabling hosting-queued daemon
+==> default: + su -s /bin/sh aegir -c drush @hostmaster pm-enable -y hosting_queued
+==> default: The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+==> default: found.  Run `drush cache-clear drush` to clear the commandfile cache
+==> default: if you have installed new extensions.
+==> default: A Drupal installation directory could not be found                       [error]
+==> default: dpkg: error processing package aegir3-hostmaster (--configure):
+==> default:  subprocess installed post-installation script returned error exit status 1
+==> default: dpkg: dependency problems prevent configuration of aegir3:
+==> default:  aegir3 depends on aegir3-hostmaster (>= 3.1+.1829b19); however:
+==> default:   Package aegir3-hostmaster is not configured yet.
+==> default: 
+==> default: dpkg: error processing package aegir3 (--configure):
+==> default:  dependency problems - leaving unconfigured
+==> default: Setting up libhtml-template-perl (2.95-1) ...
+==> default: Setting up mysql-server (5.5.44-0+deb8u1) ...
+==> default: Setting up php5 (5.6.13+dfsg-0+deb8u1) ...
+==> default: Setting up php5-readline (5.6.13+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/readline.ini with new version
+==> default: DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-readline
+==> default: DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/readline.ini -> /etc/php5/mods-available/readline.ini PACKAGE=php5-readline:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+==> default: php5_invoke: Enable module readline for apache2 SAPI
+==> default: php5_invoke: Enable module readline for cli SAPI
+==> default: Setting up rsync (3.1.1-3) ...
+==> default: Setting up ssl-cert (1.0.35) ...
+==> default: Processing triggers for libc-bin (2.19-18+deb8u1) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Processing triggers for libapache2-mod-php5 (5.6.13+dfsg-0+deb8u1) ...
+==> default: Errors were encountered while processing:
+==> default:  aegir3-hostmaster
+==> default:  aegir3
+==> default: E
+==> default: : 
+==> default: Sub-process /usr/bin/dpkg returned an error code (1)
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+chmod +x /tmp/vagrant-shell && /tmp/vagrant-shell
+
+Stdout from the command:
+
+deb http://debian.aegirproject.org unstable main
+OK
+Get:1 http://debian.aegirproject.org unstable InRelease [3,142 B]
+Get:2 http://debian.aegirproject.org unstable/main amd64 Packages [4,450 B]
+Ign http://debian.aegirproject.org unstable/main Translation-en_US
+Ign http://debian.aegirproject.org unstable/main Translation-en
+Ign http://httpredir.debian.org jessie InRelease
+Get:3 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Hit http://httpredir.debian.org jessie Release.gpg
+Hit http://httpredir.debian.org jessie Release
+Hit http://httpredir.debian.org jessie/main Sources
+Get:4 http://security.debian.org jessie/updates/main Sources [89.4 kB]
+Hit http://httpredir.debian.org jessie/main amd64 Packages
+Hit http://httpredir.debian.org jessie/main Translation-en
+Get:5 http://security.debian.org jessie/updates/main amd64 Packages [142 kB]
+Get:6 http://security.debian.org jessie/updates/main Translation-en [78.5 kB]
+Fetched 381 kB in 2s (137 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+  apache2-utils git git-core git-man libaio1 libapache2-mod-php5 libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libdbd-mysql-perl
+  libdbi-perl liberror-perl libgd3 libhtml-template-perl liblua5.1-0
+  libmysqlclient18 libonig2 libqdbm14 libterm-readkey-perl libvpx1 libxpm4
+  mysql-client-5.5 mysql-common mysql-server-5.5 mysql-server-core-5.5 php5
+  php5-cli php5-common php5-gd php5-json php5-mysql php5-readline rsync
+  ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine apache2-suexec-custom git-daemon-run
+  git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-arch
+  git-cvs git-mediawiki git-svn php-pear libclone-perl libmldbm-perl
+  libnet-daemon-perl libsql-statement-perl libgd-tools libipc-sharedcache-perl
+  tinyca php5-user-cache openssl-blacklist
+The following NEW packages will be installed:
+  aegir3 aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+  apache2-utils git git-core git-man libaio1 libapache2-mod-php5 libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libdbd-mysql-perl
+  libdbi-perl liberror-perl libgd3 libhtml-template-perl liblua5.1-0
+  libmysqlclient18 libonig2 libqdbm14 libterm-readkey-perl libvpx1 libxpm4
+  mysql-client-5.5 mysql-common mysql-server mysql-server-5.5
+  mysql-server-core-5.5 php5 php5-cli php5-common php5-gd php5-json php5-mysql
+  php5-readline rsync ssl-cert
+Preconfiguring packages ...
+0 upgraded, 42 newly installed, 0 to remove and 9 not upgraded.
+Need to get 0 B/22.6 MB of archives.
+After this operation, 151 MB of additional disk space will be used.
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35750 files and directories currently installed.)
+Preparing to unpack .../libapr1_1.5.1-3_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.1-3) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../libaprutil1_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1) ...
+Selecting previously unselected package liblua5.1-0:amd64.
+Preparing to unpack .../liblua5.1-0_5.1.5-7.1_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-7.1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2-bin (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2-utils (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.10-10+deb8u3_all.deb ...
+Unpacking apache2-data (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.10-10+deb8u3_amd64.deb ...
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper symlink_to_dir in preinst of apache2
+DEBUG: dpkg-maintscript-helper: SYMLINK=/usr/share/doc/apache2 -> apache2.2-common PACKAGE=apache2:amd64 LASTVERSION=2.4.1-1~ ACTION=install PARAM=
+Unpacking apache2 (2.4.10-10+deb8u3) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../libaio1_0.3.110-1_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.110-1) ...
+Selecting previously unselected package libvpx1:amd64.
+Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+Unpacking libvpx1:amd64 (1.3.0-3) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../libxpm4_1%3a3.5.11-1+b1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.11-1+b1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../libgd3_2.1.0-5_amd64.deb ...
+Unpacking libgd3:amd64 (2.1.0-5) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../mysql-common_5.5.44-0+deb8u1_all.deb ...
+Unpacking mysql-common (5.5.44-0+deb8u1) ...
+Selecting previously unselected package libmysqlclient18:amd64.
+Preparing to unpack .../libmysqlclient18_5.5.44-0+deb8u1_amd64.deb ...
+Unpacking libmysqlclient18:amd64 (5.5.44-0+deb8u1) ...
+Selecting previously unselected package libonig2:amd64.
+Preparing to unpack .../libonig2_5.9.5-3.2_amd64.deb ...
+Unpacking libonig2:amd64 (5.9.5-3.2) ...
+Selecting previously unselected package libdbi-perl.
+Preparing to unpack .../libdbi-perl_1.631-3+b1_amd64.deb ...
+Unpacking libdbi-perl (1.631-3+b1) ...
+Selecting previously unselected package libdbd-mysql-perl.
+Preparing to unpack .../libdbd-mysql-perl_4.028-2+b1_amd64.deb ...
+Unpacking libdbd-mysql-perl (4.028-2+b1) ...
+Selecting previously unselected package libterm-readkey-perl.
+Preparing to unpack .../libterm-readkey-perl_2.32-1+b1_amd64.deb ...
+Unpacking libterm-readkey-perl (2.32-1+b1) ...
+Selecting previously unselected package mysql-client-5.5.
+Preparing to unpack .../mysql-client-5.5_5.5.44-0+deb8u1_amd64.deb ...
+Unpacking mysql-client-5.5 (5.5.44-0+deb8u1) ...
+Selecting previously unselected package mysql-server-core-5.5.
+Preparing to unpack .../mysql-server-core-5.5_5.5.44-0+deb8u1_amd64.deb ...
+Unpacking mysql-server-core-5.5 (5.5.44-0+deb8u1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Setting up mysql-common (5.5.44-0+deb8u1) ...
+Selecting previously unselected package mysql-server-5.5.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36825 files and directories currently installed.)
+Preparing to unpack .../mysql-server-5.5_5.5.44-0+deb8u1_amd64.deb ...
+Unpacking mysql-server-5.5 (5.5.44-0+deb8u1) ...
+Selecting previously unselected package libqdbm14.
+Preparing to unpack .../libqdbm14_1.8.78-5+b1_amd64.deb ...
+Unpacking libqdbm14 (1.8.78-5+b1) ...
+Selecting previously unselected package php5-common.
+Preparing to unpack .../php5-common_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-common
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo.ini -> /etc/php5/mods-available/pdo.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-common
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/opcache.ini -> /etc/php5/mods-available/opcache.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+Unpacking php5-common (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package php5-json.
+Preparing to unpack .../php5-json_1.3.6-1_amd64.deb ...
+Unpacking php5-json (1.3.6-1) ...
+Selecting previously unselected package php5-cli.
+Preparing to unpack .../php5-cli_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+Unpacking php5-cli (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package php5-mysql.
+Preparing to unpack .../php5-mysql_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-mysql
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysql.ini -> /etc/php5/mods-available/mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-mysql
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysqli.ini -> /etc/php5/mods-available/mysqli.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-mysql
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo_mysql.ini -> /etc/php5/mods-available/pdo_mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+Unpacking php5-mysql (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package aegir3-provision.
+Preparing to unpack .../aegir3-provision_3.1+.1829b19_all.deb ...
+Unpacking aegir3-provision (3.1+.1829b19) ...
+Selecting previously unselected package php5-gd.
+Preparing to unpack .../php5-gd_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-gd
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/gd.ini -> /etc/php5/mods-available/gd.ini PACKAGE=php5-gd:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+Unpacking php5-gd (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package libapache2-mod-php5.
+Preparing to unpack .../libapache2-mod-php5_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+Unpacking libapache2-mod-php5 (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.1.4-2.1_all.deb ...
+Unpacking git-man (1:2.1.4-2.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.1.4-2.1_amd64.deb ...
+Unpacking git (1:2.1.4-2.1) ...
+Selecting previously unselected package git-core.
+Preparing to unpack .../git-core_1%3a2.1.4-2.1_all.deb ...
+Unpacking git-core (1:2.1.4-2.1) ...
+Selecting previously unselected package aegir3-hostmaster.
+Preparing to unpack .../aegir3-hostmaster_3.1+.1829b19_all.deb ...
+Unpacking aegir3-hostmaster (3.1+.1829b19) ...
+Selecting previously unselected package aegir3.
+Preparing to unpack .../aegir3_3.1+.1829b19_all.deb ...
+Unpacking aegir3 (3.1+.1829b19) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../libhtml-template-perl_2.95-1_all.deb ...
+Unpacking libhtml-template-perl (2.95-1) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_5.5.44-0+deb8u1_all.deb ...
+Unpacking mysql-server (5.5.44-0+deb8u1) ...
+Selecting previously unselected package php5.
+Preparing to unpack .../php5_5.6.13+dfsg-0+deb8u1_all.deb ...
+Unpacking php5 (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package php5-readline.
+Preparing to unpack .../php5-readline_5.6.13+dfsg-0+deb8u1_amd64.deb ...
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in preinst of php5-readline
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/readline.ini -> /etc/php5/mods-available/readline.ini PACKAGE=php5-readline:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=install PARAM=
+Unpacking php5-readline (5.6.13+dfsg-0+deb8u1) ...
+Selecting previously unselected package rsync.
+Preparing to unpack .../rsync_3.1.1-3_amd64.deb ...
+Unpacking rsync (3.1.1-3) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../ssl-cert_1.0.35_all.deb ...
+Unpacking ssl-cert (1.0.35) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libapr1:amd64 (1.5.1-3) ...
+Setting up libaprutil1:amd64 (1.5.4-1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-1) ...
+Setting up liblua5.1-0:amd64 (5.1.5-7.1) ...
+Setting up apache2-bin (2.4.10-10+deb8u3) ...
+Setting up apache2-utils (2.4.10-10+deb8u3) ...
+Setting up apache2-data (2.4.10-10+deb8u3) ...
+Setting up apache2 (2.4.10-10+deb8u3) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper symlink_to_dir in postinst of apache2
+DEBUG: dpkg-maintscript-helper: SYMLINK=/usr/share/doc/apache2 -> apache2.2-common PACKAGE=apache2:amd64 LASTVERSION=2.4.1-1~ ACTION=configure PARAM=
+Setting up libaio1:amd64 (0.3.110-1) ...
+Setting up libvpx1:amd64 (1.3.0-3) ...
+Setting up libxpm4:amd64 (1:3.5.11-1+b1) ...
+Setting up libgd3:amd64 (2.1.0-5) ...
+Setting up libmysqlclient18:amd64 (5.5.44-0+deb8u1) ...
+Setting up libonig2:amd64 (5.9.5-3.2) ...
+Setting up libdbi-perl (1.631-3+b1) ...
+Setting up libdbd-mysql-perl (4.028-2+b1) ...
+Setting up libterm-readkey-perl (2.32-1+b1) ...
+Setting up mysql-client-5.5 (5.5.44-0+deb8u1) ...
+Setting up mysql-server-core-5.5 (5.5.44-0+deb8u1) ...
+Setting up mysql-server-5.5 (5.5.44-0+deb8u1) ...
+151013 20:41:41 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.
+151013 20:41:41 [Note] /usr/sbin/mysqld (mysqld 5.5.44-0+deb8u1) starting as process 8174 ...
+Setting up libqdbm14 (1.8.78-5+b1) ...
+Setting up php5-common (5.6.13+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/mods-available/pdo.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-common
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo.ini -> /etc/php5/mods-available/pdo.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module pdo for apache2 SAPI
+php5_invoke: Enable module pdo for cli SAPI
+
+Creating config file /etc/php5/mods-available/opcache.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-common
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/opcache.ini -> /etc/php5/mods-available/opcache.ini PACKAGE=php5-common:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module opcache for apache2 SAPI
+php5_invoke: Enable module opcache for cli SAPI
+Setting up php5-json (1.3.6-1) ...
+php5_invoke: Enable module json for apache2 SAPI
+php5_invoke: Enable module json for cli SAPI
+Setting up php5-cli (5.6.13+dfsg-0+deb8u1) ...
+update-alternatives: using /usr/bin/php5 to provide /usr/bin/php (php) in auto mode
+
+Creating config file /etc/php5/cli/php.ini with new version
+Setting up php5-mysql (5.6.13+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/mods-available/mysql.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-mysql
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysql.ini -> /etc/php5/mods-available/mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module mysql for apache2 SAPI
+php5_invoke: Enable module mysql for cli SAPI
+
+Creating config file /etc/php5/mods-available/mysqli.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-mysql
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/mysqli.ini -> /etc/php5/mods-available/mysqli.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module mysqli for apache2 SAPI
+php5_invoke: Enable module mysqli for cli SAPI
+
+Creating config file /etc/php5/mods-available/pdo_mysql.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-mysql
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/pdo_mysql.ini -> /etc/php5/mods-available/pdo_mysql.ini PACKAGE=php5-mysql:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module pdo_mysql for apache2 SAPI
+php5_invoke: Enable module pdo_mysql for cli SAPI
+Setting up aegir3-provision (3.1+.1829b19) ...
++ VARLIB=/var/aegir
++ getent passwd aegir
++ echo adding aegir user...
+adding aegir user...
++ adduser --quiet --system --no-create-home --group --home /var/aegir --shell /bin/bash --gecos Aegir user,,, aegir
++ adduser --quiet aegir www-data
+Adding user aegir to group www-data
++ [ -d /etc/sudoers.d ]
++ ucf --debconf-ok /usr/share/doc/aegir3-provision/examples/example.sudoers /etc/sudoers.d/aegir
+
+Creating config file /etc/sudoers.d/aegir with new version
++ ucfr aegir-provision /etc/sudoers.d/aegir
++ chmod 440 /etc/sudoers.d/aegir
++ chown aegir:aegir /var/aegir
++ php
++ curl -sS https://getcomposer.org/installer
+#!/usr/bin/env php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: //composer.phar
+Use it: php composer.phar
++ mv composer.phar /usr/local/bin/composer
++ su -c composer global require drush/drush:6.* aegir
+Changed current directory to /var/aegir/.composer
+./composer.json has been created
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing drush/drush (6.6.0)
+    Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 10%    Downloading: 15%    Downloading: 20%    Downloading: 25%    Downloading: 30%    Downloading: 40%    Downloading: 45%    Downloading: 50%    Downloading: 55%    Downloading: 60%    Downloading: 65%    Downloading: 70%    Downloading: 80%    Downloading: 85%    Downloading: 90%    Downloading: 95%    Downloading: 100%    Downloading: 100%
+
+Writing lock file
+Generating autoload files
++ echo export PATH="$HOME/.composer/vendor/bin:$PATH"
++ [ -f /usr/local/bin/drush ]
++ ln -s /var/aegir/.composer/vendor/bin/drush /usr/local/bin
++ exit 0
+Setting up php5-gd (5.6.13+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/mods-available/gd.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-gd
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/gd.ini -> /etc/php5/mods-available/gd.ini PACKAGE=php5-gd:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module gd for apache2 SAPI
+php5_invoke: Enable module gd for cli SAPI
+Setting up libapache2-mod-php5 (5.6.13+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/apache2/php.ini with new version
+Module mpm_event disabled.
+Enabling module mpm_prefork.
+apache2_switch_mpm Switch to prefork
+apache2_invoke: Enable module php5
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:2.1.4-2.1) ...
+Setting up git (1:2.1.4-2.1) ...
+Setting up git-core (1:2.1.4-2.1) ...
+Setting up aegir3-hostmaster (3.1+.1829b19) ...
++ grep -q Drupal bootstrap.*Successful
++ su -s /bin/sh aegir -c drush @hostmaster status
++ db_input medium aegir/email
++ _db_cmd INPUT medium aegir/email
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT medium aegir/email
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input high aegir/site
++ _db_cmd INPUT high aegir/site
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT high aegir/site
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_get aegir/email
++ _db_cmd GET aegir/email
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/email
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET= aegir@example.com
++ return 0
++ [ -z  aegir@example.com ]
++ db_get aegir/site
++ _db_cmd GET aegir/site
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/site
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET= aegir.example.com
++ return 0
++ [ -z  aegir.example.com ]
++ db_input low aegir/makefile
++ _db_cmd INPUT low aegir/makefile
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/makefile
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input low aegir/working-copy
++ _db_cmd INPUT low aegir/working-copy
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/working-copy
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input low aegir/db_host
++ _db_cmd INPUT low aegir/db_host
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/db_host
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input low aegir/db_user
++ _db_cmd INPUT low aegir/db_user
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/db_user
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_fset aegir/db_password seen false
++ _db_cmd FSET aegir/db_password seen false
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n FSET aegir/db_password seen false
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=false
++ return 0
++ db_input high aegir/db_password
++ _db_cmd INPUT high aegir/db_password
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT high aegir/db_password
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ wc_httpd_installed apache2 nginx
++ local httpds
++ [ apache2 nginx ]
++ httpds=apache2 nginx
++ test -x /usr/sbin/apache2
++ echo apache2
++ test -x /usr/sbin/nginx
++ default_servers=apache2
++ sed -e s/[[:space:]][[:space:]]*/, /g
++ echo apache2
++ server_list=apache2
++ db_fget aegir/webserver seen
++ _db_cmd FGET aegir/webserver seen
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n FGET aegir/webserver seen
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=false
++ return 0
++ [ false = false ]
++ db_set aegir/webserver apache2
++ _db_cmd SET aegir/webserver apache2
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n SET aegir/webserver apache2
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=value set
++ return 0
++ db_input low aegir/webserver
++ _db_cmd INPUT low aegir/webserver
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/webserver
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_go
++ _db_cmd GO 
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GO 
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=ok
++ return 0
++ su aegir -s /bin/sh -c echo $HOME
++ AEGIRHOME=/var/aegir
++ sed -n /^version/{s/^.*= *//;p} /usr/share/drush/commands/provision/provision.info
++ VERSION=7.x-3.x
++ FLAGS=--yes
++ [ developer = developer ]
++ FLAGS=--yes --debug
++ db_get aegir/makefile
++ _db_cmd GET aegir/makefile
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/makefile
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=
++ return 0
++ [ ! -z  ]
++ db_get aegir/webserver
++ _db_cmd GET aegir/webserver
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/webserver
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=apache2
++ return 0
++ [ ! -z apache2 ]
++ [ apache2 = apache2 ]
++ RET=apache
++ FLAGS=--yes --debug --http_service_type='apache'
++ WEBSERVER=apache
++ db_get aegir/working-copy
++ _db_cmd GET aegir/working-copy
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/working-copy
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=false
++ return 0
++ [ ! -z false ]
++ FLAGS=--yes --debug --http_service_type='apache' --working-copy
++ touch /var/aegir/config/apache.conf
++ chown aegir:aegir /var/aegir /var/aegir/config /var/aegir/config/apache.conf
++ su -s /bin/sh aegir -c drush cache-clear drush
+'drush' cache was cleared.                                             [success]
++ su -s /bin/sh aegir -c drush @hostmaster status --fields="uri" --field-labels=0 2>/dev/null | tr "\n" " " | sed -e "s/^[[:space:]]*//g" -e "s/[[:space:]]*$//g"
++ site_uri=
++ su -s /bin/sh aegir -c drush @hostmaster status --fields="root" --field-labels=0 2>/dev/null | tr "\n" " " | sed -e "s/^[[:space:]]*//g" -e "s/[[:space:]]*$//g"
++ drupal_root=
++ [ -d  ]
++ db_get aegir/site
++ _db_cmd GET aegir/site
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/site
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET= aegir.example.com
++ return 0
++ [ ! -z  aegir.example.com ]
++ site_uri= aegir.example.com
++ db_get aegir/db_host
++ _db_cmd GET aegir/db_host
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/db_host
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=localhost
++ return 0
++ AEGIR_DB_HOST=localhost
++ db_get aegir/db_user
++ _db_cmd GET aegir/db_user
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/db_user
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=debian-sys-maint
++ return 0
++ AEGIR_DB_USER=debian-sys-maint
++ db_get aegir/db_password
++ _db_cmd GET aegir/db_password
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/db_password
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=PASSWORD
++ return 0
++ AEGIR_DB_PASS=PASSWORD
++ db_get aegir/email
++ _db_cmd GET aegir/email
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/email
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET= aegir@example.com
++ return 0
++ EMAIL= aegir@example.com
++ db_go
++ _db_cmd GO 
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GO 
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=ok
++ return 0
++ db_reset aegir/db_password
++ _db_cmd RESET aegir/db_password
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n RESET aegir/db_password
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=0
++ return 0
++ db_fset aegir/db_password seen true
++ _db_cmd FSET aegir/db_password seen true
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n FSET aegir/db_password seen true
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=true
++ return 0
++ db_stop
++ echo STOP
++ [ -d /var/aegir/.drush/provision ]
++ echo installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
++ [ developer = developer ]
++ DEBUG=--debug
++ su -s /bin/sh aegir -c cd /var/aegir && drush hostmaster-install --yes --debug --http_service_type='apache' --working-copy --backend  aegir.example.com 2>&1 | drush backend-parse --debug
+Bootstrap to phase 0. [0.02 sec, 1.88 MB]                            [bootstrap]
+Drush bootstrap phase : _drush_bootstrap_drush() [0.02 sec, 1.99 MB] [bootstrap]
+Cache HIT cid: 6.6.0-commandfiles-0-5854c1a5928ca9a5ece8efe911f445f5     [debug]
+[0.02 sec, 2.01 MB]
+Bootstrap to phase 0. [0.1 sec, 6.22 MB]                             [bootstrap]
+Bootstrap to phase 0. [0.14 sec, 6.23 MB]                            [bootstrap]
+Found command: backend-parse (commandfile=provision) [0.15 sec, 6.23 [bootstrap]
+MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [0.25 sec, 6.25 MB]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [0.25 sec, 6.27 MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [0.25 sec, 6.28 MB]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [0.25 sec, 6.28 MB]
+Including /usr/share/drush/commands/provision/parse.backend.inc [0.25[bootstrap]
+sec, 6.28 MB]
+Calling hook drush_provision_backend_parse [0.26 sec, 6.31 MB]           [debug]
+Bootstrap to phase 0. [1.97 sec, 6.76 MB]                            [bootstrap]
+Drush bootstrap phase : _drush_bootstrap_drush() [1.97 sec, 6.76 MB] [bootstrap]
+Cache HIT cid: 6.6.0-commandfiles-0-5854c1a5928ca9a5ece8efe911f445f5     [debug]
+[1.97 sec, 6.76 MB]
+Bootstrap to phase 0. [1.97 sec, 6.76 MB]                            [bootstrap]
+Bootstrap to phase 0. [1.97 sec, 6.76 MB]                            [bootstrap]
+Found command: hostmaster-install (commandfile=provision) [1.97 sec, [bootstrap]
+6.76 MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.97 sec, 6.77 MB]
+Loading apache driver for the http service [1.97 sec, 6.77 MB]          [notice]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.97 sec, 6.77 MB]
+Loading apache driver for the http service [1.97 sec, 6.77 MB]          [notice]
+Including /usr/share/drush/commands/provision/install.hostmaster.inc [bootstrap]
+[1.97 sec, 6.77 MB]
+Calling hook drush_provision_hostmaster_install_pre_validate [1.97       [debug]
+sec, 6.77 MB]
+Returned from hook drush_provision_hostmaster_install_pre_validate       [debug]
+[1.97 sec, 6.77 MB]
+Calling hook drush_provision_hostmaster_install_validate [1.97 sec,      [debug]
+6.77 MB]
+Returned from hook drush_provision_hostmaster_install_validate [1.97     [debug]
+sec, 6.77 MB]
+Calling hook drush_provision_hostmaster_install [1.97 sec, 6.77 MB]      [debug]
+Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+--root= --uri=  provision-save '@server_localhost'  
+--remote_host=localhost --context_type=server --db_service_type=mysql
+--master_db='mysql://debian-sys-maint:PASSWORD@localhost:3306'
+--db_port=3306 2>&1 [1.97 sec, 6.77 MB]
+/usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+--root= --uri=  provision-save '@server_localhost'  
+--remote_host=localhost --context_type=server --db_service_type=mysql
+--master_db='mysql://debian-sys-maint:PASSWORD@localhost:3306'
+--db_port=3306 2>&1 [1.97 sec, 6.78 MB]
+Bootstrap to phase 0. [1.97 sec, 6.78 MB]                            [bootstrap]
+Bootstrap to phase 0. [1.97 sec, 6.78 MB]                            [bootstrap]
+Found command: provision-save (commandfile=provision) [1.97 sec, 6.78[bootstrap]
+MB]
+Loading mysql driver for the db service [1.97 sec, 6.78 MB]             [notice]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.97 sec, 6.78 MB]
+Loading mysql driver for the db service [1.97 sec, 6.78 MB]             [notice]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.97 sec, 6.78 MB]
+Calling hook drush_provision_save [1.97 sec, 6.78 MB]                    [debug]
+Loading mysql driver for the db service [1.97 sec, 6.78 MB]             [notice]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.97 sec, 6.78 MB]
+Template loaded from Provision Config class                             [notice]
+Provision_Config_Drushrc_Alias:
+/usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+[1.97 sec, 6.78 MB]
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_localhost.alias.drushrc.php) [1.97 sec,
+6.79 MB]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440 [1.97
+sec, 6.79 MB]
+Returned from hook drush_provision_save [1.97 sec, 6.79 MB]              [debug]
+Command dispatch complete [1.97 sec, 6.79 MB]                           [notice]
+Peak memory usage was 8.14 MB [1.97 sec, 6.79 MB]                       [memory]
+Loaded alias @server_localhost from file                                [notice]
+/var/aegir/.drush/server_localhost.alias.drushrc.php [1.97 sec, 6.79
+MB]
+Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_localhost provision-verify 2>&1 [1.97 sec, 6.79 MB]
+/usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_localhost provision-verify 2>&1 [1.97 sec, 6.79 MB]
+Bootstrap to phase 0. [1.97 sec, 6.79 MB]                            [bootstrap]
+Bootstrap to phase 0. [1.97 sec, 6.79 MB]                            [bootstrap]
+Found command: provision-verify (commandfile=provision) [1.97 sec,   [bootstrap]
+6.79 MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.97 sec, 6.8 MB]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.97 sec, 6.8 MB]
+Loading mysql driver for the db service [1.97 sec, 6.8 MB]              [notice]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.97 sec, 6.8 MB]
+Including                                                            [bootstrap]
+/usr/share/drush/commands/provision/platform/backupmigrate/verify.provision.inc
+[1.97 sec, 6.8 MB]
+Including                                                            [bootstrap]
+/usr/share/drush/commands/provision/platform/verify.provision.inc
+[1.97 sec, 6.8 MB]
+Calling hook drush_provision_drupal_provision_verify_validate [1.97      [debug]
+sec, 6.8 MB]
+Returned from hook drush_provision_drupal_provision_verify_validate      [debug]
+[1.97 sec, 6.8 MB]
+Calling hook drush_provision_drupal_pre_provision_verify [1.97 sec,      [debug]
+6.8 MB]
+Provision configuration root path /var/aegir/config exists. [1.97      [success]
+sec, 6.8 MB]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir. [1.97 sec, 6.8 MB]
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711. [1.97 sec, 6.8 MB]
+Provision configuration root path /var/aegir/config is writable.       [success]
+[1.97 sec, 6.81 MB]
+Provision configuration path /var/aegir/config/server_localhost has    [success]
+been created. [1.97 sec, 6.81 MB]
+Provision configuration ownership of                                   [success]
+/var/aegir/config/server_localhost has been changed to aegir. [1.97
+sec, 6.81 MB]
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_localhost have been changed to 711. [1.97
+sec, 6.81 MB]
+Provision configuration path /var/aegir/config/server_localhost is     [success]
+writable. [1.97 sec, 6.81 MB]
+Provision client home path /var/aegir/clients has been created. [1.97  [success]
+sec, 6.81 MB]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir. [1.97 sec, 6.81 MB]
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711. [1.97 sec, 6.81 MB]
+Provision client home path /var/aegir/clients is writable. [1.97 sec,  [success]
+6.81 MB]
+Returned from hook drush_provision_drupal_pre_provision_verify [1.97     [debug]
+sec, 6.81 MB]
+Calling hook drush_provision_verify [1.97 sec, 6.81 MB]                  [debug]
+Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_localhost provision-save 2>&1 [1.97 sec, 6.82 MB]
+/usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_localhost provision-save 2>&1 [1.98 sec, 6.82 MB]
+Bootstrap to phase 0. [1.98 sec, 6.82 MB]                            [bootstrap]
+Bootstrap to phase 0. [1.98 sec, 6.82 MB]                            [bootstrap]
+Found command: provision-save (commandfile=provision) [1.98 sec, 6.82[bootstrap]
+MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.98 sec, 6.82 MB]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.98 sec, 6.82 MB]
+Loading mysql driver for the db service [1.98 sec, 6.82 MB]             [notice]
+Driver type not specified for the http service, provide it with         [notice]
+--http_service_type [1.98 sec, 6.82 MB]
+Calling hook drush_provision_save [1.98 sec, 6.82 MB]                    [debug]
+Template loaded from Provision Config class                             [notice]
+Provision_Config_Drushrc_Alias:
+/usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+[1.98 sec, 6.82 MB]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 640 [1.98
+sec, 6.82 MB]
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_localhost.alias.drushrc.php) [1.98 sec,
+6.83 MB]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440 [1.98
+sec, 6.83 MB]
+Returned from hook drush_provision_save [1.98 sec, 6.83 MB]              [debug]
+Command dispatch complete [1.98 sec, 6.83 MB]                           [notice]
+Peak memory usage was 8.15 MB [1.98 sec, 6.83 MB]                       [memory]
+Returned from hook drush_provision_verify [1.98 sec, 6.83 MB]            [debug]
+Command dispatch complete [1.98 sec, 6.83 MB]                           [notice]
+Peak memory usage was 8.58 MB [1.98 sec, 6.83 MB]                       [memory]
+Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+--root= --uri=  provision-save '@server_master'  
+--context_type=server
+--remote_host=aegir3-deb-unstable-no-puppet.test
+--aegir_root=/var/aegir --script_user=aegir
+--http_service_type=apache --http_port=80 --web_group=www-data
+--master_url=http://aegir.example.com --db_port=3306 2>&1 [1.98 sec,
+6.83 MB]
+/usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+--root= --uri=  provision-save '@server_master'  
+--context_type=server
+--remote_host=aegir3-deb-unstable-no-puppet.test
+--aegir_root=/var/aegir --script_user=aegir
+--http_service_type=apache --http_port=80 --web_group=www-data
+--master_url=http://aegir.example.com --db_port=3306 2>&1 [1.98 sec,
+6.83 MB]
+Bootstrap to phase 0. [1.98 sec, 6.83 MB]                            [bootstrap]
+Bootstrap to phase 0. [1.98 sec, 6.83 MB]                            [bootstrap]
+Found command: provision-save (commandfile=provision) [1.98 sec, 6.84[bootstrap]
+MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.98 sec, 6.84 MB]
+Loading apache driver for the http service [1.98 sec, 6.84 MB]          [notice]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.98 sec, 6.84 MB]
+Loading apache driver for the http service [1.98 sec, 6.84 MB]          [notice]
+Calling hook drush_provision_save [1.98 sec, 6.84 MB]                    [debug]
+Template loaded from Provision Config class                             [notice]
+Provision_Config_Drushrc_Alias:
+/usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+[1.98 sec, 6.84 MB]
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_master.alias.drushrc.php) [1.98 sec, 6.84
+MB]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440 [1.98 sec,
+6.84 MB]
+Returned from hook drush_provision_save [1.98 sec, 6.84 MB]              [debug]
+Command dispatch complete [1.98 sec, 6.84 MB]                           [notice]
+Peak memory usage was 8.14 MB [1.98 sec, 6.84 MB]                       [memory]
+Loaded alias @server_master from file                                   [notice]
+/var/aegir/.drush/server_master.alias.drushrc.php [1.98 sec, 6.85 MB]
+Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_master provision-verify 2>&1 [1.98 sec, 6.85 MB]
+/usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_master provision-verify 2>&1 [1.99 sec, 6.85 MB]
+Bootstrap to phase 0. [1.99 sec, 6.85 MB]                            [bootstrap]
+Bootstrap to phase 0. [1.99 sec, 6.85 MB]                            [bootstrap]
+Found command: provision-verify (commandfile=provision) [1.99 sec,   [bootstrap]
+6.85 MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [1.99 sec, 6.85 MB]
+Loading apache driver for the http service [1.99 sec, 6.85 MB]          [notice]
+Including                                                            [bootstrap]
+/usr/share/drush/commands/provision/platform/backupmigrate/verify.provision.inc
+[1.99 sec, 6.85 MB]
+Including                                                            [bootstrap]
+/usr/share/drush/commands/provision/platform/verify.provision.inc
+[1.99 sec, 6.85 MB]
+Calling hook drush_provision_drupal_provision_verify_validate [1.99      [debug]
+sec, 6.85 MB]
+Returned from hook drush_provision_drupal_provision_verify_validate      [debug]
+[1.99 sec, 6.85 MB]
+Calling hook drush_provision_drupal_pre_provision_verify [1.99 sec,      [debug]
+6.86 MB]
+Provision configuration root path /var/aegir/config exists. [1.99      [success]
+sec, 6.86 MB]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir. [1.99 sec, 6.86 MB]
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711. [1.99 sec, 6.86 MB]
+Provision configuration root path /var/aegir/config is writable.       [success]
+[1.99 sec, 6.86 MB]
+Provision configuration path /var/aegir/config/server_master has been  [success]
+created. [1.99 sec, 6.86 MB]
+Provision configuration ownership of /var/aegir/config/server_master   [success]
+has been changed to aegir. [1.99 sec, 6.86 MB]
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_master have been changed to 711. [1.99 sec,
+6.86 MB]
+Provision configuration path /var/aegir/config/server_master is        [success]
+writable. [1.99 sec, 6.86 MB]
+Provision client home path /var/aegir/clients exists. [1.99 sec, 6.86  [success]
+MB]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir. [1.99 sec, 6.87 MB]
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711. [1.99 sec, 6.87 MB]
+Provision client home path /var/aegir/clients is writable. [1.99 sec,  [success]
+6.87 MB]
+Backup path /var/aegir/backups has been created. [1.99 sec, 6.87 MB]   [success]
+Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+[1.99 sec, 6.87 MB]
+Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+[1.99 sec, 6.87 MB]
+Backup path /var/aegir/backups is writable. [1.99 sec, 6.87 MB]        [success]
+Provision PHP configuration path /var/aegir/config/includes has been   [success]
+created. [1.99 sec, 6.87 MB]
+Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+has been changed to aegir. [1.99 sec, 6.87 MB]
+Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+have been changed to 711. [1.99 sec, 6.87 MB]
+Provision PHP configuration path /var/aegir/config/includes is         [success]
+writable. [1.99 sec, 6.87 MB]
+Template loaded from Provision Config class                             [notice]
+Provision_Config_Global_Settings:
+/usr/share/drush/commands/provision/Provision/Config/Global/global_settings.tpl.php
+[1.99 sec, 6.87 MB]
+Generated config in write(): Global settings.php file                  [success]
+(/var/aegir/config/includes/global.inc) [1.99 sec, 6.88 MB]
+Returned from hook drush_provision_drupal_pre_provision_verify [1.99     [debug]
+sec, 6.88 MB]
+Calling hook drush_provision_verify [1.99 sec, 6.88 MB]                  [debug]
+Backend invoke: /usr/bin/php  -d magic_quotes_gpc=Off -d               [command]
+magic_quotes_runtime=Off -d magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_master provision-save 2>&1 [1.99 sec, 6.88 MB]
+/usr/bin/php  -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off -d    [notice]
+magic_quotes_sybase=Off
+/var/aegir/.composer/vendor/drush/drush/drush.php --php=/usr/bin/php
+--php-options=' -d magic_quotes_gpc=Off -d magic_quotes_runtime=Off
+-d magic_quotes_sybase=Off'  --backend=2 --verbose --debug --yes
+@server_master provision-save 2>&1 [2 sec, 6.88 MB]
+Bootstrap to phase 0. [2 sec, 6.88 MB]                               [bootstrap]
+Bootstrap to phase 0. [2 sec, 6.88 MB]                               [bootstrap]
+Found command: provision-save (commandfile=provision) [2 sec, 6.88   [bootstrap]
+MB]
+Driver type not specified for the db service, provide it with           [notice]
+--db_service_type [2 sec, 6.88 MB]
+Loading apache driver for the http service [2 sec, 6.88 MB]             [notice]
+Calling hook drush_provision_save [2 sec, 6.88 MB]                       [debug]
+Template loaded from Provision Config class                             [notice]
+Provision_Config_Drushrc_Alias:
+/usr/share/drush/commands/provision/Provision/Config/Drushrc/provision_drushrc_alias.tpl.php
+[2 sec, 6.88 MB]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 640 [2 sec, 6.89
+MB]
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_master.alias.drushrc.php) [2 sec, 6.89 MB]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440 [2 sec, 6.89
+MB]
+Returned from hook drush_provision_save [2 sec, 6.89 MB]                 [debug]
+Command dispatch complete [2 sec, 6.89 MB]                              [notice]
+Peak memory usage was 8.15 MB [2 sec, 6.89 MB]                          [memory]
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache has been created. [2 sec, 6.89
+MB]
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache has been changed to aegir. [2
+sec, 6.89 MB]
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache have been changed to 711. [2
+sec, 6.89 MB]
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache is writable. [2 sec, 6.89 MB]
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d has been created. [2
+sec, 6.89 MB]
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache/pre.d has been changed to
+aegir. [2 sec, 6.89 MB]
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache/pre.d have been changed to
+700. [2 sec, 6.9 MB]
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d is writable. [2 sec, 6.9
+MB]
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d has been created. [2
+sec, 6.9 MB]
+Webserver custom post-configuration ownership of                       [success]
+/var/aegir/config/server_master/apache/post.d has been changed to
+aegir. [2 sec, 6.9 MB]
+Webserver custom post-configuration permissions of                     [success]
+/var/aegir/config/server_master/apache/post.d have been changed to
+700. [2 sec, 6.9 MB]
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d is writable. [2 sec,
+6.9 MB]
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d has been created.
+[2 sec, 6.9 MB]
+Webserver platform configuration ownership of                          [success]
+/var/aegir/config/server_master/apache/platform.d has been changed to
+aegir. [2 sec, 6.9 MB]
+Webserver platform configuration permissions of                        [success]
+/var/aegir/config/server_master/apache/platform.d have been changed
+to 700. [2 sec, 6.9 MB]
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d is writable. [2
+sec, 6.9 MB]
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d has been created. [2
+sec, 6.9 MB]
+Webserver virtual host configuration ownership of                      [success]
+/var/aegir/config/server_master/apache/vhost.d has been changed to
+aegir. [2 sec, 6.9 MB]
+Webserver virtual host configuration permissions of                    [success]
+/var/aegir/config/server_master/apache/vhost.d have been changed to
+700. [2 sec, 6.91 MB]
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d is writable. [2 sec,
+6.91 MB]
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d has been created. [2
+sec, 6.91 MB]
+Webserver subdir configuration ownership of                            [success]
+/var/aegir/config/server_master/apache/subdir.d has been changed to
+aegir. [2 sec, 6.91 MB]
+Webserver subdir configuration permissions of                          [success]
+/var/aegir/config/server_master/apache/subdir.d have been changed to
+700. [2 sec, 6.91 MB]
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d is writable. [2 sec,
+6.91 MB]
+Template loaded from Provision Config class                             [notice]
+Provision_Config_Apache_Server:
+/usr/share/drush/commands/provision/http/Provision/Config/Apache/server.tpl.php
+[2 sec, 6.91 MB]
+Generated config in write(): web server configuration file             [success]
+(/var/aegir/config/server_master/apache.conf) [2 sec, 6.91 MB]
+Created symlink for apache.conf on aegir3-deb-unstable-no-puppet.test   [notice]
+[2.01 sec, 6.91 MB]
+apache on aegir3-deb-unstable-no-puppet.test has been restarted [2.01   [notice]
+sec, 6.91 MB]
+Returned from hook drush_provision_verify [2.01 sec, 6.91 MB]            [debug]
+Calling hook drush_provision_drupal_post_provision_verify [2.01 sec,     [debug]
+6.92 MB]
+Returned from hook drush_provision_drupal_post_provision_verify [2.01    [debug]
+sec, 6.92 MB]
+Command dispatch complete [2.01 sec, 6.92 MB]                           [notice]
+Peak memory usage was 8.59 MB [2.01 sec, 6.92 MB]                       [memory]
+Returned from hook drush_provision_hostmaster_install [2.01 sec, 6.92    [debug]
+MB]
+Command dispatch complete [2.01 sec, 6.92 MB]                           [notice]
+Peak memory usage was 8.82 MB [2.01 sec, 6.92 MB]                       [memory]
+  ERROR 1045 (28000): Access denied for user 'intntnllyInvalid'@'localhost' (using password: NO)
+Aegir 7.x-3.x automated install script
+==============================================================================
+Some settings have not been provided and will now be prompted.
+Don't worry: you will get to review those settings after the final install
+
+This script will operate the following changes in your system:
+
+1. Create server-level configuration directories
+2. Create the Hostmaster frontend platform
+3. Install the frontend site
+4. Setup the dispatcher (a user cron job)
+
+We are making the following assumptions:
+ * you have read and are following the install instructions at:
+    http://community.aegirproject.org/installing
+ * the FQDN of this machine is valid and resolves
+ * you are executing this script as your "aegir" user
+
+The following settings will be used:
+ Aegir frontend URL: aegir.example.com
+ Master server FQDN: aegir3-deb-unstable-no-puppet.test
+ Aegir root: /var/aegir
+ Aegir user: aegir
+ Web group: www-data
+ Web server: apache
+ Web server port: 80
+ Aegir DB host: localhost
+ Aegir DB user: debian-sys-maint
+ Aegir DB password: <previously set>
+ Aegir DB port: 3306
+ Aegir version: 7.x-3.x
+ Aegir platform path: /var/aegir/hostmaster-7.x-3.x
+ Admin email:  aegir@example.com
+ Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+
+ Aegir install profile: hostmaster
+
+Do you really want to proceed with the install (y/n): y
+Returned from hook drush_provision_backend_parse [2.01 sec, 6.72 MB]     [debug]
+Command dispatch complete [2.01 sec, 6.48 MB]                           [notice]
+Peak memory usage was 8.18 MB [2.01 sec, 6.48 MB]                       [memory]
++ echo Enabling hosting-queued daemon
+Enabling hosting-queued daemon
++ su -s /bin/sh aegir -c drush @hostmaster pm-enable -y hosting_queued
+The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+found.  Run `drush cache-clear drush` to clear the commandfile cache
+if you have installed new extensions.
+A Drupal installation directory could not be found                       [error]
+dpkg: error processing package aegir3-hostmaster (--configure):
+ subprocess installed post-installation script returned error exit status 1
+dpkg: dependency problems prevent configuration of aegir3:
+ aegir3 depends on aegir3-hostmaster (>= 3.1+.1829b19); however:
+  Package aegir3-hostmaster is not configured yet.
+
+dpkg: error processing package aegir3 (--configure):
+ dependency problems - leaving unconfigured
+Setting up libhtml-template-perl (2.95-1) ...
+Setting up mysql-server (5.5.44-0+deb8u1) ...
+Setting up php5 (5.6.13+dfsg-0+deb8u1) ...
+Setting up php5-readline (5.6.13+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/mods-available/readline.ini with new version
+DEBUG: dpkg-maintscript-helper: Executing /usr/bin/dpkg-maintscript-helper mv_conffile in postinst of php5-readline
+DEBUG: dpkg-maintscript-helper: CONFFILE=/etc/php5/conf.d/readline.ini -> /etc/php5/mods-available/readline.ini PACKAGE=php5-readline:amd64 LASTVERSION=5.4.0~rc6-1 ACTION=configure PARAM=
+php5_invoke: Enable module readline for apache2 SAPI
+php5_invoke: Enable module readline for cli SAPI
+Setting up rsync (3.1.1-3) ...
+Setting up ssl-cert (1.0.35) ...
+Processing triggers for libc-bin (2.19-18+deb8u1) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Processing triggers for libapache2-mod-php5 (5.6.13+dfsg-0+deb8u1) ...
+Errors were encountered while processing:
+ aegir3-hostmaster
+ aegir3
+
+
+Stderr from the command:
+
+stdin: is not a tty
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  3901  100  3901    0     0   468k      0 --:--:-- --:--:-- --:--:--  476k
+Extracting templates from packages: 71%Extracting templates from packages: 100%
++ grep -q Drupal bootstrap.*Successful
++ su -s /bin/sh aegir -c drush @hostmaster status
++ db_input medium aegir/email
++ _db_cmd INPUT medium aegir/email
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT medium aegir/email
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input high aegir/site
++ _db_cmd INPUT high aegir/site
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT high aegir/site
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_get aegir/email
++ _db_cmd GET aegir/email
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/email
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET= aegir@example.com
++ return 0
++ [ -z  aegir@example.com ]
++ db_get aegir/site
++ _db_cmd GET aegir/site
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GET aegir/site
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET= aegir.example.com
++ return 0
++ [ -z  aegir.example.com ]
++ db_input low aegir/makefile
++ _db_cmd INPUT low aegir/makefile
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/makefile
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input low aegir/working-copy
++ _db_cmd INPUT low aegir/working-copy
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/working-copy
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input low aegir/db_host
++ _db_cmd INPUT low aegir/db_host
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/db_host
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_input low aegir/db_user
++ _db_cmd INPUT low aegir/db_user
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/db_user
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_fset aegir/db_password seen false
++ _db_cmd FSET aegir/db_password seen false
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n FSET aegir/db_password seen false
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=false
++ return 0
++ db_input high aegir/db_password
++ _db_cmd INPUT high aegir/db_password
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT high aegir/db_password
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ wc_httpd_installed apache2 nginx
++ local httpds
++ [ apache2 nginx ]
++ httpds=apache2 nginx
++ test -x /usr/sbin/apache2
++ test -x /usr/sbin/nginx
++ default_servers=
++ sed -e s/[[:space:]][[:space:]]*/, /g
++ echo
++ server_list=
++ db_fget aegir/webserver seen
++ _db_cmd FGET aegir/webserver seen
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n FGET aegir/webserver seen
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=false
++ return 0
++ [ false = false ]
++ db_set aegir/webserver
++ _db_cmd SET aegir/webserver
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n SET aegir/webserver
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=value set
++ return 0
++ db_input low aegir/webserver
++ _db_cmd INPUT low aegir/webserver
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n INPUT low aegir/webserver
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=30 question skipped
++ return 30
++ true
++ db_go
++ _db_cmd GO 
++ _db_internal_IFS= 	
+
++ IFS= 
++ printf %s\n GO 
++ IFS= 	
+
++ IFS=
+ read -r _db_internal_line
++ RET=ok
++ return 0
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

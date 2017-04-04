@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 7,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "7a4d39833ad5dcd7a2808bec5f41d4a104dceec7",
+            "branch" : [
+              {
+                "SHA1" : "7a4d39833ad5dcd7a2808bec5f41d4a104dceec7",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7a4d39833ad5dcd7a2808bec5f41d4a104dceec7",
+            "branch" : [
+              {
+                "SHA1" : "7a4d39833ad5dcd7a2808bec5f41d4a104dceec7",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7a4d39833ad5dcd7a2808bec5f41d4a104dceec7",
+        "branch" : [
+          {
+            "SHA1" : "7a4d39833ad5dcd7a2808bec5f41d4a104dceec7",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#7",
+  "duration" : 55137,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #7",
+  "id" : "2011-11-16_08-01-28",
+  "keepLog" : False,
+  "number" : 7,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321448488000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/7/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/login_reset.provision.inc"
+        ],
+        "commitId" : "56511ff1580537343c1c5202fb2799751ea285d1",
+        "timestamp" : 1321429975000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix the fetching of a login reset link in Drupal 5.\n",
+        "date" : "2011-11-16T02:52:55-0500 +0000",
+        "id" : "56511ff1580537343c1c5202fb2799751ea285d1",
+        "msg" : "Fix the fetching of a login reset link in Drupal 5.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/login_reset.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/login_reset.provision.inc"
+        ],
+        "commitId" : "8431e033ced9f18dea65f854c360110472899b6d",
+        "timestamp" : 1321429975000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Minor code style fixes for previous commit.\n",
+        "date" : "2011-11-16T02:52:55-0500 +0000",
+        "id" : "8431e033ced9f18dea65f854c360110472899b6d",
+        "msg" : "Minor code style fixes for previous commit.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/login_reset.provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

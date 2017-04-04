@@ -1,0 +1,94 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 23,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "branch" : [
+          {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#23",
+  "duration" : 42047,
+  "estimatedDuration" : 311755,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2 #23",
+  "id" : "23",
+  "keepLog" : false,
+  "number" : 23,
+  "queueId" : 215,
+  "result" : "FAILURE",
+  "timestamp" : 1440175020981,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir2/23/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

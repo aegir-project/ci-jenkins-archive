@@ -1,0 +1,1 @@
+{"_class":"hudson.model.ListView","jobs":[{"_class":"hudson.matrix.MatrixProject","name":"asdf"},{"_class":"hudson.model.FreeStyleProject","name":"R clear repo"},{"_class":"hudson.model.FreeStyleProject","name":"R debian provision changelog"},{"_class":"hudson.model.FreeStyleProject","name":"R release tags"},{"_class":"hudson.model.FreeStyleProject","name":"R repo pull"}]}

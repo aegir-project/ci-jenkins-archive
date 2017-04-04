@@ -1,0 +1,26 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/Matrix.deb/workspace - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Triggering 2,wheezy64,stable,apache2,5
+2,wheezy64,stable,apache2,5 completed with result FAILURE
+Triggering 2,wheezy64,unstable,apache2,5
+2,wheezy64,unstable,apache2,5 completed with result FAILURE
+Triggering 2,wheezy64,testing,nginx,6
+2,wheezy64,testing,nginx,6 completed with result FAILURE
+Triggering 2,wheezy64,testing,apache2,5
+2,wheezy64,testing,apache2,5 completed with result FAILURE
+Triggering 2,wheezy64,stable,apache2,6
+2,wheezy64,stable,apache2,6 completed with result FAILURE
+Triggering 2,wheezy64,stable,nginx,5
+2,wheezy64,stable,nginx,5 completed with result FAILURE
+Triggering 2,raring64,unstable,apache2,5
+Aborted
+Aborted by Christopher Gervais
+Interrupting #14
+Finished: ABORTED

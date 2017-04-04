@@ -1,0 +1,77 @@
+{
+  "_class" : "hudson.model.View$AsynchPeople$People",
+  "users" : [
+    {
+      "lastChange" : 1474807920792,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir3-debian-test-unstable-xenial",
+        "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable-xenial/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+        "fullName" : "Herman van Rink"
+      }
+    },
+    {
+      "lastChange" : 1472215920142,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir3-debian-test-unstable-xenial",
+        "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable-xenial/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+        "fullName" : "Christopher Gervais"
+      }
+    },
+    {
+      "lastChange" : 1440700046162,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir-debian-build-2x",
+        "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-2x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+        "fullName" : "Guillaume Boudrias"
+      }
+    },
+    {
+      "lastChange" : 1440186332038,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir-debian-build-2x",
+        "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-2x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+        "fullName" : "Jon Pugh"
+      }
+    },
+    {
+      "lastChange" : 1440186332038,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir-debian-build-2x",
+        "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-2x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+        "fullName" : "omega8cc"
+      }
+    },
+    {
+      "lastChange" : 1398276987000,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir-debian-auto",
+        "url" : "http://ci.aegirproject.org/job/D_aegir-debian-auto/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+        "fullName" : "Antoine Beaupré"
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision ee93a358b4b9343ed96c453b4d8a79ea0b412635 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 73dcd197fecdeebf4422a693e40e79dd21b25567 (origin/new)
+Checking out Revision 73dcd197fecdeebf4422a693e40e79dd21b25567 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson6167581249684790159.sh
++ vagrant up
+[default] Importing base box 'Debian 6.0.7 x64'...
+[default] [0K[default] Progress: 10%[default] [0K[default] Progress: 20%[default] [0K[default] Progress: 30%[default] [0K[default] Progress: 40%[default] [0K[default] Progress: 50%[default] [0K[default] Progress: 60%[default] [0K[default] Progress: 70%[default] [0K[default] Progress: 80%[default] [0K[default] Progress: 90%[default] [0K[default] No guest additions were detected on the base box for this VM! Guest
+additions are required for forwarded ports, shared folders, host only
+networking, and more. If SSH fails on this machine, please install
+the guest additions and repackage the box to continue.
+
+This is not an error message; everything may continue to work properly,
+in which case you may ignore this message.
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Fixed port collision for 22 => 2222. Now on port 2200.
+[default] Forwarding ports...
+[default] -- 22 => 2200 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] Running provisioner: Vagrant::Provisioners::Shell...
+stdin: is not a tty
+Creating test environment...
+Installing git...
+Cloning dependencies (puppet-drush)...
+Setting up terminal colors...
+Scanning for tests in 'aegir' module...
+Running tests...
+Running 'build.pp' test...
+[32m
+'build.pp' test passed.
+[0m
+Running 'platform.pp' test...
+[32m
+'platform.pp' test passed.
+[0m
+Running 'apt.pp' test...
+[32m
+'apt.pp' test passed.
+[0m
+Running 'init.pp' test...
+[32m
+'init.pp' test passed.
+[0m
+Running 'remote_import.pp' test...
+[32m
+'remote_import.pp' test passed.
+[0m
+Running 'queue_runner.pp' test...
+[32m
+'queue_runner.pp' test passed.
+[0m
+Running 'queued.pp' test...
+[32m
+'queued.pp' test passed.
+[0m
+Running 'defaults.pp' test...
+[32m
+'defaults.pp' test passed.
+[0m
+Running 'login_link.pp' test...
+[32m
+'login_link.pp' test passed.
+[0m
+Running 'dev.pp' test...
+[32m
+'dev.pp' test passed.
+[0m
+Running 'extras.pp' test...
+[32m
+'extras.pp' test passed.
+[0m
+Running 'backend.pp' test...
+[32m
+'backend.pp' test passed.
+[0m
+Total tests run: 12
+[32m
+Tests passed: 12
+[31m
+Tests failed: 0
+[0m
+[workspace] $ /bin/sh -xe /tmp/hudson3553312823724226729.sh
++ vagrant destroy -f
+[default] Forcing shutdown of VM...
+[default] Destroying VM and associated drives...
+IRC notifier plugin: Sending notification to: #aegir
+IRC notifier plugin: [ERROR] not connected. Cannot send message to '#aegir'
+Finished: SUCCESS

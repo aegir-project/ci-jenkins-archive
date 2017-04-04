@@ -1,0 +1,203 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 50,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+            "branch" : [
+              {
+                "SHA1" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+            "branch" : [
+              {
+                "SHA1" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+        "branch" : [
+          {
+            "SHA1" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#50",
+  "duration" : 13512,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #50",
+  "id" : "2012-03-06_23-46-27",
+  "keepLog" : false,
+  "number" : 50,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331095587000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/50/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "2d30800a71b05a2c05e53db400a06ca91a6593f7",
+        "timestamp" : 1331077166000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "hardcode 6.x in release.sh to avoid confusion\n",
+        "date" : "2012-03-06T18:39:26-0500 -0500",
+        "id" : "2d30800a71b05a2c05e53db400a06ca91a6593f7",
+        "msg" : "hardcode 6.x in release.sh to avoid confusion",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt",
+          "debian/changelog"
+        ],
+        "commitId" : "37b2844543f0bbf498719b037addc8457b87fa1a",
+        "timestamp" : 1331077220000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "change version information for release 1.7\n",
+        "date" : "2012-03-06T18:40:20-0500 -0500",
+        "id" : "37b2844543f0bbf498719b037addc8457b87fa1a",
+        "msg" : "change version information for release 1.7",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt",
+          "provision.info",
+          "aegir.make",
+          "debian/changelog"
+        ],
+        "commitId" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+        "timestamp" : 1331077220000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Revert \"change version information for release 1.7\"\n\nThis reverts commit 37b2844543f0bbf498719b037addc8457b87fa1a.\n",
+        "date" : "2012-03-06T18:40:20-0500 -0500",
+        "id" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+        "msg" : "Revert \"change version information for release 1.7\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

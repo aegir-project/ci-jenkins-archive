@@ -1,0 +1,116 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 82,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+            "branch" : [
+              {
+                "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+            "branch" : [
+              {
+                "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+        "branch" : [
+          {
+            "SHA1" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#82",
+  "duration" : 430669,
+  "estimatedDuration" : 1189565,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable #82",
+  "id" : "82",
+  "keepLog" : false,
+  "number" : 82,
+  "queueId" : 1544,
+  "result" : "SUCCESS",
+  "timestamp" : 1449575100288,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable/82/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+        "timestamp" : 1449560562000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "prepare drush dependancies\n",
+        "date" : "2015-12-08T02:42:42-0500 +0100",
+        "id" : "d559f45a7d51e5c2449fd3be74163a51c5befc6a",
+        "msg" : "prepare drush dependancies",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

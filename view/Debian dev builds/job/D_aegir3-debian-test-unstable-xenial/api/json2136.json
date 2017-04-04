@@ -1,0 +1,568 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    
+  ],
+  "description" : "Installs the Aegir Debian package from our unstable repo. Using an Ubuntu 16.04 Xenial basebox",
+  "displayName" : "D_aegir3-debian-test-unstable-xenial",
+  "displayNameOrNull" : null,
+  "name" : "D_aegir3-debian-test-unstable-xenial",
+  "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 343,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/343/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 342,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/342/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 341,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/341/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 340,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/340/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 339,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/339/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 338,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/338/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 337,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/337/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 336,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/336/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 335,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/335/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 334,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/334/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 333,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/333/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 332,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/332/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 331,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/331/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 330,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/330/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 329,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/329/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 328,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/328/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 327,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/327/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 326,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/326/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 325,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/325/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 324,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/324/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 323,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/323/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 322,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/322/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 321,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/321/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 320,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/320/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 319,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/319/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 318,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/318/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 317,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/317/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 316,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/316/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 315,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/315/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 314,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/314/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 313,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/313/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 312,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/312/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 311,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/311/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 310,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/310/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 309,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/309/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 308,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/308/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 307,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/307/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 306,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/306/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 305,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/305/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 304,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/304/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 303,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/303/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 302,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/302/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 301,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/301/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 300,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/300/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 299,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/299/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 298,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/298/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 297,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/297/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 296,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/296/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 295,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/295/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 294,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/294/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 293,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/293/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 292,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/292/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 291,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/291/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 290,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/290/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 289,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/289/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 288,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/288/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 287,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/287/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 286,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/286/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 285,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/285/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 284,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/284/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 283,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/283/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 282,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/282/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 281,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/281/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 280,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/280/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 279,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/279/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 278,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/278/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 277,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/277/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 276,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/276/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 275,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/275/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 274,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/274/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 273,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/273/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 272,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/272/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 271,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/271/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 270,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/270/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 269,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/269/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 268,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/268/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 267,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/267/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 266,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/266/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 265,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/265/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 264,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/264/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 263,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/263/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 262,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/262/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 261,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/261/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 260,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/260/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 259,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/259/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 258,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/258/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 257,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/257/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 256,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/256/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 255,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/255/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 254,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/254/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 253,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/253/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 252,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/252/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 251,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/251/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 250,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/250/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 249,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/249/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 248,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/248/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 247,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/247/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 246,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/246/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 245,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/245/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 244,
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/244/"
+    }
+  ],
+  "color" : "red",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: All recent builds failed.",
+      "iconClassName" : "icon-health-00to19",
+      "iconUrl" : "health-00to19.png",
+      "score" : 0
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 343,
+    "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/343/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 343,
+    "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/343/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 343,
+    "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/343/"
+  },
+  "lastStableBuild" : null,
+  "lastSuccessfulBuild" : null,
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 343,
+    "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir3-debian-test-unstable-xenial/343/"
+  },
+  "nextBuildNumber" : 344,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

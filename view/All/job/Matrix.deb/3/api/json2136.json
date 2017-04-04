@@ -1,0 +1,288 @@
+{
+  "_class" : "hudson.matrix.MatrixBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 3,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+            "branch" : [
+              {
+                "SHA1" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+            "branch" : [
+              {
+                "SHA1" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+        "branch" : [
+          {
+            "SHA1" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#3",
+  "duration" : 24405,
+  "estimatedDuration" : 4952407,
+  "executor" : null,
+  "fullDisplayName" : "Matrix.deb #3",
+  "id" : "2014-01-08_17-55-55",
+  "keepLog" : false,
+  "number" : 3,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1389221755000,
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/3/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ],
+  "runs" : [
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=6/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=5/1/"
+    },
+    {
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=12,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=6/1/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64%20http%3A%2F%2Fcloud-images.ubuntu.com%2Fraring%2Fcurrent%2Fraring-server-cloudimg-vagrant-amd64-disk1.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=apache2,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=stable,aegir_web_server=nginx,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=apache2,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=testing,aegir_web_server=nginx,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=apache2,drush_api=6/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=5/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64%20http%3A%2F%2Fdl.dropbox.com%2Fu%2F937870%2FVMs%2Fwheezy64.box,aegir_dist=unstable,aegir_web_server=nginx,drush_api=6/3/"
+    }
+  ]
+}

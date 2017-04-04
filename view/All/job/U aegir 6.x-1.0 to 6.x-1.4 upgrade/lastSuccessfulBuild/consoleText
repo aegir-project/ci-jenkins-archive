@@ -1,0 +1,339 @@
+Started by user Steven Jones
+Checkout:workspace / /var/lib/jenkins/jobs/aegir 6.x-1.0 to 6.x-1.4 upgrade/workspace - hudson.remoting.LocalChannel@1722b2a6
+Using strategy: Default
+Checkout:build_scripts / /var/lib/jenkins/jobs/aegir 6.x-1.0 to 6.x-1.4 upgrade/workspace/build_scripts - hudson.remoting.LocalChannel@1722b2a6
+Cloning the remote Git repository
+Cloning repository origin
+Fetching upstream changes from http://git.drupal.org/sandbox/darthsteven/1286014.git
+Commencing build of Revision d3fe9ed10999f23ade074334bc4eded8cef79564 (origin/master)
+Checking out Revision d3fe9ed10999f23ade074334bc4eded8cef79564 (origin/master)
+No change to record in branch origin/master
+[workspace] $ /bin/sh -xe /tmp/hudson1940298360924705772.sh
++ python build_scripts/jenkins_aegir_upgrade.py
+/usr/lib/python2.6/dist-packages/Crypto/Util/randpool.py:40: RandomPool_DeprecationWarning: This application uses RandomPool, which is BROKEN in older releases.  See http://www.pycrypto.org/randpool-broken
+  RandomPool_DeprecationWarning)
+/usr/local/lib/python2.6/dist-packages/libcloud/httplib_ssl.py:55: UserWarning: SSL certificate verification is disabled, this can pose a security risk. For more information how to enable the SSL certificate verification, please visit the libcloud documentation.
+  warnings.warn(libcloud.security.VERIFY_SSL_DISABLED_MSG)
+Provisioning server and running deployment processes
+Provisioning complete, you can ssh as root to 50.57.167.209
+The root user's password is aegir2011-10-3009-03-19nhLPK01w7
+===> Setting a little firewall
+[50-57-167-209.static.cloud-ips.com] run: for source in 95.142.164.178 59.167.182.161 174.136.104.138 217.155.126.38; do iptables -I INPUT -s $source -p tcp --dport 22 -j ACCEPT; iptables -I INPUT -s $source -p tcp --dport 80 -j ACCEPT; done; iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT; iptables --policy INPUT DROP
+===> Preparing Apache
+[50-57-167-209.static.cloud-ips.com] run: a2enmod rewrite
+[50-57-167-209.static.cloud-ips.com] out: Enabling module rewrite.
+[50-57-167-209.static.cloud-ips.com] out: Run '/etc/init.d/apache2 restart' to activate new configuration!
+[50-57-167-209.static.cloud-ips.com] run: ln -s /var/aegir/config/apache.conf /etc/apache2/conf.d/aegir.conf
+===> Preparing the Aegir user
+[50-57-167-209.static.cloud-ips.com] run: useradd -r -U -d /var/aegir -m -G www-data aegir
+[50-57-167-209.static.cloud-ips.com] run: echo 'aegir ALL=NOPASSWD: /usr/sbin/apache2ctl' >> /etc/sudoers
+===> Fetching Drush 7.x-4.4
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'wget http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz'
+[50-57-167-209.static.cloud-ips.com] out: --2011-10-30 09:06:03--  http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz
+[50-57-167-209.static.cloud-ips.com] out: Resolving ftp.drupal.org... 64.50.236.52, 64.50.233.100
+[50-57-167-209.static.cloud-ips.com] out: Connecting to ftp.drupal.org|64.50.236.52|:80... connected.
+[50-57-167-209.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-167-209.static.cloud-ips.com] out: Length: 253012 (247K) [application/x-gzip]
+[50-57-167-209.static.cloud-ips.com] out: Saving to: `drush-7.x-4.4.tar.gz'
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-167-209.static.cloud-ips.com] out: 100%[======================================>] 253,012     --.-K/s   in 0.02s   
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 2011-10-30 09:06:03 (13.0 MB/s) - `drush-7.x-4.4.tar.gz' saved [253012/253012]
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'gunzip -c drush-7.x-4.4.tar.gz | tar -xf - '
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'rm /var/aegir/drush-7.x-4.4.tar.gz'
+===> Fetching Provision - via package
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php dl -y --destination=/var/aegir/.drush provision-6.x-1.0'
+[50-57-167-209.static.cloud-ips.com] out: The directory /var/aegir/.drush does not exist.
+[50-57-167-209.static.cloud-ips.com] out: Would you like to create it? (y/n): y
+[50-57-167-209.static.cloud-ips.com] out: Project provision (6.x-1.0) downloaded to                              [success]
+[50-57-167-209.static.cloud-ips.com] out: /var/aegir/.drush/provision.
+[50-57-167-209.static.cloud-ips.com] out: Project provision contains 4 modules: bind_slave, bind, dns, provision.
+===> Running hostmaster-install
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php hostmaster-install 50-57-167-209.static.cloud-ips.com --client_email=mig@mig5.net --aegir_db_pass=8su43x --yes'
+[50-57-167-209.static.cloud-ips.com] out: Aegir 6.x-1.0 automated install script
+[50-57-167-209.static.cloud-ips.com] out: ==============================================================================
+[50-57-167-209.static.cloud-ips.com] out: Some settings have not been provided and will now be prompted.
+[50-57-167-209.static.cloud-ips.com] out: Don't worry: you will get to review those settings after the final install
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: This script will operate the following changes in your system:
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 1. Create server-level configuration directories
+[50-57-167-209.static.cloud-ips.com] out: 2. Download drush_make
+[50-57-167-209.static.cloud-ips.com] out: 3. Create the Hostmaster frontend platform
+[50-57-167-209.static.cloud-ips.com] out: 4. Install the frontend site
+[50-57-167-209.static.cloud-ips.com] out: 5. Setup the dispatcher (a user cron job)
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: We are making the following assumptions:
+[50-57-167-209.static.cloud-ips.com] out:  * you have read INSTALL.txt and prepared the platform accordingly
+[50-57-167-209.static.cloud-ips.com] out:  * the FQDN of this machine is valid and resolves
+[50-57-167-209.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: The following settings will be used:
+[50-57-167-209.static.cloud-ips.com] out:  Aegir frontend URL: 50-57-167-209.static.cloud-ips.com
+[50-57-167-209.static.cloud-ips.com] out:  Master server FQDN: aegir2011-10-3009-03-19
+[50-57-167-209.static.cloud-ips.com] out:  Aegir root: /var/aegir
+[50-57-167-209.static.cloud-ips.com] out:  Aegir user: aegir
+[50-57-167-209.static.cloud-ips.com] out:  Web group: www-data
+[50-57-167-209.static.cloud-ips.com] out:  Web server: apache
+[50-57-167-209.static.cloud-ips.com] out:  Aegir DB host: localhost
+[50-57-167-209.static.cloud-ips.com] out:  Aegir DB user: root
+[50-57-167-209.static.cloud-ips.com] out:  Aegir DB password: <previously set>
+[50-57-167-209.static.cloud-ips.com] out:  Drush make version: 6.x-2.2
+[50-57-167-209.static.cloud-ips.com] out:  Aegir version: 6.x-1.0
+[50-57-167-209.static.cloud-ips.com] out:  Aegir platform path: /var/aegir/hostmaster-6.x-1.0
+[50-57-167-209.static.cloud-ips.com] out:  Aegir makefile: /var/aegir/.drush/provision/aegir.make
+[50-57-167-209.static.cloud-ips.com] out:  Admin email: mig@mig5.net
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: Do you really want to proceed with the install (y/n): y
+[50-57-167-209.static.cloud-ips.com] out: Project drush_make (6.x-2.2) downloaded to                             [success]
+[50-57-167-209.static.cloud-ips.com] out: /var/aegir/.drush//drush_make.
+[50-57-167-209.static.cloud-ips.com] out: Project drush_make contains 0 modules: .
+[50-57-167-209.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/drupal-6.22.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: hostmaster cloned from http://git.drupal.org/project/hostmaster.git.        [ok]
+[50-57-167-209.static.cloud-ips.com] out: Checked out tag 6.x-1.0.                                                    [ok]
+[50-57-167-209.static.cloud-ips.com] out: Found makefile: hostmaster.make                                             [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for admin_menu retrieved.                               [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for openidadmin retrieved.                              [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for install_profile_api retrieved.                      [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for jquery_ui retrieved.                                [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for modalframe retrieved.                               [ok]
+[50-57-167-209.static.cloud-ips.com] out: admin_menu downloaded from                                                  [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/admin_menu-6.x-1.6.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: openidadmin downloaded from                                                 [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: install_profile_api downloaded from                                         [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: modalframe downloaded from                                                  [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip.
+[50-57-167-209.static.cloud-ips.com] out: Created 5057167209static database                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: Creating master server node                                             [status]
+[50-57-167-209.static.cloud-ips.com] out: Creating db server node                                                 [status]
+[50-57-167-209.static.cloud-ips.com] out: Configuring menu items                                                  [status]
+[50-57-167-209.static.cloud-ips.com] out: Configuring Eldir theme                                                 [status]
+[50-57-167-209.static.cloud-ips.com] out: Configuring default blocks                                              [status]
+[50-57-167-209.static.cloud-ips.com] out: Configuring roles                                                       [status]
+[50-57-167-209.static.cloud-ips.com] out: Content permissions have been rebuilt.                                  [status]
+[50-57-167-209.static.cloud-ips.com] out: Initializing the hosting system
+[50-57-167-209.static.cloud-ips.com] out: Dispatch command was run successfully                                  [success]
+[50-57-167-209.static.cloud-ips.com] out: This command will replace your crontab for this user. continue? (y/n): y
+[50-57-167-209.static.cloud-ips.com] out: /var/aegir/drush/drush.php '@hostmaster' hosting-dispatch 
+[50-57-167-209.static.cloud-ips.com] out: Aegir is now installed. You can visit it at http://50-57-167-209.static.cloud-ips.com/user/reset/1/1319965580/e82aee1cc7c4a550029743fc257554bc
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php -y @hostmaster vset hosting_queue_tasks_frequency 1'
+[50-57-167-209.static.cloud-ips.com] out: hosting_queue_tasks_frequency was set to 1.                            [success]
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===> Fetching the Aegir upgrade script
+[50-57-167-209.static.cloud-ips.com] run: wget -O /tmp/upgrade.sh 'http://drupalcode.org/project/provision.git/blob_plain/6.x-1.4:/upgrade.sh.txt'
+[50-57-167-209.static.cloud-ips.com] out: --2011-10-30 09:06:26--  http://drupalcode.org/project/provision.git/blob_plain/6.x-1.4:/upgrade.sh.txt
+[50-57-167-209.static.cloud-ips.com] out: Resolving drupalcode.org... 140.211.10.6
+[50-57-167-209.static.cloud-ips.com] out: Connecting to drupalcode.org|140.211.10.6|:80... connected.
+[50-57-167-209.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-167-209.static.cloud-ips.com] out: Length: 4461 (4.4K) [text/plain]
+[50-57-167-209.static.cloud-ips.com] out: Saving to: `/tmp/upgrade.sh'
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-167-209.static.cloud-ips.com] out: 100%[======================================>] 4,461       --.-K/s   in 0.06s   
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 2011-10-30 09:06:26 (74.8 KB/s) - `/tmp/upgrade.sh' saved [4461/4461]
+===> Running the Aegir upgrade script
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'yes | sh /tmp/upgrade.sh 50-57-167-209.static.cloud-ips.com'
+[50-57-167-209.static.cloud-ips.com] out: ==> Drush found in /var/aegir/drush/drush.php, good
+[50-57-167-209.static.cloud-ips.com] out: ==> Aegir 6.x-1.4 automated upgrade script
+[50-57-167-209.static.cloud-ips.com] out: ==> This script makes the following assumptions: 
+[50-57-167-209.static.cloud-ips.com] out:  * you have read http://community.aegirproject.org/upgrading and have prepared the server accordingly
+[50-57-167-209.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[50-57-167-209.static.cloud-ips.com] out:  * that the following settings are correct
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: The Aegir version to upgrade to is 6.x-1.4
+[50-57-167-209.static.cloud-ips.com] out: The Aegir home dir is /var/aegir
+[50-57-167-209.static.cloud-ips.com] out: The new hostmaster platform will be /var/aegir/hostmaster-6.x-1.4
+[50-57-167-209.static.cloud-ips.com] out: Your Aegir domain is 50-57-167-209.static.cloud-ips.com
+[50-57-167-209.static.cloud-ips.com] out: Your old hostmaster platform was /var/aegir/hostmaster-6.x-1.0
+[50-57-167-209.static.cloud-ips.com] out: The Drush command is "php /var/aegir/drush/drush.php"
+[50-57-167-209.static.cloud-ips.com] out: The version of Drush will be 7.x-4.5
+[50-57-167-209.static.cloud-ips.com] out: The version of Drush Make will be 6.x-2.3
+[50-57-167-209.static.cloud-ips.com] out: Do you want to proceed with the upgrade? [Y/n] ==> Moving existing drush into /var/aegir/pre-upgrade-2011-10-30-0906
+[50-57-167-209.static.cloud-ips.com] out: --2011-10-30 09:06:27--  http://ftp.drupal.org/files/projects/drush-7.x-4.5.tar.gz
+[50-57-167-209.static.cloud-ips.com] out: Resolving ftp.drupal.org... 64.50.233.100, 64.50.236.52
+[50-57-167-209.static.cloud-ips.com] out: Connecting to ftp.drupal.org|64.50.233.100|:80... connected.
+[50-57-167-209.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-167-209.static.cloud-ips.com] out: Length: 282760 (276K) [application/x-gzip]
+[50-57-167-209.static.cloud-ips.com] out: Saving to: `drush-7.x-4.5.tar.gz'
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-167-209.static.cloud-ips.com] out: 100%[======================================>] 282,760     1.75M/s   in 0.2s    
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 2011-10-30 09:06:27 (1.75 MB/s) - `drush-7.x-4.5.tar.gz' saved [282760/282760]
+[50-57-167-209.static.cloud-ips.com] out: ==> Moving existing provision into /var/aegir/pre-upgrade-2011-10-30-0906
+[50-57-167-209.static.cloud-ips.com] out: --2011-10-30 09:06:27--  http://ftp.drupal.org/files/projects/provision-6.x-1.4.tar.gz
+[50-57-167-209.static.cloud-ips.com] out: Resolving ftp.drupal.org... 64.50.236.52, 64.50.233.100
+[50-57-167-209.static.cloud-ips.com] out: Connecting to ftp.drupal.org|64.50.236.52|:80... connected.
+[50-57-167-209.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-167-209.static.cloud-ips.com] out: Length: 97399 (95K) [application/x-gzip]
+[50-57-167-209.static.cloud-ips.com] out: Saving to: `provision-6.x-1.4.tar.gz'
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-167-209.static.cloud-ips.com] out: 100%[======================================>] 97,399      --.-K/s   in 0.009s  
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 2011-10-30 09:06:27 (10.8 MB/s) - `provision-6.x-1.4.tar.gz' saved [97399/97399]
+[50-57-167-209.static.cloud-ips.com] out: ==> Moving existing drush_make into /var/aegir/pre-upgrade-2011-10-30-0906
+[50-57-167-209.static.cloud-ips.com] out: Project drush_make (6.x-2.3) downloaded to                             [success]
+[50-57-167-209.static.cloud-ips.com] out: /var/aegir/.drush/drush_make.
+[50-57-167-209.static.cloud-ips.com] out: Project drush_make contains 0 modules: .
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: This command will operate the following changes in your system:
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 1. verify the server and the hostmaster site (provision-verify)
+[50-57-167-209.static.cloud-ips.com] out: 2. verify the new platform (which will download it if missing)
+[50-57-167-209.static.cloud-ips.com] out: 3. stop the queue (hosting-pause)
+[50-57-167-209.static.cloud-ips.com] out: 4. attempt a migration to the new platform (provision-migrate)
+[50-57-167-209.static.cloud-ips.com] out: 5. start the queue (hosting-resume)
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: We are making the following assumptions:
+[50-57-167-209.static.cloud-ips.com] out:  * you have read UPGRADE.txt
+[50-57-167-209.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[50-57-167-209.static.cloud-ips.com] out: Do you really want to proceed with the upgrade? (y/n): Project information for drupal retrieved.                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/drupal-6.22.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: hostmaster cloned from http://git.drupal.org/project/hostmaster.git.        [ok]
+[50-57-167-209.static.cloud-ips.com] out: Checked out tag 6.x-1.4.                                                    [ok]
+[50-57-167-209.static.cloud-ips.com] out: Found makefile: hostmaster.make                                             [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for admin_menu retrieved.                               [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for openidadmin retrieved.                              [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for install_profile_api retrieved.                      [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for jquery_ui retrieved.                                [ok]
+[50-57-167-209.static.cloud-ips.com] out: Project information for modalframe retrieved.                               [ok]
+[50-57-167-209.static.cloud-ips.com] out: admin_menu downloaded from                                                  [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/admin_menu-6.x-1.6.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: openidadmin downloaded from                                                 [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: install_profile_api downloaded from                                         [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: modalframe downloaded from                                                  [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip.
+[50-57-167-209.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-167-209.static.cloud-ips.com] out: /var/aegir/backups/50-57-167-209.static.cloud-ips.com-20111030.090640.tar.gz.
+[50-57-167-209.static.cloud-ips.com] out: Created 5057167209stat_0 database                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: array_keys() expects parameter 1 to be array, null given               [warning]
+[50-57-167-209.static.cloud-ips.com] out: deploy.provision.inc:84
+[50-57-167-209.static.cloud-ips.com] out: array_merge(): Argument #2 is not an array deploy.provision.inc:88     [warning]
+[50-57-167-209.static.cloud-ips.com] out: Invalid argument supplied for foreach() deploy.provision.inc:89        [warning]
+[50-57-167-209.static.cloud-ips.com] out: Executing hosting_client_update_6002                                   [success]
+[50-57-167-209.static.cloud-ips.com] out: ALTER TABLE {hosting_client} DROP KEY hosting_client_email_idx         [success]
+[50-57-167-209.static.cloud-ips.com] out: Executing hosting_site_update_6008                                     [success]
+[50-57-167-209.static.cloud-ips.com] out: ALTER TABLE {hosting_site} ADD `cron_key` VARCHAR(80) NOT NULL         [success]
+[50-57-167-209.static.cloud-ips.com] out: DEFAULT &#039;&#039;
+[50-57-167-209.static.cloud-ips.com] out: 'all' cache was cleared                                                [success]
+[50-57-167-209.static.cloud-ips.com] out: Finished performing updates.                                                [ok]
+[50-57-167-209.static.cloud-ips.com] out: The following updates are pending:
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out:  hosting_client module                                                         
+[50-57-167-209.static.cloud-ips.com] out:  6002 - Remove old primary keys from hosting_client table   This should never  
+[50-57-167-209.static.cloud-ips.com] out:  fail as the index is present only in really old installs  and this update may 
+[50-57-167-209.static.cloud-ips.com] out:  run on installs that have been done after the index was  removed from the     
+[50-57-167-209.static.cloud-ips.com] out:  schema.                                                                       
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out:  hosting_site module                                       
+[50-57-167-209.static.cloud-ips.com] out:  6008 - Add the cron_key column to the hosting_site table. 
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: 
+[50-57-167-209.static.cloud-ips.com] out: Do you wish to run all pending updates? (y/n): y
+[50-57-167-209.static.cloud-ips.com] out: Dispatch command was run successfully                                  [success]
+[50-57-167-209.static.cloud-ips.com] out: This command will replace your crontab for this user. continue? (y/n): y
+[50-57-167-209.static.cloud-ips.com] out: /var/aegir/drush/drush.php '@hostmaster' hosting-dispatch 
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===> Installing some common platforms
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php make https://github.com/mig5/builds/raw/master/drupal6.build /var/aegir/platforms/drupal6'
+[50-57-167-209.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/drupal-6.20.tar.gz.
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php --root='/var/aegir/platforms/drupal6' provision-save '@platform_drupal6' --context_type='platform''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-import '@platform_drupal6''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php make https://github.com/mig5/builds/raw/master/drupal7.build /var/aegir/platforms/drupal7'
+[50-57-167-209.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-167-209.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/drupal-7.9.tar.gz.
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php --root='/var/aegir/platforms/drupal7' provision-save '@platform_drupal7' --context_type='platform''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-import '@platform_drupal7''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php make https://github.com/mig5/builds/raw/master/openatrium.build /var/aegir/platforms/openatrium'
+[50-57-167-209.static.cloud-ips.com] out: atrium-1-0 downloaded from                                                  [ok]
+[50-57-167-209.static.cloud-ips.com] out: http://openatrium.com/sites/openatrium.com/files/atrium_releases/atrium-1-0.tgz.
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php --root='/var/aegir/platforms/openatrium' provision-save '@platform_openatrium' --context_type='platform''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-import '@platform_openatrium''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===> Installing some sites
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php --uri='drupal6.mig5.net' provision-save '@drupal6.mig5.net' --context_type='site' --platform='@platform_drupal6' --profile='default' --db_server='@server_localhost''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @drupal6.mig5.net provision-install'
+[50-57-167-209.static.cloud-ips.com] out: Created drupal6mig5net database                                        [success]
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @hostmaster hosting-task @platform_drupal6 verify'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php --uri='drupal7.mig5.net' provision-save '@drupal7.mig5.net' --context_type='site' --platform='@platform_drupal7' --profile='standard' --db_server='@server_localhost''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @drupal7.mig5.net provision-install'
+[50-57-167-209.static.cloud-ips.com] out: Created drupal7mig5net database                                        [success]
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @hostmaster hosting-task @platform_drupal7 verify'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php --uri='openatrium.mig5.net' provision-save '@openatrium.mig5.net' --context_type='site' --platform='@platform_openatrium' --profile='openatrium' --db_server='@server_localhost''
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @openatrium.mig5.net provision-install'
+[50-57-167-209.static.cloud-ips.com] out: Created openatriummig5ne database                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : strongarm                                            [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : book                                                 [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : casetracker                                          [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : date                                                 [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : date_popup                                           [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : litecal                                              [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : content                                              [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : nodereference                                        [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : text                                                 [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : optionwidgets                                        [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : job_scheduler                                        [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : feeds                                                [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : parser_ical                                          [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : notifications_team                                   [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : content_profile                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium                                               [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_activity                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_blog                                          [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_book                                          [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_calendar                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_casetracker                                   [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_groups                                        [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_members                                       [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_profile                                       [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : atrium_shoutbox                                      [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : spaces_dashboard                                     [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : jquery_ui                                            [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : codefilter                                           [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : markdown                                             [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : boxes                                                [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : comment_upload                                       [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : crayon                                               [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : diff                                                 [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : itweak_upload                                        [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : imagecache_profiles                                  [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : nodeformcols                                         [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : prepopulate                                          [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : reldate                                              [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : xref                                                 [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : color                                                [success]
+[50-57-167-209.static.cloud-ips.com] out: Enabling module : designkit                                            [success]
+[50-57-167-209.static.cloud-ips.com] out: Organic groups module enabled. Please see the included README file      [status]
+[50-57-167-209.static.cloud-ips.com] out: for further installation instructions.
+[50-57-167-209.static.cloud-ips.com] out: A new Input format has been created: Messaging plain text               [status]
+[50-57-167-209.static.cloud-ips.com] out: Content permissions have been rebuilt.                                  [status]
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @hostmaster hosting-task @platform_openatrium verify'
+[50-57-167-209.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===> Destroying this node
+IRC notifier plugin: Sending notification to: #aegir
+Finished: SUCCESS

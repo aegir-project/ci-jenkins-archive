@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 30,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+            "branch" : [
+              {
+                "SHA1" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+            "branch" : [
+              {
+                "SHA1" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+        "branch" : [
+          {
+            "SHA1" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#30",
+  "duration" : 14061,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #30",
+  "id" : "2012-01-07_10-01-23",
+  "keepLog" : false,
+  "number" : 30,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1325948483000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/30/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache_ssl/vhost_ssl.tpl.php",
+          "http/apache/vhost.tpl.php"
+        ],
+        "commitId" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+        "timestamp" : 1325930269000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1396326 by Steven Jones: Fixed Mod rewrite double escapes URLs.\n",
+        "date" : "2012-01-07T04:57:49-0500 +0000",
+        "id" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+        "msg" : "Issue #1396326 by Steven Jones: Fixed Mod rewrite double escapes URLs.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/apache_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/apache/vhost.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

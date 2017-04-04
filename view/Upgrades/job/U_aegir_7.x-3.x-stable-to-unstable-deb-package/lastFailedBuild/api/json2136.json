@@ -1,0 +1,95 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"S_aegir-debian-official-3.x\" build number 25",
+          "upstreamBuild" : 25,
+          "upstreamProject" : "S_aegir-debian-official-3.x",
+          "upstreamUrl" : "job/S_aegir-debian-official-3.x/"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 951,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "branch" : [
+              {
+                "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "branch" : [
+              {
+                "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+        "branch" : [
+          {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : "D.o packages not ready",
+  "displayName" : "#951",
+  "duration" : 289709,
+  "estimatedDuration" : 1331817,
+  "executor" : null,
+  "fullDisplayName" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package #951",
+  "id" : "951",
+  "keepLog" : false,
+  "number" : 951,
+  "queueId" : 5595,
+  "result" : "FAILURE",
+  "timestamp" : 1489660685096,
+  "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/951/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

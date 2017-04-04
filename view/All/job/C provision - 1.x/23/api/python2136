@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 23,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+            "branch" : [
+              {
+                "SHA1" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+            "branch" : [
+              {
+                "SHA1" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+        "branch" : [
+          {
+            "SHA1" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#23",
+  "duration" : 17859,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #23",
+  "id" : "2011-11-12_07-31-41",
+  "keepLog" : False,
+  "number" : 23,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321101101000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/23/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.platform.inc"
+        ],
+        "commitId" : "beeff60fb9d0b62ea026c8f77c4112338543f6d0",
+        "timestamp" : 1321082262000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1336838: Added documentation for --makefile to provision-save, and fixed the style.\n",
+        "date" : "2011-11-12T02:17:42-0500 +1100",
+        "id" : "beeff60fb9d0b62ea026c8f77c4112338543f6d0",
+        "msg" : "Issue #1336838: Added documentation for --makefile to provision-save, and fixed the style.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.context.platform.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.platform.inc"
+        ],
+        "commitId" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+        "timestamp" : 1321082308000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "improve wording of --makefile documentation in provision-save\n",
+        "date" : "2011-11-12T02:18:28-0500 +1100",
+        "id" : "c60a205ee58ba2247eb09eb704babb93d49df8e3",
+        "msg" : "improve wording of --makefile documentation in provision-save",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.context.platform.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

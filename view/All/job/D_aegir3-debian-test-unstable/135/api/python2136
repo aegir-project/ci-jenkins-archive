@@ -1,0 +1,183 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"D_aegir-debian-build-3x\" build number 162",
+          "upstreamBuild" : 162,
+          "upstreamProject" : "D_aegir-debian-build-3x",
+          "upstreamUrl" : "job/D_aegir-debian-build-3x/"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 135,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+            "branch" : [
+              {
+                "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+            "branch" : [
+              {
+                "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+        "branch" : [
+          {
+            "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#135",
+  "duration" : 413763,
+  "estimatedDuration" : 1189565,
+  "executor" : None,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable #135",
+  "id" : "135",
+  "keepLog" : False,
+  "number" : 135,
+  "queueId" : 2217,
+  "result" : "SUCCESS",
+  "timestamp" : 1453975622425,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable/135/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "a126769f3c92c20f56fdd37045aa961b37228ae4",
+        "timestamp" : 1453972625000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add apt-get update\n",
+        "date" : "2016-01-28T04:17:05-0500 +0100",
+        "id" : "a126769f3c92c20f56fdd37045aa961b37228ae4",
+        "msg" : "Add apt-get update",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush7/setup.sh",
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "e5a24105f7c8de4e927d94ead7331e5ec0580d35",
+        "timestamp" : 1453974780000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "more apt-get updates\n",
+        "date" : "2016-01-28T04:53:00-0500 +0100",
+        "id" : "e5a24105f7c8de4e927d94ead7331e5ec0580d35",
+        "msg" : "more apt-get updates",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush7/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush7/setup.sh",
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+        "timestamp" : 1453975311000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "typo\n",
+        "date" : "2016-01-28T05:01:51-0500 +0100",
+        "id" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+        "msg" : "typo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush7/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

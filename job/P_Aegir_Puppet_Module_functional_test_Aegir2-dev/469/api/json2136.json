@@ -1,0 +1,198 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 469,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+            "branch" : [
+              {
+                "SHA1" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+            "branch" : [
+              {
+                "SHA1" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+        "branch" : [
+          {
+            "SHA1" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#469",
+  "duration" : 397241,
+  "estimatedDuration" : 390215,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev #469",
+  "id" : "469",
+  "keepLog" : false,
+  "number" : 469,
+  "queueId" : 751,
+  "result" : "SUCCESS",
+  "timestamp" : 1444779780843,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/469/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/provision-tests.sh",
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile",
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/run-tests.sh",
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/setup.sh"
+        ],
+        "commitId" : "d1795ae477435b8871ed00508c31e67e7f93bb81",
+        "timestamp" : 1444765661000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Experimental test of our unstabe debian packages, without using puppet\n",
+        "date" : "2015-10-13T15:47:41-0400 +0200",
+        "id" : "d1795ae477435b8871ed00508c31e67e7f93bb81",
+        "msg" : "Experimental test of our unstabe debian packages, without using puppet",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/provision-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+        ],
+        "commitId" : "a14e9b08d6f8efbf23a48b1b08abaea9eba4ee0d",
+        "timestamp" : 1444766621000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir3-deb-unstable-no-puppet: fix sql password\n",
+        "date" : "2015-10-13T16:03:41-0400 +0200",
+        "id" : "a14e9b08d6f8efbf23a48b1b08abaea9eba4ee0d",
+        "msg" : "aegir3-deb-unstable-no-puppet: fix sql password",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+        ],
+        "commitId" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+        "timestamp" : 1444768827000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir3-deb-unstable-no-puppet: fix2 sql password\n",
+        "date" : "2015-10-13T16:40:27-0400 +0200",
+        "id" : "fdb6ef4577515c5f77ab4cbf84ea7b57d3e27394",
+        "msg" : "aegir3-deb-unstable-no-puppet: fix2 sql password",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

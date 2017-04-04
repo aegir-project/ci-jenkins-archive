@@ -1,0 +1,581 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    
+  ],
+  "description" : "Installs the Aegir Debian package from our unstable repo.",
+  "displayName" : "D_aegir3-debian-test-unstable",
+  "displayNameOrNull" : None,
+  "name" : "D_aegir3-debian-test-unstable",
+  "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/",
+  "buildable" : True,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1021,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1021/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1020,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1020/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1019,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1019/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1018,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1018/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1017,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1017/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1016,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1016/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1015,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1015/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1014,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1014/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1013,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1013/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1012,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1012/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1011,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1011/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1010,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1010/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1009,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1009/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1008,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1008/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1007,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1007/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1006,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1006/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1005,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1005/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1004,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1004/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1003,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1003/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1002,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1002/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1001,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1001/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1000,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1000/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 999,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/999/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 998,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/998/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 997,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/997/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 996,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/996/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 995,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/995/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 994,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/994/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 993,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/993/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 992,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/992/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 991,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/991/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 990,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/990/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 989,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/989/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 988,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/988/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 987,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/987/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 986,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/986/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 985,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/985/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 984,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/984/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 983,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/983/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 982,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/982/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 981,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/981/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 980,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/980/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 979,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/979/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 978,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/978/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 977,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/977/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 976,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/976/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 975,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/975/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 974,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/974/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 973,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/973/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 972,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/972/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 971,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/971/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 970,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/970/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 969,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/969/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 968,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/968/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 967,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/967/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 966,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/966/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 965,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/965/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 964,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/964/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 963,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/963/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 962,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/962/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 961,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/961/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 960,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/960/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 959,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/959/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 958,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/958/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 957,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/957/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 956,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/956/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 955,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/955/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 954,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/954/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 953,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/953/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 952,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/952/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 951,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/951/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 950,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/950/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 949,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/949/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 948,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/948/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 947,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/947/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 946,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/946/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 945,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/945/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 944,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/944/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 943,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/943/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 942,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/942/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 941,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/941/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 940,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/940/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 939,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/939/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 938,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/938/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 937,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/937/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 936,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/936/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 935,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/935/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 934,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/934/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 933,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/933/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 932,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/932/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 931,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/931/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 930,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/930/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 929,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/929/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 928,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/928/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 927,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/927/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 926,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/926/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 925,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/925/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 924,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/924/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 923,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/923/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 922,
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/922/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1021,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1021/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1021,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1021/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 917,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/917/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1021,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1021/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1021,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/1021/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 917,
+    "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/917/"
+  },
+  "nextBuildNumber" : 1022,
+  "property" : [
+    
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-3x",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-3x/",
+      "color" : "blue"
+    }
+  ]
+}

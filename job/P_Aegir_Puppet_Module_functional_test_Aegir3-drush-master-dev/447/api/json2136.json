@@ -1,0 +1,153 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "refs/remotes/origin/dev/jessie" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 436,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+            "branch" : [
+              {
+                "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+            "branch" : [
+              {
+                "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          }
+        },
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 447,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "branch" : [
+              {
+                "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "branch" : [
+              {
+                "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "branch" : [
+          {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#447",
+  "duration" : 241125,
+  "estimatedDuration" : 188500,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #447",
+  "id" : "447",
+  "keepLog" : false,
+  "number" : 447,
+  "queueId" : 2419,
+  "result" : "FAILURE",
+  "timestamp" : 1454948409130,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/447/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/queued.pp",
+          "files/aegir3-hostmaster.hosting-queued.service"
+        ],
+        "commitId" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "timestamp" : 1454948386000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Issue #2664308 by helmo: Add hosting_queued systemd service file.\n",
+        "date" : "2016-02-08T11:19:46-0500 -0500",
+        "id" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "msg" : "Issue #2664308 by helmo: Add hosting_queued systemd service file.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "files/aegir3-hostmaster.hosting-queued.service"
+          },
+          {
+            "editType" : "edit",
+            "file" : "manifests/queued.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

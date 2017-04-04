@@ -1,0 +1,1606 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 29,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+            "branch" : [
+              {
+                "SHA1" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+            "branch" : [
+              {
+                "SHA1" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+        "branch" : [
+          {
+            "SHA1" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#29",
+  "duration" : 16148,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #29",
+  "id" : "2012-06-01_23-31-16",
+  "keepLog" : false,
+  "number" : 29,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1338607876000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/29/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.info"
+        ],
+        "commitId" : "fa0ba0ebc491ab0876fe949f51e8b80e0ccf0f1c",
+        "timestamp" : 1301229173000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Initial commit.\n",
+        "date" : "2011-03-27T08:32:53-0400 +0100",
+        "id" : "fa0ba0ebc491ab0876fe949f51e8b80e0ccf0f1c",
+        "msg" : "Initial commit.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.info"
+        ],
+        "commitId" : "75ead287d0b0ff83ef23bd33141bdfb4d654d01a",
+        "timestamp" : 1301232174000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add the particulars to the info file.\n",
+        "date" : "2011-03-27T09:22:54-0400 +0100",
+        "id" : "75ead287d0b0ff83ef23bd33141bdfb4d654d01a",
+        "msg" : "Add the particulars to the info file.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "86e1dccddc547be733f2907ba1ea955ea474bf44",
+        "timestamp" : 1301232186000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add the drush command file.\n",
+        "date" : "2011-03-27T09:23:06-0400 +0100",
+        "id" : "86e1dccddc547be733f2907ba1ea955ea474bf44",
+        "msg" : "Add the drush command file.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.conf"
+        ],
+        "commitId" : "2846964c813d676b93c399d86a5fc5f48e9f79c9",
+        "timestamp" : 1301250548000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add the configuration for supervisor.\n",
+        "date" : "2011-03-27T14:29:08-0400 +0100",
+        "id" : "2846964c813d676b93c399d86a5fc5f48e9f79c9",
+        "msg" : "Add the configuration for supervisor.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.sh"
+        ],
+        "commitId" : "269e5525ca4e3994c7c3fb54f6c88c8bb1e37b10",
+        "timestamp" : 1301250622000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add the bash script to run the drush command.\n",
+        "date" : "2011-03-27T14:30:22-0400 +0100",
+        "id" : "269e5525ca4e3994c7c3fb54f6c88c8bb1e37b10",
+        "msg" : "Add the bash script to run the drush command.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.module"
+        ],
+        "commitId" : "9aceec7bdd8514229d28d1cbf0d84b1c5dc67761",
+        "timestamp" : 1301250637000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add the module file.\n",
+        "date" : "2011-03-27T14:30:37-0400 +0100",
+        "id" : "9aceec7bdd8514229d28d1cbf0d84b1c5dc67761",
+        "msg" : "Add the module file.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting.feature.queue_runner.inc"
+        ],
+        "commitId" : "a745d5a528631e632d6db790f836e07a4710139f",
+        "timestamp" : 1301251630000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Surface the feature to Aegir.\n",
+        "date" : "2011-03-27T14:47:10-0400 +0100",
+        "id" : "a745d5a528631e632d6db790f836e07a4710139f",
+        "msg" : "Surface the feature to Aegir.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting.feature.queue_runner.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "README"
+        ],
+        "commitId" : "9cdbf2983f8000207ef848bd1b614610d8681c05",
+        "timestamp" : 1301252788000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add a simple readme.\n",
+        "date" : "2011-03-27T15:06:28-0400 +0100",
+        "id" : "9cdbf2983f8000207ef848bd1b614610d8681c05",
+        "msg" : "Add a simple readme.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "README"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "6daa5ba9982d556410ac10aed823742b5708fcef",
+        "timestamp" : 1301293696000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Remove an extra blank line.\n",
+        "date" : "2011-03-28T02:28:16-0400 +0100",
+        "id" : "6daa5ba9982d556410ac10aed823742b5708fcef",
+        "msg" : "Remove an extra blank line.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc",
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "5daf7f25767198c0bbb15b52aac701ac36477917",
+        "timestamp" : 1301294842000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add a settings form.\n",
+        "date" : "2011-03-28T02:47:22-0400 +0100",
+        "id" : "5daf7f25767198c0bbb15b52aac701ac36477917",
+        "msg" : "Add a settings form.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.admin.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.module"
+        ],
+        "commitId" : "2e6cab59599d8bf965aedea332a25abfee5fab82",
+        "timestamp" : 1301301839000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add the hook_menu().\n",
+        "date" : "2011-03-28T04:43:59-0400 +0100",
+        "id" : "2e6cab59599d8bf965aedea332a25abfee5fab82",
+        "msg" : "Add the hook_menu().",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "49d566f875eb9a3177965f3defecb5a6d0aaf0d8",
+        "timestamp" : 1301302979000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add a description to the admin form.\n",
+        "date" : "2011-03-28T05:02:59-0400 +0100",
+        "id" : "49d566f875eb9a3177965f3defecb5a6d0aaf0d8",
+        "msg" : "Add a description to the admin form.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.install"
+        ],
+        "commitId" : "3e424215524a317db5fc58e66d04016f42e90e81",
+        "timestamp" : 1301303006000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add a enable and disable hook to turn off the hosting tasks dispatch.\n",
+        "date" : "2011-03-28T05:03:26-0400 +0100",
+        "id" : "3e424215524a317db5fc58e66d04016f42e90e81",
+        "msg" : "Add a enable and disable hook to turn off the hosting tasks dispatch.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "hosting_queue_runner.install"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "896f1c58fd238b459ce193e482c69223cf0b6aee",
+        "timestamp" : 1301303204000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add more detail to the delay options.\n",
+        "date" : "2011-03-28T05:06:44-0400 +0100",
+        "id" : "896f1c58fd238b459ce193e482c69223cf0b6aee",
+        "msg" : "Add more detail to the delay options.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.conf",
+          "README"
+        ],
+        "commitId" : "fe63b2f8072ebd455644196f5e6bfacb52a172a9",
+        "timestamp" : 1301304193000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Beef up the README\n",
+        "date" : "2011-03-28T05:23:13-0400 +0100",
+        "id" : "fe63b2f8072ebd455644196f5e6bfacb52a172a9",
+        "msg" : "Beef up the README",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "README"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc",
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "94261eab269db67ff5e765819aaff7417f4d6895",
+        "timestamp" : 1301318637000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add some feedback that the queue runner is running.\n",
+        "date" : "2011-03-28T09:23:57-0400 +0100",
+        "id" : "94261eab269db67ff5e765819aaff7417f4d6895",
+        "msg" : "Add some feedback that the queue runner is running.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "README"
+        ],
+        "commitId" : "80dd49f81df927ed1ac0a4e39440f434d140fc2a",
+        "timestamp" : 1301318832000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add a note about trouble shooting.\n",
+        "date" : "2011-03-28T09:27:12-0400 +0100",
+        "id" : "80dd49f81df927ed1ac0a4e39440f434d140fc2a",
+        "msg" : "Add a note about trouble shooting.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "README"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "cb673c0eb84d57204708598985cbb7904b056944",
+        "timestamp" : 1301319284000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add some more logging to the drush command.\n",
+        "date" : "2011-03-28T09:34:44-0400 +0100",
+        "id" : "cb673c0eb84d57204708598985cbb7904b056944",
+        "msg" : "Add some more logging to the drush command.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "7aed5c97e8e6139d54a4c6309665c708fdf58f2b",
+        "timestamp" : 1301324196000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Make sure the description of the form shows up.\n",
+        "date" : "2011-03-28T10:56:36-0400 +0100",
+        "id" : "7aed5c97e8e6139d54a4c6309665c708fdf58f2b",
+        "msg" : "Make sure the description of the form shows up.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "51a8da246f5308a142855965b2ccf3e989f83179",
+        "timestamp" : 1301328583000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Reduce the sleepy time, we weren't feeling responsive any more.\n",
+        "date" : "2011-03-28T12:09:43-0400 +0100",
+        "id" : "51a8da246f5308a142855965b2ccf3e989f83179",
+        "msg" : "Reduce the sleepy time, we weren't feeling responsive any more.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "README"
+        ],
+        "commitId" : "bd5bc020d00acb872feae7a0859cdbb176f13ea5",
+        "timestamp" : 1301329398000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add line breaks to the README.\n",
+        "date" : "2011-03-28T12:23:18-0400 +0100",
+        "id" : "bd5bc020d00acb872feae7a0859cdbb176f13ea5",
+        "msg" : "Add line breaks to the README.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "README"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc",
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "d9a7c661894051bd3390ca14c92167952720092b",
+        "timestamp" : 1308171488000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "restart the queue runner automatically after the timeout, see #1189696\n",
+        "date" : "2011-06-15T16:58:08-0400 -0400",
+        "id" : "d9a7c661894051bd3390ca14c92167952720092b",
+        "msg" : "restart the queue runner automatically after the timeout, see #1189696",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "aa647c2ba4d88c4856be90af6181d5845144b718",
+        "timestamp" : 1308242612000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1189696 by Steven Jones: Fixed Running without supervisord leaks memory.\n",
+        "date" : "2011-06-16T12:43:32-0400 +0100",
+        "id" : "aa647c2ba4d88c4856be90af6181d5845144b718",
+        "msg" : "Issue #1189696 by Steven Jones: Fixed Running without supervisord leaks memory.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "e3eed606b567351c93ff3d02abb1d0587cdfb53f",
+        "timestamp" : 1308244667000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "make the process lifetime customizable\n",
+        "date" : "2011-06-16T13:17:47-0400 +0100",
+        "id" : "e3eed606b567351c93ff3d02abb1d0587cdfb53f",
+        "msg" : "make the process lifetime customizable",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "e464868352a439a7c23763677beefde836393575",
+        "timestamp" : 1308244667000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1189768 by anarcat, Steven Jones: Added customizable process lifetime.\n",
+        "date" : "2011-06-16T13:17:47-0400 +0100",
+        "id" : "e464868352a439a7c23763677beefde836393575",
+        "msg" : "Issue #1189768 by anarcat, Steven Jones: Added customizable process lifetime.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "5d13147501a43630f1abb6e2fe87009a67abc919",
+        "timestamp" : 1308246361000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "make delays translatable\n",
+        "date" : "2011-06-16T13:46:01-0400 -0400",
+        "id" : "5d13147501a43630f1abb6e2fe87009a67abc919",
+        "msg" : "make delays translatable",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "abdcccab5a90bf8d826577bfd258d6aa5e8aaa12",
+        "timestamp" : 1308249004000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "simplify the fork call and rename the function to be clearer\n",
+        "date" : "2011-06-16T14:30:04-0400 -0400",
+        "id" : "abdcccab5a90bf8d826577bfd258d6aa5e8aaa12",
+        "msg" : "simplify the fork call and rename the function to be clearer",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "816c6f4e11c1a701de6bfb9adc4dc5fc9e39261a",
+        "timestamp" : 1308249221000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rewrite the pcntl_exec() stuff to work with different command names and respect provided options\n",
+        "date" : "2011-06-16T14:33:41-0400 -0400",
+        "id" : "816c6f4e11c1a701de6bfb9adc4dc5fc9e39261a",
+        "msg" : "rewrite the pcntl_exec() stuff to work with different command names and respect provided options",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "98a7c05faf29e4f807f5fe3162377c9fc523ec1d",
+        "timestamp" : 1308249319000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "always restart the dispatcher\n",
+        "date" : "2011-06-16T14:35:19-0400 -0400",
+        "id" : "98a7c05faf29e4f807f5fe3162377c9fc523ec1d",
+        "msg" : "always restart the dispatcher",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "e77b57da336f0ee2e6d33d852e8588a9ce44865f",
+        "timestamp" : 1308249484000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "whitespace and comments\n",
+        "date" : "2011-06-16T14:38:04-0400 -0400",
+        "id" : "e77b57da336f0ee2e6d33d852e8588a9ce44865f",
+        "msg" : "whitespace and comments",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "8218a2448721d430df5eb3c5414b35d59664e06c",
+        "timestamp" : 1308251029000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "log to watchdog so frontend has feedback of dispatcher\n",
+        "date" : "2011-06-16T15:03:49-0400 -0400",
+        "id" : "8218a2448721d430df5eb3c5414b35d59664e06c",
+        "msg" : "log to watchdog so frontend has feedback of dispatcher",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "69edaeccbdfeb0464f6707d41871bdb701f25a01",
+        "timestamp" : 1308251192000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add one minute process lifetime\n",
+        "date" : "2011-06-16T15:06:32-0400 -0400",
+        "id" : "69edaeccbdfeb0464f6707d41871bdb701f25a01",
+        "msg" : "add one minute process lifetime",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "9bba413cddab14a5481dd23ec89984bb12c42275",
+        "timestamp" : 1308252009000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "pass process environment to child task correctly\n",
+        "date" : "2011-06-16T15:20:09-0400 -0400",
+        "id" : "9bba413cddab14a5481dd23ec89984bb12c42275",
+        "msg" : "pass process environment to child task correctly",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "9bf078722d300dbacae0a805fd857dccee1a3762",
+        "timestamp" : 1308261361000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "change the feedback to remove some duplicate and useless messages\n",
+        "date" : "2011-06-16T17:56:01-0400 -0400",
+        "id" : "9bf078722d300dbacae0a805fd857dccee1a3762",
+        "msg" : "change the feedback to remove some duplicate and useless messages",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "a42e5c59b2f0682e66180828df3c79d0c262892a",
+        "timestamp" : 1308262623000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add init script to start our shiny daemon\n",
+        "date" : "2011-06-16T18:17:03-0400 -0400",
+        "id" : "a42e5c59b2f0682e66180828df3c79d0c262892a",
+        "msg" : "add init script to start our shiny daemon",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "README"
+        ],
+        "commitId" : "bc362e0f124a05cc02cb4cba6e6ca9fa3ba92ad0",
+        "timestamp" : 1308263182000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "document the autorestart feature and the init.d file\n",
+        "date" : "2011-06-16T18:26:22-0400 -0400",
+        "id" : "bc362e0f124a05cc02cb4cba6e6ca9fa3ba92ad0",
+        "msg" : "document the autorestart feature and the init.d file",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "README"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "4b36ef43d3d51d0fb5da179734fc04c3dd625f07",
+        "timestamp" : 1308263345000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "word wrap\n",
+        "date" : "2011-06-16T18:29:05-0400 -0400",
+        "id" : "4b36ef43d3d51d0fb5da179734fc04c3dd625f07",
+        "msg" : "word wrap",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "25bdc5abfb297cfe397c2f6446831e47cc662ac8",
+        "timestamp" : 1308266846000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "handle SIGHUP as a restart properly\n\nnow it interrupts child tasks, which isn't good, but can be improved\n",
+        "date" : "2011-06-16T19:27:26-0400 -0400",
+        "id" : "25bdc5abfb297cfe397c2f6446831e47cc662ac8",
+        "msg" : "handle SIGHUP as a restart properly",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "d146e691a0a05d4a463d3707b6007141af13c63d",
+        "timestamp" : 1308266846000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "wait for the child tasks before restarting after signal\n",
+        "date" : "2011-06-16T19:27:26-0400 -0400",
+        "id" : "d146e691a0a05d4a463d3707b6007141af13c63d",
+        "msg" : "wait for the child tasks before restarting after signal",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "72dd6d167a646a80cc384303266390c3a278bd9a",
+        "timestamp" : 1308266877000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "handle the case where ENV is not set\n",
+        "date" : "2011-06-16T19:27:57-0400 -0400",
+        "id" : "72dd6d167a646a80cc384303266390c3a278bd9a",
+        "msg" : "handle the case where ENV is not set",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "60fe345339d26a026f3ef91d62abd6b72e878830",
+        "timestamp" : 1308267286000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "simplify signal handling code\n\nwe do not need to fork, as we do not need the PID to wait for it,\nthanks to pcntl_wait().\n",
+        "date" : "2011-06-16T19:34:46-0400 -0400",
+        "id" : "60fe345339d26a026f3ef91d62abd6b72e878830",
+        "msg" : "simplify signal handling code",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "67ecb88c8a1b633e1b6cc742470bc9dc9226b5fd",
+        "timestamp" : 1308267609000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "make init script executable\n",
+        "date" : "2011-06-16T19:40:09-0400 -0400",
+        "id" : "67ecb88c8a1b633e1b6cc742470bc9dc9226b5fd",
+        "msg" : "make init script executable",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "a285f66840039682bb736349c16485ae4da875b2",
+        "timestamp" : 1308268400000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "remove unused variable\n",
+        "date" : "2011-06-16T19:53:20-0400 -0400",
+        "id" : "a285f66840039682bb736349c16485ae4da875b2",
+        "msg" : "remove unused variable",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "a0fccbb6fc4aa6c1af560ba8d383f4acc528ff9a",
+        "timestamp" : 1308268421000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "handle stopping gracefully, by waiting for our poor children\n",
+        "date" : "2011-06-16T19:53:41-0400 -0400",
+        "id" : "a0fccbb6fc4aa6c1af560ba8d383f4acc528ff9a",
+        "msg" : "handle stopping gracefully, by waiting for our poor children",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "05e01fffeb8bf03e4a7f36c1eeea96ab5507904a",
+        "timestamp" : 1308268796000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "better log messages for signals\n",
+        "date" : "2011-06-16T19:59:56-0400 -0400",
+        "id" : "05e01fffeb8bf03e4a7f36c1eeea96ab5507904a",
+        "msg" : "better log messages for signals",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "934fa06bcd890f818ec0b1ba8fe5a8cd7445a7b9",
+        "timestamp" : 1308269155000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "use unset instead of assigning to null to try to free memory\n",
+        "date" : "2011-06-16T20:05:55-0400 -0400",
+        "id" : "934fa06bcd890f818ec0b1ba8fe5a8cd7445a7b9",
+        "msg" : "use unset instead of assigning to null to try to free memory",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "443c8a830f61e4051c6c4f0da60446a6cc8bae0f",
+        "timestamp" : 1308270080000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "load more than one task at a time\n\nthis reduces latency (one less sleep(1) call), the number of SQL\nrequests (one request per N tasks, where N is the default argument of\nhosting_get_new_tasks()) and probably use less memory because we don't\ndo the wider loop all the time\n\nthis means, however, we need to check the time in the inner loop too\n",
+        "date" : "2011-06-16T20:21:20-0400 -0400",
+        "id" : "443c8a830f61e4051c6c4f0da60446a6cc8bae0f",
+        "msg" : "load more than one task at a time",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "ceb84adb4a274c5c682554eda4b10fc45a67d6b1",
+        "timestamp" : 1308294710000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix up the auto restart functionality and remove forking.\n",
+        "date" : "2011-06-17T03:11:50-0400 +0100",
+        "id" : "ceb84adb4a274c5c682554eda4b10fc45a67d6b1",
+        "msg" : "Fix up the auto restart functionality and remove forking.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.admin.inc"
+        ],
+        "commitId" : "840c9fa2dc7750e9d14f2e2c58ef638ea62a4761",
+        "timestamp" : 1308294763000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Revert \"make delays translatable\" format plural is translatable.\n\nThis reverts commit 5d13147501a43630f1abb6e2fe87009a67abc919.\n",
+        "date" : "2011-06-17T03:12:43-0400 +0100",
+        "id" : "840c9fa2dc7750e9d14f2e2c58ef638ea62a4761",
+        "msg" : "Revert \"make delays translatable\" format plural is translatable.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.admin.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "ccbc3fd02ce4a7f486262f465ddb3ca2d7f52913",
+        "timestamp" : 1308295936000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Tidy up.\n",
+        "date" : "2011-06-17T03:32:16-0400 +0100",
+        "id" : "ccbc3fd02ce4a7f486262f465ddb3ca2d7f52913",
+        "msg" : "Tidy up.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "6798cdfd4b186ad0a8c786a37aa41b5c07f115b2",
+        "timestamp" : 1308297739000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Cleanup to ensure we can use PCNTL.\n",
+        "date" : "2011-06-17T04:02:19-0400 +0100",
+        "id" : "6798cdfd4b186ad0a8c786a37aa41b5c07f115b2",
+        "msg" : "Cleanup to ensure we can use PCNTL.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "README.txt",
+          "README"
+        ],
+        "commitId" : "3c2a6db79e2bf08f0d49f9b466aa635f039faf57",
+        "timestamp" : 1308327343000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rename the readme to follow conventions\n",
+        "date" : "2011-06-17T12:15:43-0400 -0400",
+        "id" : "3c2a6db79e2bf08f0d49f9b466aa635f039faf57",
+        "msg" : "rename the readme to follow conventions",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "README.txt"
+          },
+          {
+            "editType" : "delete",
+            "file" : "README"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "e3f4801e979258ea29940b93c57dd22150d14f3d",
+        "timestamp" : 1308327374000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "clarify why we pause twice\n",
+        "date" : "2011-06-17T12:16:14-0400 -0400",
+        "id" : "e3f4801e979258ea29940b93c57dd22150d14f3d",
+        "msg" : "clarify why we pause twice",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "21996e439f4829b6b83a655d85d732856630d3cf",
+        "timestamp" : 1308330482000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Argh that merge was wrong, fix it!\n",
+        "date" : "2011-06-17T13:08:02-0400 +0100",
+        "id" : "21996e439f4829b6b83a655d85d732856630d3cf",
+        "msg" : "Argh that merge was wrong, fix it!",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "68542386f82f5886dfaebd45f90a175e83cc4891",
+        "timestamp" : 1308346654000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Clean up some docs.\n",
+        "date" : "2011-06-17T17:37:34-0400 +0100",
+        "id" : "68542386f82f5886dfaebd45f90a175e83cc4891",
+        "msg" : "Clean up some docs.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "README.txt"
+        ],
+        "commitId" : "0c5c7cd66b1dcfae5e3faa85ee165f2d0a19b183",
+        "timestamp" : 1308379013000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix formatting in the README.\n",
+        "date" : "2011-06-18T02:36:53-0400 +0100",
+        "id" : "0c5c7cd66b1dcfae5e3faa85ee165f2d0a19b183",
+        "msg" : "Fix formatting in the README.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "README.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "init.d.example"
+        ],
+        "commitId" : "163b04d5155d8962eb4ee687395d3143f0e99760",
+        "timestamp" : 1329943905000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fixed status check to match the process as it actually runs\n",
+        "date" : "2012-02-22T15:51:45-0500 -0500",
+        "id" : "163b04d5155d8962eb4ee687395d3143f0e99760",
+        "msg" : "fixed status check to match the process as it actually runs",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/hosting_queue_runner.drush.inc",
+          "modules/hosting/queued/hosting_queue_runner.sh",
+          "modules/hosting/queued/hosting_queue_runner.admin.inc",
+          "modules/hosting/queued/init.d.example",
+          "modules/hosting/queued/hosting_queue_runner.module",
+          "modules/hosting/queued/hosting_queue_runner.info",
+          "modules/hosting/queued/hosting_queue_runner.install",
+          "modules/hosting/queued/README.txt",
+          "modules/hosting/queued/hosting.feature.queue_runner.inc",
+          "modules/hosting/queued/hosting_queue_runner.conf"
+        ],
+        "commitId" : "35c980125f4c31b9eefe9fb132894ae876aa10e3",
+        "timestamp" : 1338585892000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "import hosting_queue_runner as a submodule in 2.x\n",
+        "date" : "2012-06-01T17:24:52-0400 -0400",
+        "id" : "35c980125f4c31b9eefe9fb132894ae876aa10e3",
+        "msg" : "import hosting_queue_runner as a submodule in 2.x",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.module"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting.feature.queue_runner.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/init.d.example"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/README.txt"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.install"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.drush.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.info"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.admin.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queue_runner.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/hosting_queue_runner.drush.inc"
+        ],
+        "commitId" : "834861fa2d6b30aeba3cadd381b0e9b1ad251bd5",
+        "timestamp" : 1338587324000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "1548490 by grobot - fix hosting-task call for drush 5\n",
+        "date" : "2012-06-01T17:48:44-0400 -0400",
+        "id" : "834861fa2d6b30aeba3cadd381b0e9b1ad251bd5",
+        "msg" : "1548490 by grobot - fix hosting-task call for drush 5",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/hosting_queue_runner.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/hosting_queued.admin.inc",
+          "modules/hosting/queued/init.d.example",
+          "modules/hosting/queued/hosting_queue_runner.module",
+          "modules/hosting/queued/hosting_queued.module",
+          "modules/hosting/queued/hosting.feature.queue_runner.inc",
+          "modules/hosting/queued/hosting_queued.sh",
+          "modules/hosting/queued/hosting_queued.info",
+          "modules/hosting/queued/hosting_queue_runner.drush.inc",
+          "modules/hosting/queued/hosting_queue_runner.sh",
+          "modules/hosting/queued/hosting_queued.drush.inc",
+          "modules/hosting/queued/hosting_queued.conf",
+          "modules/hosting/queued/hosting_queue_runner.admin.inc",
+          "modules/hosting/queued/hosting_queued.install",
+          "modules/hosting/queued/README.txt",
+          "modules/hosting/queued/hosting_queue_runner.install",
+          "modules/hosting/queued/hosting_queue_runner.info",
+          "modules/hosting/queued/hosting_queue_runner.conf"
+        ],
+        "commitId" : "ce2f7e85741ca07078a042af9197e34783580f38",
+        "timestamp" : 1338587335000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rename the hosting-queue-runner to hosting-queued\n\na few reasons:\n\n 1. it's shorter\n 2. it's really a daemon\n 3. it will look better in init.d/\n",
+        "date" : "2012-06-01T17:48:55-0400 -0400",
+        "id" : "ce2f7e85741ca07078a042af9197e34783580f38",
+        "msg" : "rename the hosting-queue-runner to hosting-queued",
+        "paths" : [
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.admin.inc"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.module"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.drush.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.sh"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/hosting.feature.queue_runner.inc"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.info"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.sh"
+          },
+          {
+            "editType" : "delete",
+            "file" : "modules/hosting/queued/hosting_queue_runner.install"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.module"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.install"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.info"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.admin.inc"
+          },
+          {
+            "editType" : "add",
+            "file" : "modules/hosting/queued/hosting_queued.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/README.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/dispatch.hosting.inc"
+        ],
+        "commitId" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+        "timestamp" : 1338592878000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "1613376 by greg.1.anderson: fix invoke so that the alias is passed properly\n",
+        "date" : "2012-06-01T19:21:18-0400 -0400",
+        "id" : "79ac21ca8e4582a6eaf505766bae37f3a9b6b49a",
+        "msg" : "1613376 by greg.1.anderson: fix invoke so that the alias is passed properly",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/dispatch.hosting.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Guillaume Boudrias",
+          "userId" : "gboudrias",
+          "userName" : "Guillaume Boudrias"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 13,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "branch" : [
+          {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#13",
+  "duration" : 64850,
+  "estimatedDuration" : 436450,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-unstable #13",
+  "id" : "13",
+  "keepLog" : False,
+  "number" : 13,
+  "queueId" : 265,
+  "result" : "FAILURE",
+  "timestamp" : 1440706553753,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/13/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

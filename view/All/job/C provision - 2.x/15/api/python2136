@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 15,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+            "branch" : [
+              {
+                "SHA1" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+            "branch" : [
+              {
+                "SHA1" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+        "branch" : [
+          {
+            "SHA1" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#15",
+  "duration" : 17351,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #15",
+  "id" : "2012-02-26_23-31-25",
+  "keepLog" : False,
+  "number" : 15,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1330317085000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/15/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx/ssl.php"
+        ],
+        "commitId" : "6644df8e8779185f9d6fe831eb7dc5a72425e09a",
+        "timestamp" : 1330298186000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1346712 by mrfelton - Nginx config files required as includes in vhosts are not copied when Nginx SSL feature is enabled.\n",
+        "date" : "2012-02-26T18:16:26-0500 +1100",
+        "id" : "6644df8e8779185f9d6fe831eb7dc5a72425e09a",
+        "msg" : "Issue #1346712 by mrfelton - Nginx config files required as includes in vhosts are not copied when Nginx SSL feature is enabled.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx/ssl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc"
+        ],
+        "commitId" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+        "timestamp" : 1330298553000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "1444172: Fix Syntax error in the help description of provision-login_reset\n",
+        "date" : "2012-02-26T18:22:33-0500 +1100",
+        "id" : "c8dffb95b9923e5b1f7e6ab5f65b3875e181e76e",
+        "msg" : "1444172: Fix Syntax error in the help description of provision-login_reset",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

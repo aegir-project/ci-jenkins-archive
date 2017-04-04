@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 23,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+            "branch" : [
+              {
+                "SHA1" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+            "branch" : [
+              {
+                "SHA1" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+        "branch" : [
+          {
+            "SHA1" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#23",
+  "duration" : 9625,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #23",
+  "id" : "2012-04-27_09-00-26",
+  "keepLog" : false,
+  "number" : 23,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335531626000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/23/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_pack/hosting_web_pack.service.inc"
+        ],
+        "commitId" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+        "timestamp" : 1335516369000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1550284 by Steven Jones | wroxbox: Fixed Warningns after enabling 'web pack'.\n",
+        "date" : "2012-04-27T04:46:09-0400 +0100",
+        "id" : "61cb0f5a571a5a4f566bcccd1bd6e64269e79df6",
+        "msg" : "Issue #1550284 by Steven Jones | wroxbox: Fixed Warningns after enabling 'web pack'.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_pack/hosting_web_pack.service.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

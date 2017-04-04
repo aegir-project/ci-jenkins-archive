@@ -1,0 +1,121 @@
+{
+  "_class" : "hudson.matrix.MatrixRun",
+  "actions" : [
+    {
+      
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"Matrix.deb2\" build number 4",
+          "upstreamBuild" : 4,
+          "upstreamProject" : "Matrix.deb2",
+          "upstreamUrl" : "job/Matrix.deb2/"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 4,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+            "branch" : [
+              {
+                "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+            "branch" : [
+              {
+                "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 3,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+            "branch" : [
+              {
+                "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+            "branch" : [
+              {
+                "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+        "branch" : [
+          {
+            "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "2,unstable",
+  "duration" : 3541,
+  "estimatedDuration" : 392535,
+  "executor" : None,
+  "fullDisplayName" : "Matrix.deb2 » 2,unstable 2,unstable",
+  "id" : "2014-04-23_17-46-44",
+  "keepLog" : False,
+  "number" : 4,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1398289604000,
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=unstable/4/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

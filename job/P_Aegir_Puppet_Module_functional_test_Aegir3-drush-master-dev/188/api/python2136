@@ -1,0 +1,148 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "refs/remotes/origin/dev/jessie" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 188,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+            "branch" : [
+              {
+                "SHA1" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+            "branch" : [
+              {
+                "SHA1" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          }
+        },
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 186,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+        "branch" : [
+          {
+            "SHA1" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+            "name" : "refs/remotes/origin/dev/jessie"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#188",
+  "duration" : 247683,
+  "estimatedDuration" : 188500,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #188",
+  "id" : "2015-05-27_06-42-14",
+  "keepLog" : False,
+  "number" : 188,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1432723334000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/188/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+        ],
+        "commitId" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+        "timestamp" : 1432723325000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add apt confirmation\n",
+        "date" : "2015-05-27T06:42:05-0400 +0200",
+        "id" : "a5b429cbd630dc70d9014b40ff7172beeeb2fa9c",
+        "msg" : "Add apt confirmation",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

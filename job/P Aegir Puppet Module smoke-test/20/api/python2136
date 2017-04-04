@@ -1,0 +1,119 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "be2925edde3a1be6300e0c10df54f9528f938330",
+            "branch" : [
+              {
+                "SHA1" : "be2925edde3a1be6300e0c10df54f9528f938330",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "be2925edde3a1be6300e0c10df54f9528f938330",
+            "branch" : [
+              {
+                "SHA1" : "be2925edde3a1be6300e0c10df54f9528f938330",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "be2925edde3a1be6300e0c10df54f9528f938330",
+        "branch" : [
+          {
+            "SHA1" : "be2925edde3a1be6300e0c10df54f9528f938330",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#20",
+  "duration" : 91275,
+  "estimatedDuration" : 5666,
+  "executor" : None,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #20",
+  "id" : "2013-10-17_17-15-59",
+  "keepLog" : False,
+  "number" : 20,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1382044559000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/20/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/init.pp"
+        ],
+        "commitId" : "be2925edde3a1be6300e0c10df54f9528f938330",
+        "timestamp" : 1382044409000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fixed mysql_secure_installation\n",
+        "date" : "2013-10-17T17:13:29-0400 +0200",
+        "id" : "be2925edde3a1be6300e0c10df54f9528f938330",
+        "msg" : "Fixed mysql_secure_installation",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/init.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

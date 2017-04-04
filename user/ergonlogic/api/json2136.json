@@ -1,0 +1,53 @@
+{
+  "_class" : "hudson.model.User",
+  "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+  "description" : "",
+  "fullName" : "Christopher Gervais",
+  "id" : "ergonlogic",
+  "property" : [
+    {
+      "_class" : "jenkins.security.LastGrantedAuthoritiesProperty"
+    },
+    {
+      "_class" : "hudson.model.PaneStatusProperties"
+    },
+    {
+      "_class" : "jenkins.security.ApiTokenProperty"
+    },
+    {
+      "_class" : "hudson.plugins.greenballs.ColorBlindProperty",
+      "enabledColorBlindSupport" : false,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+        "fullName" : "Christopher Gervais"
+      }
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.UserCredentialsProvider$UserCredentialsProperty"
+    },
+    {
+      "_class" : "hudson.tasks.Mailer$UserProperty",
+      "address" : "chris@koumbit.org"
+    },
+    {
+      "_class" : "hudson.model.MyViewsProperty"
+    },
+    {
+      "_class" : "hudson.plugins.openid.OpenIdUserProperty"
+    },
+    {
+      "_class" : "hudson.security.HudsonPrivateSecurityRealm$Details"
+    },
+    {
+      "_class" : "org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl"
+    },
+    {
+      "_class" : "hudson.search.UserSearchProperty",
+      "insensitiveSearch" : false
+    },
+    {
+      "_class" : "hudson.plugins.jabber.user.JabberUserProperty",
+      "jid" : null
+    }
+  ]
+}

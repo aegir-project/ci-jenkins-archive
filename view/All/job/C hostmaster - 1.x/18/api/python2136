@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 18,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+            "branch" : [
+              {
+                "SHA1" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+            "branch" : [
+              {
+                "SHA1" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+        "branch" : [
+          {
+            "SHA1" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#18",
+  "duration" : 6988,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #18",
+  "id" : "2012-03-24_16-16-08",
+  "keepLog" : False,
+  "number" : 18,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332620168000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/18/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/site/hosting_site.form.inc",
+          "modules/hosting/site/hosting_site.form.js"
+        ],
+        "commitId" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+        "timestamp" : 1332605375000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1348338 by helmo, Steven Jones: Fixed Ajax requests ignore base_url() setting - followup.\n",
+        "date" : "2012-03-24T12:09:35-0400 +0000",
+        "id" : "35c40e75943707a50e46e9b03f21e97eff68b2dd",
+        "msg" : "Issue #1348338 by helmo, Steven Jones: Fixed Ajax requests ignore base_url() setting - followup.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.form.js"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.form.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

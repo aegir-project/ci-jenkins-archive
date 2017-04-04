@@ -1,0 +1,24 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson8564660476174794863.sh
++ rm -rf provision
++ git clone --branch debian darthsteven@git.drupal.org:project/provision.git
+Cloning into provision...
++ cd provision
++ git merge 6.x-1.6
+Merge made by recursive.
+ aegir.make                         |    2 +-
+ db/db.drush.inc                    |   42 +++++++++---------
+ platform/login_reset.provision.inc |   11 ++++-
+ provision.context.platform.inc     |    5 +-
+ provision.drush.inc                |   88 +++++++++++++++++++++++++++++-------
+ provision.info                     |    2 +-
+ upgrade.sh.txt                     |    2 +-
+ 7 files changed, 109 insertions(+), 43 deletions(-)
++ dch -v 1.6-1 -D testing new upstream release
++ git commit -a -m Updating Debian changelog for release 1.6-1
+[debian a58bad1] Updating Debian changelog for release 1.6-1
+ 1 files changed, 6 insertions(+), 0 deletions(-)
++ git push origin debian
+To darthsteven@git.drupal.org:project/provision.git
+   ad2b750..a58bad1  debian -&gt; debian
+Finished: SUCCESS

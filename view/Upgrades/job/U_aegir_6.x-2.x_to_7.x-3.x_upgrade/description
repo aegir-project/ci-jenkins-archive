@@ -1,0 +1,1 @@
+Use puppet to provision an Aegir 2.x, upgrade to 3.x and then run the provision tests.

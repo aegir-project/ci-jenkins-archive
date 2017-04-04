@@ -1,0 +1,20 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/C hostmaster - 2.x/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/C hostmaster - 2.x/workspace - hudson.remoting.LocalChannel@dabc8dd
+Using strategy: Default
+Last Built Revision: Revision 030853e67295b9bf31a07ba2aebfb4568cb17f2c (provision/6.x-2.x)
+Checkout:provision / /var/lib/jenkins/jobs/C hostmaster - 2.x/workspace/provision - hudson.remoting.LocalChannel@dabc8dd
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://git.drupalcode.org/project/hostmaster
+Commencing build of Revision 0f0413ddcdd06bb2a401154d1484352489e7e50d (provision/6.x-2.x)
+Checking out Revision 0f0413ddcdd06bb2a401154d1484352489e7e50d (provision/6.x-2.x)
+[workspace] $ /bin/sh -xe /tmp/hudson8959538731902551593.sh
++ rm -f review.xml
++ drush standalone-coder-review --files=provision --reviews=style,comment --output-filename=review.xml -y
+Running the coder review                                             [1;32;40m[1m[ok][0m
+Results written to /var/lib/jenkins/jobs/C hostmaster -              [1;32;40m[1m[ok][0m
+2.x/workspace/review.xml
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/jobs/C hostmaster - 2.x/workspace
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/jobs/C hostmaster - 2.x/workspace/review.xml of module  with 402 warnings.
+Finished: SUCCESS

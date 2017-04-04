@@ -1,0 +1,100 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 10,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+            "branch" : [
+              {
+                "SHA1" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+            "branch" : [
+              {
+                "SHA1" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+        "branch" : [
+          {
+            "SHA1" : "e34b86c1eec1a1530ff05a87d6965e23e774482a",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "jenkins.model.InterruptedBuildAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#10",
+  "duration" : 522655,
+  "estimatedDuration" : 436450,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-unstable #10",
+  "id" : "2014-04-23_19-03-15",
+  "keepLog" : false,
+  "number" : 10,
+  "queueId" : -1,
+  "result" : "ABORTED",
+  "timestamp" : 1398294195000,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/10/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

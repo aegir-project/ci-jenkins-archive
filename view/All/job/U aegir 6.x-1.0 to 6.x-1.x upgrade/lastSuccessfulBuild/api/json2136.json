@@ -1,0 +1,126 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "AEGIR_VERSION",
+          "value" : "6.x-1.0"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DRUSH_VERSION",
+          "value" : "7.x-4.4"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "UPGRADE_VERSION",
+          "value" : "HEAD"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "TEST_TYPE",
+          "value" : "provision"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Antoine Beaupré",
+          "userId" : "anarcat",
+          "userName" : "Antoine Beaupré"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 10,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+            "branch" : [
+              {
+                "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+            "branch" : [
+              {
+                "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+        "branch" : [
+          {
+            "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#10",
+  "duration" : 604951,
+  "estimatedDuration" : 355912,
+  "executor" : null,
+  "fullDisplayName" : "U aegir 6.x-1.0 to 6.x-1.x upgrade #10",
+  "id" : "2012-03-08_22-13-46",
+  "keepLog" : false,
+  "number" : 10,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331262826000,
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/10/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

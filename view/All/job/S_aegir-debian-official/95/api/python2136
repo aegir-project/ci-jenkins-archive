@@ -1,0 +1,148 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "6.x-1.9"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 95,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5384d5c84131eeaac908a9e8a39b3a6c481b3dd5",
+            "branch" : [
+              {
+                "SHA1" : "5384d5c84131eeaac908a9e8a39b3a6c481b3dd5",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5384d5c84131eeaac908a9e8a39b3a6c481b3dd5",
+            "branch" : [
+              {
+                "SHA1" : "5384d5c84131eeaac908a9e8a39b3a6c481b3dd5",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5384d5c84131eeaac908a9e8a39b3a6c481b3dd5",
+        "branch" : [
+          {
+            "SHA1" : "5384d5c84131eeaac908a9e8a39b3a6c481b3dd5",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 95,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5cbf22d918e1a895fd7fdb025c39120d4bc683ea",
+            "branch" : [
+              {
+                "SHA1" : "5cbf22d918e1a895fd7fdb025c39120d4bc683ea",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5cbf22d918e1a895fd7fdb025c39120d4bc683ea",
+            "branch" : [
+              {
+                "SHA1" : "5cbf22d918e1a895fd7fdb025c39120d4bc683ea",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5cbf22d918e1a895fd7fdb025c39120d4bc683ea",
+        "branch" : [
+          {
+            "SHA1" : "5cbf22d918e1a895fd7fdb025c39120d4bc683ea",
+            "name" : "origin/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#95",
+  "duration" : 11706,
+  "estimatedDuration" : 13891,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official #95",
+  "id" : "2012-08-01_06-39-22",
+  "keepLog" : False,
+  "number" : 95,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1343817562000,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official/95/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "_class" : "hudson.matrix.MatrixBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 4,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+            "branch" : [
+              {
+                "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+            "branch" : [
+              {
+                "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 3,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+            "branch" : [
+              {
+                "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+            "branch" : [
+              {
+                "SHA1" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+        "branch" : [
+          {
+            "SHA1" : "384e2daac2641e947179bc7bcd06917a13704c98",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#4",
+  "duration" : 5260,
+  "estimatedDuration" : 1160767,
+  "executor" : null,
+  "fullDisplayName" : "Matrix.deb2 #4",
+  "id" : "2014-04-23_17-46-44",
+  "keepLog" : false,
+  "number" : 4,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1398289604000,
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/4/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ],
+  "runs" : [
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=stable/3/"
+    },
+    {
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=testing/3/"
+    },
+    {
+      "number" : 4,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=unstable/4/"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+Started by user Steven Jones
+Checkout:workspace / /var/lib/jenkins/jobs/R release tags/workspace - hudson.remoting.LocalChannel@5128b9bc
+Using strategy: Default
+Checkout:repos / /var/lib/jenkins/jobs/R release tags/workspace/repos - hudson.remoting.LocalChannel@5128b9bc
+Cloning the remote Git repository
+Cloning repository origin
+Fetching upstream changes from http://git.drupal.org/project/provision.git
+Fetching upstream changes from http://git.drupal.org/project/hostmaster.git
+Seen branch in repository origin/6.x-1.x
+Seen branch in repository origin/6.x-2.x
+Seen branch in repository origin/7.x-2.x
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/debian
+Seen branch in repository origin/dev-dns
+Seen branch in repository origin/dev-dns_alias_records-1074966
+Seen branch in repository origin/dev-drupal-8
+Seen branch in repository origin/dev-envobject
+Seen branch in repository origin/dev-koumbit
+Seen branch in repository origin/dev-log_directory
+Seen branch in repository origin/dev-migrate_aliases
+Seen branch in repository origin/dev-multiserver-install
+Seen branch in repository origin/dev-newhooks
+Seen branch in repository origin/dev-nginx
+Seen branch in repository origin/dev-noreg-mail-336068
+Seen branch in repository origin/dev-platform_management
+Seen branch in repository origin/dev-ports
+Seen branch in repository origin/dev-purgebackup
+Seen branch in repository origin/dev-restore
+Seen branch in repository origin/dev-services
+Seen branch in repository origin/dev-simplerinstaller
+Seen branch in repository origin/dev-site_rename
+Seen branch in repository origin/dev-ssl
+Seen branch in repository origin/dev-ssl-chained-1062168
+Seen branch in repository origin/dev-wget-d7-cron-1090678
+Seen branch in repository origin/dev/1194676-jenkins-tests
+Seen branch in repository origin/dev/1318374-autoloader
+Seen branch in repository origin/dev_716166_apache_conf
+Seen branch in repository origin/dev_dns
+Seen branch in repository origin/dev_server_verify
+Seen branch in repository origin/prod-koumbit
+Seen branch in repository origin/ssl
+Seen branch in repository origin/upstream
+Seen branch in repository origin1/5.x
+Seen branch in repository origin1/599758_edit_main_site
+Seen branch in repository origin1/6.x-1.x
+Seen branch in repository origin1/6.x-2.x
+Seen branch in repository origin1/640952_client_preview
+Seen branch in repository origin1/7.x-2.x
+Seen branch in repository origin1/dev-1256508-delete-context-aliases
+Seen branch in repository origin1/dev-darthsteven-performance-fixes
+Seen branch in repository origin1/dev-dns
+Seen branch in repository origin1/dev-features
+Seen branch in repository origin1/dev-headless_install
+Seen branch in repository origin1/dev-log_directory
+Seen branch in repository origin1/dev-migrate_aliases
+Seen branch in repository origin1/dev-multiserver-install
+Seen branch in repository origin1/dev-newsiteform
+Seen branch in repository origin1/dev-nginx
+Seen branch in repository origin1/dev-platform_management
+Seen branch in repository origin1/dev-ports
+Seen branch in repository origin1/dev-purgebackup
+Seen branch in repository origin1/dev-refactor-client-962330
+Seen branch in repository origin1/dev-relationships
+Seen branch in repository origin1/dev-restore
+Seen branch in repository origin1/dev-server_nodetype
+Seen branch in repository origin1/dev-services
+Seen branch in repository origin1/dev-site_rename
+Seen branch in repository origin1/dev-ssl
+Seen branch in repository origin1/dev/1299508-version-info
+Seen branch in repository origin1/dev_dns
+Seen branch in repository origin1/prod-koumbit
+Seen branch in repository origin1/ssl
+Commencing build of Revision b53da48bfe0be2d35f31f4016c98f489f75aad16 (origin1/5.x)
+Checking out Revision b53da48bfe0be2d35f31f4016c98f489f75aad16 (origin1/5.x)
+No change to record in branch origin1/5.x
+Finished: SUCCESS

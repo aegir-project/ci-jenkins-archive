@@ -1,0 +1,198 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 51,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+            "branch" : [
+              {
+                "SHA1" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+            "branch" : [
+              {
+                "SHA1" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+        "branch" : [
+          {
+            "SHA1" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#51",
+  "duration" : 24766,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #51",
+  "id" : "2012-03-07_19-30-33",
+  "keepLog" : false,
+  "number" : 51,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331166633000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/51/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache_ssl/vhost_ssl.tpl.php",
+          "http/http.ssl.inc"
+        ],
+        "commitId" : "89877cd22e16b8263c999a8dbce85e4d6a40fc04",
+        "timestamp" : 1331148423000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Add patch from #1062168 comment 6.\n\nBy EugenMayer: Added chained certificates support.\n",
+        "date" : "2012-03-07T14:27:03-0500 -0500",
+        "id" : "89877cd22e16b8263c999a8dbce85e4d6a40fc04",
+        "msg" : "Add patch from #1062168 comment 6.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/apache_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/http.ssl.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache_ssl/vhost_ssl.tpl.php",
+          "http/http.ssl.inc"
+        ],
+        "commitId" : "46cacfbc6f8d78cedcc429330aa96aff756d48d2",
+        "timestamp" : 1331148423000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Fix up the previous commit.\n",
+        "date" : "2012-03-07T14:27:03-0500 -0500",
+        "id" : "46cacfbc6f8d78cedcc429330aa96aff756d48d2",
+        "msg" : "Fix up the previous commit.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/apache_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/http.ssl.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir.make",
+          "debian/changelog"
+        ],
+        "commitId" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+        "timestamp" : 1331148424000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "change version information for release 1.7\n",
+        "date" : "2012-03-07T14:27:04-0500 -0500",
+        "id" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+        "msg" : "change version information for release 1.7",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

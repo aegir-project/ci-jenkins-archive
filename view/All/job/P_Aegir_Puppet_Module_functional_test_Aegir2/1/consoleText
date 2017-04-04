@@ -1,0 +1,28 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision 8f10dc4a81801d5e71d3dfd8875aab3e86ea4341 (origin/new)
+Checking out Revision 8f10dc4a81801d5e71d3dfd8875aab3e86ea4341 (origin/new)
+No change to record in branch origin/new
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-drush.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision 13a1eb4188df5205ac2ff9eaa96d708ac0407631 (origin/new)
+Checking out Revision 13a1eb4188df5205ac2ff9eaa96d708ac0407631 (origin/new)
+No change to record in branch origin/new
+[workspace] $ /bin/sh -xe /tmp/hudson4760944851093846144.sh
++ vagrant up
+A Vagrant environment is required to run this command. Run `vagrant init`
+to set one up.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

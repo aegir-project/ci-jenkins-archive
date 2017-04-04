@@ -1,0 +1,27 @@
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/D_aegir-debian-auto/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/D_aegir-debian-auto/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision 7357f01eaa2b93705375678211fc118a35870be6 (origin/master, origin/HEAD)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/master
+Commencing build of Revision 7357f01eaa2b93705375678211fc118a35870be6 (origin/master, origin/HEAD)
+Checking out Revision 7357f01eaa2b93705375678211fc118a35870be6 (origin/master, origin/HEAD)
+Warning : There are multiple branch changesets here
+Checkout:workspace / /var/lib/jenkins/jobs/D_aegir-debian-auto/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision efcd0a398c1030f4879f663f317534ecfc766215 (origin/6.x-1.x)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision efcd0a398c1030f4879f663f317534ecfc766215 (origin/6.x-1.x)
+Checking out Revision efcd0a398c1030f4879f663f317534ecfc766215 (origin/6.x-1.x)
+[workspace] $ /bin/sh -xe /tmp/hudson8534996451248470399.sh
++ cd provision
++ ../aegir_jenkins_scripts/jenkins-debian-build -k jenkins@ci.aegirproject.org -u
+building aegir-1.10+251.efcd0a3 treat symlinks as existing, fixes #2046249 with key jenkins@ci.aegirproject.org - build tag: jenkins-D_aegir-debian-auto-251
+rm: cannot remove `build-area/aegir-provision-1.10+250.efcd0a3': Is a directory
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

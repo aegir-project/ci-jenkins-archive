@@ -1,0 +1,16 @@
+Started on Apr 23, 2014 2:16:21 PM
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision b9007458394c8e59e8d9fa0988ab466d12fcce0f (origin/HEAD, origin/master)
+Fetching changes from the remote Git repositories
+Fetching upstream changes from origin
+Polling for changes in
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/master
+Using strategy: Default
+[poll] Last Built Revision: Revision 02ef481477acd3306f55c5c06661fddd8879ebe5 (origin/6.x-1.x)
+Fetching changes from the remote Git repositories
+Fetching upstream changes from origin
+Polling for changes in
+Done. Took 1.1 sec
+Changes found

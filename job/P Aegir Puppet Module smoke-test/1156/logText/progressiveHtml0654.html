@@ -1,0 +1,28 @@
+Started by upstream project "<a href='../../../P%20Drush%20Puppet%20Module%20smoke-test/index.html' class='model-link'>P Drush Puppet Module smoke-test</a>" build number <a href='../../../P%20Drush%20Puppet%20Module%20smoke-test/566/index-2.html' class='model-link'>566</a>
+originally caused by:
+ Started by timer
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace
+ &gt; git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; git config remote.origin.url <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a> # timeout=10
+Fetching upstream changes from <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a>
+ &gt; git --version # timeout=10
+ &gt; git -c core.askpass=true fetch --tags --progress <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a> +refs/heads/*:refs/remotes/origin/*
+ &gt; git rev-parse origin/new^{commit} # timeout=10
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+ &gt; git config core.sparsecheckout # timeout=10
+ &gt; git checkout -f cff6da44c48d476e90a2939956eaf60e5209d14d
+ &gt; git rev-list cff6da44c48d476e90a2939956eaf60e5209d14d # timeout=10
+ &gt; git tag -a -f -m Jenkins Build #1156 jenkins-P_Aegir_Puppet_Module_smoke-test-1156 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson5149675220338212146.sh
++ ./tests/.ci/setup.sh
+[workspace] $ /bin/sh -xe /tmp/hudson8769872909551210382.sh
++ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==&gt; default: VirtualBox VM is already running.
+[workspace] $ /bin/sh -xe /tmp/hudson62732199244917153.sh
++ vagrant destroy -f
+==&gt; default: Forcing shutdown of VM...
+==&gt; default: Destroying VM and associated drives...
+==&gt; default: Running cleanup tasks for 'shell' provisioner...
+Finished: SUCCESS

@@ -1,0 +1,137 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 65,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+            "branch" : [
+              {
+                "SHA1" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+            "branch" : [
+              {
+                "SHA1" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+        "branch" : [
+          {
+            "SHA1" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#65",
+  "duration" : 21285,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #65",
+  "id" : "2012-05-16_17-45-29",
+  "keepLog" : False,
+  "number" : 65,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1337204729000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/65/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Apache/vhost.tpl.php"
+        ],
+        "commitId" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+        "timestamp" : 1337190213000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "1108810 - protect the complete private files directory\n\nas a bonus, we improve this by using a simpler Directory directive instead of DirectoryMatch\n",
+        "date" : "2012-05-16T13:43:33-0400 -0400",
+        "id" : "a317ec2fd57be50d11eeff1b5615241015227c8b",
+        "msg" : "1108810 - protect the complete private files directory",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 25,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "6fd3efa8918652ef661607da9124370949166609",
+            "branch" : [
+              {
+                "SHA1" : "6fd3efa8918652ef661607da9124370949166609",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6fd3efa8918652ef661607da9124370949166609",
+            "branch" : [
+              {
+                "SHA1" : "6fd3efa8918652ef661607da9124370949166609",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6fd3efa8918652ef661607da9124370949166609",
+        "branch" : [
+          {
+            "SHA1" : "6fd3efa8918652ef661607da9124370949166609",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#25",
+  "duration" : 26362,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #25",
+  "id" : "2011-11-13_00-31-42",
+  "keepLog" : false,
+  "number" : 25,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321162302000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/25/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/login_reset.provision.inc"
+        ],
+        "commitId" : "61350a92900cabc627ed2a3551f8731ef5b0ac9b",
+        "timestamp" : 1321141618000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "#1146238 fix call to user_load when resetting password, to be compatible with Drupal 5\n",
+        "date" : "2011-11-12T18:46:58-0500 +1100",
+        "id" : "61350a92900cabc627ed2a3551f8731ef5b0ac9b",
+        "msg" : "#1146238 fix call to user_load when resetting password, to be compatible with Drupal 5",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/login_reset.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc"
+        ],
+        "commitId" : "6fd3efa8918652ef661607da9124370949166609",
+        "timestamp" : 1321144004000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "fix the help information for most provision-commands by removing the site name argument and switch to @aliases instead. add examples for most commands too.\n",
+        "date" : "2011-11-12T19:26:44-0500 +1100",
+        "id" : "6fd3efa8918652ef661607da9124370949166609",
+        "msg" : "fix the help information for most provision-commands by removing the site name argument and switch to @aliases instead. add examples for most commands too.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

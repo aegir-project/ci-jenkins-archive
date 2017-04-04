@@ -1,0 +1,217 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 10,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+            "branch" : [
+              {
+                "SHA1" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+            "branch" : [
+              {
+                "SHA1" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+        "branch" : [
+          {
+            "SHA1" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#10",
+  "duration" : 28085,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #10",
+  "id" : "2012-02-14_07-30-58",
+  "keepLog" : false,
+  "number" : 10,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329222658000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/10/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.install"
+        ],
+        "commitId" : "2afa3d588b580342c6a8300d1d4b489b2b95c4c3",
+        "timestamp" : 1329203659000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix code style of hosting.install.\n",
+        "date" : "2012-02-14T02:14:19-0500 +0000",
+        "id" : "2afa3d588b580342c6a8300d1d4b489b2b95c4c3",
+        "msg" : "Fix code style of hosting.install.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.install"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/site/hosting_site.form.inc"
+        ],
+        "commitId" : "4f9900e62339174ac4e9be02b5abd5d835f23234",
+        "timestamp" : 1329203667000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix code style of hosting_site.form.inc.\n",
+        "date" : "2012-02-14T02:14:27-0500 +0000",
+        "id" : "4f9900e62339174ac4e9be02b5abd5d835f23234",
+        "msg" : "Fix code style of hosting_site.form.inc.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.form.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/migrate/hosting_migrate.batch.inc"
+        ],
+        "commitId" : "edcc578b5f55a12d924eb85045531ccd5959d76f",
+        "timestamp" : 1329203763000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix code style of hosting_migrate.batch.inc.\n\nConflicts:\n\n\tmodules/hosting/migrate/hosting_migrate.batch.inc\n",
+        "date" : "2012-02-14T02:16:03-0500 +0000",
+        "id" : "edcc578b5f55a12d924eb85045531ccd5959d76f",
+        "msg" : "Fix code style of hosting_migrate.batch.inc.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/migrate/hosting_migrate.batch.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/client/hosting_client.access.inc"
+        ],
+        "commitId" : "5b97387a61a8d121e410a5039a01c0ab598dc677",
+        "timestamp" : 1329203777000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix code style of hosting_client.access.inc.\n",
+        "date" : "2012-02-14T02:16:17-0500 +0000",
+        "id" : "5b97387a61a8d121e410a5039a01c0ab598dc677",
+        "msg" : "Fix code style of hosting_client.access.inc.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/client/hosting_client.access.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.queues.inc"
+        ],
+        "commitId" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+        "timestamp" : 1329204012000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix code style of hosting.queues.inc\n",
+        "date" : "2012-02-14T02:20:12-0500 +0000",
+        "id" : "10891f1fffd62c77e0452e22f275697cf5a2b049",
+        "msg" : "Fix code style of hosting.queues.inc",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.queues.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

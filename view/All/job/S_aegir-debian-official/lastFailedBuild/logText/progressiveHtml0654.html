@@ -1,0 +1,230 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/S_aegir-debian-official/workspace
+ &gt; git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; git config remote.origin.url <a href='https://github.com/aegir-project/aegir_jenkins_scripts.git'>https://github.com/aegir-project/aegir_jenkins_scripts.git</a> # timeout=10
+Fetching upstream changes from <a href='https://github.com/aegir-project/aegir_jenkins_scripts.git'>https://github.com/aegir-project/aegir_jenkins_scripts.git</a>
+ &gt; git --version # timeout=10
+ &gt; git -c core.askpass=true fetch --tags --progress <a href='https://github.com/aegir-project/aegir_jenkins_scripts.git'>https://github.com/aegir-project/aegir_jenkins_scripts.git</a> +refs/heads/*:refs/remotes/origin/*
+ &gt; git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 5ab15ac04f2e342026644b981dc82b34f1e40017 (origin/master)
+ &gt; git config core.sparsecheckout # timeout=10
+ &gt; git checkout -f 5ab15ac04f2e342026644b981dc82b34f1e40017 # timeout=10
+ &gt; git branch -a # timeout=10
+ &gt; git rev-parse 6.x-1.x^{commit} # timeout=10
+ &gt; git rev-parse 6.x-2.x^{commit} # timeout=10
+ &gt; git rev-parse master^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/master^{commit} # timeout=10
+ &gt; git branch -D 6.x-2.x # timeout=10
+ &gt; git checkout -b 6.x-2.x 5ab15ac04f2e342026644b981dc82b34f1e40017
+ &gt; git rev-list 5ab15ac04f2e342026644b981dc82b34f1e40017 # timeout=10
+ &gt; git tag -a -f -m Jenkins Build #104 jenkins-S_aegir-debian-official-104 # timeout=10
+ &gt; git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; git config remote.origin.url git://git.drupalcode.org/project/provision # timeout=10
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+ &gt; git --version # timeout=10
+ &gt; git -c core.askpass=true fetch --tags --progress git://git.drupalcode.org/project/provision +refs/heads/*:refs/remotes/origin/*
+ &gt; git rev-parse origin/6.x-2.x^{commit} # timeout=10
+Checking out Revision 3edda6c37b83e2c746f6a2f603e59cebf4e6f352 (origin/6.x-2.x)
+ &gt; git config core.sparsecheckout # timeout=10
+ &gt; git checkout -f 3edda6c37b83e2c746f6a2f603e59cebf4e6f352 # timeout=10
+ &gt; git branch -a # timeout=10
+ &gt; git rev-parse 6.x-1.x^{commit} # timeout=10
+ &gt; git rev-parse 6.x-2.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/2358795-provision-save-on-verify^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/6.x-1.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/6.x-2.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/6.x-2.x-1995506-profile-option^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/6.x-2.x-backports^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/7.x-2.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/7.x-3.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/7.x-3.x-1966886-context-to-entity^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/debian^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-1205458-move_sites_out_of_platforms^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-dns^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-dns_alias_records-1074966^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-drupal-8^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-envobject^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-koumbit^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-log_directory^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-migrate_aliases^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-multiserver-install^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-newhooks^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-nginx^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-nginx-6.x-1.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-nginx-6.x-2.x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-nginx-cleanup^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-noreg-mail-336068^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-platform_management^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-ports^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-purgebackup^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-restore^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-services^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-simplerinstaller^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-site_rename^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-ssl^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-ssl-chained-1062168^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-ssl-ip-allocation-refactor^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-subdir-multiserver^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-webpack^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-webpack1x^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev-wget-d7-cron-1090678^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev/1194676-jenkins-tests^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev/1318374-autoloader^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev/2048653^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev/site-packages^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev/subdirs^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev/subfolders^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev_716166_apache_conf^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev_dns^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/dev_server_verify^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/prod-koumbit^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/ssl^{commit} # timeout=10
+ &gt; git rev-parse remotes/origin/upstream^{commit} # timeout=10
+ &gt; git branch -D 6.x-2.x # timeout=10
+ &gt; git checkout -b 6.x-2.x 3edda6c37b83e2c746f6a2f603e59cebf4e6f352
+ &gt; git rev-list 92638a55dd2a984c2fa6e63687a61044b4b77abc # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson4612148487560300243.sh
++ cd provision
++ ../aegir_jenkins_scripts/jenkins-debian-build -k jenkins@ci.aegirproject.org -u -t 7.x-3.0-beta1
+HEAD is now at 2a6d5a6 change version information for release 3.0-beta1
+building aegir-7.x-3.0-beta1 with key jenkins@ci.aegirproject.org - build tag: jenkins-S_aegir-debian-official-104
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dh clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_testdir
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+gbp:error: You are not on branch '7.x-3.x' but on '6.x-2.x'
+gbp:error: Use --git-ignore-branch to ignore or --git-debian-branch to set the branch name.
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

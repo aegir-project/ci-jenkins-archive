@@ -1,0 +1,73 @@
+Started by timer
+Building in workspace /var/lib/jenkins/jobs/D_aegir3-debian-test-unstable-xenial/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/1.0.x^{commit} # timeout=10
+Checking out Revision c460c311fd05e5f658f78b1b77c0a6a45b4ff58e (origin/1.0.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c460c311fd05e5f658f78b1b77c0a6a45b4ff58e
+ > git rev-list c460c311fd05e5f658f78b1b77c0a6a45b4ff58e # timeout=10
+ > git tag -a -f -m Jenkins Build #327 jenkins-D_aegir3-debian-test-unstable-xenial-327 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson8675543246612243675.sh
++ ./tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/setup.sh
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+==> default: Running cleanup tasks for 'shell' provisioner...
+[workspace] $ /bin/sh -xe /tmp/hudson4121555467588274051.sh
++ ./tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/xenial64'...
+Progress: 90%==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/xenial64' is up to date...
+==> default: A newer version of the box 'ubuntu/xenial64' is available! You currently
+==> default: have version '20170215.1.0'. The latest is version '20170316.3.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Setting the name of the VM: workspace_default_1489755140557_57013
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: ubuntu
+    default: SSH auth method: password
+    default: Warning: Connection timeout. Retrying...
+    default: Warning: Connection timeout. Retrying...
+==> default: Inserting Vagrant public key within guest...
+==> default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 5.0.32
+    default: VirtualBox Version: 4.3
+==> default: Setting hostname...
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+service hostname start
+
+Stdout from the command:
+
+
+
+Stderr from the command:
+
+sudo: unable to resolve host ubuntu-xenial
+mesg: ttyname failed: Inappropriate ioctl for device
+Failed to start hostname.service: Unit hostname.service is masked.
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

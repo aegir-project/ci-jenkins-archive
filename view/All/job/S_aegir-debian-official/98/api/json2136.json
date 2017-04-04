@@ -1,0 +1,128 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "6.x-1.7"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 98,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+            "branch" : [
+              {
+                "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+            "branch" : [
+              {
+                "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+        "branch" : [
+          {
+            "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/sandbox/darthsteven/1286014.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir-cluster-slave_1.9_all.deb",
+      "fileName" : "aegir-cluster-slave_1.9_all.deb",
+      "relativePath" : "provision/build-area/aegir-cluster-slave_1.9_all.deb"
+    },
+    {
+      "displayPath" : "aegir-hostmaster_1.9_all.deb",
+      "fileName" : "aegir-hostmaster_1.9_all.deb",
+      "relativePath" : "provision/build-area/aegir-hostmaster_1.9_all.deb"
+    },
+    {
+      "displayPath" : "aegir-provision_1.9_all.deb",
+      "fileName" : "aegir-provision_1.9_all.deb",
+      "relativePath" : "provision/build-area/aegir-provision_1.9_all.deb"
+    },
+    {
+      "displayPath" : "aegir_1.9_all.deb",
+      "fileName" : "aegir_1.9_all.deb",
+      "relativePath" : "provision/build-area/aegir_1.9_all.deb"
+    }
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#98",
+  "duration" : 2613,
+  "estimatedDuration" : 13891,
+  "executor" : null,
+  "fullDisplayName" : "S_aegir-debian-official #98",
+  "id" : "2013-07-17_21-08-25",
+  "keepLog" : false,
+  "number" : 98,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1374109705000,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official/98/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : null
+  },
+  "culprits" : [
+    
+  ]
+}

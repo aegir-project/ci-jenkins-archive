@@ -1,0 +1,48 @@
+{
+  "_class" : "hudson.model.ComputerSet",
+  "busyExecutors" : 0,
+  "computer" : [
+    {
+      "_class" : "hudson.model.Hudson$MasterComputer",
+      "actions" : [
+        {
+          
+        }
+      ],
+      "displayName" : "master",
+      "executors" : [
+        {
+          
+        },
+        {
+          
+        },
+        {
+          
+        }
+      ],
+      "icon" : "computer.png",
+      "iconClassName" : "icon-computer",
+      "idle" : True,
+      "jnlpAgent" : False,
+      "launchSupported" : True,
+      "loadStatistics" : {
+        "_class" : "hudson.model.Label$1"
+      },
+      "manualLaunchAllowed" : True,
+      "monitorData" : {
+        
+      },
+      "numExecutors" : 3,
+      "offline" : False,
+      "offlineCause" : None,
+      "offlineCauseReason" : "",
+      "oneOffExecutors" : [
+        
+      ],
+      "temporarilyOffline" : False
+    }
+  ],
+  "displayName" : "Nodes",
+  "totalExecutors" : 3
+}

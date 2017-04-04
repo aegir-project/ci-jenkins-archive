@@ -1,0 +1,141 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 9,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "f07056ced8b2165b234489a747812a72b7e516f5",
+            "branch" : [
+              {
+                "SHA1" : "f07056ced8b2165b234489a747812a72b7e516f5",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f07056ced8b2165b234489a747812a72b7e516f5",
+            "branch" : [
+              {
+                "SHA1" : "f07056ced8b2165b234489a747812a72b7e516f5",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f07056ced8b2165b234489a747812a72b7e516f5",
+        "branch" : [
+          {
+            "SHA1" : "f07056ced8b2165b234489a747812a72b7e516f5",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#9",
+  "duration" : 187244,
+  "estimatedDuration" : 5666,
+  "executor" : null,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #9",
+  "id" : "2013-10-15_16-30-59",
+  "keepLog" : false,
+  "number" : 9,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1381869059000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/9/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/nodes.pp"
+        ],
+        "commitId" : "81c9c8f80794dba84fae4facf14d4d24685bc096",
+        "timestamp" : 1381868220000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "typo fix\n",
+        "date" : "2013-10-15T16:17:00-0400 +0200",
+        "id" : "81c9c8f80794dba84fae4facf14d4d24685bc096",
+        "msg" : "typo fix",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/nodes.pp"
+        ],
+        "commitId" : "f07056ced8b2165b234489a747812a72b7e516f5",
+        "timestamp" : 1381868720000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "typo fix\n",
+        "date" : "2013-10-15T16:25:20-0400 +0200",
+        "id" : "f07056ced8b2165b234489a747812a72b7e516f5",
+        "msg" : "typo fix",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/nodes.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

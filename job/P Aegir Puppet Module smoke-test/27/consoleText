@@ -1,0 +1,250 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace - hudson.remoting.LocalChannel@7e087bf5
+Using strategy: Default
+Last Built Revision: Revision 1f709b0fa5be8bafbd6c40c13e7e51386c8bd216 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 6d34ab77a845b1d3f3e0ee262f308a3b789990f1 (origin/new)
+Checking out Revision 6d34ab77a845b1d3f3e0ee262f308a3b789990f1 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson8188556435933149496.sh
++ ./tests/.ci/setup.sh
+[workspace] $ /bin/sh -xe /tmp/hudson9173943212559364234.sh
++ vagrant up
+[default] Importing base box 'Debian 6.0.7 x64'...
+[default] [0K[default] Progress: 10%[default] [0K[default] Progress: 20%[default] [0K[default] Progress: 30%[default] [0K[default] Progress: 40%[default] [0K[default] Progress: 50%[default] [0K[default] Progress: 60%[default] [0K[default] Progress: 70%[default] [0K[default] Progress: 80%[default] [0K[default] Progress: 90%[default] [0K[default] No guest additions were detected on the base box for this VM! Guest
+additions are required for forwarded ports, shared folders, host only
+networking, and more. If SSH fails on this machine, please install
+the guest additions and repackage the box to continue.
+
+This is not an error message; everything may continue to work properly,
+in which case you may ignore this message.
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] Running provisioner: Vagrant::Provisioners::Shell...
+stdin: is not a tty
+Creating test environment...
+Installing git...
+Get:1 http://http.us.debian.org squeeze Release.gpg [1,672 B]
+Ign http://http.us.debian.org/debian/ squeeze/main Translation-en
+Ign http://http.us.debian.org/debian/ squeeze/main Translation-en_US
+Get:2 http://http.us.debian.org squeeze-updates Release.gpg [836 B]
+Ign http://http.us.debian.org/debian/ squeeze-updates/main Translation-en
+Ign http://http.us.debian.org/debian/ squeeze-updates/main Translation-en_US
+Get:3 http://http.us.debian.org squeeze Release [99.8 kB]
+Get:4 http://http.us.debian.org squeeze-updates Release [113 kB]
+Get:5 http://http.us.debian.org squeeze/main Sources [4,541 kB]
+Get:6 http://http.us.debian.org squeeze/main amd64 Packages [6,538 kB]
+Get:7 http://security.debian.org squeeze/updates Release.gpg [836 B]
+Ign http://security.debian.org/ squeeze/updates/main Translation-en
+Ign http://security.debian.org/ squeeze/updates/main Translation-en_US
+Get:8 http://security.debian.org squeeze/updates Release [86.9 kB]
+Get:9 http://security.debian.org squeeze/updates/main Sources [131 kB]
+Get:10 http://http.us.debian.org squeeze-updates/main Sources/DiffIndex [3,403 B]
+Get:11 http://http.us.debian.org squeeze-updates/main amd64 Packages/DiffIndex [3,403 B]
+Get:12 http://http.us.debian.org squeeze-updates/main 2013-04-28-2014.49.pdiff [387 B]
+Get:13 http://http.us.debian.org squeeze-updates/main amd64 Packages [5,118 B]
+Get:14 http://http.us.debian.org squeeze-updates/main 2013-04-28-2014.49.pdiff [387 B]
+Get:15 http://http.us.debian.org squeeze-updates/main 2013-04-28-2014.49.pdiff [387 B]
+Get:16 http://http.us.debian.org squeeze-updates/main 2013-11-02-1435.11.pdiff [595 B]
+Get:17 http://http.us.debian.org squeeze-updates/main 2013-11-02-1435.11.pdiff [595 B]
+Get:18 http://http.us.debian.org squeeze-updates/main 2013-11-02-1435.11.pdiff [595 B]
+Get:19 http://security.debian.org squeeze/updates/main amd64 Packages [347 kB]
+Fetched 11.9 MB in 11s (999 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Reading task descriptions...
+The following NEW packages will be installed:
+  git libcurl3-gnutls{a} liberror-perl{a} rsync{a} 
+0 packages upgraded, 4 newly installed, 0 to remove and 39 not upgraded.
+Need to get 5,924 kB of archives. After unpacking 12.2 MB will be used.
+Writing extended state information...
+Get:1 http://http.us.debian.org/debian/ squeeze/main liberror-perl all 0.17-1 [23.6 kB]
+Get:2 http://security.debian.org/ squeeze/updates/main libcurl3-gnutls amd64 7.21.0-2.1+squeeze6 [266 kB]
+Get:3 http://http.us.debian.org/debian/ squeeze/main git amd64 1:1.7.2.5-3 [5,274 kB]
+Get:4 http://http.us.debian.org/debian/ squeeze/main rsync amd64 3.0.7-2 [359 kB]
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 5,924 kB in 5s (1,040 kB/s)
+Selecting previously deselected package libcurl3-gnutls.
+(Reading database ... 
+41189 files and directories currently installed.)
+Unpacking libcurl3-gnutls (from .../libcurl3-gnutls_7.21.0-2.1+squeeze6_amd64.deb) ...
+Selecting previously deselected package liberror-perl.
+Unpacking liberror-perl (from .../liberror-perl_0.17-1_all.deb) ...
+Selecting previously deselected package git.
+Unpacking git (from .../git_1%3a1.7.2.5-3_amd64.deb) ...
+Selecting previously deselected package rsync.
+Unpacking rsync (from .../rsync_3.0.7-2_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up libcurl3-gnutls (7.21.0-2.1+squeeze6) ...
+Setting up liberror-perl (0.17-1) ...
+Setting up git (1:1.7.2.5-3) ...
+Setting up rsync (3.0.7-2) ...
+update-rc.d: using dependency based boot sequencing
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+Reading task descriptions...
+Cloning dependencies (puppet-drush)...
+Setting up terminal colors...
+Scanning for tests in 'aegir' module...
+Running tests...
+Running 'build.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'build.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:49 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:49 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:49 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:49 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'platform.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'platform.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:50 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:50 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:50 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:50 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'apt.pp' test...
+[32m
+'apt.pp' test passed.
+[0m
+Running 'init.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'init.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:52 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:52 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:52 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:52 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'remote_import.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'remote_import.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:53 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:53 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:53 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:53 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'queue_runner.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'queue_runner.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:54 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:54 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:54 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:54 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'queued.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'queued.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:55 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:55 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:55 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:55 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'defaults.pp' test...
+[32m
+'defaults.pp' test passed.
+[0m
+Running 'login_link.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'login_link.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:44:57 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:44:57 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:44:57 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:44:57 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'dev.pp' test...
+[32m
+'dev.pp' test passed.
+[0m
+Running 'extras.pp' test...
+[31m
+///////////////////////////////////////////////////////
+
+    ERROR in 'extras.pp' test.
+    Output from failed test:
+
+[1;31mWarning: Could not retrieve fact fqdn[0m [1;31mWarning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults[0m WARN: Thu Dec 19 14:45:00 +0000 2013: Not using Hiera::Puppet_logger. It does not report itself to be suitable. DEBUG: Thu Dec 19 14:45:00 +0000 2013: Hiera YAML backend starting DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::db_host in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::makefile in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::db_server in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::api in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::frontend_url in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::web_server in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::admin_email in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::db_user in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::db_password in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::ensure in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::secure_mysql in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up aegir::dist in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up drush::ensure in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up drush::dist in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up drush::apt::backports in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking up drush::apt::dist in YAML backend DEBUG: Thu Dec 19 14:45:00 +0000 2013: Looking for data source common DEBUG: Thu Dec 19 14:45:00 +0000 2013: Cannot find datafile /var/lib/hiera/common.yaml, skipping [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m [1;31mError: Puppet::Parser::AST::Resource failed with error ArgumentError: Could not find declared class aegirvps::mysql at /tmp/aegir/manifests/init.pp:76 on node debian-607-x64-vbox4210[0m
+
+///////////////////////////////////////////////////////
+[0m
+Running 'backend.pp' test...
+[32m
+'backend.pp' test passed.
+[0m
+Total tests run: 12
+[32m
+Tests passed: 4
+[31m
+Tests failed: 8
+[0m
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+chmod +x /tmp/vagrant-shell && /tmp/vagrant-shell
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+IRC notifier plugin: There was an error sending notification to: #aegir
+java.lang.RuntimeException: Waiting for mode response interrupted
+	at org.pircbotx.Channel.getMode(Channel.java:133)
+	at hudson.plugins.ircbot.v2.IRCConnection.send(IRCConnection.java:270)
+	at hudson.plugins.ircbot.v2.IRCConnection.send(IRCConnection.java:262)
+	at hudson.plugins.im.IMPublisher.sendNotification(IMPublisher.java:379)
+	at hudson.plugins.im.IMPublisher.notifyChatsOnBuildEnd(IMPublisher.java:585)
+	at hudson.plugins.im.IMPublisher.notifyOnBuildEnd(IMPublisher.java:304)
+	at hudson.plugins.im.IMPublisher.perform(IMPublisher.java:291)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:781)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:753)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:706)
+	at hudson.model.Run.execute(Run.java:1690)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:246)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:979)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:207)
+	at org.pircbotx.Channel.getMode(Channel.java:127)
+	... 15 more
+
+Finished: FAILURE

@@ -1,0 +1,229 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "refs/remotes/origin/dev/jessie" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 436,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+            "branch" : [
+              {
+                "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+            "branch" : [
+              {
+                "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          }
+        },
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 677,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "branch" : [
+              {
+                "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "branch" : [
+              {
+                "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+        "branch" : [
+          {
+            "SHA1" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#677",
+  "duration" : 288726,
+  "estimatedDuration" : 188500,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #677",
+  "id" : "677",
+  "keepLog" : false,
+  "number" : 677,
+  "queueId" : 3262,
+  "result" : "FAILURE",
+  "timestamp" : 1474787940783,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/677/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+        "timestamp" : 1474745460000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fix puppet failure\n\nSolution from http://stackoverflow.com/questions/39564108/vagrant-box-ssl-error-suddenly-windows-10-7\n",
+        "date" : "2016-09-24T15:31:00-0400 +0200",
+        "id" : "28dfd39c745733cc427ca3bfa55fa2a01de39198",
+        "msg" : "Fix puppet failure",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "00a010cfb4d4871d29c163724858e8c8e26bfd4a",
+        "timestamp" : 1474745773000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "just upgrade\n",
+        "date" : "2016-09-24T15:36:13-0400 +0200",
+        "id" : "00a010cfb4d4871d29c163724858e8c8e26bfd4a",
+        "msg" : "just upgrade",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "29856d55c875e3308657df64b68d061f9f7051ba",
+        "timestamp" : 1474747195000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Run debian upgrade Noninteractive\n",
+        "date" : "2016-09-24T15:59:55-0400 +0200",
+        "id" : "29856d55c875e3308657df64b68d061f9f7051ba",
+        "msg" : "Run debian upgrade Noninteractive",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+        "timestamp" : 1474747446000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add sudo\n",
+        "date" : "2016-09-24T16:04:06-0400 +0200",
+        "id" : "c460c311fd05e5f658f78b1b77c0a6a45b4ff58e",
+        "msg" : "Add sudo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

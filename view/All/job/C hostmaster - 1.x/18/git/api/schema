@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="buildData" type="hudson.plugins.git.util.BuildData"/>
+  <xsd:complexType name="hudson.plugins.git.util.BuildData">
+    <xsd:sequence>
+      <xsd:element name="buildsByBranchName" type="xsd:anyType" minOccurs="0"/>
+      <xsd:element name="lastBuiltRevision" type="hudson.plugins.git.Revision" minOccurs="0"/>
+      <xsd:element name="remoteUrl" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="scmName" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="_class" type="xsd:string" use="optional"/>
+  </xsd:complexType>
+  <xsd:complexType name="hudson.plugins.git.Revision">
+    <xsd:sequence>
+      <xsd:element name="SHA1" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="branch" type="hudson.plugins.git.Branch" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="_class" type="xsd:string" use="optional"/>
+  </xsd:complexType>
+  <xsd:complexType name="hudson.plugins.git.Branch">
+    <xsd:complexContent>
+      <xsd:extension base="hudson.plugins.git.GitObject">
+        <xsd:sequence/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="hudson.plugins.git.GitObject">
+    <xsd:sequence>
+      <xsd:element name="SHA1" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="name" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="_class" type="xsd:string" use="optional"/>
+  </xsd:complexType>
+</xsd:schema>
+

@@ -1,0 +1,119 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 17,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+            "branch" : [
+              {
+                "SHA1" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+            "branch" : [
+              {
+                "SHA1" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+        "branch" : [
+          {
+            "SHA1" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#17",
+  "duration" : 93361,
+  "estimatedDuration" : 5666,
+  "executor" : None,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #17",
+  "id" : "2013-10-17_07-45-59",
+  "keepLog" : False,
+  "number" : 17,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1382010359000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/17/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/run-tests.sh"
+        ],
+        "commitId" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+        "timestamp" : 1382009597000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Explicitly run provisioning(puppet) after the machine is booted.\n\nThis should be done by default... but was not done for me. Should not harm anyway.\n",
+        "date" : "2013-10-17T07:33:17-0400 +0200",
+        "id" : "8ffe33b07a8e0d3c81ecf173f3d577ea1c8e1cd6",
+        "msg" : "Explicitly run provisioning(puppet) after the machine is booted.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

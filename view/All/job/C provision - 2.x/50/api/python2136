@@ -1,0 +1,169 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 50,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+            "branch" : [
+              {
+                "SHA1" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+            "branch" : [
+              {
+                "SHA1" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+        "branch" : [
+          {
+            "SHA1" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#50",
+  "duration" : 8638,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #50",
+  "id" : "2012-04-27_14-30-28",
+  "keepLog" : False,
+  "number" : 50,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335551428000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/50/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/provision_tests.drush.inc",
+          "migrate.hostmaster.inc",
+          "platform/verify.provision.inc",
+          "platform/drupal/install_7.inc",
+          "platform/deploy.provision.inc",
+          "provision.inc",
+          "platform/migrate.provision.inc",
+          "install.hostmaster.inc",
+          "platform/clone.provision.inc"
+        ],
+        "commitId" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+        "timestamp" : 1335536220000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Start making us Drush 5 compatible.\n",
+        "date" : "2012-04-27T10:17:00-0400 +0100",
+        "id" : "fe144b28a1e856e92da71a53fc9df8a9696b31b3",
+        "msg" : "Start making us Drush 5 compatible.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/clone.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/drupal/install_7.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/provision_tests.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "install.hostmaster.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/verify.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "migrate.hostmaster.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/migrate.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

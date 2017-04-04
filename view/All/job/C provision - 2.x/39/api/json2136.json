@@ -1,0 +1,233 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 39,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+            "branch" : [
+              {
+                "SHA1" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+            "branch" : [
+              {
+                "SHA1" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+        "branch" : [
+          {
+            "SHA1" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#39",
+  "duration" : 5621,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #39",
+  "id" : "2012-04-09_22-31-21",
+  "keepLog" : false,
+  "number" : 39,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334025081000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/39/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Config/Nginx/server.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Nginx/vhost_disabled.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php",
+          "http/Provision/Service/http/nginx_advanced_include.conf",
+          "http/Provision/Config/Nginx/Ssl/server_ssl.tpl.php",
+          "http/Provision/Config/Nginx/vhost.tpl.php"
+        ],
+        "commitId" : "507dce0ffb139b41d2988b7fc9a7dd7c144c9e90",
+        "timestamp" : 1333924503000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use higher values for limit_conn in Nginx to avoid issues when there are many files included in the page and to better support advagg module.\n",
+        "date" : "2012-04-08T18:35:03-0400 +0200",
+        "id" : "507dce0ffb139b41d2988b7fc9a7dd7c144c9e90",
+        "msg" : "Use higher values for limit_conn in Nginx to avoid issues when there are many files included in the page and to better support advagg module.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/server_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Ssl/server_ssl.tpl.php",
+          "http/Provision/Config/Nginx/server.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Nginx/vhost.tpl.php"
+        ],
+        "commitId" : "b3fb069c13acb853d5e986ad9f4a09912946decc",
+        "timestamp" : 1333924964000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Update description for limit_conn in Nginx.\n",
+        "date" : "2012-04-08T18:42:44-0400 +0200",
+        "id" : "b3fb069c13acb853d5e986ad9f4a09912946decc",
+        "msg" : "Update description for limit_conn in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/server_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Config/Nginx/server.tpl.php",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+        "timestamp" : 1334009814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1524860 by omega8cc - Empty response 444 in Nginx confuses search bots.\n",
+        "date" : "2012-04-09T18:16:54-0400 +0200",
+        "id" : "036affbae2ac1bf0ec05201378c53d0aec55a559",
+        "msg" : "Issue #1524860 by omega8cc - Empty response 444 in Nginx confuses search bots.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    
+  ],
+  "description" : "Test a provision of a VPS and then install Aegir 6.x-1.x branch on it using the debian packages.",
+  "displayName" : "U aegir 6.x-1.x deb upgrade",
+  "displayNameOrNull" : None,
+  "name" : "U aegir 6.x-1.x deb upgrade",
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/",
+  "buildable" : False,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 18,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/18/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 17,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/17/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 16,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/16/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 15,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/15/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 14,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/14/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 13,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/13/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 12,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/12/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 11,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/11/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 10,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/10/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 9,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/9/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 7,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/7/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 7,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/7/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: All recent builds failed.",
+      "iconClassName" : "icon-health-00to19",
+      "iconUrl" : "health-00to19.png",
+      "score" : 0
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 18,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/18/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 18,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/18/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 18,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/18/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 7,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/7/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 7,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/7/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 18,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/18/"
+  },
+  "nextBuildNumber" : 19,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    }
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.scm.NullSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

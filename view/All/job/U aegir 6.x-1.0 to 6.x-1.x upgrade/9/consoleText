@@ -1,0 +1,65 @@
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace - hudson.remoting.LocalChannel@1680748d
+Using strategy: Default
+Last Built Revision: Revision a8ef0d430b195c0a1bc7a238127ce1694560c815 (origin/master)
+Checkout:build_scripts / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace/build_scripts - hudson.remoting.LocalChannel@1680748d
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from http://git.drupal.org/sandbox/darthsteven/1286014.git
+Commencing build of Revision b1105388dcac54728270ae19b716f4b687e2cad7 (origin/master)
+Checking out Revision b1105388dcac54728270ae19b716f4b687e2cad7 (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson3114448377930475691.sh
++ python build_scripts/jenkins_aegir_upgrade.py
+/usr/lib/python2.6/dist-packages/Crypto/Util/randpool.py:40: RandomPool_DeprecationWarning: This application uses RandomPool, which is BROKEN in older releases.  See http://www.pycrypto.org/randpool-broken
+  RandomPool_DeprecationWarning)
+Provisioning server and running deployment processes
+Provisioning complete, you can ssh as root to 108.166.98.105
+The root user's password is aegir2012-03-0822-09-16vcjJP227K
+===> Setting a little firewall
+[108-166-98-105.static.cloud-ips.com] run: for source in 95.142.164.178 59.167.182.161 174.136.104.138 217.155.126.38; do iptables -I INPUT -s $source -p tcp --dport 22 -j ACCEPT; iptables -I INPUT -s $source -p tcp --dport 80 -j ACCEPT; done; iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT; iptables --policy INPUT DROP
+===> Preparing Apache
+[108-166-98-105.static.cloud-ips.com] run: a2enmod rewrite
+[108-166-98-105.static.cloud-ips.com] out: Enabling module rewrite.
+[108-166-98-105.static.cloud-ips.com] out: Run '/etc/init.d/apache2 restart' to activate new configuration!
+[108-166-98-105.static.cloud-ips.com] run: ln -s /var/aegir/config/apache.conf /etc/apache2/conf.d/aegir.conf
+===> Preparing the Aegir user
+[108-166-98-105.static.cloud-ips.com] run: useradd -r -U -d /var/aegir -m -G www-data aegir
+[108-166-98-105.static.cloud-ips.com] run: echo 'aegir ALL=NOPASSWD: /usr/sbin/apache2ctl' >> /etc/sudoers
+===> Fetching Drush 7.x-4.4
+[108-166-98-105.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'wget http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz'
+[108-166-98-105.static.cloud-ips.com] out: --2012-03-08 16:13:36--  http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz
+[108-166-98-105.static.cloud-ips.com] out: Resolving ftp.drupal.org... 140.211.166.134
+[108-166-98-105.static.cloud-ips.com] out: Connecting to ftp.drupal.org|140.211.166.134|:80... connected.
+[108-166-98-105.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[108-166-98-105.static.cloud-ips.com] out: Length: 253012 (247K) [application/x-gzip]
+[108-166-98-105.static.cloud-ips.com] out: Saving to: “drush-7.x-4.4.tar.gz”
+[108-166-98-105.static.cloud-ips.com] out: 
+[108-166-98-105.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[108-166-98-105.static.cloud-ips.com] out: 27% [=========>                             ] 69,216       254K/s              
+[108-166-98-105.static.cloud-ips.com] out: 54% [====================>                  ] 138,720      286K/s              
+[108-166-98-105.static.cloud-ips.com] out: 90% [==================================>    ] 228,496      302K/s              
+[108-166-98-105.static.cloud-ips.com] out: 100%[======================================>] 253,012      334K/s   in 0.7s    
+[108-166-98-105.static.cloud-ips.com] out: 
+[108-166-98-105.static.cloud-ips.com] out: 2012-03-08 16:13:37 (334 KB/s) - “drush-7.x-4.4.tar.gz” saved [253012/253012]
+[108-166-98-105.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'gunzip -c drush-7.x-4.4.tar.gz | tar -xf - '
+[108-166-98-105.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'rm /var/aegir/drush-7.x-4.4.tar.gz'
+===> Fetching Provision - via package
+[108-166-98-105.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php dl -y --destination=/var/aegir/.drush provision-6.x-1.7'
+[108-166-98-105.static.cloud-ips.com] out: The directory /var/aegir/.drush does not exist.
+[108-166-98-105.static.cloud-ips.com] out: Would you like to create it? (y/n): y
+[108-166-98-105.static.cloud-ips.com] out: File provision-6.x-1.7.tar.gz is corrupt (wrong md5 checksum).           [error]
+
+Fatal error: run() encountered an error (return code 1) while executing 'su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php dl -y --destination=/var/aegir/.drush provision-6.x-1.7''
+
+Aborting.
+===> Test failure
+===> Destroying this node
+Exception in thread Thread-2 (most likely raised during interpreter shutdown):
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/threading.py", line 532, in __bootstrap_inner
+  File "/usr/lib/pymodules/python2.6/paramiko/transport.py", line 1574, in run
+<type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'error'
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: miguel.jacq@gmail.com steven.jones@computerminds.co.uk
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

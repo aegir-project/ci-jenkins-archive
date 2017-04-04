@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+            "branch" : [
+              {
+                "SHA1" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+            "branch" : [
+              {
+                "SHA1" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+        "branch" : [
+          {
+            "SHA1" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#20",
+  "duration" : 15563,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #20",
+  "id" : "2012-03-05_13-01-25",
+  "keepLog" : False,
+  "number" : 20,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1330970485000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/20/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "db/Provision/Service/db/mysql.php"
+        ],
+        "commitId" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+        "timestamp" : 1330952049000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1439196 by Steven Jones: Fixed Don't lock the DB during backups.\n",
+        "date" : "2012-03-05T07:54:09-0500 +0000",
+        "id" : "929b75c3f46e42b7f40aba2505df9b853c7fa9f7",
+        "msg" : "Issue #1439196 by Steven Jones: Fixed Don't lock the DB during backups.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "db/Provision/Service/db/mysql.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

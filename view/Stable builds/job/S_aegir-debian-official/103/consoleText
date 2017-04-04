@@ -1,0 +1,1816 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/S_aegir-debian-official/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/aegir-project/aegir_jenkins_scripts.git # timeout=10
+Fetching upstream changes from https://github.com/aegir-project/aegir_jenkins_scripts.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/aegir-project/aegir_jenkins_scripts.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 5ab15ac04f2e342026644b981dc82b34f1e40017 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5ab15ac04f2e342026644b981dc82b34f1e40017 # timeout=10
+ > git branch -a # timeout=10
+ > git rev-parse 6.x-1.x^{commit} # timeout=10
+ > git rev-parse master^{commit} # timeout=10
+ > git rev-parse remotes/origin/master^{commit} # timeout=10
+ > git checkout -b 6.x-2.x 5ab15ac04f2e342026644b981dc82b34f1e40017
+First time build. Skipping changelog.
+ > git tag -a -f -m Jenkins Build #103 jenkins-S_aegir-debian-official-103 # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git://git.drupalcode.org/project/provision # timeout=10
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git://git.drupalcode.org/project/provision +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/6.x-2.x^{commit} # timeout=10
+Checking out Revision 92638a55dd2a984c2fa6e63687a61044b4b77abc (origin/6.x-2.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 92638a55dd2a984c2fa6e63687a61044b4b77abc # timeout=10
+ > git branch -a # timeout=10
+ > git rev-parse 6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/2358795-provision-save-on-verify^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x-1995506-profile-option^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x-backports^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x-1966886-context-to-entity^{commit} # timeout=10
+ > git rev-parse remotes/origin/debian^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-1205458-move_sites_out_of_platforms^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-dns^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-dns_alias_records-1074966^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-drupal-8^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-envobject^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-koumbit^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-log_directory^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-migrate_aliases^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-multiserver-install^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-newhooks^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-cleanup^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-noreg-mail-336068^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-platform_management^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ports^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-purgebackup^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-restore^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-services^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-simplerinstaller^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-site_rename^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl-chained-1062168^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl-ip-allocation-refactor^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-subdir-multiserver^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-webpack^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-webpack1x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-wget-d7-cron-1090678^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/1194676-jenkins-tests^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/1318374-autoloader^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/2048653^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/site-packages^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/subdirs^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/subfolders^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_716166_apache_conf^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_dns^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_server_verify^{commit} # timeout=10
+ > git rev-parse remotes/origin/prod-koumbit^{commit} # timeout=10
+ > git rev-parse remotes/origin/ssl^{commit} # timeout=10
+ > git rev-parse remotes/origin/upstream^{commit} # timeout=10
+ > git checkout -b 6.x-2.x 92638a55dd2a984c2fa6e63687a61044b4b77abc
+First time build. Skipping changelog.
+[workspace] $ /bin/sh -xe /tmp/hudson3783241519638773002.sh
++ cd provision
++ ../aegir_jenkins_scripts/jenkins-debian-build -k jenkins@ci.aegirproject.org -u -t 6.x-2.2
+HEAD is now at 9b68b04 change version information for release 2.2
+building aegir-6.x-2.2 with key jenkins@ci.aegirproject.org - build tag: jenkins-S_aegir-debian-official-103
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dh clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_testdir
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+gbp:info: Exporting 'HEAD' to '/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-tmp'
+gbp:info: Moving '/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-tmp' to '/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ dpkg-buildpackage -rfakeroot -D -us -uc -i -I
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dpkg-buildpackage: source package aegir2-provision
+dpkg-buildpackage: source version 2.2
+dpkg-buildpackage: source changed by Christopher Gervais <chris@ergonlogic.com>
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ dpkg-source -i -I --before-build aegir2-provision-2.2
+dpkg-buildpackage: host architecture amd64
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ fakeroot debian/rules clean
+dh clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_testdir
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_clean
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ dpkg-source -i -I -b aegir2-provision-2.2
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building aegir2-provision in aegir2-provision_2.2.tar.gz
+dpkg-source: info: building aegir2-provision in aegir2-provision_2.2.dsc
+ debian/rules build
+dh build
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_testdir
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_configure
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_build
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_test
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ fakeroot debian/rules binary
+dh binary
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_testroot
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_prep
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installdirs
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_auto_install
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   debian/rules override_dh_install
+make[1]: Entering directory `/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2'
+cp -r "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/db/"  "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/dns/"  "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/http/" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/"*.make "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/platform/" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/Provision/" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/Symfony/" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2"/*.inc "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2"/*.php "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2"/*.info "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/debian/aegir2-provision/usr/share/drush/commands/provision/"
+# We need this nasty hack, because we added directories.
+# TODO: this is really lame, there must be a better way to do this?
+if [ -d "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/provision-tests" ]; then cp -r "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/provision-tests/" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/debian/aegir2-provision/usr/share/drush/commands/provision/"; fi
+if [ -d "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/subdirs" ]; then cp -r "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/subdirs/" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/debian/aegir2-provision/usr/share/drush/commands/provision/"; fi
+cp "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/debian/aegir2-provision.lintian" "/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2/debian/aegir2-provision/usr/share/lintian/overrides/aegir-provision"
+make[1]: Leaving directory `/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2'
+   dh_installdocs
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installchangelogs
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installexamples
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installman
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+man: can't set the locale; make sure $LC_* and $LANG are correct
+man: can't set the locale; make sure $LC_* and $LANG are correct
+man: can't set the locale; make sure $LC_* and $LANG are correct
+man: can't set the locale; make sure $LC_* and $LANG are correct
+   dh_installcatalogs
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installcron
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installdebconf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installemacsen
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installifupdown
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installinfo
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_pysupport
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dh_pysupport: This program is deprecated, you should use dh_python2 instead. Migration guide: http://deb.li/dhs2p
+   debian/rules override_dh_installinit
+make[1]: Entering directory `/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2'
+dh_installinit --name=hosting-queued
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+make[1]: Leaving directory `/var/lib/jenkins/jobs/S_aegir-debian-official/workspace/provision/build-area/aegir2-provision-2.2'
+   dh_installmenu
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installmime
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installmodules
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installlogcheck
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installlogrotate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installpam
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installppp
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installudev
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installwm
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installxfonts
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installgsettings
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_bugfiles
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_ucf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_lintian
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_gconf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_icons
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_perl
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_usrlocal
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_link
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_compress
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_fixperms
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_installdeb
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_gencontrol
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_md5sums
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+   dh_builddeb
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_NAME = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dpkg-deb: building package `aegir2-provision' in `../aegir2-provision_2.2_all.deb'.
+dpkg-deb: building package `aegir2-hostmaster' in `../aegir2-hostmaster_2.2_all.deb'.
+dpkg-deb: building package `aegir2' in `../aegir2_2.2_all.deb'.
+dpkg-deb: building package `aegir2-cluster-slave' in `../aegir2-cluster-slave_2.2_all.deb'.
+ dpkg-genchanges  >../aegir2-provision_2.2_amd64.changes
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dpkg-genchanges: including full source code in upload
+ dpkg-source -i -I --after-build aegir2-provision-2.2
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+W: aegir2-provision source: changelog-should-mention-nmu
+W: aegir2-provision source: source-nmu-has-incorrect-version-number 2.2
+W: aegir2-provision source: out-of-date-standards-version 3.9.2 (current is 3.9.4)
+W: aegir2-cluster-slave: malformed-prompt-in-templates aegir/master_ssh_key
+W: aegir2-cluster-slave: malformed-prompt-in-templates aegir/master_mountpoint
+E: aegir2-cluster-slave: non-standard-dir-in-var var/aegir/
+W: aegir2-provision: extra-license-file usr/share/drush/commands/provision/Symfony/Component/ClassLoader/LICENSE
+E: aegir2-provision: non-standard-dir-in-var var/aegir/
+Finished running lintian.
+Now signing changes and any dsc files...
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ signfile aegir2-provision_2.2.dsc jenkins@ci.aegirproject.org
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "nl_NL.UTF-8",
+	LC_MONETARY = "nl_NL.UTF-8",
+	LC_ADDRESS = "nl_NL.UTF-8",
+	LC_TELEPHONE = "nl_NL.UTF-8",
+	LC_NAME = "nl_NL.UTF-8",
+	LC_MEASUREMENT = "nl_NL.UTF-8",
+	LC_IDENTIFICATION = "nl_NL.UTF-8",
+	LC_NUMERIC = "nl_NL.UTF-8",
+	LC_PAPER = "nl_NL.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+ signfile aegir2-provision_2.2_amd64.changes jenkins@ci.aegirproject.org
+
+Successfully signed dsc and changes files
+uploading package to aegir repository
+gpg: Signature made Wed Mar 25 14:14:31 2015 EDT using RSA key ID 49CB0A3C
+gpg: Good signature from "Aegir Jenkins Build Bot <jenkins@ci.aegirproject.org>"
+gpg: Signature made Wed Mar 25 14:14:31 2015 EDT using RSA key ID 49CB0A3C
+gpg: Good signature from "Aegir Jenkins Build Bot <jenkins@ci.aegirproject.org>"
+Checking signature on .changes
+Good signature on build-area/aegir2-provision_2.2_amd64.changes.
+Checking signature on .dsc
+Good signature on build-area/aegir2-provision_2.2.dsc.
+Uploading to aegir (via local to localhost):
+Successfully uploaded packages.
+can't find debian file aegir2-cluster-slave_2.2_all.deb
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

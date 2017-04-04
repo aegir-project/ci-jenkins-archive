@@ -1,0 +1,121 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 159,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "branch" : [
+              {
+                "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "branch" : [
+              {
+                "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "branch" : [
+          {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#159",
+  "duration" : 533767,
+  "estimatedDuration" : 1037489,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8 #159",
+  "id" : "159",
+  "keepLog" : false,
+  "number" : 159,
+  "queueId" : 2432,
+  "result" : "SUCCESS",
+  "timestamp" : 1455017640499,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8/159/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/queued.pp",
+          "files/aegir3-hostmaster.hosting-queued.service"
+        ],
+        "commitId" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "timestamp" : 1454948386000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Issue #2664308 by helmo: Add hosting_queued systemd service file.\n",
+        "date" : "2016-02-08T11:19:46-0500 -0500",
+        "id" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "msg" : "Issue #2664308 by helmo: Add hosting_queued systemd service file.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/queued.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "files/aegir3-hostmaster.hosting-queued.service"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

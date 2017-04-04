@@ -1,0 +1,164 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+            "value" : ""
+          },
+          "description" : "To confirm this action, you must enter the following text, without spaces:\ni am sure i want to do this",
+          "name" : "BUILD_CONFIRMATION",
+          "type" : "ValidatingStringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "testing"
+          },
+          "description" : "",
+          "name" : "DEBIAN_RELEASE",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "testing",
+            "unstable"
+          ]
+        }
+      ]
+    }
+  ],
+  "description" : "Removes the packages from an archive.",
+  "displayName" : "R clear repo",
+  "displayNameOrNull" : null,
+  "name" : "R clear repo",
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 6,
+      "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/6/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 5,
+      "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/5/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 4,
+      "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/4/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/3/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/2/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/1/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 1 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-60to79",
+      "iconUrl" : "health-60to79.png",
+      "score" : 80
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 6,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/6/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 6,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/6/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 5,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/5/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 6,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/6/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 6,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/6/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 5,
+    "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/5/"
+  },
+  "nextBuildNumber" : 7,
+  "property" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+            "name" : "BUILD_CONFIRMATION",
+            "value" : ""
+          },
+          "description" : "To confirm this action, you must enter the following text, without spaces:\ni am sure i want to do this",
+          "name" : "BUILD_CONFIRMATION",
+          "type" : "ValidatingStringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "DEBIAN_RELEASE",
+            "value" : "testing"
+          },
+          "description" : "",
+          "name" : "DEBIAN_RELEASE",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "testing",
+            "unstable"
+          ]
+        }
+      ]
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.scm.NullSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 11,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "8514e3df93084bcc44e9fdba5d118f9c624888cf",
+            "branch" : [
+              {
+                "SHA1" : "8514e3df93084bcc44e9fdba5d118f9c624888cf",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "8514e3df93084bcc44e9fdba5d118f9c624888cf",
+            "branch" : [
+              {
+                "SHA1" : "8514e3df93084bcc44e9fdba5d118f9c624888cf",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "8514e3df93084bcc44e9fdba5d118f9c624888cf",
+        "branch" : [
+          {
+            "SHA1" : "8514e3df93084bcc44e9fdba5d118f9c624888cf",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#11",
+  "duration" : 20023,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #11",
+  "id" : "2012-02-08_21-45-58",
+  "keepLog" : false,
+  "number" : 11,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1328755558000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/11/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/dumbcluster.php"
+        ],
+        "commitId" : "a537781f2d73cbaeb85ac5149d6553fae81f7354",
+        "timestamp" : 1328227523000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "copy the cluster class into a new dumbcluster class\n\nthe idea of the dumbcluster is that it supports the concept of slave servers that mount /var/aegir and therefore do not need to copy all those files around\n",
+        "date" : "2012-02-02T19:05:23-0500 -0500",
+        "id" : "a537781f2d73cbaeb85ac5149d6553fae81f7354",
+        "msg" : "copy the cluster class into a new dumbcluster class",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "http/Provision/Service/http/dumbcluster.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/dumbcluster.php"
+        ],
+        "commitId" : "46d5a27ae3d8544046dcf599d2403fe4c9a32ced",
+        "timestamp" : 1328227546000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "first implementation of the dumbcluster, pretty dumb, based on cluster.php\n",
+        "date" : "2012-02-02T19:05:46-0500 -0500",
+        "id" : "46d5a27ae3d8544046dcf599d2403fe4c9a32ced",
+        "msg" : "first implementation of the dumbcluster, pretty dumb, based on cluster.php",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/dumbcluster.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php",
+          "http/Provision/Service/http/dumbcluster.php"
+        ],
+        "commitId" : "69e740263eb336292a07ea89773b6bb0c9a3b056",
+        "timestamp" : 1328229785000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rename the dumbcluster module to pack\n",
+        "date" : "2012-02-02T19:43:05-0500 -0500",
+        "id" : "69e740263eb336292a07ea89773b6bb0c9a3b056",
+        "msg" : "rename the dumbcluster module to pack",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "http/Provision/Service/http/pack.php"
+          },
+          {
+            "editType" : "delete",
+            "file" : "http/Provision/Service/http/dumbcluster.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "a46ae33c205c692625e5b1768f93a6a6f8917950",
+        "timestamp" : 1328230103000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "really allow multiple master_web_servers\n",
+        "date" : "2012-02-02T19:48:23-0500 -0500",
+        "id" : "a46ae33c205c692625e5b1768f93a6a6f8917950",
+        "msg" : "really allow multiple master_web_servers",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "2ea4a25ab9ca05f03374e068b0dbb542fd1af39a",
+        "timestamp" : 1328230156000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "describe why this is named 'pack'\n",
+        "date" : "2012-02-02T19:49:16-0500 -0500",
+        "id" : "2ea4a25ab9ca05f03374e068b0dbb542fd1af39a",
+        "msg" : "describe why this is named 'pack'",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "a2bcd849fa57e4e6497789e53d8181a7773a7caf",
+        "timestamp" : 1328736883000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix typo\n",
+        "date" : "2012-02-08T16:34:43-0500 -0500",
+        "id" : "a2bcd849fa57e4e6497789e53d8181a7773a7caf",
+        "msg" : "fix typo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "66f1aaa09aeed33271fafaca8ab72c9eb2092c0b",
+        "timestamp" : 1328736887000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "also sync configs to slave server, which means we *can't* mount /var/aegir as a whole anymore\n",
+        "date" : "2012-02-08T16:34:47-0500 -0500",
+        "id" : "66f1aaa09aeed33271fafaca8ab72c9eb2092c0b",
+        "msg" : "also sync configs to slave server, which means we *can't* mount /var/aegir as a whole anymore",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "91ce6f1713a095e1598dec2d10094dbd27f274cc",
+        "timestamp" : 1328736891000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix another typo\n",
+        "date" : "2012-02-08T16:34:51-0500 -0500",
+        "id" : "91ce6f1713a095e1598dec2d10094dbd27f274cc",
+        "msg" : "fix another typo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "f3115a7921a6baacb28af53f381a38d2bfffc875",
+        "timestamp" : 1328736902000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "properly pass configs around\n",
+        "date" : "2012-02-08T16:35:02-0500 -0500",
+        "id" : "f3115a7921a6baacb28af53f381a38d2bfffc875",
+        "msg" : "properly pass configs around",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

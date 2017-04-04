@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 31,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+            "branch" : [
+              {
+                "SHA1" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+            "branch" : [
+              {
+                "SHA1" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+        "branch" : [
+          {
+            "SHA1" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#31",
+  "duration" : 16149,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #31",
+  "id" : "2012-01-16_21-01-23",
+  "keepLog" : false,
+  "number" : 31,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1326765683000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/31/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.config.inc"
+        ],
+        "commitId" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+        "timestamp" : 1326747358000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Set permission 0440 on drushrc.php so group bit can read it. Solves #1405380\n",
+        "date" : "2012-01-16T15:55:58-0500 +1100",
+        "id" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+        "msg" : "Set permission 0440 on drushrc.php so group bit can read it. Solves #1405380",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.config.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

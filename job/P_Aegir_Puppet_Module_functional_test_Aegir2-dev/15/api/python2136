@@ -1,0 +1,122 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 15,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "1508c758c0492537a6da0333089121b04aca21de",
+            "branch" : [
+              {
+                "SHA1" : "1508c758c0492537a6da0333089121b04aca21de",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "1508c758c0492537a6da0333089121b04aca21de",
+            "branch" : [
+              {
+                "SHA1" : "1508c758c0492537a6da0333089121b04aca21de",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "1508c758c0492537a6da0333089121b04aca21de",
+        "branch" : [
+          {
+            "SHA1" : "1508c758c0492537a6da0333089121b04aca21de",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#15",
+  "duration" : 1070691,
+  "estimatedDuration" : 390215,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev #15",
+  "id" : "2013-10-17_10-38-20",
+  "keepLog" : False,
+  "number" : 15,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1382020700000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/15/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/nodes.pp"
+        ],
+        "commitId" : "1508c758c0492537a6da0333089121b04aca21de",
+        "timestamp" : 1382020693000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add explicit platform_path for testing.\n",
+        "date" : "2013-10-17T10:38:13-0400 -0400",
+        "id" : "1508c758c0492537a6da0333089121b04aca21de",
+        "msg" : "Add explicit platform_path for testing.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/nodes.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

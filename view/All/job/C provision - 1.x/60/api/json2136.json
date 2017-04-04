@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 60,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "56451d1f32a6ec669847a609a44063f13506af4b",
+            "branch" : [
+              {
+                "SHA1" : "56451d1f32a6ec669847a609a44063f13506af4b",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "56451d1f32a6ec669847a609a44063f13506af4b",
+            "branch" : [
+              {
+                "SHA1" : "56451d1f32a6ec669847a609a44063f13506af4b",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "56451d1f32a6ec669847a609a44063f13506af4b",
+        "branch" : [
+          {
+            "SHA1" : "56451d1f32a6ec669847a609a44063f13506af4b",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#60",
+  "duration" : 10051,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #60",
+  "id" : "2012-03-28_12-46-10",
+  "keepLog" : false,
+  "number" : 60,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332953170000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/60/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "56451d1f32a6ec669847a609a44063f13506af4b",
+        "timestamp" : 1332938617000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1505370 by tribe_of_dan - Conflict between Mime Type and Document Type in Nginx.\n",
+        "date" : "2012-03-28T08:43:37-0400 +0200",
+        "id" : "56451d1f32a6ec669847a609a44063f13506af4b",
+        "msg" : "Issue #1505370 by tribe_of_dan - Conflict between Mime Type and Document Type in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

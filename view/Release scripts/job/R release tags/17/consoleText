@@ -1,0 +1,12 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson8559914192857626949.sh
++ rm -rf hostmaster
++ git clone --branch 6.x-1.x http://git.drupal.org/project/hostmaster.git
+Cloning into hostmaster...
++ cd hostmaster
++ git tag -a 6.x-1.6 -m Add a new release tag.
++ git push hostmaster 6.x-1.6
+fatal: 'hostmaster' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

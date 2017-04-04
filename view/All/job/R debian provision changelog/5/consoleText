@@ -1,0 +1,18 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson8814651306188699716.sh
++ rm -rf provision
++ git clone --branch upstream http://git.drupal.org/project/provision.git
+Cloning into provision...
++ cd provision
++ git merge 6.x-1.5
+Already up-to-date.
++ git checkout debian
+Switched to a new branch 'debian'
+Branch debian set up to track remote branch debian from origin.
++ git merge upstream
+Already up-to-date.
++ dch -v 1.5-3 -D testing new upstream release
++ git commit -a -m Updating Debian changelog for release 1.5-3
+[debian 7ef2571] Updating Debian changelog for release 1.5-3
+ 1 files changed, 6 insertions(+), 0 deletions(-)
+Finished: SUCCESS

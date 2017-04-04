@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 53,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+            "branch" : [
+              {
+                "SHA1" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+            "branch" : [
+              {
+                "SHA1" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+        "branch" : [
+          {
+            "SHA1" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#53",
+  "duration" : 10201,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #53",
+  "id" : "2012-03-16_22-01-05",
+  "keepLog" : false,
+  "number" : 53,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331949665000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/53/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "install.hostmaster.inc"
+        ],
+        "commitId" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+        "timestamp" : 1331934430000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1486298 by Steven Jones: Fixed End of install process is messy.\n",
+        "date" : "2012-03-16T17:47:10-0400 +0000",
+        "id" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+        "msg" : "Issue #1486298 by Steven Jones: Fixed End of install process is messy.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "install.hostmaster.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

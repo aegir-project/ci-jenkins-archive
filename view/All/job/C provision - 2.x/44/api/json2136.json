@@ -1,0 +1,215 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 44,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "139f867fed439b85c8156eaca604a2357a8676f4",
+            "branch" : [
+              {
+                "SHA1" : "139f867fed439b85c8156eaca604a2357a8676f4",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "139f867fed439b85c8156eaca604a2357a8676f4",
+            "branch" : [
+              {
+                "SHA1" : "139f867fed439b85c8156eaca604a2357a8676f4",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "139f867fed439b85c8156eaca604a2357a8676f4",
+        "branch" : [
+          {
+            "SHA1" : "139f867fed439b85c8156eaca604a2357a8676f4",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#44",
+  "duration" : 14886,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #44",
+  "id" : "2012-04-24_12-15-27",
+  "keepLog" : false,
+  "number" : 44,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335284127000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/44/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "c76cd1c951ecfc930d93f61374e50f2006e57d57",
+        "timestamp" : 1334765343000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 5s only for 403 error.\n",
+        "date" : "2012-04-18T12:09:03-0400 +0200",
+        "id" : "c76cd1c951ecfc930d93f61374e50f2006e57d57",
+        "msg" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 5s only for 403 error.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "9d1f761b0fd717e1c6cf47711393c9f24130ad72",
+        "timestamp" : 1335269013000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use separate cache for spiders/bots (Nginx).\n",
+        "date" : "2012-04-24T08:03:33-0400 +0200",
+        "id" : "9d1f761b0fd717e1c6cf47711393c9f24130ad72",
+        "msg" : "Use separate cache for spiders/bots (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "224663dacdbe242d046a0a86025c0eed6ed1e83b",
+        "timestamp" : 1335269064000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Do not cache http auth requests. Use compact microcaching config (Nginx).\n",
+        "date" : "2012-04-24T08:04:24-0400 +0200",
+        "id" : "224663dacdbe242d046a0a86025c0eed6ed1e83b",
+        "msg" : "Do not cache http auth requests. Use compact microcaching config (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "139f867fed439b85c8156eaca604a2357a8676f4",
+        "timestamp" : 1335269097000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1544144 by thsutton - Use $server_name instead of $host in all sites/ paths to avoid broken URLs to static files for domain aliases in D7 (Nginx).\n",
+        "date" : "2012-04-24T08:04:57-0400 +0200",
+        "id" : "139f867fed439b85c8156eaca604a2357a8676f4",
+        "msg" : "Issue #1544144 by thsutton - Use $server_name instead of $host in all sites/ paths to avoid broken URLs to static files for domain aliases in D7 (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

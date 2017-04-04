@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 5,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+            "branch" : [
+              {
+                "SHA1" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+            "branch" : [
+              {
+                "SHA1" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+        "branch" : [
+          {
+            "SHA1" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#5",
+  "duration" : 26535,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #5",
+  "id" : "2011-11-13_00-31-43",
+  "keepLog" : False,
+  "number" : 5,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321162303000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/5/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc"
+        ],
+        "commitId" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+        "timestamp" : 1321144055000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "fix the help information for most provision-commands by removing the site name argument and switch to @aliases instead. add examples for most commands too.\n",
+        "date" : "2011-11-12T19:27:35-0500 +1100",
+        "id" : "1d348af59df2c3fa1b86fc91946adf9aef9ce0bb",
+        "msg" : "fix the help information for most provision-commands by removing the site name argument and switch to @aliases instead. add examples for most commands too.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

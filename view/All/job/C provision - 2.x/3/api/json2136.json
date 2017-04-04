@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 3,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+            "branch" : [
+              {
+                "SHA1" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+            "branch" : [
+              {
+                "SHA1" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+        "branch" : [
+          {
+            "SHA1" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#3",
+  "duration" : 26193,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #3",
+  "id" : "2011-11-12_08-16-41",
+  "keepLog" : false,
+  "number" : 3,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321103801000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/3/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Context/platform.php"
+        ],
+        "commitId" : "94e6e960ea7365e6368206e891ff84aab29cd232",
+        "timestamp" : 1321085483000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1336838: Added documentation for --makefile to provision-save, and fixed the style.\n",
+        "date" : "2011-11-12T03:11:23-0500 +0000",
+        "id" : "94e6e960ea7365e6368206e891ff84aab29cd232",
+        "msg" : "Issue #1336838: Added documentation for --makefile to provision-save, and fixed the style.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Context/platform.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Context/platform.php"
+        ],
+        "commitId" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+        "timestamp" : 1321085503000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "improve wording of --makefile documentation in provision-save\n",
+        "date" : "2011-11-12T03:11:43-0500 +0000",
+        "id" : "9522d392e419f30f2cdbbb8255a20da5ccb70ebb",
+        "msg" : "improve wording of --makefile documentation in provision-save",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Context/platform.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

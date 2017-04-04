@@ -1,0 +1,8 @@
+Started by user Steven Jones
+Building in workspace /var/lib/jenkins/jobs/R repo pull/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson5488346465250786373.sh
++ sudo -i -u reprepro reprepro pull stable
+Error opening config file './conf/pulls': No such file or directory(2)
+There have been errors!
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

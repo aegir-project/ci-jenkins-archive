@@ -1,0 +1,406 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 40,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+            "branch" : [
+              {
+                "SHA1" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+            "branch" : [
+              {
+                "SHA1" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+        "branch" : [
+          {
+            "SHA1" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#40",
+  "duration" : 20065,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #40",
+  "id" : "2012-03-03_17-16-23",
+  "keepLog" : False,
+  "number" : 40,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1330812983000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/40/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "8ac4b61d1504cc37fc45045f31b540e762bed7d2",
+        "timestamp" : 1330786250000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix indenting in the Nginx config includes.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T09:50:50-0500 +0100",
+        "id" : "8ac4b61d1504cc37fc45045f31b540e762bed7d2",
+        "msg" : "Fix indenting in the Nginx config includes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "adab0f2534658626eaf9921c782821f2caba57ad",
+        "timestamp" : 1330787008000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Better defaults for Nginx FastCGI Caching.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:03:28-0500 +0100",
+        "id" : "adab0f2534658626eaf9921c782821f2caba57ad",
+        "msg" : "Better defaults for Nginx FastCGI Caching.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "2140d355a72e7066e5eac7d528e1e8d345dd6417",
+        "timestamp" : 1330787079000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix whitespace in server.tpl.php\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:04:39-0500 +0100",
+        "id" : "2140d355a72e7066e5eac7d528e1e8d345dd6417",
+        "msg" : "Fix whitespace in server.tpl.php",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "d4106fc48ff7ba60b287c7bb556c51d0371934a0",
+        "timestamp" : 1330787276000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Hide some identity headers in the Nginx config.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:07:56-0500 +0100",
+        "id" : "d4106fc48ff7ba60b287c7bb556c51d0371934a0",
+        "msg" : "Hide some identity headers in the Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "a3080bb47fe70844fbc70b2258720dd19bde3c6e",
+        "timestamp" : 1330787446000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use $proxy_add_x_forwarded_for instead of $remote_addr in the Nginx access log.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:10:46-0500 +0100",
+        "id" : "a3080bb47fe70844fbc70b2258720dd19bde3c6e",
+        "msg" : "Use $proxy_add_x_forwarded_for instead of $remote_addr in the Nginx access log.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "0b2f11a01fa5b6d3598be4462d93d863619c25d8",
+        "timestamp" : 1330787646000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use Nginx maps to simplify config includes.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:14:06-0500 +0100",
+        "id" : "0b2f11a01fa5b6d3598be4462d93d863619c25d8",
+        "msg" : "Use Nginx maps to simplify config includes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "a88acd8765da1d2f21889f60e51f2ad6c988115d",
+        "timestamp" : 1330788673000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix whitespace and extra new lines.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:31:13-0500 +0100",
+        "id" : "a88acd8765da1d2f21889f60e51f2ad6c988115d",
+        "msg" : "Fix whitespace and extra new lines.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc",
+          "http/nginx_ssl/vhost_ssl.tpl.php",
+          "http/nginx/vhost.tpl.php",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "4d9b5ee65204d43a9e996353a7eeeb700626dd16",
+        "timestamp" : 1330789003000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "We no longer need the $nginx_has_new_version variable.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:36:43-0500 +0100",
+        "id" : "4d9b5ee65204d43a9e996353a7eeeb700626dd16",
+        "msg" : "We no longer need the $nginx_has_new_version variable.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "b959ad200f0ffb9fa2ea7aea303c423ec23d2d83",
+        "timestamp" : 1330789022000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix whitespace.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:37:02-0500 +0100",
+        "id" : "b959ad200f0ffb9fa2ea7aea303c423ec23d2d83",
+        "msg" : "Fix whitespace.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "009294bca51396c8904235b747f5f560196c54bf",
+        "timestamp" : 1330789236000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Find nginx executable to make the check for compiled in modules reliable.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:40:36-0500 +0100",
+        "id" : "009294bca51396c8904235b747f5f560196c54bf",
+        "msg" : "Find nginx executable to make the check for compiled in modules reliable.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx.conf"
+        ],
+        "commitId" : "8cfbf37ac55b6a1418943829e9841c90604e04bf",
+        "timestamp" : 1330790397000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Set worker_processes to 4 in the nginx.conf by default.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:59:57-0500 +0100",
+        "id" : "8cfbf37ac55b6a1418943829e9841c90604e04bf",
+        "msg" : "Set worker_processes to 4 in the nginx.conf by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+        "timestamp" : 1330794251000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Add support for Nginx Microcaching and Drupal contrib modules: audio, radioactivity, responsive_images, resp_img and ais. Improve Boost support and use Nginx maps to simplify config includes.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T12:04:11-0500 +0100",
+        "id" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+        "msg" : "Add support for Nginx Microcaching and Drupal contrib modules: audio, radioactivity, responsive_images, resp_img and ais. Improve Boost support and use Nginx maps to simplify config includes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace - hudson.remoting.LocalChannel@7e087bf5
+Using strategy: Default
+Last Built Revision: Revision 6d34ab77a845b1d3f3e0ee262f308a3b789990f1 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 872583ef9d57e6c7e1b6161b1e64422e63fd3e89 (origin/new)
+Checking out Revision 872583ef9d57e6c7e1b6161b1e64422e63fd3e89 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson3558314007131303044.sh
++ ./tests/.ci/setup.sh
+[workspace] $ /bin/sh -xe /tmp/hudson5154125133956379405.sh
++ vagrant up
+[default] VM already created. Booting if it's not already running...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] Running provisioner: Vagrant::Provisioners::Shell...
+stdin: is not a tty
+Creating test environment...
+Installing git...
+Hit http://http.us.debian.org squeeze Release.gpg
+Ign http://http.us.debian.org/debian/ squeeze/main Translation-en
+Ign http://http.us.debian.org/debian/ squeeze/main Translation-en_US
+Hit http://http.us.debian.org squeeze-updates Release.gpg
+Ign http://http.us.debian.org/debian/ squeeze-updates/main Translation-en
+Ign http://http.us.debian.org/debian/ squeeze-updates/main Translation-en_US
+Hit http://http.us.debian.org squeeze Release
+Hit http://http.us.debian.org squeeze-updates Release
+Hit http://http.us.debian.org squeeze/main Sources
+Hit http://http.us.debian.org squeeze/main amd64 Packages
+Hit http://http.us.debian.org squeeze-updates/main Sources/DiffIndex
+Hit http://http.us.debian.org squeeze-updates/main amd64 Packages/DiffIndex
+Hit http://security.debian.org squeeze/updates Release.gpg
+Ign http://security.debian.org/ squeeze/updates/main Translation-en
+Ign http://security.debian.org/ squeeze/updates/main Translation-en_US
+Hit http://http.us.debian.org squeeze-updates/main amd64 Packages
+Hit http://security.debian.org squeeze/updates Release
+Hit http://security.debian.org squeeze/updates/main Sources
+Hit http://security.debian.org squeeze/updates/main amd64 Packages
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Reading task descriptions...
+No packages will be installed, upgraded, or removed.
+0 packages upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+Need to get 0 B of archives. After unpacking 0 B will be used.
+Writing extended state information...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Reading task descriptions...
+Cloning dependencies (puppet-drush)...
+Setting up terminal colors...
+Scanning for tests in 'aegir' module...
+Running tests...
+Running 'build.pp' test...
+[32m
+'build.pp' test passed.
+[0m
+Running 'platform.pp' test...
+[32m
+'platform.pp' test passed.
+[0m
+Running 'apt.pp' test...
+[32m
+'apt.pp' test passed.
+[0m
+Running 'init.pp' test...
+[32m
+'init.pp' test passed.
+[0m
+Running 'remote_import.pp' test...
+[32m
+'remote_import.pp' test passed.
+[0m
+Running 'queue_runner.pp' test...
+[32m
+'queue_runner.pp' test passed.
+[0m
+Running 'queued.pp' test...
+[32m
+'queued.pp' test passed.
+[0m
+Running 'defaults.pp' test...
+[32m
+'defaults.pp' test passed.
+[0m
+Running 'login_link.pp' test...
+[32m
+'login_link.pp' test passed.
+[0m
+Running 'dev.pp' test...
+[32m
+'dev.pp' test passed.
+[0m
+Running 'extras.pp' test...
+[32m
+'extras.pp' test passed.
+[0m
+Running 'backend.pp' test...
+[32m
+'backend.pp' test passed.
+[0m
+Total tests run: 12
+[32m
+Tests passed: 12
+[31m
+Tests failed: 0
+[0m
+[workspace] $ /bin/sh -xe /tmp/hudson7999330950766237407.sh
++ vagrant destroy -f
+[default] Forcing shutdown of VM...
+[default] Destroying VM and associated drives...
+IRC notifier plugin: Sending notification to: #aegir
+IRC notifier plugin: There was an error sending notification to: #aegir
+java.lang.RuntimeException: Waiting for mode response interrupted
+	at org.pircbotx.Channel.getMode(Channel.java:133)
+	at hudson.plugins.ircbot.v2.IRCConnection.send(IRCConnection.java:270)
+	at hudson.plugins.ircbot.v2.IRCConnection.send(IRCConnection.java:262)
+	at hudson.plugins.im.IMPublisher.sendNotification(IMPublisher.java:379)
+	at hudson.plugins.im.IMPublisher.notifyChatsOnBuildEnd(IMPublisher.java:585)
+	at hudson.plugins.im.IMPublisher.notifyOnBuildEnd(IMPublisher.java:304)
+	at hudson.plugins.im.IMPublisher.perform(IMPublisher.java:291)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:781)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:753)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:706)
+	at hudson.model.Run.execute(Run.java:1690)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:246)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:979)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:207)
+	at org.pircbotx.Channel.getMode(Channel.java:127)
+	... 15 more
+
+Finished: SUCCESS

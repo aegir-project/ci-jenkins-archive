@@ -1,0 +1,69 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+Checking out Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson2658798419697516466.sh
++ ./tests/functional_tests/aegir2/setup.sh
+./tests/functional_tests/aegir2/setup.sh: line 5: [: too many arguments
+./tests/functional_tests/aegir2/setup.sh: line 10: [: too many arguments
+Too many arguments.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --template <path>     path the template repository
+    --reference <repo>    reference repository
+    -o, --origin <branch>
+                          use <branch> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+
+./tests/functional_tests/aegir2/setup.sh: line 17: [: too many arguments
+Too many arguments.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --template <path>     path the template repository
+    --reference <repo>    reference repository
+    -o, --origin <branch>
+                          use <branch> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+
+./tests/functional_tests/aegir2/setup.sh: line 24: [: too many arguments
+[workspace] $ /bin/sh -xe /tmp/hudson871545017203517873.sh
++ vagrant up
+A Vagrant environment is required to run this command. Run `vagrant init`
+to set one up.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,9 @@
+Started on 27/04/2012 9:00:19 AM
+Using strategy: Default
+[poll] Last Build : #23
+[poll] Last Built Revision: Revision eb11008c3291b89386167f01f451e5992b463253 (provision/6.x-1.x)
+Fetching changes from the remote Git repositories
+Fetching upstream changes from git://git.drupalcode.org/project/hostmaster
+Polling for changes in
+Done. Took 2.3 sec
+Changes found

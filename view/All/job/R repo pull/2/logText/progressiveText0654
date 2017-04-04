@@ -1,0 +1,7 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson4071385879194836832.sh
++ sudo -u reprepro reprepro pull stable
+Error opening config file './conf/distributions': No such file or directory(2)
+There have been errors!
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

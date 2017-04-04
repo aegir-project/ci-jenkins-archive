@@ -1,0 +1,132 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 26,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+            "branch" : [
+              {
+                "SHA1" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+            "branch" : [
+              {
+                "SHA1" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+        "branch" : [
+          {
+            "SHA1" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#26",
+  "duration" : 11800,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #26",
+  "id" : "2012-05-24_06-30-27",
+  "keepLog" : False,
+  "number" : 26,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1337855427000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/26/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.module"
+        ],
+        "commitId" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+        "timestamp" : 1337840692000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1597648 by jlscott: Fixed Hosting Queues Summary Block is stale.\n",
+        "date" : "2012-05-24T02:24:52-0400 +0100",
+        "id" : "7f0ea0dc4bb84c40ee0768ffe6f12e48f2e16d63",
+        "msg" : "Issue #1597648 by jlscott: Fixed Hosting Queues Summary Block is stale.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

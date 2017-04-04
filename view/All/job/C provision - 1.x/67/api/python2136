@@ -1,0 +1,156 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 67,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "6ba72c3575924c3d78069fe8872b4f2ff8c533ba",
+            "branch" : [
+              {
+                "SHA1" : "6ba72c3575924c3d78069fe8872b4f2ff8c533ba",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6ba72c3575924c3d78069fe8872b4f2ff8c533ba",
+            "branch" : [
+              {
+                "SHA1" : "6ba72c3575924c3d78069fe8872b4f2ff8c533ba",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6ba72c3575924c3d78069fe8872b4f2ff8c533ba",
+        "branch" : [
+          {
+            "SHA1" : "6ba72c3575924c3d78069fe8872b4f2ff8c533ba",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#67",
+  "duration" : 10064,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #67",
+  "id" : "2012-04-17_17-45-28",
+  "keepLog" : False,
+  "number" : 67,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334699128000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/67/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx.conf"
+        ],
+        "commitId" : "0e3d10f198b8464e20acc6aad0806b9e5152d474",
+        "timestamp" : 1334682657000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Remove duplicate error_log directive in the Nginx config.\n",
+        "date" : "2012-04-17T13:10:57-0400 +0200",
+        "id" : "0e3d10f198b8464e20acc6aad0806b9e5152d474",
+        "msg" : "Remove duplicate error_log directive in the Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "a104712466f528111414b00fc631c406a7dc2ae1",
+        "timestamp" : 1334684183000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.\n",
+        "date" : "2012-04-17T13:36:23-0400 +0200",
+        "id" : "a104712466f528111414b00fc631c406a7dc2ae1",
+        "msg" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace - hudson.remoting.LocalChannel@1680748d
+Using strategy: Default
+Last Built Revision: Revision a8ef0d430b195c0a1bc7a238127ce1694560c815 (origin/master)
+Checkout:build_scripts / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace/build_scripts - hudson.remoting.LocalChannel@1680748d
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from http://git.drupal.org/sandbox/darthsteven/1286014.git
+Commencing build of Revision a8ef0d430b195c0a1bc7a238127ce1694560c815 (origin/master)
+Checking out Revision a8ef0d430b195c0a1bc7a238127ce1694560c815 (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson8581752888226870521.sh
++ python build_scripts/jenkins_aegir_upgrade.py
+/usr/lib/python2.6/dist-packages/Crypto/Util/randpool.py:40: RandomPool_DeprecationWarning: This application uses RandomPool, which is BROKEN in older releases.  See http://www.pycrypto.org/randpool-broken
+  RandomPool_DeprecationWarning)
+Provisioning server and running deployment processes
+Provisioning complete, you can ssh as root to 108.166.98.145
+The root user's password is aegir2012-03-0718-55-46X0eb3w0BG
+===> Setting a little firewall
+[108-166-98-145.static.cloud-ips.com] run: for source in 95.142.164.178 59.167.182.161 174.136.104.138 217.155.126.38; do iptables -I INPUT -s $source -p tcp --dport 22 -j ACCEPT; iptables -I INPUT -s $source -p tcp --dport 80 -j ACCEPT; done; iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT; iptables --policy INPUT DROP
+===> Preparing Apache
+[108-166-98-145.static.cloud-ips.com] run: a2enmod rewrite
+[108-166-98-145.static.cloud-ips.com] out: Enabling module rewrite.
+[108-166-98-145.static.cloud-ips.com] out: Run '/etc/init.d/apache2 restart' to activate new configuration!
+[108-166-98-145.static.cloud-ips.com] run: ln -s /var/aegir/config/apache.conf /etc/apache2/conf.d/aegir.conf
+===> Preparing the Aegir user
+[108-166-98-145.static.cloud-ips.com] run: useradd -r -U -d /var/aegir -m -G www-data aegir
+[108-166-98-145.static.cloud-ips.com] run: echo 'aegir ALL=NOPASSWD: /usr/sbin/apache2ctl' >> /etc/sudoers
+===> Fetching Drush 7.x-4.4
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'wget http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz'
+[108-166-98-145.static.cloud-ips.com] out: --2012-03-07 12:59:59--  http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz
+[108-166-98-145.static.cloud-ips.com] out: Resolving ftp.drupal.org... 140.211.166.134
+[108-166-98-145.static.cloud-ips.com] out: Connecting to ftp.drupal.org|140.211.166.134|:80... connected.
+[108-166-98-145.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[108-166-98-145.static.cloud-ips.com] out: Length: 253012 (247K) [application/x-gzip]
+[108-166-98-145.static.cloud-ips.com] out: Saving to: “drush-7.x-4.4.tar.gz”
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[108-166-98-145.static.cloud-ips.com] out: 44% [================>                      ] 112,656      415K/s              
+[108-166-98-145.static.cloud-ips.com] out: 100%[======================================>] 253,012      743K/s   in 0.3s    
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: 2012-03-07 12:59:59 (743 KB/s) - “drush-7.x-4.4.tar.gz” saved [253012/253012]
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'gunzip -c drush-7.x-4.4.tar.gz | tar -xf - '
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'rm /var/aegir/drush-7.x-4.4.tar.gz'
+===> Fetching Provision - via package
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php dl -y --destination=/var/aegir/.drush provision-6.x-1.0'
+[108-166-98-145.static.cloud-ips.com] out: The directory /var/aegir/.drush does not exist.
+[108-166-98-145.static.cloud-ips.com] out: Would you like to create it? (y/n): y
+[108-166-98-145.static.cloud-ips.com] out: Project provision (6.x-1.0) downloaded to                              [success]
+[108-166-98-145.static.cloud-ips.com] out: /var/aegir/.drush/provision.
+[108-166-98-145.static.cloud-ips.com] out: Project provision contains 4 modules: bind, bind_slave, dns, provision.
+===> Running hostmaster-install
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php hostmaster-install 108-166-98-145.static.cloud-ips.com --client_email=mig@mig5.net --aegir_db_pass=8su43x --yes'
+[108-166-98-145.static.cloud-ips.com] out: Aegir 6.x-1.0 automated install script
+[108-166-98-145.static.cloud-ips.com] out: ==============================================================================
+[108-166-98-145.static.cloud-ips.com] out: Some settings have not been provided and will now be prompted.
+[108-166-98-145.static.cloud-ips.com] out: Don't worry: you will get to review those settings after the final install
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: This script will operate the following changes in your system:
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: 1. Create server-level configuration directories
+[108-166-98-145.static.cloud-ips.com] out: 2. Download drush_make
+[108-166-98-145.static.cloud-ips.com] out: 3. Create the Hostmaster frontend platform
+[108-166-98-145.static.cloud-ips.com] out: 4. Install the frontend site
+[108-166-98-145.static.cloud-ips.com] out: 5. Setup the dispatcher (a user cron job)
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: We are making the following assumptions:
+[108-166-98-145.static.cloud-ips.com] out:  * you have read INSTALL.txt and prepared the platform accordingly
+[108-166-98-145.static.cloud-ips.com] out:  * the FQDN of this machine is valid and resolves
+[108-166-98-145.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: The following settings will be used:
+[108-166-98-145.static.cloud-ips.com] out:  Aegir frontend URL: 108-166-98-145.static.cloud-ips.com
+[108-166-98-145.static.cloud-ips.com] out:  Master server FQDN: aegir2012-03-0718-55-46
+[108-166-98-145.static.cloud-ips.com] out:  Aegir root: /var/aegir
+[108-166-98-145.static.cloud-ips.com] out:  Aegir user: aegir
+[108-166-98-145.static.cloud-ips.com] out:  Web group: www-data
+[108-166-98-145.static.cloud-ips.com] out:  Web server: apache
+[108-166-98-145.static.cloud-ips.com] out:  Aegir DB host: localhost
+[108-166-98-145.static.cloud-ips.com] out:  Aegir DB user: root
+[108-166-98-145.static.cloud-ips.com] out:  Aegir DB password: <previously set>
+[108-166-98-145.static.cloud-ips.com] out:  Drush make version: 6.x-2.2
+[108-166-98-145.static.cloud-ips.com] out:  Aegir version: 6.x-1.0
+[108-166-98-145.static.cloud-ips.com] out:  Aegir platform path: /var/aegir/hostmaster-6.x-1.0
+[108-166-98-145.static.cloud-ips.com] out:  Aegir makefile: /var/aegir/.drush/provision/aegir.make
+[108-166-98-145.static.cloud-ips.com] out:  Admin email: mig@mig5.net
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: Do you really want to proceed with the install (y/n): y
+[108-166-98-145.static.cloud-ips.com] out: Project drush_make (6.x-2.2) downloaded to                             [success]
+[108-166-98-145.static.cloud-ips.com] out: /var/aegir/.drush//drush_make.
+[108-166-98-145.static.cloud-ips.com] out: Project drush_make contains 0 modules: .
+[108-166-98-145.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[108-166-98-145.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz.
+[108-166-98-145.static.cloud-ips.com] out: hostmaster cloned from http://git.drupal.org/project/hostmaster.git.        [ok]
+[108-166-98-145.static.cloud-ips.com] out: Checked out tag 6.x-1.0.                                                    [ok]
+[108-166-98-145.static.cloud-ips.com] out: Found makefile: hostmaster.make                                             [ok]
+[108-166-98-145.static.cloud-ips.com] out: Project information for admin_menu retrieved.                               [ok]
+[108-166-98-145.static.cloud-ips.com] out: Project information for openidadmin retrieved.                              [ok]
+[108-166-98-145.static.cloud-ips.com] out: Project information for install_profile_api retrieved.                      [ok]
+[108-166-98-145.static.cloud-ips.com] out: Project information for jquery_ui retrieved.                                [ok]
+[108-166-98-145.static.cloud-ips.com] out: Project information for modalframe retrieved.                               [ok]
+[108-166-98-145.static.cloud-ips.com] out: admin_menu downloaded from                                                  [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/admin_menu-6.x-1.6.tar.gz.
+[108-166-98-145.static.cloud-ips.com] out: openidadmin downloaded from                                                 [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz.
+[108-166-98-145.static.cloud-ips.com] out: install_profile_api downloaded from                                         [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz.
+[108-166-98-145.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz.
+[108-166-98-145.static.cloud-ips.com] out: modalframe downloaded from                                                  [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz.
+[108-166-98-145.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[108-166-98-145.static.cloud-ips.com] out: http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip.
+[108-166-98-145.static.cloud-ips.com] out: Created 10816698145stati database                                      [success]
+[108-166-98-145.static.cloud-ips.com] out: Creating master server node                                             [status]
+[108-166-98-145.static.cloud-ips.com] out: Creating db server node                                                 [status]
+[108-166-98-145.static.cloud-ips.com] out: Configuring menu items                                                  [status]
+[108-166-98-145.static.cloud-ips.com] out: Configuring Eldir theme                                                 [status]
+[108-166-98-145.static.cloud-ips.com] out: Configuring default blocks                                              [status]
+[108-166-98-145.static.cloud-ips.com] out: Configuring roles                                                       [status]
+[108-166-98-145.static.cloud-ips.com] out: Content permissions have been rebuilt.                                  [status]
+[108-166-98-145.static.cloud-ips.com] out: Initializing the hosting system
+[108-166-98-145.static.cloud-ips.com] out: Dispatch command was run successfully                                  [success]
+[108-166-98-145.static.cloud-ips.com] out: This command will replace your crontab for this user. continue? (y/n): y
+[108-166-98-145.static.cloud-ips.com] out: /var/aegir/drush/drush.php '@hostmaster' hosting-dispatch 
+[108-166-98-145.static.cloud-ips.com] out: Aegir is now installed. You can visit it at http://108-166-98-145.static.cloud-ips.com/user/reset/1/1331146825/6e3b399943ce8de37893e2cc02aa1dbe
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php -y @hostmaster vset hosting_queue_tasks_frequency 1'
+[108-166-98-145.static.cloud-ips.com] out: hosting_queue_tasks_frequency was set to 1.                            [success]
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===> Fetching the Aegir upgrade script
+[108-166-98-145.static.cloud-ips.com] run: wget -O /tmp/upgrade.sh 'http://drupalcode.org/project/provision.git/blob_plain/6.x-1.7:/upgrade.sh.txt'
+[108-166-98-145.static.cloud-ips.com] out: --2012-03-07 13:00:29--  http://drupalcode.org/project/provision.git/blob_plain/6.x-1.7:/upgrade.sh.txt
+[108-166-98-145.static.cloud-ips.com] out: Resolving drupalcode.org... 140.211.10.6
+[108-166-98-145.static.cloud-ips.com] out: Connecting to drupalcode.org|140.211.10.6|:80... connected.
+[108-166-98-145.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[108-166-98-145.static.cloud-ips.com] out: Length: 4461 (4.4K) [text/plain]
+[108-166-98-145.static.cloud-ips.com] out: Saving to: “/tmp/upgrade.sh”
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[108-166-98-145.static.cloud-ips.com] out: 100%[======================================>] 4,461       --.-K/s   in 0.07s   
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: 2012-03-07 13:00:30 (66.1 KB/s) - “/tmp/upgrade.sh” saved [4461/4461]
+===> Running the Aegir upgrade script
+[108-166-98-145.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'yes | sh /tmp/upgrade.sh 108-166-98-145.static.cloud-ips.com'
+[108-166-98-145.static.cloud-ips.com] out: ==> Drush found in /var/aegir/drush/drush.php, good
+[108-166-98-145.static.cloud-ips.com] out: ==> Aegir 6.x-1.7 automated upgrade script
+[108-166-98-145.static.cloud-ips.com] out: ==> This script makes the following assumptions: 
+[108-166-98-145.static.cloud-ips.com] out:  * you have read http://community.aegirproject.org/upgrading and have prepared the server accordingly
+[108-166-98-145.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[108-166-98-145.static.cloud-ips.com] out:  * that the following settings are correct
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: The Aegir version to upgrade to is 6.x-1.7
+[108-166-98-145.static.cloud-ips.com] out: The Aegir home dir is /var/aegir
+[108-166-98-145.static.cloud-ips.com] out: The new hostmaster platform will be /var/aegir/hostmaster-6.x-1.7
+[108-166-98-145.static.cloud-ips.com] out: Your Aegir domain is 108-166-98-145.static.cloud-ips.com
+[108-166-98-145.static.cloud-ips.com] out: Your old hostmaster platform was /var/aegir/hostmaster-6.x-1.0
+[108-166-98-145.static.cloud-ips.com] out: The Drush command is "php /var/aegir/drush/drush.php"
+[108-166-98-145.static.cloud-ips.com] out: The version of Drush will be 7.x-4.5
+[108-166-98-145.static.cloud-ips.com] out: The version of Drush Make will be 6.x-2.3
+[108-166-98-145.static.cloud-ips.com] out: Do you want to proceed with the upgrade? [Y/n] ==> Moving existing drush into /var/aegir/pre-upgrade-2012-03-07-1300
+[108-166-98-145.static.cloud-ips.com] out: --2012-03-07 13:00:31--  http://ftp.drupal.org/files/projects/drush-7.x-4.5.tar.gz
+[108-166-98-145.static.cloud-ips.com] out: Resolving ftp.drupal.org... 140.211.166.134
+[108-166-98-145.static.cloud-ips.com] out: Connecting to ftp.drupal.org|140.211.166.134|:80... connected.
+[108-166-98-145.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[108-166-98-145.static.cloud-ips.com] out: Length: 282760 (276K) [application/x-gzip]
+[108-166-98-145.static.cloud-ips.com] out: Saving to: “drush-7.x-4.5.tar.gz”
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[108-166-98-145.static.cloud-ips.com] out: 41% [===============>                       ] 116,007      426K/s              
+[108-166-98-145.static.cloud-ips.com] out: 100%[======================================>] 282,760      691K/s   in 0.4s    
+[108-166-98-145.static.cloud-ips.com] out: 
+[108-166-98-145.static.cloud-ips.com] out: 2012-03-07 13:00:31 (691 KB/s) - “drush-7.x-4.5.tar.gz” saved [282760/282760]
+[108-166-98-145.static.cloud-ips.com] out: ==> Moving existing provision into /var/aegir/pre-upgrade-2012-03-07-1300
+[108-166-98-145.static.cloud-ips.com] out: --2012-03-07 13:00:31--  http://ftp.drupal.org/files/projects/provision-6.x-1.7.tar.gz
+[108-166-98-145.static.cloud-ips.com] out: Resolving ftp.drupal.org... 140.211.166.134
+[108-166-98-145.static.cloud-ips.com] out: Connecting to ftp.drupal.org|140.211.166.134|:80... connected.
+[108-166-98-145.static.cloud-ips.com] out: HTTP request sent, awaiting response... 404 Not Found
+[108-166-98-145.static.cloud-ips.com] out: 2012-03-07 13:00:32 ERROR 404: Not Found.
+[108-166-98-145.static.cloud-ips.com] out: gzip: provision-6.x-1.7.tar.gz: No such file or directory
+[108-166-98-145.static.cloud-ips.com] out: tar: This does not look like a tar archive
+[108-166-98-145.static.cloud-ips.com] out: tar: Exiting with failure status due to previous errors
+[108-166-98-145.static.cloud-ips.com] out: rm: cannot remove `provision-6.x-1.7.tar.gz': No such file or directory
+[108-166-98-145.static.cloud-ips.com] out: ==> Moving existing drush_make into /var/aegir/pre-upgrade-2012-03-07-1300
+[108-166-98-145.static.cloud-ips.com] out: Project drush_make (6.x-2.3) downloaded to                             [success]
+[108-166-98-145.static.cloud-ips.com] out: /var/aegir/.drush/drush_make.
+[108-166-98-145.static.cloud-ips.com] out: Project drush_make contains 0 modules: .
+[108-166-98-145.static.cloud-ips.com] out: The drush command 'hostmaster-migrate                                    [error]
+[108-166-98-145.static.cloud-ips.com] out: 108-166-98-145.static.cloud-ips.com /var/aegir/hostmaster-6.x-1.7'
+[108-166-98-145.static.cloud-ips.com] out: could not be found.
+[108-166-98-145.static.cloud-ips.com] out: Could not find a Drupal settings.php file at                             [error]
+[108-166-98-145.static.cloud-ips.com] out: ./sites/default/settings.php.
+
+Fatal error: run() encountered an error (return code 1) while executing 'su - -s /bin/sh aegir -c 'yes | sh /tmp/upgrade.sh 108-166-98-145.static.cloud-ips.com''
+
+Aborting.
+===> Test failure
+===> Destroying this node
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: miguel.jacq@gmail.com steven.jones@computerminds.co.uk
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

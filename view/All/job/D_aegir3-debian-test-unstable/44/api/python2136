@@ -1,0 +1,153 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 44,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "479445d071d300d82c5b7600154104664b47ac32",
+            "branch" : [
+              {
+                "SHA1" : "479445d071d300d82c5b7600154104664b47ac32",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "479445d071d300d82c5b7600154104664b47ac32",
+            "branch" : [
+              {
+                "SHA1" : "479445d071d300d82c5b7600154104664b47ac32",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "479445d071d300d82c5b7600154104664b47ac32",
+        "branch" : [
+          {
+            "SHA1" : "479445d071d300d82c5b7600154104664b47ac32",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#44",
+  "duration" : 808538,
+  "estimatedDuration" : 1189565,
+  "executor" : None,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable #44",
+  "id" : "44",
+  "keepLog" : False,
+  "number" : 44,
+  "queueId" : 1104,
+  "result" : "SUCCESS",
+  "timestamp" : 1446810300288,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable/44/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-unstable/setup.sh"
+        ],
+        "commitId" : "ce2da1ed52a5146be002f64ff79119c844d33230",
+        "timestamp" : 1444994763000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "set the more stable branch ... unstable has been merged already\n",
+        "date" : "2015-10-16T07:26:03-0400 +0200",
+        "id" : "ce2da1ed52a5146be002f64ff79119c844d33230",
+        "msg" : "set the more stable branch ... unstable has been merged already",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-unstable/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/Vagrantfile",
+          "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/setup.sh",
+          "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/run-tests.sh",
+          "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/provision-tests.sh"
+        ],
+        "commitId" : "479445d071d300d82c5b7600154104664b47ac32",
+        "timestamp" : 1446757816000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add test fir Deb package upgrades from stable to unstable\n\nhttp://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/\n",
+        "date" : "2015-11-05T16:10:16-0500 +0100",
+        "id" : "479445d071d300d82c5b7600154104664b47ac32",
+        "msg" : "Add test fir Deb package upgrades from stable to unstable",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/provision-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

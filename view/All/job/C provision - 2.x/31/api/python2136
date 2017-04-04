@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 31,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+            "branch" : [
+              {
+                "SHA1" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+            "branch" : [
+              {
+                "SHA1" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+        "branch" : [
+          {
+            "SHA1" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#31",
+  "duration" : 5345,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #31",
+  "id" : "2012-03-24_12-01-24",
+  "keepLog" : False,
+  "number" : 31,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332604884000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/31/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+        "timestamp" : 1332589697000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.\n",
+        "date" : "2012-03-24T07:48:17-0400 +0000",
+        "id" : "d0f3c29d84d822df263860f96e8d05abf30c5c1a",
+        "msg" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

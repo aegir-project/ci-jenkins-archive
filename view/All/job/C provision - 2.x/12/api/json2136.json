@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+            "branch" : [
+              {
+                "SHA1" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+            "branch" : [
+              {
+                "SHA1" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+        "branch" : [
+          {
+            "SHA1" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#12",
+  "duration" : 29500,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #12",
+  "id" : "2012-02-13_07-16-01",
+  "keepLog" : false,
+  "number" : 12,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329135361000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/12/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+        "timestamp" : 1329116963000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "By mrfelton: include extra_config in Nginx SSL vhost. Fixes #1369608\n",
+        "date" : "2012-02-13T02:09:23-0500 +1100",
+        "id" : "a265e19f1e8ed21ac232f1b76ae31b1621abb038",
+        "msg" : "By mrfelton: include extra_config in Nginx SSL vhost. Fixes #1369608",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

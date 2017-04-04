@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 8,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "673121acb5992982f175329e120d94452900ac1e",
+            "branch" : [
+              {
+                "SHA1" : "673121acb5992982f175329e120d94452900ac1e",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "673121acb5992982f175329e120d94452900ac1e",
+            "branch" : [
+              {
+                "SHA1" : "673121acb5992982f175329e120d94452900ac1e",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "673121acb5992982f175329e120d94452900ac1e",
+        "branch" : [
+          {
+            "SHA1" : "673121acb5992982f175329e120d94452900ac1e",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#8",
+  "duration" : 14963,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #8",
+  "id" : "2011-11-21_18-31-27",
+  "keepLog" : false,
+  "number" : 8,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321918287000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/8/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc"
+        ],
+        "commitId" : "673121acb5992982f175329e120d94452900ac1e",
+        "timestamp" : 1321900021000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix usage for hostmaster-install\n",
+        "date" : "2011-11-21T13:27:01-0500 -0500",
+        "id" : "673121acb5992982f175329e120d94452900ac1e",
+        "msg" : "fix usage for hostmaster-install",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

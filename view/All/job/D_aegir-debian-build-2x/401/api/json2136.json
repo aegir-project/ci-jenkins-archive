@@ -1,0 +1,212 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 401,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+            "branch" : [
+              {
+                "SHA1" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+            "branch" : [
+              {
+                "SHA1" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+        "branch" : [
+          {
+            "SHA1" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 401,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+            "branch" : [
+              {
+                "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+            "branch" : [
+              {
+                "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+        "branch" : [
+          {
+            "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/hostmaster"
+      ],
+      "scmName" : "hostmaster"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 401,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+        "branch" : [
+          {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#401",
+  "duration" : 16361,
+  "estimatedDuration" : 20985,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-build-2x #401",
+  "id" : "2015-03-24_10-57-44",
+  "keepLog" : false,
+  "number" : 401,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1427209064000,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/401/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+        "timestamp" : 1427208186000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2457359: Stop overriding Nginx SSL settings\n",
+        "date" : "2015-03-24T10:43:06-0400 +0100",
+        "id" : "b321ccdc27b392f0fd3969d4aefdc57075f0500e",
+        "msg" : "Issue #2457359: Stop overriding Nginx SSL settings",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

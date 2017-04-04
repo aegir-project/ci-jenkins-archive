@@ -1,0 +1,67 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_TAG",
+          "value" : "6.x-1.6"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_DEBIAN_VERSION",
+          "value" : "1.6-1"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : "iamsureiwanttodothis"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#9",
+  "duration" : 7459,
+  "estimatedDuration" : 30104,
+  "executor" : None,
+  "fullDisplayName" : "R debian provision changelog #9",
+  "id" : "2011-11-22_08-28-04",
+  "keepLog" : False,
+  "number" : 9,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321968484000,
+  "url" : "http://ci.aegirproject.org/view/Release%20scripts/job/R%20debian%20provision%20changelog/9/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

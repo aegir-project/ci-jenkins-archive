@@ -1,0 +1,217 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 32,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "6ddb95c19fdf516f212197434d9c580bd42c67e4",
+            "branch" : [
+              {
+                "SHA1" : "6ddb95c19fdf516f212197434d9c580bd42c67e4",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6ddb95c19fdf516f212197434d9c580bd42c67e4",
+            "branch" : [
+              {
+                "SHA1" : "6ddb95c19fdf516f212197434d9c580bd42c67e4",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6ddb95c19fdf516f212197434d9c580bd42c67e4",
+        "branch" : [
+          {
+            "SHA1" : "6ddb95c19fdf516f212197434d9c580bd42c67e4",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#32",
+  "duration" : 20139,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #32",
+  "id" : "2012-02-08_21-45-58",
+  "keepLog" : false,
+  "number" : 32,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1328755558000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/32/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/pack/pack_service.inc"
+        ],
+        "commitId" : "0b75a1164671c31bdd690ac0d403fbab346d3df7",
+        "timestamp" : 1328301285000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "backport the pack module to 1.6\n",
+        "date" : "2012-02-03T15:34:45-0500 -0500",
+        "id" : "0b75a1164671c31bdd690ac0d403fbab346d3df7",
+        "msg" : "backport the pack module to 1.6",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "http/pack/pack_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/pack/pack_service.inc"
+        ],
+        "commitId" : "b8c4ff8ffad5b0a511f00693aa7e1057bfc820e1",
+        "timestamp" : 1328302424000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix typo\n",
+        "date" : "2012-02-03T15:53:44-0500 -0500",
+        "id" : "b8c4ff8ffad5b0a511f00693aa7e1057bfc820e1",
+        "msg" : "fix typo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/pack/pack_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/pack/pack_service.inc"
+        ],
+        "commitId" : "17b92bcdb1aab7b5ed1bd4ca231f656f66af6835",
+        "timestamp" : 1328302459000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "also sync configs to slave server, which means we *can't* mount /var/aegir as a whole anymore\n",
+        "date" : "2012-02-03T15:54:19-0500 -0500",
+        "id" : "17b92bcdb1aab7b5ed1bd4ca231f656f66af6835",
+        "msg" : "also sync configs to slave server, which means we *can't* mount /var/aegir as a whole anymore",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/pack/pack_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/pack/pack_service.inc"
+        ],
+        "commitId" : "d4fb492d55bf41053f45077104554d556783a099",
+        "timestamp" : 1328302990000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix another typo\n",
+        "date" : "2012-02-03T16:03:10-0500 -0500",
+        "id" : "d4fb492d55bf41053f45077104554d556783a099",
+        "msg" : "fix another typo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/pack/pack_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/pack/pack_service.inc"
+        ],
+        "commitId" : "1c7e9d8ca077ed5ba7d421b987271b6e9130a104",
+        "timestamp" : 1328303116000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "properly pass configs around\n",
+        "date" : "2012-02-03T16:05:16-0500 -0500",
+        "id" : "1c7e9d8ca077ed5ba7d421b987271b6e9130a104",
+        "msg" : "properly pass configs around",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/pack/pack_service.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : "iamsureiwanttodothis"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DEBIAN_RELEASE",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Antoine Beaupré",
+          "userId" : "anarcat",
+          "userName" : "Antoine Beaupré"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#3",
+  "duration" : 3233,
+  "estimatedDuration" : 2036,
+  "executor" : None,
+  "fullDisplayName" : "R clear repo #3",
+  "id" : "2012-03-08_21-22-24",
+  "keepLog" : False,
+  "number" : 3,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331259744000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20clear%20repo/3/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

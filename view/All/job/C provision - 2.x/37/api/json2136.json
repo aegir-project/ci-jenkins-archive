@@ -1,0 +1,139 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 37,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+            "branch" : [
+              {
+                "SHA1" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+            "branch" : [
+              {
+                "SHA1" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+        "branch" : [
+          {
+            "SHA1" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#37",
+  "duration" : 10849,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #37",
+  "id" : "2012-03-29_16-46-11",
+  "keepLog" : false,
+  "number" : 37,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1333053971000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/37/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/fastcgi_params.conf",
+          "http/Provision/Service/http/fastcgi_ssl_params.conf",
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+        "timestamp" : 1333038969000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Provide MOBILE_DEVICE value detected/set by Nginx as accessible for PHP-FPM/Drupal backend.\n",
+        "date" : "2012-03-29T12:36:09-0400 +0200",
+        "id" : "eba962a38d92ecd97bdeef83e4e4dc436d46dfe1",
+        "msg" : "Provide MOBILE_DEVICE value detected/set by Nginx as accessible for PHP-FPM/Drupal backend.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/fastcgi_params.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/fastcgi_ssl_params.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

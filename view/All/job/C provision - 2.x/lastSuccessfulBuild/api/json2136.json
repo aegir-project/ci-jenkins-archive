@@ -1,0 +1,247 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 68,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+            "branch" : [
+              {
+                "SHA1" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+            "branch" : [
+              {
+                "SHA1" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+        "branch" : [
+          {
+            "SHA1" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#68",
+  "duration" : 23730,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #68",
+  "id" : "2012-06-29_22-16-20",
+  "keepLog" : false,
+  "number" : 68,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1341022580000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/68/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/rules",
+          "debian/aegir-hostmaster.hosting-queued.init"
+        ],
+        "commitId" : "b15b39c8b00834ff42feeaee413e0a400eb55bd5",
+        "timestamp" : 1340992819000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "install the hosting_queued init script in the hostmaster package\n",
+        "date" : "2012-06-29T14:00:19-0400 -0400",
+        "id" : "b15b39c8b00834ff42feeaee413e0a400eb55bd5",
+        "msg" : "install the hosting_queued init script in the hostmaster package",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/rules"
+          },
+          {
+            "editType" : "add",
+            "file" : "debian/aegir-hostmaster.hosting-queued.init"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/control"
+        ],
+        "commitId" : "2d6664bbcb779d313f2d80dc5e77902461676d97",
+        "timestamp" : 1340994298000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "forgot lsb-base depends for init script\n",
+        "date" : "2012-06-29T14:24:58-0400 -0400",
+        "id" : "2d6664bbcb779d313f2d80dc5e77902461676d97",
+        "msg" : "forgot lsb-base depends for init script",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/control"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/rules"
+        ],
+        "commitId" : "6e29b0eca404ec40730626c13201ac8f18f2a02b",
+        "timestamp" : 1341007460000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "this is branch 2.x, not 1.x\n",
+        "date" : "2012-06-29T18:04:20-0400 -0400",
+        "id" : "6e29b0eca404ec40730626c13201ac8f18f2a02b",
+        "msg" : "this is branch 2.x, not 1.x",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/rules"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/rules"
+        ],
+        "commitId" : "d57a1f6411b965ac32a30f62efc08562dc2dff50",
+        "timestamp" : 1341007460000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "adapt autobuild version to 2.x versionning\n",
+        "date" : "2012-06-29T18:04:20-0400 -0400",
+        "id" : "d57a1f6411b965ac32a30f62efc08562dc2dff50",
+        "msg" : "adapt autobuild version to 2.x versionning",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/rules"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "51a3617ebe8222d4aa9509bce41eb14888767c00",
+        "timestamp" : 1341007460000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "make sure the default release number is insanely low\n\nthis is to make sure automatic builds are more recent than the factory default\n",
+        "date" : "2012-06-29T18:04:20-0400 -0400",
+        "id" : "51a3617ebe8222d4aa9509bce41eb14888767c00",
+        "msg" : "make sure the default release number is insanely low",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/rules"
+        ],
+        "commitId" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+        "timestamp" : 1341007676000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix typo that was keeping the init script from working\n",
+        "date" : "2012-06-29T18:07:56-0400 -0400",
+        "id" : "1e0c6b5306291b0b152829c58e2394d9870e05c5",
+        "msg" : "fix typo that was keeping the init script from working",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/rules"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

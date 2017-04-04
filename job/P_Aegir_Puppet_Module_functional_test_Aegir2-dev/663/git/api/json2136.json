@@ -1,0 +1,64 @@
+{
+  "_class" : "hudson.plugins.git.util.BuildData",
+  "buildsByBranchName" : {
+    "origin/1.0.x" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 663,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "branch" : [
+          {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "branch" : [
+          {
+            "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      }
+    },
+    "origin/new" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 20,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "branch" : [
+          {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "branch" : [
+          {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "name" : "origin/new"
+          }
+        ]
+      }
+    }
+  },
+  "lastBuiltRevision" : {
+    "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+    "branch" : [
+      {
+        "SHA1" : "ae011e6946293f0abe7a39b9d0d38fa0914ce0f0",
+        "name" : "origin/1.0.x"
+      }
+    ]
+  },
+  "remoteUrls" : [
+    "http://git.drupal.org/project/puppet-aegir.git"
+  ],
+  "scmName" : ""
+}

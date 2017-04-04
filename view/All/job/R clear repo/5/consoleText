@@ -1,0 +1,4 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/R clear repo/workspace
+ERROR: Invalid value for parameter [BUILD_CONFIRMATION] specified: i am sure i want to do this
+Finished: FAILURE

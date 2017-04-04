@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 47,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+            "branch" : [
+              {
+                "SHA1" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+            "branch" : [
+              {
+                "SHA1" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+        "branch" : [
+          {
+            "SHA1" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#47",
+  "duration" : 21173,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #47",
+  "id" : "2012-03-06_10-16-23",
+  "keepLog" : False,
+  "number" : 47,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331046983000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/47/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "2cf618e13a16bf13f43fecc5a754acdb1885fe4d",
+        "timestamp" : 1330976239000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Add Nutch to the list of blocked crawlers in Nginx.\n",
+        "date" : "2012-03-05T14:37:19-0500 +0100",
+        "id" : "2cf618e13a16bf13f43fecc5a754acdb1885fe4d",
+        "msg" : "Add Nutch to the list of blocked crawlers in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+        "timestamp" : 1331028491000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "More compact regex for blocked crawlers in Nginx.\n",
+        "date" : "2012-03-06T05:08:11-0500 +0100",
+        "id" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+        "msg" : "More compact regex for blocked crawlers in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Started by an SCM change
+Checkout:workspace / /var/lib/jenkins/jobs/R hostmaster - 1.x/workspace - hudson.remoting.LocalChannel@5128b9bc
+Using strategy: Default
+Last Built Revision: Revision 099e53ed83d55bd96d1455fa26ec522961eff13e (provision/6.x-1.x)
+Checkout:provision / /var/lib/jenkins/jobs/R hostmaster - 1.x/workspace/provision - hudson.remoting.LocalChannel@5128b9bc
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://git.drupalcode.org/project/hostmaster
+Commencing build of Revision 4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9 (provision/6.x-1.x)
+Checking out Revision 4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9 (provision/6.x-1.x)
+[workspace] $ /bin/sh -xe /tmp/hudson3339931022651599361.sh
++ rm -f review.xml
++ drush standalone-coder-review --files=provision --reviews=style,comment --output-filename=review.xml -y
+Running the coder review                                             [1;32;40m[1m[ok][0m
+Results written to /var/lib/jenkins/jobs/R hostmaster -              [1;32;40m[1m[ok][0m
+1.x/workspace/review.xml
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/jobs/R hostmaster - 1.x/workspace
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/jobs/R hostmaster - 1.x/workspace/review.xml of module  with 401 warnings.
+Finished: SUCCESS

@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 11,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+            "branch" : [
+              {
+                "SHA1" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+            "branch" : [
+              {
+                "SHA1" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+        "branch" : [
+          {
+            "SHA1" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#11",
+  "duration" : 15901,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #11",
+  "id" : "2012-02-26_23-01-22",
+  "keepLog" : false,
+  "number" : 11,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1330315282000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/11/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/alias/hosting_alias.module"
+        ],
+        "commitId" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+        "timestamp" : 1330297089000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "By Bladeedu: properly validate site aliases on form submission rather than strip them silently. Fixes #1450134\n",
+        "date" : "2012-02-26T17:58:09-0500 +1100",
+        "id" : "274afb221df4fd928af4d2e7288c6cdb222304dd",
+        "msg" : "By Bladeedu: properly validate site aliases on form submission rather than strip them silently. Fixes #1450134",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/alias/hosting_alias.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

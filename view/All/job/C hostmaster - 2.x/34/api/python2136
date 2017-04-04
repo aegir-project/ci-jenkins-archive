@@ -1,0 +1,176 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 34,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+            "branch" : [
+              {
+                "SHA1" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+            "branch" : [
+              {
+                "SHA1" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+        "branch" : [
+          {
+            "SHA1" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#34",
+  "duration" : 11536,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #34",
+  "id" : "2012-06-29_19-31-18",
+  "keepLog" : False,
+  "number" : 34,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1341012678000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/34/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "8d99303c8b81e915549897addee0b635cb89b95e",
+        "timestamp" : 1340997293000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "reindent, no other change\n",
+        "date" : "2012-06-29T15:14:53-0400 -0400",
+        "id" : "8d99303c8b81e915549897addee0b635cb89b95e",
+        "msg" : "reindent, no other change",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "8953de010ceaf169f1e2324e952ebbfcf6a9f517",
+        "timestamp" : 1340997830000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "make output on one line\n",
+        "date" : "2012-06-29T15:23:50-0400 -0400",
+        "id" : "8953de010ceaf169f1e2324e952ebbfcf6a9f517",
+        "msg" : "make output on one line",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+        "timestamp" : 1340998115000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "silence the standard output of the daemon\n\nit's in the Drupal watchdog anyways and it was cluttering the console\n",
+        "date" : "2012-06-29T15:28:35-0400 -0400",
+        "id" : "af7f82b4d44b0eb37688eb744af4a74d8960dccb",
+        "msg" : "silence the standard output of the daemon",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

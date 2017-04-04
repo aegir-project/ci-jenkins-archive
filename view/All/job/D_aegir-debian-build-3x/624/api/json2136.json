@@ -1,0 +1,203 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 624,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+            "branch" : [
+              {
+                "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+            "branch" : [
+              {
+                "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+        "branch" : [
+          {
+            "SHA1" : "76b2c5b0b5102143c6afbc12935a1c8e990cd83f",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 624,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ee866fe6ed512e1f918bf6b035e181b6e01393c0",
+            "branch" : [
+              {
+                "SHA1" : "ee866fe6ed512e1f918bf6b035e181b6e01393c0",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ee866fe6ed512e1f918bf6b035e181b6e01393c0",
+            "branch" : [
+              {
+                "SHA1" : "ee866fe6ed512e1f918bf6b035e181b6e01393c0",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "ee866fe6ed512e1f918bf6b035e181b6e01393c0",
+        "branch" : [
+          {
+            "SHA1" : "ee866fe6ed512e1f918bf6b035e181b6e01393c0",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/hostmaster"
+      ],
+      "scmName" : "hostmaster"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 95,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        },
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 624,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "986c50953ac7ee9c694a465251ff82186ae0c5ba",
+            "branch" : [
+              {
+                "SHA1" : "986c50953ac7ee9c694a465251ff82186ae0c5ba",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "986c50953ac7ee9c694a465251ff82186ae0c5ba",
+            "branch" : [
+              {
+                "SHA1" : "986c50953ac7ee9c694a465251ff82186ae0c5ba",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "986c50953ac7ee9c694a465251ff82186ae0c5ba",
+        "branch" : [
+          {
+            "SHA1" : "986c50953ac7ee9c694a465251ff82186ae0c5ba",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#624",
+  "duration" : 22198,
+  "estimatedDuration" : 22533,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-build-3x #624",
+  "id" : "624",
+  "keepLog" : false,
+  "number" : 624,
+  "queueId" : 5794,
+  "result" : "SUCCESS",
+  "timestamp" : 1490850060196,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-3x/624/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

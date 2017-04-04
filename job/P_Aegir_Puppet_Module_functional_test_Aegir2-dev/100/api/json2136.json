@@ -1,0 +1,166 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 100,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+            "branch" : [
+              {
+                "SHA1" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+            "branch" : [
+              {
+                "SHA1" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+        "branch" : [
+          {
+            "SHA1" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#100",
+  "duration" : 1278277,
+  "estimatedDuration" : 390215,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev #100",
+  "id" : "2014-08-26_19-44-36",
+  "keepLog" : false,
+  "number" : 100,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1409096676000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/100/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/Vagrantfile"
+        ],
+        "commitId" : "93425cc585659c0f0c139f7760eca4729be520cb",
+        "timestamp" : 1409056304000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir2to3-dev: Setup host machine cache for /var/aegir/.drush/cache\n",
+        "date" : "2014-08-26T08:31:44-0400 +0200",
+        "id" : "93425cc585659c0f0c139f7760eca4729be520cb",
+        "msg" : "aegir2to3-dev: Setup host machine cache for /var/aegir/.drush/cache",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/Vagrantfile",
+          "tests/functional_tests/aegir3-dev/Vagrantfile"
+        ],
+        "commitId" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+        "timestamp" : 1409062910000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir2 and 3 -dev: Setup host machine cache for /var/aegir/.drush/cache\n",
+        "date" : "2014-08-26T10:21:50-0400 +0200",
+        "id" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+        "msg" : "aegir2 and 3 -dev: Setup host machine cache for /var/aegir/.drush/cache",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

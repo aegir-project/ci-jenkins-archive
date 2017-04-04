@@ -1,0 +1,139 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 258,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+        "branch" : [
+          {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 258,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+            "branch" : [
+              {
+                "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+            "branch" : [
+              {
+                "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+        "branch" : [
+          {
+            "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+            "name" : "origin/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#258",
+  "duration" : 20625,
+  "estimatedDuration" : 166091172,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-auto #258",
+  "id" : "2014-09-12_03-16-57",
+  "keepLog" : false,
+  "number" : 258,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1410506217000,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/258/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

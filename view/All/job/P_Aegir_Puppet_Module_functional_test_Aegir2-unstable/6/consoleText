@@ -1,0 +1,56 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision 8357e4a36375e96ea64db9fee4fd52da0f412850 (origin/1.0.x)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision f6be1e202de32b9ad89b2f4e67b1898200607e78 (origin/1.0.x)
+Checking out Revision f6be1e202de32b9ad89b2f4e67b1898200607e78 (origin/1.0.x)
+[workspace] $ /bin/sh -xe /tmp/hudson2923437963193614087.sh
++ ./tests/functional_tests/aegir2-unstable/setup.sh
+Cloning into /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace/tests/functional_tests/aegir2-unstable/modules/drush...
+Cloning into /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/workspace/tests/functional_tests/aegir2-unstable/modules/aegir...
+[workspace] $ /bin/sh -xe /tmp/hudson3544553686244818255.sh
++ ./tests/functional_tests/aegir2-unstable/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.32
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Fixed port collision for 22 => 2222. Now on port 2200.
+[default] Forwarding ports...
+[default] -- 22 => 2200 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Setting host name...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- apt_cache: /var/cache/apt/archives
+[default] -- manifests: /tmp/vagrant-puppet/manifests
+[default] -- v-pp-m0: /tmp/vagrant-puppet/modules-0
+[default] Running provisioner: Vagrant::Provisioners::Puppet...
+[default] Running Puppet with /tmp/vagrant-puppet/manifests/nodes.pp...
+stdin: is not a tty
+Could not find default node or by name with 'aegir2-unstable.test, aegir2-unstable' on node aegir2-unstable.test
+
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+cd /tmp/vagrant-puppet/manifests && puppet apply --modulepath '/tmp/vagrant-puppet/modules-0' /tmp/vagrant-puppet/manifests/nodes.pp
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

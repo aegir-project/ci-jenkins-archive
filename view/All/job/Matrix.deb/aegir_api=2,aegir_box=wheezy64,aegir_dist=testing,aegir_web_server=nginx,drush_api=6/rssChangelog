@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom"><title>2,wheezy64,testing,nginx,6 Git changes</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=wheezy64,aegir_dist=testing,aegir_web_server=nginx,drush_api=6/changes" rel="alternate"/><updated>2001-01-01T00:00:00Z</updated><author><name>Jenkins Server</name></author><id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id></feed>

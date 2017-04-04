@@ -1,0 +1,128 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision 35f7e5a09a378cbe649bf5c9d46d9c28ceb9998a (origin/new)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision ee93a358b4b9343ed96c453b4d8a79ea0b412635 (origin/new)
+Checking out Revision ee93a358b4b9343ed96c453b4d8a79ea0b412635 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson2661396806757900773.sh
++ ./tests/functional_tests/aegir2-dev/setup.sh
+Cloning into /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace/tests/functional_tests/aegir2-dev/modules/drush...
+Cloning into /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace/tests/functional_tests/aegir2-dev/modules/aegir...
+[workspace] $ /bin/sh -xe /tmp/hudson102502336548473047.sh
++ ./tests/functional_tests/aegir2-dev/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.26
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Fixed port collision for 22 => 2222. Now on port 2200.
+[default] Forwarding ports...
+[default] -- 22 => 2200 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Setting host name...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- apt_cache: /var/cache/apt/archives
+[default] -- manifests: /tmp/vagrant-puppet/manifests
+[default] -- v-pp-m0: /tmp/vagrant-puppet/modules-0
+[default] Running provisioner: Vagrant::Provisioners::Puppet...
+[default] Running Puppet with /tmp/vagrant-puppet/manifests/nodes.pp...
+stdin: is not a tty
+[0;36mnotice: /Stage[main]/Drush::Git::Drush/Package[git]/ensure: ensure changed 'purged' to 'present'[0m
+[default] Destroying VM and associated drives...
+/var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/ruby_compat.rb:33:in `select': closed stream (IOError)
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/ruby_compat.rb:33:in `io_select'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/ruby_compat.rb:32:in `synchronize'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/ruby_compat.rb:32:in `io_select'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/transport/packet_stream.rb:73:in `available_for_read?'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/transport/packet_stream.rb:85:in `next_packet'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/transport/session.rb:171:in `poll_message'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/transport/session.rb:166:in `loop'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/transport/session.rb:166:in `poll_message'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/session.rb:451:in `dispatch_incoming_packets'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/session.rb:213:in `preprocess'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/session.rb:197:in `process'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/session.rb:161:in `loop'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/session.rb:161:in `loop_forever'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/session.rb:161:in `loop'
+	from /var/lib/gems/1.8/gems/net-ssh-2.2.2/lib/net/ssh/connection/channel.rb:269:in `wait'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/communication/ssh.rb:213:in `shell_execute'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/communication/ssh.rb:53:in `execute'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/communication/ssh.rb:110:in `connect'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/communication/ssh.rb:52:in `execute'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/communication/ssh.rb:72:in `sudo'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/provisioners/puppet.rb:159:in `run_puppet_client'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/provisioners/puppet.rb:102:in `provision!'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/provision.rb:34:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/provision.rb:31:in `each'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/provision.rb:31:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/forward_ports.rb:24:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/check_port_collisions.rb:42:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/env/set.rb:16:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/clear_forwarded_ports.rb:13:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/clean_machine_folder.rb:17:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/check_accessible.rb:18:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/general/validate.rb:13:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/general/check_virtualbox.rb:23:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/match_mac_address.rb:16:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/default_name.rb:17:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/check_guest_additions.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/import.rb:31:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/check_box.rb:28:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/vm/check_accessible.rb:18:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/general/validate.rb:13:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/general/check_virtualbox.rb:23:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/warden.rb:33:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/builder.rb:92:in `call'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/runner.rb:49:in `run'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/util/busy.rb:19:in `busy'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/action/runner.rb:49:in `run'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/vm.rb:192:in `run_action'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/vm.rb:145:in `up'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/command/up.rb:31:in `execute'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/command/base.rb:116:in `with_target_vms'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/command/base.rb:111:in `each'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/command/base.rb:111:in `with_target_vms'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/command/up.rb:24:in `execute'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/cli.rb:42:in `execute'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/lib/vagrant/environment.rb:167:in `cli'
+	from /var/lib/gems/1.8/gems/vagrant-1.0.3/bin/vagrant:43
+	from /usr/bin/vagrant:19:in `load'
+	from /usr/bin/vagrant:19
+./tests/functional_tests/aegir2-dev/run-tests.sh: 17: Syntax error: end of file unexpected (expecting "then")
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+IRC notifier plugin: [ERROR] not connected. Cannot send message to '#aegir'
+Finished: FAILURE

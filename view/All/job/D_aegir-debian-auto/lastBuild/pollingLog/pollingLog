@@ -1,0 +1,19 @@
+Started on Sep 12, 2014 3:16:46 AM
+Polling SCM changes on master
+Using strategy: Default
+ > git rev-parse --is-inside-work-tree
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/aegir-project/aegir_jenkins_scripts.git
+Fetching upstream changes from https://github.com/aegir-project/aegir_jenkins_scripts.git
+ > git --version
+ > git fetch --tags --progress https://github.com/aegir-project/aegir_jenkins_scripts.git +refs/heads/*:refs/remotes/origin/*
+Polling for changes in
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > git log --full-history --no-abbrev --format=raw -M -m --raw -1 5ab15ac04f2e342026644b981dc82b34f1e40017
+Using strategy: Default
+[poll] Last Built Revision: Revision 7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b (origin/6.x-1.x)
+ > git ls-remote -h git://git.drupalcode.org/project/provision 6.x-1.x
+Done. Took 1.6 sec
+Changes found

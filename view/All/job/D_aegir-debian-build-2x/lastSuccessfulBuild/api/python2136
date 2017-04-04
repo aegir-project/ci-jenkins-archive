@@ -1,0 +1,249 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 408,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+            "branch" : [
+              {
+                "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+            "branch" : [
+              {
+                "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+        "branch" : [
+          {
+            "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 408,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "269a53430db03a8945cab950de48fb3d3d743188",
+            "branch" : [
+              {
+                "SHA1" : "269a53430db03a8945cab950de48fb3d3d743188",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "269a53430db03a8945cab950de48fb3d3d743188",
+            "branch" : [
+              {
+                "SHA1" : "269a53430db03a8945cab950de48fb3d3d743188",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "269a53430db03a8945cab950de48fb3d3d743188",
+        "branch" : [
+          {
+            "SHA1" : "269a53430db03a8945cab950de48fb3d3d743188",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/hostmaster"
+      ],
+      "scmName" : "hostmaster"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 406,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        },
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 408,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+            "branch" : [
+              {
+                "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+            "branch" : [
+              {
+                "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+        "branch" : [
+          {
+            "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir2-cluster-slave_2.4+408.df548ea_all.deb",
+      "fileName" : "aegir2-cluster-slave_2.4+408.df548ea_all.deb",
+      "relativePath" : "provision/build-area/aegir2-cluster-slave_2.4+408.df548ea_all.deb"
+    },
+    {
+      "displayPath" : "aegir2-hostmaster_2.4+408.df548ea_all.deb",
+      "fileName" : "aegir2-hostmaster_2.4+408.df548ea_all.deb",
+      "relativePath" : "provision/build-area/aegir2-hostmaster_2.4+408.df548ea_all.deb"
+    },
+    {
+      "displayPath" : "aegir2-provision_2.4+408.df548ea_all.deb",
+      "fileName" : "aegir2-provision_2.4+408.df548ea_all.deb",
+      "relativePath" : "provision/build-area/aegir2-provision_2.4+408.df548ea_all.deb"
+    },
+    {
+      "displayPath" : "aegir2_2.4+408.df548ea_all.deb",
+      "fileName" : "aegir2_2.4+408.df548ea_all.deb",
+      "relativePath" : "provision/build-area/aegir2_2.4+408.df548ea_all.deb"
+    }
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#408",
+  "duration" : 21009,
+  "estimatedDuration" : 20985,
+  "executor" : None,
+  "fullDisplayName" : "D_aegir-debian-build-2x #408",
+  "id" : "408",
+  "keepLog" : False,
+  "number" : 408,
+  "queueId" : 264,
+  "result" : "SUCCESS",
+  "timestamp" : 1440700046162,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "drupal-org.make"
+        ],
+        "commitId" : "269a53430db03a8945cab950de48fb3d3d743188",
+        "timestamp" : 1440699178000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+          "fullName" : "Guillaume Boudrias"
+        },
+        "comment" : "Update ctools version\n",
+        "date" : "2015-08-27T14:12:58-0400 -0400",
+        "id" : "269a53430db03a8945cab950de48fb3d3d743188",
+        "msg" : "Update ctools version",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "drupal-org.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+      "fullName" : "Guillaume Boudrias"
+    }
+  ]
+}

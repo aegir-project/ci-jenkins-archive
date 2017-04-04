@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 9,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+            "branch" : [
+              {
+                "SHA1" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+            "branch" : [
+              {
+                "SHA1" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+        "branch" : [
+          {
+            "SHA1" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#9",
+  "duration" : 13685,
+  "estimatedDuration" : 213289,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 1.x #9",
+  "id" : "2012-02-13_19-00-58",
+  "keepLog" : false,
+  "number" : 9,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329177658000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/9/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.module"
+        ],
+        "commitId" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+        "timestamp" : 1329159541000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1435340 by Steven Jones: Fixed node param 'created' is refreshed on node_save().\n",
+        "date" : "2012-02-13T13:59:01-0500 +0000",
+        "id" : "1e2a01ae2de7527faaf0855dbe8b9763cd8d8c46",
+        "msg" : "Issue #1435340 by Steven Jones: Fixed node param 'created' is refreshed on node_save().",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

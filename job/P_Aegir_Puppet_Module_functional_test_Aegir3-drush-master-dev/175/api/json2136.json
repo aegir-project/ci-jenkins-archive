@@ -1,0 +1,156 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 175,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "branch" : [
+          {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#175",
+  "duration" : 171336,
+  "estimatedDuration" : 188500,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #175",
+  "id" : "2015-05-16_03-19-14",
+  "keepLog" : false,
+  "number" : 175,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1431760754000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/175/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-backports/setup.sh",
+          "tests/functional_tests/aegir2-backports/run-tests.sh",
+          "tests/functional_tests/aegir2-backports/nodes.pp",
+          "tests/functional_tests/aegir2-backports/Vagrantfile"
+        ],
+        "commitId" : "2a0424a99dd99bd236696f331efa623ed9eb4111",
+        "timestamp" : 1431721697000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add tests for the 6.x-2.x-backports branch.\n",
+        "date" : "2015-05-15T16:28:17-0400 -0700",
+        "id" : "2a0424a99dd99bd236696f331efa623ed9eb4111",
+        "msg" : "Add tests for the 6.x-2.x-backports branch.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-backports/nodes.pp"
+        ],
+        "commitId" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "timestamp" : 1431724085000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Change node name for backports tests.\n",
+        "date" : "2015-05-15T17:08:05-0400 -0700",
+        "id" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "msg" : "Change node name for backports tests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-backports/nodes.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

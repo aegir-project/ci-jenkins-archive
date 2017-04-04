@@ -1,0 +1,125 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"D_aegir-debian-build-3x\" build number 137",
+          "upstreamBuild" : 137,
+          "upstreamProject" : "D_aegir-debian-build-3x",
+          "upstreamUrl" : "job/D_aegir-debian-build-3x/"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 46,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+            "branch" : [
+              {
+                "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+            "branch" : [
+              {
+                "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/unstable" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+            "branch" : [
+              {
+                "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+                "name" : "origin/unstable"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+            "branch" : [
+              {
+                "SHA1" : "354e1fb2a4215d12a577e0ddf589d6a808e48a78",
+                "name" : "origin/unstable"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+        "branch" : [
+          {
+            "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#46",
+  "duration" : 181699,
+  "estimatedDuration" : 156231,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-unstable #46",
+  "id" : "46",
+  "keepLog" : False,
+  "number" : 46,
+  "queueId" : 743,
+  "result" : "FAILURE",
+  "timestamp" : 1444761589365,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/46/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

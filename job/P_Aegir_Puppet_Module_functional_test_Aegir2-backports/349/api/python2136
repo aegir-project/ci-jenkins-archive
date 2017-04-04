@@ -1,0 +1,95 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 349,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+            "branch" : [
+              {
+                "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+            "branch" : [
+              {
+                "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+        "branch" : [
+          {
+            "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#349",
+  "duration" : 395706,
+  "estimatedDuration" : 397201,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-backports #349",
+  "id" : "349",
+  "keepLog" : False,
+  "number" : 349,
+  "queueId" : 1066,
+  "result" : "FAILURE",
+  "timestamp" : 1463208180819,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-backports/349/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

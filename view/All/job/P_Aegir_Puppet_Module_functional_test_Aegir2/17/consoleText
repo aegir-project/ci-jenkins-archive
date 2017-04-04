@@ -1,0 +1,35 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Last Built Revision: Revision da32c2c2c641ef63d721fc7f382b981042bf7a6c (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision da32c2c2c641ef63d721fc7f382b981042bf7a6c (origin/new)
+Checking out Revision da32c2c2c641ef63d721fc7f382b981042bf7a6c (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson6165169890281759616.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Already up-to-date.
+Already up-to-date.
+[workspace] $ /bin/sh -xe /tmp/hudson7483413392979397435.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.28
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+Build was aborted
+Aborted by Christopher Gervais
+Finished: ABORTED

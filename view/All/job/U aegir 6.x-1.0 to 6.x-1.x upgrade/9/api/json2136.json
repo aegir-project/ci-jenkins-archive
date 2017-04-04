@@ -1,0 +1,191 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "AEGIR_VERSION",
+          "value" : "6.x-1.7"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DRUSH_VERSION",
+          "value" : "7.x-4.4"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "UPGRADE_VERSION",
+          "value" : "HEAD"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "TEST_TYPE",
+          "value" : "provision"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Antoine Beaupré",
+          "userId" : "anarcat",
+          "userName" : "Antoine Beaupré"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 9,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+            "branch" : [
+              {
+                "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+            "branch" : [
+              {
+                "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+        "branch" : [
+          {
+            "SHA1" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#9",
+  "duration" : 270220,
+  "estimatedDuration" : 355912,
+  "executor" : null,
+  "fullDisplayName" : "U aegir 6.x-1.0 to 6.x-1.x upgrade #9",
+  "id" : "2012-03-08_22-09-16",
+  "keepLog" : false,
+  "number" : 9,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1331262556000,
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/9/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir_dpkg_install.py"
+        ],
+        "commitId" : "b78b00980ad071e83ca0cb5e8a5f5d39848a7345",
+        "timestamp" : 1331243715000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add back sources.list for drush_make\n",
+        "date" : "2012-03-08T16:55:15-0500 -0500",
+        "id" : "b78b00980ad071e83ca0cb5e8a5f5d39848a7345",
+        "msg" : "add back sources.list for drush_make",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir_dpkg_install.py"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir_dpkg_install.py"
+        ],
+        "commitId" : "620b08d76590a181afd483a95299b7cc27ec9b2d",
+        "timestamp" : 1331244103000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add missing aegir repo(!)\n",
+        "date" : "2012-03-08T17:01:43-0500 -0500",
+        "id" : "620b08d76590a181afd483a95299b7cc27ec9b2d",
+        "msg" : "add missing aegir repo(!)",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir_dpkg_install.py"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir_dpkg_install.py"
+        ],
+        "commitId" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+        "timestamp" : 1331244438000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "long day: fix parse error again\n",
+        "date" : "2012-03-08T17:07:18-0500 -0500",
+        "id" : "b1105388dcac54728270ae19b716f4b687e2cad7",
+        "msg" : "long day: fix parse error again",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir_dpkg_install.py"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 25,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+            "branch" : [
+              {
+                "SHA1" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+            "branch" : [
+              {
+                "SHA1" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+        "branch" : [
+          {
+            "SHA1" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#25",
+  "duration" : 7594,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #25",
+  "id" : "2012-05-16_11-45-26",
+  "keepLog" : False,
+  "number" : 25,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1337183126000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/25/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.module"
+        ],
+        "commitId" : "8a6110143056406813819bbff8f9fff86e7be33d",
+        "timestamp" : 1337167819000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Properly exit after calling drupal_access_denied() on package/task nodes.\n",
+        "date" : "2012-05-16T07:30:19-0400 +0100",
+        "id" : "8a6110143056406813819bbff8f9fff86e7be33d",
+        "msg" : "Properly exit after calling drupal_access_denied() on package/task nodes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module"
+        ],
+        "commitId" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+        "timestamp" : 1337167927000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Filter Drush log messages properly when viewing task logs.\n",
+        "date" : "2012-05-16T07:32:07-0400 +0100",
+        "id" : "9476561780dfd1bca39c8cb429327d01f6e679f4",
+        "msg" : "Filter Drush log messages properly when viewing task logs.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

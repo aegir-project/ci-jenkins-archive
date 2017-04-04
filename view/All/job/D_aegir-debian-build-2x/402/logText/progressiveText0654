@@ -1,0 +1,228 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git://git.drupalcode.org/project/provision # timeout=10
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git://git.drupalcode.org/project/provision +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/6.x-2.x^{commit} # timeout=10
+Checking out Revision 92638a55dd2a984c2fa6e63687a61044b4b77abc (origin/6.x-2.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 92638a55dd2a984c2fa6e63687a61044b4b77abc # timeout=10
+ > git branch -a # timeout=10
+ > git rev-parse 6.x-1.x^{commit} # timeout=10
+ > git rev-parse 6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/2358795-provision-save-on-verify^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x-1995506-profile-option^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x-backports^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x-1966886-context-to-entity^{commit} # timeout=10
+ > git rev-parse remotes/origin/debian^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-1205458-move_sites_out_of_platforms^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-dns^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-dns_alias_records-1074966^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-drupal-8^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-envobject^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-helmo-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-koumbit^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-log_directory^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-migrate_aliases^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-multiserver-install^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-newhooks^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-cleanup^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-noreg-mail-336068^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-platform_management^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ports^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-purgebackup^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-restore^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-services^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-simplerinstaller^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-site_rename^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl-chained-1062168^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl-ip-allocation-refactor^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-subdir-multiserver^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-webpack^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-webpack1x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-wget-d7-cron-1090678^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/1194676-jenkins-tests^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/1318374-autoloader^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/2048653^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/subdirs^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/subfolders^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_716166_apache_conf^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_dns^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_server_verify^{commit} # timeout=10
+ > git rev-parse remotes/origin/prod-koumbit^{commit} # timeout=10
+ > git rev-parse remotes/origin/ssl^{commit} # timeout=10
+ > git rev-parse remotes/origin/upstream^{commit} # timeout=10
+ > git branch -D 6.x-2.x # timeout=10
+ > git checkout -b 6.x-2.x 92638a55dd2a984c2fa6e63687a61044b4b77abc
+ > git rev-list b321ccdc27b392f0fd3969d4aefdc57075f0500e # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git://git.drupalcode.org/project/hostmaster # timeout=10
+Fetching upstream changes from git://git.drupalcode.org/project/hostmaster
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git://git.drupalcode.org/project/hostmaster +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/6.x-2.x^{commit} # timeout=10
+Checking out Revision fe729f7eb4d962375ad749453184ad5cd7bf74b2 (origin/6.x-2.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fe729f7eb4d962375ad749453184ad5cd7bf74b2
+ > git rev-list fe729f7eb4d962375ad749453184ad5cd7bf74b2 # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/aegir-project/aegir_jenkins_scripts.git # timeout=10
+Fetching upstream changes from https://github.com/aegir-project/aegir_jenkins_scripts.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/aegir-project/aegir_jenkins_scripts.git +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/master
+Seen 2 remote branches
+Checking out Revision 5ab15ac04f2e342026644b981dc82b34f1e40017 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5ab15ac04f2e342026644b981dc82b34f1e40017
+ > git rev-list 5ab15ac04f2e342026644b981dc82b34f1e40017 # timeout=10
+ > git tag -a -f -m Jenkins Build #402 jenkins-D_aegir-debian-build-2x-402 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson4283588490541138123.sh
++ rm -rf provision/build-area/aegir2-cluster-slave_2.1+401.b321ccd_all.deb provision/build-area/aegir2-hostmaster_2.1+401.b321ccd_all.deb provision/build-area/aegir2-provision_2.1+401.b321ccd_all.deb provision/build-area/aegir2_2.1+401.b321ccd_all.deb
+[workspace] $ /bin/sh -xe /tmp/hudson8964684194973727591.sh
++ export LANGUAGE=en_US.UTF-8
++ export LANG=en_US.UTF-8
++ export LC_ALL=en_US.UTF-8
++ cd provision
++ ../aegir_jenkins_scripts/jenkins-debian-build -k jenkins@ci.aegirproject.org -u
+building aegir-2.2+402.92638a5 Revert "change version information for release 2.2" with key jenkins@ci.aegirproject.org - build tag: jenkins-D_aegir-debian-build-2x-402
+[6.x-2.x eb888fc] dummy commit for jenkins jenkins-D_aegir-debian-build-2x-402 autobuild
+ 1 file changed, 7 insertions(+)
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+gbp:info: Exporting 'HEAD' to '/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-tmp'
+gbp:info: Moving '/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-tmp' to '/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5'
+ dpkg-buildpackage -rfakeroot -D -us -uc -i -I
+dpkg-buildpackage: source package aegir2-provision
+dpkg-buildpackage: source version 2.2+402.92638a5
+dpkg-buildpackage: source changed by Christopher Gervais <jenkins@ci.aegirproject.org>
+ dpkg-source -i -I --before-build aegir2-provision-2.2+402.92638a5
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -i -I -b aegir2-provision-2.2+402.92638a5
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building aegir2-provision in aegir2-provision_2.2+402.92638a5.tar.gz
+dpkg-source: info: building aegir2-provision in aegir2-provision_2.2+402.92638a5.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   dh_auto_install
+   debian/rules override_dh_install
+make[1]: Entering directory `/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5'
+cp -r "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/db/"  "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/dns/"  "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/http/" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/"*.make "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/platform/" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/Provision/" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/Symfony/" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5"/*.inc "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5"/*.php "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5"/*.info "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/debian/aegir2-provision/usr/share/drush/commands/provision/"
+# We need this nasty hack, because we added directories.
+# TODO: this is really lame, there must be a better way to do this?
+if [ -d "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/provision-tests" ]; then cp -r "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/provision-tests/" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/debian/aegir2-provision/usr/share/drush/commands/provision/"; fi
+if [ -d "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/subdirs" ]; then cp -r "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/subdirs/" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/debian/aegir2-provision/usr/share/drush/commands/provision/"; fi
+cp "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/debian/aegir2-provision.lintian" "/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5/debian/aegir2-provision/usr/share/lintian/overrides/aegir-provision"
+make[1]: Leaving directory `/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_installman
+   dh_installcatalogs
+   dh_installcron
+   dh_installdebconf
+   dh_installemacsen
+   dh_installifupdown
+   dh_installinfo
+   dh_pysupport
+dh_pysupport: This program is deprecated, you should use dh_python2 instead. Migration guide: http://deb.li/dhs2p
+   debian/rules override_dh_installinit
+make[1]: Entering directory `/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5'
+dh_installinit --name=hosting-queued
+make[1]: Leaving directory `/var/lib/jenkins/jobs/D_aegir-debian-build-2x/workspace/provision/build-area/aegir2-provision-2.2+402.92638a5'
+   dh_installmenu
+   dh_installmime
+   dh_installmodules
+   dh_installlogcheck
+   dh_installlogrotate
+   dh_installpam
+   dh_installppp
+   dh_installudev
+   dh_installwm
+   dh_installxfonts
+   dh_installgsettings
+   dh_bugfiles
+   dh_ucf
+   dh_lintian
+   dh_gconf
+   dh_icons
+   dh_perl
+   dh_usrlocal
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `aegir2-provision' in `../aegir2-provision_2.2+402.92638a5_all.deb'.
+dpkg-deb: building package `aegir2-hostmaster' in `../aegir2-hostmaster_2.2+402.92638a5_all.deb'.
+dpkg-deb: building package `aegir2' in `../aegir2_2.2+402.92638a5_all.deb'.
+dpkg-deb: building package `aegir2-cluster-slave' in `../aegir2-cluster-slave_2.2+402.92638a5_all.deb'.
+ dpkg-genchanges  >../aegir2-provision_2.2+402.92638a5_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source -i -I --after-build aegir2-provision-2.2+402.92638a5
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+W: aegir2-provision source: changelog-should-mention-nmu
+W: aegir2-provision source: source-nmu-has-incorrect-version-number 2.2+402.92638a5
+W: aegir2-provision source: out-of-date-standards-version 3.9.2 (current is 3.9.4)
+W: aegir2-cluster-slave: malformed-prompt-in-templates aegir/master_ssh_key
+W: aegir2-cluster-slave: malformed-prompt-in-templates aegir/master_mountpoint
+E: aegir2-cluster-slave: non-standard-dir-in-var var/aegir/
+W: aegir2-provision: extra-license-file usr/share/drush/commands/provision/Symfony/Component/ClassLoader/LICENSE
+E: aegir2-provision: non-standard-dir-in-var var/aegir/
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile aegir2-provision_2.2+402.92638a5.dsc jenkins@ci.aegirproject.org
+
+ signfile aegir2-provision_2.2+402.92638a5_amd64.changes jenkins@ci.aegirproject.org
+
+Successfully signed dsc and changes files
+uploading package to aegir repository
+gpg: Signature made Wed 25 Mar 2015 02:11:18 PM EDT using RSA key ID 49CB0A3C
+gpg: Good signature from "Aegir Jenkins Build Bot <jenkins@ci.aegirproject.org>"
+gpg: Signature made Wed 25 Mar 2015 02:11:18 PM EDT using RSA key ID 49CB0A3C
+gpg: Good signature from "Aegir Jenkins Build Bot <jenkins@ci.aegirproject.org>"
+Checking signature on .changes
+Good signature on build-area/aegir2-provision_2.2+402.92638a5_amd64.changes.
+Checking signature on .dsc
+Good signature on build-area/aegir2-provision_2.2+402.92638a5.dsc.
+Uploading to aegir (via local to localhost):
+Successfully uploaded packages.
+debian file built: aegir2_2.2+402.92638a5_all.deb
+fatal: Could not parse object '5ab15ac04f2e342026644b981dc82b34f1e40017'.
+Archiving artifacts
+IRC notifier plugin: Sending notification to: #aegir
+Finished: SUCCESS

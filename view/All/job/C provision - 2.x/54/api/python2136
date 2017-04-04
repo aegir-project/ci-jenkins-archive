@@ -1,0 +1,174 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 54,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+            "branch" : [
+              {
+                "SHA1" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+            "branch" : [
+              {
+                "SHA1" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+        "branch" : [
+          {
+            "SHA1" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#54",
+  "duration" : 8273,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #54",
+  "id" : "2012-04-28_10-15-27",
+  "keepLog" : False,
+  "number" : 54,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335622527000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/54/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/makes/drupal6.build",
+          "tests/makes/drupal5.build",
+          "tests/provision_tests.drush.inc",
+          "provision-tests/makes/openatrium.build",
+          "provision-tests/makes/drupal5.build",
+          "tests/makes/openatrium.build",
+          "provision-tests/makes/drupal6.build",
+          "tests/makes/drupal7.build",
+          "provision-tests/provision_tests.drush.inc",
+          "provision-tests/makes/drupal7.build"
+        ],
+        "commitId" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+        "timestamp" : 1335607287000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Move the provision tests so drush can find them\n",
+        "date" : "2012-04-28T06:01:27-0400 +0100",
+        "id" : "08795bede5781946ae2ae5801c4f8c15051dc0c1",
+        "msg" : "Move the provision tests so drush can find them",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "provision-tests/provision_tests.drush.inc"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/provision_tests.drush.inc"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/makes/openatrium.build"
+          },
+          {
+            "editType" : "add",
+            "file" : "provision-tests/makes/openatrium.build"
+          },
+          {
+            "editType" : "add",
+            "file" : "provision-tests/makes/drupal7.build"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/makes/drupal5.build"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/makes/drupal7.build"
+          },
+          {
+            "editType" : "add",
+            "file" : "provision-tests/makes/drupal6.build"
+          },
+          {
+            "editType" : "add",
+            "file" : "provision-tests/makes/drupal5.build"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/makes/drupal6.build"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

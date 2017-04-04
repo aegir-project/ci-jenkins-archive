@@ -1,0 +1,253 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "7.x-3.9"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 24,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 24,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "aabeed10a21931efb20a208e429678f50fda1606",
+            "branch" : [
+              {
+                "SHA1" : "aabeed10a21931efb20a208e429678f50fda1606",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "aabeed10a21931efb20a208e429678f50fda1606",
+            "branch" : [
+              {
+                "SHA1" : "aabeed10a21931efb20a208e429678f50fda1606",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "aabeed10a21931efb20a208e429678f50fda1606",
+        "branch" : [
+          {
+            "SHA1" : "aabeed10a21931efb20a208e429678f50fda1606",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir3-cluster-slave_3.9_all.deb",
+      "fileName" : "aegir3-cluster-slave_3.9_all.deb",
+      "relativePath" : "provision/build-area/aegir3-cluster-slave_3.9_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-hostmaster_3.9_all.deb",
+      "fileName" : "aegir3-hostmaster_3.9_all.deb",
+      "relativePath" : "provision/build-area/aegir3-hostmaster_3.9_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-provision_3.9_all.deb",
+      "fileName" : "aegir3-provision_3.9_all.deb",
+      "relativePath" : "provision/build-area/aegir3-provision_3.9_all.deb"
+    },
+    {
+      "displayPath" : "aegir3_3.9_all.deb",
+      "fileName" : "aegir3_3.9_all.deb",
+      "relativePath" : "provision/build-area/aegir3_3.9_all.deb"
+    }
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#24",
+  "duration" : 18706,
+  "estimatedDuration" : 19141,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official-3.x #24",
+  "id" : "24",
+  "keepLog" : False,
+  "number" : 24,
+  "queueId" : 4565,
+  "result" : "SUCCESS",
+  "timestamp" : 1483645163553,
+  "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official-3.x/24/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "979e5ebaba2911bc77348e4ff0815883ed2e3a75",
+        "timestamp" : 1483644715000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "change version information for release 3.9\n",
+        "date" : "2017-01-05T14:31:55-0500 +0100",
+        "id" : "979e5ebaba2911bc77348e4ff0815883ed2e3a75",
+        "msg" : "change version information for release 3.9",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir.make",
+          "aegir-release.make"
+        ],
+        "commitId" : "aabeed10a21931efb20a208e429678f50fda1606",
+        "timestamp" : 1483644715000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"change version information for release 3.9\"\n\nThis reverts commit 979e5ebaba2911bc77348e4ff0815883ed2e3a75.\n",
+        "date" : "2017-01-05T14:31:55-0500 +0100",
+        "id" : "aabeed10a21931efb20a208e429678f50fda1606",
+        "msg" : "Revert \"change version information for release 3.9\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

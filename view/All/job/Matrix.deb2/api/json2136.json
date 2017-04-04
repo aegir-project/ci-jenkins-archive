@@ -1,0 +1,103 @@
+{
+  "_class" : "hudson.matrix.MatrixProject",
+  "actions" : [
+    
+  ],
+  "description" : "",
+  "displayName" : "Matrix.deb2",
+  "displayNameOrNull" : null,
+  "name" : "Matrix.deb2",
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.matrix.MatrixBuild",
+      "number" : 4,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/4/"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixBuild",
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/3/"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixBuild",
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/2/"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixBuild",
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/1/"
+    }
+  ],
+  "color" : "red",
+  "firstBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 3 out of the last 4 builds failed.",
+      "iconClassName" : "icon-health-20to39",
+      "iconUrl" : "health-20to39.png",
+      "score" : 25
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 4,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/4/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 4,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/4/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 4,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/4/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 3,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/3/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 3,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/3/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.matrix.MatrixBuild",
+    "number" : 4,
+    "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/4/"
+  },
+  "nextBuildNumber" : 5,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ],
+  "activeConfigurations" : [
+    {
+      "name" : "aegir_api=2,aegir_dist=unstable",
+      "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb2/aegir_api=2,aegir_dist=unstable/",
+      "color" : "red"
+    }
+  ]
+}

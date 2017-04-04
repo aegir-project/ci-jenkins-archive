@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 48,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+            "branch" : [
+              {
+                "SHA1" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+            "branch" : [
+              {
+                "SHA1" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+        "branch" : [
+          {
+            "SHA1" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#48",
+  "duration" : 11823,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #48",
+  "id" : "2012-04-26_16-00-28",
+  "keepLog" : False,
+  "number" : 48,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335470428000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/48/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.inc",
+          "Provision/Context.php"
+        ],
+        "commitId" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+        "timestamp" : 1335454928000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.\n",
+        "date" : "2012-04-26T11:42:08-0400 +0100",
+        "id" : "322cf0b257dc4e8f4fdfda993e82b01e9946475f",
+        "msg" : "Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Context.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.context.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom"><title>D_aegir-debian-build-2x Multiple SCMs changes</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/changes" rel="alternate"/><updated>2015-08-27T18:27:26Z</updated><author><name>Jenkins Server</name></author><id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id><entry><title>#408 Update ctools version (Guillaume Boudrias)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/408/changes#detail0</id><published>2015-08-27T18:27:26Z</published><updated>2015-08-27T18:27:26Z</updated><content>drupal-org.make
+</content></entry><entry><title>#407 change version information for release 2.4 (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/407/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/407/changes#detail0</id><published>2015-08-21T19:45:32Z</published><updated>2015-08-21T19:45:32Z</updated><content>upgrade.sh.txt
+provision.info
+aegir.make
+debian/changelog
+aegir-release.make
+</content></entry><entry><title>#407 Revert "change version information for release 2.4" (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/407/changes#detail1" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/407/changes#detail1</id><published>2015-08-21T19:45:32Z</published><updated>2015-08-21T19:45:32Z</updated><content>upgrade.sh.txt
+aegir.make
+provision.info
+aegir-release.make
+</content></entry><entry><title>#407 Issue #2511772 by danwonac - Nginx: Restore support for legacy rewrites non-clean URLs (omega8cc)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/407/changes#detail2" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/407/changes#detail2</id><published>2015-08-21T19:45:32Z</published><updated>2015-08-21T19:45:32Z</updated><content>http/Provision/Config/Nginx/Inc/vhost_include.tpl.php
+http/Provision/Config/Nginx/subdir.tpl.php
+</content></entry><entry><title>#407 Fixes #2520332: Install 1.x version of Views Bulk Operations since 1.16 has been removed. (Jon Pugh)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/407/changes#detail3" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/407/changes#detail3</id><published>2015-08-21T19:45:32Z</published><updated>2015-08-21T19:45:32Z</updated><content>drupal-org.make
+</content></entry><entry><title>#406 Fix protection of files dir for multi-site (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/406/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/406/changes#detail0</id><published>2015-05-20T08:57:41Z</published><updated>2015-05-20T08:57:41Z</updated><content>http/Provision/Config/Apache/Ssl/vhost_ssl.tpl.php
+http/Provision/Config/Apache/subdir.tpl.php
+http/Provision/Config/Apache/vhost.tpl.php
+</content></entry><entry><title>#405 Cleanup (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/405/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/405/changes#detail0</id><published>2015-03-26T19:57:10Z</published><updated>2015-03-26T19:57:10Z</updated><content>jenkins-debian-build
+</content></entry><entry><title>#404 Be more specific in pattern, output could be sorted differently letting the next if fail. (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/404/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/404/changes#detail0</id><published>2015-03-26T19:27:10Z</published><updated>2015-03-26T19:27:10Z</updated><content>jenkins-debian-build
+</content></entry><entry><title>#404 output should not include the directory name (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/404/changes#detail1" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/404/changes#detail1</id><published>2015-03-26T19:27:10Z</published><updated>2015-03-26T19:27:10Z</updated><content>jenkins-debian-build
+</content></entry><entry><title>#403 change version information for release 2.3 (Christopher Gervais)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/403/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/403/changes#detail0</id><published>2015-03-25T18:42:36Z</published><updated>2015-03-25T18:42:36Z</updated><content>upgrade.sh.txt
+aegir.make
+provision.info
+debian/changelog
+aegir-release.make
+</content></entry><entry><title>#403 Revert "change version information for release 2.3" (Christopher Gervais)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/403/changes#detail1" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/403/changes#detail1</id><published>2015-03-25T18:42:36Z</published><updated>2015-03-25T18:42:36Z</updated><content>aegir.make
+upgrade.sh.txt
+provision.info
+aegir-release.make
+</content></entry><entry><title>#403 Update contrib modules. (Christopher Gervais)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/403/changes#detail2" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/403/changes#detail2</id><published>2015-03-25T18:42:36Z</published><updated>2015-03-25T18:42:36Z</updated><content>drupal-org.make
+</content></entry><entry><title>#402 change version information for release 2.2 (Christopher Gervais)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/402/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/402/changes#detail0</id><published>2015-03-25T18:11:06Z</published><updated>2015-03-25T18:11:06Z</updated><content>provision.info
+upgrade.sh.txt
+aegir.make
+debian/changelog
+aegir-release.make
+</content></entry><entry><title>#402 Revert "change version information for release 2.2" (Christopher Gervais)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/402/changes#detail1" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/402/changes#detail1</id><published>2015-03-25T18:11:06Z</published><updated>2015-03-25T18:11:06Z</updated><content>upgrade.sh.txt
+provision.info
+aegir.make
+aegir-release.make
+</content></entry><entry><title>#401 Issue #2457359: Stop overriding Nginx SSL settings (Herman van Rink)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/401/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/401/changes#detail0</id><published>2015-03-24T14:57:44Z</published><updated>2015-03-24T14:57:44Z</updated><content>http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php
+http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php
+</content></entry><entry><title>#400 Nginx: Stop the POST flood to /autodiscover/autodiscover.xml generated by MS Office/Outlook (omega8cc)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/400/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/400/changes#detail0</id><published>2015-03-19T12:12:50Z</published><updated>2015-03-19T12:12:50Z</updated><content>http/Provision/Config/Nginx/Inc/vhost_include.tpl.php
+http/Provision/Config/Nginx/subdir.tpl.php
+</content></entry><entry><title>#399 Nginx: Use dummy db fastcgi_param placeholders if any of them is empty (omega8cc)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/399/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-build-2x/399/changes#detail0</id><published>2015-03-13T16:27:44Z</published><updated>2015-03-13T16:27:44Z</updated><content>http/Provision/Config/Nginx/vhost.tpl.php
+http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php
+http/Provision/Config/Nginx/subdir.tpl.php
+</content></entry></feed>

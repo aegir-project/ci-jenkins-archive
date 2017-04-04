@@ -1,0 +1,56 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Antoine Beaupré",
+          "userId" : "anarcat",
+          "userName" : "Antoine Beaupré"
+        },
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Antoine Beaupré",
+          "userId" : "anarcat",
+          "userName" : "Antoine Beaupré"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#10",
+  "duration" : 27,
+  "estimatedDuration" : 333324,
+  "executor" : None,
+  "fullDisplayName" : "U aegir 6.x-1.x deb upgrade #10",
+  "id" : "2013-02-08_17-31-33",
+  "keepLog" : False,
+  "number" : 10,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1360362693000,
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.x%20deb%20upgrade/10/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

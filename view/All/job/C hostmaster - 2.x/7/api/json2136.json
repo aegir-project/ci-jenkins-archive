@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 7,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+            "branch" : [
+              {
+                "SHA1" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+            "branch" : [
+              {
+                "SHA1" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+        "branch" : [
+          {
+            "SHA1" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#7",
+  "duration" : 18452,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #7",
+  "id" : "2012-02-09_20-30-57",
+  "keepLog" : false,
+  "number" : 7,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1328837457000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/7/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/site/hosting_site.form.js"
+        ],
+        "commitId" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+        "timestamp" : 1328818931000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1018596 by Steven Jones: Fixed Aegir forms don't work in MSIE 8.0.\n",
+        "date" : "2012-02-09T15:22:11-0500 +0000",
+        "id" : "dca2db72f3a593bfcfca6bc5a466a4dfffd8d6b1",
+        "msg" : "Issue #1018596 by Steven Jones: Fixed Aegir forms don't work in MSIE 8.0.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.form.js"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

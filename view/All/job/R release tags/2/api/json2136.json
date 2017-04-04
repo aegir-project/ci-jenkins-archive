@@ -1,0 +1,157 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin1/5.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 1,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+            "branch" : [
+              {
+                "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+                "name" : "origin1/5.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+            "branch" : [
+              {
+                "SHA1" : "b53da48bfe0be2d35f31f4016c98f489f75aad16",
+                "name" : "origin1/5.x"
+              }
+            ]
+          }
+        },
+        "origin/ssl" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 2,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          }
+        },
+        "provision/ssl" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 2,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "branch" : [
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "origin/ssl"
+              },
+              {
+                "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+                "name" : "provision/ssl"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+        "branch" : [
+          {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "name" : "origin/ssl"
+          },
+          {
+            "SHA1" : "ca2d3ae86bb1d694cfe69b0ac81ad3dedcbdc774",
+            "name" : "provision/ssl"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#2",
+  "duration" : 1802,
+  "estimatedDuration" : 42405,
+  "executor" : null,
+  "fullDisplayName" : "R release tags #2",
+  "id" : "2011-11-14_21-23-52",
+  "keepLog" : false,
+  "number" : 2,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321323832000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20release%20tags/2/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

@@ -1,0 +1,73 @@
+Started by upstream project "Matrix.deb" build number 12
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box/aegir_dist/stable/aegir_web_server/nginx/drush_api/6
+Checkout:6 / /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64 dl.dropbox.com/u/937870/VMs/wheezy64.box/aegir_dist/stable/aegir_web_server/nginx/drush_api/6 - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Last Built Revision: Revision 277591ffd65645a4fad03fc675661a59bedbf2f4 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 277591ffd65645a4fad03fc675661a59bedbf2f4 (origin/new)
+Checking out Revision 277591ffd65645a4fad03fc675661a59bedbf2f4 (origin/new)
+[6] $ /bin/sh -xe /tmp/hudson1631724299546761783.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+./tests/functional_tests/matrix.deb/setup.sh: line 6: [: /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64: binary operator expected
+./tests/functional_tests/matrix.deb/setup.sh: line 11: [: /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64: binary operator expected
+Too many arguments.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --template <path>     path the template repository
+    --reference <repo>    reference repository
+    -o, --origin <branch>
+                          use <branch> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+
+./tests/functional_tests/matrix.deb/setup.sh: line 18: [: /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64: binary operator expected
+Too many arguments.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --template <path>     path the template repository
+    --reference <repo>    reference repository
+    -o, --origin <branch>
+                          use <branch> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+
+./tests/functional_tests/matrix.deb/setup.sh: line 25: [: /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64: binary operator expected
+./tests/functional_tests/matrix.deb/setup.sh: line 30: [: /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64: binary operator expected
+[6] $ /bin/sh -xe /tmp/hudson5381015812829957530.sh
++ ./tests/functional_tests/matrix.deb/run-tests.sh
+A Vagrant environment is required to run this command. Run `vagrant init`
+to set one up.
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

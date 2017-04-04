@@ -1,0 +1,132 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 30,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+            "branch" : [
+              {
+                "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+            "branch" : [
+              {
+                "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+        "branch" : [
+          {
+            "SHA1" : "4f697cb0d4f944da7f61c21501728c553be89153",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#30",
+  "duration" : 31346,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #30",
+  "id" : "2012-06-28_03-31-19",
+  "keepLog" : false,
+  "number" : 30,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1340868679000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/30/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/queued/init.d.example"
+        ],
+        "commitId" : "4f697cb0d4f944da7f61c21501728c553be89153",
+        "timestamp" : 1340853355000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "run the daemon niced\n\nthis is to reduce load when heavy backup or migrate tasks are run by\nthe queue daemon. the NICE value is customizable in /etc/default/hosting-queued\n",
+        "date" : "2012-06-27T23:15:55-0400 -0400",
+        "id" : "4f697cb0d4f944da7f61c21501728c553be89153",
+        "msg" : "run the daemon niced",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/queued/init.d.example"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

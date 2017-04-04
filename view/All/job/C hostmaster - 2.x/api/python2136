@@ -1,0 +1,287 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "style,comment"
+          },
+          "description" : "The reviews to perform",
+          "name" : "CODE_REVIEWS",
+          "type" : "StringParameterDefinition"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleProjectAction"
+    },
+    {
+      
+    }
+  ],
+  "description" : "Do a code review of hostmaster",
+  "displayName" : "C hostmaster - 2.x",
+  "displayNameOrNull" : None,
+  "name" : "C hostmaster - 2.x",
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/",
+  "buildable" : False,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 35,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/35/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 34,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/34/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 33,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/33/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 32,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/32/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 31,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/31/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 30,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/30/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 29,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/29/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 28,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/28/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 27,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/27/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 26,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/26/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 25,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/25/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 24,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/24/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 23,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/23/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 22,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/22/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 21,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/21/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 20,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/20/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 19,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/19/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 18,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/18/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 17,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/17/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 16,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/16/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 15,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/15/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 14,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/14/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 13,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/13/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 12,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/12/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 11,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/11/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 10,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/10/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 9,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/9/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 8,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/8/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 7,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/7/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 6,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/6/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 5,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/5/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 4,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/4/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/3/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/2/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 1,
+      "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/1/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Checkstyle: 296 warnings found.",
+      "iconClassName" : "icon-health-40to59",
+      "iconUrl" : "health-40to59.png",
+      "score" : 56
+    },
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 35,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/35/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 35,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/35/"
+  },
+  "lastFailedBuild" : None,
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 35,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/35/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 35,
+    "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/35/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : None,
+  "nextBuildNumber" : 36,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    },
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "CODE_REVIEWS",
+            "value" : "style,comment"
+          },
+          "description" : "The reviews to perform",
+          "name" : "CODE_REVIEWS",
+          "type" : "StringParameterDefinition"
+        }
+      ]
+    }
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

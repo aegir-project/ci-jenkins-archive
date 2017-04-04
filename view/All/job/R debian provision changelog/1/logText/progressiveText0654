@@ -1,0 +1,10 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson3980973037029208556.sh
++ rm -rf provision
++ git clone --branch upstream http://git.drupal.org/project/provision.git
+Cloning into provision...
++ cd provision
++ git merge 6.x-1.6
+fatal: '6.x-1.6' does not point to a commit
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

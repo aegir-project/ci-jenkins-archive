@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 51,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+            "branch" : [
+              {
+                "SHA1" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+            "branch" : [
+              {
+                "SHA1" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+        "branch" : [
+          {
+            "SHA1" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#51",
+  "duration" : 8169,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #51",
+  "id" : "2012-04-27_15-15-27",
+  "keepLog" : false,
+  "number" : 51,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335554127000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/51/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "install.hostmaster.inc"
+        ],
+        "commitId" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+        "timestamp" : 1335539002000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Try to get installing in Drush 5 to work.\n",
+        "date" : "2012-04-27T11:03:22-0400 +0100",
+        "id" : "dd14c967fb49985b3ff57bb3bc65ffc832561b19",
+        "msg" : "Try to get installing in Drush 5 to work.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "install.hostmaster.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

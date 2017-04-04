@@ -1,0 +1,122 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      
+    }
+  ],
+  "description" : "Build a debian package of provision, following the latest changes on the 2.x branch",
+  "displayName" : "D_aegir-debian-build-2x",
+  "displayNameOrNull" : null,
+  "name" : "D_aegir-debian-build-2x",
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/",
+  "buildable" : false,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 408,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 407,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/407/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 406,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/406/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 405,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/405/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 404,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/404/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 403,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/403/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 402,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/402/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 401,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/401/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 400,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/400/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 399,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/399/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 399,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/399/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 408,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 408,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/"
+  },
+  "lastFailedBuild" : null,
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 408,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 408,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/408/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : null,
+  "nextBuildNumber" : 409,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

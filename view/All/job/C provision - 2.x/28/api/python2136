@@ -1,0 +1,183 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 28,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+            "branch" : [
+              {
+                "SHA1" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+            "branch" : [
+              {
+                "SHA1" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+        "branch" : [
+          {
+            "SHA1" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#28",
+  "duration" : 22466,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #28",
+  "id" : "2012-03-12_19-46-05",
+  "keepLog" : False,
+  "number" : 28,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331595965000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/28/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "625ac1a2ebce87413700511aba8785d5be9ec061",
+        "timestamp" : 1331487726000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Block aggressive crawler SWEBot in the main Nginx config.\n",
+        "date" : "2012-03-11T13:42:06-0400 +0100",
+        "id" : "625ac1a2ebce87413700511aba8785d5be9ec061",
+        "msg" : "Block aggressive crawler SWEBot in the main Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "13e880e0826a86be8e31c0d4eb6d15e0205aa330",
+        "timestamp" : 1331503170000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Send all known bots to $args free URLs in Nginx.\n",
+        "date" : "2012-03-11T17:59:30-0400 +0100",
+        "id" : "13e880e0826a86be8e31c0d4eb6d15e0205aa330",
+        "msg" : "Send all known bots to $args free URLs in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+        "timestamp" : 1331580698000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1478984 by obrienmd - Add Access-Control-Allow-Origin header with wildcard for static files in Nginx, also to support cdn-delivered @font-face.\n",
+        "date" : "2012-03-12T15:31:38-0400 +0100",
+        "id" : "5bde88fc7debdb1381279fc9adfcc57c70b8b28c",
+        "msg" : "Issue #1478984 by obrienmd - Add Access-Control-Allow-Origin header with wildcard for static files in Nginx, also to support cdn-delivered @font-face.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

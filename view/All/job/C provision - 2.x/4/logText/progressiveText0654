@@ -1,0 +1,19 @@
+Started by an SCM change
+Checkout:workspace / /var/lib/jenkins/jobs/R provision - 2.x/workspace - hudson.remoting.LocalChannel@5128b9bc
+Using strategy: Default
+Last Built Revision: Revision 9522d392e419f30f2cdbbb8255a20da5ccb70ebb (provision/6.x-2.x)
+Checkout:provision / /var/lib/jenkins/jobs/R provision - 2.x/workspace/provision - hudson.remoting.LocalChannel@5128b9bc
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+Commencing build of Revision d5dca739ebdbaa0244541813b74c52a73a4aecdf (provision/6.x-2.x)
+Checking out Revision d5dca739ebdbaa0244541813b74c52a73a4aecdf (provision/6.x-2.x)
+[workspace] $ /bin/sh -xe /tmp/hudson7778293699634316478.sh
++ rm -f review.xml
++ drush standalone-coder-review --files=provision --reviews=style,comment --output-filename=review.xml -y
+Running the coder review                                             [1;32;40m[1m[ok][0m
+Results written to /var/lib/jenkins/jobs/R provision -               [1;32;40m[1m[ok][0m
+2.x/workspace/review.xml
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/jobs/R provision - 2.x/workspace
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/jobs/R provision - 2.x/workspace/review.xml of module  with 733 warnings.
+Finished: SUCCESS

@@ -1,0 +1,67 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "BRANCH_TO_BUILD",
+          "value" : "6.x-1.x"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_TAG",
+          "value" : "6.x-1.6"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : ""
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#15",
+  "duration" : 136,
+  "estimatedDuration" : 42405,
+  "executor" : null,
+  "fullDisplayName" : "R release tags #15",
+  "id" : "2011-11-15_07-42-32",
+  "keepLog" : false,
+  "number" : 15,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1321360952000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20release%20tags/15/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : null
+  },
+  "culprits" : [
+    
+  ]
+}

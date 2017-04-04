@@ -1,0 +1,72 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "BRANCH_TO_BUILD",
+          "value" : "6.x-1.x"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_TAG",
+          "value" : "6.x-1.5"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_DEBIAN_VERSION",
+          "value" : "1.5-3"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : "iamsureiwanttodothis"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#2",
+  "duration" : 6754,
+  "estimatedDuration" : 30104,
+  "executor" : None,
+  "fullDisplayName" : "R debian provision changelog #2",
+  "id" : "2011-11-15_07-57-09",
+  "keepLog" : False,
+  "number" : 2,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1321361829000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20debian%20provision%20changelog/2/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

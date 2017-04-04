@@ -1,0 +1,185 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "7.x-3.0"
+          },
+          "description" : "Tag to build the release from.",
+          "name" : "JENKINS_AEGIR_TAG",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "testing"
+          },
+          "description" : "This is needed for the triggered build.",
+          "name" : "DIST",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "testing"
+          ]
+        }
+      ]
+    }
+  ],
+  "description" : "Build a debian package of provision, using the upstream debian branch (which is probably the latest release).",
+  "displayName" : "S_aegir-debian-official-3.x",
+  "displayNameOrNull" : null,
+  "name" : "S_aegir-debian-official-3.x",
+  "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 25,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/25/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 24,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/24/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 23,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/23/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 22,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/22/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 21,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/21/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 20,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/20/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 19,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/19/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 18,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/18/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 17,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/17/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 16,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/16/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 16,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/16/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 25,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/25/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 25,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/25/"
+  },
+  "lastFailedBuild" : null,
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 25,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/25/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 25,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/S_aegir-debian-official-3.x/25/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : null,
+  "nextBuildNumber" : 26,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    },
+    {
+      "_class" : "jenkins.model.BuildDiscarderProperty"
+    },
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "JENKINS_AEGIR_TAG",
+            "value" : "7.x-3.0"
+          },
+          "description" : "Tag to build the release from.",
+          "name" : "JENKINS_AEGIR_TAG",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "DIST",
+            "value" : "testing"
+          },
+          "description" : "This is needed for the triggered build.",
+          "name" : "DIST",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "testing"
+          ]
+        }
+      ]
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package",
+      "url" : "http://ci.aegirproject.org/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/",
+      "color" : "blue"
+    }
+  ],
+  "scm" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

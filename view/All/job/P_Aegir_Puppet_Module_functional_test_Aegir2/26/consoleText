@@ -1,0 +1,41 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/new^{commit} # timeout=10
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cff6da44c48d476e90a2939956eaf60e5209d14d
+ > git rev-list cff6da44c48d476e90a2939956eaf60e5209d14d # timeout=10
+ > git tag -a -f -m Jenkins Build #26 jenkins-P_Aegir_Puppet_Module_functional_test_Aegir2-26 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson3864218369955584173.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Already up-to-date.
+Already up-to-date.
+[workspace] $ /bin/sh -xe /tmp/hudson1027159850732515696.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: VirtualBox VM is already running.
+_____________________________________________________________________
+WARNING! Your environment specifies an invalid locale.
+ This can affect your user experience significantly, including the
+ ability to manage packages. You may install the locales by running:
+
+   sudo apt-get install language-pack-en
+     or
+   sudo locale-gen en_US.UTF-8
+
+To see all available language packs, run:
+   apt-cache search "^language-pack-[a-z][a-z]$"
+To disable this message for all users, run:
+   sudo touch /var/lib/cloud/instance/locale-check.skip
+_____________________________________________________________________
+
+No passwd entry for user 'aegir'
+'provision-tests-run' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

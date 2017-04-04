@@ -1,0 +1,121 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 444,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+            "branch" : [
+              {
+                "SHA1" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+            "branch" : [
+              {
+                "SHA1" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+        "branch" : [
+          {
+            "SHA1" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#444",
+  "duration" : 926214,
+  "estimatedDuration" : 1365584,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6 #444",
+  "id" : "444",
+  "keepLog" : False,
+  "number" : 444,
+  "queueId" : 436,
+  "result" : "SUCCESS",
+  "timestamp" : 1442815462593,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/444/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/run-tests.sh",
+          "tests/functional_tests/aegir3-dev-drush8/run-tests.sh"
+        ],
+        "commitId" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+        "timestamp" : 1442757487000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Run standard tests for Drush8 and new tests for Drupal8.\n",
+        "date" : "2015-09-20T09:58:07-0400 -0400",
+        "id" : "5351a373bc15f8d9c1e93234fd98b1007c3afedf",
+        "msg" : "Run standard tests for Drush8 and new tests for Drupal8.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/run-tests.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

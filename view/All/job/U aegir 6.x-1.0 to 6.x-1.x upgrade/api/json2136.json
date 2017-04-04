@@ -1,0 +1,229 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "6.x-1.0"
+          },
+          "description" : "The initial Aegir version to install",
+          "name" : "AEGIR_VERSION",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "7.x-4.4"
+          },
+          "description" : "The Drush version to install initially",
+          "name" : "DRUSH_VERSION",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "HEAD"
+          },
+          "description" : "The version of Aegir to upgrade to, should be a git ref, e.g. HEAD, 6.x-1.2",
+          "name" : "UPGRADE_VERSION",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "jenkins"
+          },
+          "description" : "What sort of testing to perform. From Aegir 6.x-1.5 onwards, you should choose 'provision'.",
+          "name" : "TEST_TYPE",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "jenkins",
+            "provision"
+          ]
+        }
+      ]
+    }
+  ],
+  "description" : "Test a provision of a VPS, install a release of Aegir on it and then upgrade Aegir to HEAD",
+  "displayName" : "U aegir 6.x-1.0 to 6.x-1.x upgrade",
+  "displayNameOrNull" : null,
+  "name" : "U aegir 6.x-1.0 to 6.x-1.x upgrade",
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/",
+  "buildable" : false,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 11,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/11/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 10,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/10/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 9,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/9/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 8,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/8/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 7,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/7/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 6,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/6/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 5,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/5/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 4,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/4/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 3,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/3/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 2,
+      "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/2/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 2,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/2/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 4 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-00to19",
+      "iconUrl" : "health-00to19.png",
+      "score" : 20
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 11,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/11/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 11,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/11/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 11,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/11/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 10,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/10/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 10,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/10/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 11,
+    "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/11/"
+  },
+  "nextBuildNumber" : 12,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    },
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "AEGIR_VERSION",
+            "value" : "6.x-1.0"
+          },
+          "description" : "The initial Aegir version to install",
+          "name" : "AEGIR_VERSION",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "DRUSH_VERSION",
+            "value" : "7.x-4.4"
+          },
+          "description" : "The Drush version to install initially",
+          "name" : "DRUSH_VERSION",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "UPGRADE_VERSION",
+            "value" : "HEAD"
+          },
+          "description" : "The version of Aegir to upgrade to, should be a git ref, e.g. HEAD, 6.x-1.2",
+          "name" : "UPGRADE_VERSION",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "TEST_TYPE",
+            "value" : "jenkins"
+          },
+          "description" : "What sort of testing to perform. From Aegir 6.x-1.5 onwards, you should choose 'provision'.",
+          "name" : "TEST_TYPE",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "jenkins",
+            "provision"
+          ]
+        }
+      ]
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

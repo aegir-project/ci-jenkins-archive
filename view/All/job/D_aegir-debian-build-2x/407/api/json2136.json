@@ -1,0 +1,343 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 407,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+            "branch" : [
+              {
+                "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+            "branch" : [
+              {
+                "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+        "branch" : [
+          {
+            "SHA1" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 407,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+            "branch" : [
+              {
+                "SHA1" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+            "branch" : [
+              {
+                "SHA1" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+        "branch" : [
+          {
+            "SHA1" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/hostmaster"
+      ],
+      "scmName" : "hostmaster"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 406,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        },
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 407,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+            "branch" : [
+              {
+                "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+            "branch" : [
+              {
+                "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+        "branch" : [
+          {
+            "SHA1" : "5f16d15dfd924aa82fe2ed0b18f67cf86cd02c7c",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#407",
+  "duration" : 20521,
+  "estimatedDuration" : 20985,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-build-2x #407",
+  "id" : "407",
+  "keepLog" : false,
+  "number" : 407,
+  "queueId" : 228,
+  "result" : "SUCCESS",
+  "timestamp" : 1440186332038,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/407/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir.make",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "ad711d39c8b7316565d9c60bb023978d6e706c2a",
+        "timestamp" : 1432146726000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "change version information for release 2.4\n",
+        "date" : "2015-05-20T14:32:06-0400 +0200",
+        "id" : "ad711d39c8b7316565d9c60bb023978d6e706c2a",
+        "msg" : "change version information for release 2.4",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt",
+          "aegir-release.make"
+        ],
+        "commitId" : "563ba22d239a88d19bf352f379a8e81005825967",
+        "timestamp" : 1432146726000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"change version information for release 2.4\"\n\nThis reverts commit ad711d39c8b7316565d9c60bb023978d6e706c2a.\n",
+        "date" : "2015-05-20T14:32:06-0400 +0200",
+        "id" : "563ba22d239a88d19bf352f379a8e81005825967",
+        "msg" : "Revert \"change version information for release 2.4\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php",
+          "http/Provision/Config/Nginx/subdir.tpl.php"
+        ],
+        "commitId" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+        "timestamp" : 1435338843000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #2511772 by danwonac - Nginx: Restore support for legacy rewrites non-clean URLs\n",
+        "date" : "2015-06-26T13:14:03-0400 +0200",
+        "id" : "df548ea4d8a765fda50480579bb2d52e491348d5",
+        "msg" : "Issue #2511772 by danwonac - Nginx: Restore support for legacy rewrites non-clean URLs",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "drupal-org.make"
+        ],
+        "commitId" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+        "timestamp" : 1436272746000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+          "fullName" : "Jon Pugh"
+        },
+        "comment" : "Fixes #2520332: Install 1.x version of Views Bulk Operations since 1.16 has been removed.\n",
+        "date" : "2015-07-07T08:39:06-0400 -0400",
+        "id" : "5b0360dcc2bc54f0efbc28e07c36614ffed371ff",
+        "msg" : "Fixes #2520332: Install 1.x version of Views Bulk Operations since 1.16 has been removed.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "drupal-org.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+      "fullName" : "Jon Pugh"
+    }
+  ]
+}

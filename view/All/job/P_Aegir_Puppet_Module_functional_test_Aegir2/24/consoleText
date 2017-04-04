@@ -1,0 +1,247 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+ > git init /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+ > git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/new^{commit} # timeout=10
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cff6da44c48d476e90a2939956eaf60e5209d14d
+ > git rev-list cff6da44c48d476e90a2939956eaf60e5209d14d # timeout=10
+ > git tag -a -f -m Jenkins Build #24 jenkins-P_Aegir_Puppet_Module_functional_test_Aegir2-24 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson922557912568188131.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Cloning into '/var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tests/functional_tests/aegir2/modules/drush'...
+Cloning into '/var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tests/functional_tests/aegir2/modules/aegir'...
+[workspace] $ /bin/sh -xe /tmp/hudson813600026895956855.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'raring64'...
+Progress: 90%==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: workspace_default_1440175729333_64485
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.10
+    default: VirtualBox Version: 4.3
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tmp/apt/cache
+    default: /tmp/vagrant-puppet-3/manifests => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tests/functional_tests/aegir2
+    default: /tmp/vagrant-puppet-3/modules-0 => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tests/functional_tests/aegir2/modules
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with nodes.pp...
+==> default: warning: Could not retrieve fact fqdn
+==> default: warning: Host is missing hostname and/or domain: aegir2
+==> default: err: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: change from notrun to 0 failed: apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/drush/manifests/apt.pp:47
+==> default: err: /Stage[main]/Drush/Package[drush]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install drush' returned 100: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following extra packages will be installed:
+==> default:   libmysqlclient18 mysql-common php-console-table php-pear php5-cli
+==> default:   php5-common php5-mysql
+==> default: Suggested packages:
+==> default:   git mysql-client drupal php5-dev
+==> default: The following NEW packages will be installed:
+==> default:   drush libmysqlclient18 mysql-common php-console-table php-pear php5-cli
+==> default:   php5-common php5-mysql
+==> default: 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+==> default: Need to get 4805 kB of archives.
+==> default: After this operation, 17.0 MB of additional disk space will be used.
+==> default: WARNING: The following packages cannot be authenticated!
+==> default:   mysql-common libmysqlclient18 php5-common php5-cli php5-mysql php-pear
+==> default:   php-console-table drush
+==> default: E: There are problems and -y was used without --force-yes
+==> default: notice: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush.pref]: Dependency Package[drush] has failures: true
+==> default: warning: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush.pref]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush-squeeze.pref]: Dependency Package[drush] has failures: true
+==> default: warning: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush-squeeze.pref]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]: Dependency Package[drush] has failures: true
+==> default: warning: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/Package[aegir]: Dependency Package[drush] has failures: true
+==> default: warning: /Stage[main]/Aegir/Package[aegir]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Mysql/File[/root/.my.cnf]/ensure: defined content as '{md5}ffe1aea608eb9657acebe3867d3a1b99'
+==> default: err: /Stage[main]/Aegir::Mysql/Package[mysql-server]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install mysql-server' returned 100: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following extra packages will be installed:
+==> default:   libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl libmysqlclient18
+==> default:   libnet-daemon-perl libplrpc-perl libterm-readkey-perl mysql-client-5.5
+==> default:   mysql-client-core-5.5 mysql-common mysql-server-5.5 mysql-server-core-5.5
+==> default: Suggested packages:
+==> default:   libipc-sharedcache-perl tinyca mailx
+==> default: The following NEW packages will be installed:
+==> default:   libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl libmysqlclient18
+==> default:   libnet-daemon-perl libplrpc-perl libterm-readkey-perl mysql-client-5.5
+==> default:   mysql-client-core-5.5 mysql-common mysql-server mysql-server-5.5
+==> default:   mysql-server-core-5.5
+==> default: 0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+==> default: Need to get 26.8 MB of archives.
+==> default: After this operation, 96.3 MB of additional disk space will be used.
+==> default: WARNING: The following packages cannot be authenticated!
+==> default:   libaio1 mysql-common libmysqlclient18 libnet-daemon-perl libplrpc-perl
+==> default:   libdbi-perl libdbd-mysql-perl mysql-client-core-5.5 libterm-readkey-perl
+==> default:   mysql-client-5.5 mysql-server-core-5.5 mysql-server-5.5
+==> default:   libhtml-template-perl mysql-server
+==> default: E: There are problems and -y was used without --force-yes
+==> default: notice: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]: Dependency Package[mysql-server] has failures: true
+==> default: warning: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Mysql/Service[mysql]: Dependency Package[mysql-server] has failures: true
+==> default: warning: /Stage[main]/Aegir::Mysql/Service[mysql]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Dependency Package[mysql-server] has failures: true
+==> default: warning: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Skipping because of failed dependencies
+==> default: err: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Failed to call refresh: Could not find command '/usr/bin/mysqladmin'
+==> default: notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Dependency Package[mysql-server] has failures: true
+==> default: warning: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Mysql::Preseed/File[preseedmysqlpass.sh]/ensure: defined content as '{md5}cf716d667b4f77e6c887bcede81e63c2'
+==> default: notice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]: Dependency Package[mysql-server] has failures: true
+==> default: warning: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Apt/File[aegir_apt_keys_dir]/ensure: created
+==> default: notice: /Stage[main]/Aegir::Apt/File[aegir_apt_key]/ensure: defined content as '{md5}c68f07d8791bb73bd013a7fc758bff8a'
+==> default: notice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_key_add]: Triggered 'refresh' from 1 events
+==> default: notice: /Stage[main]/Aegir::Apt/File[aegir_apt_sources]/ensure: created
+==> default: err: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: change from notrun to 0 failed: /usr/bin/apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/aegir/manifests/apt.pp:58
+==> default: 
+==> default: notice: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Dependency Package[drush] has failures: true
+==> default: warning: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Skipping because of failed dependencies
+==> default: err: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Failed to call refresh: /usr/bin/apt-get update returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/aegir/manifests/apt.pp:52
+==> default: notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Package[mysql-server] has failures: true
+==> default: notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Package[drush] has failures: true
+==> default: notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Exec[aegir_apt_update] has failures: true
+==> default: warning: /Stage[main]/Aegir/Package[aegir2]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[mysql-server] has failures: true
+==> default: notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[drush] has failures: true
+==> default: notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[aegir_apt_update] has failures: true
+==> default: warning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[mysql-server] has failures: true
+==> default: notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[drush] has failures: true
+==> default: notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Exec[aegir_apt_update] has failures: true
+==> default: warning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies
+==> default: notice: Finished catalog run in 7.24 seconds
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+puppet apply --modulepath '/tmp/vagrant-puppet-3/modules-0:/etc/puppet/modules' --color=false --manifestdir /tmp/vagrant-puppet-3/manifests --detailed-exitcodes /tmp/vagrant-puppet-3/manifests/nodes.pp
+
+Stdout from the command:
+
+warning: Could not retrieve fact fqdn
+warning: Host is missing hostname and/or domain: aegir2
+err: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: change from notrun to 0 failed: apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/drush/manifests/apt.pp:47
+err: /Stage[main]/Drush/Package[drush]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install drush' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libmysqlclient18 mysql-common php-console-table php-pear php5-cli
+  php5-common php5-mysql
+Suggested packages:
+  git mysql-client drupal php5-dev
+The following NEW packages will be installed:
+  drush libmysqlclient18 mysql-common php-console-table php-pear php5-cli
+  php5-common php5-mysql
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4805 kB of archives.
+After this operation, 17.0 MB of additional disk space will be used.
+WARNING: The following packages cannot be authenticated!
+  mysql-common libmysqlclient18 php5-common php5-cli php5-mysql php-pear
+  php-console-table drush
+E: There are problems and -y was used without --force-yes
+notice: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush.pref]: Dependency Package[drush] has failures: true
+warning: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush.pref]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush-squeeze.pref]: Dependency Package[drush] has failures: true
+warning: /Stage[main]/Aegir/File[/etc/apt/preferences.d/drush-squeeze.pref]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]: Dependency Package[drush] has failures: true
+warning: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/Package[aegir]: Dependency Package[drush] has failures: true
+warning: /Stage[main]/Aegir/Package[aegir]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Mysql/File[/root/.my.cnf]/ensure: defined content as '{md5}ffe1aea608eb9657acebe3867d3a1b99'
+err: /Stage[main]/Aegir::Mysql/Package[mysql-server]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install mysql-server' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl libmysqlclient18
+  libnet-daemon-perl libplrpc-perl libterm-readkey-perl mysql-client-5.5
+  mysql-client-core-5.5 mysql-common mysql-server-5.5 mysql-server-core-5.5
+Suggested packages:
+  libipc-sharedcache-perl tinyca mailx
+The following NEW packages will be installed:
+  libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl libmysqlclient18
+  libnet-daemon-perl libplrpc-perl libterm-readkey-perl mysql-client-5.5
+  mysql-client-core-5.5 mysql-common mysql-server mysql-server-5.5
+  mysql-server-core-5.5
+0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+Need to get 26.8 MB of archives.
+After this operation, 96.3 MB of additional disk space will be used.
+WARNING: The following packages cannot be authenticated!
+  libaio1 mysql-common libmysqlclient18 libnet-daemon-perl libplrpc-perl
+  libdbi-perl libdbd-mysql-perl mysql-client-core-5.5 libterm-readkey-perl
+  mysql-client-5.5 mysql-server-core-5.5 mysql-server-5.5
+  libhtml-template-perl mysql-server
+E: There are problems and -y was used without --force-yes
+notice: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]: Dependency Package[mysql-server] has failures: true
+warning: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Mysql/Service[mysql]: Dependency Package[mysql-server] has failures: true
+warning: /Stage[main]/Aegir::Mysql/Service[mysql]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Dependency Package[mysql-server] has failures: true
+warning: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Skipping because of failed dependencies
+err: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Failed to call refresh: Could not find command '/usr/bin/mysqladmin'
+notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Dependency Package[mysql-server] has failures: true
+warning: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Mysql::Preseed/File[preseedmysqlpass.sh]/ensure: defined content as '{md5}cf716d667b4f77e6c887bcede81e63c2'
+notice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]: Dependency Package[mysql-server] has failures: true
+warning: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Apt/File[aegir_apt_keys_dir]/ensure: created
+notice: /Stage[main]/Aegir::Apt/File[aegir_apt_key]/ensure: defined content as '{md5}c68f07d8791bb73bd013a7fc758bff8a'
+notice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_key_add]: Triggered 'refresh' from 1 events
+notice: /Stage[main]/Aegir::Apt/File[aegir_apt_sources]/ensure: created
+err: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: change from notrun to 0 failed: /usr/bin/apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/aegir/manifests/apt.pp:58
+notice: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Dependency Package[drush] has failures: true
+warning: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Skipping because of failed dependencies
+err: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Failed to call refresh: /usr/bin/apt-get update returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/aegir/manifests/apt.pp:52
+notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Package[mysql-server] has failures: true
+notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Package[drush] has failures: true
+notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Exec[aegir_apt_update] has failures: true
+warning: /Stage[main]/Aegir/Package[aegir2]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[mysql-server] has failures: true
+notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[drush] has failures: true
+notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[aegir_apt_update] has failures: true
+warning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[mysql-server] has failures: true
+notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[drush] has failures: true
+notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Exec[aegir_apt_update] has failures: true
+warning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies
+notice: Finished catalog run in 7.24 seconds
+
+
+Stderr from the command:
+
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

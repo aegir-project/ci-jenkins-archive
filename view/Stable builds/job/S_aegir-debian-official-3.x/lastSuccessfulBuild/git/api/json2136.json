@@ -1,0 +1,41 @@
+{
+  "_class" : "hudson.plugins.git.util.BuildData",
+  "buildsByBranchName" : {
+    "origin/master" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 25,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      }
+    }
+  },
+  "lastBuiltRevision" : {
+    "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+    "branch" : [
+      {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "name" : "origin/master"
+      }
+    ]
+  },
+  "remoteUrls" : [
+    "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+  ],
+  "scmName" : "aegir_jenkins_scripts"
+}

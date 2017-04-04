@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 47,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+            "branch" : [
+              {
+                "SHA1" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+            "branch" : [
+              {
+                "SHA1" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+        "branch" : [
+          {
+            "SHA1" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#47",
+  "duration" : 7478,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #47",
+  "id" : "2012-04-26_15-15-39",
+  "keepLog" : false,
+  "number" : 47,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335467739000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/47/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Context/server.php"
+        ],
+        "commitId" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+        "timestamp" : 1335453014000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1504120 by Steven Jones: Fixed Script user of remote servers is ignored.\n",
+        "date" : "2012-04-26T11:10:14-0400 +0100",
+        "id" : "001606eeefc41fd6ea33e54d604f607bba3b57e1",
+        "msg" : "Issue #1504120 by Steven Jones: Fixed Script user of remote servers is ignored.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Context/server.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

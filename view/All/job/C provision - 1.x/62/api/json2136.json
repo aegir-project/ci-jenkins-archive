@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 62,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+            "branch" : [
+              {
+                "SHA1" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+            "branch" : [
+              {
+                "SHA1" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+        "branch" : [
+          {
+            "SHA1" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#62",
+  "duration" : 12718,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #62",
+  "id" : "2012-04-04_23-31-08",
+  "keepLog" : false,
+  "number" : 62,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1333596668000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/62/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+        "timestamp" : 1333581525000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1515762 by omega8cc - Nginx microcaching should skip all known AJAX requests.\n",
+        "date" : "2012-04-04T19:18:45-0400 +0200",
+        "id" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+        "msg" : "Issue #1515762 by omega8cc - Nginx microcaching should skip all known AJAX requests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

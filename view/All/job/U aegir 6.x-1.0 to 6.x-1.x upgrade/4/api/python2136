@@ -1,0 +1,47 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Antoine Beaupré",
+          "userId" : "anarcat",
+          "userName" : "Antoine Beaupré"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#4",
+  "duration" : 236909,
+  "estimatedDuration" : 355912,
+  "executor" : None,
+  "fullDisplayName" : "U aegir 6.x-1.0 to 6.x-1.x upgrade #4",
+  "id" : "2011-10-28_16-15-42",
+  "keepLog" : False,
+  "number" : 4,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1319832942000,
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/4/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 45,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+            "branch" : [
+              {
+                "SHA1" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+            "branch" : [
+              {
+                "SHA1" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+        "branch" : [
+          {
+            "SHA1" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#45",
+  "duration" : 1554886,
+  "estimatedDuration" : 1365584,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6 #45",
+  "id" : "2014-07-19_02-05-45",
+  "keepLog" : False,
+  "number" : 45,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1405749945000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/45/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/Vagrantfile"
+        ],
+        "commitId" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+        "timestamp" : 1405682307000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Ubuntu 13.04 (raring) is out of support. Builds started failing due to unavailable packages\n",
+        "date" : "2014-07-18T07:18:27-0400 +0200",
+        "id" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+        "msg" : "Ubuntu 13.04 (raring) is out of support. Builds started failing due to unavailable packages",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

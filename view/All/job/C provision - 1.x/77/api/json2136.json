@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 77,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+            "branch" : [
+              {
+                "SHA1" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+            "branch" : [
+              {
+                "SHA1" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+        "branch" : [
+          {
+            "SHA1" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#77",
+  "duration" : 12532,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #77",
+  "id" : "2012-05-12_07-15-27",
+  "keepLog" : false,
+  "number" : 77,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1336821327000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/77/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/verify.provision.inc"
+        ],
+        "commitId" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+        "timestamp" : 1336806857000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1573182 - Verifying a platform should abort if it can't be bootstrapped\n",
+        "date" : "2012-05-12T03:14:17-0400 +1000",
+        "id" : "9c2900cab02a2fff0bc806733c2b2c0570d6302c",
+        "msg" : "Issue #1573182 - Verifying a platform should abort if it can't be bootstrapped",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/verify.provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

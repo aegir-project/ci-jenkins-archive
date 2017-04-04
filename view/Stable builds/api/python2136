@@ -1,0 +1,23 @@
+{
+  "_class" : "hudson.model.ListView",
+  "description" : None,
+  "jobs" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "S_aegir-debian-official",
+      "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "S_aegir-debian-official-3.x",
+      "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/",
+      "color" : "blue"
+    }
+  ],
+  "name" : "Stable builds",
+  "property" : [
+    
+  ],
+  "url" : "http://ci.aegirproject.org/view/Stable%20builds/"
+}

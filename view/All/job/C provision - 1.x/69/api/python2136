@@ -1,0 +1,198 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 69,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+            "branch" : [
+              {
+                "SHA1" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+            "branch" : [
+              {
+                "SHA1" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+        "branch" : [
+          {
+            "SHA1" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#69",
+  "duration" : 7971,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #69",
+  "id" : "2012-04-18_08-45-27",
+  "keepLog" : False,
+  "number" : 69,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334753127000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/69/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "499ee67ea8dc5694ffa05978979c71d778ff6566",
+        "timestamp" : 1334737990000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1537872 by Steven Jones: Fixed Release script reverts debian changelog.\n",
+        "date" : "2012-04-18T04:33:10-0400 +0100",
+        "id" : "499ee67ea8dc5694ffa05978979c71d778ff6566",
+        "msg" : "Issue #1537872 by Steven Jones: Fixed Release script reverts debian changelog.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog",
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir.make"
+        ],
+        "commitId" : "0a4d405ce8208f11a381483ccb69bc08df8fe693",
+        "timestamp" : 1334738155000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "change version information for release 1.8\n",
+        "date" : "2012-04-18T04:35:55-0400 +0100",
+        "id" : "0a4d405ce8208f11a381483ccb69bc08df8fe693",
+        "msg" : "change version information for release 1.8",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "provision.info",
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+        "timestamp" : 1334738155000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Revert \"change version information for release 1.8\"\n\nThis reverts commit 0a4d405ce8208f11a381483ccb69bc08df8fe693.\n",
+        "date" : "2012-04-18T04:35:55-0400 +0100",
+        "id" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+        "msg" : "Revert \"change version information for release 1.8\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

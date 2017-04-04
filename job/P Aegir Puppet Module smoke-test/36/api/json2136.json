@@ -1,0 +1,229 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 36,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "branch" : [
+          {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#36",
+  "duration" : 108219,
+  "estimatedDuration" : 5666,
+  "executor" : null,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #36",
+  "id" : "2014-01-11_02-08-49",
+  "keepLog" : false,
+  "number" : 36,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1389424129000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/36/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          ".gitignore"
+        ],
+        "commitId" : "46b22f52f6d3d999f22966ca678fe2b6b8382cae",
+        "timestamp" : 1389221038000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Only ignore Vagrantfiles in the root.\n",
+        "date" : "2014-01-08T17:43:58-0500 -0500",
+        "id" : "46b22f52f6d3d999f22966ca678fe2b6b8382cae",
+        "msg" : "Only ignore Vagrantfiles in the root.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : ".gitignore"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/Vagrantfile"
+        ],
+        "commitId" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+        "timestamp" : 1389221056000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add matrix Vagrantfile.\n",
+        "date" : "2014-01-08T17:44:16-0500 -0500",
+        "id" : "f763f3bc5c40d821c8370f11a5b4e670a0a53a5d",
+        "msg" : "Add matrix Vagrantfile.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/matrix.deb/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/Vagrantfile"
+        ],
+        "commitId" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+        "timestamp" : 1389223079000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Fix hash syntax.\n",
+        "date" : "2014-01-08T18:17:59-0500 -0500",
+        "id" : "f4e97f9257226ce2ff61986388f47a6664f1609c",
+        "msg" : "Fix hash syntax.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/matrix.deb/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/Vagrantfile"
+        ],
+        "commitId" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+        "timestamp" : 1389223201000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Fix puppet paths.\n",
+        "date" : "2014-01-08T18:20:01-0500 -0500",
+        "id" : "47dc6d8e2926b12f8d1049fc278be72e944f165f",
+        "msg" : "Fix puppet paths.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/matrix.deb/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/Vagrantfile"
+        ],
+        "commitId" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+        "timestamp" : 1389284544000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Hardcode http protocol string to fix jenkins matrix sub-test paths.\n",
+        "date" : "2014-01-09T11:22:24-0500 -0500",
+        "id" : "277591ffd65645a4fad03fc675661a59bedbf2f4",
+        "msg" : "Hardcode http protocol string to fix jenkins matrix sub-test paths.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/matrix.deb/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/matrix.deb/Vagrantfile"
+        ],
+        "commitId" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "timestamp" : 1389285299000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Hardcode urls to fix jenkins matrix sub-test paths, etc.\n",
+        "date" : "2014-01-09T11:34:59-0500 -0500",
+        "id" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "msg" : "Hardcode urls to fix jenkins matrix sub-test paths, etc.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/matrix.deb/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

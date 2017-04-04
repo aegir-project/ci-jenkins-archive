@@ -1,0 +1,98 @@
+{
+  "_class" : "hudson.matrix.MatrixRun",
+  "actions" : [
+    {
+      
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"Matrix.deb\" build number 13",
+          "upstreamBuild" : 13,
+          "upstreamProject" : "Matrix.deb",
+          "upstreamUrl" : "job/Matrix.deb/"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 13,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+        "branch" : [
+          {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "2,raring64,stable,apache2,5",
+  "duration" : 1174023,
+  "estimatedDuration" : 1174023,
+  "executor" : None,
+  "fullDisplayName" : "Matrix.deb » 2,raring64,stable,apache2,5 2,raring64,stable,apache2,5",
+  "id" : "2014-01-09_11-33-49",
+  "keepLog" : True,
+  "number" : 13,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1389285229000,
+  "url" : "http://ci.aegirproject.org/view/All/job/Matrix.deb/aegir_api=2,aegir_box=raring64,aegir_dist=stable,aegir_web_server=apache2,drush_api=5/13/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

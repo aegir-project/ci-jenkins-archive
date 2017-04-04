@@ -1,0 +1,41 @@
+{
+  "_class" : "hudson.model.ListView",
+  "description" : None,
+  "jobs" : [
+    {
+      "_class" : "hudson.matrix.MatrixProject",
+      "name" : "asdf",
+      "url" : "http://ci.aegirproject.org/job/asdf/",
+      "color" : "notbuilt"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R clear repo",
+      "url" : "http://ci.aegirproject.org/job/R%20clear%20repo/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R debian provision changelog",
+      "url" : "http://ci.aegirproject.org/job/R%20debian%20provision%20changelog/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R release tags",
+      "url" : "http://ci.aegirproject.org/job/R%20release%20tags/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R repo pull",
+      "url" : "http://ci.aegirproject.org/job/R%20repo%20pull/",
+      "color" : "blue"
+    }
+  ],
+  "name" : "Release scripts",
+  "property" : [
+    
+  ],
+  "url" : "http://ci.aegirproject.org/view/Release%20scripts/"
+}

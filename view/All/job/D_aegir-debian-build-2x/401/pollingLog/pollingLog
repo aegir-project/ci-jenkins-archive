@@ -1,0 +1,26 @@
+Started on Mar 24, 2015 10:57:35 AM
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision bb3fea5cddd1136d241ce11bccede8a05e11b16a (origin/6.x-2.x)
+ > git --version # timeout=10
+ > git -c core.askpass=true ls-remote -h git://git.drupalcode.org/project/provision 6.x-2.x # timeout=10
+[poll] Latest remote head revision is: b321ccdc27b392f0fd3969d4aefdc57075f0500e
+Using strategy: Default
+[poll] Last Built Revision: Revision fe729f7eb4d962375ad749453184ad5cd7bf74b2 (origin/6.x-2.x)
+ > git --version # timeout=10
+ > git -c core.askpass=true ls-remote -h git://git.drupalcode.org/project/hostmaster 6.x-2.x # timeout=10
+[poll] Latest remote head revision is: fe729f7eb4d962375ad749453184ad5cd7bf74b2
+Using strategy: Default
+[poll] Last Built Revision: Revision 5ab15ac04f2e342026644b981dc82b34f1e40017 (origin/master)
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/aegir-project/aegir_jenkins_scripts.git # timeout=10
+Fetching upstream changes from https://github.com/aegir-project/aegir_jenkins_scripts.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/aegir-project/aegir_jenkins_scripts.git +refs/heads/*:refs/remotes/origin/*
+Polling for changes in
+Seen branch in repository origin/HEAD
+Seen branch in repository origin/master
+Seen 2 remote branches
+Done. Took 3.1 sec
+Changes found

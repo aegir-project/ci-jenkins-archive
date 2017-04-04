@@ -1,0 +1,231 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/aegir-project/aegir_jenkins_scripts.git # timeout=10
+Fetching upstream changes from https://github.com/aegir-project/aegir_jenkins_scripts.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/aegir-project/aegir_jenkins_scripts.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 3e06c5dfcce5f4b491c833fa86a2b77142f59a76 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3e06c5dfcce5f4b491c833fa86a2b77142f59a76 # timeout=10
+ > git branch -a # timeout=10
+ > git rev-parse 7.x-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/master^{commit} # timeout=10
+ > git branch -D 7.x-3.x # timeout=10
+ > git checkout -b 7.x-3.x 3e06c5dfcce5f4b491c833fa86a2b77142f59a76
+ > git rev-list 3e06c5dfcce5f4b491c833fa86a2b77142f59a76 # timeout=10
+ > git tag -a -f -m Jenkins Build #16 jenkins-S_aegir-debian-official-3.x-16 # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git://git.drupalcode.org/project/provision # timeout=10
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git://git.drupalcode.org/project/provision +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/7.x-3.x^{commit} # timeout=10
+Checking out Revision 80b704fe27517a04e0a954e61c1cc5fa345c84e1 (origin/7.x-3.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 80b704fe27517a04e0a954e61c1cc5fa345c84e1 # timeout=10
+ > git branch -a # timeout=10
+ > git rev-parse 7.x-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/2358795-provision-save-on-verify^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x-1995506-profile-option^{commit} # timeout=10
+ > git rev-parse remotes/origin/6.x-2.x-backports^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-3.x-1966886-context-to-entity^{commit} # timeout=10
+ > git rev-parse remotes/origin/7.x-4.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/debian^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-1205458-move_sites_out_of_platforms^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-dns^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-dns_alias_records-1074966^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-drupal-8^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-envobject^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-koumbit^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-log_directory^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-migrate_aliases^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-multiserver-install^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-newhooks^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-6.x-1.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-6.x-2.x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-nginx-cleanup^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-noreg-mail-336068^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-platform_management^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ports^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-purgebackup^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-restore^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-services^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-simplerinstaller^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-site_rename^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl-chained-1062168^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-ssl-ip-allocation-refactor^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-subdir-multiserver^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-webpack^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-webpack1x^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev-wget-d7-cron-1090678^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/1194676-jenkins-tests^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/1318374-autoloader^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/2048653^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/2460443-write-arbitrary^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/2494121^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/mysqldump-error-check^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/subdirs^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev/subfolders^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_716166_apache_conf^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_dns^{commit} # timeout=10
+ > git rev-parse remotes/origin/dev_server_verify^{commit} # timeout=10
+ > git rev-parse remotes/origin/prod-koumbit^{commit} # timeout=10
+ > git rev-parse remotes/origin/review^{commit} # timeout=10
+ > git rev-parse remotes/origin/ssl^{commit} # timeout=10
+ > git rev-parse remotes/origin/upstream^{commit} # timeout=10
+ > git branch -D 7.x-3.x # timeout=10
+ > git checkout -b 7.x-3.x 80b704fe27517a04e0a954e61c1cc5fa345c84e1
+ > git rev-list 951c5e33e04425ac9aa7dd62da6f3f8aba6957bd # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson8512326859826973002.sh
++ export LANGUAGE=en_US.UTF-8
++ export LANG=en_US.UTF-8
++ export LC_ALL=en_US.UTF-8
++ cd provision
++ ../aegir_jenkins_scripts/jenkins-debian-build -k jenkins@ci.aegirproject.org -u -t 7.x-3.3
+HEAD is now at 0a770bb change version information for release 3.3
+Building aegir-7.x-3.3 with key jenkins@ci.aegirproject.org - build tag: jenkins-S_aegir-debian-official-3.x-16
+gbp:info: Exporting 'HEAD' to '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-tmp'
+gbp:info: Moving '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-tmp' to '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3'
+ dpkg-buildpackage -rfakeroot -D -us -uc -i -I
+dpkg-buildpackage: source package aegir3-provision
+dpkg-buildpackage: source version 3.3
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Herman van Rink <helmo@initfour.nl>
+ dpkg-source -i -I --before-build aegir3-provision-3.3
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: warning: unknown information field 'Build-Depends' in input data in package's section of control info file
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -i -I -b aegir3-provision-3.3
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: warning: unknown information field 'Build-Depends' in input data in package's section of control info file
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building aegir3-provision in aegir3-provision_3.3.tar.gz
+dpkg-source: info: building aegir3-provision in aegir3-provision_3.3.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   dh_auto_install
+   debian/rules override_dh_install
+make[1]: Entering directory '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3'
+cp -r "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/db/"  "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/dns/"  "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/http/" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/"*.make "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/platform/" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/Provision/" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/Symfony/" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3"/*.inc "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3"/*.php "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3"/*.info "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/debian/aegir3-provision/usr/share/drush/commands/provision/"
+# We need this nasty hack, because we added directories.
+# TODO: this is really lame, there must be a better way to do this?
+if [ -d "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/provision-tests" ]; then cp -r "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/provision-tests/" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/debian/aegir3-provision/usr/share/drush/commands/provision/"; fi
+if [ -d "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/subdirs" ]; then cp -r "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/subdirs/" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/debian/aegir3-provision/usr/share/drush/commands/provision/"; fi
+cp "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/debian/aegir3-provision.lintian" "/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3/debian/aegir3-provision/usr/share/lintian/overrides/aegir3-provision"
+make[1]: Leaving directory '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_installdebconf
+   dh_pysupport
+dh_pysupport: This program is deprecated, you should use dh_python2 instead. Migration guide: http://deb.li/dhs2p
+   debian/rules override_dh_installinit
+make[1]: Entering directory '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3'
+dh_installinit --name=hosting-queued
+make[1]: Leaving directory '/var/lib/jenkins/jobs/S_aegir-debian-official-3.x/workspace/provision/build-area/aegir3-provision-3.3'
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `aegir3-provision' in `../aegir3-provision_3.3_all.deb'.
+dpkg-deb: building package `aegir3-hostmaster' in `../aegir3-hostmaster_3.3_all.deb'.
+dpkg-deb: building package `aegir3' in `../aegir3_3.3_all.deb'.
+dpkg-deb: building package `aegir3-cluster-slave' in `../aegir3-cluster-slave_3.3_all.deb'.
+ dpkg-genchanges  >../aegir3-provision_3.3_amd64.changes
+dpkg-genchanges: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-genchanges: warning: unknown information field 'Build-Depends' in input data in package's section of control info file
+dpkg-genchanges: including full source code in upload
+ dpkg-source -i -I --after-build aegir3-provision-3.3
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: warning: unknown information field 'Build-Depends' in input data in package's section of control info file
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+E: aegir3-provision source: build-info-in-binary-control-file-section Package aegir3-hostmaster
+W: aegir3-provision source: changelog-should-mention-nmu
+W: aegir3-provision source: source-nmu-has-incorrect-version-number 3.3
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-provision.templates: 4
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 3
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 13
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 19
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 24
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 29
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 34
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 44
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-hostmaster.templates: 55
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-cluster-slave.templates: 3
+E: aegir3-provision source: untranslatable-debconf-templates aegir3-cluster-slave.templates: 14
+W: aegir3-provision source: ancient-standards-version 3.9.2 (current is 3.9.6)
+E: aegir3: debian-changelog-file-contains-invalid-email-address guigui@turbowarp
+W: aegir3: debian-changelog-line-too-long line 4
+E: aegir3-provision: debian-changelog-file-contains-invalid-email-address guigui@turbowarp
+W: aegir3-provision: debian-changelog-line-too-long line 4
+E: aegir3-provision: no-debconf-config
+W: aegir3-provision: malformed-prompt-in-templates aegir/drush_version
+W: aegir3-provision: extra-license-file usr/share/drush/commands/provision/Symfony/Component/ClassLoader/LICENSE
+E: aegir3-hostmaster: debian-changelog-file-contains-invalid-email-address guigui@turbowarp
+W: aegir3-hostmaster: debian-changelog-line-too-long line 4
+E: aegir3-hostmaster: non-standard-dir-in-var var/aegir/
+E: aegir3-cluster-slave: debian-changelog-file-contains-invalid-email-address guigui@turbowarp
+W: aegir3-cluster-slave: debian-changelog-line-too-long line 4
+W: aegir3-cluster-slave: malformed-prompt-in-templates aegir/master_ssh_key
+W: aegir3-cluster-slave: malformed-prompt-in-templates aegir/master_mountpoint
+E: aegir3-cluster-slave: non-standard-dir-in-var var/aegir/
+N: 1 tag overridden (1 error)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile aegir3-provision_3.3.dsc jenkins@ci.aegirproject.org
+
+ signfile aegir3-provision_3.3_amd64.changes jenkins@ci.aegirproject.org
+
+Successfully signed dsc and changes files
+Uploading package to aegir repository
+gpg: Signature made Thu 28 Jan 2016 02:25:38 PM EST using RSA key ID 49CB0A3C
+gpg: Good signature from "Aegir Jenkins Build Bot <jenkins@ci.aegirproject.org>"
+gpg: Signature made Thu 28 Jan 2016 02:25:38 PM EST using RSA key ID 49CB0A3C
+gpg: Good signature from "Aegir Jenkins Build Bot <jenkins@ci.aegirproject.org>"
+Checking signature on .changes
+Good signature on build-area/aegir3-provision_3.3_amd64.changes.
+Checking signature on .dsc
+Good signature on build-area/aegir3-provision_3.3.dsc.
+Uploading to aegir (via local to localhost):
+Successfully uploaded packages.
+Waiting 10 seconds to let reprepro pickup the new files
+debian file built: aegir3-provision_3.3_all.deb
+HEAD is now at 80b704f Revert "change version information for release 3.3"
++ exit 0
+Archiving artifacts
+Finished: SUCCESS

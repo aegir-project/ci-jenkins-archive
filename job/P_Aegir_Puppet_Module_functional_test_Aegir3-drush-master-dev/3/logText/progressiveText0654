@@ -1,0 +1,164 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/workspace
+ > git rev-parse --is-inside-work-tree
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version
+ > git fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/1.0.x^{commit}
+Checking out Revision d6ed79abb5c42da54f90bc97b2cdc81ae9721e23 (origin/1.0.x)
+ > git config core.sparsecheckout
+ > git checkout -f d6ed79abb5c42da54f90bc97b2cdc81ae9721e23
+ > git rev-list c130467be9c2c8d5927f17117ad6c6c4742ce235
+ > git tag -a -f -m Jenkins Build #3 jenkins-P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev-3
+[workspace] $ /bin/sh -xe /tmp/hudson2256679801561606020.sh
++ ./tests/functional_tests/aegir3-drush-master-dev/setup.sh
+Already up-to-date.
+From http://git.drupal.org/project/puppet-aegir
+   c130467..d6ed79a  1.0.x      -> origin/1.0.x
+Updating c130467..d6ed79a
+Fast-forward
+ tests/functional_tests/aegir3-drush-master-dev/Vagrantfile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+==> default: VM not created. Moving on...
+[workspace] $ /bin/sh -xe /tmp/hudson6174998426293867605.sh
++ ./tests/functional_tests/aegir3-drush-master-dev/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'wheezy64'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 70%Progress: 90%==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: workspace_default_1415889087181_50079
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.12
+    default: VirtualBox Version: 4.3
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/workspace/tmp/apt/cache
+    default: /var/aegir/.drush/cache => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/workspace/tmp/drush/cache
+    default: /tmp/vagrant-puppet-3/manifests => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/workspace/tests/functional_tests/aegir3-drush-master-dev
+    default: /tmp/vagrant-puppet-3/modules-0 => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/workspace/tests/functional_tests/aegir3-drush-master-dev/modules
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with nodes.pp...
+==> default: stdin: is not a tty
+==> default: notice: /Stage[main]/Drush::Apt::Update/Exec[drush_apt_update]/returns: executed successfully
+==> default: notice: /Stage[main]/Drush::Git::Drush/Drush::Git[https://github.com/drush-ops/drush.git]/Exec[drush-clone-repo:https://github.com/drush-ops/drush.git]/returns: executed successfully
+==> default: notice: /Stage[main]/Drush::Git::Drush/Drush::Git[https://github.com/drush-ops/drush.git]/Exec[drush-checkout-ref:https://github.com/drush-ops/drush.git]/returns: executed successfully
+==> default: notice: /Stage[main]/Drush::Git::Drush/File[symlink drush]/ensure: created
+==> default: notice: /Stage[main]/Drush::Git::Drush/Package[php5-cli]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Drush::Git::Drush/Exec[Install composer]/returns: executed successfully
+==> default: notice: /Stage[main]/Drush::Git::Drush/Exec[Install Drush dependencies]: Triggered 'refresh' from 1 events
+==> default: notice: /Stage[main]/Drush::Git::Drush/Exec[first drush run]: Triggered 'refresh' from 1 events
+==> default: notice: /Stage[main]/Aegir::Dev/File[/etc/sudoers.d/aegir]/ensure: created
+==> default: notice: /Stage[main]/Aegir::Dev/Group[aegir]/ensure: created
+==> default: notice: /Stage[main]/Aegir::Dev/Exec[aegir_dev_update_apt]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Dev/Package[mysql-server]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev/Exec[mysql_secure_installation]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Dev/Exec[mysql_secure_installation]: Triggered 'refresh' from 1 events
+==> default: notice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-mysql]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-gd]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev::Dependencies/Package[postfix]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev::Dependencies/Package[unzip]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev/Package[apache2]/ensure: ensure changed 'purged' to 'present'
+==> default: notice: /Stage[main]/Aegir::Dev/User[aegir]/ensure: created
+==> default: 
+==> default: notice: /Stage[main]/Aegir::Dev/File[/var/aegir]/owner: owner changed 'root' to 'aegir'
+==> default: notice: /Stage[main]/Aegir::Dev/File[/var/aegir]/group: group changed 'root' to 'aegir'
+==> default: notice: /Stage[main]/Aegir::Dev/File[/etc/apache2/conf.d/aegir.conf]/ensure: created
+==> default: notice: /Stage[main]/Aegir::Dev/Exec[Enable mod-rewrite]: Triggered 'refresh' from 1 events
+==> default: notice: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush]/owner: owner changed 'root' to 'aegir'
+==> default: notice: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush]/group: group changed 'root' to 'aegir'
+==> default: notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-clone-repo:Install provision]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-checkout-ref:Install provision]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision_git]/Exec[drush-clone-repo:Install provision_git]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision_git]/Exec[drush-checkout-ref:Install provision_git]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Dev/Drush::Run[cache-clear drush]/Exec[drush-run:cache-clear drush]/returns: executed successfully
+==> default: err: /Stage[main]/Aegir::Dev/Drush::Run[hostmaster-install]/Exec[drush-run:hostmaster-install]/returns: change from notrun to 0 failed: drush @none --yes  --debug --working-copy --aegir_version=7.x-3.x --strict=0 --script_user=aegir --aegir_root=/var/aegir --web_group=www-data --aegir_db_port=3306 --http_service_type=apache --aegir_host=aegir3-drush-master-dev.test --http_port=80 --root=/var/aegir/hostmaster-7.x-3.x hostmaster-install aegir3-drush-master-dev.test  >> /var/aegir/install.log 2>&1 returned 1 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/drush/manifests/run.pp:31
+==> default: notice: /Stage[main]/Aegir::Dev/Exec[aegir-dev login]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+==> default: warning: /Stage[main]/Aegir::Dev/Exec[aegir-dev login]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Dev/File[queue daemon init script]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+==> default: warning: /Stage[main]/Aegir::Dev/File[queue daemon init script]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Dev/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+==> default: warning: /Stage[main]/Aegir::Dev/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir::Dev/Service[hosting-queued]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+==> default: warning: /Stage[main]/Aegir::Dev/Service[hosting-queued]: Skipping because of failed dependencies
+==> default: notice: Finished catalog run in 162.93 seconds
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+FACTER_fqdn='aegir3-drush-master-dev.test' puppet apply --modulepath '/tmp/vagrant-puppet-3/modules-0:/etc/puppet/modules' --color=false --manifestdir /tmp/vagrant-puppet-3/manifests --detailed-exitcodes /tmp/vagrant-puppet-3/manifests/nodes.pp
+
+Stdout from the command:
+
+notice: /Stage[main]/Drush::Apt::Update/Exec[drush_apt_update]/returns: executed successfully
+notice: /Stage[main]/Drush::Git::Drush/Drush::Git[https://github.com/drush-ops/drush.git]/Exec[drush-clone-repo:https://github.com/drush-ops/drush.git]/returns: executed successfully
+notice: /Stage[main]/Drush::Git::Drush/Drush::Git[https://github.com/drush-ops/drush.git]/Exec[drush-checkout-ref:https://github.com/drush-ops/drush.git]/returns: executed successfully
+notice: /Stage[main]/Drush::Git::Drush/File[symlink drush]/ensure: created
+notice: /Stage[main]/Drush::Git::Drush/Package[php5-cli]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Drush::Git::Drush/Exec[Install composer]/returns: executed successfully
+notice: /Stage[main]/Drush::Git::Drush/Exec[Install Drush dependencies]: Triggered 'refresh' from 1 events
+notice: /Stage[main]/Drush::Git::Drush/Exec[first drush run]: Triggered 'refresh' from 1 events
+notice: /Stage[main]/Aegir::Dev/File[/etc/sudoers.d/aegir]/ensure: created
+notice: /Stage[main]/Aegir::Dev/Group[aegir]/ensure: created
+notice: /Stage[main]/Aegir::Dev/Exec[aegir_dev_update_apt]/returns: executed successfully
+notice: /Stage[main]/Aegir::Dev/Package[mysql-server]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev/Exec[mysql_secure_installation]/returns: executed successfully
+notice: /Stage[main]/Aegir::Dev/Exec[mysql_secure_installation]: Triggered 'refresh' from 1 events
+notice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-mysql]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5-gd]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev::Dependencies/Package[php5]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev::Dependencies/Package[postfix]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev::Dependencies/Package[unzip]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev/Package[apache2]/ensure: ensure changed 'purged' to 'present'
+notice: /Stage[main]/Aegir::Dev/User[aegir]/ensure: created
+notice: /Stage[main]/Aegir::Dev/File[/var/aegir]/owner: owner changed 'root' to 'aegir'
+notice: /Stage[main]/Aegir::Dev/File[/var/aegir]/group: group changed 'root' to 'aegir'
+notice: /Stage[main]/Aegir::Dev/File[/etc/apache2/conf.d/aegir.conf]/ensure: created
+notice: /Stage[main]/Aegir::Dev/Exec[Enable mod-rewrite]: Triggered 'refresh' from 1 events
+notice: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush]/owner: owner changed 'root' to 'aegir'
+notice: /Stage[main]/Aegir::Dev/File[/var/aegir/.drush]/group: group changed 'root' to 'aegir'
+notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-clone-repo:Install provision]/returns: executed successfully
+notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision]/Exec[drush-checkout-ref:Install provision]/returns: executed successfully
+notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision_git]/Exec[drush-clone-repo:Install provision_git]/returns: executed successfully
+notice: /Stage[main]/Aegir::Dev/Drush::Git[Install provision_git]/Exec[drush-checkout-ref:Install provision_git]/returns: executed successfully
+notice: /Stage[main]/Aegir::Dev/Drush::Run[cache-clear drush]/Exec[drush-run:cache-clear drush]/returns: executed successfully
+err: /Stage[main]/Aegir::Dev/Drush::Run[hostmaster-install]/Exec[drush-run:hostmaster-install]/returns: change from notrun to 0 failed: drush @none --yes  --debug --working-copy --aegir_version=7.x-3.x --strict=0 --script_user=aegir --aegir_root=/var/aegir --web_group=www-data --aegir_db_port=3306 --http_service_type=apache --aegir_host=aegir3-drush-master-dev.test --http_port=80 --root=/var/aegir/hostmaster-7.x-3.x hostmaster-install aegir3-drush-master-dev.test  >> /var/aegir/install.log 2>&1 returned 1 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/drush/manifests/run.pp:31
+notice: /Stage[main]/Aegir::Dev/Exec[aegir-dev login]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+warning: /Stage[main]/Aegir::Dev/Exec[aegir-dev login]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Dev/File[queue daemon init script]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+warning: /Stage[main]/Aegir::Dev/File[queue daemon init script]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Dev/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+warning: /Stage[main]/Aegir::Dev/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir::Dev/Service[hosting-queued]: Dependency Exec[drush-run:hostmaster-install] has failures: true
+warning: /Stage[main]/Aegir::Dev/Service[hosting-queued]: Skipping because of failed dependencies
+notice: Finished catalog run in 162.93 seconds
+
+
+Stderr from the command:
+
+stdin: is not a tty
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: rink@initfour.nl
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

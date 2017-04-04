@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 29,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+            "branch" : [
+              {
+                "SHA1" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+            "branch" : [
+              {
+                "SHA1" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+        "branch" : [
+          {
+            "SHA1" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#29",
+  "duration" : 100118,
+  "estimatedDuration" : 5666,
+  "executor" : None,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #29",
+  "id" : "2013-12-19_10-07-36",
+  "keepLog" : False,
+  "number" : 29,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1387465656000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/29/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/mysql.pp",
+          "tests/apt/debconf.pp",
+          "tests/mysql/preseed.pp"
+        ],
+        "commitId" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+        "timestamp" : 1387465083000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add apt and mysql smoke tests.\n",
+        "date" : "2013-12-19T09:58:03-0500 -0500",
+        "id" : "35fa62b8fa77e116b4ebb67e4961494805531a3f",
+        "msg" : "Add apt and mysql smoke tests.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/mysql/preseed.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/apt/debconf.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/mysql.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

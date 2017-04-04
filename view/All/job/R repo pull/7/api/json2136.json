@@ -1,0 +1,67 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CHANNEL",
+          "value" : "stable"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION",
+          "value" : "iamsureiwanttodothis"
+        },
+        {
+          "_class" : "hudson.plugins.validating_string_parameter.ValidatingStringParameterValue",
+          "name" : "BUILD_CONFIRMATION2",
+          "value" : "thiswillreleasecodeontootherpeoplescomputers"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#7",
+  "duration" : 26,
+  "estimatedDuration" : 196,
+  "executor" : null,
+  "fullDisplayName" : "R repo pull #7",
+  "id" : "2012-08-01_06-47-29",
+  "keepLog" : false,
+  "number" : 7,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1343818049000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20repo%20pull/7/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : null
+  },
+  "culprits" : [
+    
+  ]
+}

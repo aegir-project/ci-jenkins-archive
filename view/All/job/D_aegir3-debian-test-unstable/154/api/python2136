@@ -1,0 +1,119 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UpstreamCause",
+          "shortDescription" : "Started by upstream project \"D_aegir-debian-build-3x\" build number 169",
+          "upstreamBuild" : 169,
+          "upstreamProject" : "D_aegir-debian-build-3x",
+          "upstreamUrl" : "job/D_aegir-debian-build-3x/"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 154,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+            "branch" : [
+              {
+                "SHA1" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+            "branch" : [
+              {
+                "SHA1" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+        "branch" : [
+          {
+            "SHA1" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#154",
+  "duration" : 367302,
+  "estimatedDuration" : 1189565,
+  "executor" : None,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable #154",
+  "id" : "154",
+  "keepLog" : False,
+  "number" : 154,
+  "queueId" : 2406,
+  "result" : "SUCCESS",
+  "timestamp" : 1454911291135,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable/154/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+        ],
+        "commitId" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+        "timestamp" : 1454874936000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Merge from dev/jessie branch\n",
+        "date" : "2016-02-07T14:55:36-0500 +0100",
+        "id" : "221fad684bdf95e7a83898114dcc5861f1eaffd7",
+        "msg" : "Merge from dev/jessie branch",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

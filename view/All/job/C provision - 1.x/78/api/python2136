@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 78,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+            "branch" : [
+              {
+                "SHA1" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+            "branch" : [
+              {
+                "SHA1" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+        "branch" : [
+          {
+            "SHA1" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#78",
+  "duration" : 14113,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #78",
+  "id" : "2012-05-13_06-45-28",
+  "keepLog" : False,
+  "number" : 78,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1336905928000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/78/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "db/mysql/mysql_service.inc"
+        ],
+        "commitId" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+        "timestamp" : 1336891369000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1573004 by cafuego - provision-migrate fails with 'Dummy connection failed to fail: mysql: option -e' requires an argument on Debian Wheezy\n",
+        "date" : "2012-05-13T02:42:49-0400 +1000",
+        "id" : "6fcc6288b05f3252279685bc2d5371dd09a1941f",
+        "msg" : "Issue #1573004 by cafuego - provision-migrate fails with 'Dummy connection failed to fail: mysql: option -e' requires an argument on Debian Wheezy",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "db/mysql/mysql_service.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      
+    }
+  ],
+  "description" : "Build a debian package of provision, following the latest changes on the 2.x branch",
+  "displayName" : "D_aegir-debian-build-3x-old-2015-10",
+  "displayNameOrNull" : null,
+  "name" : "D_aegir-debian-build-3x-old-2015-10",
+  "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/job/D_aegir-debian-build-3x-old-2015-10/",
+  "buildable" : false,
+  "builds" : [
+    
+  ],
+  "color" : "disabled",
+  "firstBuild" : null,
+  "healthReport" : [
+    
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : null,
+  "lastCompletedBuild" : null,
+  "lastFailedBuild" : null,
+  "lastStableBuild" : null,
+  "lastSuccessfulBuild" : null,
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : null,
+  "nextBuildNumber" : 1,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

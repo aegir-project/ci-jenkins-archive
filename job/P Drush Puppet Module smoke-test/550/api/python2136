@@ -1,0 +1,92 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 550,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+            "branch" : [
+              {
+                "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+            "branch" : [
+              {
+                "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+        "branch" : [
+          {
+            "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-drush.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#550",
+  "duration" : 53309,
+  "estimatedDuration" : 52906,
+  "executor" : None,
+  "fullDisplayName" : "P Drush Puppet Module smoke-test #550",
+  "id" : "550",
+  "keepLog" : False,
+  "number" : 550,
+  "queueId" : 5569,
+  "result" : "SUCCESS",
+  "timestamp" : 1489541883195,
+  "url" : "http://ci.aegirproject.org/job/P%20Drush%20Puppet%20Module%20smoke-test/550/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 27,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "09b24a4e9e0e014597cdb1932760d19029637275",
+            "branch" : [
+              {
+                "SHA1" : "09b24a4e9e0e014597cdb1932760d19029637275",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "09b24a4e9e0e014597cdb1932760d19029637275",
+            "branch" : [
+              {
+                "SHA1" : "09b24a4e9e0e014597cdb1932760d19029637275",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "09b24a4e9e0e014597cdb1932760d19029637275",
+        "branch" : [
+          {
+            "SHA1" : "09b24a4e9e0e014597cdb1932760d19029637275",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#27",
+  "duration" : 13065,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #27",
+  "id" : "2012-03-06_20-16-26",
+  "keepLog" : False,
+  "number" : 27,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331082986000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/27/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/source/format"
+        ],
+        "commitId" : "09b24a4e9e0e014597cdb1932760d19029637275",
+        "timestamp" : 1331064690000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "we are native, no sense in using quilt anymore\n",
+        "date" : "2012-03-06T15:11:30-0500 -0500",
+        "id" : "09b24a4e9e0e014597cdb1932760d19029637275",
+        "msg" : "we are native, no sense in using quilt anymore",
+        "paths" : [
+          {
+            "editType" : "delete",
+            "file" : "debian/source/format"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

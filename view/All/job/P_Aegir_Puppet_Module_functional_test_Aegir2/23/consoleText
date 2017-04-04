@@ -1,0 +1,95 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/new^{commit} # timeout=10
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cff6da44c48d476e90a2939956eaf60e5209d14d
+ > git rev-list cff6da44c48d476e90a2939956eaf60e5209d14d # timeout=10
+ > git tag -a -f -m Jenkins Build #23 jenkins-P_Aegir_Puppet_Module_functional_test_Aegir2-23 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson1244634715130142501.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Already up-to-date.
+From http://git.drupal.org/project/puppet-aegir
+   9b62be3..35b46c5  1.0.x      -> origin/1.0.x
+ * [new branch]      dev/jessie -> origin/dev/jessie
+Already up-to-date.
+[workspace] $ /bin/sh -xe /tmp/hudson2063040911472931539.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.10
+    default: VirtualBox Version: 4.3
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tmp/apt/cache
+    default: /tmp/vagrant-puppet-3/manifests => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tests/functional_tests/aegir2
+    default: /tmp/vagrant-puppet-3/modules-0 => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace/tests/functional_tests/aegir2/modules
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with nodes.pp...
+==> default: warning: Could not retrieve fact fqdn
+==> default: warning: Host is missing hostname and/or domain: aegir2
+==> default: err: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: change from notrun to 0 failed: apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/drush/manifests/apt.pp:47
+==> default: notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]/returns: executed successfully
+==> default: notice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]/returns: executed successfully
+==> default: err: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: change from notrun to 0 failed: /usr/bin/apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/aegir/manifests/apt.pp:58
+==> default: notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Exec[aegir_apt_update] has failures: true
+==> default: warning: /Stage[main]/Aegir/Package[aegir2]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[aegir_apt_update] has failures: true
+==> default: warning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+==> default: notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Exec[aegir_apt_update] has failures: true
+==> default: warning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies
+==> default: notice: Finished catalog run in 2.31 seconds
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+puppet apply --modulepath '/tmp/vagrant-puppet-3/modules-0:/etc/puppet/modules' --color=false --manifestdir /tmp/vagrant-puppet-3/manifests --detailed-exitcodes /tmp/vagrant-puppet-3/manifests/nodes.pp
+
+Stdout from the command:
+
+warning: Could not retrieve fact fqdn
+warning: Host is missing hostname and/or domain: aegir2
+err: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: change from notrun to 0 failed: apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/drush/manifests/apt.pp:47
+notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]/returns: executed successfully
+notice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]/returns: executed successfully
+err: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: change from notrun to 0 failed: /usr/bin/apt-get update && /usr/bin/apt-get autoclean returned 100 instead of one of [0] at /tmp/vagrant-puppet-3/modules-0/aegir/manifests/apt.pp:58
+notice: /Stage[main]/Aegir/Package[aegir2]: Dependency Exec[aegir_apt_update] has failures: true
+warning: /Stage[main]/Aegir/Package[aegir2]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[aegir_apt_update] has failures: true
+warning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Exec[aegir_apt_update] has failures: true
+warning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies
+notice: Finished catalog run in 2.31 seconds
+
+
+Stderr from the command:
+
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

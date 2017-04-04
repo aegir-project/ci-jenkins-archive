@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 32,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+            "branch" : [
+              {
+                "SHA1" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+            "branch" : [
+              {
+                "SHA1" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+        "branch" : [
+          {
+            "SHA1" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#32",
+  "duration" : 10913,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #32",
+  "id" : "2012-03-24_12-16-08",
+  "keepLog" : False,
+  "number" : 32,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332605768000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/32/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/delete.provision.inc"
+        ],
+        "commitId" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+        "timestamp" : 1332590971000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.\n",
+        "date" : "2012-03-24T08:09:31-0400 +0000",
+        "id" : "cc8f6905a194bc2ef46f29750d4538bbf78e6907",
+        "msg" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/delete.provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom"><title>D_aegir-debian-auto Multiple SCMs changes</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/changes" rel="alternate"/><updated>2014-04-23T18:16:27Z</updated><author><name>Jenkins Server</name></author><id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id><entry><title>#257 change version information for release 1.12 (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/257/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/257/changes#detail0</id><published>2014-04-23T18:16:27Z</published><updated>2014-04-23T18:16:27Z</updated><content>provision.info
+upgrade.sh.txt
+aegir.make
+debian/changelog
+</content></entry><entry><title>#257 Revert "change version information for release 1.12" (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/257/changes#detail1" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/257/changes#detail1</id><published>2014-04-23T18:16:27Z</published><updated>2014-04-23T18:16:27Z</updated><content>provision.info
+upgrade.sh.txt
+aegir.make
+</content></entry><entry><title>#256 install apache config file in the proper location for either 2.2 or 2.4, fixes #2153929 (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/256/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/256/changes#detail0</id><published>2014-03-10T13:15:31Z</published><updated>2014-03-10T13:15:31Z</updated><content>debian/aegir-provision.postinst
+</content></entry><entry><title>#255 add 2.4 and 2.2-backward-compatible apache config, fixes #2155445 (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/255/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/255/changes#detail0</id><published>2014-03-04T18:46:53Z</published><updated>2014-03-04T18:46:53Z</updated><content>http/apache/platform.tpl.php
+</content></entry><entry><title>#254 security fix: SA-CORE-2013-003, files/ protection (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/254/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/254/changes#detail0</id><published>2013-11-26T16:46:36Z</published><updated>2013-11-26T16:46:36Z</updated><content>http/apache_ssl/vhost_ssl.tpl.php
+http/apache/vhost.tpl.php
+platform/verify.provision.inc
+platform/provision_drupal.drush.inc
+</content></entry><entry><title>#254 change version information for release 1.11 (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/254/changes#detail1" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/254/changes#detail1</id><published>2013-11-26T16:46:36Z</published><updated>2013-11-26T16:46:36Z</updated><content>debian/changelog
+upgrade.sh.txt
+aegir.make
+provision.info
+</content></entry><entry><title>#254 Revert "change version information for release 1.11" (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/254/changes#detail2" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/254/changes#detail2</id><published>2013-11-26T16:46:36Z</published><updated>2013-11-26T16:46:36Z</updated><content>aegir.make
+provision.info
+upgrade.sh.txt
+</content></entry><entry><title>#253 another aegir2 fix (Antoine Beaupré)</title><link type="text/html" href="http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/253/changes#detail0" rel="alternate"/><id>view/All/job/D_aegir-debian-auto/253/changes#detail0</id><published>2013-10-17T18:15:59Z</published><updated>2013-10-17T18:15:59Z</updated><content>jenkins-debian-build
+</content></entry></feed>

@@ -1,0 +1,206 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 255,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "branch" : [
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/HEAD"
+              },
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "branch" : [
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/HEAD"
+              },
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        },
+        "origin/HEAD" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 255,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "branch" : [
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/HEAD"
+              },
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "branch" : [
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/HEAD"
+              },
+              {
+                "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "branch" : [
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/HEAD"
+          },
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/sandbox/darthsteven/1286014.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 255,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+            "branch" : [
+              {
+                "SHA1" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+            "branch" : [
+              {
+                "SHA1" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+        "branch" : [
+          {
+            "SHA1" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+            "name" : "origin/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#255",
+  "duration" : 498247561,
+  "estimatedDuration" : 166091172,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-auto #255",
+  "id" : "2014-03-04_13-46-53",
+  "keepLog" : false,
+  "number" : 255,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1393958813000,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/255/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache/platform.tpl.php"
+        ],
+        "commitId" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+        "timestamp" : 1393958711000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add 2.4 and 2.2-backward-compatible apache config, fixes #2155445\n",
+        "date" : "2014-03-04T13:45:11-0500 -0500",
+        "id" : "b454c48c0c2a07ec67262bae72cc8b2b700407f7",
+        "msg" : "add 2.4 and 2.2-backward-compatible apache config, fixes #2155445",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/apache/platform.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/anarcat",
+      "fullName" : "Antoine Beaupré"
+    }
+  ]
+}

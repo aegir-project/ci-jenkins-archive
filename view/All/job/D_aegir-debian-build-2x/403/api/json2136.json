@@ -1,0 +1,286 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 403,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+            "branch" : [
+              {
+                "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+            "branch" : [
+              {
+                "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+        "branch" : [
+          {
+            "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 403,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+            "branch" : [
+              {
+                "SHA1" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+            "branch" : [
+              {
+                "SHA1" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+        "branch" : [
+          {
+            "SHA1" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/hostmaster"
+      ],
+      "scmName" : "hostmaster"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 403,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+        "branch" : [
+          {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#403",
+  "duration" : 15954,
+  "estimatedDuration" : 20985,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-build-2x #403",
+  "id" : "2015-03-25_14-42-36",
+  "keepLog" : false,
+  "number" : 403,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1427308956000,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/403/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "provision.info",
+          "upgrade.sh.txt",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "8be682696287b3e1a4328611e29f4b12eb7b32e1",
+        "timestamp" : 1427308940000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "change version information for release 2.3\n",
+        "date" : "2015-03-25T14:42:20-0400 -0400",
+        "id" : "8be682696287b3e1a4328611e29f4b12eb7b32e1",
+        "msg" : "change version information for release 2.3",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt",
+          "provision.info",
+          "aegir.make",
+          "aegir-release.make"
+        ],
+        "commitId" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+        "timestamp" : 1427308940000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"change version information for release 2.3\"\n\nThis reverts commit 8be682696287b3e1a4328611e29f4b12eb7b32e1.\n",
+        "date" : "2015-03-25T14:42:20-0400 -0400",
+        "id" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+        "msg" : "Revert \"change version information for release 2.3\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "drupal-org.make"
+        ],
+        "commitId" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+        "timestamp" : 1427308771000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Update contrib modules.\n",
+        "date" : "2015-03-25T14:39:31-0400 -0400",
+        "id" : "32559e3c37e7c46c81b4e1c4469cd1fb488f7fcc",
+        "msg" : "Update contrib modules.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "drupal-org.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "7.x-3.7"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 21,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 21,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "019af5131446ce8abc7858b472462ee2f8a73134",
+            "branch" : [
+              {
+                "SHA1" : "019af5131446ce8abc7858b472462ee2f8a73134",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "019af5131446ce8abc7858b472462ee2f8a73134",
+            "branch" : [
+              {
+                "SHA1" : "019af5131446ce8abc7858b472462ee2f8a73134",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "019af5131446ce8abc7858b472462ee2f8a73134",
+        "branch" : [
+          {
+            "SHA1" : "019af5131446ce8abc7858b472462ee2f8a73134",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir3-cluster-slave_3.7_all.deb",
+      "fileName" : "aegir3-cluster-slave_3.7_all.deb",
+      "relativePath" : "provision/build-area/aegir3-cluster-slave_3.7_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-hostmaster_3.7_all.deb",
+      "fileName" : "aegir3-hostmaster_3.7_all.deb",
+      "relativePath" : "provision/build-area/aegir3-hostmaster_3.7_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-provision_3.7_all.deb",
+      "fileName" : "aegir3-provision_3.7_all.deb",
+      "relativePath" : "provision/build-area/aegir3-provision_3.7_all.deb"
+    },
+    {
+      "displayPath" : "aegir3_3.7_all.deb",
+      "fileName" : "aegir3_3.7_all.deb",
+      "relativePath" : "provision/build-area/aegir3_3.7_all.deb"
+    }
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#21",
+  "duration" : 19016,
+  "estimatedDuration" : 19141,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official-3.x #21",
+  "id" : "21",
+  "keepLog" : False,
+  "number" : 21,
+  "queueId" : 2640,
+  "result" : "SUCCESS",
+  "timestamp" : 1471434918249,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official-3.x/21/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Vagrantfile"
+        ],
+        "commitId" : "d7e70b31431e790ccbd0dcd5e7192946c22bba9b",
+        "timestamp" : 1467917270000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add debian repo to vagrant file\n",
+        "date" : "2016-07-07T14:47:50-0400 +0200",
+        "id" : "d7e70b31431e790ccbd0dcd5e7192946c22bba9b",
+        "msg" : "Add debian repo to vagrant file",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Vagrantfile"
+        ],
+        "commitId" : "e4505b3ab747f004fe938d4f3e9d4f4266c0dcb7",
+        "timestamp" : 1467917328000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "typo\n",
+        "date" : "2016-07-07T14:48:48-0400 +0200",
+        "id" : "e4505b3ab747f004fe938d4f3e9d4f4266c0dcb7",
+        "msg" : "typo",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Nginx/server.tpl.php",
+          "http/Provision/Config/Nginx/subdir.tpl.php",
+          "http/Provision/Config/Nginx/vhost.tpl.php"
+        ],
+        "commitId" : "5133c92dd83a70ab5fc07a8b8be1a60a1cb11eb3",
+        "timestamp" : 1468958006000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/colan",
+          "fullName" : "Colan Schwartz"
+        },
+        "comment" : "Issue #2768725 by memtkmcc, colan: Started blocking httpoxy attacks.\n",
+        "date" : "2016-07-19T15:53:26-0400 -0400",
+        "id" : "5133c92dd83a70ab5fc07a8b8be1a60a1cb11eb3",
+        "msg" : "Issue #2768725 by memtkmcc, colan: Started blocking httpoxy attacks.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/subdir.tpl.php",
+          "http/Provision/Service/http/nginx.php",
+          "http/Provision/Service/http/nginx/ssl.php",
+          "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+        ],
+        "commitId" : "89b462ec7b5f5d7dd2899be80256cb664e02d281",
+        "timestamp" : 1469048536000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/colan",
+          "fullName" : "Colan Schwartz"
+        },
+        "comment" : "Issue #2769587 by colan: Check for PHP 7 FPM sockets as well as in PHP 5.\n",
+        "date" : "2016-07-20T17:02:16-0400 -0400",
+        "id" : "89b462ec7b5f5d7dd2899be80256cb664e02d281",
+        "msg" : "Issue #2769587 by colan: Check for PHP 7 FPM sockets as well as in PHP 5.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx/ssl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Config/Drupal/Settings.php",
+          "Provision/Config/Drupal/provision_drupal_settings_7.tpl.php",
+          "Provision/Config/Drupal/provision_drupal_settings_8.tpl.php"
+        ],
+        "commitId" : "265f826ca2152ecf2716dac8d6158dbc0c6d5000",
+        "timestamp" : 1469787937000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2764111 by helmo, Thomas Bosviel: Support for utf8mb4\n",
+        "date" : "2016-07-29T06:25:37-0400 +0200",
+        "id" : "265f826ca2152ecf2716dac8d6158dbc0c6d5000",
+        "msg" : "Issue #2764111 by helmo, Thomas Bosviel: Support for utf8mb4",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/Settings.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/provision_drupal_settings_8.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/provision_drupal_settings_7.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Config/Drupal/Settings.php",
+          "Provision/Config/Drupal/provision_drupal_settings_7.tpl.php"
+        ],
+        "commitId" : "d559694ebd70af9b0a0e8d44b2e6ea7ab07b7076",
+        "timestamp" : 1469798544000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2764111 by helmo, Thomas Bosviel: Support for utf8mb4 - extra check\n",
+        "date" : "2016-07-29T09:22:24-0400 +0200",
+        "id" : "d559694ebd70af9b0a0e8d44b2e6ea7ab07b7076",
+        "msg" : "Issue #2764111 by helmo, Thomas Bosviel: Support for utf8mb4 - extra check",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/Settings.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/provision_drupal_settings_7.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php",
+          "http/Provision/Config/Nginx/subdir.tpl.php"
+        ],
+        "commitId" : "c1ec776233007e2e9ae3455c4f745d0408822771",
+        "timestamp" : 1470667023000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2738983 by memtkmcc: Nginx unknown status variable\n",
+        "date" : "2016-08-08T10:37:03-0400 +0200",
+        "id" : "c1ec776233007e2e9ae3455c4f745d0408822771",
+        "msg" : "Issue #2738983 by memtkmcc: Nginx unknown status variable",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Config/Drupal/Settings.php",
+          "Provision/Config/Drupal/provision_drupal_settings_7.tpl.php",
+          "db/Provision/Service/db/mysql.php",
+          "db/Provision/Service/db.php"
+        ],
+        "commitId" : "4ed1267b325b7a8696caa08f61aaf3dbfe0fe556",
+        "timestamp" : 1470668382000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2764111 by helmo, Thomas Bosviel: Support for utf8mb4\n",
+        "date" : "2016-08-08T10:59:42-0400 +0200",
+        "id" : "4ed1267b325b7a8696caa08f61aaf3dbfe0fe556",
+        "msg" : "Issue #2764111 by helmo, Thomas Bosviel: Support for utf8mb4",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/Settings.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "db/Provision/Service/db/mysql.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "db/Provision/Service/db.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config/Drupal/provision_drupal_settings_7.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "a280befe402ba88b8a668d7f496bc5e836555325",
+        "timestamp" : 1470836506000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Whitespace cleanup\n",
+        "date" : "2016-08-10T09:41:46-0400 +0200",
+        "id" : "a280befe402ba88b8a668d7f496bc5e836555325",
+        "msg" : "Whitespace cleanup",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt",
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "d89be35cbdb696a8bb560ed38e0cdf1588406b1a",
+        "timestamp" : 1471328400000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #1694792 by helmo: Allow provision-deploy to move a site to a platform with different module paths\n",
+        "date" : "2016-08-16T02:20:00-0400 +0200",
+        "id" : "d89be35cbdb696a8bb560ed38e0cdf1588406b1a",
+        "msg" : "Issue #1694792 by helmo: Allow provision-deploy to move a site to a platform with different module paths",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt",
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "c504e074809a692947b16dfcd9edac41fb6ce896",
+        "timestamp" : 1471342509000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"Issue #1694792 by helmo: Allow provision-deploy to move a site to a platform with different module paths\"\n\nThis reverts commit d89be35cbdb696a8bb560ed38e0cdf1588406b1a.\n",
+        "date" : "2016-08-16T06:15:09-0400 +0200",
+        "id" : "c504e074809a692947b16dfcd9edac41fb6ce896",
+        "msg" : "Revert \"Issue #1694792 by helmo: Allow provision-deploy to move a site to a platform with different module paths\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/backup.provision.inc",
+          "Provision/FileSystem.php"
+        ],
+        "commitId" : "3649983c9059e15e15b567a32a37542036e7c99c",
+        "timestamp" : 1471343341000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2774487 by helmo: Enable using bz2 for backup files\n",
+        "date" : "2016-08-16T06:29:01-0400 +0200",
+        "id" : "3649983c9059e15e15b567a32a37542036e7c99c",
+        "msg" : "Issue #2774487 by helmo: Enable using bz2 for backup files",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/FileSystem.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/backup.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          ".travis.yml"
+        ],
+        "commitId" : "fcbb79bb1146b9008e5a46b97f980e47d6e4fde2",
+        "timestamp" : 1471376209000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+          "fullName" : "Jon Pugh"
+        },
+        "comment" : "Adding .travis.yml to provision repository (#2)\n\n* Adding .travis.yml to provision repository\n\nCopy from https://github.com/aegir-project/hosting/pull/1\n\n* fix typo\n* temp add debug line to get some version info\n* Only run Travis CI test once for a PR\n* Update DOCKER_VERSION to patch new images on travis\n* Sync up with travis file from hostmaster\n* changing hostnames\n* use provision specific docker compose file.\n* Adding an intentional failure to test travis failure.\n* Revert \"Adding an intentional failure to test travis failure.\"\n",
+        "date" : "2016-08-16T15:36:49-0400 -0400",
+        "id" : "fcbb79bb1146b9008e5a46b97f980e47d6e4fde2",
+        "msg" : "Adding .travis.yml to provision repository (#2)",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : ".travis.yml"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/subdir.tpl.php",
+          "http/Provision/Config/Nginx/server.tpl.php",
+          "http/Provision/Service/http/nginx/ssl.php",
+          "http/Provision/Service/http/nginx.php",
+          "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+        ],
+        "commitId" : "fd9aca8cc44ae1be936d9279f82869a98d9f1870",
+        "timestamp" : 1471429477000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2738987 by millenniumtree, memtkmcc: Nginx unknown directive etag\n",
+        "date" : "2016-08-17T06:24:37-0400 +0200",
+        "id" : "fd9aca8cc44ae1be936d9279f82869a98d9f1870",
+        "msg" : "Issue #2738987 by millenniumtree, memtkmcc: Nginx unknown directive etag",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx/ssl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Inc/vhost_include.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt",
+          "aegir.make",
+          "provision.info",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "300661eea0e6a00314038865e99dce61dac5e9d2",
+        "timestamp" : 1471433684000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "change version information for release 3.7\n",
+        "date" : "2016-08-17T07:34:44-0400 +0200",
+        "id" : "300661eea0e6a00314038865e99dce61dac5e9d2",
+        "msg" : "change version information for release 3.7",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info",
+          "aegir-release.make"
+        ],
+        "commitId" : "019af5131446ce8abc7858b472462ee2f8a73134",
+        "timestamp" : 1471433684000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"change version information for release 3.7\"\n\nThis reverts commit 300661eea0e6a00314038865e99dce61dac5e9d2.\n",
+        "date" : "2016-08-17T07:34:44-0400 +0200",
+        "id" : "019af5131446ce8abc7858b472462ee2f8a73134",
+        "msg" : "Revert \"change version information for release 3.7\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/colan",
+      "fullName" : "Colan Schwartz"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+      "fullName" : "Jon Pugh"
+    }
+  ]
+}

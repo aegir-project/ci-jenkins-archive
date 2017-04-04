@@ -1,0 +1,28 @@
+Started by upstream project "P Drush Puppet Module smoke-test" build number 558
+originally caused by:
+ Started by timer
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module smoke-test/workspace
+ &gt; git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; git config remote.origin.url <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a> # timeout=10
+Fetching upstream changes from <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a>
+ &gt; git --version # timeout=10
+ &gt; git -c core.askpass=true fetch --tags --progress <a href='http://git.drupal.org/project/puppet-aegir.git'>http://git.drupal.org/project/puppet-aegir.git</a> +refs/heads/*:refs/remotes/origin/*
+ &gt; git rev-parse origin/new^{commit} # timeout=10
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+ &gt; git config core.sparsecheckout # timeout=10
+ &gt; git checkout -f cff6da44c48d476e90a2939956eaf60e5209d14d
+ &gt; git rev-list cff6da44c48d476e90a2939956eaf60e5209d14d # timeout=10
+ &gt; git tag -a -f -m Jenkins Build #1140 jenkins-P_Aegir_Puppet_Module_smoke-test-1140 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson103955543981482128.sh
++ ./tests/.ci/setup.sh
+[workspace] $ /bin/sh -xe /tmp/hudson5572259469144442793.sh
++ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==&gt; default: VirtualBox VM is already running.
+[workspace] $ /bin/sh -xe /tmp/hudson1164354618998910418.sh
++ vagrant destroy -f
+==&gt; default: Forcing shutdown of VM...
+==&gt; default: Destroying VM and associated drives...
+==&gt; default: Running cleanup tasks for 'shell' provisioner...
+Finished: SUCCESS

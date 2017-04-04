@@ -1,0 +1,118 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 10,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+            "branch" : [
+              {
+                "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+            "branch" : [
+              {
+                "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+        "branch" : [
+          {
+            "SHA1" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#10",
+  "duration" : 929340,
+  "estimatedDuration" : 1189565,
+  "executor" : None,
+  "fullDisplayName" : "D_aegir3-debian-test-unstable #10",
+  "id" : "10",
+  "keepLog" : False,
+  "number" : 10,
+  "queueId" : 792,
+  "result" : "SUCCESS",
+  "timestamp" : 1444978740458,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir3-debian-test-unstable/10/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+        ],
+        "commitId" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+        "timestamp" : 1444977575000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir3-deb-unstable-no-puppet: set mysql user\n",
+        "date" : "2015-10-16T02:39:35-0400 +0200",
+        "id" : "e66834bd38dcaaf06717a2fabdde0fb59f6a5c33",
+        "msg" : "aegir3-deb-unstable-no-puppet: set mysql user",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

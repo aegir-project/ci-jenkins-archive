@@ -1,0 +1,26 @@
+Started by timer
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/1.0.x^{commit} # timeout=10
+Checking out Revision 884aa8b1b34640f2b9b1457f983128b03c577542 (origin/1.0.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 884aa8b1b34640f2b9b1457f983128b03c577542
+ > git rev-list 5b79e51d4d675bbef814f740736f97f55b267a66 # timeout=10
+ > git tag -a -f -m Jenkins Build #439 jenkins-P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6-439 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson849631922564806014.sh
++ ./tests/functional_tests/aegir3-dev-drush6/setup.sh
+Cloning into '/var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/workspace/tests/functional_tests/aegir3-dev-drush6/modules/drush'...
+Cloning into '/var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/workspace/tests/functional_tests/aegir3-dev-drush6/modules/aegir'...
+A Vagrant environment or target machine is required to run this
+command. Run `vagrant init` to create a new Vagrant environment. Or,
+get an ID of a target machine from `vagrant global-status` to run
+this command on. A final option is to change to a directory with a
+Vagrantfile and to try again.
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: rink@initfour.nl
+Finished: FAILURE

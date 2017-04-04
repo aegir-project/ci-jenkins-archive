@@ -1,0 +1,27 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace - hudson.remoting.LocalChannel@4836a855
+Using strategy: Default
+Last Built Revision: Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson8765251472256778488.sh
++ ./tests/functional_tests/aegir2/setup.sh
+From http://git.drupal.org/project/puppet-drush
+   779f8a0..dae80a9  1.0.x      -> origin/1.0.x
+Already up-to-date.
+From http://git.drupal.org/project/puppet-aegir
+   763a1ff..9b62be3  1.0.x      -> origin/1.0.x
+Already up-to-date.
+[workspace] $ /bin/sh -xe /tmp/hudson4563321190598018632.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+Vagrant has detected that you have a version of VirtualBox installed
+that is not supported. Please install one of the supported versions
+listed below to use Vagrant:
+
+4.0, 4.1
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

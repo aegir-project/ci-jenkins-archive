@@ -1,0 +1,29 @@
+Started by upstream project "Matrix.deb" build number 13
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64/aegir_dist/unstable/aegir_web_server/nginx/drush_api/6
+Checkout:6 / /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64/aegir_dist/unstable/aegir_web_server/nginx/drush_api/6 - hudson.remoting.LocalChannel@62a937ae
+Using strategy: Default
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/project/puppet-aegir.git
+git --version
+git version 1.7.2.5
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+No change to record in branch origin/new
+[6] $ /bin/sh -xe /tmp/hudson1086071997761427447.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+Cloning into /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64/aegir_dist/unstable/aegir_web_server/nginx/drush_api/6/tests/functional_tests/matrix.deb/modules/drush...
+Cloning into /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64/aegir_dist/unstable/aegir_web_server/nginx/drush_api/6/tests/functional_tests/matrix.deb/modules/aegir...
+[6] $ /bin/sh -xe /tmp/hudson1047876315202571360.sh
++ ./tests/functional_tests/matrix.deb/run-tests.sh
+There was a problem with the configuration of Vagrant. The error message(s)
+are printed below:
+
+vm:
+* Base MAC address for eth0/NAT must be set. Contact box maintainer for more information.
+
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

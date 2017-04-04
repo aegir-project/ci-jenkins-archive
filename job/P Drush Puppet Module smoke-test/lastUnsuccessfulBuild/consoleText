@@ -1,0 +1,23 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/P Drush Puppet Module smoke-test/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Drush Puppet Module smoke-test/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision 13a1eb4188df5205ac2ff9eaa96d708ac0407631 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 0af96866a60de8fbe6f916e5892739eb4a87a5cf (origin/new)
+Checking out Revision 0af96866a60de8fbe6f916e5892739eb4a87a5cf (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson7880430234332147183.sh
++ vagrant up
+[default] VM already created. Booting if it's not already running...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+There was an error executing the following command with VBoxManage:
+
+["modifyvm", "0659be61-94eb-4d73-985b-031fa8552af0", "--natpf1", "ssh,tcp,,2222,,22"]
+
+For more information on the failure, enable detailed logging with
+VAGRANT_LOG.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

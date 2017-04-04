@@ -1,0 +1,8 @@
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/test job/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson6923510413866799736.sh
++ echo goooo jenkins!
+goooo jenkins!
+IRC notifier plugin: Sending notification to: #aegir
+IRC notifier plugin: [ERROR] not connected. Cannot send message to '#aegir'
+Finished: SUCCESS

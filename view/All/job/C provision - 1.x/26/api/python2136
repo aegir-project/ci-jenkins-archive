@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 26,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+            "branch" : [
+              {
+                "SHA1" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+            "branch" : [
+              {
+                "SHA1" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+        "branch" : [
+          {
+            "SHA1" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#26",
+  "duration" : 46502,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #26",
+  "id" : "2011-11-14_21-01-37",
+  "keepLog" : False,
+  "number" : 26,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321322497000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/26/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/login_reset.provision.inc"
+        ],
+        "commitId" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+        "timestamp" : 1321303631000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Revert \"#1146238 fix call to user_load when resetting password, to be compatible with Drupal 5\"\n\nThis reverts commit 61350a92900cabc627ed2a3551f8731ef5b0ac9b.\n",
+        "date" : "2011-11-14T15:47:11-0500 +1100",
+        "id" : "c1755804c41dfeb924712f4a5818ffdd253fe9fc",
+        "msg" : "Revert \"#1146238 fix call to user_load when resetting password, to be compatible with Drupal 5\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/login_reset.provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

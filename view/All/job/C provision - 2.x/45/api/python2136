@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 45,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+            "branch" : [
+              {
+                "SHA1" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+            "branch" : [
+              {
+                "SHA1" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+        "branch" : [
+          {
+            "SHA1" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#45",
+  "duration" : 9218,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #45",
+  "id" : "2012-04-24_13-45-27",
+  "keepLog" : False,
+  "number" : 45,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335289527000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/45/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+        "timestamp" : 1335275016000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Only errors 500 and 503 are supported in fastcgi_cache_use_stale (Nginx).\n",
+        "date" : "2012-04-24T09:43:36-0400 +0200",
+        "id" : "91efa9c7a2bbe75df553ddda00f881b5063365c2",
+        "msg" : "Only errors 500 and 503 are supported in fastcgi_cache_use_stale (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

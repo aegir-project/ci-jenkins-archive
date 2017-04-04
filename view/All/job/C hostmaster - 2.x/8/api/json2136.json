@@ -1,0 +1,171 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 8,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "642ce484c899caca132200fa631b3dbf9979abb7",
+            "branch" : [
+              {
+                "SHA1" : "642ce484c899caca132200fa631b3dbf9979abb7",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "642ce484c899caca132200fa631b3dbf9979abb7",
+            "branch" : [
+              {
+                "SHA1" : "642ce484c899caca132200fa631b3dbf9979abb7",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "642ce484c899caca132200fa631b3dbf9979abb7",
+        "branch" : [
+          {
+            "SHA1" : "642ce484c899caca132200fa631b3dbf9979abb7",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#8",
+  "duration" : 19899,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #8",
+  "id" : "2012-02-12_07-30-57",
+  "keepLog" : false,
+  "number" : 8,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329049857000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/8/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/package/hosting_package.module"
+        ],
+        "commitId" : "64d1948a1c5556669153ec65433986a8a59e7238",
+        "timestamp" : 1329031538000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1437386 by Steven Jones: Fixed Notices from hosting_package.module.\n",
+        "date" : "2012-02-12T02:25:38-0500 +0000",
+        "id" : "64d1948a1c5556669153ec65433986a8a59e7238",
+        "msg" : "Issue #1437386 by Steven Jones: Fixed Notices from hosting_package.module.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/package/hosting_package.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/package/hosting_package.module",
+          "modules/hosting/package/hosting_package.drush.inc",
+          "modules/hosting/package/hosting_package.install",
+          "modules/hosting/package/hosting_package_handler_filter_hosting_package_type.inc",
+          "modules/hosting/package/hosting_package.views.inc"
+        ],
+        "commitId" : "642ce484c899caca132200fa631b3dbf9979abb7",
+        "timestamp" : 1329031543000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Clean line endings in hosting_package module.\n",
+        "date" : "2012-02-12T02:25:43-0500 +0000",
+        "id" : "642ce484c899caca132200fa631b3dbf9979abb7",
+        "msg" : "Clean line endings in hosting_package module.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/package/hosting_package_handler_filter_hosting_package_type.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/package/hosting_package.views.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/package/hosting_package.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/package/hosting_package.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/package/hosting_package.install"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

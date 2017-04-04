@@ -1,0 +1,171 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 8,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+            "branch" : [
+              {
+                "SHA1" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+            "branch" : [
+              {
+                "SHA1" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+        "branch" : [
+          {
+            "SHA1" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#8",
+  "duration" : 14371,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #8",
+  "id" : "2012-02-13_18-00-58",
+  "keepLog" : False,
+  "number" : 8,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329174058000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/8/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/site/hosting_site.nodeapi.inc",
+          "modules/hosting/server/hosting.ip.inc",
+          "modules/hosting/clone/hosting_clone.drush.inc",
+          "modules/hosting/web_server/ssl/hosting_ssl.nodeapi.inc",
+          "modules/hosting/task/hosting_task.module"
+        ],
+        "commitId" : "d0a40c29853c9bf304478f08558b487df42ac42c",
+        "timestamp" : 1329155563000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1358768 by Steven Jones: Fixed 6.x-1.6 generates multiple Undefined property errors on site import.\n",
+        "date" : "2012-02-13T12:52:43-0500 +0000",
+        "id" : "d0a40c29853c9bf304478f08558b487df42ac42c",
+        "msg" : "Issue #1358768 by Steven Jones: Fixed 6.x-1.6 generates multiple Undefined property errors on site import.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/clone/hosting_clone.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_server/ssl/hosting_ssl.nodeapi.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/server/hosting.ip.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/site/hosting_site.nodeapi.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/web_server/ssl/hosting_ssl.nodeapi.inc"
+        ],
+        "commitId" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+        "timestamp" : 1329155604000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix SSL key name sanitisation.\n",
+        "date" : "2012-02-13T12:53:24-0500 +0000",
+        "id" : "f285d760d3ec1145c10a4e9059feade77810c2af",
+        "msg" : "Fix SSL key name sanitisation.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/web_server/ssl/hosting_ssl.nodeapi.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

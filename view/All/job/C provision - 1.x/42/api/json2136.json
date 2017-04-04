@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 42,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+            "branch" : [
+              {
+                "SHA1" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+            "branch" : [
+              {
+                "SHA1" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+        "branch" : [
+          {
+            "SHA1" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#42",
+  "duration" : 34350,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #42",
+  "id" : "2012-03-04_01-16-22",
+  "keepLog" : false,
+  "number" : 42,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1330841782000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/42/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+        "timestamp" : 1330822791000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80.\n",
+        "date" : "2012-03-03T19:59:51-0500 +0100",
+        "id" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+        "msg" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

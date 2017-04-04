@@ -1,0 +1,158 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "refs/remotes/origin/dev/jessie" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 195,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+            "branch" : [
+              {
+                "SHA1" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+            "branch" : [
+              {
+                "SHA1" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          }
+        },
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 186,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+        "branch" : [
+          {
+            "SHA1" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+            "name" : "refs/remotes/origin/dev/jessie"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#195",
+  "duration" : 441667,
+  "estimatedDuration" : 188500,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #195",
+  "id" : "2015-05-28_03-12-56",
+  "keepLog" : False,
+  "number" : 195,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1432797176000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/195/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "files/hosting_queued.service",
+          "files/hosting-queued.service",
+          "manifests/dev.pp"
+        ],
+        "commitId" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+        "timestamp" : 1432797161000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Rename hosting_queued to hosting-queued\n",
+        "date" : "2015-05-28T03:12:41-0400 +0200",
+        "id" : "8463df984e95333d56689e3c611f7d8a6e8dea25",
+        "msg" : "Rename hosting_queued to hosting-queued",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          },
+          {
+            "editType" : "delete",
+            "file" : "files/hosting_queued.service"
+          },
+          {
+            "editType" : "add",
+            "file" : "files/hosting-queued.service"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

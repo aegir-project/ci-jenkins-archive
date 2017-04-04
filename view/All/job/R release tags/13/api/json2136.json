@@ -1,0 +1,62 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "BRANCH_TO_BUILD",
+          "value" : "6.x-1.x"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_TAG",
+          "value" : "6.x-1.6"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#13",
+  "duration" : 107768,
+  "estimatedDuration" : 42405,
+  "executor" : null,
+  "fullDisplayName" : "R release tags #13",
+  "id" : "2011-11-15_07-20-08",
+  "keepLog" : false,
+  "number" : 13,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321359608000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20release%20tags/13/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : null
+  },
+  "culprits" : [
+    
+  ]
+}

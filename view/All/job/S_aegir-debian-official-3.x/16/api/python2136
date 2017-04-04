@@ -1,0 +1,572 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "7.x-3.3"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 16,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 16,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+            "branch" : [
+              {
+                "SHA1" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+            "branch" : [
+              {
+                "SHA1" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+        "branch" : [
+          {
+            "SHA1" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir3-cluster-slave_3.3_all.deb",
+      "fileName" : "aegir3-cluster-slave_3.3_all.deb",
+      "relativePath" : "provision/build-area/aegir3-cluster-slave_3.3_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-hostmaster_3.3_all.deb",
+      "fileName" : "aegir3-hostmaster_3.3_all.deb",
+      "relativePath" : "provision/build-area/aegir3-hostmaster_3.3_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-provision_3.3_all.deb",
+      "fileName" : "aegir3-provision_3.3_all.deb",
+      "relativePath" : "provision/build-area/aegir3-provision_3.3_all.deb"
+    },
+    {
+      "displayPath" : "aegir3_3.3_all.deb",
+      "fileName" : "aegir3_3.3_all.deb",
+      "relativePath" : "provision/build-area/aegir3_3.3_all.deb"
+    }
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#16",
+  "duration" : 18784,
+  "estimatedDuration" : 19141,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official-3.x #16",
+  "id" : "16",
+  "keepLog" : False,
+  "number" : 16,
+  "queueId" : 2226,
+  "result" : "SUCCESS",
+  "timestamp" : 1454009130374,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official-3.x/16/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/migrate.provision.inc"
+        ],
+        "commitId" : "0ed84fb9d0be29ef35b41c629628498b848f5b71",
+        "timestamp" : 1448534359000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2617718 by npacker, gboudrias: Renaming site through Migrate doesn't remove old vhost or site folder\n",
+        "date" : "2015-11-26T05:39:19-0500 +0100",
+        "id" : "0ed84fb9d0be29ef35b41c629628498b848f5b71",
+        "msg" : "Issue #2617718 by npacker, gboudrias: Renaming site through Migrate doesn't remove old vhost or site folder",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/migrate.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/cluster.php"
+        ],
+        "commitId" : "508c3e64959b2f68c7c0fc89dc44ad553860bf6d",
+        "timestamp" : 1448534927000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2613716 by captainack, ergonlogic: Cluster SSL not working for 2 apache-ssl servers\n",
+        "date" : "2015-11-26T05:48:47-0500 +0100",
+        "id" : "508c3e64959b2f68c7c0fc89dc44ad553860bf6d",
+        "msg" : "Issue #2613716 by captainack, ergonlogic: Cluster SSL not working for 2 apache-ssl servers",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/cluster.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "4eb1ba7c7cfdb9eeee80e62f9d359636dde4cbe7",
+        "timestamp" : 1448553226000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+          "fullName" : "Guillaume Boudrias"
+        },
+        "comment" : "Issue #2595809 by helmo: Find (d8) profiles without a .profile\n",
+        "date" : "2015-11-26T10:53:46-0500 -0500",
+        "id" : "4eb1ba7c7cfdb9eeee80e62f9d359636dde4cbe7",
+        "msg" : "Issue #2595809 by helmo: Find (d8) profiles without a .profile",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "cc080cf39c1948d2c2ee4ffec9a813aa7b18bcc6",
+        "timestamp" : 1448599545000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+          "fullName" : "Guillaume Boudrias"
+        },
+        "comment" : "Revert \"Issue #2595809 by helmo: Find (d8) profiles without a .profile\"\n\nThis reverts commit 4eb1ba7c7cfdb9eeee80e62f9d359636dde4cbe7.\n",
+        "date" : "2015-11-26T23:45:45-0500 -0500",
+        "id" : "cc080cf39c1948d2c2ee4ffec9a813aa7b18bcc6",
+        "msg" : "Revert \"Issue #2595809 by helmo: Find (d8) profiles without a .profile\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.templates",
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "0c4527eba735184a207450091a5a6eadf3be566a",
+        "timestamp" : 1448633915000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2619158: Create debconf var for Drush version, as preparation for Drush 8\n",
+        "date" : "2015-11-27T09:18:35-0500 +0100",
+        "id" : "0c4527eba735184a207450091a5a6eadf3be566a",
+        "msg" : "Issue #2619158: Create debconf var for Drush version, as preparation for Drush 8",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "debian/aegir3-provision.templates"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.templates",
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "b9030a0668a5d09013daabc1570614531cf8a559",
+        "timestamp" : 1448633958000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2619158: Switch to Drush 8 by default\n",
+        "date" : "2015-11-27T09:19:18-0500 +0100",
+        "id" : "b9030a0668a5d09013daabc1570614531cf8a559",
+        "msg" : "Issue #2619158: Switch to Drush 8 by default",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.templates"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "db7ca8d870a050776eeff715f49159abaa828f91",
+        "timestamp" : 1449554348000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fix typo in upgrade.sh.txt\n",
+        "date" : "2015-12-08T00:59:08-0500 +0100",
+        "id" : "db7ca8d870a050776eeff715f49159abaa828f91",
+        "msg" : "Fix typo in upgrade.sh.txt",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc",
+          "platform/verify.provision.inc"
+        ],
+        "commitId" : "73464d575d627d3c95af537969bbf965365cdf63",
+        "timestamp" : 1451978874000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add override_slave_authority option to provision-verify command\n",
+        "date" : "2016-01-05T02:27:54-0500 +0100",
+        "id" : "73464d575d627d3c95af537969bbf965365cdf63",
+        "msg" : "Add override_slave_authority option to provision-verify command",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/verify.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/vhost.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "5c5d4e7582f22dda49cf658c198880a9ead827fb",
+        "timestamp" : 1452274816000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Nginx: Remove duplicate $args on redirects\n\nWe need $request_uri? and not just $request_uri in rediercts, or duplicate $args may break things.\n",
+        "date" : "2016-01-08T12:40:16-0500 +0100",
+        "id" : "5c5d4e7582f22dda49cf658c198880a9ead827fb",
+        "msg" : "Nginx: Remove duplicate $args on redirects",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "ad46e34767694b879fbf7c952051386f383c88fe",
+        "timestamp" : 1452678629000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2619158: Let upgrade.sh work with Drush 8\n",
+        "date" : "2016-01-13T04:50:29-0500 +0100",
+        "id" : "ad46e34767694b879fbf7c952051386f383c88fe",
+        "msg" : "Issue #2619158: Let upgrade.sh work with Drush 8",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.inc",
+          "Provision/Context.php"
+        ],
+        "commitId" : "d3f17d53f82909ad084ba137916e133a622b8f97",
+        "timestamp" : 1452678629000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Comment improvement\n",
+        "date" : "2016-01-13T04:50:29-0500 +0100",
+        "id" : "d3f17d53f82909ad084ba137916e133a622b8f97",
+        "msg" : "Comment improvement",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Context.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.context.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Vagrantfile"
+        ],
+        "commitId" : "3cdcc94ac17c3937c708f7f63fc739c29b168603",
+        "timestamp" : 1453989528000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add a Vagrant file for testing debian packages\n",
+        "date" : "2016-01-28T08:58:48-0500 +0100",
+        "id" : "3cdcc94ac17c3937c708f7f63fc739c29b168603",
+        "msg" : "Add a Vagrant file for testing debian packages",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "293f3ca55878e17d5fe6e6d73f695328c6a4ae02",
+        "timestamp" : 1454008857000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "fix urls\n",
+        "date" : "2016-01-28T14:20:57-0500 +0100",
+        "id" : "293f3ca55878e17d5fe6e6d73f695328c6a4ae02",
+        "msg" : "fix urls",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir.make",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "0a770bb0d6cccdb84003de5d24a8147d7847029c",
+        "timestamp" : 1454008952000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "change version information for release 3.3\n",
+        "date" : "2016-01-28T14:22:32-0500 +0100",
+        "id" : "0a770bb0d6cccdb84003de5d24a8147d7847029c",
+        "msg" : "change version information for release 3.3",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir-release.make"
+        ],
+        "commitId" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+        "timestamp" : 1454008952000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"change version information for release 3.3\"\n\nThis reverts commit 0a770bb0d6cccdb84003de5d24a8147d7847029c.\n",
+        "date" : "2016-01-28T14:22:32-0500 +0100",
+        "id" : "80b704fe27517a04e0a954e61c1cc5fa345c84e1",
+        "msg" : "Revert \"change version information for release 3.3\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+      "fullName" : "Guillaume Boudrias"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

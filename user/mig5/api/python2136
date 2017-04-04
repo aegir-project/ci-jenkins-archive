@@ -1,0 +1,50 @@
+{
+  "_class" : "hudson.model.User",
+  "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+  "description" : "",
+  "fullName" : "Miguel Jacq",
+  "id" : "mig5",
+  "property" : [
+    {
+      "_class" : "jenkins.security.ApiTokenProperty"
+    },
+    {
+      "_class" : "hudson.plugins.greenballs.ColorBlindProperty",
+      "enabledColorBlindSupport" : False,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+        "fullName" : "Miguel Jacq"
+      }
+    },
+    {
+      "_class" : "hudson.tasks.Mailer$UserProperty",
+      "address" : "mig@mig5.net"
+    },
+    {
+      "_class" : "hudson.plugins.jabber.user.JabberUserProperty",
+      "jid" : None
+    },
+    {
+      "_class" : "hudson.model.MyViewsProperty"
+    },
+    {
+      "_class" : "hudson.plugins.openid.OpenIdUserProperty"
+    },
+    {
+      "_class" : "hudson.security.HudsonPrivateSecurityRealm$Details"
+    },
+    {
+      "_class" : "org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl"
+    },
+    {
+      "_class" : "hudson.search.UserSearchProperty",
+      "insensitiveSearch" : False
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.UserCredentialsProvider$UserCredentialsProperty"
+    },
+    {
+      "_class" : "hudson.model.PaneStatusProperties"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "_class" : "hudson.model.View$AsynchPeople$People",
+  "users" : [
+    {
+      "lastChange" : 1489660656240,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+        "fullName" : "Herman van Rink"
+      }
+    },
+    {
+      "lastChange" : 1489660656240,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/aegir",
+        "fullName" : "aegir"
+      }
+    },
+    {
+      "lastChange" : 1489660656240,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+        "fullName" : "Jon Pugh"
+      }
+    },
+    {
+      "lastChange" : 1489660656240,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/colan",
+        "fullName" : "Colan Schwartz"
+      }
+    },
+    {
+      "lastChange" : 1489660656240,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/mem",
+        "fullName" : "mem"
+      }
+    },
+    {
+      "lastChange" : 1477589723182,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/noreply",
+        "fullName" : "noreply"
+      }
+    },
+    {
+      "lastChange" : 1477589723182,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+        "fullName" : "Christopher Gervais"
+      }
+    },
+    {
+      "lastChange" : 1466690693444,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+        "fullName" : "omega8cc"
+      }
+    },
+    {
+      "lastChange" : 1463685560054,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+        "fullName" : "Steven Jones"
+      }
+    },
+    {
+      "lastChange" : 1463685560054,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "S_aegir-debian-official-3.x",
+        "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/gboudrias",
+        "fullName" : "Guillaume Boudrias"
+      }
+    },
+    {
+      "lastChange" : 1398276987000,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "D_aegir-debian-auto",
+        "url" : "http://ci.aegirproject.org/job/D_aegir-debian-auto/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+        "fullName" : "Antoine Beaupré"
+      }
+    },
+    {
+      "lastChange" : 1381434359000,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "P Aegir Puppet Module smoke-test",
+        "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/jenkins",
+        "fullName" : "jenkins"
+      }
+    },
+    {
+      "lastChange" : 1336964428000,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "C provision - 1.x",
+        "url" : "http://ci.aegirproject.org/job/C%20provision%20-%201.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+        "fullName" : "Miguel Jacq"
+      }
+    },
+    {
+      "lastChange" : 1331091984000,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "C provision - 1.x",
+        "url" : "http://ci.aegirproject.org/job/C%20provision%20-%201.x/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/anarcat",
+        "fullName" : "Antoine Beaupré"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/memtkmcc",
+        "fullName" : " Adam Andrzej Jaworski"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/sethvincent",
+        "fullName" : "sethvincent"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/cweagans",
+        "fullName" : "Cameron Eagans"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/root",
+        "fullName" : "root"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/anonymous",
+        "fullName" : "anonymous"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/",
+        "fullName" : ""
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+        "fullName" : "mig"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/tomcat",
+        "fullName" : "tomcat"
+      }
+    },
+    {
+      "lastChange" : null,
+      "project" : null,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/mathieu",
+        "fullName" : "Mathieu Lutfy"
+      }
+    }
+  ]
+}

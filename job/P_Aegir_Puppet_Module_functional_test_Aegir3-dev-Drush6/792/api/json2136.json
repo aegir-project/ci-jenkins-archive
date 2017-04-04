@@ -1,0 +1,143 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 792,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+            "branch" : [
+              {
+                "SHA1" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+            "branch" : [
+              {
+                "SHA1" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+        "branch" : [
+          {
+            "SHA1" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#792",
+  "duration" : 1242597,
+  "estimatedDuration" : 1365584,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6 #792",
+  "id" : "792",
+  "keepLog" : false,
+  "number" : 792,
+  "queueId" : 2795,
+  "result" : "SUCCESS",
+  "timestamp" : 1472212860138,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/792/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "081b88ab7a015bf4c1234e1c800d6b5f5c2353d6",
+        "timestamp" : 1472190901000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"Issue #2762701: Do not disable jquery_ui\"\n\nThis reverts commit 039ee4404a08235e0d1807c77e16cf6de5c22fec.\n",
+        "date" : "2016-08-26T01:55:01-0400 -0400",
+        "id" : "081b88ab7a015bf4c1234e1c800d6b5f5c2353d6",
+        "msg" : "Revert \"Issue #2762701: Do not disable jquery_ui\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/local.settings.php",
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+        "timestamp" : 1472190926000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"Issue #2762701: Additional steps to help the 2x to 3x upgrade process.\"\n\nThis reverts commit d40f142137843ce7a08f2045ad28f3e91c1859fb.\n",
+        "date" : "2016-08-26T01:55:26-0400 -0400",
+        "id" : "a91717d192f8e5e45a25697d82e2afac446597a5",
+        "msg" : "Revert \"Issue #2762701: Additional steps to help the 2x to 3x upgrade process.\"",
+        "paths" : [
+          {
+            "editType" : "delete",
+            "file" : "tests/functional_tests/aegir2to3-dev/local.settings.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

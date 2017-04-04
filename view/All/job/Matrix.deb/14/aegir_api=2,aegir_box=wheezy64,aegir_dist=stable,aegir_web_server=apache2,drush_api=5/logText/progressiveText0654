@@ -1,0 +1,36 @@
+Started by upstream project "Matrix.deb" build number 14
+originally caused by:
+ Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64/aegir_dist/stable/aegir_web_server/apache2/drush_api/5
+Checkout:5 / /var/lib/jenkins/jobs/Matrix.deb/workspace/aegir_api/2/aegir_box/wheezy64/aegir_dist/stable/aegir_web_server/apache2/drush_api/5 - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+Checking out Revision cff6da44c48d476e90a2939956eaf60e5209d14d (origin/new)
+[5] $ /bin/sh -xe /tmp/hudson642948340577829999.sh
++ ./tests/functional_tests/matrix.deb/setup.sh
+From http://git.drupal.org/project/puppet-drush
+ * [new branch]      1.0.x      -> origin/1.0.x
+   fd308b1..5a6cf84  new        -> origin/new
+ * [new tag]         1.0.0      -> 1.0.0
+Updating fd308b1..5a6cf84
+Fast-forward
+ manifests/git.pp       |    2 +-
+ manifests/git/drush.pp |   25 ++++++++++++++++++++++---
+ 2 files changed, 23 insertions(+), 4 deletions(-)
+From http://git.drupal.org/project/puppet-aegir
+ * [new branch]      1.0.x      -> origin/1.0.x
+Already up-to-date.
+[5] $ /bin/sh -xe /tmp/hudson8800111997420575808.sh
++ ./tests/functional_tests/matrix.deb/run-tests.sh
+There was a problem with the configuration of Vagrant. The error message(s)
+are printed below:
+
+vm:
+* Base MAC address for eth0/NAT must be set. Contact box maintainer for more information.
+
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

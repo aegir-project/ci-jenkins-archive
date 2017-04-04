@@ -1,0 +1,84 @@
+{
+  "_class" : "hudson.plugins.git.util.BuildData",
+  "buildsByBranchName" : {
+    "origin/master" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 257,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "branch" : [
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/HEAD"
+          },
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "branch" : [
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/HEAD"
+          },
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/master"
+          }
+        ]
+      }
+    },
+    "origin/HEAD" : {
+      "_class" : "hudson.plugins.git.util.Build",
+      "buildNumber" : 257,
+      "buildResult" : null,
+      "marked" : {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "branch" : [
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/HEAD"
+          },
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "revision" : {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "branch" : [
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/HEAD"
+          },
+          {
+            "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+            "name" : "origin/master"
+          }
+        ]
+      }
+    }
+  },
+  "lastBuiltRevision" : {
+    "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+    "branch" : [
+      {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "name" : "origin/HEAD"
+      },
+      {
+        "SHA1" : "b9007458394c8e59e8d9fa0988ab466d12fcce0f",
+        "name" : "origin/master"
+      }
+    ]
+  },
+  "remoteUrls" : [
+    "http://git.drupal.org/sandbox/darthsteven/1286014.git"
+  ],
+  "scmName" : "aegir_jenkins_scripts"
+}

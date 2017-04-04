@@ -1,0 +1,183 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "refs/remotes/origin/dev/jessie" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 436,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+            "branch" : [
+              {
+                "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+            "branch" : [
+              {
+                "SHA1" : "cc5b21389dc368c13d1eb621b41ea29d287b937f",
+                "name" : "refs/remotes/origin/dev/jessie"
+              }
+            ]
+          }
+        },
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 529,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+            "branch" : [
+              {
+                "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+            "branch" : [
+              {
+                "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+        "branch" : [
+          {
+            "SHA1" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#529",
+  "duration" : 239897,
+  "estimatedDuration" : 188500,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev #529",
+  "id" : "529",
+  "keepLog" : False,
+  "number" : 529,
+  "queueId" : 804,
+  "result" : "FAILURE",
+  "timestamp" : 1462000740021,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/529/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/run-tests.sh",
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/provision-tests.sh",
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/setup.sh",
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/Vagrantfile"
+        ],
+        "commitId" : "77c35a8400148c71fb9a9b7202d5f88900431cd9",
+        "timestamp" : 1461927777000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Start a test for Ubuntu 16.04 Xenial\n",
+        "date" : "2016-04-29T07:02:57-0400 +0200",
+        "id" : "77c35a8400148c71fb9a9b7202d5f88900431cd9",
+        "msg" : "Start a test for Ubuntu 16.04 Xenial",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/provision-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/Vagrantfile"
+        ],
+        "commitId" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+        "timestamp" : 1461927777000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Update Mysql version for xenial\n",
+        "date" : "2016-04-29T07:02:57-0400 +0200",
+        "id" : "e79cf23539c635b8df01d8587a4546a90adfe0ff",
+        "msg" : "Update Mysql version for xenial",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-deb-unstable-no-puppet-xenial/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

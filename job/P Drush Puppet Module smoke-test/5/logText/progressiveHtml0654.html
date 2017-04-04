@@ -1,0 +1,83 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/P Drush Puppet Module smoke-test/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Drush Puppet Module smoke-test/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision 0af96866a60de8fbe6f916e5892739eb4a87a5cf (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision fd308b1088ec0c74392fcd0f74b93cf21731dcd5 (origin/new)
+Checking out Revision fd308b1088ec0c74392fcd0f74b93cf21731dcd5 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson4875805986358689435.sh
++ vagrant up
+[default] VM already created. Booting if it's not already running...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 =&gt; 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] Running provisioner: Vagrant::Provisioners::Shell...
+stdin: is not a tty
+Creating test environment...
+Scanning for tests in 'drush' module...
+Running tests...
+Running 'dl.pp' test...
+[32m
+'dl.pp' test passed.
+[0m
+Running 'apt.pp' test...
+[32m
+'apt.pp' test passed.
+[0m
+Running 'init.pp' test...
+[32m
+'init.pp' test passed.
+[0m
+Running 'make.pp' test...
+[32m
+'make.pp' test passed.
+[0m
+Running 'drush.pp' test...
+[32m
+'drush.pp' test passed.
+[0m
+Running 'git.pp' test...
+[32m
+'git.pp' test passed.
+[0m
+Running 'status.pp' test...
+[32m
+'status.pp' test passed.
+[0m
+Running 'dis.pp' test...
+[32m
+'dis.pp' test passed.
+[0m
+Running 'defaults.pp' test...
+[32m
+'defaults.pp' test passed.
+[0m
+Running 'en.pp' test...
+[32m
+'en.pp' test passed.
+[0m
+Running 'run.pp' test...
+[32m
+'run.pp' test passed.
+[0m
+Total tests run: 11
+[32m
+Tests passed: 11
+[31m
+Tests failed: 0
+[0m
+[workspace] $ /bin/sh -xe /tmp/hudson6552859515659771042.sh
++ vagrant destroy -f
+[default] Forcing shutdown of VM...
+[default] Destroying VM and associated drives...
+Triggering a new build of P Aegir Puppet Module smoke-test #15
+Finished: SUCCESS

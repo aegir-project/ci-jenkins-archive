@@ -1,0 +1,128 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 22,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+            "branch" : [
+              {
+                "SHA1" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+            "branch" : [
+              {
+                "SHA1" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+        "branch" : [
+          {
+            "SHA1" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#22",
+  "duration" : 9716,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #22",
+  "id" : "2011-11-11_09-05-57",
+  "keepLog" : false,
+  "number" : 22,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321020357000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/22/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "db/db.drush.inc"
+        ],
+        "commitId" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+        "timestamp" : 1321002324000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix more coder style warnings.\n",
+        "date" : "2011-11-11T04:05:24-0500 +0000",
+        "id" : "f96986d219ff4d89a6575167f3f28c4d928a05dc",
+        "msg" : "Fix more coder style warnings.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "db/db.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

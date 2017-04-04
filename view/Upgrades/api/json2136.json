@@ -1,0 +1,23 @@
+{
+  "_class" : "hudson.model.ListView",
+  "description" : null,
+  "jobs" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U_aegir_6.x-2.x_to_7.x-3.x_upgrade",
+      "url" : "http://ci.aegirproject.org/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package",
+      "url" : "http://ci.aegirproject.org/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/",
+      "color" : "blue"
+    }
+  ],
+  "name" : "Upgrades",
+  "property" : [
+    
+  ],
+  "url" : "http://ci.aegirproject.org/view/Upgrades/"
+}

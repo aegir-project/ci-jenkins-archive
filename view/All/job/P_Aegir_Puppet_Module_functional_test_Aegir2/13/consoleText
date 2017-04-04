@@ -1,0 +1,442 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace - hudson.remoting.LocalChannel@624c66cf
+Using strategy: Default
+Last Built Revision: Revision 38c2e7bdd52d2c118ef30afb4ed804025368f360 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision f3ffddcc9f85b6ff489417330e8b9091133de586 (origin/new)
+Checking out Revision f3ffddcc9f85b6ff489417330e8b9091133de586 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson1402847042141520717.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Already up-to-date.
+From http://git.drupal.org/project/puppet-aegir
+   38c2e7b..f3ffddc  new        -> origin/new
+Updating 38c2e7b..f3ffddc
+Fast-forward
+ manifests/defaults.pp |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+[workspace] $ /bin/sh -xe /tmp/hudson2887085265294260480.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+[default] VM already created. Booting if it's not already running...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Setting host name...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- apt_cache: /var/cache/apt/archives
+[default] -- manifests: /tmp/vagrant-puppet/manifests
+[default] -- v-pp-m0: /tmp/vagrant-puppet/modules-0
+[default] Running provisioner: Vagrant::Provisioners::Puppet...
+[default] Running Puppet with /tmp/vagrant-puppet/manifests/nodes.pp...
+stdin: is not a tty
+[0;36mnotice: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: executed successfully[0m
+
+[0;36mnotice: /Stage[main]/Aegir/Exec[mysql_secure_installation]/returns: executed successfully[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: executed successfully[0m
+
+[1;35merr: /Stage[main]/Aegir/Package[aegir2]/ensure: change from absent to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install aegir2' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+aegir2 is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 47 not upgraded.
+2 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Setting up aegir2-hostmaster (2.0~rc5.1) ...
+'drush' cache was cleared                                              [success]
+installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+Provision configuration root path /var/aegir/config exists.            [success]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir.
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711.
+Provision configuration root path /var/aegir/config is writable.       [success]
+Provision configuration path /var/aegir/config/server_localhost has    [success]
+been created.
+Provision configuration ownership of                                   [success]
+/var/aegir/config/server_localhost has been changed to aegir.
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_localhost have been changed to 711.
+Provision configuration path /var/aegir/config/server_localhost is     [success]
+writable.
+Provision client home path /var/aegir/clients has been created.        [success]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir.
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711.
+Provision client home path /var/aegir/clients is writable.             [success]
+Provision can create new databases.                                    [success]
+Provision can grant privileges on database users.                      [success]
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440
+Provision configuration root path /var/aegir/config exists.            [success]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir.
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711.
+Provision configuration root path /var/aegir/config is writable.       [success]
+Provision configuration path /var/aegir/config/server_master has been  [success]
+created.
+Provision configuration ownership of /var/aegir/config/server_master   [success]
+has been changed to aegir.
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_master have been changed to 711.
+Provision configuration path /var/aegir/config/server_master is        [success]
+writable.
+Provision client home path /var/aegir/clients exists.                  [success]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir.
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711.
+Provision client home path /var/aegir/clients is writable.             [success]
+Backup path /var/aegir/backups has been created.                       [success]
+Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+Backup path /var/aegir/backups is writable.                            [success]
+Provision PHP configuration path /var/aegir/config/includes has been   [success]
+created.
+Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+has been changed to aegir.
+Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+have been changed to 711.
+Provision PHP configuration path /var/aegir/config/includes is         [success]
+writable.
+Generated config Global settings.php file                              [success]
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache has been created.
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache has been changed to aegir.
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache have been changed to 711.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache is writable.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d has been created.
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache/pre.d has been changed to
+aegir.
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache/pre.d have been changed to
+700.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d is writable.
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d has been created.
+Webserver custom post-configuration ownership of                       [success]
+/var/aegir/config/server_master/apache/post.d has been changed to
+aegir.
+Webserver custom post-configuration permissions of                     [success]
+/var/aegir/config/server_master/apache/post.d have been changed to
+700.
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d is writable.
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d has been created.
+Webserver platform configuration ownership of                          [success]
+/var/aegir/config/server_master/apache/platform.d has been changed to
+aegir.
+Webserver platform configuration permissions of                        [success]
+/var/aegir/config/server_master/apache/platform.d have been changed
+to 700.
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d is writable.
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d has been created.
+Webserver virtual host configuration ownership of                      [success]
+/var/aegir/config/server_master/apache/vhost.d has been changed to
+aegir.
+Webserver virtual host configuration permissions of                    [success]
+/var/aegir/config/server_master/apache/vhost.d have been changed to
+700.
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d is writable.
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d has been created.
+Webserver subdir configuration ownership of                            [success]
+/var/aegir/config/server_master/apache/subdir.d has been changed to
+aegir.
+Webserver subdir configuration permissions of                          [success]
+/var/aegir/config/server_master/apache/subdir.d have been changed to
+700.
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d is writable.
+Generated config web server configuration file                         [success]
+apache on aegir2.test could not be restarted. Changes might not be     [warning]
+available until this has been done. (error: sudo: no tty present and
+no askpass program specified
+aegir is not in the sudoers file.  This incident will be reported.)
+Generated config Drush configuration file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/platform_hostmaster.alias.drushrc.php to 440
+Beginning to build /usr/share/drush/commands/provision/aegir.make.          [ok]
+hostmaster-6.x-2.0-rc5 downloaded.                                          [ok]
+hostmaster patched with common.inc_6.28.patch.                              [ok]
+Generated PATCHES.txt file for hostmaster                                   [ok]
+Drupal sites directory /var/aegir/hostmaster-6.x-2.0-rc5.1/sites is    [success]
+writable by the provisioning script
+Platforms path /var/aegir/platforms has been created.                  [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config platform configuration file                           [success]
+apache on aegir2.test could not be restarted. Changes might not be     [warning]
+available until this has been done. (error: sudo: no tty present and
+no askpass program specified
+aegir is not in the sudoers file.  This incident will be reported.)
+Created directory                                                      [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/all/drush.
+Generated config Platform Drush configuration file                     [success]
+Changed permissions of                                                 [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/all/drush/drushrc.php to
+444
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config Drush configuration file                              [success]
+Changed permissions of /var/aegir/.drush/hostmaster.alias.drushrc.php  [success]
+to 440
+Created aegir2test database                                            [success]
+Created <code>sites/aegir2.test</code>                                 [success]
+Changed permissions of <code>sites/aegir2.test</code> to 755           [success]
+Created <code>sites/aegir2.test/themes</code>                          [success]
+Changed permissions of <code>sites/aegir2.test/themes</code> to 2775   [success]
+Created <code>sites/aegir2.test/modules</code>                         [success]
+Changed permissions of <code>sites/aegir2.test/modules</code> to 2775  [success]
+Created <code>sites/aegir2.test/libraries</code>                       [success]
+Changed permissions of <code>sites/aegir2.test/libraries</code> to     [success]
+2775
+Created <code>sites/aegir2.test/files</code>                           [success]
+Changed permissions of <code>sites/aegir2.test/files</code> to 2770    [success]
+Created <code>sites/aegir2.test/files/tmp</code>                       [success]
+Changed permissions of <code>sites/aegir2.test/files/tmp</code> to     [success]
+2770
+Created <code>sites/aegir2.test/files/images</code>                    [success]
+Changed permissions of <code>sites/aegir2.test/files/images</code> to  [success]
+2770
+Created <code>sites/aegir2.test/files/pictures</code>                  [success]
+Changed permissions of <code>sites/aegir2.test/files/pictures</code>   [success]
+to 2770
+Created <code>sites/aegir2.test/files/css</code>                       [success]
+Changed permissions of <code>sites/aegir2.test/files/css</code> to     [success]
+2770
+Created <code>sites/aegir2.test/files/js</code>                        [success]
+Changed permissions of <code>sites/aegir2.test/files/js</code> to      [success]
+2770
+Created <code>sites/aegir2.test/files/ctools</code>                    [success]
+Changed permissions of <code>sites/aegir2.test/files/ctools</code> to  [success]
+2770
+Created <code>sites/aegir2.test/files/imagecache</code>                [success]
+Changed permissions of                                                 [success]
+<code>sites/aegir2.test/files/imagecache</code> to 2770
+Created <code>sites/aegir2.test/files/locations</code>                 [success]
+Changed permissions of <code>sites/aegir2.test/files/locations</code>  [success]
+to 2770
+Created <code>sites/aegir2.test/private</code>                         [success]
+Changed permissions of <code>sites/aegir2.test/private</code> to 2770  [success]
+Created <code>sites/aegir2.test/private/files</code>                   [success]
+Changed permissions of <code>sites/aegir2.test/private/files</code>    [success]
+to 2770
+Created <code>sites/aegir2.test/private/temp</code>                    [success]
+Changed permissions of <code>sites/aegir2.test/private/temp</code> to  [success]
+2770
+Changed group ownership of <code>sites/aegir2.test/files</code> to     [success]
+www-data
+Changed group ownership of <code>sites/aegir2.test/files/tmp</code>    [success]
+to www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/files/images</code> to www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/files/pictures</code> to www-data
+Changed group ownership of <code>sites/aegir2.test/files/css</code>    [success]
+to www-data
+Changed group ownership of <code>sites/aegir2.test/files/js</code> to  [success]
+www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/files/ctools</code> to www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/files/imagecache</code> to www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/files/locations</code> to www-data
+Changed group ownership of <code>sites/aegir2.test/private</code> to   [success]
+www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/private/files</code> to www-data
+Changed group ownership of                                             [success]
+<code>sites/aegir2.test/private/temp</code> to www-data
+Generated config virtual host configuration file                       [success]
+Generated config Drupal settings.php file                              [success]
+Changed permissions of                                                 [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/settings.php to
+440
+Change group ownership of                                              [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/settings.php to
+www-data
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Generated config Site Drush configuration file                         [success]
+Changed permissions of                                                 [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/drushrc.php to
+440
+Platforms path /var/aegir/platforms exists.                            [success]
+Platforms ownership of /var/aegir/platforms has been changed to        [success]
+aegir.
+Platforms permissions of /var/aegir/platforms have been changed to     [success]
+755.
+Platforms path /var/aegir/platforms is writable.                       [success]
+Login url:                                                             [success]
+http://aegir2.test/user/reset/1/1382090286/8b62f88aad55d047a2b948f2ba20bad6/login
+WD mail: Error sending e-mail (from webmaster@aegir2.test to             [error]
+aegir@aegir2.test).
+Sent welcome 
+mail to aegir@aegir2.test                                 [success]
+Creating master server node                                             [status]
+Task verify was added to the queue. Next queue run is 09:59:00+0000,    [status]
+server time is 09:58:05+0000.
+Creating db server node                                                 [status]
+Task verify was added to the queue. Next queue run is 09:59:00+0000,    [status]
+server time is 09:58:05+0000.
+Task verify was added to the queue. Next queue run is 09:59:00+0000,    [status]
+server time is 09:58:05+0000.
+Task import was added to the queue. Next queue run is 09:59:00+0000,    [status]
+server time is 09:58:05+0000.
+Configuring menu items                                                  [status]
+Configuring Eldir theme                                                 [status]
+Configuring default blocks                                              [status]
+Configuring roles                                                       [status]
+Content permissions have been rebuilt.                                  [status]
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/libraries
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/modules
+directory successful.
+Deleting /var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/themes  [success]
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/pictures
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/css
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/images
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/locations
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/imagecache
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/tmp
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/ctools
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files/js
+directory successful.
+Deleting /var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/files   [success]
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/private/files
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/private/temp
+directory successful.
+Deleting                                                               [success]
+/var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test/private
+directory successful.
+Deleting /var/aegir/hostmaster-6.x-2.0-rc5.1/sites/aegir2.test         [success]
+directory successful.
+Aegir 6.x-2.0-rc5.1 automated install script
+==============================================================================
+Some settings have not been provided and will now be prompted.
+Don't worry: you will get to review those settings after the final install
+
+This script will operate the following changes in your system:
+
+1. Create server-level configuration directories
+2. Create the Hostmaster frontend platform
+3. Install the frontend site
+4. Setup the dispatcher (a user cron job)
+
+We are making the following assumptions:
+ * you have read and are following the install instructions at:
+    http://community.aegirproject.org/installing
+ * the FQDN of this machine is valid and resolves
+ * you are executing this script as your "aegir" user
+
+The following settings will be used:
+ Aegir frontend URL: aegir2.test
+ Master server FQDN: aegir2.test
+ Aegir root: /var/aegir
+ Aegir user: aegir
+ Web group: www-data
+ Web server: apache
+ Web server port: 80
+ Aegir DB host: localhost
+ Aegir DB user: root
+ Aegir DB password: <previously set>
+ Aegir DB port: 3306
+ Aegir version: 6.x-2.0-rc5.1
+ Aegir platform path: /var/aegir/hostmaster-6.x-2.0-rc5.1
+ Admin email: aegir@aegir2.test
+ Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+
+Do you really want to proceed with the install (y/n): y
+Enabling hosting-queued daemon
+The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+found.  Run `drush cache-clear drush` to clear the commandfile cache
+if you have installed new extensions.
+A Drupal installation directory could not be found                       [error]
+dpkg: error processing aegir2-hostmaster (--configure):
+ subprocess installed post-installation script returned error exit status 1
+dpkg: dependency problems prevent configuration of aegir2:
+ aegir2 depends on aegir2-hostmaster (>= 2.0~rc5.1); however:
+  Package aegir2-hostmaster is not configured yet.
+
+dpkg: error processing aegir2 (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+No apport report written because MaxReports is reached already
+Errors were encountered while processing:
+ aegir2-hostmaster
+ aegir2
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+[0m
+[0;36mnotice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[aegir2] has failures: true[0m
+[0;33mwarning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies[0m
+[0;36mnotice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[aegir2] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: Finished catalog run in 47.75 seconds[0m
+
+The drush command '@hostmaster provision-tests-run' could not be         [error]
+found.  Run `drush cache-clear drush` to clear the commandfile cache
+if you have installed new extensions.
+A Drupal installation directory could not be found                       [error]
+'provision-tests-run' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

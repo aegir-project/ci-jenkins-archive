@@ -1,0 +1,85 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace - hudson.remoting.LocalChannel@4836a855
+Using strategy: Default
+Last Built Revision: Revision 384e2daac2641e947179bc7bcd06917a13704c98 (origin/1.0.x)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 9b62be3e6a9459df2fe3e133bd3d669a888fb2e9 (origin/1.0.x)
+Checking out Revision 9b62be3e6a9459df2fe3e133bd3d669a888fb2e9 (origin/1.0.x)
+[workspace] $ /bin/sh -xe /tmp/hudson3446381057961254455.sh
++ ./tests/functional_tests/aegir2-dev/setup.sh
+From http://git.drupal.org/project/puppet-drush
+   779f8a0..dae80a9  1.0.x      -> origin/1.0.x
+Updating 779f8a0..dae80a9
+Fast-forward
+ manifests/git/drush.pp |    1 -
+ manifests/make.pp      |    1 +
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+From http://git.drupal.org/project/puppet-aegir
+   1e0be28..9b62be3  1.0.x      -> origin/1.0.x
+Updating 1e0be28..9b62be3
+Fast-forward
+ manifests/dev.pp |   25 +++++++++++++++++++++++--
+ 1 file changed, 23 insertions(+), 2 deletions(-)
+[workspace] $ /bin/sh -xe /tmp/hudson7054028040274987223.sh
++ ./tests/functional_tests/aegir2-dev/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'raring64'...
+[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: workspace_default_1402489760642_46612
+==> default: Clearing any previously set forwarded ports...
+==> default: Fixed port collision for 22 => 2222. Now on port 2201.
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2201 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2201
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Remote connection disconnect. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.10
+    default: VirtualBox Version: 4.3
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace/tmp/apt/cache
+    default: /tmp/vagrant-puppet-3/manifests => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace/tests/functional_tests/aegir2-dev
+    default: /tmp/vagrant-puppet-3/modules-0 => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/workspace/tests/functional_tests/aegir2-dev/modules
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with nodes.pp...
+==> default: warning: Could not retrieve fact fqdn
+==> default: warning: Host is missing hostname and/or domain: aegir2-dev
+==> default: warning: Host is missing hostname and/or domain: aegir2-dev
+==> default: Could not find default node or by name with 'aegir2-dev' on node aegir2-dev
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+puppet apply --modulepath '/tmp/vagrant-puppet-3/modules-0:/etc/puppet/modules' --color=false --manifestdir /tmp/vagrant-puppet-3/manifests --detailed-exitcodes /tmp/vagrant-puppet-3/manifests/nodes.pp
+
+Stdout from the command:
+
+warning: Could not retrieve fact fqdn
+warning: Host is missing hostname and/or domain: aegir2-dev
+warning: Host is missing hostname and/or domain: aegir2-dev
+
+
+Stderr from the command:
+
+Could not find default node or by name with 'aegir2-dev' on node aegir2-dev
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

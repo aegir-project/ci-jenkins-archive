@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 5,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+            "branch" : [
+              {
+                "SHA1" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+            "branch" : [
+              {
+                "SHA1" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+        "branch" : [
+          {
+            "SHA1" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#5",
+  "duration" : 7885,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #5",
+  "id" : "2011-11-19_10-46-27",
+  "keepLog" : false,
+  "number" : 5,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321717587000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/5/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hostmaster.make",
+          "hostmaster.profile"
+        ],
+        "commitId" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+        "timestamp" : 1321699247000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1138104 by Dane Powell: Added Tiny module to automatically fill in platform publish path based on title.\n",
+        "date" : "2011-11-19T05:40:47-0500 +0000",
+        "id" : "030853e67295b9bf31a07ba2aebfb4568cb17f2c",
+        "msg" : "Issue #1138104 by Dane Powell: Added Tiny module to automatically fill in platform publish path based on title.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hostmaster.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "hostmaster.profile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

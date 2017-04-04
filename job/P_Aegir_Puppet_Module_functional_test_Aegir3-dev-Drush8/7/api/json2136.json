@@ -1,0 +1,288 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 7,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+            "branch" : [
+              {
+                "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+            "branch" : [
+              {
+                "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+        "branch" : [
+          {
+            "SHA1" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#7",
+  "duration" : 361932,
+  "estimatedDuration" : 1324070,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8 #7",
+  "id" : "7",
+  "keepLog" : false,
+  "number" : 7,
+  "queueId" : 448,
+  "result" : "SUCCESS",
+  "timestamp" : 1442877388709,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8/7/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-unstable/setup.sh",
+          "tests/functional_tests/aegir3-unstable/run-tests.sh",
+          "tests/functional_tests/aegir3-unstable/provision-tests.sh",
+          "tests/functional_tests/aegir3-unstable/nodes.pp",
+          "tests/functional_tests/aegir3-unstable/Vagrantfile"
+        ],
+        "commitId" : "3556d8734cff0deecd5ff00d1f8a50c4c0229ddf",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add unstable .deb testing on Jessie.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "3556d8734cff0deecd5ff00d1f8a50c4c0229ddf",
+        "msg" : "Add unstable .deb testing on Jessie.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-unstable/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-unstable/provision-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-unstable/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-unstable/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-unstable/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-unstable/Vagrantfile"
+        ],
+        "commitId" : "d0d2333bdd3638b647df68bfe7bdc8be0b2d55c1",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Bootstrap puppet in new jessie .deb tests.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "d0d2333bdd3638b647df68bfe7bdc8be0b2d55c1",
+        "msg" : "Bootstrap puppet in new jessie .deb tests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-unstable/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/init.pp"
+        ],
+        "commitId" : "932889d9a168bc84dd28125b3b13980a738e19da",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add support for Aegir3.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "932889d9a168bc84dd28125b3b13980a738e19da",
+        "msg" : "Add support for Aegir3.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/init.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/backend.pp",
+          "manifests/init.pp"
+        ],
+        "commitId" : "771aafbb454f57d204a8aea9f4081ef78633d315",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fix up API version checks.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "771aafbb454f57d204a8aea9f4081ef78633d315",
+        "msg" : "Fix up API version checks.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/init.pp"
+          },
+          {
+            "editType" : "edit",
+            "file" : "manifests/backend.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/init.pp"
+        ],
+        "commitId" : "48ca2b10b208e62a41887108e412e09b72239840",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Clean up.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "48ca2b10b208e62a41887108e412e09b72239840",
+        "msg" : "Clean up.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/init.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-unstable/setup.sh",
+          "tests/functional_tests/aegir3-unstable/nodes.pp",
+          "tests/functional_tests/aegir3-unstable/Vagrantfile",
+          ".gitignore"
+        ],
+        "commitId" : "eddf7b9e47ab85612501718d218bbdcc058e4e69",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Allow for other branches.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "eddf7b9e47ab85612501718d218bbdcc058e4e69",
+        "msg" : "Allow for other branches.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-unstable/Vagrantfile"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-unstable/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : ".gitignore"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-unstable/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-unstable/Vagrantfile"
+        ],
+        "commitId" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+        "timestamp" : 1442828814000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Undo local dev test paths, committed in error.\n",
+        "date" : "2015-09-21T05:46:54-0400 +0200",
+        "id" : "962b4d5274b3e8818a68cfd0eea1298da5a62fb2",
+        "msg" : "Undo local dev test paths, committed in error.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-unstable/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

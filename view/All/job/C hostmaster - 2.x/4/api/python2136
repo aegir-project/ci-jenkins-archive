@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 4,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "71b3ff1504899394120398de906a902dba3d89fc",
+            "branch" : [
+              {
+                "SHA1" : "71b3ff1504899394120398de906a902dba3d89fc",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "71b3ff1504899394120398de906a902dba3d89fc",
+            "branch" : [
+              {
+                "SHA1" : "71b3ff1504899394120398de906a902dba3d89fc",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "71b3ff1504899394120398de906a902dba3d89fc",
+        "branch" : [
+          {
+            "SHA1" : "71b3ff1504899394120398de906a902dba3d89fc",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#4",
+  "duration" : 46423,
+  "estimatedDuration" : 122628,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 2.x #4",
+  "id" : "2011-11-14_21-01-37",
+  "keepLog" : False,
+  "number" : 4,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321322497000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/4/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/alias/hosting_alias.module"
+        ],
+        "commitId" : "71b3ff1504899394120398de906a902dba3d89fc",
+        "timestamp" : 1321303830000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "add a conditional when validating site aliases to ensure that not only do no other sites use this alias, but that it isn't identical to the site name itself. Fixes #1333978 redirect loop\n",
+        "date" : "2011-11-14T15:50:30-0500 +1100",
+        "id" : "71b3ff1504899394120398de906a902dba3d89fc",
+        "msg" : "add a conditional when validating site aliases to ensure that not only do no other sites use this alias, but that it isn't identical to the site name itself. Fixes #1333978 redirect loop",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/alias/hosting_alias.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

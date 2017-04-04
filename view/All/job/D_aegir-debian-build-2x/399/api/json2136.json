@@ -1,0 +1,217 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 399,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+            "branch" : [
+              {
+                "SHA1" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+            "branch" : [
+              {
+                "SHA1" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+        "branch" : [
+          {
+            "SHA1" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 399,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+            "branch" : [
+              {
+                "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+            "branch" : [
+              {
+                "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+        "branch" : [
+          {
+            "SHA1" : "fe729f7eb4d962375ad749453184ad5cd7bf74b2",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/hostmaster"
+      ],
+      "scmName" : "hostmaster"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 399,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+        "branch" : [
+          {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#399",
+  "duration" : 16008,
+  "estimatedDuration" : 20985,
+  "executor" : null,
+  "fullDisplayName" : "D_aegir-debian-build-2x #399",
+  "id" : "2015-03-13_12-27-44",
+  "keepLog" : false,
+  "number" : 399,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1426264064000,
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-build-2x/399/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/vhost.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Nginx/subdir.tpl.php"
+        ],
+        "commitId" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+        "timestamp" : 1426263519000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Nginx: Use dummy db fastcgi_param placeholders if any of them is empty\n",
+        "date" : "2015-03-13T12:18:39-0400 +0100",
+        "id" : "99659ae52c4670d04b93a1b4e34c9f34bef2152d",
+        "msg" : "Nginx: Use dummy db fastcgi_param placeholders if any of them is empty",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/subdir.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

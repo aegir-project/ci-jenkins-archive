@@ -1,0 +1,62 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/S_aegir-debian-official/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/S_aegir-debian-official/workspace - hudson.remoting.LocalChannel@63d1609
+Using strategy: Default
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 7357f01eaa2b93705375678211fc118a35870be6 (origin/master)
+Checking out Revision 7357f01eaa2b93705375678211fc118a35870be6 (origin/master)
+No change to record in branch origin/master
+Checkout:workspace / /var/lib/jenkins/jobs/S_aegir-debian-official/workspace - hudson.remoting.LocalChannel@63d1609
+Using strategy: Default
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+ERROR: Problem fetching from origin / origin - could be unavailable. Continuing anyway
+hudson.plugins.git.GitException: Error performing command: git fetch -t origin +refs/heads/*:refs/remotes/origin/*
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:780)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:739)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.fetch(CliGitAPIImpl.java:160)
+	at hudson.plugins.git.GitAPI.fetch(GitAPI.java:230)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:793)
+	at hudson.plugins.git.GitSCM.access$000(GitSCM.java:57)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:976)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:942)
+	at hudson.FilePath.act(FilePath.java:904)
+	at hudson.FilePath.act(FilePath.java:877)
+	at hudson.plugins.git.GitSCM.determineRevisionToBuild(GitSCM.java:942)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1101)
+	at org.jenkinsci.plugins.multiplescms.MultiSCM.checkout(MultiSCM.java:117)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1367)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:674)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:579)
+	at hudson.model.Run.execute(Run.java:1575)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:237)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:485)
+	at java.lang.UNIXProcess.waitFor(UNIXProcess.java:165)
+	at hudson.Proc$LocalProc.join(Proc.java:319)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:360)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:769)
+	... 20 more
+ERROR: Could not fetch from any repository
+FATAL: Could not fetch from any repository
+hudson.plugins.git.GitException: Could not fetch from any repository
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:981)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:942)
+	at hudson.FilePath.act(FilePath.java:904)
+	at hudson.FilePath.act(FilePath.java:877)
+	at hudson.plugins.git.GitSCM.determineRevisionToBuild(GitSCM.java:942)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1101)
+	at org.jenkinsci.plugins.multiplescms.MultiSCM.checkout(MultiSCM.java:117)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1367)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:674)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:579)
+	at hudson.model.Run.execute(Run.java:1575)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:237)

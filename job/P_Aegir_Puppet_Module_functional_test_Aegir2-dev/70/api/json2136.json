@@ -1,0 +1,198 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 70,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+            "branch" : [
+              {
+                "SHA1" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+            "branch" : [
+              {
+                "SHA1" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+        "branch" : [
+          {
+            "SHA1" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#70",
+  "duration" : 1277037,
+  "estimatedDuration" : 390215,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev #70",
+  "id" : "2014-07-21_19-43-58",
+  "keepLog" : false,
+  "number" : 70,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1405986238000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/70/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/setup.sh",
+          "tests/functional_tests/aegir2to3-dev/nodes.pp",
+          "tests/functional_tests/aegir2to3-dev/Vagrantfile",
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "3ce67f2f9a42906f3191b9973e43233f285db79d",
+        "timestamp" : 1405925826000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add functional test for upgrade of Aegor 2.x to 3.x\n",
+        "date" : "2014-07-21T02:57:06-0400 +0200",
+        "id" : "3ce67f2f9a42906f3191b9973e43233f285db79d",
+        "msg" : "Add functional test for upgrade of Aegor 2.x to 3.x",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "15c91482186b8271d82419233c3f33b3fd7e4189",
+        "timestamp" : 1405932552000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Feed yes to the upgrade script to avoid waiting for input.\n",
+        "date" : "2014-07-21T04:49:12-0400 +0200",
+        "id" : "15c91482186b8271d82419233c3f33b3fd7e4189",
+        "msg" : "Feed yes to the upgrade script to avoid waiting for input.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+        "timestamp" : 1405933114000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "explicitly use /bin/bash to allow using functions\n",
+        "date" : "2014-07-21T04:58:34-0400 +0200",
+        "id" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+        "msg" : "explicitly use /bin/bash to allow using functions",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

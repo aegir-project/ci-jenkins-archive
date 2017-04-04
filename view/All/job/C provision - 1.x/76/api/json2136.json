@@ -1,0 +1,139 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 76,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "b8d131d7525a361a58a72a3d2ec76eccdd2372c3",
+            "branch" : [
+              {
+                "SHA1" : "b8d131d7525a361a58a72a3d2ec76eccdd2372c3",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b8d131d7525a361a58a72a3d2ec76eccdd2372c3",
+            "branch" : [
+              {
+                "SHA1" : "b8d131d7525a361a58a72a3d2ec76eccdd2372c3",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b8d131d7525a361a58a72a3d2ec76eccdd2372c3",
+        "branch" : [
+          {
+            "SHA1" : "b8d131d7525a361a58a72a3d2ec76eccdd2372c3",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#76",
+  "duration" : 12842,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #76",
+  "id" : "2012-04-29_01-30-28",
+  "keepLog" : false,
+  "number" : 76,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335677428000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/76/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php",
+          "http/nginx/nginx_service.inc",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "0a4d131ed957583313d5849ac67682dc47f9def9",
+        "timestamp" : 1335662612000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1552228 by omega8cc - Nginx configuration for limit_conn should be compatible with version >= 1.1.8\n",
+        "date" : "2012-04-28T21:23:32-0400 +0200",
+        "id" : "0a4d131ed957583313d5849ac67682dc47f9def9",
+        "msg" : "Issue #1552228 by omega8cc - Nginx configuration for limit_conn should be compatible with version >= 1.1.8",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

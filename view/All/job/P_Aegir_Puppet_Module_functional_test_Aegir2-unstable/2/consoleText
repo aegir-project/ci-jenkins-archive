@@ -1,0 +1,25 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-deb_unstable/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-deb_unstable/workspace - hudson.remoting.LocalChannel@76b51252
+Using strategy: Default
+Last Built Revision: Revision 2db5b9554133fdffe049ba4b4896df87e36dda96 (origin/1.0.x)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision 2db5b9554133fdffe049ba4b4896df87e36dda96 (origin/1.0.x)
+Checking out Revision 2db5b9554133fdffe049ba4b4896df87e36dda96 (origin/1.0.x)
+[workspace] $ /bin/sh -xe /tmp/hudson1906070682645745557.sh
++ ./tests/functional_tests/aegir2-unstable/setup.sh
+Already up-to-date.
+Already up-to-date.
+[workspace] $ /bin/sh -xe /tmp/hudson10458030582975165.sh
++ ./tests/functional_tests/aegir2-unstable/run-tests.sh
+There was a problem with the configuration of Vagrant. The error message(s)
+are printed below:
+
+vm:
+* The configured module path doesn't exist: /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2-deb_unstable/workspace/tests/functional_tests/aegir2/modules
+
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

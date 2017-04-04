@@ -1,0 +1,127 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 5,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+            "branch" : [
+              {
+                "SHA1" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+            "branch" : [
+              {
+                "SHA1" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+        "branch" : [
+          {
+            "SHA1" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#5",
+  "duration" : 357829,
+  "estimatedDuration" : 1365584,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6 #5",
+  "id" : "2014-06-11_11-10-13",
+  "keepLog" : false,
+  "number" : 5,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1402499413000,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/5/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/Vagrantfile",
+          "tests/functional_tests/aegir3-dev/Vagrantfile"
+        ],
+        "commitId" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+        "timestamp" : 1402497123000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2284341 by helmo: Fixed Could not retrieve fact fqdn.\n",
+        "date" : "2014-06-11T10:32:03-0400 +0200",
+        "id" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+        "msg" : "Issue #2284341 by helmo: Fixed Could not retrieve fact fqdn.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/Vagrantfile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

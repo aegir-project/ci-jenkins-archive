@@ -1,0 +1,92 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 100,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+            "branch" : [
+              {
+                "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+            "branch" : [
+              {
+                "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+        "branch" : [
+          {
+            "SHA1" : "df920b03452f4950e90e3e65d453ac76ee40ba7f",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#100",
+  "duration" : 476918,
+  "estimatedDuration" : 1331817,
+  "executor" : null,
+  "fullDisplayName" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package #100",
+  "id" : "100",
+  "keepLog" : false,
+  "number" : 100,
+  "queueId" : 2268,
+  "result" : "SUCCESS",
+  "timestamp" : 1454256780500,
+  "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/100/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

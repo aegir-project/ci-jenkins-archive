@@ -1,0 +1,188 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 24,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+            "branch" : [
+              {
+                "SHA1" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+            "branch" : [
+              {
+                "SHA1" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+        "branch" : [
+          {
+            "SHA1" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#24",
+  "duration" : 9794,
+  "estimatedDuration" : 122628,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 2.x #24",
+  "id" : "2012-04-27_14-30-26",
+  "keepLog" : false,
+  "number" : 24,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335551426000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%202.x/24/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.drush.inc"
+        ],
+        "commitId" : "2f7900130550620fcc808e69ae4a856ffa961976",
+        "timestamp" : 1335520095000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Specify the --force option.\n",
+        "date" : "2012-04-27T05:48:15-0400 +0100",
+        "id" : "2f7900130550620fcc808e69ae4a856ffa961976",
+        "msg" : "Specify the --force option.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module",
+          "modules/hosting/task.hosting.inc",
+          "modules/hosting/dispatch.hosting.inc",
+          "modules/hosting/hosting.api.php"
+        ],
+        "commitId" : "2ed4bfa0dbf09cfae23bb0f612732ba4fc6f16b7",
+        "timestamp" : 1335520335000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Add initial port to Drush 5 patch.\n",
+        "date" : "2012-04-27T05:52:15-0400 +0100",
+        "id" : "2ed4bfa0dbf09cfae23bb0f612732ba4fc6f16b7",
+        "msg" : "Add initial port to Drush 5 patch.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.api.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/dispatch.hosting.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task.hosting.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task.hosting.inc"
+        ],
+        "commitId" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+        "timestamp" : 1335536315000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Continue port to Drush 5\n",
+        "date" : "2012-04-27T10:18:35-0400 +0100",
+        "id" : "613d3701e457fa3ea83bc5cfae4cec5b1e529609",
+        "msg" : "Continue port to Drush 5",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task.hosting.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

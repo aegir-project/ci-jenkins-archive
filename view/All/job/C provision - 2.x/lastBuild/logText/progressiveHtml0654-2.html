@@ -1,0 +1,22 @@
+Started by user Herman van Rink
+Building in workspace /var/lib/jenkins/jobs/C provision - 2.x/workspace
+ &gt; git rev-parse --is-inside-work-tree
+Fetching changes from the remote Git repository
+ &gt; git config remote.provision.url git://git.drupalcode.org/project/provision
+Fetching upstream changes from git://git.drupalcode.org/project/provision
+ &gt; git --version
+ &gt; git fetch --tags --progress git://git.drupalcode.org/project/provision +refs/heads/*:refs/remotes/provision/*
+ &gt; git rev-parse provision/6.x-2.x^{commit}
+Checking out Revision 6f86539ee02194a8005ce2a8ac534d39e821a6f1 (provision/6.x-2.x)
+ &gt; git config core.sparsecheckout
+ &gt; git checkout -f 6f86539ee02194a8005ce2a8ac534d39e821a6f1
+ &gt; git rev-list 6f86539ee02194a8005ce2a8ac534d39e821a6f1
+ &gt; git tag -a -f -m Jenkins Build #70 jenkins-C_provision_-_2.x-70
+[workspace] $ /bin/sh -xe /tmp/hudson1666593371497306848.sh
++ rm -f review.xml
++ drush standalone-coder-review --files=provision --reviews=style,comment --output-filename=review.xml -y
+/tmp/hudson1666593371497306848.sh: 3: /tmp/hudson1666593371497306848.sh: drush: not found
+Build step 'Execute shell' marked build as failure
+[CHECKSTYLE] Skipping publisher since build result is FAILURE
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

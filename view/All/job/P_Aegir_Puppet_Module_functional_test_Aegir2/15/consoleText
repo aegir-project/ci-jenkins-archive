@@ -1,0 +1,109 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir2/workspace - hudson.remoting.LocalChannel@174043f5
+Using strategy: Default
+Last Built Revision: Revision f3ffddcc9f85b6ff489417330e8b9091133de586 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision da32c2c2c641ef63d721fc7f382b981042bf7a6c (origin/new)
+Checking out Revision da32c2c2c641ef63d721fc7f382b981042bf7a6c (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson5937844068718119691.sh
++ ./tests/functional_tests/aegir2/setup.sh
+Already up-to-date.
+From http://git.drupal.org/project/puppet-aegir
+   f3ffddc..da32c2c  new        -> origin/new
+Updating f3ffddc..da32c2c
+Fast-forward
+ files/scripts/preseedmysqlpass.sh |   10 ++++++++
+ files/scripts/setmysqlpass.sh     |   22 ++++++++++++++++++
+ manifests/init.pp                 |   18 +++-----------
+ manifests/mysql.pp                |   44 +++++++++++++++++++++++++++++++++++++
+ manifests/mysql/preseed.pp        |   21 +++++++++++++++++
+ templates/my_cnf.erb              |    4 +++
+ tests/.ci/setup.sh                |   16 +++++++++++++
+ tests/.ci/test.sh                 |    7 +++--
+ tests/apt/debconf.pp              |    1 +
+ tests/mysql.pp                    |    1 +
+ tests/mysql/preseed.pp            |    1 +
+ 11 files changed, 128 insertions(+), 17 deletions(-)
+ create mode 100644 files/scripts/preseedmysqlpass.sh
+ create mode 100644 files/scripts/setmysqlpass.sh
+ create mode 100644 manifests/mysql.pp
+ create mode 100644 manifests/mysql/preseed.pp
+ create mode 100644 templates/my_cnf.erb
+ create mode 100755 tests/.ci/setup.sh
+ create mode 100644 tests/apt/debconf.pp
+ create mode 100644 tests/mysql.pp
+ create mode 100644 tests/mysql/preseed.pp
+[workspace] $ /bin/sh -xe /tmp/hudson1857037321197450674.sh
++ ./tests/functional_tests/aegir2/run-tests.sh
+[default] Importing base box 'raring64'...
+[default] [0K[default] Progress: 90%[default] [0K[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+
+Guest Additions Version: 4.2.10
+VirtualBox Version: 4.1.28
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Setting host name...
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+[default] -- apt_cache: /var/cache/apt/archives
+[default] -- manifests: /tmp/vagrant-puppet/manifests
+[default] -- v-pp-m0: /tmp/vagrant-puppet/modules-0
+[default] Running provisioner: Vagrant::Provisioners::Puppet...
+[default] Running Puppet with /tmp/vagrant-puppet/manifests/nodes.pp...
+stdin: is not a tty
+[0;36mnotice: /Stage[main]/Drush::Apt/Exec[drush_apt_update]/returns: executed successfully[0m
+
+[0;36mnotice: /Stage[main]/Drush/Package[drush]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/File[/root/.my.cnf]/ensure: defined content as '{md5}bf26df839c540c2b739d781e9e22a67f'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Mysql/Package[mysql-server]/ensure: ensure changed 'purged' to 'present'[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]/ensure: defined content as '{md5}d402a9edee75caac8e2fa3e34da23e8b'[0m
+
+[1;35merr: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]/returns: change from notrun to 0 failed: /usr/bin/mysql -uroot -e "DELETE FROM mysql.user WHERE User=''; DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1'); DROP DATABASE IF EXISTS test; FLUSH PRIVILEGES;" mysql returned 1 instead of one of [0] at /tmp/vagrant-puppet/modules-0/aegir/manifests/mysql.pp:18[0m
+[1;35merr: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Failed to call refresh: /usr/bin/mysql -uroot -e "DELETE FROM mysql.user WHERE User=''; DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1'); DROP DATABASE IF EXISTS test; FLUSH PRIVILEGES;" mysql returned 1 instead of one of [0] at /tmp/vagrant-puppet/modules-0/aegir/manifests/mysql.pp:18[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Triggered 'refresh' from 1 events[0m
+[0;36mnotice: /Stage[main]/Aegir::Mysql::Preseed/File[preseedmysqlpass.sh]/ensure: defined content as '{md5}cf716d667b4f77e6c887bcede81e63c2'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]/returns: executed successfully[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/File[aegir_apt_keys_dir]/ensure: created[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/File[aegir_apt_key]/ensure: defined content as '{md5}c68f07d8791bb73bd013a7fc758bff8a'[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_key_add]: Triggered 'refresh' from 1 events[0m
+[0;36mnotice: /Stage[main]/Aegir::Apt/File[aegir_apt_sources]/ensure: created[0m
+
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: executed successfully[0m
+[0;36mnotice: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Triggered 'refresh' from 4 events[0m
+[0;36mnotice: /Stage[main]/Aegir/Package[aegir2]: Dependency Exec[mysql_secure_installation] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir/Package[aegir2]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Exec[mysql_secure_installation] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Exec[mysql_secure_installation] has failures: true[0m
+
+[0;33mwarning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies[0m
+
+[0;36mnotice: Finished catalog run in 75.54 seconds[0m
+
+No passwd entry for user 'aegir'
+'provision-tests-run' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

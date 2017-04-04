@@ -1,0 +1,185 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "6.x-2.2"
+          },
+          "description" : "Tag to build the release from.",
+          "name" : "JENKINS_AEGIR_TAG",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "value" : "testing"
+          },
+          "description" : "This is needed for the triggered build.",
+          "name" : "DIST",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "testing"
+          ]
+        }
+      ]
+    }
+  ],
+  "description" : "Build a debian package of provision, using the upstream debian branch (which is probably the latest release).",
+  "displayName" : "S_aegir-debian-official",
+  "displayNameOrNull" : None,
+  "name" : "S_aegir-debian-official",
+  "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/",
+  "buildable" : False,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 104,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 103,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/103/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 102,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 101,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/101/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 100,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/100/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 99,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/99/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 98,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/98/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 97,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/97/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 96,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/96/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 95,
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/95/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 95,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/95/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 2 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-40to59",
+      "iconUrl" : "health-40to59.png",
+      "score" : 60
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 104,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 104,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 104,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 102,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 102,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/102/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 104,
+    "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/"
+  },
+  "nextBuildNumber" : 105,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    },
+    {
+      "_class" : "hudson.model.ParametersDefinitionProperty",
+      "parameterDefinitions" : [
+        {
+          "_class" : "hudson.model.StringParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "JENKINS_AEGIR_TAG",
+            "value" : "6.x-2.2"
+          },
+          "description" : "Tag to build the release from.",
+          "name" : "JENKINS_AEGIR_TAG",
+          "type" : "StringParameterDefinition"
+        },
+        {
+          "_class" : "hudson.model.ChoiceParameterDefinition",
+          "defaultParameterValue" : {
+            "_class" : "hudson.model.StringParameterValue",
+            "name" : "DIST",
+            "value" : "testing"
+          },
+          "description" : "This is needed for the triggered build.",
+          "name" : "DIST",
+          "type" : "ChoiceParameterDefinition",
+          "choices" : [
+            "testing"
+          ]
+        }
+      ]
+    }
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

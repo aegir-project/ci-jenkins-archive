@@ -1,0 +1,119 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 7,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+            "branch" : [
+              {
+                "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+            "branch" : [
+              {
+                "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+        "branch" : [
+          {
+            "SHA1" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-drush.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#7",
+  "duration" : 77500,
+  "estimatedDuration" : 52906,
+  "executor" : None,
+  "fullDisplayName" : "P Drush Puppet Module smoke-test #7",
+  "id" : "2014-02-17_13-24-49",
+  "keepLog" : False,
+  "number" : 7,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1392661489000,
+  "url" : "http://ci.aegirproject.org/job/P%20Drush%20Puppet%20Module%20smoke-test/7/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/git.pp"
+        ],
+        "commitId" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+        "timestamp" : 1392661191000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Issue #2165015: Fix typo.\n",
+        "date" : "2014-02-17T13:19:51-0500 -0500",
+        "id" : "5a6cf84bd1e67146095c859a99867e112bf263f6",
+        "msg" : "Issue #2165015: Fix typo.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/git.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

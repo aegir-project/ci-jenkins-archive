@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 58,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+            "branch" : [
+              {
+                "SHA1" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+            "branch" : [
+              {
+                "SHA1" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+        "branch" : [
+          {
+            "SHA1" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#58",
+  "duration" : 8380,
+  "estimatedDuration" : 59256,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 1.x #58",
+  "id" : "2012-03-24_19-31-06",
+  "keepLog" : False,
+  "number" : 58,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332631866000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/58/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/migrate.provision.inc"
+        ],
+        "commitId" : "56d8d86fc83d680b17a1a088a7229063c243072e",
+        "timestamp" : 1332617077000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.\n",
+        "date" : "2012-03-24T15:24:37-0400 +0000",
+        "id" : "56d8d86fc83d680b17a1a088a7229063c243072e",
+        "msg" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/migrate.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.file.inc"
+        ],
+        "commitId" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+        "timestamp" : 1332617077000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1283854 by GuyPaddock, Steven Jones: Fixed Use of parameters in provision_file()->symlink() is incorrect.\n",
+        "date" : "2012-03-24T15:24:37-0400 +0000",
+        "id" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+        "msg" : "Issue #1283854 by GuyPaddock, Steven Jones: Fixed Use of parameters in provision_file()->symlink() is incorrect.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.file.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

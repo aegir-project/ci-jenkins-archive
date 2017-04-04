@@ -1,0 +1,154 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 24,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "63a41375ba6be7e199907149fcb1601844451c33",
+            "branch" : [
+              {
+                "SHA1" : "63a41375ba6be7e199907149fcb1601844451c33",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "63a41375ba6be7e199907149fcb1601844451c33",
+            "branch" : [
+              {
+                "SHA1" : "63a41375ba6be7e199907149fcb1601844451c33",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "63a41375ba6be7e199907149fcb1601844451c33",
+        "branch" : [
+          {
+            "SHA1" : "63a41375ba6be7e199907149fcb1601844451c33",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#24",
+  "duration" : 18223,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #24",
+  "id" : "2012-03-06_13-31-24",
+  "keepLog" : false,
+  "number" : 24,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331058684000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/24/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/Ssl/server_ssl.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php",
+          "http/Provision/Config/Nginx/server.tpl.php",
+          "http/Provision/Config/Nginx/vhost.tpl.php",
+          "http/Provision/Config/Nginx/vhost_disabled.tpl.php",
+          "http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php"
+        ],
+        "commitId" : "63a41375ba6be7e199907149fcb1601844451c33",
+        "timestamp" : 1331039764000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Restore ability to automatic fallback to wildcard listen directive in Nginx and fix spacing.\n",
+        "date" : "2012-03-06T08:16:04-0500 +0100",
+        "id" : "63a41375ba6be7e199907149fcb1601844451c33",
+        "msg" : "Restore ability to automatic fallback to wildcard listen directive in Nginx and fix spacing.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/server_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/Ssl/vhost_ssl_disabled.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

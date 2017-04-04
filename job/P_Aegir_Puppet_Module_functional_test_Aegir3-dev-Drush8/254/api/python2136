@@ -1,0 +1,116 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 254,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+            "branch" : [
+              {
+                "SHA1" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+            "branch" : [
+              {
+                "SHA1" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+        "branch" : [
+          {
+            "SHA1" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#254",
+  "duration" : 999534,
+  "estimatedDuration" : 1324070,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8 #254",
+  "id" : "254",
+  "keepLog" : False,
+  "number" : 254,
+  "queueId" : 1106,
+  "result" : "SUCCESS",
+  "timestamp" : 1463354160819,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8/254/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/nodes.pp"
+        ],
+        "commitId" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+        "timestamp" : 1463339366000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "pin test to drush 8 branch\n",
+        "date" : "2016-05-15T15:09:26-0400 +0200",
+        "id" : "286eab2f1c1c419f47107f897f2ac29d376b4db2",
+        "msg" : "pin test to drush 8 branch",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/nodes.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

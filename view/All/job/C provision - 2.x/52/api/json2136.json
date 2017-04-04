@@ -1,0 +1,2409 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 52,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "2d4148926b745acfbc3294c5466041cd3cd4c392",
+            "branch" : [
+              {
+                "SHA1" : "2d4148926b745acfbc3294c5466041cd3cd4c392",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2d4148926b745acfbc3294c5466041cd3cd4c392",
+            "branch" : [
+              {
+                "SHA1" : "2d4148926b745acfbc3294c5466041cd3cd4c392",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "2d4148926b745acfbc3294c5466041cd3cd4c392",
+        "branch" : [
+          {
+            "SHA1" : "2d4148926b745acfbc3294c5466041cd3cd4c392",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#52",
+  "duration" : 13195,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #52",
+  "id" : "2012-04-28_07-00-32",
+  "keepLog" : false,
+  "number" : 52,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335610832000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/52/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "8200deeeb9aeeb600639ef7f1ced415025933ff0",
+        "timestamp" : 1321947384000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/jenkins",
+          "fullName" : "jenkins"
+        },
+        "comment" : "Revert \"change version information for release\"\n\nThis reverts commit e921cf313610e4906fe755d7238be36acd32ec87.\n",
+        "date" : "2011-11-22T02:36:24-0500 +0000",
+        "id" : "8200deeeb9aeeb600639ef7f1ced415025933ff0",
+        "msg" : "Revert \"change version information for release\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache_ssl/vhost_ssl.tpl.php",
+          "http/apache/vhost.tpl.php"
+        ],
+        "commitId" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+        "timestamp" : 1325930269000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1396326 by Steven Jones: Fixed Mod rewrite double escapes URLs.\n",
+        "date" : "2012-01-07T04:57:49-0500 +0000",
+        "id" : "6d0a23c8592de23acbc5b4c0e0a0627ad3ce2d3d",
+        "msg" : "Issue #1396326 by Steven Jones: Fixed Mod rewrite double escapes URLs.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/apache_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/apache/vhost.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.config.inc"
+        ],
+        "commitId" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+        "timestamp" : 1326747358000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Set permission 0440 on drushrc.php so group bit can read it. Solves #1405380\n",
+        "date" : "2012-01-16T15:55:58-0500 +1100",
+        "id" : "16e357bb0f6e29ade80db57fe09977a5ca3305e7",
+        "msg" : "Set permission 0440 on drushrc.php so group bit can read it. Solves #1405380",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.config.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/control"
+        ],
+        "commitId" : "6d20fb6c60be8108b2299430c59f24b1b8682860",
+        "timestamp" : 1328899648000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "add missing mysql-client dependency to slaves\n",
+        "date" : "2012-02-10T13:47:28-0500 -0500",
+        "id" : "6d20fb6c60be8108b2299430c59f24b1b8682860",
+        "msg" : "add missing mysql-client dependency to slaves",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/control"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "cc2f00f725b74bcd5d56232cf56cb5be6a699173",
+        "timestamp" : 1329117000000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "By mrfelton: include extra_config in Nginx SSL vhost. Fixes #1369608\n",
+        "date" : "2012-02-13T02:10:00-0500 +1100",
+        "id" : "cc2f00f725b74bcd5d56232cf56cb5be6a699173",
+        "msg" : "By mrfelton: include extra_config in Nginx SSL vhost. Fixes #1369608",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal_settings.tpl.php",
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+        "timestamp" : 1329165582000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1421356 by omega8cc: Fixed Wrong variables for files paths hardcoded for D7 sites.\n",
+        "date" : "2012-02-13T15:39:42-0500 +0000",
+        "id" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+        "msg" : "Issue #1421356 by omega8cc: Fixed Wrong variables for files paths hardcoded for D7 sites.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal_settings.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc"
+        ],
+        "commitId" : "97d727a7ff5eb36517eda6082dbcf36554d3dea6",
+        "timestamp" : 1329167054000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1259098 - is_executable() does not accept arguments so -s should be added after the file is tested.\n",
+        "date" : "2012-02-13T16:04:14-0500 +0000",
+        "id" : "97d727a7ff5eb36517eda6082dbcf36554d3dea6",
+        "msg" : "Issue #1259098 - is_executable() does not accept arguments so -s should be added after the file is tested.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "0ae2919cf1ba2a60182ae668e6bc305be800417f",
+        "timestamp" : 1329170594000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix code style of provision_drupal.drush.inc\n",
+        "date" : "2012-02-13T17:03:14-0500 +0000",
+        "id" : "0ae2919cf1ba2a60182ae668e6bc305be800417f",
+        "msg" : "Fix code style of provision_drupal.drush.inc",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+        "timestamp" : 1329433243000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1388906 by omega8cc - It is possible to break Nginx based install with upload progress by enabling nginx_ssl feature.\n",
+        "date" : "2012-02-16T18:00:43-0500 +1100",
+        "id" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+        "msg" : "Issue #1388906 by omega8cc - It is possible to break Nginx based install with upload progress by enabling nginx_ssl feature.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "4c53f5c5cea9a3abe53aa0bf28231c22b625ddf7",
+        "timestamp" : 1330297526000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1346794 by mrfelton - Nginx SSL declarations need to be added to redirect vhosts.\n",
+        "date" : "2012-02-26T18:05:26-0500 +1100",
+        "id" : "4c53f5c5cea9a3abe53aa0bf28231c22b625ddf7",
+        "msg" : "Issue #1346794 by mrfelton - Nginx SSL declarations need to be added to redirect vhosts.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "a635d158a3611ab1dfaf64322bb9f50c9f0861aa",
+        "timestamp" : 1330298507000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1346712 by mrfelton - Nginx config files required as includes in vhosts are not copied when Nginx SSL feature is enabled.\n",
+        "date" : "2012-02-26T18:21:47-0500 +1100",
+        "id" : "a635d158a3611ab1dfaf64322bb9f50c9f0861aa",
+        "msg" : "Issue #1346712 by mrfelton - Nginx config files required as includes in vhosts are not copied when Nginx SSL feature is enabled.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.drush.inc"
+        ],
+        "commitId" : "a95a9bdbb88ea2b5df86667e5b335019092814bb",
+        "timestamp" : 1330298588000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "1444172: Fix Syntax error in the help description of provision-login_reset\n",
+        "date" : "2012-02-26T18:23:08-0500 +1100",
+        "id" : "a95a9bdbb88ea2b5df86667e5b335019092814bb",
+        "msg" : "1444172: Fix Syntax error in the help description of provision-login_reset",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "8ac4b61d1504cc37fc45045f31b540e762bed7d2",
+        "timestamp" : 1330786250000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix indenting in the Nginx config includes.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T09:50:50-0500 +0100",
+        "id" : "8ac4b61d1504cc37fc45045f31b540e762bed7d2",
+        "msg" : "Fix indenting in the Nginx config includes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "adab0f2534658626eaf9921c782821f2caba57ad",
+        "timestamp" : 1330787008000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Better defaults for Nginx FastCGI Caching.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:03:28-0500 +0100",
+        "id" : "adab0f2534658626eaf9921c782821f2caba57ad",
+        "msg" : "Better defaults for Nginx FastCGI Caching.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "2140d355a72e7066e5eac7d528e1e8d345dd6417",
+        "timestamp" : 1330787079000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix whitespace in server.tpl.php\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:04:39-0500 +0100",
+        "id" : "2140d355a72e7066e5eac7d528e1e8d345dd6417",
+        "msg" : "Fix whitespace in server.tpl.php",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "d4106fc48ff7ba60b287c7bb556c51d0371934a0",
+        "timestamp" : 1330787276000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Hide some identity headers in the Nginx config.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:07:56-0500 +0100",
+        "id" : "d4106fc48ff7ba60b287c7bb556c51d0371934a0",
+        "msg" : "Hide some identity headers in the Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "a3080bb47fe70844fbc70b2258720dd19bde3c6e",
+        "timestamp" : 1330787446000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use $proxy_add_x_forwarded_for instead of $remote_addr in the Nginx access log.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:10:46-0500 +0100",
+        "id" : "a3080bb47fe70844fbc70b2258720dd19bde3c6e",
+        "msg" : "Use $proxy_add_x_forwarded_for instead of $remote_addr in the Nginx access log.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "0b2f11a01fa5b6d3598be4462d93d863619c25d8",
+        "timestamp" : 1330787646000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use Nginx maps to simplify config includes.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:14:06-0500 +0100",
+        "id" : "0b2f11a01fa5b6d3598be4462d93d863619c25d8",
+        "msg" : "Use Nginx maps to simplify config includes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "a88acd8765da1d2f21889f60e51f2ad6c988115d",
+        "timestamp" : 1330788673000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix whitespace and extra new lines.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:31:13-0500 +0100",
+        "id" : "a88acd8765da1d2f21889f60e51f2ad6c988115d",
+        "msg" : "Fix whitespace and extra new lines.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc",
+          "http/nginx/vhost.tpl.php",
+          "http/nginx_ssl/vhost_ssl.tpl.php",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "4d9b5ee65204d43a9e996353a7eeeb700626dd16",
+        "timestamp" : 1330789003000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "We no longer need the $nginx_has_new_version variable.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:36:43-0500 +0100",
+        "id" : "4d9b5ee65204d43a9e996353a7eeeb700626dd16",
+        "msg" : "We no longer need the $nginx_has_new_version variable.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/vhost_ssl.tpl.php"
+        ],
+        "commitId" : "b959ad200f0ffb9fa2ea7aea303c423ec23d2d83",
+        "timestamp" : 1330789022000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Fix whitespace.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:37:02-0500 +0100",
+        "id" : "b959ad200f0ffb9fa2ea7aea303c423ec23d2d83",
+        "msg" : "Fix whitespace.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_service.inc",
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "009294bca51396c8904235b747f5f560196c54bf",
+        "timestamp" : 1330789236000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Find nginx executable to make the check for compiled in modules reliable.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:40:36-0500 +0100",
+        "id" : "009294bca51396c8904235b747f5f560196c54bf",
+        "msg" : "Find nginx executable to make the check for compiled in modules reliable.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx.conf"
+        ],
+        "commitId" : "8cfbf37ac55b6a1418943829e9841c90604e04bf",
+        "timestamp" : 1330790397000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Set worker_processes to 4 in the nginx.conf by default.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T10:59:57-0500 +0100",
+        "id" : "8cfbf37ac55b6a1418943829e9841c90604e04bf",
+        "msg" : "Set worker_processes to 4 in the nginx.conf by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+        "timestamp" : 1330794251000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Add support for Nginx Microcaching and Drupal contrib modules: audio, radioactivity, responsive_images, resp_img and ais. Improve Boost support and use Nginx maps to simplify config includes.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-03T12:04:11-0500 +0100",
+        "id" : "9ea35d8abb8f250645d789f08bb068855826c4f6",
+        "msg" : "Add support for Nginx Microcaching and Drupal contrib modules: audio, radioactivity, responsive_images, resp_img and ais. Improve Boost support and use Nginx maps to simplify config includes.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/vhost_ssl.tpl.php",
+          "http/nginx/vhost.tpl.php"
+        ],
+        "commitId" : "c00a2c4055690d129b64d67e79512b7fea08b49a",
+        "timestamp" : 1330803657000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Allow up to 18 simultaneous connections from one IP address.\n",
+        "date" : "2012-03-03T14:40:57-0500 +0100",
+        "id" : "c00a2c4055690d129b64d67e79512b7fea08b49a",
+        "msg" : "Allow up to 18 simultaneous connections from one IP address.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/vhost.tpl.php"
+        ],
+        "commitId" : "c7d59973f80137c893321c5c28afe47752fe0ce3",
+        "timestamp" : 1330803737000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Disable access_log for redirect vhost to limit noise in the Nginx acces log.\n",
+        "date" : "2012-03-03T14:42:17-0500 +0100",
+        "id" : "c7d59973f80137c893321c5c28afe47752fe0ce3",
+        "msg" : "Disable access_log for redirect vhost to limit noise in the Nginx acces log.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+        "timestamp" : 1330822791000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80.\n",
+        "date" : "2012-03-03T19:59:51-0500 +0100",
+        "id" : "02a2f9e3b3709d410bd566129fde627f99da7447",
+        "msg" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "cd9270e34fb0ffff9c1f97995d2b4bb981327110",
+        "timestamp" : 1330825872000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Allow some known php files also in profiles - a fix for Nginx config regression.\n",
+        "date" : "2012-03-03T20:51:12-0500 +0100",
+        "id" : "cd9270e34fb0ffff9c1f97995d2b4bb981327110",
+        "msg" : "Allow some known php files also in profiles - a fix for Nginx config regression.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "a6c324a5c902bb782cacf52894eb7ece453380ba",
+        "timestamp" : 1330825923000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Remove debugging in Nginx config.\n",
+        "date" : "2012-03-03T20:52:03-0500 +0100",
+        "id" : "a6c324a5c902bb782cacf52894eb7ece453380ba",
+        "msg" : "Remove debugging in Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/vhost.tpl.php"
+        ],
+        "commitId" : "48c1750f1367de442536bad9cad8faa343d40b8f",
+        "timestamp" : 1330825942000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80 in all vhosts.\n",
+        "date" : "2012-03-03T20:52:22-0500 +0100",
+        "id" : "48c1750f1367de442536bad9cad8faa343d40b8f",
+        "msg" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80 in all vhosts.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "db/mysql/mysql_service.inc"
+        ],
+        "commitId" : "c07fb0365fb8b2257f891c4386158d32b7b3af6e",
+        "timestamp" : 1330951997000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1439196 by Steven Jones: Fixed Don't lock the DB during backups.\n",
+        "date" : "2012-03-05T07:53:17-0500 +0000",
+        "id" : "c07fb0365fb8b2257f891c4386158d32b7b3af6e",
+        "msg" : "Issue #1439196 by Steven Jones: Fixed Don't lock the DB during backups.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "db/mysql/mysql_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "db/mysql/mysql_service.inc"
+        ],
+        "commitId" : "8aa52f86b618b818f155c92391198d4384797e86",
+        "timestamp" : 1330953759000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Attempt to fix the previous commit.\n",
+        "date" : "2012-03-05T08:22:39-0500 +0000",
+        "id" : "8aa52f86b618b818f155c92391198d4384797e86",
+        "msg" : "Attempt to fix the previous commit.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "db/mysql/mysql_service.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "3bc99fd6da7bc9ff3d3f8f38041f9c0b09a5b3cc",
+        "timestamp" : 1330966463000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use faster locations matching where possible in the Nginx config.\n",
+        "date" : "2012-03-05T11:54:23-0500 +0100",
+        "id" : "3bc99fd6da7bc9ff3d3f8f38041f9c0b09a5b3cc",
+        "msg" : "Use faster locations matching where possible in the Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "2cf618e13a16bf13f43fecc5a754acdb1885fe4d",
+        "timestamp" : 1330976239000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Add Nutch to the list of blocked crawlers in Nginx.\n",
+        "date" : "2012-03-05T14:37:19-0500 +0100",
+        "id" : "2cf618e13a16bf13f43fecc5a754acdb1885fe4d",
+        "msg" : "Add Nutch to the list of blocked crawlers in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+        "timestamp" : 1331028491000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "More compact regex for blocked crawlers in Nginx.\n",
+        "date" : "2012-03-06T05:08:11-0500 +0100",
+        "id" : "2b6a6ca5d74e11ef7753668c831924a37022b7a7",
+        "msg" : "More compact regex for blocked crawlers in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php",
+          "http/nginx/vhost_disabled.tpl.php",
+          "http/nginx_ssl/vhost_ssl.tpl.php",
+          "http/nginx/vhost.tpl.php",
+          "http/nginx_ssl/vhost_ssl_disabled.tpl.php",
+          "http/nginx_ssl/server_ssl.tpl.php"
+        ],
+        "commitId" : "0ce5c6ea8cf62b930c2c3e46cf14188abdc115ca",
+        "timestamp" : 1331040328000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Restore ability to automatic fallback to wildcard listen directive in Nginx and fix spacing.\n",
+        "date" : "2012-03-06T08:25:28-0500 +0100",
+        "id" : "0ce5c6ea8cf62b930c2c3e46cf14188abdc115ca",
+        "msg" : "Restore ability to automatic fallback to wildcard listen directive in Nginx and fix spacing.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/server_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/gbp.conf"
+        ],
+        "commitId" : "32fc4472aaa182ce801defd33a0e03db24273ba5",
+        "timestamp" : 1331073753000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "make this a native package\n\nwhile Aegir is desgined to run on other systems than Debian, it is\ncurrently *not* uploaded into Debian itself, and therefore there is\nonly one source of packages, debian.aegirproject.org.\n\nthis will mean we will need to make a new release every time we want to publish changes to the Debian package, but this annoyance outweights the trouble of having to maintain 4 different branches (1.x, 2.x and debian, debian2x) to have a 2.x debian package.\n\nonce we start looking again at sending the Debian packages directly into the main Debian archive, we can re-create the debian branch and make non-native packages there. for example, 2.x could eventually have no debian/ directory and the debian branch would be solely for the 2.x release...\n\nin the meantime the debian branch is not to be used.\n",
+        "date" : "2012-03-06T17:42:33-0500 -0500",
+        "id" : "32fc4472aaa182ce801defd33a0e03db24273ba5",
+        "msg" : "make this a native package",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/gbp.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/watch"
+        ],
+        "commitId" : "245a249d738829d883b1851511bde2e32ed9461b",
+        "timestamp" : 1331073758000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "remove watchfile\n\nnow that we are a native package it doesn't make sense\n",
+        "date" : "2012-03-06T17:42:38-0500 -0500",
+        "id" : "245a249d738829d883b1851511bde2e32ed9461b",
+        "msg" : "remove watchfile",
+        "paths" : [
+          {
+            "editType" : "delete",
+            "file" : "debian/watch"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "717d4ebf1298a9d8ffff476f083670b80670204d",
+        "timestamp" : 1331073768000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "mark the debian branch merge\n",
+        "date" : "2012-03-06T17:42:48-0500 -0500",
+        "id" : "717d4ebf1298a9d8ffff476f083670b80670204d",
+        "msg" : "mark the debian branch merge",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "16faf1c1c47fc0af22518194c099466d3633d361",
+        "timestamp" : 1331073774000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "rebase instead of just pull\n",
+        "date" : "2012-03-06T17:42:54-0500 -0500",
+        "id" : "16faf1c1c47fc0af22518194c099466d3633d361",
+        "msg" : "rebase instead of just pull",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "5b09ed18524376500aa20f554a868c72e087daa7",
+        "timestamp" : 1331073778000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "edit the changelog in the release.sh script\n",
+        "date" : "2012-03-06T17:42:58-0500 -0500",
+        "id" : "5b09ed18524376500aa20f554a868c72e087daa7",
+        "msg" : "edit the changelog in the release.sh script",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/control"
+        ],
+        "commitId" : "484c720d55f9934e2b4d64576d43f72555990513",
+        "timestamp" : 1331073795000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "fix my email address\n",
+        "date" : "2012-03-06T17:43:15-0500 -0500",
+        "id" : "484c720d55f9934e2b4d64576d43f72555990513",
+        "msg" : "fix my email address",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/control"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/source/format"
+        ],
+        "commitId" : "0f2e3519836127e4fda489b500ea72e3ae90e31e",
+        "timestamp" : 1331073797000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "we are native, no sense in using quilt anymore\n",
+        "date" : "2012-03-06T17:43:17-0500 -0500",
+        "id" : "0f2e3519836127e4fda489b500ea72e3ae90e31e",
+        "msg" : "we are native, no sense in using quilt anymore",
+        "paths" : [
+          {
+            "editType" : "delete",
+            "file" : "debian/source/format"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "2d30800a71b05a2c05e53db400a06ca91a6593f7",
+        "timestamp" : 1331077166000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "hardcode 6.x in release.sh to avoid confusion\n",
+        "date" : "2012-03-06T18:39:26-0500 -0500",
+        "id" : "2d30800a71b05a2c05e53db400a06ca91a6593f7",
+        "msg" : "hardcode 6.x in release.sh to avoid confusion",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info",
+          "debian/changelog"
+        ],
+        "commitId" : "37b2844543f0bbf498719b037addc8457b87fa1a",
+        "timestamp" : 1331077220000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "change version information for release 1.7\n",
+        "date" : "2012-03-06T18:40:20-0500 -0500",
+        "id" : "37b2844543f0bbf498719b037addc8457b87fa1a",
+        "msg" : "change version information for release 1.7",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog",
+          "provision.info",
+          "aegir.make",
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+        "timestamp" : 1331077220000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Revert \"change version information for release 1.7\"\n\nThis reverts commit 37b2844543f0bbf498719b037addc8457b87fa1a.\n",
+        "date" : "2012-03-06T18:40:20-0500 -0500",
+        "id" : "63a7fbfe97bc00eecbe409254be97e9ae8916707",
+        "msg" : "Revert \"change version information for release 1.7\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache_ssl/vhost_ssl.tpl.php",
+          "http/http.ssl.inc"
+        ],
+        "commitId" : "89877cd22e16b8263c999a8dbce85e4d6a40fc04",
+        "timestamp" : 1331148423000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Add patch from #1062168 comment 6.\n\nBy EugenMayer: Added chained certificates support.\n",
+        "date" : "2012-03-07T14:27:03-0500 -0500",
+        "id" : "89877cd22e16b8263c999a8dbce85e4d6a40fc04",
+        "msg" : "Add patch from #1062168 comment 6.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/apache_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/http.ssl.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/apache_ssl/vhost_ssl.tpl.php",
+          "http/http.ssl.inc"
+        ],
+        "commitId" : "46cacfbc6f8d78cedcc429330aa96aff756d48d2",
+        "timestamp" : 1331148423000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Fix up the previous commit.\n",
+        "date" : "2012-03-07T14:27:03-0500 -0500",
+        "id" : "46cacfbc6f8d78cedcc429330aa96aff756d48d2",
+        "msg" : "Fix up the previous commit.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/http.ssl.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/apache_ssl/vhost_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "provision.info",
+          "upgrade.sh.txt",
+          "debian/changelog"
+        ],
+        "commitId" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+        "timestamp" : 1331148424000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "change version information for release 1.7\n",
+        "date" : "2012-03-07T14:27:04-0500 -0500",
+        "id" : "b147994cc20c287691373a74e6f9b2c339c3ffcb",
+        "msg" : "change version information for release 1.7",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog",
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info"
+        ],
+        "commitId" : "745f476c8ed5c9d13fff173dea212dbbe111aa1f",
+        "timestamp" : 1331242777000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+          "fullName" : "Antoine Beaupré"
+        },
+        "comment" : "Revert \"change version information for release 1.7\"\n\nThis reverts commit 37b2844543f0bbf498719b037addc8457b87fa1a.\n",
+        "date" : "2012-03-08T16:39:37-0500 -0500",
+        "id" : "745f476c8ed5c9d13fff173dea212dbbe111aa1f",
+        "msg" : "Revert \"change version information for release 1.7\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "ab62f77322eac6dc2de36f367d8ce3b51262aec5",
+        "timestamp" : 1331487691000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Block aggressive crawler SWEBot in the main Nginx config.\n",
+        "date" : "2012-03-11T13:41:31-0400 +0100",
+        "id" : "ab62f77322eac6dc2de36f367d8ce3b51262aec5",
+        "msg" : "Block aggressive crawler SWEBot in the main Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "2c54534fdf8a606c3681b3b7ea894826b398f197",
+        "timestamp" : 1331503233000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Send all known bots to $args free URLs in Nginx.\n",
+        "date" : "2012-03-11T18:00:33-0400 +0100",
+        "id" : "2c54534fdf8a606c3681b3b7ea894826b398f197",
+        "msg" : "Send all known bots to $args free URLs in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "503e9ca463d3d4213f1730cdd2388ed819b5f351",
+        "timestamp" : 1331580659000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1478984 by obrienmd - Add Access-Control-Allow-Origin header with wildcard for static files in Nginx, also to support cdn-delivered @font-face.\n",
+        "date" : "2012-03-12T15:30:59-0400 +0100",
+        "id" : "503e9ca463d3d4213f1730cdd2388ed819b5f351",
+        "msg" : "Issue #1478984 by obrienmd - Add Access-Control-Allow-Origin header with wildcard for static files in Nginx, also to support cdn-delivered @font-face.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "install.hostmaster.inc"
+        ],
+        "commitId" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+        "timestamp" : 1331934430000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1486298 by Steven Jones: Fixed End of install process is messy.\n",
+        "date" : "2012-03-16T17:47:10-0400 +0000",
+        "id" : "7c553d9e5ad3028be4fdc408453c4d3c769ba3fc",
+        "msg" : "Issue #1486298 by Steven Jones: Fixed End of install process is messy.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "install.hostmaster.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "b1497b6742da2b59cbb867e820a8e64f2f2af851",
+        "timestamp" : 1332000794000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Block Morfeus crawler in Nginx.\n",
+        "date" : "2012-03-17T12:13:14-0400 +0100",
+        "id" : "b1497b6742da2b59cbb867e820a8e64f2f2af851",
+        "msg" : "Block Morfeus crawler in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "24545454212e0e6741c36cbe77dd03e93ec72b57",
+        "timestamp" : 1332426748000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Deny all known crawlers on aggregator URI in Nginx.\n",
+        "date" : "2012-03-22T10:32:28-0400 +0100",
+        "id" : "24545454212e0e6741c36cbe77dd03e93ec72b57",
+        "msg" : "Deny all known crawlers on aggregator URI in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "631bfc7c7235144bad73cb9635c66b2339ae45da",
+        "timestamp" : 1332426777000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Drupal 8 compatibility in Nginx.\n",
+        "date" : "2012-03-22T10:32:57-0400 +0100",
+        "id" : "631bfc7c7235144bad73cb9635c66b2339ae45da",
+        "msg" : "Drupal 8 compatibility in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "aafe175fb841d20d43110ffd20398c4e91c1dd2e",
+        "timestamp" : 1332512829000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use correct X-Engine header in Nginx.\n",
+        "date" : "2012-03-23T10:27:09-0400 +0100",
+        "id" : "aafe175fb841d20d43110ffd20398c4e91c1dd2e",
+        "msg" : "Use correct X-Engine header in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "6530e8c6b4d0d1a7244095b03758973cbdf77044",
+        "timestamp" : 1332589560000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.\n",
+        "date" : "2012-03-24T07:46:00-0400 +0000",
+        "id" : "6530e8c6b4d0d1a7244095b03758973cbdf77044",
+        "msg" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/delete.provision.inc"
+        ],
+        "commitId" : "72c97aa86636d7978d88d8ea1e4a12cc1661822c",
+        "timestamp" : 1332590958000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.\n",
+        "date" : "2012-03-24T08:09:18-0400 +0000",
+        "id" : "72c97aa86636d7978d88d8ea1e4a12cc1661822c",
+        "msg" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/delete.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/migrate.provision.inc"
+        ],
+        "commitId" : "56d8d86fc83d680b17a1a088a7229063c243072e",
+        "timestamp" : 1332617077000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.\n",
+        "date" : "2012-03-24T15:24:37-0400 +0000",
+        "id" : "56d8d86fc83d680b17a1a088a7229063c243072e",
+        "msg" : "Issue #1387394 by Steven Jones: Fixed deleting a site doesn't delete soft links.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/migrate.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.file.inc"
+        ],
+        "commitId" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+        "timestamp" : 1332617077000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1283854 by GuyPaddock, Steven Jones: Fixed Use of parameters in provision_file()->symlink() is incorrect.\n",
+        "date" : "2012-03-24T15:24:37-0400 +0000",
+        "id" : "c0cd7d1597e51c3282a8be4804a84f2f76e41bad",
+        "msg" : "Issue #1283854 by GuyPaddock, Steven Jones: Fixed Use of parameters in provision_file()->symlink() is incorrect.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.file.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "11d42bf85eafb01193242bc11fdf00eb2ef29df6",
+        "timestamp" : 1332718725000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1498774 by jm.federico - Set higher value for map_hash_bucket_size in Nginx by default.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-25T19:38:45-0400 +0200",
+        "id" : "11d42bf85eafb01193242bc11fdf00eb2ef29df6",
+        "msg" : "Issue #1498774 by jm.federico - Set higher value for map_hash_bucket_size in Nginx by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "56451d1f32a6ec669847a609a44063f13506af4b",
+        "timestamp" : 1332938617000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1505370 by tribe_of_dan - Conflict between Mime Type and Document Type in Nginx.\n",
+        "date" : "2012-03-28T08:43:37-0400 +0200",
+        "id" : "56451d1f32a6ec669847a609a44063f13506af4b",
+        "msg" : "Issue #1505370 by tribe_of_dan - Conflict between Mime Type and Document Type in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/fastcgi_params.conf",
+          "http/nginx/server.tpl.php",
+          "http/nginx/fastcgi_ssl_params.conf"
+        ],
+        "commitId" : "ed9bb0e2b481ab2188a0bcedd35ca9e8db2941da",
+        "timestamp" : 1333038857000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Provide MOBILE_DEVICE value detected/set by Nginx as accessible for PHP-FPM/Drupal backend.\n",
+        "date" : "2012-03-29T12:34:17-0400 +0200",
+        "id" : "ed9bb0e2b481ab2188a0bcedd35ca9e8db2941da",
+        "msg" : "Provide MOBILE_DEVICE value detected/set by Nginx as accessible for PHP-FPM/Drupal backend.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/fastcgi_params.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/fastcgi_ssl_params.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+        "timestamp" : 1333581525000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1515762 by omega8cc - Nginx microcaching should skip all known AJAX requests.\n",
+        "date" : "2012-04-04T19:18:45-0400 +0200",
+        "id" : "e23e4051c3d6b56d1d8ebe6d5e456135d4b6cb8f",
+        "msg" : "Issue #1515762 by omega8cc - Nginx microcaching should skip all known AJAX requests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/server.tpl.php",
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/vhost_disabled.tpl.php",
+          "http/nginx/vhost.tpl.php",
+          "http/nginx_ssl/vhost_ssl.tpl.php",
+          "http/nginx_ssl/vhost_ssl_disabled.tpl.php",
+          "http/nginx_ssl/server_ssl.tpl.php"
+        ],
+        "commitId" : "e2c2ac10b37a838c2c5668799aeb1a889457bb46",
+        "timestamp" : 1333924423000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use higher values for limit_conn to avoid issues when there are many files included in the page and to better support advagg module.\n",
+        "date" : "2012-04-08T18:33:43-0400 +0200",
+        "id" : "e2c2ac10b37a838c2c5668799aeb1a889457bb46",
+        "msg" : "Use higher values for limit_conn to avoid issues when there are many files included in the page and to better support advagg module.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost_disabled.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/server_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php",
+          "http/nginx_ssl/vhost_ssl.tpl.php",
+          "http/nginx/vhost.tpl.php",
+          "http/nginx_ssl/server_ssl.tpl.php"
+        ],
+        "commitId" : "dfd6a12266ac112f7a059f3122260f0903bd5b87",
+        "timestamp" : 1333924923000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Update description for limit_conn in Nginx.\n",
+        "date" : "2012-04-08T18:42:03-0400 +0200",
+        "id" : "dfd6a12266ac112f7a059f3122260f0903bd5b87",
+        "msg" : "Update description for limit_conn in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/vhost_ssl.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/vhost.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/server_ssl.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/server.tpl.php"
+        ],
+        "commitId" : "f40bcbb272ce5ed1bc3ff26eb981bb6b5bf542c8",
+        "timestamp" : 1334009992000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1524860 by omega8cc - Empty response 444 in Nginx confuses search bots.\n",
+        "date" : "2012-04-09T18:19:52-0400 +0200",
+        "id" : "f40bcbb272ce5ed1bc3ff26eb981bb6b5bf542c8",
+        "msg" : "Issue #1524860 by omega8cc - Empty response 444 in Nginx confuses search bots.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+        "timestamp" : 1334179657000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 and #1527852 by PlayfulWolf - Nginx microcaching shouldn't cache any upstream errors.\n",
+        "date" : "2012-04-11T17:27:37-0400 +0200",
+        "id" : "2f555585299ac2b476522c9b35848ce2f399ee0c",
+        "msg" : "Issue #1528996 and #1527852 by PlayfulWolf - Nginx microcaching shouldn't cache any upstream errors.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "a0ad4ca2ab1c46a062465cf5a81a4c4be6ce3616",
+        "timestamp" : 1334498790000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1472460 by dmiric and #1524738 by flexgrip - Nginx configuration denies HTTP request methods: PUT, DELETE and OPTIONS and it breaks services/REST.\n",
+        "date" : "2012-04-15T10:06:30-0400 +0200",
+        "id" : "a0ad4ca2ab1c46a062465cf5a81a4c4be6ce3616",
+        "msg" : "Issue #1472460 by dmiric and #1524738 by flexgrip - Nginx configuration denies HTTP request methods: PUT, DELETE and OPTIONS and it breaks services/REST.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php",
+          "http/nginx/nginx.conf"
+        ],
+        "commitId" : "abaa275343098b85e2118028d39948f7a9556e09",
+        "timestamp" : 1334499581000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1534306 by omega8cc - Duplicate directives in the Nginx config cause issues with recommended Dotdeb Nginx build.\n",
+        "date" : "2012-04-15T10:19:41-0400 +0200",
+        "id" : "abaa275343098b85e2118028d39948f7a9556e09",
+        "msg" : "Issue #1534306 by omega8cc - Duplicate directives in the Nginx config cause issues with recommended Dotdeb Nginx build.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "example/basic/basic_service.inc",
+          "platform/backup.provision.inc"
+        ],
+        "commitId" : "a2655279286d12d882811cf67991c757c4d8d3cd",
+        "timestamp" : 1334589947000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.\n",
+        "date" : "2012-04-16T11:25:47-0400 +0100",
+        "id" : "a2655279286d12d882811cf67991c757c4d8d3cd",
+        "msg" : "Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "example/basic/basic_service.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/backup.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx.conf"
+        ],
+        "commitId" : "0e3d10f198b8464e20acc6aad0806b9e5152d474",
+        "timestamp" : 1334682657000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Remove duplicate error_log directive in the Nginx config.\n",
+        "date" : "2012-04-17T13:10:57-0400 +0200",
+        "id" : "0e3d10f198b8464e20acc6aad0806b9e5152d474",
+        "msg" : "Remove duplicate error_log directive in the Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "a104712466f528111414b00fc631c406a7dc2ae1",
+        "timestamp" : 1334684183000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.\n",
+        "date" : "2012-04-17T13:36:23-0400 +0200",
+        "id" : "a104712466f528111414b00fc631c406a7dc2ae1",
+        "msg" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 1s only for upstream errors.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/changelog"
+        ],
+        "commitId" : "64966320255087dd1d52e1763d65030af6a71abb",
+        "timestamp" : 1334735612000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Partial revert \"Revert \"change version information for release 1.7\"\"\n\nThis reverts commit 745f476c8ed5c9d13fff173dea212dbbe111aa1f.\n",
+        "date" : "2012-04-18T03:53:32-0400 +0100",
+        "id" : "64966320255087dd1d52e1763d65030af6a71abb",
+        "msg" : "Partial revert \"Revert \"change version information for release 1.7\"\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "release.sh"
+        ],
+        "commitId" : "499ee67ea8dc5694ffa05978979c71d778ff6566",
+        "timestamp" : 1334737990000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1537872 by Steven Jones: Fixed Release script reverts debian changelog.\n",
+        "date" : "2012-04-18T04:33:10-0400 +0100",
+        "id" : "499ee67ea8dc5694ffa05978979c71d778ff6566",
+        "msg" : "Issue #1537872 by Steven Jones: Fixed Release script reverts debian changelog.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "release.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info",
+          "debian/changelog"
+        ],
+        "commitId" : "0a4d405ce8208f11a381483ccb69bc08df8fe693",
+        "timestamp" : 1334738155000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "change version information for release 1.8\n",
+        "date" : "2012-04-18T04:35:55-0400 +0100",
+        "id" : "0a4d405ce8208f11a381483ccb69bc08df8fe693",
+        "msg" : "change version information for release 1.8",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "provision.info",
+          "upgrade.sh.txt"
+        ],
+        "commitId" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+        "timestamp" : 1334738155000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Revert \"change version information for release 1.8\"\n\nThis reverts commit 0a4d405ce8208f11a381483ccb69bc08df8fe693.\n",
+        "date" : "2012-04-18T04:35:55-0400 +0100",
+        "id" : "2a3884432fbe789515ad0b2784cbd3e59686ab16",
+        "msg" : "Revert \"change version information for release 1.8\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "02f54f6b6fe4d58e19e5f6cf76124c41f76407a2",
+        "timestamp" : 1334765415000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 5s only for 403 error.\n",
+        "date" : "2012-04-18T12:10:15-0400 +0200",
+        "id" : "02f54f6b6fe4d58e19e5f6cf76124c41f76407a2",
+        "msg" : "Issue #1528996 by omega8cc - Nginx microcaching should use fastcgi_cache_valid with 5s only for 403 error.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_simple_include.conf",
+          "http/nginx/nginx_advanced_include.conf"
+        ],
+        "commitId" : "986ffb0e5b8abe1f4711e3e377122169c78e5571",
+        "timestamp" : 1335268780000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Use separate cache for spiders/bots (Nginx).\n",
+        "date" : "2012-04-24T07:59:40-0400 +0200",
+        "id" : "986ffb0e5b8abe1f4711e3e377122169c78e5571",
+        "msg" : "Use separate cache for spiders/bots (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "55bb97edfa6569bf6fd23a991a3629b09b25628b",
+        "timestamp" : 1335268835000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Do not cache http auth requests. Use compact microcaching config (Nginx).\n",
+        "date" : "2012-04-24T08:00:35-0400 +0200",
+        "id" : "55bb97edfa6569bf6fd23a991a3629b09b25628b",
+        "msg" : "Do not cache http auth requests. Use compact microcaching config (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "2fc157de8a7e760d134926855c747aaa0d1ab0b9",
+        "timestamp" : 1335268875000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1544144 by thsutton - Use $server_name instead of $host in all sites/ paths to avoid broken URLs to static files for domain aliases in D7 (Nginx).\n",
+        "date" : "2012-04-24T08:01:15-0400 +0200",
+        "id" : "2fc157de8a7e760d134926855c747aaa0d1ab0b9",
+        "msg" : "Issue #1544144 by thsutton - Use $server_name instead of $host in all sites/ paths to avoid broken URLs to static files for domain aliases in D7 (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "64d7194c80bdc92de21af128f21198fe3a12de93",
+        "timestamp" : 1335275106000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Only errors 500 and 503 are supported in fastcgi_cache_use_stale (Nginx).\n",
+        "date" : "2012-04-24T09:45:06-0400 +0200",
+        "id" : "64d7194c80bdc92de21af128f21198fe3a12de93",
+        "msg" : "Only errors 500 and 503 are supported in fastcgi_cache_use_stale (Nginx).",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/migrate.provision.inc",
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "24fdd2912613490bf80fcee6dae33975b4656918",
+        "timestamp" : 1335437661000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1205956 by helmo - Document the Provision API\n",
+        "date" : "2012-04-26T06:54:21-0400 +1000",
+        "id" : "24fdd2912613490bf80fcee6dae33975b4656918",
+        "msg" : "Issue #1205956 by helmo - Document the Provision API",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/migrate.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.server.inc"
+        ],
+        "commitId" : "6ee1481d91c91f6a8f80b4bde5c4c94a1d049ab1",
+        "timestamp" : 1335452810000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1504120 by Steven Jones: Fixed Script user of remote servers is ignored.\n",
+        "date" : "2012-04-26T11:06:50-0400 +0100",
+        "id" : "6ee1481d91c91f6a8f80b4bde5c4c94a1d049ab1",
+        "msg" : "Issue #1504120 by Steven Jones: Fixed Script user of remote servers is ignored.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.context.server.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.inc"
+        ],
+        "commitId" : "59ec3f12af9c2eb5d33e0f7a540105c108b35e60",
+        "timestamp" : 1335455202000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.\n",
+        "date" : "2012-04-26T11:46:42-0400 +0100",
+        "id" : "59ec3f12af9c2eb5d33e0f7a540105c108b35e60",
+        "msg" : "Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.context.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.context.inc"
+        ],
+        "commitId" : "f61e716dd907731d5358f6dcecfc474da03054dc",
+        "timestamp" : 1335457159000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.\n",
+        "date" : "2012-04-26T12:19:19-0400 +0100",
+        "id" : "f61e716dd907731d5358f6dcecfc474da03054dc",
+        "msg" : "Issue #1454316 by Steven Jones: Fixed Provision recurses infinitely on reading in context.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.context.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/antoine%20beaupr%C3%A9",
+      "fullName" : "Antoine Beaupré"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/jenkins",
+      "fullName" : "jenkins"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

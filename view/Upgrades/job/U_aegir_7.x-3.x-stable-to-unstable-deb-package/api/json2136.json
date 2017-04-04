@@ -1,0 +1,587 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    
+  ],
+  "description" : "Installs the Aegir Debian package from our unstable repo.",
+  "displayName" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package",
+  "displayNameOrNull" : null,
+  "name" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package",
+  "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 990,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/990/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 989,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/989/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 988,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/988/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 987,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/987/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 986,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/986/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 985,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/985/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 984,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/984/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 983,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/983/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 982,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/982/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 981,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/981/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 980,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/980/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 979,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/979/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 978,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/978/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 977,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/977/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 976,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/976/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 975,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/975/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 974,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/974/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 973,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/973/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 972,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/972/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 971,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/971/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 970,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/970/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 969,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/969/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 968,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/968/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 967,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/967/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 966,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/966/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 965,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/965/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 964,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/964/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 963,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/963/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 962,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/962/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 961,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/961/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 960,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/960/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 959,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/959/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 958,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/958/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 957,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/957/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 956,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/956/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 955,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/955/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 954,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/954/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 953,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/953/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 952,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/952/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 951,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/951/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 950,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/950/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 949,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/949/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 948,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/948/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 947,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/947/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 946,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/946/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 945,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/945/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 944,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/944/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 943,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/943/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 942,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/942/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 941,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/941/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 940,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/940/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 939,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/939/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 938,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/938/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 937,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/937/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 936,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/936/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 935,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/935/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 934,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/934/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 933,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/933/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 932,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/932/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 931,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/931/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 930,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/930/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 929,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/929/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 928,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/928/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 927,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/927/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 926,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/926/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 925,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/925/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 924,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/924/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 923,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/923/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 922,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/922/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 921,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/921/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 920,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/920/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 919,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/919/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 918,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/918/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 917,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/917/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 916,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/916/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 915,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/915/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 914,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/914/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 913,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/913/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 912,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/912/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 911,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/911/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 910,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/910/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 909,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/909/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 908,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/908/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 907,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/907/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 906,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/906/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 905,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/905/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 904,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/904/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 903,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/903/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 902,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/902/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 901,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/901/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 900,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/900/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 899,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/899/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 898,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/898/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 897,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/897/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 896,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/896/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 895,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/895/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 894,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/894/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 893,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/893/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 892,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/892/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 891,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/891/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 1,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/1/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: No recent builds failed.",
+      "iconClassName" : "icon-health-80plus",
+      "iconUrl" : "health-80plus.png",
+      "score" : 100
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 990,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/990/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 990,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/990/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 951,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/951/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 990,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/990/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 990,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/990/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 951,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/951/"
+  },
+  "nextBuildNumber" : 991,
+  "property" : [
+    
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-3x",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-3x/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "S_aegir-debian-official-3.x",
+      "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/",
+      "color" : "blue"
+    }
+  ]
+}

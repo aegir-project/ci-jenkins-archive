@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 42,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+            "branch" : [
+              {
+                "SHA1" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+            "branch" : [
+              {
+                "SHA1" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+        "branch" : [
+          {
+            "SHA1" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#42",
+  "duration" : 6397,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #42",
+  "id" : "2012-04-16_15-30-49",
+  "keepLog" : false,
+  "number" : 42,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334604649000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/42/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "example/Provision/Service/example/basic.php",
+          "platform/backup.provision.inc"
+        ],
+        "commitId" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+        "timestamp" : 1334589926000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.\n",
+        "date" : "2012-04-16T11:25:26-0400 +0100",
+        "id" : "d29ed17405227da2c3eca62cf520412bcfa7f86d",
+        "msg" : "Issue #1510572 by Steven Jones: Fixed Why do we use mktime() instead of time() ?.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "example/Provision/Service/example/basic.php"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/backup.provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

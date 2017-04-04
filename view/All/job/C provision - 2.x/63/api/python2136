@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 63,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+            "branch" : [
+              {
+                "SHA1" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+            "branch" : [
+              {
+                "SHA1" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+        "branch" : [
+          {
+            "SHA1" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#63",
+  "duration" : 15183,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #63",
+  "id" : "2012-05-13_23-00-28",
+  "keepLog" : False,
+  "number" : 63,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1336964428000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/63/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/pack.php"
+        ],
+        "commitId" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+        "timestamp" : 1336949727000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1555398 - ensure the master server in a Pack is given a MySQL GRANT, if it was not also @server_master\n",
+        "date" : "2012-05-13T18:55:27-0400 +1000",
+        "id" : "c92479aa301550bffca900b2eb4a7614080e35ee",
+        "msg" : "Issue #1555398 - ensure the master server in a Pack is given a MySQL GRANT, if it was not also @server_master",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/pack.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

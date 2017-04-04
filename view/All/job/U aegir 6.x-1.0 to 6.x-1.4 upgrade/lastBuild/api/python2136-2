@@ -1,0 +1,116 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "AEGIR_VERSION",
+          "value" : "6.x-1.0"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DRUSH_VERSION",
+          "value" : "7.x-4.4"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "UPGRADE_VERSION",
+          "value" : "6.x-1.4"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "TEST_TYPE",
+          "value" : "jenkins"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 1,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "d3fe9ed10999f23ade074334bc4eded8cef79564",
+            "branch" : [
+              {
+                "SHA1" : "d3fe9ed10999f23ade074334bc4eded8cef79564",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d3fe9ed10999f23ade074334bc4eded8cef79564",
+            "branch" : [
+              {
+                "SHA1" : "d3fe9ed10999f23ade074334bc4eded8cef79564",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d3fe9ed10999f23ade074334bc4eded8cef79564",
+        "branch" : [
+          {
+            "SHA1" : "d3fe9ed10999f23ade074334bc4eded8cef79564",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#1",
+  "duration" : 225530,
+  "estimatedDuration" : 225530,
+  "executor" : None,
+  "fullDisplayName" : "U aegir 6.x-1.0 to 6.x-1.4 upgrade #1",
+  "id" : "2011-10-30_09-03-19",
+  "keepLog" : False,
+  "number" : 1,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1319979799000,
+  "url" : "http://ci.aegirproject.org/view/All/job/U%20aegir%206.x-1.0%20to%206.x-1.4%20upgrade/1/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

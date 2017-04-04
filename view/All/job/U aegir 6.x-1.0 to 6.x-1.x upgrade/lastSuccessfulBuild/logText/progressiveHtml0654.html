@@ -1,0 +1,841 @@
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace - hudson.remoting.LocalChannel@1680748d
+Using strategy: Default
+Last Built Revision: Revision b1105388dcac54728270ae19b716f4b687e2cad7 (origin/master)
+Checkout:build_scripts / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace/build_scripts - hudson.remoting.LocalChannel@1680748d
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from <a href='http://git.drupal.org/sandbox/darthsteven/1286014.git'>http://git.drupal.org/sandbox/darthsteven/1286014.git</a>
+Commencing build of Revision b1105388dcac54728270ae19b716f4b687e2cad7 (origin/master)
+Checking out Revision b1105388dcac54728270ae19b716f4b687e2cad7 (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson680949870059572225.sh
++ python build_scripts/jenkins_aegir_upgrade.py
+/usr/lib/python2.6/dist-packages/Crypto/Util/randpool.py:40: RandomPool_DeprecationWarning: This application uses RandomPool, which is BROKEN in older releases.  See <a href='http://www.pycrypto.org/randpool-broken'>http://www.pycrypto.org/randpool-broken</a>
+  RandomPool_DeprecationWarning)
+Provisioning server and running deployment processes
+Provisioning complete, you can ssh as root to 50.57.66.95
+The root user's password is aegir2012-03-0822-13-46L6c1KedA2
+===&gt; Setting a little firewall
+[50-57-66-95.static.cloud-ips.com] run: for source in 95.142.164.178 59.167.182.161 174.136.104.138 217.155.126.38; do iptables -I INPUT -s $source -p tcp --dport 22 -j ACCEPT; iptables -I INPUT -s $source -p tcp --dport 80 -j ACCEPT; done; iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT; iptables --policy INPUT DROP
+===&gt; Preparing Apache
+[50-57-66-95.static.cloud-ips.com] run: a2enmod rewrite
+[50-57-66-95.static.cloud-ips.com] out: Enabling module rewrite.
+[50-57-66-95.static.cloud-ips.com] out: Run '/etc/init.d/apache2 restart' to activate new configuration!
+[50-57-66-95.static.cloud-ips.com] run: ln -s /var/aegir/config/apache.conf /etc/apache2/conf.d/aegir.conf
+===&gt; Preparing the Aegir user
+[50-57-66-95.static.cloud-ips.com] run: useradd -r -U -d /var/aegir -m -G www-data aegir
+[50-57-66-95.static.cloud-ips.com] run: echo 'aegir ALL=NOPASSWD: /usr/sbin/apache2ctl' &gt;&gt; /etc/sudoers
+===&gt; Fetching Drush 7.x-4.4
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'wget <a href='http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz'>http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz</a>'
+[50-57-66-95.static.cloud-ips.com] out: --2012-03-08 16:17:37--  <a href='http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz'>http://ftp.drupal.org/files/projects/drush-7.x-4.4.tar.gz</a>
+[50-57-66-95.static.cloud-ips.com] out: Resolving ftp.drupal.org... 140.211.166.134
+[50-57-66-95.static.cloud-ips.com] out: Connecting to ftp.drupal.org|140.211.166.134|:80... connected.
+[50-57-66-95.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-66-95.static.cloud-ips.com] out: Length: 253012 (247K) [application/x-gzip]
+[50-57-66-95.static.cloud-ips.com] out: Saving to: “drush-7.x-4.4.tar.gz”
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-66-95.static.cloud-ips.com] out: 43% [================&gt;                      ] 111,208      411K/s              
+[50-57-66-95.static.cloud-ips.com] out: 100%[======================================&gt;] 253,012      611K/s   in 0.4s    
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 2012-03-08 16:17:37 (611 KB/s) - “drush-7.x-4.4.tar.gz” saved [253012/253012]
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'gunzip -c drush-7.x-4.4.tar.gz | tar -xf - '
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'rm /var/aegir/drush-7.x-4.4.tar.gz'
+===&gt; Fetching Provision - via package
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php dl -y --destination=/var/aegir/.drush provision-6.x-1.0'
+[50-57-66-95.static.cloud-ips.com] out: The directory /var/aegir/.drush does not exist.
+[50-57-66-95.static.cloud-ips.com] out: Would you like to create it? (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: Project provision (6.x-1.0) downloaded to                              [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/.drush/provision.
+[50-57-66-95.static.cloud-ips.com] out: Project provision contains 4 modules: bind, bind_slave, dns, provision.
+===&gt; Running hostmaster-install
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php hostmaster-install 50-57-66-95.static.cloud-ips.com --client_email=mig@mig5.net --aegir_db_pass=8su43x --yes'
+[50-57-66-95.static.cloud-ips.com] out: Aegir 6.x-1.0 automated install script
+[50-57-66-95.static.cloud-ips.com] out: ==============================================================================
+[50-57-66-95.static.cloud-ips.com] out: Some settings have not been provided and will now be prompted.
+[50-57-66-95.static.cloud-ips.com] out: Don't worry: you will get to review those settings after the final install
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: This script will operate the following changes in your system:
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 1. Create server-level configuration directories
+[50-57-66-95.static.cloud-ips.com] out: 2. Download drush_make
+[50-57-66-95.static.cloud-ips.com] out: 3. Create the Hostmaster frontend platform
+[50-57-66-95.static.cloud-ips.com] out: 4. Install the frontend site
+[50-57-66-95.static.cloud-ips.com] out: 5. Setup the dispatcher (a user cron job)
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: We are making the following assumptions:
+[50-57-66-95.static.cloud-ips.com] out:  * you have read INSTALL.txt and prepared the platform accordingly
+[50-57-66-95.static.cloud-ips.com] out:  * the FQDN of this machine is valid and resolves
+[50-57-66-95.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: The following settings will be used:
+[50-57-66-95.static.cloud-ips.com] out:  Aegir frontend URL: 50-57-66-95.static.cloud-ips.com
+[50-57-66-95.static.cloud-ips.com] out:  Master server FQDN: aegir2012-03-0822-13-46
+[50-57-66-95.static.cloud-ips.com] out:  Aegir root: /var/aegir
+[50-57-66-95.static.cloud-ips.com] out:  Aegir user: aegir
+[50-57-66-95.static.cloud-ips.com] out:  Web group: www-data
+[50-57-66-95.static.cloud-ips.com] out:  Web server: apache
+[50-57-66-95.static.cloud-ips.com] out:  Aegir DB host: localhost
+[50-57-66-95.static.cloud-ips.com] out:  Aegir DB user: root
+[50-57-66-95.static.cloud-ips.com] out:  Aegir DB password: &lt;previously set&gt;
+[50-57-66-95.static.cloud-ips.com] out:  Drush make version: 6.x-2.2
+[50-57-66-95.static.cloud-ips.com] out:  Aegir version: 6.x-1.0
+[50-57-66-95.static.cloud-ips.com] out:  Aegir platform path: /var/aegir/hostmaster-6.x-1.0
+[50-57-66-95.static.cloud-ips.com] out:  Aegir makefile: /var/aegir/.drush/provision/aegir.make
+[50-57-66-95.static.cloud-ips.com] out:  Admin email: mig@mig5.net
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: Do you really want to proceed with the install (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: Project drush_make (6.x-2.2) downloaded to                             [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/.drush//drush_make.
+[50-57-66-95.static.cloud-ips.com] out: Project drush_make contains 0 modules: .
+[50-57-66-95.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz'>http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: hostmaster cloned from <a href='http://git.drupal.org/project/hostmaster.git'>http://git.drupal.org/project/hostmaster.git</a>.        [ok]
+[50-57-66-95.static.cloud-ips.com] out: Checked out tag 6.x-1.0.                                                    [ok]
+[50-57-66-95.static.cloud-ips.com] out: Found makefile: hostmaster.make                                             [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for admin_menu retrieved.                               [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for openidadmin retrieved.                              [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for install_profile_api retrieved.                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for jquery_ui retrieved.                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for modalframe retrieved.                               [ok]
+[50-57-66-95.static.cloud-ips.com] out: admin_menu downloaded from                                                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/admin_menu-6.x-1.6.tar.gz'>http://ftp.drupal.org/files/projects/admin_menu-6.x-1.6.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: openidadmin downloaded from                                                 [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz'>http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: install_profile_api downloaded from                                         [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz'>http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz'>http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: modalframe downloaded from                                                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz'>http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip'>http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip</a>.
+[50-57-66-95.static.cloud-ips.com] out: Created 50576695staticcl database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Creating master server node                                             [status]
+[50-57-66-95.static.cloud-ips.com] out: Creating db server node                                                 [status]
+[50-57-66-95.static.cloud-ips.com] out: Configuring menu items                                                  [status]
+[50-57-66-95.static.cloud-ips.com] out: Configuring Eldir theme                                                 [status]
+[50-57-66-95.static.cloud-ips.com] out: Configuring default blocks                                              [status]
+[50-57-66-95.static.cloud-ips.com] out: Configuring roles                                                       [status]
+[50-57-66-95.static.cloud-ips.com] out: Content permissions have been rebuilt.                                  [status]
+[50-57-66-95.static.cloud-ips.com] out: Initializing the hosting system
+[50-57-66-95.static.cloud-ips.com] out: Dispatch command was run successfully                                  [success]
+[50-57-66-95.static.cloud-ips.com] out: This command will replace your crontab for this user. continue? (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/drush/drush.php '@hostmaster' hosting-dispatch 
+[50-57-66-95.static.cloud-ips.com] out: Aegir is now installed. You can visit it at <a href='http://50-57-66-95.static.cloud-ips.com/user/reset/1/1331245080/361ff02e53006af04a21034673528179'>http://50-57-66-95.static.cloud-ips.com/user/reset/1/1331245080/361ff02e53006af04a21034673528179</a>
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php -y @hostmaster vset hosting_queue_tasks_frequency 1'
+[50-57-66-95.static.cloud-ips.com] out: hosting_queue_tasks_frequency was set to 1.                            [success]
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===&gt; Fetching the Aegir upgrade script
+[50-57-66-95.static.cloud-ips.com] run: wget -O /tmp/upgrade.sh '<a href='http://drupalcode.org/project/provision.git/blob_plain/HEAD:/upgrade.sh.txt'>http://drupalcode.org/project/provision.git/blob_plain/HEAD:/upgrade.sh.txt</a>'
+[50-57-66-95.static.cloud-ips.com] out: --2012-03-08 16:18:04--  <a href='http://drupalcode.org/project/provision.git/blob_plain/HEAD:/upgrade.sh.txt'>http://drupalcode.org/project/provision.git/blob_plain/HEAD:/upgrade.sh.txt</a>
+[50-57-66-95.static.cloud-ips.com] out: Resolving drupalcode.org... 140.211.10.6
+[50-57-66-95.static.cloud-ips.com] out: Connecting to drupalcode.org|140.211.10.6|:80... connected.
+[50-57-66-95.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-66-95.static.cloud-ips.com] out: Length: 4461 (4.4K) [text/plain]
+[50-57-66-95.static.cloud-ips.com] out: Saving to: “/tmp/upgrade.sh”
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-66-95.static.cloud-ips.com] out: 100%[======================================&gt;] 4,461       --.-K/s   in 0.07s   
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 2012-03-08 16:18:05 (66.3 KB/s) - “/tmp/upgrade.sh” saved [4461/4461]
+===&gt; Running the Aegir upgrade script
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'yes | sh /tmp/upgrade.sh 50-57-66-95.static.cloud-ips.com'
+[50-57-66-95.static.cloud-ips.com] out: ==&gt; Drush found in /var/aegir/drush/drush.php, good
+[50-57-66-95.static.cloud-ips.com] out: ==&gt; Aegir 6.x-1.x automated upgrade script
+[50-57-66-95.static.cloud-ips.com] out: ==&gt; This script makes the following assumptions: 
+[50-57-66-95.static.cloud-ips.com] out:  * you have read <a href='http://community.aegirproject.org/upgrading'>http://community.aegirproject.org/upgrading</a> and have prepared the server accordingly
+[50-57-66-95.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[50-57-66-95.static.cloud-ips.com] out:  * that the following settings are correct
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: The Aegir version to upgrade to is 6.x-1.x
+[50-57-66-95.static.cloud-ips.com] out: The Aegir home dir is /var/aegir
+[50-57-66-95.static.cloud-ips.com] out: The new hostmaster platform will be /var/aegir/hostmaster-6.x-1.x
+[50-57-66-95.static.cloud-ips.com] out: Your Aegir domain is 50-57-66-95.static.cloud-ips.com
+[50-57-66-95.static.cloud-ips.com] out: Your old hostmaster platform was /var/aegir/hostmaster-6.x-1.0
+[50-57-66-95.static.cloud-ips.com] out: The Drush command is "php /var/aegir/drush/drush.php"
+[50-57-66-95.static.cloud-ips.com] out: The version of Drush will be 7.x-4.5
+[50-57-66-95.static.cloud-ips.com] out: The version of Drush Make will be 6.x-2.3
+[50-57-66-95.static.cloud-ips.com] out: Do you want to proceed with the upgrade? [Y/n] ==&gt; Moving existing drush into /var/aegir/pre-upgrade-2012-03-08-1618
+[50-57-66-95.static.cloud-ips.com] out: --2012-03-08 16:18:05--  <a href='http://ftp.drupal.org/files/projects/drush-7.x-4.5.tar.gz'>http://ftp.drupal.org/files/projects/drush-7.x-4.5.tar.gz</a>
+[50-57-66-95.static.cloud-ips.com] out: Resolving ftp.drupal.org... 140.211.166.134
+[50-57-66-95.static.cloud-ips.com] out: Connecting to ftp.drupal.org|140.211.166.134|:80... connected.
+[50-57-66-95.static.cloud-ips.com] out: HTTP request sent, awaiting response... 200 OK
+[50-57-66-95.static.cloud-ips.com] out: Length: 282760 (276K) [application/x-gzip]
+[50-57-66-95.static.cloud-ips.com] out: Saving to: “drush-7.x-4.5.tar.gz”
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out:  0% [                                       ] 0           --.-K/s              
+[50-57-66-95.static.cloud-ips.com] out: 37% [=============&gt;                         ] 106,863      395K/s              
+[50-57-66-95.static.cloud-ips.com] out: 100%[======================================&gt;] 282,760      695K/s   in 0.4s    
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 2012-03-08 16:18:06 (695 KB/s) - “drush-7.x-4.5.tar.gz” saved [282760/282760]
+[50-57-66-95.static.cloud-ips.com] out: ==&gt; Moving existing provision into /var/aegir/pre-upgrade-2012-03-08-1618
+[50-57-66-95.static.cloud-ips.com] out: Cloning into /var/aegir/.drush/provision...
+[50-57-66-95.static.cloud-ips.com] out: remote: Counting objects: 11273, done.[K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   0% (1/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   1% (56/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   2% (112/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   3% (167/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   4% (223/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   5% (278/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   6% (334/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   7% (389/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   8% (445/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:   9% (501/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  10% (556/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  11% (612/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  12% (667/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  13% (723/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  14% (778/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  15% (834/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  16% (889/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  17% (945/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  18% (1001/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  19% (1056/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  20% (1112/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  21% (1167/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  22% (1223/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  23% (1278/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  24% (1334/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  25% (1389/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  26% (1445/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  27% (1501/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  28% (1556/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  29% (1612/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  30% (1667/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  31% (1723/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  32% (1778/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  33% (1834/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  34% (1890/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  35% (1945/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  36% (2001/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  37% (2056/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  38% (2112/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  39% (2167/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  40% (2223/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  41% (2278/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  42% (2334/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  43% (2390/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  44% (2445/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  45% (2501/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  46% (2556/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  47% (2612/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  48% (2667/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  49% (2723/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  50% (2778/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  51% (2834/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  52% (2890/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  53% (2945/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  54% (3001/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  55% (3056/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  56% (3112/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  57% (3167/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  58% (3223/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  59% (3279/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  60% (3334/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  61% (3390/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  62% (3445/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  63% (3501/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  64% (3556/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  65% (3612/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  66% (3667/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  67% (3723/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  68% (3779/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  69% (3834/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  70% (3890/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  71% (3945/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  72% (4001/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  73% (4056/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  74% (4112/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  75% (4167/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  76% (4223/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  77% (4279/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  78% (4334/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  79% (4390/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  80% (4445/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  81% (4501/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  82% (4556/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  83% (4612/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  84% (4668/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  85% (4723/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  86% (4779/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  87% (4834/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  88% (4890/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  89% (4945/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  90% (5001/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  91% (5056/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  92% (5112/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  93% (5168/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  94% (5223/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  95% (5279/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  96% (5334/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  97% (5390/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  98% (5445/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects:  99% (5501/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects: 100% (5556/5556)   [K
+[50-57-66-95.static.cloud-ips.com] out: remote: Compressing objects: 100% (5556/5556), done.[K
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   0% (1/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   1% (113/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   2% (226/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   3% (339/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   4% (451/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   5% (564/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   6% (677/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   7% (790/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   8% (902/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:   9% (1015/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  10% (1128/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  11% (1241/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  12% (1353/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  13% (1466/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  14% (1579/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  15% (1691/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  16% (1804/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  17% (1917/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  18% (2030/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  19% (2142/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  20% (2255/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  21% (2368/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  22% (2481/11273)   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  23% (2593/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  24% (2706/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  25% (2819/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  26% (2931/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  27% (3044/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  28% (3157/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  29% (3270/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  30% (3382/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  31% (3495/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  32% (3608/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  33% (3721/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  34% (3833/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  35% (3946/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  36% (4059/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  37% (4172/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  38% (4284/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  39% (4397/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  40% (4510/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  41% (4622/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  42% (4735/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  43% (4848/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  44% (4961/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  45% (5073/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  46% (5186/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  47% (5299/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  48% (5412/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  49% (5524/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  50% (5637/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  51% (5750/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  52% (5862/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  53% (5975/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  54% (6088/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  55% (6201/11273), 532.00 KiB | 1.02 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  55% (6204/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  56% (6313/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  57% (6426/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  58% (6539/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  59% (6652/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  60% (6764/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  61% (6877/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  62% (6990/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  63% (7102/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  64% (7215/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  65% (7328/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  66% (7441/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  67% (7553/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  68% (7666/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  69% (7779/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  70% (7892/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  71% (8004/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  72% (8117/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  73% (8230/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  74% (8343/11273), 1.51 MiB | 1.42 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  75% (8455/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  76% (8568/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  77% (8681/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  78% (8793/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  79% (8906/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  80% (9019/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  80% (9129/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  81% (9132/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  82% (9244/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  83% (9357/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  84% (9470/11273), 3.24 MiB | 2.03 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  85% (9583/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  86% (9695/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  87% (9808/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  88% (9921/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  89% (10033/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  90% (10146/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  91% (10259/11273), 4.00 MiB | 1.87 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  92% (10372/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  93% (10484/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  94% (10597/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  94% (10705/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  95% (10710/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  96% (10823/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  97% (10935/11273), 4.97 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  98% (11048/11273), 5.96 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects:  99% (11161/11273), 5.96 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: remote: Total 11273 (delta 7632), reused 8531 (delta 5632)[K
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects: 100% (11273/11273), 5.96 MiB | 1.86 MiB/s   
+[50-57-66-95.static.cloud-ips.com] out: Receiving objects: 100% (11273/11273), 6.50 MiB | 1.86 MiB/s, done.
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   0% (1/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   1% (77/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   2% (154/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   3% (298/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   4% (356/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   5% (391/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   6% (488/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   7% (556/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   8% (624/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:   9% (710/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  10% (839/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  11% (847/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  12% (988/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  13% (994/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  14% (1086/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  15% (1152/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  16% (1263/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  17% (1309/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  19% (1470/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  20% (1541/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  21% (1619/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  22% (1689/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  23% (1821/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  24% (1860/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  25% (1927/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  26% (1990/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  27% (2073/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  28% (2137/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  29% (2215/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  30% (2294/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  33% (2585/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  34% (2665/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  35% (2678/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  36% (2772/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  37% (2851/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  39% (2977/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  40% (3066/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  41% (3187/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  42% (3253/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  43% (3288/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  44% (3405/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  45% (3477/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  46% (3515/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  47% (3602/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  48% (3665/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  49% (3745/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  50% (3818/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  51% (3900/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  53% (4073/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  54% (4125/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  55% (4205/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  56% (4278/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  57% (4356/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  58% (4432/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  59% (4503/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  60% (4581/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  61% (4657/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  62% (4738/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  63% (4811/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  64% (4890/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  66% (5100/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  67% (5129/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  68% (5190/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  69% (5269/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  70% (5352/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  71% (5420/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  72% (5501/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  73% (5575/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  74% (5652/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  75% (5725/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  76% (5804/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  77% (5884/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  78% (5959/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  79% (6037/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  80% (6111/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  81% (6188/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  82% (6263/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  83% (6341/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  84% (6415/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  85% (6493/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  86% (6565/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  87% (6645/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  88% (6727/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  89% (6797/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  90% (6874/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  91% (6946/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  92% (7028/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  93% (7099/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  94% (7182/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  95% (7255/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  96% (7333/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  97% (7408/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  98% (7480/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas:  99% (7563/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas: 100% (7632/7632)   
+[50-57-66-95.static.cloud-ips.com] out: Resolving deltas: 100% (7632/7632), done.
+[50-57-66-95.static.cloud-ips.com] out: ==&gt; Moving existing drush_make into /var/aegir/pre-upgrade-2012-03-08-1618
+[50-57-66-95.static.cloud-ips.com] out: Project drush_make (6.x-2.3) downloaded to                             [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/.drush/drush_make.
+[50-57-66-95.static.cloud-ips.com] out: Project drush_make contains 0 modules: .
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: This command will operate the following changes in your system:
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 1. verify the server and the hostmaster site (provision-verify)
+[50-57-66-95.static.cloud-ips.com] out: 2. verify the new platform (which will download it if missing)
+[50-57-66-95.static.cloud-ips.com] out: 3. stop the queue (hosting-pause)
+[50-57-66-95.static.cloud-ips.com] out: 4. attempt a migration to the new platform (provision-migrate)
+[50-57-66-95.static.cloud-ips.com] out: 5. start the queue (hosting-resume)
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: We are making the following assumptions:
+[50-57-66-95.static.cloud-ips.com] out:  * you have read UPGRADE.txt
+[50-57-66-95.static.cloud-ips.com] out:  * you are executing this script as your "aegir" user
+[50-57-66-95.static.cloud-ips.com] out: Do you really want to proceed with the upgrade? (y/n): Project information for drupal retrieved.                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz'>http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: hostmaster cloned from <a href='http://git.drupal.org/project/hostmaster.git'>http://git.drupal.org/project/hostmaster.git</a>.        [ok]
+[50-57-66-95.static.cloud-ips.com] out: Checked out branch 6.x-1.x.                                                 [ok]
+[50-57-66-95.static.cloud-ips.com] out: Found makefile: hostmaster.make                                             [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for admin_menu retrieved.                               [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for openidadmin retrieved.                              [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for install_profile_api retrieved.                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for jquery_ui retrieved.                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for modalframe retrieved.                               [ok]
+[50-57-66-95.static.cloud-ips.com] out: admin_menu downloaded from                                                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/admin_menu-6.x-1.8.tar.gz'>http://ftp.drupal.org/files/projects/admin_menu-6.x-1.8.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: openidadmin downloaded from                                                 [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz'>http://ftp.drupal.org/files/projects/openidadmin-6.x-1.2.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: install_profile_api downloaded from                                         [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz'>http://ftp.drupal.org/files/projects/install_profile_api-6.x-2.1.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz'>http://ftp.drupal.org/files/projects/jquery_ui-6.x-1.3.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: modalframe downloaded from                                                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz'>http://ftp.drupal.org/files/projects/modalframe-6.x-1.6.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: jquery_ui downloaded from                                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip'>http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip</a>.
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/50-57-66-95.static.cloud-ips.com-20120308.161829.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Created 50576695static_0 database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Executing hosting_client_update_6002                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: ALTER TABLE {hosting_client} DROP KEY hosting_client_email_idx         [success]
+[50-57-66-95.static.cloud-ips.com] out: Executing hosting_site_update_6008                                     [success]
+[50-57-66-95.static.cloud-ips.com] out: ALTER TABLE {hosting_site} ADD `cron_key` VARCHAR(80) NOT NULL         [success]
+[50-57-66-95.static.cloud-ips.com] out: DEFAULT &amp;#039;&amp;#039;
+[50-57-66-95.static.cloud-ips.com] out: 'all' cache was cleared                                                [success]
+[50-57-66-95.static.cloud-ips.com] out: Finished performing updates.                                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: The following updates are pending:
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out:  hosting_client module                                                         
+[50-57-66-95.static.cloud-ips.com] out:  6002 - Remove old primary keys from hosting_client table   This should never  
+[50-57-66-95.static.cloud-ips.com] out:  fail as the index is present only in really old installs  and this update may 
+[50-57-66-95.static.cloud-ips.com] out:  run on installs that have been done after the index was  removed from the     
+[50-57-66-95.static.cloud-ips.com] out:  schema.                                                                       
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out:  hosting_site module                                       
+[50-57-66-95.static.cloud-ips.com] out:  6008 - Add the cron_key column to the hosting_site table. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: Do you wish to run all pending updates? (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: Dispatch command was run successfully                                  [success]
+[50-57-66-95.static.cloud-ips.com] out: This command will replace your crontab for this user. continue? (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/drush/drush.php '@hostmaster' hosting-dispatch 
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c 'php /var/aegir/drush/drush.php @hostmaster hosting-dispatch'
+===&gt; Running Provision tests
+[50-57-66-95.static.cloud-ips.com] run: su - -s /bin/sh aegir -c '/var/aegir/drush/drush.php @hostmaster provision-tests-run -y'
+[50-57-66-95.static.cloud-ips.com] out: Please note that because you are running PHP 5.3 or greater, you       [warning]
+[50-57-66-95.static.cloud-ips.com] out: cannot test installing Drupal 5 on this machine.
+[50-57-66-95.static.cloud-ips.com] out: This command should only be run on a clean Aegir install, and data may be lost! Do you want to continue? (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: Building platform: drupal6 and adding to hostmaster.                        [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz'>http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: Building platform: drupal7 and adding to hostmaster.                        [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/drupal-7.12.tar.gz'>http://ftp.drupal.org/files/projects/drupal-7.12.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: Building platform: openatrium and adding to hostmaster.                     [ok]
+[50-57-66-95.static.cloud-ips.com] out: atrium-1-0 downloaded from                                                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://openatrium.com/sites/openatrium.com/files/atrium_releases/atrium-1-0.tgz'>http://openatrium.com/sites/openatrium.com/files/atrium_releases/atrium-1-0.tgz</a>.
+[50-57-66-95.static.cloud-ips.com] out: Installing: drupal6-default.aegir.example.com on platform: drupal6          [ok]
+[50-57-66-95.static.cloud-ips.com] out: with profile: default.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal6defaultae database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Installing: drupal7-standard.aegir.example.com on platform: drupal7         [ok]
+[50-57-66-95.static.cloud-ips.com] out: with profile: standard.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal7standarda database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Installing: drupal7-minimal.aegir.example.com on platform: drupal7          [ok]
+[50-57-66-95.static.cloud-ips.com] out: with profile: minimal.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal7minimalae database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Installing: openatrium-openatrium.aegir.example.com on platform:            [ok]
+[50-57-66-95.static.cloud-ips.com] out: openatrium with profile: openatrium.
+[50-57-66-95.static.cloud-ips.com] out: Created openatriumopenat database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : strongarm                                            [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : book                                                 [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : casetracker                                          [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : date                                                 [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : date_popup                                           [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : litecal                                              [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : content                                              [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : nodereference                                        [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : text                                                 [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : optionwidgets                                        [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : job_scheduler                                        [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : feeds                                                [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : parser_ical                                          [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : notifications_team                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : content_profile                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium                                               [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_activity                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_blog                                          [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_book                                          [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_calendar                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_casetracker                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_groups                                        [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_members                                       [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_profile                                       [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : atrium_shoutbox                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : spaces_dashboard                                     [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : jquery_ui                                            [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : codefilter                                           [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : markdown                                             [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : boxes                                                [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : comment_upload                                       [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : crayon                                               [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : diff                                                 [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : itweak_upload                                        [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : imagecache_profiles                                  [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : nodeformcols                                         [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : prepopulate                                          [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : reldate                                              [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : xref                                                 [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : color                                                [success]
+[50-57-66-95.static.cloud-ips.com] out: Enabling module : designkit                                            [success]
+[50-57-66-95.static.cloud-ips.com] out: Organic groups module enabled. Please see the included README file      [status]
+[50-57-66-95.static.cloud-ips.com] out: for further installation instructions.
+[50-57-66-95.static.cloud-ips.com] out: A new Input format has been created: Messaging plain text               [status]
+[50-57-66-95.static.cloud-ips.com] out: Content permissions have been rebuilt.                                  [status]
+[50-57-66-95.static.cloud-ips.com] out: Removing: drupal6-default.aegir.example.com.                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal6-default.aegir.example.com-20120308.162050.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Removing: drupal7-standard.aegir.example.com.                               [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal7-standard.aegir.example.com-20120308.162052.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Removing: drupal7-minimal.aegir.example.com.                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal7-minimal.aegir.example.com-20120308.162054.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Removing: openatrium-openatrium.aegir.example.com.                          [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/openatrium-openatrium.aegir.example.com-20120308.162055.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Building platform: drupal6_other and adding to hostmaster.                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz'>http://ftp.drupal.org/files/projects/drupal-6.25.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: Installing: drupal6-migrate-drupal6-other.aegir.example.com on              [ok]
+[50-57-66-95.static.cloud-ips.com] out: platform: drupal6 with profile: default.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal6migratedr database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Migrating: drupal6-migrate-drupal6-other.aegir.example.com to               [ok]
+[50-57-66-95.static.cloud-ips.com] out: platform: drupal6_other.
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal6-migrate-drupal6-other.aegir.example.com-20120308.162108.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal6migrate_0 database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: No database updates required                                           [success]
+[50-57-66-95.static.cloud-ips.com] out: 'all' cache was cleared                                                [success]
+[50-57-66-95.static.cloud-ips.com] out: Finished performing updates.                                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: Removing: drupal6-migrate-drupal6-other.aegir.example.com.                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal6-migrate-drupal6-other.aegir.example.com-20120308.162116.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Removing platform: drupal6_other.                                           [ok]
+[50-57-66-95.static.cloud-ips.com] out: Building platform: drupal7_other and adding to hostmaster.                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: Project information for drupal retrieved.                                   [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal downloaded from                                                      [ok]
+[50-57-66-95.static.cloud-ips.com] out: <a href='http://ftp.drupal.org/files/projects/drupal-7.12.tar.gz'>http://ftp.drupal.org/files/projects/drupal-7.12.tar.gz</a>.
+[50-57-66-95.static.cloud-ips.com] out: Installing: drupal7-migrate-drupal7-other.aegir.example.com on              [ok]
+[50-57-66-95.static.cloud-ips.com] out: platform: drupal7 with profile: standard.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal7migratedr database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Migrating: drupal7-migrate-drupal7-other.aegir.example.com to               [ok]
+[50-57-66-95.static.cloud-ips.com] out: platform: drupal7_other.
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal7-migrate-drupal7-other.aegir.example.com-20120308.162140.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal7migrate_0 database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: No database updates required                                           [success]
+[50-57-66-95.static.cloud-ips.com] out: Finished performing updates.                                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: Removing: drupal7-migrate-drupal7-other.aegir.example.com.                  [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal7-migrate-drupal7-other.aegir.example.com-20120308.162152.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Removing platform: drupal7_other.                                           [ok]
+[50-57-66-95.static.cloud-ips.com] out: Installing: drupal6-upgrade-drupal7.aegir.example.com on platform:          [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal6 with profile: default.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal6upgradedr database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Migrating: drupal6-upgrade-drupal7.aegir.example.com to platform:           [ok]
+[50-57-66-95.static.cloud-ips.com] out: drupal7.
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal6-upgrade-drupal7.aegir.example.com-20120308.162202.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Created drupal6upgrade_0 database                                      [success]
+[50-57-66-95.static.cloud-ips.com] out: Some user time zones have been emptied and need to be set to the       [warning]
+[50-57-66-95.static.cloud-ips.com] out: correct values. Use the new time zone options to choose whether to
+[50-57-66-95.static.cloud-ips.com] out: remind users at login to set the correct time zone.
+[50-57-66-95.static.cloud-ips.com] out: A new Plain text format has been created which will be available to     [status]
+[50-57-66-95.static.cloud-ips.com] out: all users. You can configure this text format on the text format
+[50-57-66-95.static.cloud-ips.com] out: configuration page.
+[50-57-66-95.static.cloud-ips.com] out: The default time zone has been set to America/Chicago. Check the date  [warning]
+[50-57-66-95.static.cloud-ips.com] out: and time configuration page to configure it correctly.
+[50-57-66-95.static.cloud-ips.com] out: Finished performing updates.                                                [ok]
+[50-57-66-95.static.cloud-ips.com] out: The following updates are pending:
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: system module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Rename blog and forum permissions to be consistent with other content types. 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Generate a cron key and save it in the variables table. 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Add a table to store blocked IP addresses. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Update {blocked_ips} with valid IP addresses from {access}. 
+[50-57-66-95.static.cloud-ips.com] out:   7004 -   Remove hardcoded numeric deltas from all blocks in core. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Remove throttle columns and variables. 
+[50-57-66-95.static.cloud-ips.com] out:   7007 -   Convert to new method of storing permissions. 
+[50-57-66-95.static.cloud-ips.com] out:   7009 -   Rename the variable for primary links. 
+[50-57-66-95.static.cloud-ips.com] out:   7011 -   Split the 'bypass node access' permission from 'administer nodes'. 
+[50-57-66-95.static.cloud-ips.com] out:   7013 -   Convert default time zone offset to default time zone name. 
+[50-57-66-95.static.cloud-ips.com] out:   7015 -   Change the user logout path. 
+[50-57-66-95.static.cloud-ips.com] out:   7016 -   Remove custom datatype _unsigned in PostgreSQL. 
+[50-57-66-95.static.cloud-ips.com] out:   7017 -   Change the theme setting 'toggle_node_info' into a per content type variable. 
+[50-57-66-95.static.cloud-ips.com] out:   7018 -   Shorten the {system}.type column and modify indexes. 
+[50-57-66-95.static.cloud-ips.com] out:   7020 -   Enable field and field_ui modules. 
+[50-57-66-95.static.cloud-ips.com] out:   7021 -   Change the PHP for settings permission. 
+[50-57-66-95.static.cloud-ips.com] out:   7027 -   Enable field type modules. 
+[50-57-66-95.static.cloud-ips.com] out:   7029 -   Add new 'view own unpublished content' permission for authenticated users.  Preserves legacy behavior from Drupal 6.x. 
+[50-57-66-95.static.cloud-ips.com] out:   7032 -  Alter field hostname to identifier in the {flood} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7033 -   Move CACHE_AGGRESSIVE to CACHE_NORMAL. 
+[50-57-66-95.static.cloud-ips.com] out:   7034 -   Migrate the file path settings and create the new {file_managed} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7036 -   Split the 'access site in maintenance mode' permission from 'administer site configuration'. 
+[50-57-66-95.static.cloud-ips.com] out:   7042 -   Upgrade the {url_alias} table and create a cache bin for path aliases. 
+[50-57-66-95.static.cloud-ips.com] out:   7044 -   Drop the actions_aid table. 
+[50-57-66-95.static.cloud-ips.com] out:   7045 -   Add expiration field to the {flood} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7046 -   Switch from the Minnelli theme if it is the default or admin theme. 
+[50-57-66-95.static.cloud-ips.com] out:   7047 -   Normalize the front page path variable. 
+[50-57-66-95.static.cloud-ips.com] out:   7048 -   Convert path languages from the empty string to LANGUAGE_NONE. 
+[50-57-66-95.static.cloud-ips.com] out:   7049 -   Rename 'Default' profile to 'Standard.' 
+[50-57-66-95.static.cloud-ips.com] out:   7050 -   Change {batch}.id column from serial to regular int. 
+[50-57-66-95.static.cloud-ips.com] out:   7051 -   make the IP field IPv6 compatible 
+[50-57-66-95.static.cloud-ips.com] out:   7052 -   Rename file to include_file in {menu_router} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7053 -   Upgrade standard blocks and menus. 
+[50-57-66-95.static.cloud-ips.com] out:   7054 -   Remove {cache_}.headers columns. 
+[50-57-66-95.static.cloud-ips.com] out:   7055 -   Converts fields that store serialized variables from text to blob. 
+[50-57-66-95.static.cloud-ips.com] out:   7057 -   Increase the size of session-ids. 
+[50-57-66-95.static.cloud-ips.com] out:   7058 -   Remove cron semaphore variable. 
+[50-57-66-95.static.cloud-ips.com] out:   7059 -   Create the {file_usage} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7060 -   Create fields in preparation for migrating upload.module to file.module. 
+[50-57-66-95.static.cloud-ips.com] out:   7061 -   Migrate upload.module data to the newly created file field. 
+[50-57-66-95.static.cloud-ips.com] out:   7062 -   Replace 'system_list' index with 'bootstrap' index on {system}. 
+[50-57-66-95.static.cloud-ips.com] out:   7063 -   Delete {menu_links} records for 'type' =&gt; MENU_CALLBACK which would not appear in a fresh install. 
+[50-57-66-95.static.cloud-ips.com] out:   7064 -   Remove block_callback field from {menu_router}. 
+[50-57-66-95.static.cloud-ips.com] out:   7065 -   Remove the default value for sid. 
+[50-57-66-95.static.cloud-ips.com] out:   7066 -   Migrate the 'file_directory_temp' variable. 
+[50-57-66-95.static.cloud-ips.com] out:   7067 -   Grant administrators permission to view the administration theme. 
+[50-57-66-95.static.cloud-ips.com] out:   7068 -   Update {url_alias}.language description. 
+[50-57-66-95.static.cloud-ips.com] out:   7069 -   Remove the obsolete 'site_offline' variable.   @see update_fix_d7_requirements() 
+[50-57-66-95.static.cloud-ips.com] out:   7070 -   Remove the obsolete 'drupal_badge_color' and 'drupal_badge_size' variables. 
+[50-57-66-95.static.cloud-ips.com] out:   7071 -   Add index missed during upgrade, and fix field default. 
+[50-57-66-95.static.cloud-ips.com] out:   7072 -   Remove the obsolete 'site_offline_message' variable.   @see update_fix_d7_requirements() 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: block module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Set system.weight to a low value for block module.   Block should go first so that other modules can alter its output  during hook_page_alter(). Almost everything on the page is a block,  so before block module runs, there will not be much to alter. 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Rename {blocks} table to {block}, {blocks_roles} to {block_role} and  {boxes} to {block_custom}. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Change the weight column to normal int. 
+[50-57-66-95.static.cloud-ips.com] out:   7004 -   Add new blocks to new regions, migrate custom variables to blocks. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Update the {block_custom}.format column. 
+[50-57-66-95.static.cloud-ips.com] out:   7006 -   Recreates cache_block table.   Converts fields that hold serialized variables from text to blob.  Removes 'headers' column. 
+[50-57-66-95.static.cloud-ips.com] out:   7007 -   Change {block_custom}.format into varchar. 
+[50-57-66-95.static.cloud-ips.com] out:   7008 -   Update database to match Drupal 7 schema. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: color module : 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Warn site administrator if unsafe CSS color codes are found in the database. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: comment module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Rename comment display setting variables. 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Change comment status from published being 0 to being 1 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Rename {comments} table to {comment} and upgrade it. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Split {comment}.timestamp into 'created' and 'changed', improve indexing on {comment}. 
+[50-57-66-95.static.cloud-ips.com] out:   7004 -   Upgrade the {node_comment_statistics} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Create the comment_body field. 
+[50-57-66-95.static.cloud-ips.com] out:   7006 -   Migrate data from the comment field to field storage. 
+[50-57-66-95.static.cloud-ips.com] out:   7007 -   Add an index to the created column. 
+[50-57-66-95.static.cloud-ips.com] out:   7008 -   Update database to match Drupal 7 schema. 
+[50-57-66-95.static.cloud-ips.com] out:   7009 -   Change the last_comment_timestamp column description. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: dblog module : 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Update the {watchdog} table. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: filter module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Upgrade the {filter_formats} table and rename it to {filter_format}. 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Break out "escape HTML filter" option to its own filter. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Upgrade the {filter} table for core filters. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Integrate text formats with the user permissions system.   This function converts text format role assignments to use the new text  format permissions introduced in Drupal 7, creates a fallback (plain text)  format that is available to all users, and explicitly sets the text format  in cases that used to rely on a single site-wide default. 
+[50-57-66-95.static.cloud-ips.com] out:   7008 -   Grant usage of all text formats to user roles having the 'administer filters' permission. 
+[50-57-66-95.static.cloud-ips.com] out:   7009 -   Converts fields that store serialized variables from text to blob. 
+[50-57-66-95.static.cloud-ips.com] out:   7010 -   Change {filter_format}.format and {filter}.format into varchar. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: menu module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Migrate the "Default menu for content" setting to individual node types. 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Rename "Primary Links" and "Secondary Links" to their Drupal 7 equivalents. 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Rename the primarysecondary menu blocks to match previously renamed menus. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Add missing custom menus to active menus list. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: node module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Upgrade the node type table and fix node type 'module' attribute to avoid name-space conflicts. 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Rename {node_revisions} table to {node_revision}. 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Extend the node_promote_status index to include all fields required for the node page query. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Remove the node_counter if the statistics module is uninstalled. 
+[50-57-66-95.static.cloud-ips.com] out:   7004 -   Extend the existing default preview and teaser settings to all node types. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Add statuscommentpromote and sticky columns to the {node_revision} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7006 -   Convert body and teaser from node properties to fields, and migrate statuscommentpromote and sticky columns to the {node_revision} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7007 -   Remove column min_word_count. 
+[50-57-66-95.static.cloud-ips.com] out:   7008 -   Split the 'administer nodes' permission from 'access content overview'. 
+[50-57-66-95.static.cloud-ips.com] out:   7009 -   Convert node languages from the empty string to LANGUAGE_NONE. 
+[50-57-66-95.static.cloud-ips.com] out:   7010 -   Add the {block_node_type} table. 
+[50-57-66-95.static.cloud-ips.com] out:   7011 -   Update the database from Drupal 6 to match the schema. 
+[50-57-66-95.static.cloud-ips.com] out:   7012 -   Switches body fields to untranslatable while upgrading from D6 and makes them language neutral. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: taxonomy module : 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Rename taxonomy tables. 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Add {vocabulary}.machine_name column. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Remove the related terms setting from vocabularies.   This setting has not been used since Drupal 6. The {taxonomy_relations} table  itself is retained to allow for data to be upgraded. 
+[50-57-66-95.static.cloud-ips.com] out:   7004 -   Move taxonomy vocabulary associations for nodes to fields and field instances. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Migrate {taxonomy_term_node} table to field storage.   @todo: This function can possibly be made much faster by wrapping a  transaction around all the inserts. 
+[50-57-66-95.static.cloud-ips.com] out:   7006 -   Add {taxonomy_term_data}.format column. 
+[50-57-66-95.static.cloud-ips.com] out:   7007 -   Add index on {taxonomy_term_data}.name column to speed up taxonomy_get_term_by_name(). 
+[50-57-66-95.static.cloud-ips.com] out:   7008 -   Change the weight columns to normal int. 
+[50-57-66-95.static.cloud-ips.com] out:   7009 -   Change {taxonomy_term_data}.format into varchar. 
+[50-57-66-95.static.cloud-ips.com] out:   7010 -   Change {taxonomy_index}.created to support signed int.
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: user module : 
+[50-57-66-95.static.cloud-ips.com] out:   7000 -   Increase the length of the password field to accommodate better hashes.   Also re-hashes all current passwords to improve security. This may be a  lengthy process, and is performed batch-wise. 
+[50-57-66-95.static.cloud-ips.com] out:   7001 -   Remove the 'threshold', 'mode' and 'sort' columns from the {users} table.   These fields were previously used to store per-user comment settings. 
+[50-57-66-95.static.cloud-ips.com] out:   7002 -   Convert user time zones from time zone offsets to time zone names. 
+[50-57-66-95.static.cloud-ips.com] out:   7003 -   Update user settings for cancelling user accounts.   Prior to 7.x, users were not able to cancel their accounts. When  administrators deleted an account, all contents were assigned to uid 0,  which is the same as the 'user_cancel_reassign' method now. 
+[50-57-66-95.static.cloud-ips.com] out:   7005 -   Changes the users table to allow longer e-mail addresses. 
+[50-57-66-95.static.cloud-ips.com] out:   7006 -   Add module data to {role_permission}. 
+[50-57-66-95.static.cloud-ips.com] out:   7007 -   Add a weight column to user roles. 
+[50-57-66-95.static.cloud-ips.com] out:   7008 -   If 'user_register' variable was unset in Drupal 6, set it to be the same as  the Drupal 6 default setting. 
+[50-57-66-95.static.cloud-ips.com] out:   7009 -   Converts fields that store serialized variables from text to blob. 
+[50-57-66-95.static.cloud-ips.com] out:   7010 -   Update the {user}.signature_format column. 
+[50-57-66-95.static.cloud-ips.com] out:   7011 -   Placeholder function.   As a fix for user_update_7011() not updating email templates to use the new  tokens, user_update_7017() now targets email templates of Drupal 6 sites and  already upgraded sites. 
+[50-57-66-95.static.cloud-ips.com] out:   7012 -   Add the user's pictures to the {file_managed} table and make them managed  files. 
+[50-57-66-95.static.cloud-ips.com] out:   7013 -   Add user module file usage entries. 
+[50-57-66-95.static.cloud-ips.com] out:   7014 -   Rename the 'post comments without approval' permission.   In Drupal 7, this permission has been renamed to 'skip comment approval'. 
+[50-57-66-95.static.cloud-ips.com] out:   7015 -   Change {users}.signature_format into varchar. 
+[50-57-66-95.static.cloud-ips.com] out:   7016 -   Update the database to match the schema. 
+[50-57-66-95.static.cloud-ips.com] out:   7017 -   Update email templates to use new tokens.   This function upgrades customized email templates from the old !token format  to the new core tokens format. Additionally, in Drupal 7 we no longer e-mail  plain text passwords to users, and there is no token for a plain text  password in the new token system. Therefore, it also modifies any saved  templates using the old '!password' token such that the token is removed, and  displays a warning to users that they may need to go and modify the wording  of their templates. 
+[50-57-66-95.static.cloud-ips.com] out: 
+[50-57-66-95.static.cloud-ips.com] out: Do you wish to run all pending updates? (y/n): y
+[50-57-66-95.static.cloud-ips.com] out: Removing: drupal6-upgrade-drupal7.aegir.example.com.                        [ok]
+[50-57-66-95.static.cloud-ips.com] out: Backed up site up to                                                   [success]
+[50-57-66-95.static.cloud-ips.com] out: /var/aegir/backups/drupal6-upgrade-drupal7.aegir.example.com-20120308.162335.tar.gz.
+[50-57-66-95.static.cloud-ips.com] out: Removing platform: drupal6.                                                 [ok]
+[50-57-66-95.static.cloud-ips.com] out: Removing platform: drupal7.                                                 [ok]
+[50-57-66-95.static.cloud-ips.com] out: Removing platform: openatrium.                                              [ok]
+[50-57-66-95.static.cloud-ips.com] out: Tests completed successfully                                           [success]
+===&gt; Destroying this node
+Sending e-mails to: miguel.jacq@gmail.com steven.jones@computerminds.co.uk
+IRC notifier plugin: Sending notification to: #aegir
+Finished: SUCCESS

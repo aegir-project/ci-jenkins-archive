@@ -1,0 +1,41 @@
+{
+  "_class" : "hudson.model.View$AsynchPeople$People",
+  "users" : [
+    {
+      "lastChange" : 1474804860786,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6",
+        "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+        "fullName" : "Herman van Rink"
+      }
+    },
+    {
+      "lastChange" : 1472253360138,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8",
+        "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+        "fullName" : "Christopher Gervais"
+      }
+    },
+    {
+      "lastChange" : 1381434359000,
+      "project" : {
+        "_class" : "hudson.model.FreeStyleProject",
+        "name" : "P Aegir Puppet Module smoke-test",
+        "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/"
+      },
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/jenkins",
+        "fullName" : "jenkins"
+      }
+    }
+  ]
+}

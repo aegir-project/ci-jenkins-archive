@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 34,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+            "branch" : [
+              {
+                "SHA1" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+            "branch" : [
+              {
+                "SHA1" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+        "branch" : [
+          {
+            "SHA1" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#34",
+  "duration" : 13861,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #34",
+  "id" : "2012-02-13_20-46-01",
+  "keepLog" : false,
+  "number" : 34,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329183961000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/34/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/provision_drupal_settings.tpl.php",
+          "platform/provision_drupal.drush.inc"
+        ],
+        "commitId" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+        "timestamp" : 1329165582000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1421356 by omega8cc: Fixed Wrong variables for files paths hardcoded for D7 sites.\n",
+        "date" : "2012-02-13T15:39:42-0500 +0000",
+        "id" : "ce6c2e4079e3eff564427b1218a4a5e1326202da",
+        "msg" : "Issue #1421356 by omega8cc: Fixed Wrong variables for files paths hardcoded for D7 sites.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/provision_drupal_settings.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

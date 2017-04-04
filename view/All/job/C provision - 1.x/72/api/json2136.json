@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 72,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "24fdd2912613490bf80fcee6dae33975b4656918",
+            "branch" : [
+              {
+                "SHA1" : "24fdd2912613490bf80fcee6dae33975b4656918",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "24fdd2912613490bf80fcee6dae33975b4656918",
+            "branch" : [
+              {
+                "SHA1" : "24fdd2912613490bf80fcee6dae33975b4656918",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "24fdd2912613490bf80fcee6dae33975b4656918",
+        "branch" : [
+          {
+            "SHA1" : "24fdd2912613490bf80fcee6dae33975b4656918",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#72",
+  "duration" : 11512,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #72",
+  "id" : "2012-04-26_11-00-26",
+  "keepLog" : false,
+  "number" : 72,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335452426000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/72/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "platform/migrate.provision.inc",
+          "platform/deploy.provision.inc"
+        ],
+        "commitId" : "24fdd2912613490bf80fcee6dae33975b4656918",
+        "timestamp" : 1335437661000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1205956 by helmo - Document the Provision API\n",
+        "date" : "2012-04-26T06:54:21-0400 +1000",
+        "id" : "24fdd2912613490bf80fcee6dae33975b4656918",
+        "msg" : "Issue #1205956 by helmo - Document the Provision API",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "platform/deploy.provision.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "platform/migrate.provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

@@ -1,0 +1,689 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 12,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "branch" : [
+              {
+                "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "branch" : [
+          {
+            "SHA1" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#12",
+  "duration" : 56138,
+  "estimatedDuration" : 436450,
+  "executor" : None,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-unstable #12",
+  "id" : "12",
+  "keepLog" : False,
+  "number" : 12,
+  "queueId" : 214,
+  "result" : "FAILURE",
+  "timestamp" : 1440174744151,
+  "url" : "http://ci.aegirproject.org/view/All/job/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/12/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "153ff6137b9aef5b92c09f36799f5f8116d6369b",
+        "timestamp" : 1401450145000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Set creates option to include site dir\n",
+        "date" : "2014-05-30T07:42:25-0400 +0200",
+        "id" : "153ff6137b9aef5b92c09f36799f5f8116d6369b",
+        "msg" : "Set creates option to include site dir",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "dea11262203a77cc960073a101eddf5aceee3e4b",
+        "timestamp" : 1401450305000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2268843 by helmo: Include hosting_git by default.\n",
+        "date" : "2014-05-30T07:45:05-0400 +0200",
+        "id" : "dea11262203a77cc960073a101eddf5aceee3e4b",
+        "msg" : "Issue #2268843 by helmo: Include hosting_git by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/nodes.pp",
+          "tests/functional_tests/aegir3-dev/setup.sh",
+          "tests/functional_tests/aegir3-dev/Vagrantfile"
+        ],
+        "commitId" : "1e0be28a13d7982734839642ed18937d943a6b70",
+        "timestamp" : 1401450662000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add aegir3-dev functional test\n",
+        "date" : "2014-05-30T07:51:02-0400 +0200",
+        "id" : "1e0be28a13d7982734839642ed18937d943a6b70",
+        "msg" : "Add aegir3-dev functional test",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/dev.pp"
+        ],
+        "commitId" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+        "timestamp" : 1402256631000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Allow building hostmaster platform directly.\n",
+        "date" : "2014-06-08T15:43:51-0400 -0500",
+        "id" : "9b62be3e6a9459df2fe3e133bd3d669a888fb2e9",
+        "msg" : "Allow building hostmaster platform directly.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "manifests/dev.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/Vagrantfile",
+          "tests/functional_tests/aegir3-dev/Vagrantfile"
+        ],
+        "commitId" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+        "timestamp" : 1402497123000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2284341 by helmo: Fixed Could not retrieve fact fqdn.\n",
+        "date" : "2014-06-11T10:32:03-0400 +0200",
+        "id" : "3dae62894d0d77f377610bb07d2f48ff3c5e7189",
+        "msg" : "Issue #2284341 by helmo: Fixed Could not retrieve fact fqdn.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev/nodes.pp"
+        ],
+        "commitId" : "7b8182b8d43dc04e5442760bc39c638755d7542d",
+        "timestamp" : 1402502969000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2114025 by helmo: Fixed empty --root option for hostmaster-install.\n",
+        "date" : "2014-06-11T12:09:29-0400 +0200",
+        "id" : "7b8182b8d43dc04e5442760bc39c638755d7542d",
+        "msg" : "Issue #2114025 by helmo: Fixed empty --root option for hostmaster-install.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/Vagrantfile"
+        ],
+        "commitId" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+        "timestamp" : 1405682307000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Ubuntu 13.04 (raring) is out of support. Builds started failing due to unavailable packages\n",
+        "date" : "2014-07-18T07:18:27-0400 +0200",
+        "id" : "b1ed5a79f6a782a6c723502f4e2a0be03050c504",
+        "msg" : "Ubuntu 13.04 (raring) is out of support. Builds started failing due to unavailable packages",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/nodes.pp",
+          "tests/functional_tests/aegir2to3-dev/setup.sh",
+          "tests/functional_tests/aegir2to3-dev/Vagrantfile",
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "3ce67f2f9a42906f3191b9973e43233f285db79d",
+        "timestamp" : 1405925826000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Add functional test for upgrade of Aegor 2.x to 3.x\n",
+        "date" : "2014-07-21T02:57:06-0400 +0200",
+        "id" : "3ce67f2f9a42906f3191b9973e43233f285db79d",
+        "msg" : "Add functional test for upgrade of Aegor 2.x to 3.x",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "15c91482186b8271d82419233c3f33b3fd7e4189",
+        "timestamp" : 1405932552000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Feed yes to the upgrade script to avoid waiting for input.\n",
+        "date" : "2014-07-21T04:49:12-0400 +0200",
+        "id" : "15c91482186b8271d82419233c3f33b3fd7e4189",
+        "msg" : "Feed yes to the upgrade script to avoid waiting for input.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+        ],
+        "commitId" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+        "timestamp" : 1405933114000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "explicitly use /bin/bash to allow using functions\n",
+        "date" : "2014-07-21T04:58:34-0400 +0200",
+        "id" : "98a579a2f079d1c3d5778ed5b41e695c1cd7c705",
+        "msg" : "explicitly use /bin/bash to allow using functions",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/setup.sh",
+          "tests/functional_tests/matrix.deb/setup.sh",
+          "tests/functional_tests/aegir2-dev/setup.sh",
+          "tests/functional_tests/aegir2/setup.sh",
+          "tests/functional_tests/aegir2-unstable/setup.sh",
+          "tests/functional_tests/aegir3-dev/setup.sh"
+        ],
+        "commitId" : "e432488cf10db3211edc3401c0e3b5c0e7609d94",
+        "timestamp" : 1408691434000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fix path for .vagrant dir\n",
+        "date" : "2014-08-22T03:10:34-0400 +0200",
+        "id" : "e432488cf10db3211edc3401c0e3b5c0e7609d94",
+        "msg" : "Fix path for .vagrant dir",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-unstable/setup.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/matrix.deb/setup.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2to3-dev/Vagrantfile"
+        ],
+        "commitId" : "93425cc585659c0f0c139f7760eca4729be520cb",
+        "timestamp" : 1409056304000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir2to3-dev: Setup host machine cache for /var/aegir/.drush/cache\n",
+        "date" : "2014-08-26T08:31:44-0400 +0200",
+        "id" : "93425cc585659c0f0c139f7760eca4729be520cb",
+        "msg" : "aegir2to3-dev: Setup host machine cache for /var/aegir/.drush/cache",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2to3-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-dev/Vagrantfile",
+          "tests/functional_tests/aegir3-dev/Vagrantfile"
+        ],
+        "commitId" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+        "timestamp" : 1409062910000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "aegir2 and 3 -dev: Setup host machine cache for /var/aegir/.drush/cache\n",
+        "date" : "2014-08-26T10:21:50-0400 +0200",
+        "id" : "f9e308d1e36bc4bbb6621fc13dcadd6b4d230a10",
+        "msg" : "aegir2 and 3 -dev: Setup host machine cache for /var/aegir/.drush/cache",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-dev/Vagrantfile"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile",
+          "tests/functional_tests/aegir3-drush-master-dev/setup.sh",
+          "tests/functional_tests/aegir3-drush-master-dev/nodes.pp",
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+        ],
+        "commitId" : "c130467be9c2c8d5927f17117ad6c6c4742ce235",
+        "timestamp" : 1415887387000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Added extra functional test, Aegir 7.x-3.x with Drush master\n",
+        "date" : "2014-11-13T09:03:07-0500 +0100",
+        "id" : "c130467be9c2c8d5927f17117ad6c6c4742ce235",
+        "msg" : "Added extra functional test, Aegir 7.x-3.x with Drush master",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+        ],
+        "commitId" : "d6ed79abb5c42da54f90bc97b2cdc81ae9721e23",
+        "timestamp" : 1415889058000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Fix fqdn for aegir3-drush-master-dev test\n",
+        "date" : "2014-11-13T09:30:58-0500 +0100",
+        "id" : "d6ed79abb5c42da54f90bc97b2cdc81ae9721e23",
+        "msg" : "Fix fqdn for aegir3-drush-master-dev test",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+        ],
+        "commitId" : "209b88e7325350dee36244b94b1b310da0825deb",
+        "timestamp" : 1430740728000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Run the aegir3-drush-master-dev test with debug enabled.\n",
+        "date" : "2015-05-04T07:58:48-0400 +0200",
+        "id" : "209b88e7325350dee36244b94b1b310da0825deb",
+        "msg" : "Run the aegir3-drush-master-dev test with debug enabled.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+        ],
+        "commitId" : "b9696a2ee6652712295212f6f72f9816c7cc16c9",
+        "timestamp" : 1430740806000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Run extra new tests during the aegir3-drush-master-dev test.\n",
+        "date" : "2015-05-04T08:00:06-0400 +0200",
+        "id" : "b9696a2ee6652712295212f6f72f9816c7cc16c9",
+        "msg" : "Run extra new tests during the aegir3-drush-master-dev test.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+        ],
+        "commitId" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+        "timestamp" : 1430743126000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Let the drush output be a bit wider then 80 chars ... 130 for now.\n",
+        "date" : "2015-05-04T08:38:46-0400 +0200",
+        "id" : "f656273a0781e42155f80d404d2acfdf1dbdec61",
+        "msg" : "Let the drush output be a bit wider then 80 chars ... 130 for now.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/run-tests.sh"
+        ],
+        "commitId" : "e80b4b3526b90a8d46a924e11e3dd5e5b3a4cfed",
+        "timestamp" : 1431125250000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Stop the hosting-queued service prior to running tests.\n",
+        "date" : "2015-05-08T18:47:30-0400 +0000",
+        "id" : "e80b4b3526b90a8d46a924e11e3dd5e5b3a4cfed",
+        "msg" : "Stop the hosting-queued service prior to running tests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/run-tests.sh"
+        ],
+        "commitId" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+        "timestamp" : 1431149205000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"Stop the hosting-queued service prior to running tests.\"\n\nThis reverts commit e80b4b3526b90a8d46a924e11e3dd5e5b3a4cfed.\n",
+        "date" : "2015-05-09T01:26:45-0400 +0000",
+        "id" : "0da131989efd3a4282d0cc4b1e31744c8eb57062",
+        "msg" : "Revert \"Stop the hosting-queued service prior to running tests.\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          },
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-drush-master-dev/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-backports/setup.sh",
+          "tests/functional_tests/aegir2-backports/run-tests.sh",
+          "tests/functional_tests/aegir2-backports/nodes.pp",
+          "tests/functional_tests/aegir2-backports/Vagrantfile"
+        ],
+        "commitId" : "2a0424a99dd99bd236696f331efa623ed9eb4111",
+        "timestamp" : 1431721697000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add tests for the 6.x-2.x-backports branch.\n",
+        "date" : "2015-05-15T16:28:17-0400 -0700",
+        "id" : "2a0424a99dd99bd236696f331efa623ed9eb4111",
+        "msg" : "Add tests for the 6.x-2.x-backports branch.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir2-backports/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir2-backports/nodes.pp"
+        ],
+        "commitId" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "timestamp" : 1431724085000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Change node name for backports tests.\n",
+        "date" : "2015-05-15T17:08:05-0400 -0700",
+        "id" : "35b46c5810b54cb7055e79c2a9f085bd1b4d7de5",
+        "msg" : "Change node name for backports tests.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir2-backports/nodes.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

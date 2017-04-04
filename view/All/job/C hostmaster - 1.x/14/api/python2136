@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 14,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+            "branch" : [
+              {
+                "SHA1" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+            "branch" : [
+              {
+                "SHA1" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+        "branch" : [
+          {
+            "SHA1" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#14",
+  "duration" : 8150,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #14",
+  "id" : "2012-03-16_21-31-06",
+  "keepLog" : False,
+  "number" : 14,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331947866000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/14/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "hostmaster.profile"
+        ],
+        "commitId" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+        "timestamp" : 1331933115000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1485746 by shrop, Steven Jones: Fixed MySQL root password incorrectly escaped in frontend.\n",
+        "date" : "2012-03-16T17:25:15-0400 +0000",
+        "id" : "1826305e921c9a2eafc0a9c1d56c1c641f9cdded",
+        "msg" : "Issue #1485746 by shrop, Steven Jones: Fixed MySQL root password incorrectly escaped in frontend.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "hostmaster.profile"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

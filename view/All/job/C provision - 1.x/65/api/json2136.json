@@ -1,0 +1,161 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 65,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "abaa275343098b85e2118028d39948f7a9556e09",
+            "branch" : [
+              {
+                "SHA1" : "abaa275343098b85e2118028d39948f7a9556e09",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "abaa275343098b85e2118028d39948f7a9556e09",
+            "branch" : [
+              {
+                "SHA1" : "abaa275343098b85e2118028d39948f7a9556e09",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "abaa275343098b85e2118028d39948f7a9556e09",
+        "branch" : [
+          {
+            "SHA1" : "abaa275343098b85e2118028d39948f7a9556e09",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#65",
+  "duration" : 12477,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #65",
+  "id" : "2012-04-15_14-30-27",
+  "keepLog" : false,
+  "number" : 65,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1334514627000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/65/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/nginx_advanced_include.conf",
+          "http/nginx/nginx_simple_include.conf"
+        ],
+        "commitId" : "a0ad4ca2ab1c46a062465cf5a81a4c4be6ce3616",
+        "timestamp" : 1334498790000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1472460 by dmiric and #1524738 by flexgrip - Nginx configuration denies HTTP request methods: PUT, DELETE and OPTIONS and it breaks services/REST.\n",
+        "date" : "2012-04-15T10:06:30-0400 +0200",
+        "id" : "a0ad4ca2ab1c46a062465cf5a81a4c4be6ce3616",
+        "msg" : "Issue #1472460 by dmiric and #1524738 by flexgrip - Nginx configuration denies HTTP request methods: PUT, DELETE and OPTIONS and it breaks services/REST.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx_advanced_include.conf"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx/server.tpl.php",
+          "http/nginx/nginx.conf"
+        ],
+        "commitId" : "abaa275343098b85e2118028d39948f7a9556e09",
+        "timestamp" : 1334499581000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1534306 by omega8cc - Duplicate directives in the Nginx config cause issues with recommended Dotdeb Nginx build.\n",
+        "date" : "2012-04-15T10:19:41-0400 +0200",
+        "id" : "abaa275343098b85e2118028d39948f7a9556e09",
+        "msg" : "Issue #1534306 by omega8cc - Duplicate directives in the Nginx config cause issues with recommended Dotdeb Nginx build.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/nginx.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/nginx/server.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

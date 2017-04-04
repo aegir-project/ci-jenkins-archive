@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 3,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+            "branch" : [
+              {
+                "SHA1" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+            "branch" : [
+              {
+                "SHA1" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+        "branch" : [
+          {
+            "SHA1" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#3",
+  "duration" : 23886,
+  "estimatedDuration" : 213289,
+  "executor" : null,
+  "fullDisplayName" : "C hostmaster - 1.x #3",
+  "id" : "2011-11-12_08-16-41",
+  "keepLog" : false,
+  "number" : 3,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1321103801000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/3/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/platform/hosting_platform.module"
+        ],
+        "commitId" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+        "timestamp" : 1321084915000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "update the help text in the platform form to point out that a makefile can be a public URL and not just an absolute path on the filesystem to a local file\n",
+        "date" : "2011-11-12T03:01:55-0500 +1100",
+        "id" : "4dd9ba1cfbd8e31cf67f2bc2278a7b090e494ae9",
+        "msg" : "update the help text in the platform form to point out that a makefile can be a public URL and not just an absolute path on the filesystem to a local file",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/platform/hosting_platform.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

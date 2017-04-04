@@ -1,0 +1,15 @@
+Started by user Christopher Gervais
+Building in workspace /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/P Aegir Puppet Module functional test Aegir2/workspace - hudson.remoting.LocalChannel@5116331d
+Using strategy: Default
+Last Built Revision: Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from origin
+Commencing build of Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+Checking out Revision b4236f104f8edd21158d100bbacec6c0c878f8c9 (origin/new)
+[workspace] $ /bin/sh -xe /tmp/hudson2685680346207770578.sh
++ vagrant up
+A Vagrant environment is required to run this command. Run `vagrant init`
+to set one up.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

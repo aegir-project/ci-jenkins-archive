@@ -1,0 +1,65 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "BRANCH_TO_BUILD",
+          "value" : "6.x-1.x"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "NEW_TAG",
+          "value" : "6.x-1.6"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Steven Jones",
+          "userId" : "steven.jones",
+          "userName" : "Steven Jones"
+        }
+      ]
+    },
+    {
+      "_class" : "jenkins.model.InterruptedBuildAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#10",
+  "duration" : 46984,
+  "estimatedDuration" : 42405,
+  "executor" : None,
+  "fullDisplayName" : "R release tags #10",
+  "id" : "2011-11-14_22-00-57",
+  "keepLog" : False,
+  "number" : 10,
+  "queueId" : -1,
+  "result" : "ABORTED",
+  "timestamp" : 1321326057000,
+  "url" : "http://ci.aegirproject.org/view/All/job/R%20release%20tags/10/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.scm.EmptyChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : None
+  },
+  "culprits" : [
+    
+  ]
+}

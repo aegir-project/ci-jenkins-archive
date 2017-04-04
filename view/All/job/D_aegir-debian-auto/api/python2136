@@ -1,0 +1,130 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    {
+      
+    }
+  ],
+  "description" : "Build a debian package of provision, following the latest changes on the 1.x branch",
+  "displayName" : "D_aegir-debian-auto",
+  "displayNameOrNull" : None,
+  "name" : "D_aegir-debian-auto",
+  "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/",
+  "buildable" : False,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 258,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/258/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 257,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/257/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 256,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/256/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 255,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/255/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 254,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/254/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 253,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/253/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 252,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/252/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 251,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/251/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 250,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/250/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 249,
+      "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/249/"
+    }
+  ],
+  "color" : "disabled",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 249,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/249/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 1 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-60to79",
+      "iconUrl" : "health-60to79.png",
+      "score" : 80
+    }
+  ],
+  "inQueue" : False,
+  "keepDependencies" : False,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 258,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/258/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 258,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/258/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 258,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/258/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 257,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/257/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 257,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/257/"
+  },
+  "lastUnstableBuild" : None,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 258,
+    "url" : "http://ci.aegirproject.org/view/All/job/D_aegir-debian-auto/258/"
+  },
+  "nextBuildNumber" : 259,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    }
+  ],
+  "queueItem" : None,
+  "concurrentBuild" : False,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "7.x-3.4"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 17,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "branch" : [
+              {
+                "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+        "branch" : [
+          {
+            "SHA1" : "3e06c5dfcce5f4b491c833fa86a2b77142f59a76",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/7.x-3.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 17,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+            "branch" : [
+              {
+                "SHA1" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+            "branch" : [
+              {
+                "SHA1" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+                "name" : "origin/7.x-3.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+        "branch" : [
+          {
+            "SHA1" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+            "name" : "origin/7.x-3.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir3-cluster-slave_3.4_all.deb",
+      "fileName" : "aegir3-cluster-slave_3.4_all.deb",
+      "relativePath" : "provision/build-area/aegir3-cluster-slave_3.4_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-hostmaster_3.4_all.deb",
+      "fileName" : "aegir3-hostmaster_3.4_all.deb",
+      "relativePath" : "provision/build-area/aegir3-hostmaster_3.4_all.deb"
+    },
+    {
+      "displayPath" : "aegir3-provision_3.4_all.deb",
+      "fileName" : "aegir3-provision_3.4_all.deb",
+      "relativePath" : "provision/build-area/aegir3-provision_3.4_all.deb"
+    },
+    {
+      "displayPath" : "aegir3_3.4_all.deb",
+      "fileName" : "aegir3_3.4_all.deb",
+      "relativePath" : "provision/build-area/aegir3_3.4_all.deb"
+    }
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#17",
+  "duration" : 18832,
+  "estimatedDuration" : 19141,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official-3.x #17",
+  "id" : "17",
+  "keepLog" : False,
+  "number" : 17,
+  "queueId" : 2445,
+  "result" : "SUCCESS",
+  "timestamp" : 1455050093736,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official-3.x/17/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "Provision/Config.php"
+        ],
+        "commitId" : "00ada0ff4d3dff5e79ccec4e80a3c02a49e1379f",
+        "timestamp" : 1454408098000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2659920 by bgm: Fix drush_log usage in Provision/Config.php when using custom templates\n",
+        "date" : "2016-02-02T05:14:58-0500 +0100",
+        "id" : "00ada0ff4d3dff5e79ccec4e80a3c02a49e1379f",
+        "msg" : "Issue #2659920 by bgm: Fix drush_log usage in Provision/Config.php when using custom templates",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "Provision/Config.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "eab59434881474b7c167254d6b38734dac5d1ab3",
+        "timestamp" : 1454606530000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Update path to drush executable in debian scripts.\n",
+        "date" : "2016-02-04T12:22:10-0500 +0000",
+        "id" : "eab59434881474b7c167254d6b38734dac5d1ab3",
+        "msg" : "Update path to drush executable in debian scripts.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.templates"
+        ],
+        "commitId" : "1da070bba949a7b68c3837197b6bc1d7b4c4b0bf",
+        "timestamp" : 1454695478000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2625168: Pin drush version to 8.0.0 until we can fix the logging issue in 8.0.2\n",
+        "date" : "2016-02-05T13:04:38-0500 +0100",
+        "id" : "1da070bba949a7b68c3837197b6bc1d7b4c4b0bf",
+        "msg" : "Issue #2625168: Pin drush version to 8.0.0 until we can fix the logging issue in 8.0.2",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.templates"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "8c1fd550f86465a4d9ba46cdbd5a5141a10beb43",
+        "timestamp" : 1454704257000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Revert \"Update path to drush executable in debian scripts.\"\n\nThis reverts commit eab59434881474b7c167254d6b38734dac5d1ab3.\n",
+        "date" : "2016-02-05T15:30:57-0500 +0100",
+        "id" : "8c1fd550f86465a4d9ba46cdbd5a5141a10beb43",
+        "msg" : "Revert \"Update path to drush executable in debian scripts.\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "4eb2a4549996f9098986b698804d4e45f8e74786",
+        "timestamp" : 1454704412000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+          "fullName" : "Herman van Rink"
+        },
+        "comment" : "Issue #2661474: Set COMPOSER_HOME hoping to bypass variations from XDG_CONFIG_HOME\n",
+        "date" : "2016-02-05T15:33:32-0500 +0100",
+        "id" : "4eb2a4549996f9098986b698804d4e45f8e74786",
+        "msg" : "Issue #2661474: Set COMPOSER_HOME hoping to bypass variations from XDG_CONFIG_HOME",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.templates",
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "7d1ce931273a4cf00eed63594a397e70844c8ff1",
+        "timestamp" : 1454910975000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Issue #2619158: Switch to the latest Drush 8 phar by default.\n",
+        "date" : "2016-02-08T00:56:15-0500 +0000",
+        "id" : "7d1ce931273a4cf00eed63594a397e70844c8ff1",
+        "msg" : "Issue #2619158: Switch to the latest Drush 8 phar by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.templates"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "debian/aegir3-provision.postinst"
+        ],
+        "commitId" : "3e35645cc617a3f32cababbb4accf1792081bbfc",
+        "timestamp" : 1455041354000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Follow redirects when downloading Drush phars.\n",
+        "date" : "2016-02-09T13:09:14-0500 -0500",
+        "id" : "3e35645cc617a3f32cababbb4accf1792081bbfc",
+        "msg" : "Follow redirects when downloading Drush phars.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "debian/aegir3-provision.postinst"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "19b9bfe449af40a0b1499571cc6d4b7bc8af0f4b",
+        "timestamp" : 1455044891000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "change version information for release 3.4\n",
+        "date" : "2016-02-09T14:08:11-0500 -0500",
+        "id" : "19b9bfe449af40a0b1499571cc6d4b7bc8af0f4b",
+        "msg" : "change version information for release 3.4",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info",
+          "aegir-release.make"
+        ],
+        "commitId" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+        "timestamp" : 1455044891000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"change version information for release 3.4\"\n\nThis reverts commit 19b9bfe449af40a0b1499571cc6d4b7bc8af0f4b.\n",
+        "date" : "2016-02-09T14:08:11-0500 -0500",
+        "id" : "c13237668fc4c82623e42f32ec6def2e7ba7883c",
+        "msg" : "Revert \"change version information for release 3.4\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    },
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/helmo",
+      "fullName" : "Herman van Rink"
+    }
+  ]
+}

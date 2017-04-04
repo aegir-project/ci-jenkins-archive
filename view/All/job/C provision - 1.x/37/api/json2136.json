@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 37,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+            "branch" : [
+              {
+                "SHA1" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+            "branch" : [
+              {
+                "SHA1" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+        "branch" : [
+          {
+            "SHA1" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#37",
+  "duration" : 24470,
+  "estimatedDuration" : 59256,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 1.x #37",
+  "id" : "2012-02-16_23-16-25",
+  "keepLog" : false,
+  "number" : 37,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1329452185000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%201.x/37/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/nginx_ssl/nginx_ssl_service.inc"
+        ],
+        "commitId" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+        "timestamp" : 1329433243000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/mig5",
+          "fullName" : "Miguel Jacq"
+        },
+        "comment" : "Issue #1388906 by omega8cc - It is possible to break Nginx based install with upload progress by enabling nginx_ssl feature.\n",
+        "date" : "2012-02-16T18:00:43-0500 +1100",
+        "id" : "d9d297d44f0be0b5ac1fbb40b30434b66d0f8fb5",
+        "msg" : "Issue #1388906 by omega8cc - It is possible to break Nginx based install with upload progress by enabling nginx_ssl feature.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/nginx_ssl/nginx_ssl_service.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/mig",
+      "fullName" : "mig"
+    }
+  ]
+}

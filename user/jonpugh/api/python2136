@@ -1,0 +1,39 @@
+{
+  "_class" : "hudson.model.User",
+  "absoluteUrl" : "http://ci.aegirproject.org/user/jonpugh",
+  "description" : None,
+  "fullName" : "Jon Pugh",
+  "id" : "jonpugh",
+  "property" : [
+    {
+      "_class" : "hudson.model.PaneStatusProperties"
+    },
+    {
+      "_class" : "jenkins.security.ApiTokenProperty"
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.UserCredentialsProvider$UserCredentialsProperty"
+    },
+    {
+      "_class" : "hudson.plugins.jabber.user.JabberUserProperty",
+      "jid" : None
+    },
+    {
+      "_class" : "hudson.model.MyViewsProperty"
+    },
+    {
+      "_class" : "hudson.plugins.openid.OpenIdUserProperty"
+    },
+    {
+      "_class" : "hudson.search.UserSearchProperty",
+      "insensitiveSearch" : False
+    },
+    {
+      "_class" : "hudson.security.HudsonPrivateSecurityRealm$Details"
+    },
+    {
+      "_class" : "hudson.tasks.Mailer$UserProperty",
+      "address" : "jon@thinkdrop.net"
+    }
+  ]
+}

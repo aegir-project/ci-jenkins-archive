@@ -1,0 +1,119 @@
+Started by timer
+Building in workspace /var/lib/jenkins/jobs/P Drush Puppet Module smoke-test/workspace
+ &gt; git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ &gt; git config remote.origin.url <a href='http://git.drupal.org/project/puppet-drush.git'>http://git.drupal.org/project/puppet-drush.git</a> # timeout=10
+Fetching upstream changes from <a href='http://git.drupal.org/project/puppet-drush.git'>http://git.drupal.org/project/puppet-drush.git</a>
+ &gt; git --version # timeout=10
+ &gt; git -c core.askpass=true fetch --tags --progress <a href='http://git.drupal.org/project/puppet-drush.git'>http://git.drupal.org/project/puppet-drush.git</a> +refs/heads/*:refs/remotes/origin/*
+ &gt; git rev-parse origin/new^{commit} # timeout=10
+Checking out Revision 5a6cf84bd1e67146095c859a99867e112bf263f6 (origin/new)
+ &gt; git config core.sparsecheckout # timeout=10
+ &gt; git checkout -f 5a6cf84bd1e67146095c859a99867e112bf263f6
+ &gt; git rev-list 5a6cf84bd1e67146095c859a99867e112bf263f6 # timeout=10
+ &gt; git tag -a -f -m Jenkins Build #550 jenkins-P_Drush_Puppet_Module_smoke-test-550 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson8545220653868715384.sh
++ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==&gt; default: Importing base box 'Debian 6.0.7 x64'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 50%Progress: 60%Progress: 80%Progress: 90%==&gt; default: Matching MAC address for NAT networking...
+==&gt; default: Setting the name of the VM: workspace_default_1489541895654_72110
+==&gt; default: Clearing any previously set forwarded ports...
+==&gt; default: Fixed port collision for 22 =&gt; 2222. Now on port 2203.
+==&gt; default: Clearing any previously set network interfaces...
+==&gt; default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==&gt; default: Forwarding ports...
+    default: 22 =&gt; 2203 (adapter 1)
+==&gt; default: Booting VM...
+==&gt; default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2203
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==&gt; default: Machine booted and ready!
+==&gt; default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.2.10
+    default: VirtualBox Version: 4.3
+==&gt; default: Mounting shared folders...
+    default: /vagrant =&gt; /var/lib/jenkins/jobs/P Drush Puppet Module smoke-test/workspace
+==&gt; default: Running provisioner: shell...
+    default: Running: /tmp/vagrant-shell20170314-25532-rmxon.sh
+==&gt; default: stdin: is not a tty
+==&gt; default: Creating test environment...
+==&gt; default: mv: 
+==&gt; default: cannot stat `./color'
+==&gt; default: : No such file or directory
+==&gt; default: chmod: 
+==&gt; default: cannot access `/usr/local/bin/color'
+==&gt; default: : No such file or directory
+==&gt; default: Scanning for tests in 'drush' module...
+==&gt; default: Running tests...
+==&gt; default: Running 'dl.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'dl.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'apt.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'apt.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'init.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'init.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'make.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'make.pp' test passed.
+==&gt; default: Running 'drush.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'drush.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'git.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'git.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'status.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'status.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'dis.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'dis.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'defaults.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'defaults.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'en.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'en.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Running 'run.pp' test...
+==&gt; default: ./tests/.ci/test.sh: line 61: color: command not found
+==&gt; default: 'run.pp' test passed.
+==&gt; default: ./tests/.ci/test.sh: line 63: color: command not found
+==&gt; default: Total tests run: 11
+==&gt; default: ./tests/.ci/test.sh: line 70: color: command not found
+==&gt; default: Tests passed: 11
+==&gt; default: ./tests/.ci/test.sh: line 72: color: command not found
+==&gt; default: Tests failed: 0
+==&gt; default: ./tests/.ci/test.sh: line 74: color: command not found
+==&gt; default: rm: 
+==&gt; default: cannot remove `/usr/local/bin/color'
+==&gt; default: : No such file or directory
+[workspace] $ /bin/sh -xe /tmp/hudson3783480850388322424.sh
++ vagrant destroy -f
+==&gt; default: Forcing shutdown of VM...
+==&gt; default: Destroying VM and associated drives...
+==&gt; default: Running cleanup tasks for 'shell' provisioner...
+Warning: you have no plugins providing access control for builds, so falling back to legacy behavior of permitting any downstream builds to be triggered
+Triggering a new build of P Aegir Puppet Module smoke-test
+Finished: SUCCESS

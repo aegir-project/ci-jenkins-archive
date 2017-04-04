@@ -1,0 +1,131 @@
+{
+  "_class" : "hudson.model.FreeStyleProject",
+  "actions" : [
+    
+  ],
+  "description" : "Use puppet to provision an Aegir 2.x, upgrade to 3.x and then run the provision tests.",
+  "displayName" : "U_aegir_6.x-2.x_to_7.x-3.x_upgrade",
+  "displayNameOrNull" : null,
+  "name" : "U_aegir_6.x-2.x_to_7.x-3.x_upgrade",
+  "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/",
+  "buildable" : true,
+  "builds" : [
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 970,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/970/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 969,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/969/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 968,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/968/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 967,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/967/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 966,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/966/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 965,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/965/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 964,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/964/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 963,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/963/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 962,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/962/"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleBuild",
+      "number" : 961,
+      "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/961/"
+    }
+  ],
+  "color" : "blue",
+  "firstBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 961,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/961/"
+  },
+  "healthReport" : [
+    {
+      "description" : "Build stability: 1 out of the last 5 builds failed.",
+      "iconClassName" : "icon-health-60to79",
+      "iconUrl" : "health-60to79.png",
+      "score" : 80
+    }
+  ],
+  "inQueue" : false,
+  "keepDependencies" : false,
+  "lastBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 970,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/970/"
+  },
+  "lastCompletedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 970,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/970/"
+  },
+  "lastFailedBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 968,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/968/"
+  },
+  "lastStableBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 970,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/970/"
+  },
+  "lastSuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 970,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/970/"
+  },
+  "lastUnstableBuild" : null,
+  "lastUnsuccessfulBuild" : {
+    "_class" : "hudson.model.FreeStyleBuild",
+    "number" : 968,
+    "url" : "http://ci.aegirproject.org/view/Upgrades/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/968/"
+  },
+  "nextBuildNumber" : 971,
+  "property" : [
+    {
+      "_class" : "hudson.security.AuthorizationMatrixProperty"
+    },
+    {
+      "_class" : "jenkins.model.BuildDiscarderProperty"
+    }
+  ],
+  "queueItem" : null,
+  "concurrentBuild" : false,
+  "downstreamProjects" : [
+    
+  ],
+  "scm" : {
+    "_class" : "hudson.plugins.git.GitSCM"
+  },
+  "upstreamProjects" : [
+    
+  ]
+}

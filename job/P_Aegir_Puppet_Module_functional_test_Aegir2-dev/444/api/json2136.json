@@ -1,0 +1,292 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.TimerTrigger$TimerTriggerCause",
+          "shortDescription" : "Started by timer"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/1.0.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 444,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+            "branch" : [
+              {
+                "SHA1" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+            "branch" : [
+              {
+                "SHA1" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+                "name" : "origin/1.0.x"
+              }
+            ]
+          }
+        },
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 20,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+            "branch" : [
+              {
+                "SHA1" : "cff6da44c48d476e90a2939956eaf60e5209d14d",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+        "branch" : [
+          {
+            "SHA1" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+            "name" : "origin/1.0.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#444",
+  "duration" : 405827,
+  "estimatedDuration" : 390215,
+  "executor" : null,
+  "fullDisplayName" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev #444",
+  "id" : "444",
+  "keepLog" : false,
+  "number" : 444,
+  "queueId" : 406,
+  "result" : "SUCCESS",
+  "timestamp" : 1442619828683,
+  "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/444/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush7/run-tests.sh"
+        ],
+        "commitId" : "bcc97672d05cbbdfe685ce6197a49dd141a58b5b",
+        "timestamp" : 1442529645000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "clean up test script.\n",
+        "date" : "2015-09-17T18:40:45-0400 -0400",
+        "id" : "bcc97672d05cbbdfe685ce6197a49dd141a58b5b",
+        "msg" : "clean up test script.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush7/run-tests.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush8/nodes.pp",
+          "tests/functional_tests/aegir3-dev-drush8/run-tests.sh",
+          "tests/functional_tests/aegir3-dev-drush8/Vagrantfile",
+          "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+        ],
+        "commitId" : "5b79e51d4d675bbef814f740736f97f55b267a66",
+        "timestamp" : 1442545048000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add test on Drush 8.\n",
+        "date" : "2015-09-17T22:57:28-0400 -0400",
+        "id" : "5b79e51d4d675bbef814f740736f97f55b267a66",
+        "msg" : "Add test on Drush 8.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drupal8/run-tests.sh",
+          "tests/functional_tests/aegir3-dev-drupal8/Vagrantfile",
+          "tests/functional_tests/aegir3-dev-drupal8/setup.sh",
+          "tests/functional_tests/aegir3-dev-drupal8/nodes.pp"
+        ],
+        "commitId" : "9da7d8fa6dc47f74104776ce0a0b7d012176bbdb",
+        "timestamp" : 1442548335000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add test for Drupal8.\n",
+        "date" : "2015-09-17T23:52:15-0400 -0400",
+        "id" : "9da7d8fa6dc47f74104776ce0a0b7d012176bbdb",
+        "msg" : "Add test for Drupal8.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/setup.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drupal8/nodes.pp"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush6/Vagrantfile",
+          "tests/functional_tests/aegir3-dev/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/Vagrantfile",
+          "tests/functional_tests/aegir3-dev-drush6/setup.sh",
+          "tests/functional_tests/aegir3-dev/nodes.pp",
+          "tests/functional_tests/aegir3-dev-drush6/nodes.pp",
+          "tests/functional_tests/aegir3-dev-drush6/run-tests.sh",
+          "tests/functional_tests/aegir3-dev/setup.sh"
+        ],
+        "commitId" : "a073e2a69542ffda7ed3ca6c7e356a9654b605e0",
+        "timestamp" : 1442549032000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Rename Drush 6 test to be consistent with recent additions.\n",
+        "date" : "2015-09-18T00:03:52-0400 -0400",
+        "id" : "a073e2a69542ffda7ed3ca6c7e356a9654b605e0",
+        "msg" : "Rename Drush 6 test to be consistent with recent additions.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush6/Vagrantfile"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush6/run-tests.sh"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/functional_tests/aegir3-dev/run-tests.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush6/setup.sh"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/functional_tests/aegir3-dev/setup.sh"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/functional_tests/aegir3-dev/nodes.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "tests/functional_tests/aegir3-dev-drush6/nodes.pp"
+          },
+          {
+            "editType" : "delete",
+            "file" : "tests/functional_tests/aegir3-dev/Vagrantfile"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "tests/functional_tests/aegir3-dev-drush8/run-tests.sh"
+        ],
+        "commitId" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+        "timestamp" : 1442549489000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Switch to D8 test script.\n",
+        "date" : "2015-09-18T00:11:29-0400 -0400",
+        "id" : "884aa8b1b34640f2b9b1457f983128b03c577542",
+        "msg" : "Switch to D8 test script.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "tests/functional_tests/aegir3-dev-drush8/run-tests.sh"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

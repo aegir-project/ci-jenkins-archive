@@ -1,0 +1,6 @@
+Started by user Steven Jones
+[workspace] $ /bin/sh -xe /tmp/hudson4613374130387771868.sh
++ git clone --branch 6.x-1.x http://git.drupal.org/project/hostmaster.git
+fatal: destination path 'hostmaster' already exists and is not an empty directory.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

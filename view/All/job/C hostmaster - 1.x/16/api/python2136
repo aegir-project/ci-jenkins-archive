@@ -1,0 +1,173 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 16,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+            "branch" : [
+              {
+                "SHA1" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+            "branch" : [
+              {
+                "SHA1" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+        "branch" : [
+          {
+            "SHA1" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#16",
+  "duration" : 9510,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #16",
+  "id" : "2012-03-24_12-01-05",
+  "keepLog" : False,
+  "number" : 16,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332604865000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/16/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/hosting.queues.inc"
+        ],
+        "commitId" : "b9ca31cfa57c24bee872816901a7c0a641956e79",
+        "timestamp" : 1332578349000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1472480 by jlscott: Fixed Restrict the Task Queue to one task per site each cron run.\n",
+        "date" : "2012-03-24T04:39:09-0400 +0000",
+        "id" : "b9ca31cfa57c24bee872816901a7c0a641956e79",
+        "msg" : "Issue #1472480 by jlscott: Fixed Restrict the Task Queue to one task per site each cron run.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/hosting.queues.inc"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/task/hosting_task.module"
+        ],
+        "commitId" : "103955c21809c7dce35f25176014fac613895480",
+        "timestamp" : 1332580294000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1498102 by Steven Jones: Fixed Dates and times are incorrect on freshly created tasks.\n",
+        "date" : "2012-03-24T05:11:34-0400 +0000",
+        "id" : "103955c21809c7dce35f25176014fac613895480",
+        "msg" : "Issue #1498102 by Steven Jones: Fixed Dates and times are incorrect on freshly created tasks.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/task/hosting_task.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/platform/hosting_platform.drush.inc"
+        ],
+        "commitId" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+        "timestamp" : 1332589551000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.\n",
+        "date" : "2012-03-24T07:45:51-0400 +0000",
+        "id" : "5c895e8858f87f536b6e01cd7c37ef5f2d7201f5",
+        "msg" : "Issue #1388542 by dsnopek: Fixed packages in sites/all/modules should override profile/*/modules.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/platform/hosting_platform.drush.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

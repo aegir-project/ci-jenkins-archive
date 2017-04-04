@@ -1,0 +1,156 @@
+Started by user Steven Jones
+Checkout:workspace / /var/lib/jenkins/jobs/R release tags/workspace - hudson.remoting.LocalChannel@5128b9bc
+Using strategy: Default
+Last Built Revision: Revision 8b9c7b2009c6a45743c6ebe051b667cc2a7a9801 (hostmaster/dev-headless_install)
+Checkout:workspace / /var/lib/jenkins/jobs/R release tags/workspace - hudson.remoting.LocalChannel@5128b9bc
+Cloning the remote Git repository
+Cloning repository hostmaster
+Fetching upstream changes from http://git.drupal.org/project/hostmaster.git
+Fetching upstream changes from http://git.drupal.org/project/provision.git
+Seen branch in repository hostmaster/5.x
+Seen branch in repository hostmaster/599758_edit_main_site
+Seen branch in repository hostmaster/6.x-1.x
+Seen branch in repository hostmaster/6.x-2.x
+Seen branch in repository hostmaster/640952_client_preview
+Seen branch in repository hostmaster/7.x-2.x
+Seen branch in repository hostmaster/HEAD
+Seen branch in repository hostmaster/dev-1256508-delete-context-aliases
+Seen branch in repository hostmaster/dev-darthsteven-performance-fixes
+Seen branch in repository hostmaster/dev-dns
+Seen branch in repository hostmaster/dev-features
+Seen branch in repository hostmaster/dev-headless_install
+Seen branch in repository hostmaster/dev-log_directory
+Seen branch in repository hostmaster/dev-migrate_aliases
+Seen branch in repository hostmaster/dev-multiserver-install
+Seen branch in repository hostmaster/dev-newsiteform
+Seen branch in repository hostmaster/dev-nginx
+Seen branch in repository hostmaster/dev-platform_management
+Seen branch in repository hostmaster/dev-ports
+Seen branch in repository hostmaster/dev-purgebackup
+Seen branch in repository hostmaster/dev-refactor-client-962330
+Seen branch in repository hostmaster/dev-relationships
+Seen branch in repository hostmaster/dev-restore
+Seen branch in repository hostmaster/dev-server_nodetype
+Seen branch in repository hostmaster/dev-services
+Seen branch in repository hostmaster/dev-site_rename
+Seen branch in repository hostmaster/dev-ssl
+Seen branch in repository hostmaster/dev/1299508-version-info
+Seen branch in repository hostmaster/dev_dns
+Seen branch in repository hostmaster/prod-koumbit
+Seen branch in repository hostmaster/ssl
+Seen branch in repository provision/6.x-1.x
+Seen branch in repository provision/6.x-2.x
+Seen branch in repository provision/7.x-2.x
+Seen branch in repository provision/debian
+Seen branch in repository provision/dev-dns
+Seen branch in repository provision/dev-dns_alias_records-1074966
+Seen branch in repository provision/dev-drupal-8
+Seen branch in repository provision/dev-envobject
+Seen branch in repository provision/dev-koumbit
+Seen branch in repository provision/dev-log_directory
+Seen branch in repository provision/dev-migrate_aliases
+Seen branch in repository provision/dev-multiserver-install
+Seen branch in repository provision/dev-newhooks
+Seen branch in repository provision/dev-nginx
+Seen branch in repository provision/dev-noreg-mail-336068
+Seen branch in repository provision/dev-platform_management
+Seen branch in repository provision/dev-ports
+Seen branch in repository provision/dev-purgebackup
+Seen branch in repository provision/dev-restore
+Seen branch in repository provision/dev-services
+Seen branch in repository provision/dev-simplerinstaller
+Seen branch in repository provision/dev-site_rename
+Seen branch in repository provision/dev-ssl
+Seen branch in repository provision/dev-ssl-chained-1062168
+Seen branch in repository provision/dev-wget-d7-cron-1090678
+Seen branch in repository provision/dev/1194676-jenkins-tests
+Seen branch in repository provision/dev/1318374-autoloader
+Seen branch in repository provision/dev_716166_apache_conf
+Seen branch in repository provision/dev_dns
+Seen branch in repository provision/dev_server_verify
+Seen branch in repository provision/prod-koumbit
+Seen branch in repository provision/ssl
+Seen branch in repository provision/upstream
+Commencing build of Revision 71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00 (provision/dev_dns)
+Checking out Revision 71a7a1f302cc0f15ceb36c3f5d713f19e91e4e00 (provision/dev_dns)
+No change to record in branch provision/dev_dns
+[workspace] $ /bin/sh -xe /tmp/hudson2604942707486870858.sh
++ git branch -D 6.x-1.x
+Deleted branch 6.x-1.x (was 2c4eaa2).
++ git checkout --track hostmaster/6.x-1.x
+Previous HEAD position was 71a7a1f... remove extra include
+Switched to a new branch '6.x-1.x'
+Branch 6.x-1.x set up to track remote branch 6.x-1.x from hostmaster.
++ git tag -a 6.x-1.6 -m Add a new release tag.
+[workspace] $ /bin/sh -xe /tmp/hudson3190352651071773436.sh
++ git checkout debian
+Switched to a new branch 'debian'
++ git branch -D 6.x-1.x
+Deleted branch 6.x-1.x (was 2c4eaa2).
++ git checkout --track provision/6.x-1.x
+Switched to a new branch '6.x-1.x'
+Branch 6.x-1.x set up to track local ref refs/remotes/provision/6.x-1.x.
++ echo changing makefile to download tarball
+changing makefile to download tarball
++ sed -i.tmp -e/^projects\[hostmaster\]\[download\]\[type\]/s/=.*$/= "git"/ -e/^projects\[hostmaster\]\[download\]\[url\]/s#=.*$#= "http://git.drupal.org/project/hostmaster.git"# -e/^projects\[hostmaster\]\[download\]\[branch\].*/s/\[branch\] *=.*$/[tag] = "6.x-1.6"/ aegir.make
++ git add aegir.make
++ rm aegir.make.tmp
++ echo changing provision.info version
+changing provision.info version
++ sed -i.tmp -es/version *=.*$/version=/ provision.info
++ git add provision.info
++ rm provision.info.tmp
++ echo changing upgrade.sh.txt version
+changing upgrade.sh.txt version
++ sed -i.tmp -es/AEGIR_VERSION=.*$/AEGIR_VERSION=""/ upgrade.sh.txt
++ git add upgrade.sh.txt
++ rm upgrade.sh.txt.tmp
++ echo resulting changes to be committed:
+resulting changes to be committed:
++ git diff --cached
++ cat
+diff --git a/aegir.make b/aegir.make
+index c988434..2ae4956 100644
+--- a/aegir.make
++++ b/aegir.make
+@@ -6,4 +6,4 @@ projects[drupal][type] = "core"
+ projects[hostmaster][type] = "profile"
+ projects[hostmaster][download][type] = "git"
+ projects[hostmaster][download][url] = "http://git.drupal.org/project/hostmaster.git"
+-projects[hostmaster][download][branch] = "6.x-1.x"
++projects[hostmaster][download][tag] = "6.x-1.6"
+diff --git a/provision.info b/provision.info
+index 43567aa..00a9a3f 100644
+--- a/provision.info
++++ b/provision.info
+@@ -1,4 +1,4 @@
+ name=Provision
+ description="Aegir backend"
+ 
+-version=6.x-1.x
++version=
+diff --git a/upgrade.sh.txt b/upgrade.sh.txt
+index afa25d2..777f60a 100644
+--- a/upgrade.sh.txt
++++ b/upgrade.sh.txt
+@@ -15,7 +15,7 @@ msg() {
+ }
+ 
+ # basic variables, change before running
+-AEGIR_VERSION="6.x-1.x"
++AEGIR_VERSION=""
+ DRUSH_DIR=$HOME/drush
+ DRUSH=$DRUSH_DIR/drush.php
+ if which drush 2> /dev/null > /dev/null && which drush | grep -v 'no drush in' > /dev/null; then
++ git commit -mchange version information for release 
++ commitmsg=[6.x-1.x 255f7d3] change version information for release
+ 3 files changed, 3 insertions(+), 3 deletions(-)
++ echo [6.x-1.x 255f7d3] change version information for release 3 files changed, 3 insertions(+), 3 deletions(-)
+[6.x-1.x 255f7d3] change version information for release 3 files changed, 3 insertions(+), 3 deletions(-)
++ echo [6.x-1.x 255f7d3] change version information+  for release 3 files changed, 3 insertions(+), 3 deletions(-)
+sed s/^\[[^ ]* \([a-z0-9]*\)\].*$/\1/
++ commitid=255f7d3
++ git tag -a 6.x-1.6
+fatal: tag '6.x-1.6' already exists
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

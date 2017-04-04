@@ -1,0 +1,1740 @@
+Started by timer
+Building in workspace /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://git.drupal.org/project/puppet-aegir.git # timeout=10
+Fetching upstream changes from http://git.drupal.org/project/puppet-aegir.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress http://git.drupal.org/project/puppet-aegir.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/1.0.x^{commit} # timeout=10
+Checking out Revision 479445d071d300d82c5b7600154104664b47ac32 (origin/1.0.x)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 479445d071d300d82c5b7600154104664b47ac32
+ > git rev-list e66834bd38dcaaf06717a2fabdde0fb59f6a5c33 # timeout=10
+ > git tag -a -f -m Jenkins Build #75 jenkins-P_Aegir_Puppet_Module_functional_test_Aegir3-unstable-75 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/hudson5195059014964617032.sh
++ ./tests/functional_tests/aegir3-unstable/setup.sh
+Already up-to-date.
+From http://git.drupal.org/project/puppet-aegir
+   e66834b..479445d  1.0.x      -> origin/1.0.x
+Updating e66834b..479445d
+Fast-forward
+ .../Vagrantfile                                    | 47 ++++++++++++++++++++++
+ .../provision-tests.sh                             |  1 +
+ .../run-tests.sh                                   | 16 ++++++++
+ .../setup.sh                                       | 15 +++++++
+ tests/functional_tests/aegir3-unstable/setup.sh    |  2 +-
+ 5 files changed, 80 insertions(+), 1 deletion(-)
+ create mode 100644 tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/Vagrantfile
+ create mode 100755 tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/provision-tests.sh
+ create mode 100755 tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/run-tests.sh
+ create mode 100755 tests/functional_tests/aegir3-deb-upgrade-stable-unstable-no-puppet/setup.sh
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+==> default: Running cleanup tasks for 'shell' provisioner...
+==> default: Running cleanup tasks for 'puppet' provisioner...
+[workspace] $ /bin/sh -xe /tmp/hudson3608904849612714918.sh
++ ./tests/functional_tests/aegir3-unstable/run-tests.sh
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'debian/jessie64'...
+Progress: 10%Progress: 20%Progress: 40%Progress: 50%Progress: 60%Progress: 80%Progress: 90%==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'debian/jessie64' is up to date...
+==> default: A newer version of the box 'debian/jessie64' is available! You currently
+==> default: have version '8.2.0'. The latest is version '8.2.1'. Run
+==> default: `vagrant box update` to update.
+==> default: Setting the name of the VM: workspace_default_1446791057174_55560
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/workspace
+    default: /var/cache/apt/archives => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/workspace/tmp/apt/cache
+    default: /tmp/vagrant-puppet-3/manifests => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/workspace/tests/functional_tests/aegir3-unstable
+    default: /tmp/vagrant-puppet-3/modules-0 => /var/lib/jenkins/jobs/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/workspace/tests/functional_tests/aegir3-unstable/modules
+==> default: Running provisioner: shell...
+    default: Running: inline script
+==> default: stdin: is not a tty
+==> default:  
+==> default:  
+==> default: %
+==> default:  
+==> default: T
+==> default: o
+==> default: t
+==> default: a
+==> default: l
+==> default:  
+==> default:  
+==> default:  
+==> default:  
+==> default: % Received % Xferd  Average Speed   Time    Time     Time  Current
+==> default:                                  Dload  Upload   Total   Spent    Left  Speed
+==> default:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+==> default: 1
+==> default: 0
+==> default: 0
+==> default:  
+==> default:  
+==> default: 1
+==> default: 2
+==> default: 8
+==> default: 2
+==> default: Initial apt-get update...
+==> default:   100  1282    0     0  19057      0 --:--:-- --:--:-- --:--:-- 19134
+==> default: /usr/bin/lsb_release
+==> default: Installing wget...
+==> default: /bin/sh: 22: [: Illegal number: 
+==> default: Configuring PuppetLabs repo...
+==> default: Installing Puppet...
+==> default: Puppet installed!
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with nodes.pp...
+==> default: stdin: is not a tty
+==> default: Warning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults
+==> default: Notice: Compiled catalog for aegir3-unstable.test in environment production in 1.28 seconds
+==> default: Notice: /Stage[main]/Drush::Apt::Update/Exec[drush_apt_update]/returns: executed successfully
+==> default: Notice: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]/returns: executed successfully
+==> default: Notice: /Stage[main]/Drush/Package[drush]/ensure: ensure changed 'purged' to 'present'
+==> default: Notice: /Stage[main]/Aegir::Mysql/File[/root/.my.cnf]/ensure: defined content as '{md5}162a36a51e371786fa6692178cfafaa7'
+==> default: Notice: /Stage[main]/Aegir::Mysql/Package[mysql-server]/ensure: ensure changed 'purged' to 'present'
+==> default: Notice: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]/ensure: defined content as '{md5}d402a9edee75caac8e2fa3e34da23e8b'
+==> default: Notice: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]/returns: executed successfully
+==> default: Notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Aegir::Mysql::Preseed/File[preseedmysqlpass.sh]/ensure: defined content as '{md5}cf716d667b4f77e6c887bcede81e63c2'
+==> default: Notice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]/returns: executed successfully
+==> default: Notice: /Stage[main]/Aegir::Apt/File[aegir_apt_keys_dir]/ensure: created
+==> default: Notice: /Stage[main]/Aegir::Apt/File[aegir_apt_key]/ensure: defined content as '{md5}c68f07d8791bb73bd013a7fc758bff8a'
+==> default: Notice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_key_add]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Aegir::Apt/File[aegir_apt_sources]/ensure: created
+==> default: Notice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: executed successfully
+==> default: Notice: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Triggered 'refresh' from 4 events
+==> default: Error: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install aegir3' returned 100: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following extra packages will be installed:
+==> default:   aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+==> default:   apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+==> default:   libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+==> default:   libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+==> default: Suggested packages:
+==> default:   apache2-doc apache2-suexec-pristine apache2-suexec-custom git-daemon-run
+==> default:   git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-arch
+==> default:   git-cvs git-mediawiki git-svn php-pear libgd-tools openssl-blacklist
+==> default: The following NEW packages will be installed:
+==> default:   aegir3 aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+==> default:   apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+==> default:   libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+==> default:   libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+==> default: 0 upgraded, 24 newly installed, 0 to remove and 12 not upgraded.
+==> default: Need to get 143 kB/10.4 MB of archives.
+==> default: After this operation, 44.1 MB of additional disk space will be used.
+==> default: Get:1 http://debian.aegirproject.org/ unstable/main aegir3-provision all 3.2+152.951c5e3 [120 kB]
+==> default: Get:2 http://debian.aegirproject.org/ unstable/main aegir3-hostmaster all 3.2+152.951c5e3 [14.8 kB]
+==> default: Get:3 http://debian.aegirproject.org/ unstable/main aegir3 all 3.2+152.951c5e3 [8026 B]
+==> default: Preconfiguring packages ...
+==> default: Fetched 143 kB in 0s (301 kB/s)
+==> default: Selecting previously unselected package libapr1:amd64.
+==> default: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39634 files and directories currently installed.)
+==> default: Preparing to unpack .../libapr1_1.5.1-3_amd64.deb ...
+==> default: Unpacking libapr1:amd64 (1.5.1-3) ...
+==> default: Selecting previously unselected package libaprutil1:amd64.
+==> default: Preparing to unpack .../libaprutil1_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+==> default: Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package libaprutil1-ldap:amd64.
+==> default: Preparing to unpack .../libaprutil1-ldap_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1-ldap:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package liblua5.1-0:amd64.
+==> default: Preparing to unpack .../liblua5.1-0_5.1.5-7.1_amd64.deb ...
+==> default: Unpacking liblua5.1-0:amd64 (5.1.5-7.1) ...
+==> default: Selecting previously unselected package apache2-bin.
+==> default: Preparing to unpack .../apache2-bin_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2-bin (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2-utils.
+==> default: Preparing to unpack .../apache2-utils_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2-utils (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2-data.
+==> default: Preparing to unpack .../apache2-data_2.4.10-10+deb8u3_all.deb ...
+==> default: Unpacking apache2-data (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2.
+==> default: Preparing to unpack .../apache2_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2 (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package libvpx1:amd64.
+==> default: Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+==> default: Unpacking libvpx1:amd64 (1.3.0-3) ...
+==> default: Selecting previously unselected package libxpm4:amd64.
+==> default: Preparing to unpack .../libxpm4_1%3a3.5.11-1+b1_amd64.deb ...
+==> default: Unpacking libxpm4:amd64 (1:3.5.11-1+b1) ...
+==> default: Selecting previously unselected package libgd3:amd64.
+==> default: Preparing to unpack .../libgd3_2.1.0-5_amd64.deb ...
+==> default: Unpacking libgd3:amd64 (2.1.0-5) ...
+==> default: Selecting previously unselected package aegir3-provision.
+==> default: Preparing to unpack .../aegir3-provision_3.2+152.951c5e3_all.deb ...
+==> default: Unpacking aegir3-provision (3.2+152.951c5e3) ...
+==> default: Selecting previously unselected package php5-gd.
+==> default: Preparing to unpack .../php5-gd_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+==> default: Unpacking php5-gd (5.6.14+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package libapache2-mod-php5.
+==> default: Preparing to unpack .../libapache2-mod-php5_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+==> default: Unpacking libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package liberror-perl.
+==> default: Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+==> default: Unpacking liberror-perl (0.17-1.1) ...
+==> default: Selecting previously unselected package git-man.
+==> default: Preparing to unpack .../git-man_1%3a2.1.4-2.1_all.deb ...
+==> default: Unpacking git-man (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package git.
+==> default: Preparing to unpack .../git_1%3a2.1.4-2.1_amd64.deb ...
+==> default: Unpacking git (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package git-core.
+==> default: Preparing to unpack .../git-core_1%3a2.1.4-2.1_all.deb ...
+==> default: Unpacking git-core (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package aegir3-hostmaster.
+==> default: Preparing to unpack .../aegir3-hostmaster_3.2+152.951c5e3_all.deb ...
+==> default: Unpacking aegir3-hostmaster (3.2+152.951c5e3) ...
+==> default: Selecting previously unselected package aegir3.
+==> default: Preparing to unpack .../aegir3_3.2+152.951c5e3_all.deb ...
+==> default: Unpacking aegir3 (3.2+152.951c5e3) ...
+==> default: Selecting previously unselected package php5.
+==> default: Preparing to unpack .../php5_5.6.14+dfsg-0+deb8u1_all.deb ...
+==> default: Unpacking php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package rsync.
+==> default: Preparing to unpack .../rsync_3.1.1-3_amd64.deb ...
+==> default: Unpacking rsync (3.1.1-3) ...
+==> default: Selecting previously unselected package ssl-cert.
+==> default: Preparing to unpack .../ssl-cert_1.0.35_all.deb ...
+==> default: Unpacking ssl-cert (1.0.35) ...
+==> default: Processing triggers for man-db (2.7.0.2-5) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Setting up libapr1:amd64 (1.5.1-3) ...
+==> default: Setting up libaprutil1:amd64 (1.5.4-1) ...
+==> default: Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+==> default: Setting up libaprutil1-ldap:amd64 (1.5.4-1) ...
+==> default: Setting up liblua5.1-0:amd64 (5.1.5-7.1) ...
+==> default: Setting up apache2-bin (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2-utils (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2-data (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2 (2.4.10-10+deb8u3) ...
+==> default: Enabling module mpm_event.
+==> default: Enabling module authz_core.
+==> default: Enabling module authz_host.
+==> default: Enabling module authn_core.
+==> default: Enabling module auth_basic.
+==> default: Enabling module access_compat.
+==> default: Enabling module authn_file.
+==> default: Enabling module authz_user.
+==> default: Enabling module alias.
+==> default: Enabling module dir.
+==> default: Enabling module autoindex.
+==> default: Enabling module env.
+==> default: Enabling module mime.
+==> default: Enabling module negotiation.
+==> default: Enabling module setenvif.
+==> default: Enabling module filter.
+==> default: Enabling module deflate.
+==> default: Enabling module status.
+==> default: Enabling conf charset.
+==> default: Enabling conf localized-error-pages.
+==> default: Enabling conf other-vhosts-access-log.
+==> default: Enabling conf security.
+==> default: Enabling conf serve-cgi-bin.
+==> default: Enabling site 000-default.
+==> default: Setting up libvpx1:amd64 (1.3.0-3) ...
+==> default: Setting up libxpm4:amd64 (1:3.5.11-1+b1) ...
+==> default: Setting up libgd3:amd64 (2.1.0-5) ...
+==> default: Setting up aegir3-provision (3.2+152.951c5e3) ...
+==> default: adding aegir user...
+==> default: Adding user aegir to group www-data
+==> default: 
+==> default: Creating config file /etc/sudoers.d/aegir with new version
+==> default: #!/usr/bin/env php
+==> default: All settings correct for using Composer
+==> default: Downloading...
+==> default: 
+==> default: Composer successfully installed to: //composer.phar
+==> default: Use it: php composer.phar
+==> default: Changed current directory to /var/aegir/.composer
+==> default: ./composer.json has been created
+==> default: Loading composer repositories with package information
+==> default: Updating dependencies (including require-dev)
+==> default:   - Installing drush/drush (6.6.0)
+==> default:     Downloading: Connecting...    Downloading: 100%         
+==> default: 
+==> default: Writing lock file
+==> default: Generating autoload files
+==> default: Setting up php5-gd (5.6.14+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/gd.ini with new version
+==> default: php5_invoke: Enable module gd for apache2 SAPI
+==> default: php5_invoke: Enable module gd for cli SAPI
+==> default: Setting up libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/apache2/php.ini with new version
+==> default: php5_invoke: Enable module json for apache2 SAPI
+==> default: php5_invoke: Enable module opcache for apache2 SAPI
+==> default: php5_invoke: Enable module mysql for apache2 SAPI
+==> default: php5_invoke: Enable module pdo for apache2 SAPI
+==> default: php5_invoke: Enable module pdo_mysql for apache2 SAPI
+==> default: php5_invoke: Enable module readline for apache2 SAPI
+==> default: php5_invoke: Enable module mysqli for apache2 SAPI
+==> default: Module mpm_event disabled.
+==> default: Enabling module mpm_prefork.
+==> default: apache2_switch_mpm Switch to prefork
+==> default: apache2_invoke: Enable module php5
+==> default: Setting up liberror-perl (0.17-1.1) ...
+==> default: Setting up git-man (1:2.1.4-2.1) ...
+==> default: Setting up git (1:2.1.4-2.1) ...
+==> default: Setting up git-core (1:2.1.4-2.1) ...
+==> default: Setting up aegir3-hostmaster (3.2+152.951c5e3) ...
+==> default: 'drush' cache was cleared.                                             [success]
+==> default: installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_localhost.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+==> default: Provision configuration root path /var/aegir/config exists.            [success]
+==> default: Provision configuration root ownership of /var/aegir/config has been   [success]
+==> default: changed to aegir.
+==> default: Provision configuration root permissions of /var/aegir/config have     [success]
+==> default: been changed to 711.
+==> default: Provision configuration root path /var/aegir/config is writable.       [success]
+==> default: Provision configuration path /var/aegir/config/server_localhost has    [success]
+==> default: been created.
+==> default: Provision configuration ownership of                                   [success]
+==> default: /var/aegir/config/server_localhost has been changed to aegir.
+==> default: Provision configuration permissions of                                 [success]
+==> default: /var/aegir/config/server_localhost have been changed to 711.
+==> default: Provision configuration path /var/aegir/config/server_localhost is     [success]
+==> default: writable.
+==> default: Provision client home path /var/aegir/clients has been created.        [success]
+==> default: Provision client home ownership of /var/aegir/clients has been         [success]
+==> default: changed to aegir.
+==> default: Provision client home permissions of /var/aegir/clients have been      [success]
+==> default: changed to 711.
+==> default: Provision client home path /var/aegir/clients is writable.             [success]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 640
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_localhost.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_master.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 440
+==> default: Provision configuration root path /var/aegir/config exists.            [success]
+==> default: Provision configuration root ownership of /var/aegir/config has been   [success]
+==> default: changed to aegir.
+==> default: Provision configuration root permissions of /var/aegir/config have     [success]
+==> default: been changed to 711.
+==> default: Provision configuration root path /var/aegir/config is writable.       [success]
+==> default: Provision configuration path /var/aegir/config/server_master has been  [success]
+==> default: created.
+==> default: Provision configuration ownership of /var/aegir/config/server_master   [success]
+==> default: has been changed to aegir.
+==> default: Provision configuration permissions of                                 [success]
+==> default: /var/aegir/config/server_master have been changed to 711.
+==> default: Provision configuration path /var/aegir/config/server_master is        [success]
+==> default: writable.
+==> default: Provision client home path /var/aegir/clients exists.                  [success]
+==> default: Provision client home ownership of /var/aegir/clients has been         [success]
+==> default: changed to aegir.
+==> default: Provision client home permissions of /var/aegir/clients have been      [success]
+==> default: changed to 711.
+==> default: Provision client home path /var/aegir/clients is writable.             [success]
+==> default: Backup path /var/aegir/backups has been created.                       [success]
+==> default: Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+==> default: Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+==> default: Backup path /var/aegir/backups is writable.                            [success]
+==> default: Provision PHP configuration path /var/aegir/config/includes has been   [success]
+==> default: created.
+==> default: Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+==> default: has been changed to aegir.
+==> default: Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+==> default: have been changed to 711.
+==> default: Provision PHP configuration path /var/aegir/config/includes is         [success]
+==> default: writable.
+==> default: Generated config in write(): Global settings.php file                  [success]
+==> default: (/var/aegir/config/includes/global.inc)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 640
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_master.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 440
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache has been created.
+==> default: Webserver custom pre-configuration ownership of                        [success]
+==> default: /var/aegir/config/server_master/apache has been changed to aegir.
+==> default: Webserver custom pre-configuration permissions of                      [success]
+==> default: /var/aegir/config/server_master/apache have been changed to 711.
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache is writable.
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache/pre.d has been created.
+==> default: Webserver custom pre-configuration ownership of                        [success]
+==> default: /var/aegir/config/server_master/apache/pre.d has been changed to
+==> default: aegir.
+==> default: Webserver custom pre-configuration permissions of                      [success]
+==> default: /var/aegir/config/server_master/apache/pre.d have been changed to
+==> default: 700.
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache/pre.d is writable.
+==> default: Webserver custom post-configuration path                               [success]
+==> default: /var/aegir/config/server_master/apache/post.d has been created.
+==> default: Webserver custom post-configuration ownership of                       [success]
+==> default: /var/aegir/config/server_master/apache/post.d has been changed to
+==> default: aegir.
+==> default: Webserver custom post-configuration permissions of                     [success]
+==> default: /var/aegir/config/server_master/apache/post.d have been changed to
+==> default: 700.
+==> default: Webserver custom post-configuration path                               [success]
+==> default: /var/aegir/config/server_master/apache/post.d is writable.
+==> default: Webserver platform configuration path                                  [success]
+==> default: /var/aegir/config/server_master/apache/platform.d has been created.
+==> default: Webserver platform configuration ownership of                          [success]
+==> default: /var/aegir/config/server_master/apache/platform.d has been changed to
+==> default: aegir.
+==> default: Webserver platform configuration permissions of                        [success]
+==> default: /var/aegir/config/server_master/apache/platform.d have been changed
+==> default: to 700.
+==> default: Webserver platform configuration path                           
+==> default: Notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[aegir3] has failures: true
+==> default:        [success]
+==> default: /var/aegir/config/server_master/apache/platform.d is writable.
+==> default: Webserver virtual host configuration path                              [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d has been created.
+==> default: Webserver virtual host configuration ownership of                      [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d has been changed to
+==> default: aegir.
+==> default: Webserver virtual host configuration permissions of                    [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d have been changed to
+==> default: 700.
+==> default: Webserver virtual host configuration path                              [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d is writable.
+==> default: Webserver subdir configuration path                                    [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d has been created.
+==> default: Webserver subdir configuration ownership of                            [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d has been changed to
+==> default: aegir.
+==> default: Webserver subdir configuration permissions of                          [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d have been changed to
+==> default: 700.
+==> default: Webserver subdir configuration path                                    [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d is writable.
+==> default: Generated config in write(): web server configuration file             [success]
+==> default: (/var/aegir/config/server_master/apache.conf)
+==> default: Caught drush error, ending drush_provision_hostmaster_install            [error]
+==> default: Array                                                                    [error]
+==> default: (
+==> default:     [PROVISION_DB_CONNECT_FAIL] => Array
+==> default:         (
+==> default:             [0] => SQLSTATE[28000] [1045] Access denied for user
+==> default: 'root'@'localhost' (using password: YES)
+==> default:         )
+==> default: 
+==> default:     [PROVISION_CONNECT_DB_FAILED] => Array
+==> default:         (
+==> default:             [0] => Unable to connect to database server.
+==> default:         )
+==> default: 
+==> default: )
+==> default: 
+==> default: Aegir 7.x-3.x automated install script
+==> default: ==============================================================================
+==> default: Some settings have not been provided and will now be prompted.
+==> default: Don't worry: you will get to review those settings after the final install
+==> default: 
+==> default: This script will operate the following changes in your system:
+==> default: 
+==> default: 1. Create server-level configuration directories
+==> default: 2. Create the Hostmaster frontend platform
+==> default: 3. Install the frontend site
+==> default: 4. Setup the dispatcher (a user cron job)
+==> default: 
+==> default: We are making the following assumptions:
+==> default:  * you have read and are following the install instructions at:
+==> default:     http://community.aegirproject.org/installing
+==> default:  * the FQDN of this machine is valid and resolves
+==> default:  * you are executing this script as your "aegir" user
+==> default: 
+==> default: The following settings will be used:
+==> default:  Aegir frontend URL: aegir3-unstable.test
+==> default:  Master server FQDN: aegir3-unstable.test
+==> default:  Aegir root: /var/aegir
+==> default:  Aegir user: aegir
+==> default:  Web group: www-data
+==> default:  Web server: apache
+==> default:  Web server port: 80
+==> default:  Aegir DB host: localhost
+==> default:  Aegir DB user: root
+==> default:  Aegir DB password: <previously set>
+==> default:  Aegir DB port: 3306
+==> default:  Aegir version: 7.x-3.x
+==> default:  Aegir platform path: /var/aegir/hostmaster-7.x-3.x
+==> default:  Admin email: aegir@aegir3-unstable.test
+==> default:  Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+==> default: 
+==> default:  Aegir install profile: hostmaster
+==> default: 
+==> default: Do you really want to proceed with the install (y/n): y
+==> default: 'drush' cache was cleared.                                             [success]
+==> default: Enabling hosting-queued daemon
+==> default: The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+==> default: found.  Run `drush cache-clear drush` to clear the commandfile cache
+==> default: if you have installed new extensions.
+==> default: A Drupal installation directory could not be found                       [error]
+==> default: dpkg: error processing package aegir3-hostmaster (--configure):
+==> default:  subprocess installed post-installation script returned error exit status 1
+==> default: dpkg: dependency problems prevent configuration of aegir3:
+==> default:  aegir3 depends on aegir3-hostmaster (>= 3.2+152.951c5e3); however:
+==> default:   Package aegir3-hostmaster is not configured yet.
+==> default: 
+==> default: dpkg: error processing package aegir3 (--configure):
+==> default:  dependency problems - leaving unconfigured
+==> default: Setting up php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: Setting up rsync (3.1.1-3) ...
+==> default: Setting up ssl-cert (1.0.35) ...
+==> default: Processing triggers for libc-bin (2.19-18+deb8u1) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Errors were encountered while processing:
+==> default:  aegir3-hostmaster
+==> default:  aegir3
+==> default: E: Sub-process /usr/bin/dpkg returned an error code (1)
+==> default: Error: /Stage[main]/Aegir/Package[aegir3]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install aegir3' returned 100: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following extra packages will be installed:
+==> default:   aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+==> default:   apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+==> default:   libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+==> default:   libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+==> default: Suggested packages:
+==> default:   apache2-doc apache2-suexec-pristine apache2-suexec-custom git-daemon-run
+==> default:   git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-arch
+==> default:   git-cvs git-mediawiki git-svn php-pear libgd-tools openssl-blacklist
+==> default: The following NEW packages will be installed:
+==> default:   aegir3 aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+==> default:   apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+==> default:   libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+==> default:   libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+==> default: 0 upgraded, 24 newly installed, 0 to remove and 12 not upgraded.
+==> default: Need to get 143 kB/10.4 MB of archives.
+==> default: After this operation, 44.1 MB of additional disk space will be used.
+==> default: Get:1 http://debian.aegirproject.org/ unstable/main aegir3-provision all 3.2+152.951c5e3 [120 kB]
+==> default: Get:2 http://debian.aegirproject.org/ unstable/main aegir3-hostmaster all 3.2+152.951c5e3 [14.8 kB]
+==> default: Get:3 http://debian.aegirproject.org/ unstable/main aegir3 all 3.2+152.951c5e3 [8026 B]
+==> default: Preconfiguring packages ...
+==> default: Fetched 143 kB in 0s (301 kB/s)
+==> default: Selecting previously unselected package libapr1:amd64.
+==> default: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39634 files and directories currently installed.)
+==> default: Preparing to unpack .../libapr1_1.5.1-3_amd64.deb ...
+==> default: Unpacking libapr1:amd64 (1.5.1-3) ...
+==> default: Selecting previously unselected package libaprutil1:amd64.
+==> default: Preparing to unpack .../libaprutil1_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+==> default: Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package libaprutil1-ldap:amd64.
+==> default: Preparing to unpack .../libaprutil1-ldap_1.5.4-1_amd64.deb ...
+==> default: Unpacking libaprutil1-ldap:amd64 (1.5.4-1) ...
+==> default: Selecting previously unselected package liblua5.1-0:amd64.
+==> default: Preparing to unpack .../liblua5.1-0_5.1.5-7.1_amd64.deb ...
+==> default: Unpacking liblua5.1-0:amd64 (5.1.5-7.1) ...
+==> default: Selecting previously unselected package apache2-bin.
+==> default: Preparing to unpack .../apache2-bin_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2-bin (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2-utils.
+==> default: Preparing to unpack .../apache2-utils_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2-utils (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2-data.
+==> default: Preparing to unpack .../apache2-data_2.4.10-10+deb8u3_all.deb ...
+==> default: Unpacking apache2-data (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package apache2.
+==> default: Preparing to unpack .../apache2_2.4.10-10+deb8u3_amd64.deb ...
+==> default: Unpacking apache2 (2.4.10-10+deb8u3) ...
+==> default: Selecting previously unselected package libvpx1:amd64.
+==> default: Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+==> default: Unpacking libvpx1:amd64 (1.3.0-3) ...
+==> default: Selecting previously unselected package libxpm4:amd64.
+==> default: Preparing to unpack .../libxpm4_1%3a3.5.11-1+b1_amd64.deb ...
+==> default: Unpacking libxpm4:amd64 (1:3.5.11-1+b1) ...
+==> default: Selecting previously unselected package libgd3:amd64.
+==> default: Preparing to unpack .../libgd3_2.1.0-5_amd64.deb ...
+==> default: Unpacking libgd3:amd64 (2.1.0-5) ...
+==> default: Selecting previously unselected package aegir3-provision.
+==> default: Preparing to unpack .../aegir3-provision_3.2+152.951c5e3_all.deb ...
+==> default: Unpacking aegir3-provision (3.2+152.951c5e3) ...
+==> default: Selecting previously unselected package php5-gd.
+==> default: Preparing to unpack .../php5-gd_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+==> default: Unpacking php5-gd (5.6.14+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package libapache2-mod-php5.
+==> default: Preparing to unpack .../libapache2-mod-php5_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+==> default: Unpacking libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package liberror-perl.
+==> default: Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+==> default: Unpacking liberror-perl (0.17-1.1) ...
+==> default: Selecting previously unselected package git-man.
+==> default: Preparing to unpack .../git-man_1%3a2.1.4-2.1_all.deb ...
+==> default: Unpacking git-man (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package git.
+==> default: Preparing to unpack .../git_1%3a2.1.4-2.1_amd64.deb ...
+==> default: Unpacking git (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package git-core.
+==> default: Preparing to unpack .../git-core_1%3a2.1.4-2.1_all.deb ...
+==> default: Unpacking git-core (1:2.1.4-2.1) ...
+==> default: Selecting previously unselected package aegir3-hostmaster.
+==> default: Preparing to unpack .../aegir3-hostmaster_3.2+152.951c5e3_all.deb ...
+==> default: Unpacking aegir3-hostmaster (3.2+152.951c5e3) ...
+==> default: Selecting previously unselected package aegir3.
+==> default: Preparing to unpack .../aegir3_3.2+152.951c5e3_all.deb ...
+==> default: Unpacking aegir3 (3.2+152.951c5e3) ...
+==> default: Selecting previously unselected package php5.
+==> default: Preparing to unpack .../php5_5.6.14+dfsg-0+deb8u1_all.deb ...
+==> default: Unpacking php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: Selecting previously unselected package rsync.
+==> default: Preparing to unpack .../rsync_3.1.1-3_amd64.deb ...
+==> default: Unpacking rsync (3.1.1-3) ...
+==> default: Selecting previously unselected package ssl-cert.
+==> default: Preparing to unpack .../ssl-cert_1.0.35_all.deb ...
+==> default: Unpacking ssl-cert (1.0.35) ...
+==> default: Processing triggers for man-db (2.7.0.2-5) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Setting up libapr1:amd64 (1.5.1-3) ...
+==> default: Setting up libaprutil1:amd64 (1.5.4-1) ...
+==> default: Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+==> default: Setting up libaprutil1-ldap:amd64 (1.5.4-1) ...
+==> default: Setting up liblua5.1-0:amd64 (5.1.5-7.1) ...
+==> default: Setting up apache2-bin (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2-utils (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2-data (2.4.10-10+deb8u3) ...
+==> default: Setting up apache2 (2.4.10-10+deb8u3) ...
+==> default: Enabling module mpm_event.
+==> default: Enabling module authz_core.
+==> default: Enabling module authz_host.
+==> default: Enabling module authn_core.
+==> default: Enabling module auth_basic.
+==> default: Enabling module access_compat.
+==> default: Enabling module authn_file.
+==> default: Enabling module authz_user.
+==> default: Enabling module alias.
+==> default: Enabling module dir.
+==> default: Enabling module autoindex.
+==> default: Enabling module env.
+==> default: Enabling module mime.
+==> default: Enabling module negotiation.
+==> default: Enabling module setenvif.
+==> default: Enabling module filter.
+==> default: Enabling module deflate.
+==> default: Enabling module status.
+==> default: Enabling conf charset.
+==> default: Enabling conf localized-error-pages.
+==> default: Enabling conf other-vhosts-access-log.
+==> default: Enabling conf security.
+==> default: Enabling conf serve-cgi-bin.
+==> default: Enabling site 000-default.
+==> default: Setting up libvpx1:amd64 (1.3.0-3) ...
+==> default: Setting up libxpm4:amd64 (1:3.5.11-1+b1) ...
+==> default: Setting up libgd3:amd64 (2.1.0-5) ...
+==> default: Setting up aegir3-provision (3.2+152.951c5e3) ...
+==> default: adding aegir user...
+==> default: Adding user aegir to group www-data
+==> default: 
+==> default: Creating config file /etc/sudoers.d/aegir with new version
+==> default: #!/usr/bin/env php
+==> default: All settings correct for using Composer
+==> default: Downloading...
+==> default: 
+==> default: Composer successfully installed to: //composer.phar
+==> default: Use it: php composer.phar
+==> default: Changed current directory to /var/aegir/.composer
+==> default: ./composer.json has been created
+==> default: Loading composer repositories with package information
+==> default: Updating dependencies (including require-dev)
+==> default:   - Installing drush/drush (6.6.0)
+==> default:     Downloading: Connecting...    Downloading: 100%         
+==> default: 
+==> default: Writing lock file
+==> default: Generating autoload files
+==> default: Setting up php5-gd (5.6.14+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/mods-available/gd.ini with new version
+==> default: php5_invoke: Enable module gd for apache2 SAPI
+==> default: php5_invoke: Enable module gd for cli SAPI
+==> default: Setting up libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: 
+==> default: Creating config file /etc/php5/apache2/php.ini with new version
+==> default: php5_invoke: Enable module json for apache2 SAPI
+==> default: php5_invoke: Enable module opcache for apache2 SAPI
+==> default: php5_invoke: Enable module mysql for apache2 SAPI
+==> default: php5_invoke: Enable module pdo for apache2 SAPI
+==> default: php5_invoke: Enable module pdo_mysql for apache2 SAPI
+==> default: php5_invoke: Enable module readline for apache2 SAPI
+==> default: php5_invoke: Enable module mysqli for apache2 SAPI
+==> default: Module mpm_event disabled.
+==> default: Enabling module mpm_prefork.
+==> default: apache2_switch_mpm Switch to prefork
+==> default: apache2_invoke: Enable module php5
+==> default: Setting up liberror-perl (0.17-1.1) ...
+==> default: Setting up git-man (1:2.1.4-2.1) ...
+==> default: Setting up git (1:2.1.4-2.1) ...
+==> default: Setting up git-core (1:2.1.4-2.1) ...
+==> default: Setting up aegir3-hostmaster (3.2+152.951c5e3) ...
+==> default: 'drush' cache was cleared.                                             [success]
+==> default: installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_localhost.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+==> default: Provision configuration root path /var/aegir/config exists.            [success]
+==> default: Provision configuration root ownership of /var/aegir/config has been   [success]
+==> default: changed to aegir.
+==> default: Provision configuration root permissions of /var/aegir/config have     [success]
+==> default: been changed to 711.
+==> default: Provision configuration root path /var/aegir/config is writable.       [success]
+==> default: Provision configuration path /var/aegir/config/server_localhost has    [success]
+==> default: been created.
+==> default: Provision configuration ownership of                                   [success]
+==> default: /var/aegir/config/server_localhost has been changed to aegir.
+==> default: Provision configuration permissions of                                 [success]
+==> default: /var/aegir/config/server_localhost have been changed to 711.
+==> default: Provision configuration path /var/aegir/config/server_localhost is     [success]
+==> default: writable.
+==> default: Provision client home path /var/aegir/clients has been created.        [success]
+==> default: Provision client home ownership of /var/aegir/clients has been         [success]
+==> default: changed to aegir.
+==> default: Provision client home permissions of /var/aegir/clients have been      [success]
+==> default: changed to 711.
+==> default: Provision client home path /var/aegir/clients is writable.             [success]
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 640
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_localhost.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_master.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 440
+==> default: Provision configuration root path /var/aegir/config exists.            [success]
+==> default: Provision configuration root ownership of /var/aegir/config has been   [success]
+==> default: changed to aegir.
+==> default: Provision configuration root permissions
+==> default:  of /var/aegir/config have     [success]
+==> default: been changed to 711.
+==> default: Provision configuration root path /var/aegir/config is writable.       [success]
+==> default: Provision configuration path /var/aegir/config/server_master has been  [success]
+==> default: created.
+==> default: Provision configuration ownership of /var/aegir/config/server_master   [success]
+==> default: has been changed to aegir.
+==> default: Provision configuration permissions of                                 [success]
+==> default: /var/aegir/config/server_master have been changed to 711.
+==> default: Provision configuration path /var/aegir/config/server_master is        [success]
+==> default: writable.
+==> default: Provision client home path /var/aegir/clients exists.                  [success]
+==> default: Provision client home ownership of /var/aegir/clients has been         [success]
+==> default: changed to aegir.
+==> default: Provision client home permissions of /var/aegir/clients have been      [success]
+==> default: changed to 711.
+==> default: Provision client home path /var/aegir/clients is writable.             [success]
+==> default: Backup path /var/aegir/backups has been created.                       [success]
+==> default: Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+==> default: Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+==> default: Backup path /var/aegir/backups is writable.                            [success]
+==> default: Provision PHP configuration path /var/aegir/config/includes has been   [success]
+==> default: created.
+==> default: Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+==> default: has been changed to aegir.
+==> default: Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+==> default: have been changed to 711.
+==> default: Provision PHP configuration path /var/aegir/config/includes is         [success]
+==> default: writable.
+==> default: Generated config in write(): Global settings.php file                  [success]
+==> default: (/var/aegir/config/includes/global.inc)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 640
+==> default: Generated config in write(): Drush configuration file                  [success]
+==> default: (/var/aegir/.drush/server_master.alias.drushrc.php)
+==> default: Changed permissions of                                                 [success]
+==> default: /var/aegir/.drush/server_master.alias.drushrc.php to 440
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache has been created.
+==> default: Webserver custom pre-configuration ownership of                        [success]
+==> default: /var/aegir/config/server_master/apache has been changed to aegir.
+==> default: Webserver custom pre-configuration permissions of                      [success]
+==> default: /var/aegir/config/server_master/apache have been changed to 711.
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache is writable.
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache/pre.d has been created.
+==> default: Webserver custom pre-configuration ownership of                        [success]
+==> default: /var/aegir/config/server_master/apache/pre.d has been changed to
+==> default: aegir.
+==> default: Webserver custom pre-configuration permissions of                      [success]
+==> default: /var/aegir/config/server_master/apache/pre.d have been changed to
+==> default: 700.
+==> default: Webserver custom pre-configuration path                                [success]
+==> default: /var/aegir/config/server_master/apache/pre.d is writable.
+==> default: Webserver custom post-configuration path                               [success]
+==> default: /var/aegir/config/server_master/apache/post.d has been created.
+==> default: Webserver custom post-configuration ownership of                       [success]
+==> default: /var/aegir/config/server_master/apache/post.d has been changed to
+==> default: aegir.
+==> default: Webserver custom post-configuration permissions of                     [success]
+==> default: /var/aegir/config/server_master/apache/post.d have been changed to
+==> default: 700.
+==> default: Webserver custom post-configuration path                               [success]
+==> default: /var/aegir/config/server_master/apache/post.d is writable.
+==> default: Webserver platform configuration path                                  [success]
+==> default: /var/aegir/config/server_master/apache/platform.d has been created.
+==> default: Webserver platform configuration ownership of                          [success]
+==> default: /var/aegir/config/server_master/apache/platform.d has been changed to
+==> default: aegir.
+==> default: Webserver platform configuration permissions of                        [success]
+==> default: /var/aegir/config/server_master/apache/platform.d have been changed
+==> default: to 700.
+==> default: Webserver platform configuration path                                  [success]
+==> default: /var/aegir/config/server_master/apache/platform.d is writable.
+==> default: Webserver virtual host configuration path                              [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d has been created.
+==> default: Webserver virtual host configuration ownership of                      [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d has been changed to
+==> default: aegir.
+==> default: Webserver virtual host configuration permissions of                    [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d have been changed to
+==> default: 700.
+==> default: Webserver virtual host configuration path                              [success]
+==> default: /var/aegir/config/server_master/apache/vhost.d is writable.
+==> default: Webserver subdir configuration path                                    [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d has been created.
+==> default: Webserver subdir configuration ownership of                            [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d has been changed to
+==> default: aegir.
+==> default: Webserver subdir configuration permissions of                          [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d have been changed to
+==> default: 700.
+==> default: Webserver subdir configuration path                                    [success]
+==> default: /var/aegir/config/server_master/apache/subdir.d is writable.
+==> default: Generated config in write(): web server configuration file             [success]
+==> default: (/var/aegir/config/server_master/apache.conf)
+==> default: Caught drush error, ending drush_provision_hostmaster_install            [error]
+==> default: Array                                                                    [error]
+==> default: (
+==> default:     [PROVISION_DB_CONNECT_FAIL] => Array
+==> default:         (
+==> default:             [0] => SQLSTATE[28000] [1045] Access denied for user
+==> default: 'root'@'localhost' (using password: YES)
+==> default:         )
+==> default: 
+==> default:     [PROVISION_CONNECT_DB_FAILED] => Array
+==> default:         (
+==> default:             [0] => Unable to connect to database server.
+==> default:         )
+==> default: 
+==> default: )
+==> default: 
+==> default: Aegir 7.x-3.x automated install script
+==> default: ==============================================================================
+==> default: Some settings have not been provided and will now be prompted.
+==> default: Don't worry: you will get to review those settings after the final install
+==> default: 
+==> default: This script will operate the following changes in your system:
+==> default: 
+==> default: 1. Create server-level configuration directories
+==> default: 2. Create the Hostmaster frontend platform
+==> default: 3. Install the frontend site
+==> default: 4. Setup the dispatcher (a user cron job)
+==> default: 
+==> default: We are making the following assumptions:
+==> default:  * you have read and are following the install instructions at:
+==> default:     http://community.aegirproject.org/installing
+==> default:  * the FQDN of this machine is valid and resolves
+==> default:  * you are executing this script as your "aegir" user
+==> default: 
+==> default: The following settings will be used:
+==> default:  Aegir frontend URL: aegir3-unstable.test
+==> default:  Master server FQDN: aegir3-unstable.test
+==> default:  Aegir root: /var/aegir
+==> default:  Aegir user: aegir
+==> default:  Web group: www-data
+==> default:  Web server: apache
+==> default:  Web server port: 80
+==> default:  Aegir DB host: localhost
+==> default:  Aegir DB user: root
+==> default:  Aegir DB password: <previously set>
+==> default:  Aegir DB port: 3306
+==> default:  Aegir version: 7.x-3.x
+==> default:  Aegir platform path: /var/aegir/hostmaster-7.x-3.x
+==> default:  Admin email: aegir@aegir3-unstable.test
+==> default:  Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+==> default: 
+==> default:  Aegir install profile: hostmaster
+==> default: 
+==> default: Do you really want to proceed with the install (y/n): y
+==> default: 'drush' cache was cleared.                                             [success]
+==> default: Enabling hosting-queued daemon
+==> default: The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+==> default: found.  Run `drush cache-clear drush` to clear the commandfile cache
+==> default: if you have installed new extensions.
+==> default: A Drupal installation directory could not be found                       [error]
+==> default: dpkg: error processing package aegir3-hostmaster (--configure):
+==> default:  subprocess installed post-installation script returned error exit status 1
+==> default: dpkg: dependency problems prevent configuration of aegir3:
+==> default:  aegir3 depends on aegir3-hostmaster (>= 3.2+152.951c5e3); however:
+==> default:   Package aegir3-hostmaster is not configured yet.
+==> default: 
+==> default: dpkg: error processing package aegir3 (--configure):
+==> default:  dependency problems - leaving unconfigured
+==> default: Setting up php5 (5.6.14+dfsg-0+deb8u1) ...
+==> default: Setting up rsync (3.1.1-3) ...
+==> default: Setting up ssl-cert (1.0.35) ...
+==> default: Processing triggers for libc-bin (2.19-18+deb8u1) ...
+==> default: Processing triggers for systemd (215-17+deb8u2) ...
+==> default: Errors were encountered while processing:
+==> default:  aegir3-hostmaster
+==> default:  aegir3
+==> default: E: Sub-process /usr/bin/dpkg returned an error code (1)
+==> default: Warning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+==> default: Notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[aegir3] has failures: true
+==> default: Warning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies
+==> default: Notice: Finished catalog run in 108.71 seconds
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+puppet apply --modulepath '/tmp/vagrant-puppet-3/modules-0:/etc/puppet/modules' --color=false --manifestdir /tmp/vagrant-puppet-3/manifests --detailed-exitcodes /tmp/vagrant-puppet-3/manifests/nodes.pp
+
+Stdout from the command:
+
+Notice: Compiled catalog for aegir3-unstable.test in environment production in 1.28 seconds
+Notice: /Stage[main]/Drush::Apt::Update/Exec[drush_apt_update]/returns: executed successfully
+Notice: /Stage[main]/Aegir/Aegir::Apt::Debconf[aegir/webserver string apache2]/Exec[aegir/webserver string apache2]/returns: executed successfully
+Notice: /Stage[main]/Drush/Package[drush]/ensure: ensure changed 'purged' to 'present'
+Notice: /Stage[main]/Aegir::Mysql/File[/root/.my.cnf]/ensure: defined content as '{md5}162a36a51e371786fa6692178cfafaa7'
+Notice: /Stage[main]/Aegir::Mysql/Package[mysql-server]/ensure: ensure changed 'purged' to 'present'
+Notice: /Stage[main]/Aegir::Mysql/File[setmysqlpass.sh]/ensure: defined content as '{md5}d402a9edee75caac8e2fa3e34da23e8b'
+Notice: /Stage[main]/Aegir::Mysql/Exec[change mysql root password]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]/returns: executed successfully
+Notice: /Stage[main]/Aegir::Mysql/Exec[mysql_secure_installation]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Aegir::Mysql::Preseed/File[preseedmysqlpass.sh]/ensure: defined content as '{md5}cf716d667b4f77e6c887bcede81e63c2'
+Notice: /Stage[main]/Aegir::Mysql::Preseed/Exec[preseed mysql password]/returns: executed successfully
+Notice: /Stage[main]/Aegir::Apt/File[aegir_apt_keys_dir]/ensure: created
+Notice: /Stage[main]/Aegir::Apt/File[aegir_apt_key]/ensure: defined content as '{md5}c68f07d8791bb73bd013a7fc758bff8a'
+Notice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_key_add]: Triggered 'refresh' from 1 events
+Notice: /Stage[main]/Aegir::Apt/File[aegir_apt_sources]/ensure: created
+Notice: /Stage[main]/Aegir::Apt/Exec[aegir_apt_update]/returns: executed successfully
+Notice: /Stage[main]/Aegir::Apt/Exec[aegir_update_apt]: Triggered 'refresh' from 4 events
+Notice: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Dependency Package[aegir3] has failures: true
+Notice: /Stage[main]/Aegir/Service[hosting-queued]: Dependency Package[aegir3] has failures: true
+Notice: Finished catalog run in 108.71 seconds
+
+
+Stderr from the command:
+
+stdin: is not a tty
+Warning: Config file /etc/puppet/hiera.yaml not found, using Hiera defaults
+Error: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install aegir3' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+  apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+  libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine apache2-suexec-custom git-daemon-run
+  git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-arch
+  git-cvs git-mediawiki git-svn php-pear libgd-tools openssl-blacklist
+The following NEW packages will be installed:
+  aegir3 aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+  apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+  libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+0 upgraded, 24 newly installed, 0 to remove and 12 not upgraded.
+Need to get 143 kB/10.4 MB of archives.
+After this operation, 44.1 MB of additional disk space will be used.
+Get:1 http://debian.aegirproject.org/ unstable/main aegir3-provision all 3.2+152.951c5e3 [120 kB]
+Get:2 http://debian.aegirproject.org/ unstable/main aegir3-hostmaster all 3.2+152.951c5e3 [14.8 kB]
+Get:3 http://debian.aegirproject.org/ unstable/main aegir3 all 3.2+152.951c5e3 [8026 B]
+Preconfiguring packages ...
+Fetched 143 kB in 0s (301 kB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39634 files and directories currently installed.)
+Preparing to unpack .../libapr1_1.5.1-3_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.1-3) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../libaprutil1_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1) ...
+Selecting previously unselected package liblua5.1-0:amd64.
+Preparing to unpack .../liblua5.1-0_5.1.5-7.1_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-7.1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2-bin (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2-utils (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.10-10+deb8u3_all.deb ...
+Unpacking apache2-data (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2 (2.4.10-10+deb8u3) ...
+Selecting previously unselected package libvpx1:amd64.
+Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+Unpacking libvpx1:amd64 (1.3.0-3) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../libxpm4_1%3a3.5.11-1+b1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.11-1+b1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../libgd3_2.1.0-5_amd64.deb ...
+Unpacking libgd3:amd64 (2.1.0-5) ...
+Selecting previously unselected package aegir3-provision.
+Preparing to unpack .../aegir3-provision_3.2+152.951c5e3_all.deb ...
+Unpacking aegir3-provision (3.2+152.951c5e3) ...
+Selecting previously unselected package php5-gd.
+Preparing to unpack .../php5-gd_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+Unpacking php5-gd (5.6.14+dfsg-0+deb8u1) ...
+Selecting previously unselected package libapache2-mod-php5.
+Preparing to unpack .../libapache2-mod-php5_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+Unpacking libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.1.4-2.1_all.deb ...
+Unpacking git-man (1:2.1.4-2.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.1.4-2.1_amd64.deb ...
+Unpacking git (1:2.1.4-2.1) ...
+Selecting previously unselected package git-core.
+Preparing to unpack .../git-core_1%3a2.1.4-2.1_all.deb ...
+Unpacking git-core (1:2.1.4-2.1) ...
+Selecting previously unselected package aegir3-hostmaster.
+Preparing to unpack .../aegir3-hostmaster_3.2+152.951c5e3_all.deb ...
+Unpacking aegir3-hostmaster (3.2+152.951c5e3) ...
+Selecting previously unselected package aegir3.
+Preparing to unpack .../aegir3_3.2+152.951c5e3_all.deb ...
+Unpacking aegir3 (3.2+152.951c5e3) ...
+Selecting previously unselected package php5.
+Preparing to unpack .../php5_5.6.14+dfsg-0+deb8u1_all.deb ...
+Unpacking php5 (5.6.14+dfsg-0+deb8u1) ...
+Selecting previously unselected package rsync.
+Preparing to unpack .../rsync_3.1.1-3_amd64.deb ...
+Unpacking rsync (3.1.1-3) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../ssl-cert_1.0.35_all.deb ...
+Unpacking ssl-cert (1.0.35) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Setting up libapr1:amd64 (1.5.1-3) ...
+Setting up libaprutil1:amd64 (1.5.4-1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-1) ...
+Setting up liblua5.1-0:amd64 (5.1.5-7.1) ...
+Setting up apache2-bin (2.4.10-10+deb8u3) ...
+Setting up apache2-utils (2.4.10-10+deb8u3) ...
+Setting up apache2-data (2.4.10-10+deb8u3) ...
+Setting up apache2 (2.4.10-10+deb8u3) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Setting up libvpx1:amd64 (1.3.0-3) ...
+Setting up libxpm4:amd64 (1:3.5.11-1+b1) ...
+Setting up libgd3:amd64 (2.1.0-5) ...
+Setting up aegir3-provision (3.2+152.951c5e3) ...
+adding aegir user...
+Adding user aegir to group www-data
+
+Creating config file /etc/sudoers.d/aegir with new version
+#!/usr/bin/env php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: //composer.phar
+Use it: php composer.phar
+Changed current directory to /var/aegir/.composer
+./composer.json has been created
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing drush/drush (6.6.0)
+    Downloading: Connecting...    Downloading: 100%         
+
+Writing lock file
+Generating autoload files
+Setting up php5-gd (5.6.14+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/mods-available/gd.ini with new version
+php5_invoke: Enable module gd for apache2 SAPI
+php5_invoke: Enable module gd for cli SAPI
+Setting up libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/apache2/php.ini with new version
+php5_invoke: Enable module json for apache2 SAPI
+php5_invoke: Enable module opcache for apache2 SAPI
+php5_invoke: Enable module mysql for apache2 SAPI
+php5_invoke: Enable module pdo for apache2 SAPI
+php5_invoke: Enable module pdo_mysql for apache2 SAPI
+php5_invoke: Enable module readline for apache2 SAPI
+php5_invoke: Enable module mysqli for apache2 SAPI
+Module mpm_event disabled.
+Enabling module mpm_prefork.
+apache2_switch_mpm Switch to prefork
+apache2_invoke: Enable module php5
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:2.1.4-2.1) ...
+Setting up git (1:2.1.4-2.1) ...
+Setting up git-core (1:2.1.4-2.1) ...
+Setting up aegir3-hostmaster (3.2+152.951c5e3) ...
+'drush' cache was cleared.                                             [success]
+installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_localhost.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+Provision configuration root path /var/aegir/config exists.            [success]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir.
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711.
+Provision configuration root path /var/aegir/config is writable.       [success]
+Provision configuration path /var/aegir/config/server_localhost has    [success]
+been created.
+Provision configuration ownership of                                   [success]
+/var/aegir/config/server_localhost has been changed to aegir.
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_localhost have been changed to 711.
+Provision configuration path /var/aegir/config/server_localhost is     [success]
+writable.
+Provision client home path /var/aegir/clients has been created.        [success]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir.
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711.
+Provision client home path /var/aegir/clients is writable.             [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 640
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_localhost.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_master.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440
+Provision configuration root path /var/aegir/config exists.            [success]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir.
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711.
+Provision configuration root path /var/aegir/config is writable.       [success]
+Provision configuration path /var/aegir/config/server_master has been  [success]
+created.
+Provision configuration ownership of /var/aegir/config/server_master   [success]
+has been changed to aegir.
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_master have been changed to 711.
+Provision configuration path /var/aegir/config/server_master is        [success]
+writable.
+Provision client home path /var/aegir/clients exists.                  [success]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir.
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711.
+Provision client home path /var/aegir/clients is writable.             [success]
+Backup path /var/aegir/backups has been created.                       [success]
+Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+Backup path /var/aegir/backups is writable.                            [success]
+Provision PHP configuration path /var/aegir/config/includes has been   [success]
+created.
+Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+has been changed to aegir.
+Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+have been changed to 711.
+Provision PHP configuration path /var/aegir/config/includes is         [success]
+writable.
+Generated config in write(): Global settings.php file                  [success]
+(/var/aegir/config/includes/global.inc)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 640
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_master.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache has been created.
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache has been changed to aegir.
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache have been changed to 711.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache is writable.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d has been created.
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache/pre.d has been changed to
+aegir.
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache/pre.d have been changed to
+700.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d is writable.
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d has been created.
+Webserver custom post-configuration ownership of                       [success]
+/var/aegir/config/server_master/apache/post.d has been changed to
+aegir.
+Webserver custom post-configuration permissions of                     [success]
+/var/aegir/config/server_master/apache/post.d have been changed to
+700.
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d is writable.
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d has been created.
+Webserver platform configuration ownership of                          [success]
+/var/aegir/config/server_master/apache/platform.d has been changed to
+aegir.
+Webserver platform configuration permissions of                        [success]
+/var/aegir/config/server_master/apache/platform.d have been changed
+to 700.
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d is writable.
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d has been created.
+Webserver virtual host configuration ownership of                      [success]
+/var/aegir/config/server_master/apache/vhost.d has been changed to
+aegir.
+Webserver virtual host configuration permissions of                    [success]
+/var/aegir/config/server_master/apache/vhost.d have been changed to
+700.
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d is writable.
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d has been created.
+Webserver subdir configuration ownership of                            [success]
+/var/aegir/config/server_master/apache/subdir.d has been changed to
+aegir.
+Webserver subdir configuration permissions of                          [success]
+/var/aegir/config/server_master/apache/subdir.d have been changed to
+700.
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d is writable.
+Generated config in write(): web server configuration file             [success]
+(/var/aegir/config/server_master/apache.conf)
+Caught drush error, ending drush_provision_hostmaster_install            [error]
+Array                                                                    [error]
+(
+    [PROVISION_DB_CONNECT_FAIL] => Array
+        (
+            [0] => SQLSTATE[28000] [1045] Access denied for user
+'root'@'localhost' (using password: YES)
+        )
+
+    [PROVISION_CONNECT_DB_FAILED] => Array
+        (
+            [0] => Unable to connect to database server.
+        )
+
+)
+
+Aegir 7.x-3.x automated install script
+==============================================================================
+Some settings have not been provided and will now be prompted.
+Don't worry: you will get to review those settings after the final install
+
+This script will operate the following changes in your system:
+
+1. Create server-level configuration directories
+2. Create the Hostmaster frontend platform
+3. Install the frontend site
+4. Setup the dispatcher (a user cron job)
+
+We are making the following assumptions:
+ * you have read and are following the install instructions at:
+    http://community.aegirproject.org/installing
+ * the FQDN of this machine is valid and resolves
+ * you are executing this script as your "aegir" user
+
+The following settings will be used:
+ Aegir frontend URL: aegir3-unstable.test
+ Master server FQDN: aegir3-unstable.test
+ Aegir root: /var/aegir
+ Aegir user: aegir
+ Web group: www-data
+ Web server: apache
+ Web server port: 80
+ Aegir DB host: localhost
+ Aegir DB user: root
+ Aegir DB password: <previously set>
+ Aegir DB port: 3306
+ Aegir version: 7.x-3.x
+ Aegir platform path: /var/aegir/hostmaster-7.x-3.x
+ Admin email: aegir@aegir3-unstable.test
+ Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+
+ Aegir install profile: hostmaster
+
+Do you really want to proceed with the install (y/n): y
+'drush' cache was cleared.                                             [success]
+Enabling hosting-queued daemon
+The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+found.  Run `drush cache-clear drush` to clear the commandfile cache
+if you have installed new extensions.
+A Drupal installation directory could not be found                       [error]
+dpkg: error processing package aegir3-hostmaster (--configure):
+ subprocess installed post-installation script returned error exit status 1
+dpkg: dependency problems prevent configuration of aegir3:
+ aegir3 depends on aegir3-hostmaster (>= 3.2+152.951c5e3); however:
+  Package aegir3-hostmaster is not configured yet.
+
+dpkg: error processing package aegir3 (--configure):
+ dependency problems - leaving unconfigured
+Setting up php5 (5.6.14+dfsg-0+deb8u1) ...
+Setting up rsync (3.1.1-3) ...
+Setting up ssl-cert (1.0.35) ...
+Processing triggers for libc-bin (2.19-18+deb8u1) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Errors were encountered while processing:
+ aegir3-hostmaster
+ aegir3
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+Error: /Stage[main]/Aegir/Package[aegir3]/ensure: change from purged to present failed: Execution of '/usr/bin/apt-get -q -y -o DPkg::Options::=--force-confold install aegir3' returned 100: Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+  apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+  libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine apache2-suexec-custom git-daemon-run
+  git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-arch
+  git-cvs git-mediawiki git-svn php-pear libgd-tools openssl-blacklist
+The following NEW packages will be installed:
+  aegir3 aegir3-hostmaster aegir3-provision apache2 apache2-bin apache2-data
+  apache2-utils git git-core git-man libapache2-mod-php5 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liberror-perl libgd3 liblua5.1-0
+  libvpx1 libxpm4 php5 php5-gd rsync ssl-cert
+0 upgraded, 24 newly installed, 0 to remove and 12 not upgraded.
+Need to get 143 kB/10.4 MB of archives.
+After this operation, 44.1 MB of additional disk space will be used.
+Get:1 http://debian.aegirproject.org/ unstable/main aegir3-provision all 3.2+152.951c5e3 [120 kB]
+Get:2 http://debian.aegirproject.org/ unstable/main aegir3-hostmaster all 3.2+152.951c5e3 [14.8 kB]
+Get:3 http://debian.aegirproject.org/ unstable/main aegir3 all 3.2+152.951c5e3 [8026 B]
+Preconfiguring packages ...
+Fetched 143 kB in 0s (301 kB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39634 files and directories currently installed.)
+Preparing to unpack .../libapr1_1.5.1-3_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.1-3) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../libaprutil1_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1) ...
+Selecting previously unselected package liblua5.1-0:amd64.
+Preparing to unpack .../liblua5.1-0_5.1.5-7.1_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-7.1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2-bin (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2-utils (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.10-10+deb8u3_all.deb ...
+Unpacking apache2-data (2.4.10-10+deb8u3) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.10-10+deb8u3_amd64.deb ...
+Unpacking apache2 (2.4.10-10+deb8u3) ...
+Selecting previously unselected package libvpx1:amd64.
+Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+Unpacking libvpx1:amd64 (1.3.0-3) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../libxpm4_1%3a3.5.11-1+b1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.11-1+b1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../libgd3_2.1.0-5_amd64.deb ...
+Unpacking libgd3:amd64 (2.1.0-5) ...
+Selecting previously unselected package aegir3-provision.
+Preparing to unpack .../aegir3-provision_3.2+152.951c5e3_all.deb ...
+Unpacking aegir3-provision (3.2+152.951c5e3) ...
+Selecting previously unselected package php5-gd.
+Preparing to unpack .../php5-gd_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+Unpacking php5-gd (5.6.14+dfsg-0+deb8u1) ...
+Selecting previously unselected package libapache2-mod-php5.
+Preparing to unpack .../libapache2-mod-php5_5.6.14+dfsg-0+deb8u1_amd64.deb ...
+Unpacking libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.1.4-2.1_all.deb ...
+Unpacking git-man (1:2.1.4-2.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.1.4-2.1_amd64.deb ...
+Unpacking git (1:2.1.4-2.1) ...
+Selecting previously unselected package git-core.
+Preparing to unpack .../git-core_1%3a2.1.4-2.1_all.deb ...
+Unpacking git-core (1:2.1.4-2.1) ...
+Selecting previously unselected package aegir3-hostmaster.
+Preparing to unpack .../aegir3-hostmaster_3.2+152.951c5e3_all.deb ...
+Unpacking aegir3-hostmaster (3.2+152.951c5e3) ...
+Selecting previously unselected package aegir3.
+Preparing to unpack .../aegir3_3.2+152.951c5e3_all.deb ...
+Unpacking aegir3 (3.2+152.951c5e3) ...
+Selecting previously unselected package php5.
+Preparing to unpack .../php5_5.6.14+dfsg-0+deb8u1_all.deb ...
+Unpacking php5 (5.6.14+dfsg-0+deb8u1) ...
+Selecting previously unselected package rsync.
+Preparing to unpack .../rsync_3.1.1-3_amd64.deb ...
+Unpacking rsync (3.1.1-3) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../ssl-cert_1.0.35_all.deb ...
+Unpacking ssl-cert (1.0.35) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Setting up libapr1:amd64 (1.5.1-3) ...
+Setting up libaprutil1:amd64 (1.5.4-1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-1) ...
+Setting up liblua5.1-0:amd64 (5.1.5-7.1) ...
+Setting up apache2-bin (2.4.10-10+deb8u3) ...
+Setting up apache2-utils (2.4.10-10+deb8u3) ...
+Setting up apache2-data (2.4.10-10+deb8u3) ...
+Setting up apache2 (2.4.10-10+deb8u3) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Setting up libvpx1:amd64 (1.3.0-3) ...
+Setting up libxpm4:amd64 (1:3.5.11-1+b1) ...
+Setting up libgd3:amd64 (2.1.0-5) ...
+Setting up aegir3-provision (3.2+152.951c5e3) ...
+adding aegir user...
+Adding user aegir to group www-data
+
+Creating config file /etc/sudoers.d/aegir with new version
+#!/usr/bin/env php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: //composer.phar
+Use it: php composer.phar
+Changed current directory to /var/aegir/.composer
+./composer.json has been created
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+  - Installing drush/drush (6.6.0)
+    Downloading: Connecting...    Downloading: 100%         
+
+Writing lock file
+Generating autoload files
+Setting up php5-gd (5.6.14+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/mods-available/gd.ini with new version
+php5_invoke: Enable module gd for apache2 SAPI
+php5_invoke: Enable module gd for cli SAPI
+Setting up libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
+
+Creating config file /etc/php5/apache2/php.ini with new version
+php5_invoke: Enable module json for apache2 SAPI
+php5_invoke: Enable module opcache for apache2 SAPI
+php5_invoke: Enable module mysql for apache2 SAPI
+php5_invoke: Enable module pdo for apache2 SAPI
+php5_invoke: Enable module pdo_mysql for apache2 SAPI
+php5_invoke: Enable module readline for apache2 SAPI
+php5_invoke: Enable module mysqli for apache2 SAPI
+Module mpm_event disabled.
+Enabling module mpm_prefork.
+apache2_switch_mpm Switch to prefork
+apache2_invoke: Enable module php5
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:2.1.4-2.1) ...
+Setting up git (1:2.1.4-2.1) ...
+Setting up git-core (1:2.1.4-2.1) ...
+Setting up aegir3-hostmaster (3.2+152.951c5e3) ...
+'drush' cache was cleared.                                             [success]
+installing the Aegir frontend (Drupal with the hostmaster profile), please wait...
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_localhost.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+Provision configuration root path /var/aegir/config exists.            [success]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir.
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711.
+Provision configuration root path /var/aegir/config is writable.       [success]
+Provision configuration path /var/aegir/config/server_localhost has    [success]
+been created.
+Provision configuration ownership of                                   [success]
+/var/aegir/config/server_localhost has been changed to aegir.
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_localhost have been changed to 711.
+Provision configuration path /var/aegir/config/server_localhost is     [success]
+writable.
+Provision client home path /var/aegir/clients has been created.        [success]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir.
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711.
+Provision client home path /var/aegir/clients is writable.             [success]
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 640
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_localhost.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_localhost.alias.drushrc.php to 440
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_master.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440
+Provision configuration root path /var/aegir/config exists.            [success]
+Provision configuration root ownership of /var/aegir/config has been   [success]
+changed to aegir.
+Provision configuration root permissions of /var/aegir/config have     [success]
+been changed to 711.
+Provision configuration root path /var/aegir/config is writable.       [success]
+Provision configuration path /var/aegir/config/server_master has been  [success]
+created.
+Provision configuration ownership of /var/aegir/config/server_master   [success]
+has been changed to aegir.
+Provision configuration permissions of                                 [success]
+/var/aegir/config/server_master have been changed to 711.
+Provision configuration path /var/aegir/config/server_master is        [success]
+writable.
+Provision client home path /var/aegir/clients exists.                  [success]
+Provision client home ownership of /var/aegir/clients has been         [success]
+changed to aegir.
+Provision client home permissions of /var/aegir/clients have been      [success]
+changed to 711.
+Provision client home path /var/aegir/clients is writable.             [success]
+Backup path /var/aegir/backups has been created.                       [success]
+Backup ownership of /var/aegir/backups has been changed to aegir.      [success]
+Backup permissions of /var/aegir/backups have been changed to 700.     [success]
+Backup path /var/aegir/backups is writable.                            [success]
+Provision PHP configuration path /var/aegir/config/includes has been   [success]
+created.
+Provision PHP configuration ownership of /var/aegir/config/includes    [success]
+has been changed to aegir.
+Provision PHP configuration permissions of /var/aegir/config/includes  [success]
+have been changed to 711.
+Provision PHP configuration path /var/aegir/config/includes is         [success]
+writable.
+Generated config in write(): Global settings.php file                  [success]
+(/var/aegir/config/includes/global.inc)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 640
+Generated config in write(): Drush configuration file                  [success]
+(/var/aegir/.drush/server_master.alias.drushrc.php)
+Changed permissions of                                                 [success]
+/var/aegir/.drush/server_master.alias.drushrc.php to 440
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache has been created.
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache has been changed to aegir.
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache have been changed to 711.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache is writable.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d has been created.
+Webserver custom pre-configuration ownership of                        [success]
+/var/aegir/config/server_master/apache/pre.d has been changed to
+aegir.
+Webserver custom pre-configuration permissions of                      [success]
+/var/aegir/config/server_master/apache/pre.d have been changed to
+700.
+Webserver custom pre-configuration path                                [success]
+/var/aegir/config/server_master/apache/pre.d is writable.
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d has been created.
+Webserver custom post-configuration ownership of                       [success]
+/var/aegir/config/server_master/apache/post.d has been changed to
+aegir.
+Webserver custom post-configuration permissions of                     [success]
+/var/aegir/config/server_master/apache/post.d have been changed to
+700.
+Webserver custom post-configuration path                               [success]
+/var/aegir/config/server_master/apache/post.d is writable.
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d has been created.
+Webserver platform configuration ownership of                          [success]
+/var/aegir/config/server_master/apache/platform.d has been changed to
+aegir.
+Webserver platform configuration permissions of                        [success]
+/var/aegir/config/server_master/apache/platform.d have been changed
+to 700.
+Webserver platform configuration path                                  [success]
+/var/aegir/config/server_master/apache/platform.d is writable.
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d has been created.
+Webserver virtual host configuration ownership of                      [success]
+/var/aegir/config/server_master/apache/vhost.d has been changed to
+aegir.
+Webserver virtual host configuration permissions of                    [success]
+/var/aegir/config/server_master/apache/vhost.d have been changed to
+700.
+Webserver virtual host configuration path                              [success]
+/var/aegir/config/server_master/apache/vhost.d is writable.
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d has been created.
+Webserver subdir configuration ownership of                            [success]
+/var/aegir/config/server_master/apache/subdir.d has been changed to
+aegir.
+Webserver subdir configuration permissions of                          [success]
+/var/aegir/config/server_master/apache/subdir.d have been changed to
+700.
+Webserver subdir configuration path                                    [success]
+/var/aegir/config/server_master/apache/subdir.d is writable.
+Generated config in write(): web server configuration file             [success]
+(/var/aegir/config/server_master/apache.conf)
+Caught drush error, ending drush_provision_hostmaster_install            [error]
+Array                                                                    [error]
+(
+    [PROVISION_DB_CONNECT_FAIL] => Array
+        (
+            [0] => SQLSTATE[28000] [1045] Access denied for user
+'root'@'localhost' (using password: YES)
+        )
+
+    [PROVISION_CONNECT_DB_FAILED] => Array
+        (
+            [0] => Unable to connect to database server.
+        )
+
+)
+
+Aegir 7.x-3.x automated install script
+==============================================================================
+Some settings have not been provided and will now be prompted.
+Don't worry: you will get to review those settings after the final install
+
+This script will operate the following changes in your system:
+
+1. Create server-level configuration directories
+2. Create the Hostmaster frontend platform
+3. Install the frontend site
+4. Setup the dispatcher (a user cron job)
+
+We are making the following assumptions:
+ * you have read and are following the install instructions at:
+    http://community.aegirproject.org/installing
+ * the FQDN of this machine is valid and resolves
+ * you are executing this script as your "aegir" user
+
+The following settings will be used:
+ Aegir frontend URL: aegir3-unstable.test
+ Master server FQDN: aegir3-unstable.test
+ Aegir root: /var/aegir
+ Aegir user: aegir
+ Web group: www-data
+ Web server: apache
+ Web server port: 80
+ Aegir DB host: localhost
+ Aegir DB user: root
+ Aegir DB password: <previously set>
+ Aegir DB port: 3306
+ Aegir version: 7.x-3.x
+ Aegir platform path: /var/aegir/hostmaster-7.x-3.x
+ Admin email: aegir@aegir3-unstable.test
+ Aegir makefile: /usr/share/drush/commands/provision/aegir.make
+
+ Aegir install profile: hostmaster
+
+Do you really want to proceed with the install (y/n): y
+'drush' cache was cleared.                                             [success]
+Enabling hosting-queued daemon
+The drush command '@hostmaster pm-enable hosting_queued' could not be    [error]
+found.  Run `drush cache-clear drush` to clear the commandfile cache
+if you have installed new extensions.
+A Drupal installation directory could not be found                       [error]
+dpkg: error processing package aegir3-hostmaster (--configure):
+ subprocess installed post-installation script returned error exit status 1
+dpkg: dependency problems prevent configuration of aegir3:
+ aegir3 depends on aegir3-hostmaster (>= 3.2+152.951c5e3); however:
+  Package aegir3-hostmaster is not configured yet.
+
+dpkg: error processing package aegir3 (--configure):
+ dependency problems - leaving unconfigured
+Setting up php5 (5.6.14+dfsg-0+deb8u1) ...
+Setting up rsync (3.1.1-3) ...
+Setting up ssl-cert (1.0.35) ...
+Processing triggers for libc-bin (2.19-18+deb8u1) ...
+Processing triggers for systemd (215-17+deb8u2) ...
+Errors were encountered while processing:
+ aegir3-hostmaster
+ aegir3
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+Warning: /Stage[main]/Aegir/Drush::En[hosting_queued]/Drush::Run[drush-en:hosting_queued]/Exec[drush-run:drush-en:hosting_queued]: Skipping because of failed dependencies
+Warning: /Stage[main]/Aegir/Service[hosting-queued]: Skipping because of failed dependencies
+'vagrant up' failed. Leaving vm in place for forensic analysis.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

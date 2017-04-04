@@ -1,0 +1,20 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/C hostmaster - 1.x/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/C hostmaster - 1.x/workspace - hudson.remoting.LocalChannel@598a15ca
+Using strategy: Default
+Last Built Revision: Revision 94168bae92fc4b5290d29785ff4f15d722305d2f (provision/6.x-1.x)
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from git://git.drupalcode.org/project/hostmaster
+Commencing build of Revision 9476561780dfd1bca39c8cb429327d01f6e679f4 (provision/6.x-1.x)
+Checking out Revision 9476561780dfd1bca39c8cb429327d01f6e679f4 (provision/6.x-1.x)
+[workspace] $ /bin/sh -xe /tmp/hudson1750696431396620514.sh
++ rm -f review.xml
++ drush standalone-coder-review --files=provision --reviews=style,comment --output-filename=review.xml -y
+Running the coder review                                             [1;32;40m[1m[ok][0m
+Results written to /var/lib/jenkins/jobs/C hostmaster -              [1;32;40m[1m[ok][0m
+1.x/workspace/review.xml
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Parsing 1 files in /var/lib/jenkins/jobs/C hostmaster - 1.x/workspace
+[CHECKSTYLE] Successfully parsed file /var/lib/jenkins/jobs/C hostmaster - 1.x/workspace/review.xml of module  with 268 warnings.
+[CHECKSTYLE] Computing warning deltas based on reference build #24
+Finished: SUCCESS

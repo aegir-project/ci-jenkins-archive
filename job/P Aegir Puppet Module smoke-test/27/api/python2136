@@ -1,0 +1,155 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/new" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 27,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+            "branch" : [
+              {
+                "SHA1" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+                "name" : "origin/new"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+            "branch" : [
+              {
+                "SHA1" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+                "name" : "origin/new"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+        "branch" : [
+          {
+            "SHA1" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+            "name" : "origin/new"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/project/puppet-aegir.git"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#27",
+  "duration" : 646706,
+  "estimatedDuration" : 5666,
+  "executor" : None,
+  "fullDisplayName" : "P Aegir Puppet Module smoke-test #27",
+  "id" : "2013-12-19_09-43-27",
+  "keepLog" : False,
+  "number" : 27,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1387464207000,
+  "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/27/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "files/scripts/setmysqlpass.sh",
+          "files/scripts/preseedmysqlpass.sh"
+        ],
+        "commitId" : "d3166be513cbfa5efbf042456911129478372a06",
+        "timestamp" : 1387460774000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add scripts for mysql password creation, setting and preseeding.\n",
+        "date" : "2013-12-19T08:46:14-0500 -0500",
+        "id" : "d3166be513cbfa5efbf042456911129478372a06",
+        "msg" : "Add scripts for mysql password creation, setting and preseeding.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "files/scripts/preseedmysqlpass.sh"
+          },
+          {
+            "editType" : "add",
+            "file" : "files/scripts/setmysqlpass.sh"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "manifests/mysql.pp",
+          "manifests/mysql/preseed.pp",
+          "manifests/init.pp"
+        ],
+        "commitId" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+        "timestamp" : 1387463749000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Add mysql classes.\n",
+        "date" : "2013-12-19T09:35:49-0500 -0500",
+        "id" : "6d34ab77a845b1d3f3e0ee262f308a3b789990f1",
+        "msg" : "Add mysql classes.",
+        "paths" : [
+          {
+            "editType" : "add",
+            "file" : "manifests/mysql/preseed.pp"
+          },
+          {
+            "editType" : "add",
+            "file" : "manifests/mysql.pp"
+          },
+          {
+            "editType" : "edit",
+            "file" : "manifests/init.pp"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

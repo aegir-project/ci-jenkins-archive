@@ -1,0 +1,172 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "6.x-1.10"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Christopher Gervais",
+          "userId" : "ergonlogic",
+          "userName" : "Christopher Gervais"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 100,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+            "branch" : [
+              {
+                "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+            "branch" : [
+              {
+                "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+        "branch" : [
+          {
+            "SHA1" : "7357f01eaa2b93705375678211fc118a35870be6",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "http://git.drupal.org/sandbox/darthsteven/1286014.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 100,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "bcd8b2118e198bdea26c938e27fd09da4253e398",
+            "branch" : [
+              {
+                "SHA1" : "bcd8b2118e198bdea26c938e27fd09da4253e398",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "bcd8b2118e198bdea26c938e27fd09da4253e398",
+            "branch" : [
+              {
+                "SHA1" : "bcd8b2118e198bdea26c938e27fd09da4253e398",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "bcd8b2118e198bdea26c938e27fd09da4253e398",
+        "branch" : [
+          {
+            "SHA1" : "bcd8b2118e198bdea26c938e27fd09da4253e398",
+            "name" : "origin/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    {
+      "displayPath" : "aegir-cluster-slave_1.10_all.deb",
+      "fileName" : "aegir-cluster-slave_1.10_all.deb",
+      "relativePath" : "provision/build-area/aegir-cluster-slave_1.10_all.deb"
+    },
+    {
+      "displayPath" : "aegir-hostmaster_1.10_all.deb",
+      "fileName" : "aegir-hostmaster_1.10_all.deb",
+      "relativePath" : "provision/build-area/aegir-hostmaster_1.10_all.deb"
+    },
+    {
+      "displayPath" : "aegir-provision_1.10_all.deb",
+      "fileName" : "aegir-provision_1.10_all.deb",
+      "relativePath" : "provision/build-area/aegir-provision_1.10_all.deb"
+    },
+    {
+      "displayPath" : "aegir_1.10_all.deb",
+      "fileName" : "aegir_1.10_all.deb",
+      "relativePath" : "provision/build-area/aegir_1.10_all.deb"
+    }
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#100",
+  "duration" : 12272,
+  "estimatedDuration" : 13891,
+  "executor" : null,
+  "fullDisplayName" : "S_aegir-debian-official #100",
+  "id" : "2013-07-17_21-32-08",
+  "keepLog" : false,
+  "number" : 100,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1374111128000,
+  "url" : "http://ci.aegirproject.org/view/All/job/S_aegir-debian-official/100/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

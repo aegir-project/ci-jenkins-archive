@@ -1,0 +1,104 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 70,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "6f86539ee02194a8005ce2a8ac534d39e821a6f1",
+            "branch" : [
+              {
+                "SHA1" : "6f86539ee02194a8005ce2a8ac534d39e821a6f1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "6f86539ee02194a8005ce2a8ac534d39e821a6f1",
+            "branch" : [
+              {
+                "SHA1" : "6f86539ee02194a8005ce2a8ac534d39e821a6f1",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "6f86539ee02194a8005ce2a8ac534d39e821a6f1",
+        "branch" : [
+          {
+            "SHA1" : "6f86539ee02194a8005ce2a8ac534d39e821a6f1",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#70",
+  "duration" : 820,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #70",
+  "id" : "2014-06-18_14-09-39",
+  "keepLog" : False,
+  "number" : 70,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1403114979000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/70/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    
+  ]
+}

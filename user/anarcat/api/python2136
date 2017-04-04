@@ -1,0 +1,50 @@
+{
+  "_class" : "hudson.model.User",
+  "absoluteUrl" : "http://ci.aegirproject.org/user/anarcat",
+  "description" : "",
+  "fullName" : "Antoine Beaupré",
+  "id" : "anarcat",
+  "property" : [
+    {
+      "_class" : "jenkins.security.ApiTokenProperty"
+    },
+    {
+      "_class" : "hudson.plugins.greenballs.ColorBlindProperty",
+      "enabledColorBlindSupport" : False,
+      "user" : {
+        "absoluteUrl" : "http://ci.aegirproject.org/user/anarcat",
+        "fullName" : "Antoine Beaupré"
+      }
+    },
+    {
+      "_class" : "com.cloudbees.plugins.credentials.UserCredentialsProvider$UserCredentialsProperty"
+    },
+    {
+      "_class" : "hudson.tasks.Mailer$UserProperty",
+      "address" : "anarcat@koumbit.org"
+    },
+    {
+      "_class" : "hudson.plugins.jabber.user.JabberUserProperty",
+      "jid" : "anarcat@koumbit.org"
+    },
+    {
+      "_class" : "hudson.model.MyViewsProperty"
+    },
+    {
+      "_class" : "hudson.plugins.openid.OpenIdUserProperty"
+    },
+    {
+      "_class" : "hudson.security.HudsonPrivateSecurityRealm$Details"
+    },
+    {
+      "_class" : "org.jenkinsci.main.modules.cli.auth.ssh.UserPropertyImpl"
+    },
+    {
+      "_class" : "hudson.search.UserSearchProperty",
+      "insensitiveSearch" : False
+    },
+    {
+      "_class" : "hudson.model.PaneStatusProperties"
+    }
+  ]
+}

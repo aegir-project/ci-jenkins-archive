@@ -1,0 +1,178 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 19,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+            "branch" : [
+              {
+                "SHA1" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+            "branch" : [
+              {
+                "SHA1" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+        "branch" : [
+          {
+            "SHA1" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#19",
+  "duration" : 14479,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #19",
+  "id" : "2012-03-04_02-01-42",
+  "keepLog" : false,
+  "number" : 19,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1330844502000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/19/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "5f15d661faa07a0e0664bcf0ad7150d1957d747f",
+        "timestamp" : 1330825137000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Remove debugging in Nginx config.\n",
+        "date" : "2012-03-03T20:38:57-0500 +0100",
+        "id" : "5f15d661faa07a0e0664bcf0ad7150d1957d747f",
+        "msg" : "Remove debugging in Nginx config.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/vhost.tpl.php"
+        ],
+        "commitId" : "9b1fe19bd71bbabb9465c09278aac2f59d72df4c",
+        "timestamp" : 1330825176000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80 in all vhosts.\n",
+        "date" : "2012-03-03T20:39:36-0500 +0100",
+        "id" : "9b1fe19bd71bbabb9465c09278aac2f59d72df4c",
+        "msg" : "Issue #1442906 by cweagans - Nginx should listen on all supplied IP addresses also on port 80 in all vhosts.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/vhost.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Service/http/nginx_simple_include.conf",
+          "http/Provision/Service/http/nginx_advanced_include.conf"
+        ],
+        "commitId" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+        "timestamp" : 1330825803000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Allow some known php files also in profiles - a fix for Nginx config regression.\n",
+        "date" : "2012-03-03T20:50:03-0500 +0100",
+        "id" : "4e5c7f5dc62188f994193a40eb4de216dcc5b03d",
+        "msg" : "Allow some known php files also in profiles - a fix for Nginx config regression.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_simple_include.conf"
+          },
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Service/http/nginx_advanced_include.conf"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+Started by user Antoine Beaupré
+Building in workspace /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace - hudson.remoting.LocalChannel@1680748d
+Using strategy: Default
+Last Built Revision: Revision d3fe9ed10999f23ade074334bc4eded8cef79564 (origin/master)
+Checkout:build_scripts / /var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace/build_scripts - hudson.remoting.LocalChannel@1680748d
+Fetching changes from 1 remote Git repository
+Fetching upstream changes from http://git.drupal.org/sandbox/darthsteven/1286014.git
+Commencing build of Revision a8ef0d430b195c0a1bc7a238127ce1694560c815 (origin/master)
+Checking out Revision a8ef0d430b195c0a1bc7a238127ce1694560c815 (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson8985013246538034370.sh
++ python build_scripts/jenkins_aegir_upgrade.py
+/usr/lib/python2.6/dist-packages/Crypto/Util/randpool.py:40: RandomPool_DeprecationWarning: This application uses RandomPool, which is BROKEN in older releases.  See http://www.pycrypto.org/randpool-broken
+  RandomPool_DeprecationWarning)
+Provisioning server and running deployment processes
+Traceback (most recent call last):
+  File "build_scripts/jenkins_aegir_upgrade.py", line 17, in <module>
+    sys.exit(aegir_non_package_upgrade.main(args))
+  File "/var/lib/jenkins/jobs/U aegir 6.x-1.0 to 6.x-1.x upgrade/workspace/build_scripts/aegir_non_package_upgrade.py", line 120, in main
+    raise SystemError(e)
+SystemError: MalformedResponseError()
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: miguel.jacq@gmail.com steven.jones@computerminds.co.uk
+IRC notifier plugin: Sending notification to: #aegir
+Finished: FAILURE

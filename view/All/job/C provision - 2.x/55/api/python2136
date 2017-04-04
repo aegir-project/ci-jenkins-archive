@@ -1,0 +1,134 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 55,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+            "branch" : [
+              {
+                "SHA1" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+            "branch" : [
+              {
+                "SHA1" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+        "branch" : [
+          {
+            "SHA1" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#55",
+  "duration" : 9166,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #55",
+  "id" : "2012-04-28_16-30-28",
+  "keepLog" : False,
+  "number" : 55,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1335645028000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/55/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.inc",
+          "provision-tests/provision_tests.drush.inc"
+        ],
+        "commitId" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+        "timestamp" : 1335630035000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "More work on getting the tests to pass\n",
+        "date" : "2012-04-28T12:20:35-0400 +0100",
+        "id" : "be655988f315a58dcc299c9cf91340a99570f7c6",
+        "msg" : "More work on getting the tests to pass",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "provision-tests/provision_tests.drush.inc"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.inc"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

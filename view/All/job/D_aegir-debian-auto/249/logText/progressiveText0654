@@ -1,0 +1,64 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/D_aegir-debian-auto/workspace
+Checkout:workspace / /var/lib/jenkins/jobs/D_aegir-debian-auto/workspace - hudson.remoting.LocalChannel@1170df83
+Using strategy: Default
+Last Built Revision: Revision 7357f01eaa2b93705375678211fc118a35870be6 (origin/master, origin/HEAD)
+Cloning the remote Git repository
+Cloning repository http://git.drupal.org/sandbox/darthsteven/1286014.git
+Error trying to determine the git version: Error performing command: git --version
+Assuming 1.6
+ERROR: Error cloning remote repo 'origin' : Could not clone http://git.drupal.org/sandbox/darthsteven/1286014.git
+hudson.plugins.git.GitException: Could not clone http://git.drupal.org/sandbox/darthsteven/1286014.git
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.clone(CliGitAPIImpl.java:219)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1001)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:942)
+	at hudson.FilePath.act(FilePath.java:904)
+	at hudson.FilePath.act(FilePath.java:877)
+	at hudson.plugins.git.GitSCM.determineRevisionToBuild(GitSCM.java:942)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1101)
+	at org.jenkinsci.plugins.multiplescms.MultiSCM.checkout(MultiSCM.java:117)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1367)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:674)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:579)
+	at hudson.model.Run.execute(Run.java:1575)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:237)
+Caused by: hudson.plugins.git.GitException: Error performing command: git clone -o origin http://git.drupal.org/sandbox/darthsteven/1286014.git /var/lib/jenkins/jobs/D_aegir-debian-auto/workspace/aegir_jenkins_scripts
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:780)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.clone(CliGitAPIImpl.java:217)
+	... 15 more
+Caused by: java.io.IOException: Cannot run program "git": java.io.IOException: error=24, Too many open files
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:470)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:763)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:353)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:360)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:769)
+	... 16 more
+Caused by: java.io.IOException: java.io.IOException: error=24, Too many open files
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:148)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:65)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:452)
+	... 22 more
+Trying next repository
+ERROR: Could not clone repository
+FATAL: Could not clone
+hudson.plugins.git.GitException: Could not clone
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:1013)
+	at hudson.plugins.git.GitSCM$2.invoke(GitSCM.java:942)
+	at hudson.FilePath.act(FilePath.java:904)
+	at hudson.FilePath.act(FilePath.java:877)
+	at hudson.plugins.git.GitSCM.determineRevisionToBuild(GitSCM.java:942)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1101)
+	at org.jenkinsci.plugins.multiplescms.MultiSCM.checkout(MultiSCM.java:117)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1367)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:674)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:88)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:579)
+	at hudson.model.Run.execute(Run.java:1575)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:46)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:237)

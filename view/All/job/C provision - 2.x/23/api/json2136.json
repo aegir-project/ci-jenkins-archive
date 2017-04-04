@@ -1,0 +1,151 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 23,
+          "buildResult" : null,
+          "marked" : {
+            "SHA1" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+            "branch" : [
+              {
+                "SHA1" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+            "branch" : [
+              {
+                "SHA1" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+        "branch" : [
+          {
+            "SHA1" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : false,
+  "description" : null,
+  "displayName" : "#23",
+  "duration" : 21307,
+  "estimatedDuration" : 23349,
+  "executor" : null,
+  "fullDisplayName" : "C provision - 2.x #23",
+  "id" : "2012-03-06_10-16-23",
+  "keepLog" : false,
+  "number" : 23,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1331046983000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/23/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "9daf10615762641855ac1396d9a5c3687b2a5a38",
+        "timestamp" : 1330976209000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Add Nutch to the list of blocked crawlers in Nginx.\n",
+        "date" : "2012-03-05T14:36:49-0500 +0100",
+        "id" : "9daf10615762641855ac1396d9a5c3687b2a5a38",
+        "msg" : "Add Nutch to the list of blocked crawlers in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+        "timestamp" : 1331028559000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "More compact regex for blocked crawlers in Nginx.\n",
+        "date" : "2012-03-06T05:09:19-0500 +0100",
+        "id" : "55842f70e617b0c40992123aa557a6c6e05be62d",
+        "msg" : "More compact regex for blocked crawlers in Nginx.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}

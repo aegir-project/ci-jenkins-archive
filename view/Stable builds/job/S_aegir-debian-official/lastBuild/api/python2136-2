@@ -1,0 +1,257 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "JENKINS_AEGIR_TAG",
+          "value" : "7.x-3.0-beta1"
+        },
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "DIST",
+          "value" : "testing"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.model.Cause$UserIdCause",
+          "shortDescription" : "Started by user Herman van Rink",
+          "userId" : "helmo",
+          "userName" : "Herman van Rink"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/master" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 104,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "branch" : [
+              {
+                "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+                "name" : "origin/master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+        "branch" : [
+          {
+            "SHA1" : "5ab15ac04f2e342026644b981dc82b34f1e40017",
+            "name" : "origin/master"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "https://github.com/aegir-project/aegir_jenkins_scripts.git"
+      ],
+      "scmName" : "aegir_jenkins_scripts"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "origin/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 104,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+            "branch" : [
+              {
+                "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+            "branch" : [
+              {
+                "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+                "name" : "origin/6.x-2.x"
+              }
+            ]
+          }
+        },
+        "origin/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 102,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+            "branch" : [
+              {
+                "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+            "branch" : [
+              {
+                "SHA1" : "7b992abd01d4fdb195ad5eae3b5b0c28b2fbbe8b",
+                "name" : "origin/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+        "branch" : [
+          {
+            "SHA1" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+            "name" : "origin/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        "git://git.drupalcode.org/project/provision"
+      ],
+      "scmName" : "provision"
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#104",
+  "duration" : 1826,
+  "estimatedDuration" : 13891,
+  "executor" : None,
+  "fullDisplayName" : "S_aegir-debian-official #104",
+  "id" : "2015-03-25_16-53-43",
+  "keepLog" : False,
+  "number" : 104,
+  "queueId" : -1,
+  "result" : "FAILURE",
+  "timestamp" : 1427316823000,
+  "url" : "http://ci.aegirproject.org/view/Stable%20builds/job/S_aegir-debian-official/104/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "org.jenkinsci.plugins.multiplescms.MultiSCMChangeLogSet",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "provision.info",
+          "upgrade.sh.txt",
+          "aegir.make",
+          "debian/changelog",
+          "aegir-release.make"
+        ],
+        "commitId" : "8be682696287b3e1a4328611e29f4b12eb7b32e1",
+        "timestamp" : 1427308940000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "change version information for release 2.3\n",
+        "date" : "2015-03-25T14:42:20-0400 -0400",
+        "id" : "8be682696287b3e1a4328611e29f4b12eb7b32e1",
+        "msg" : "change version information for release 2.3",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "debian/changelog"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "aegir.make",
+          "upgrade.sh.txt",
+          "provision.info",
+          "aegir-release.make"
+        ],
+        "commitId" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+        "timestamp" : 1427308940000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+          "fullName" : "Christopher Gervais"
+        },
+        "comment" : "Revert \"change version information for release 2.3\"\n\nThis reverts commit 8be682696287b3e1a4328611e29f4b12eb7b32e1.\n",
+        "date" : "2015-03-25T14:42:20-0400 -0400",
+        "id" : "3edda6c37b83e2c746f6a2f603e59cebf4e6f352",
+        "msg" : "Revert \"change version information for release 2.3\"",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "upgrade.sh.txt"
+          },
+          {
+            "editType" : "edit",
+            "file" : "provision.info"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir-release.make"
+          },
+          {
+            "editType" : "edit",
+            "file" : "aegir.make"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/ergonlogic",
+      "fullName" : "Christopher Gervais"
+    }
+  ]
+}

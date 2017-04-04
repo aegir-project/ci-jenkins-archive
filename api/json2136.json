@@ -1,0 +1,284 @@
+{
+  "_class" : "hudson.model.Hudson",
+  "assignedLabels" : [
+    {
+      
+    }
+  ],
+  "mode" : "NORMAL",
+  "nodeDescription" : "the master Jenkins node",
+  "nodeName" : "",
+  "numExecutors" : 3,
+  "description" : "           ",
+  "jobs" : [
+    {
+      "_class" : "hudson.matrix.MatrixProject",
+      "name" : "asdf",
+      "url" : "http://ci.aegirproject.org/job/asdf/",
+      "color" : "notbuilt"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "C hostmaster - 1.x",
+      "url" : "http://ci.aegirproject.org/job/C%20hostmaster%20-%201.x/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "C hostmaster - 2.x",
+      "url" : "http://ci.aegirproject.org/job/C%20hostmaster%20-%202.x/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "C provision - 1.x",
+      "url" : "http://ci.aegirproject.org/job/C%20provision%20-%201.x/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "C provision - 2.x",
+      "url" : "http://ci.aegirproject.org/job/C%20provision%20-%202.x/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-auto",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-auto/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-2x",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-2x/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-3x",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-3x/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir-debian-build-3x-old-2015-10",
+      "url" : "http://ci.aegirproject.org/job/D_aegir-debian-build-3x-old-2015-10/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir3-debian-test-unstable",
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "D_aegir3-debian-test-unstable-xenial",
+      "url" : "http://ci.aegirproject.org/job/D_aegir3-debian-test-unstable-xenial/",
+      "color" : "red"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixProject",
+      "name" : "Matrix.deb",
+      "url" : "http://ci.aegirproject.org/job/Matrix.deb/",
+      "color" : "aborted"
+    },
+    {
+      "_class" : "hudson.matrix.MatrixProject",
+      "name" : "Matrix.deb2",
+      "url" : "http://ci.aegirproject.org/job/Matrix.deb2/",
+      "color" : "red"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P Aegir Puppet Module smoke-test",
+      "url" : "http://ci.aegirproject.org/job/P%20Aegir%20Puppet%20Module%20smoke-test/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P Drush Puppet Module smoke-test",
+      "url" : "http://ci.aegirproject.org/job/P%20Drush%20Puppet%20Module%20smoke-test/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2/",
+      "color" : "red"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2-backports",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-backports/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2-dev",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-dev/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir2-unstable",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir2-unstable/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drupal8/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush6/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-dev-Drush8/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-drush-master-dev/",
+      "color" : "red"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "P_Aegir_Puppet_Module_functional_test_Aegir3-unstable",
+      "url" : "http://ci.aegirproject.org/job/P_Aegir_Puppet_Module_functional_test_Aegir3-unstable/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R clear repo",
+      "url" : "http://ci.aegirproject.org/job/R%20clear%20repo/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R debian provision changelog",
+      "url" : "http://ci.aegirproject.org/job/R%20debian%20provision%20changelog/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R release tags",
+      "url" : "http://ci.aegirproject.org/job/R%20release%20tags/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "R repo pull",
+      "url" : "http://ci.aegirproject.org/job/R%20repo%20pull/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "S_aegir-debian-official",
+      "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "S_aegir-debian-official-3.x",
+      "url" : "http://ci.aegirproject.org/job/S_aegir-debian-official-3.x/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "test job",
+      "url" : "http://ci.aegirproject.org/job/test%20job/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U aegir 6.x-1.0 to 6.x-1.4 upgrade",
+      "url" : "http://ci.aegirproject.org/job/U%20aegir%206.x-1.0%20to%206.x-1.4%20upgrade/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U aegir 6.x-1.0 to 6.x-1.5 upgrade",
+      "url" : "http://ci.aegirproject.org/job/U%20aegir%206.x-1.0%20to%206.x-1.5%20upgrade/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U aegir 6.x-1.0 to 6.x-1.x upgrade",
+      "url" : "http://ci.aegirproject.org/job/U%20aegir%206.x-1.0%20to%206.x-1.x%20upgrade/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U aegir 6.x-1.x deb upgrade",
+      "url" : "http://ci.aegirproject.org/job/U%20aegir%206.x-1.x%20deb%20upgrade/",
+      "color" : "disabled"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U_aegir_6.x-2.x_to_7.x-3.x_upgrade",
+      "url" : "http://ci.aegirproject.org/job/U_aegir_6.x-2.x_to_7.x-3.x_upgrade/",
+      "color" : "blue"
+    },
+    {
+      "_class" : "hudson.model.FreeStyleProject",
+      "name" : "U_aegir_7.x-3.x-stable-to-unstable-deb-package",
+      "url" : "http://ci.aegirproject.org/job/U_aegir_7.x-3.x-stable-to-unstable-deb-package/",
+      "color" : "blue"
+    }
+  ],
+  "overallLoad" : {
+    
+  },
+  "primaryView" : {
+    "_class" : "hudson.model.ListView",
+    "name" : "Puppet tests",
+    "url" : "http://ci.aegirproject.org/"
+  },
+  "quietingDown" : false,
+  "slaveAgentPort" : 0,
+  "unlabeledLoad" : {
+    "_class" : "jenkins.model.UnlabeledLoadStatistics"
+  },
+  "useCrumbs" : true,
+  "useSecurity" : true,
+  "views" : [
+    {
+      "_class" : "hudson.model.AllView",
+      "name" : "All",
+      "url" : "http://ci.aegirproject.org/view/All/"
+    },
+    {
+      "_class" : "hudson.model.ListView",
+      "name" : "Debian dev builds",
+      "url" : "http://ci.aegirproject.org/view/Debian%20dev%20builds/"
+    },
+    {
+      "_class" : "hudson.model.ListView",
+      "name" : "Puppet tests",
+      "url" : "http://ci.aegirproject.org/"
+    },
+    {
+      "_class" : "hudson.model.ListView",
+      "name" : "Release scripts",
+      "url" : "http://ci.aegirproject.org/view/Release%20scripts/"
+    },
+    {
+      "_class" : "hudson.model.ListView",
+      "name" : "Stable builds",
+      "url" : "http://ci.aegirproject.org/view/Stable%20builds/"
+    },
+    {
+      "_class" : "hudson.model.ListView",
+      "name" : "Upgrades",
+      "url" : "http://ci.aegirproject.org/view/Upgrades/"
+    }
+  ]
+}

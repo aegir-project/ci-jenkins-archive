@@ -1,0 +1,176 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-1.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 27,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+            "branch" : [
+              {
+                "SHA1" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+            "branch" : [
+              {
+                "SHA1" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+                "name" : "provision/6.x-1.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+        "branch" : [
+          {
+            "SHA1" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+            "name" : "provision/6.x-1.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      "_class" : "hudson.plugins.git.GitTagAction"
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#27",
+  "duration" : 6282,
+  "estimatedDuration" : 213289,
+  "executor" : None,
+  "fullDisplayName" : "C hostmaster - 1.x #27",
+  "id" : "2012-05-24_06-45-27",
+  "keepLog" : False,
+  "number" : 27,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1337856327000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20hostmaster%20-%201.x/27/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/client/hosting_client.module"
+        ],
+        "commitId" : "556bce13e6f651329e954943cabc5d3e1268e2dc",
+        "timestamp" : 1337841461000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1441970 by jlscott: Fixed Client Block assigned by default to non-existing region.\n",
+        "date" : "2012-05-24T02:37:41-0400 +0100",
+        "id" : "556bce13e6f651329e954943cabc5d3e1268e2dc",
+        "msg" : "Issue #1441970 by jlscott: Fixed Client Block assigned by default to non-existing region.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/client/hosting_client.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/client/hosting_client.module"
+        ],
+        "commitId" : "00d29aca513f01301c6d3f4e71e15301393045d2",
+        "timestamp" : 1337841519000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Fix whitespace in hosting_client.module\n",
+        "date" : "2012-05-24T02:38:39-0400 +0100",
+        "id" : "00d29aca513f01301c6d3f4e71e15301393045d2",
+        "msg" : "Fix whitespace in hosting_client.module",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/client/hosting_client.module"
+          }
+        ]
+      },
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "modules/hosting/client/hosting_client.module"
+        ],
+        "commitId" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+        "timestamp" : 1337841648000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+          "fullName" : "Steven Jones"
+        },
+        "comment" : "Issue #1441970 by Steven Jones: Fixed Client Block assigned by default to non-existing region.\n",
+        "date" : "2012-05-24T02:40:48-0400 +0100",
+        "id" : "2dc523f8bf8a073d9dabe923a995f08793583258",
+        "msg" : "Issue #1441970 by Steven Jones: Fixed Client Block assigned by default to non-existing region.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "modules/hosting/client/hosting_client.module"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/steven.jones",
+      "fullName" : "Steven Jones"
+    }
+  ]
+}

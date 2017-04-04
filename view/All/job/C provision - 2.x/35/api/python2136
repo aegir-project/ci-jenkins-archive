@@ -1,0 +1,129 @@
+{
+  "_class" : "hudson.model.FreeStyleBuild",
+  "actions" : [
+    {
+      "_class" : "hudson.model.ParametersAction",
+      "parameters" : [
+        {
+          "_class" : "hudson.model.StringParameterValue",
+          "name" : "CODE_REVIEWS",
+          "value" : "style,comment"
+        }
+      ]
+    },
+    {
+      "_class" : "hudson.model.CauseAction",
+      "causes" : [
+        {
+          "_class" : "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription" : "Started by an SCM change"
+        }
+      ]
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName" : {
+        "provision/6.x-2.x" : {
+          "_class" : "hudson.plugins.git.util.Build",
+          "buildNumber" : 35,
+          "buildResult" : None,
+          "marked" : {
+            "SHA1" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+            "branch" : [
+              {
+                "SHA1" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          },
+          "revision" : {
+            "SHA1" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+            "branch" : [
+              {
+                "SHA1" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+                "name" : "provision/6.x-2.x"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision" : {
+        "SHA1" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+        "branch" : [
+          {
+            "SHA1" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+            "name" : "provision/6.x-2.x"
+          }
+        ]
+      },
+      "remoteUrls" : [
+        
+      ],
+      "scmName" : ""
+    },
+    {
+      
+    },
+    {
+      "_class" : "hudson.plugins.checkstyle.CheckStyleResultAction"
+    },
+    {
+      
+    }
+  ],
+  "artifacts" : [
+    
+  ],
+  "building" : False,
+  "description" : None,
+  "displayName" : "#35",
+  "duration" : 11562,
+  "estimatedDuration" : 23349,
+  "executor" : None,
+  "fullDisplayName" : "C provision - 2.x #35",
+  "id" : "2012-03-26_00-31-06",
+  "keepLog" : False,
+  "number" : 35,
+  "queueId" : -1,
+  "result" : "SUCCESS",
+  "timestamp" : 1332736266000,
+  "url" : "http://ci.aegirproject.org/view/All/job/C%20provision%20-%202.x/35/",
+  "builtOn" : "",
+  "changeSet" : {
+    "_class" : "hudson.plugins.git.GitChangeSetList",
+    "items" : [
+      {
+        "_class" : "hudson.plugins.git.GitChangeSet",
+        "affectedPaths" : [
+          "http/Provision/Config/Nginx/server.tpl.php"
+        ],
+        "commitId" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+        "timestamp" : 1332718789000,
+        "author" : {
+          "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+          "fullName" : "omega8cc"
+        },
+        "comment" : "Issue #1498774 by jm.federico - Set higher value for map_hash_bucket_size in Nginx by default.\n\nSigned-off-by: Barracuda Team <admin@omega8.cc>\n",
+        "date" : "2012-03-25T19:39:49-0400 +0200",
+        "id" : "b66ea0916138e9ea16a26852c073f5d75074f087",
+        "msg" : "Issue #1498774 by jm.federico - Set higher value for map_hash_bucket_size in Nginx by default.",
+        "paths" : [
+          {
+            "editType" : "edit",
+            "file" : "http/Provision/Config/Nginx/server.tpl.php"
+          }
+        ]
+      }
+    ],
+    "kind" : "git"
+  },
+  "culprits" : [
+    {
+      "absoluteUrl" : "http://ci.aegirproject.org/user/admin",
+      "fullName" : "omega8cc"
+    }
+  ]
+}
